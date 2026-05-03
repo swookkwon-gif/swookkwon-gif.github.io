@@ -74,7 +74,7 @@ def get_email_body(payload: dict, max_length: int = 15000) -> str:
     return text_content[:max_length]
 
 
-def fetch_newsletters(service, label_id: str, lookback_days: int = 7) -> list[dict]:
+def fetch_newsletters(service, label_id: str, lookback_days: int = 3) -> list[dict]:
     """
     미처리 뉴스레터 이메일 목록을 가져온다.
     
