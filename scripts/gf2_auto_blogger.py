@@ -100,19 +100,32 @@ def run_gemini_search_blogger():
         }
     }
     
-    try:
-        response = requests.post(url, json=payload, headers={'Content-Type': 'application/json'}, timeout=120)
-        response.raise_for_status()
-        data = response.json()
-        
-        article_content = ""
-        if "candidates" in data and len(data["candidates"]) > 0:
-            candidate = data["candidates"][0]
-            
-            # 짤림 방지: 비정상 종료 시 에러 처리
-            if candidate.get('finishReason') != 'STOP':
-                print(f"❌ 생성 중단됨 (Finish Reason: {candidate.get('finishReason')})")
+    data = None
+    max_retries = 3
+    for attempt in range(max_retries):
+        try:
+            print(f"      [요청 {attempt+1}/{max_retries}] Gemini API 요청 중 (Timeout: 300s)...")
+            response = requests.post(url, json=payload, headers={'Content-Type': 'application/json'}, timeout=300)
+            response.raise_for_status()
+            data = response.json()
+            break
+        except Exception as e:
+            print(f"      ❌ 시도 {attempt+1} 실패: {e}")
+            if attempt < max_retries - 1:
+                print("      -> 30초 대기 후 재시도...")
+                time.sleep(30)
+            else:
+                print("❌ 최종 실패. Gemini API 호출 에러.")
                 return
+        
+    article_content = ""
+    if "candidates" in data and len(data["candidates"]) > 0:
+        candidate = data["candidates"][0]
+        
+        # 짤림 방지: 비정상 종료 시 에러 처리
+        if candidate.get('finishReason') != 'STOP':
+            print(f"❌ 생성 중단됨 (Finish Reason: {candidate.get('finishReason')})")
+            return
                 
             parts = candidate.get("content", {}).get("parts", [])
             for part in parts:
