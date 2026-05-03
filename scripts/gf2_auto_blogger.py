@@ -151,7 +151,7 @@ def run_gemini_search_blogger():
 6. 레퍼런스 및 주석:
    - 본문 내에서 참고한 기사를 인용할 때는 마크다운 표준 주석 문법인 `[^1]` 형태를 사용하여 클릭 시 하단으로 스크롤 되도록 작성해.
    - 포스트 가장 하단에는 본문에 사용된 주석 번호 1번부터 순서대로 정렬하여 `[^1]: [기사 제목](URL)` 형태의 목록으로 명확하게 제공해.
-   - 만약 기사의 정확한 원본 URL을 찾을 수 없다면 억지로 생성하지 말고 `[^1]: 기사 제목` 형태로 링크 없이 표기해.
+   - 반드시 구글 검색 결과에서 확인한 원본 기사의 실제 URL(절대 경로)을 `URL` 부분에 채워 넣어야 해. (타이틀만 적고 URL을 누락하면 안 됨)
 7. 어조: 해요체/하십시오체를 쓰지 말고 전문적인 테크 저널 목록형 어조(~이다, ~한다)를 사용할 것.
 """
     
@@ -200,7 +200,7 @@ def run_gemini_search_blogger():
 
     frontmatter = f"""---
 title: '{display_title.replace("'", "''")}'
-date: {now_kst.strftime('%Y-%m-%dT%H:%M:%S+09:00')}
+date: {now_kst.strftime('%Y-%m-%d %H:%M:%S')}
 excerpt: '{display_excerpt.replace("'", "''")}'
 categories:
   - AI News
