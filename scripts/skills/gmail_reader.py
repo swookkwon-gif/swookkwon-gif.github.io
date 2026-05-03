@@ -83,7 +83,8 @@ def fetch_newsletters(service, label_id: str, lookback_days: int = 7) -> list[di
     """
     from state.state_manager import is_processed
 
-    today = datetime.now()
+    from datetime import timezone
+    today = datetime.now(timezone.utc) + timedelta(hours=9)
     last_week = today - timedelta(days=lookback_days)
     start_date = last_week.strftime("%Y/%m/%d")
 
