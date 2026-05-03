@@ -3,6 +3,7 @@ title: '[05월 03일] AI 데일리 다이제스트 — 젠슨 황의 AI 종말�
 date: '2026-05-03'
 excerpt: '> 📊 오늘의 AI 뉴스: 26건 | 소스: 7min.ai, Ed Sim from What''s Hot 🔥 in Enterprise IT/VC --- 🔥 1. 젠슨 황, AI 종말론 CEO들을 ''신 콤플렉스''라 비난 ...'
 category: 'AI News'
+
 ---
 
 > 📊 오늘의 AI 뉴스: **26건** | 소스: 7min.ai, Ed Sim from What's Hot 🔥 in Enterprise IT/VC
@@ -47,17 +48,18 @@ Anthropic이 월간 46.6% 성장하며 연간 440억 달러의 매출을 기록�
 
 ## 5. AI 시대의 두 가지 투자 방향: 로봇 공학 vs. AI 제트 스트림
 현재 투자할 수 있는 두 가지 주요 분야는 로봇 공학처럼 기술적 난이도가 높고 물리적인 '심층 기술 기업'과, 대부분의 소프트웨어 기업이 속하며 프론티어 랩의 다음 출시를 기대하는 'AI 제트 스트림'입니다. 어떤 방향이든, 기술적 통찰력, 빠른 학습 속도, 그리고 기회가 명확해지기 전에 세계적 수준의 인재를 유치하는 능력이 성공의 핵심입니다.
-<br><small style="color: #888;">소스: Ed Sim from What's Hot 🔥 in Enterprise IT/VC (3개 소스 보도) &nbsp;|&nbsp; 🔗 [원문: whatshotit.vc](https://www.whatshotit.vc/p/whats-in-enterprise-itvc-496)</small>
-[원문: substack.com](https://substack.com/redirect/dcdfdb70-7de6-4ee7-a76b-e644c5b4d01e?j=eyJ1IjoiODdscWhrIn0.gdElB89oi9NlZmEpNuVWJzZmjrGW3MV2lYA51mmty2c)
-[원문: substack.com](https://substack.com/redirect/82df93b5-58d4-467d-ad07-6104e39951f9?j=eyJ1IjoiODdscWhrIn0.gdElB89oi9NlZmEpNuVWJzZmjrGW3MV2lYA51mmty2c)
+<br><small style="color: #888;">소스: Ed Sim from What's Hot 🔥 in Enterprise IT/VC (3개 소스 보도) &nbsp;|&nbsp; 🔗 [원문: whatshotit.vc](https://www.whatshotit.vc/p/whats-in-enterprise-itvc-496) · [원문: substack.com](https://substack.com/redirect/dcdfdb70-7de6-4ee7-a76b-e644c5b4d01e?j=eyJ1IjoiODdscWhrIn0.gdElB89oi9NlZmEpNuVWJzZmjrGW3MV2lYA51mmty2c) · [원문: substack.com](https://substack.com/redirect/82df93b5-58d4-467d-ad07-6104e39951f9?j=eyJ1IjoiODdscWhrIn0.gdElB89oi9NlZmEpNuVWJzZmjrGW3MV2lYA51mmty2c)</small>
+
 ---
+
 ## 6. AI 시대 초기 단계 스타트업 투자 전략: 인재와 학습 속도
 하이퍼스케일러와 프론티어 랩이 기회를 장악하는 현 시대에 초기 단계 스타트업 투자는 뛰어난 기술 인재, 12-18개월의 명확한 제품 비전, 그리고 5-10년간 지속 가능한 미션을 가진 팀에 집중해야 합니다. 자본보다는 컴퓨팅 자원과 인재가 핵심 제약 요소이며, 창업자의 학습 속도와 최고 인재를 유치하는 능력이 중요합니다.
 *   12-18개월의 명확한 제품 비전
 *   5-10년간 지속 가능한 미션
-<br><small style="color: #888;">소스: Ed Sim from What's Hot 🔥 in Enterprise IT/VC (2개 소스 보도) &nbsp;|&nbsp; 🔗 [원문: whatshotit.vc](https://www.whatshotit.vc/p/whats-in-enterprise-itvc-496)</small>
-[원문: substack.com](https://substack.com/redirect/90928221-db3d-46dc-8b75-c5f4dc740f72?j=eyJ1IjoiODdscWhrIn0.gdElB89oi9NlZmEpNuVWJzZmjrGW3MV2lYA51mmty2c)
+<br><small style="color: #888;">소스: Ed Sim from What's Hot 🔥 in Enterprise IT/VC (2개 소스 보도) &nbsp;|&nbsp; 🔗 [원문: whatshotit.vc](https://www.whatshotit.vc/p/whats-in-enterprise-itvc-496) · [원문: substack.com](https://substack.com/redirect/90928221-db3d-46dc-8b75-c5f4dc740f72?j=eyJ1IjoiODdscWhrIn0.gdElB89oi9NlZmEpNuVWJzZmjrGW3MV2lYA51mmty2c)</small>
+
 ---
+
 ## 7. Kimi K2.6, 라이브 코딩 대회에서 Claude, GPT-5.5, Gemini 제치고 우승
 문샷 AI의 오픈 웨이트 모델 Kimi K2.6이 AI 코딩 콘테스트의 Word Gem Puzzle 12일차에서 22점과 7승 1패 0무의 기록으로 우승하며 샤오미의 MiMo V2-Pro와 OpenAI의 GPT-5.5를 앞섰습니다. 이 결과는 중국의 오픈 웨이트 모델들이 객관적인 프로그래밍 벤치마크에서 서구의 폐쇄형 최첨단 모델들과 동등하거나 그 이상을 달성하는 추세를 보여줍니다.
 *   Word Gem Puzzle 12일차 우승
