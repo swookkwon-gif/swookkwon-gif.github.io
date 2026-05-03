@@ -32,7 +32,7 @@ def clean_url(url):
         return url
 
 def clean_all_urls_in_text(text):
-    """마크다운 텍스트 내 모든 URL에서 utm 파라미터를 제거한다."""
+    """마크다운 텍스트 내 모든 URL에서 utm 파라미터 및 ?amp 이후 파라미터를 제거한다."""
     def _replace(match):
         return match.group(0).replace(match.group(1), clean_url(match.group(1)))
     return re.sub(r'\]\((https?://[^\)]+)\)', _replace, text)

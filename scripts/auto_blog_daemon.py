@@ -257,6 +257,7 @@ def collect_rss_articles(feeds):
 {articles_text}
 
 [요구사항]
+0. **URL 위생 규칙**: 원문 링크로 `substack.com/redirect/...`, `google.com/url?...`, `t.co/...` 등 리다이렉트/트래커 URL을 절대 사용하지 마세요. 반드시 최종 목적지 URL만 사용합니다.
 0. **엄격한 팩트 준수**: 절대 외부 지식을 개입시키거나 환각(Hallucination)을 만들지 마세요. 오직 제공된 원문 텍스트 내에 존재하는 사실과 수치만 엄격하게 요약해야 합니다.
 1. AI, 머신러닝, LLM 비즈니스와 무관한 기사는 무시하세요.
 2. AI 기사가 하나라도 있으면 has_ai_news=true, 아니면 false.
@@ -433,6 +434,7 @@ def collect_gmail_articles():
 {articles_text}
 
 [요구사항]
+0. **URL 위생 규칙**: 원문 링크로 `substack.com/redirect/...`, `google.com/url?...`, `t.co/...` 등 리다이렉트/트래커 URL을 절대 사용하지 마세요. 반드시 최종 목적지 URL만 사용합니다.
 0. **엄격한 팩트 준수**: 절대 외부 지식을 개입시키거나 환각(Hallucination)을 만들지 마세요. 오직 제공된 원문 텍스트 내에 존재하는 사실과 수치만 엄격하게 요약해야 합니다.
 1. 뉴스레터 내 각각의 뉴스 기사/도구/소식을 개별 article 객체로 추출하세요.
 2. 각 article:
@@ -519,9 +521,10 @@ def merge_and_create_daily_digest(all_articles):
 {low_json}
 
 [통합 규칙]
+0. **URL 위생 규칙**: 원문 링크로 `substack.com/redirect/...`, `google.com/url?...`, `t.co/...` 등 리다이렉트/트래커 URL을 절대 사용하지 마세요. 반드시 최종 목적지 URL만 사용합니다.
 0. **엄격한 팩트 준수**: 제공된 JSON 데이터(제목, 요약, 수치 등)에 없는 외부 지식을 절대로 덧붙이거나 환각(Hallucination)을 통해 상상해서 지어내지 마세요. 철저하게 주어진 텍스트 내용 안에서만 병합하세요.
 1. **중복 뉴스 병합**: 같은 사건/발표를 다루는 기사들(keywords가 유사)을 하나로 합침.
-   - 병합 시 모든 소스 이름을 "**소스:** A · B · C" 형태로 표기
+   - 병합 시 모든 소스 이름을 "소스: A · B · C" 형태로 표기 (볼드체 없이)
    - 가장 상세한 summary를 기준으로 작성
 2. **중요도 기반 Top 10 선별 및 정렬**:
    - 수집된 모든 기사 중 중요도를 평가하여 **가장 중요한 상위 10개 기사만(Top 10)** 메인 뉴스로 작성하세요.
@@ -545,9 +548,9 @@ def merge_and_create_daily_digest(all_articles):
      
      ### 🔹 소스: [7min.ai](해당 소스/뉴스레터의 URL)
      * **기사 제목 3**: 기사 핵심 내용 한 줄 요약
-4. **post_title**: 날짜 없이 핵심 토픽 2-3개 포함한 매력적 제목
+5. **post_title**: 날짜 없이 핵심 토픽 2-3개 포함한 매력적 제목
    (예: "메타 로봇 스타트업 인수, MCP 보안 취약점 발견, Grok 4.3 출시")
-5. **top_topics**: 상위 3개 토픽 키워드 배열 (태그용)
+6. **top_topics**: 상위 3개 토픽 키워드 배열 (태그용)
 """
     data = call_llm_with_retry(prompt, DAILY_DIGEST_SCHEMA, label="Daily Digest")
     if not data:
