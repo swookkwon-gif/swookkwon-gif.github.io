@@ -11,6 +11,18 @@ from google import genai
 from google.genai import types
 from googleapiclient.discovery import build
 from dotenv import load_dotenv
+from urllib.parse import urlparse, urlunparse, parse_qsl, urlencode
+
+def clean_url(url):
+    """URL에서 utm_으로 시작하는 파라미터를 제거한다."""
+    try:
+        parsed = urlparse(url)
+        query_params = parse_qsl(parsed.query, keep_blank_values=True)
+        cleaned_params = [(k, v) for k, v in query_params if not k.lower().startswith('utm_')]
+        cleaned_query = urlencode(cleaned_params)
+        return urlunparse(parsed._replace(query=cleaned_query))
+    except Exception:
+        return url
 
 from state_manager import is_processed, mark_processed, save_evaluations
 from auth import authenticate_gmail
@@ -177,7 +189,8 @@ def collect_rss_articles(feeds):
         
         for entry in parsed_feed.entries:
             try:
-                url_id = entry.get('link', entry.get('id', ''))
+                raw_url = entry.get('link', entry.get('id', ''))
+                url_id = clean_url(raw_url)
                 if not url_id or is_processed("rss", url_id):
                     continue
                     
@@ -204,7 +217,7 @@ def collect_rss_articles(feeds):
                     "feed_name": feed['name'],
                     "id": url_id,
                     "title": title,
-                    "link": entry.get('link', ''),
+                    "link": url_id,
                     "content": content
                 })
             except Exception as e:
@@ -288,7 +301,12 @@ def get_email_body(payload, max_length=15000):
             if data:
                 html_code = base64.urlsafe_b64decode(data).decode('utf-8', 'ignore')
                 # Preserve links: convert <a href="URL">text</a> to "text (Link: URL)"
-                html_code = re.sub(r'<a\s+[^>]*href=["\'](https?://[^"\']+)["\'][^>]*>(.*?)</a>', r'\2 (Link: \1)', html_code, flags=re.IGNORECASE|re.DOTALL)
+                def _remove_utm_from_a(match):
+                    link = clean_url(match.group(1))
+                    text = match.group(2)
+                    return f"{text} (Link: {link})"
+                
+                html_code = re.sub(r'<a\s+[^>]*href=["\'](https?://[^"\']+)["\'][^>]*>(.*?)</a>', _remove_utm_from_a, html_code, flags=re.IGNORECASE|re.DOTALL)
                 # Strip remaining HTML tags
                 clean_text = re.sub(r'<[^>]+>', ' ', html_code)
                 # Collapse multiple spaces and newlines
