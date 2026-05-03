@@ -17,11 +17,15 @@ STATE_FILE = os.path.join(os.path.dirname(__file__), 'state.json')
 # ============ Utilities ============
 
 def clean_url(url):
-    """URL에서 utm_으로 시작하는 트래킹 파라미터를 제거한다."""
+    """URL에서 utm_ 파라미터를 제거하고, ?amp 이후를 통째로 삭제한다."""
     try:
+        if '?amp' in url:
+            url = url.split('?amp')[0]
+        elif '&amp' in url:
+            url = url.split('&amp')[0]
         parsed = urlparse(url)
         query_params = parse_qsl(parsed.query, keep_blank_values=True)
-        cleaned_params = [(k, v) for k, v in query_params if not k.lower().startswith('utm_')]
+        cleaned_params = [(k, v) for k, v in query_params if not k.lower().startswith('utm_') and not k.lower().startswith('amp')]
         cleaned_query = urlencode(cleaned_params)
         return urlunparse(parsed._replace(query=cleaned_query))
     except Exception:

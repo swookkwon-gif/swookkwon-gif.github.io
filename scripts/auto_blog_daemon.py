@@ -14,11 +14,17 @@ from dotenv import load_dotenv
 from urllib.parse import urlparse, urlunparse, parse_qsl, urlencode
 
 def clean_url(url):
-    """URL에서 utm_으로 시작하는 파라미터를 제거한다."""
+    """URL에서 utm_으로 시작하는 파라미터를 제거하고, ?amp 이후를 통째로 삭제한다."""
     try:
+        # ?amp 또는 &amp가 등장하면 그 부분부터 문자열을 자릅니다 (이후 모든 파라미터 삭제)
+        if '?amp' in url:
+            url = url.split('?amp')[0]
+        elif '&amp' in url:
+            url = url.split('&amp')[0]
+            
         parsed = urlparse(url)
         query_params = parse_qsl(parsed.query, keep_blank_values=True)
-        cleaned_params = [(k, v) for k, v in query_params if not k.lower().startswith('utm_')]
+        cleaned_params = [(k, v) for k, v in query_params if not k.lower().startswith('utm_') and not k.lower().startswith('amp')]
         cleaned_query = urlencode(cleaned_params)
         return urlunparse(parsed._replace(query=cleaned_query))
     except Exception:
@@ -527,8 +533,8 @@ def merge_and_create_daily_digest(all_articles):
    - 포스트 최상단에 전체 메인 제목(H1, `# 제목`)을 절대 쓰지 마세요.
    - 각 뉴스: `## 순번. 제목` (예: `## 1. 메타 로봇 스타트업 인수`)
    - 본문 2-4문장 + 핵심 수치가 있으면 불릿으로 강조
-   - 뉴스 하단 출처 표기 (본문과 한 줄 띄우고 작성):
-     `**소스:** 7min.ai · AITimes &nbsp;|&nbsp; 🔗 [원문 보기](URL)`
+   - 뉴스 하단 출처 표기 (본문과 한 줄 띄우고, 반드시 <small> 태그로 감싸서 작성):
+     `<small>**소스:** 7min.ai · AITimes &nbsp;|&nbsp; 🔗 [원문 보기](URL)</small>`
    - 뉴스 사이 `---` 구분선
    - 하단에 C등급 단신은 `## 기타 뉴스 요약` 마크다운 테이블
 4. **post_title**: 날짜 없이 핵심 토픽 2-3개 포함한 매력적 제목
