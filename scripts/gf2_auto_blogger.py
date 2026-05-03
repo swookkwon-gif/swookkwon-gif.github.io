@@ -2,15 +2,37 @@ import os
 import sys
 import re
 import json
+import time
 from datetime import datetime, timezone, timedelta
 from google import genai
 from google.genai import types
 from dotenv import load_dotenv
+from urllib.parse import urlparse, urlunparse, parse_qsl, urlencode
 
 load_dotenv(os.path.join(os.path.dirname(__file__), '..', '.env.local'))
 
 POSTS_DIR = os.path.join(os.path.dirname(__file__), '..', 'content', 'posts', '2. AI News')
 STATE_FILE = os.path.join(os.path.dirname(__file__), 'state.json')
+
+# ============ Utilities ============
+
+def clean_url(url):
+    """URL에서 utm_으로 시작하는 트래킹 파라미터를 제거한다."""
+    try:
+        parsed = urlparse(url)
+        query_params = parse_qsl(parsed.query, keep_blank_values=True)
+        cleaned_params = [(k, v) for k, v in query_params if not k.lower().startswith('utm_')]
+        cleaned_query = urlencode(cleaned_params)
+        return urlunparse(parsed._replace(query=cleaned_query))
+    except Exception:
+        return url
+
+def clean_all_urls_in_text(text):
+    """마크다운 텍스트 내 모든 URL에서 utm 파라미터를 제거한다."""
+    def _replace(match):
+        return match.group(0).replace(match.group(1), clean_url(match.group(1)))
+    return re.sub(r'\]\((https?://[^\)]+)\)', _replace, text)
+
 
 def load_recent_covered_news(days=2):
     covered_news = []
@@ -37,6 +59,53 @@ def load_recent_covered_news(days=2):
         print(f"상태 파일 로드 중 오류: {e}")
         
     return list(set([news for news in covered_news if news]))
+
+# ============ Main Pipeline ============
+
+MODELS_TO_TRY = ['gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-1.5-flash']
+
+def call_gemini_streaming(client, prompt):
+    """SDK 스트리밍 방식으로 Gemini를 호출한다. 타임아웃 문제를 근본적으로 해결."""
+    for attempt in range(3):
+        for model_name in MODELS_TO_TRY:
+            try:
+                print(f"      [{attempt+1}/3] '{model_name}' 스트리밍 호출 중...")
+                response_text = ""
+                for chunk in client.models.generate_content_stream(
+                    model=model_name,
+                    contents=prompt,
+                    config=types.GenerateContentConfig(
+                        temperature=0.4,
+                        tools=[types.Tool(google_search=types.GoogleSearch())],
+                    ),
+                ):
+                    if chunk.text:
+                        response_text += chunk.text
+                
+                if response_text:
+                    print(f"      ✅ '{model_name}' 응답 완료 ({len(response_text):,}자)")
+                    return response_text
+                else:
+                    print(f"      ⚠️ '{model_name}' 빈 응답. 다른 모델 시도...")
+                    continue
+                    
+            except Exception as e:
+                err_msg = str(e)
+                if any(x in err_msg for x in ["429", "RESOURCE_EXHAUSTED", "503", "UNAVAILABLE"]):
+                    print(f"      ⚠️ '{model_name}' 할당량 초과/서버 에러. 다른 모델 시도...")
+                    continue
+                elif "timeout" in err_msg.lower() or "timed out" in err_msg.lower():
+                    print(f"      ⚠️ '{model_name}' 타임아웃. 다른 모델 시도...")
+                    continue
+                else:
+                    print(f"      ❌ '{model_name}' 예상 외 에러: {e}")
+                    continue
+        
+        print(f"      [대기] 모든 모델 실패. 30초 후 재시도... ({attempt+1}/3)")
+        time.sleep(30)
+    
+    return None
+
 
 def run_gemini_search_blogger():
     print(f"==================================================")
@@ -74,6 +143,7 @@ def run_gemini_search_blogger():
 4. Top 10 주요 뉴스 및 중요도 평가 테이블 (반드시 마크다운 표 형식 사용):
    - 포스트 하단에 추출된 10개의 뉴스를 나열하는 마크다운 테이블(표)을 생성해. (컬럼: 순위, 기사 제목, 중요도 점수, 선정 사유)
    - 이 중 앞서 다룬 3가지가 왜 Top 3로 선정되었는지, 그리고 나머지 기사들은 왜 순위가 밀렸는지 '선정 사유'에 매우 구체적인 논거를 들어 기술해. (단순히 '중요하다'가 아니라, 예를 들어 '6천억 달러 규모의 펀딩 지연이 국방부의 일상적인 AI 도입 뉴스보다 산업적 파급력이 훨씬 크기 때문'과 같이 구체적인 비교 우위와 자본/기술적 파급력을 기준으로 중요도를 평가할 것). 텍스트가 깨지지 않도록 표 내부의 줄바꿈은 `<br>` 태그를 사용해.
+5. **엄격한 팩트 준수**: 절대 배경 지식이나 상상으로 사실을 만들어내지 마세요. 오직 검색 결과에서 확인된 사실과 수치만 기재하세요.
 6. 레퍼런스 및 주석:
    - 본문 내에서 참고한 기사를 인용할 때는 마크다운 표준 주석 문법인 `[^1]` 형태를 사용하여 클릭 시 하단으로 스크롤 되도록 작성해.
    - 포스트 가장 하단에는 본문에 사용된 주석 번호 1번부터 순서대로 정렬하여 `[^1]: [기사 제목](URL)` 형태의 목록으로 명확하게 제공해.
@@ -81,64 +151,25 @@ def run_gemini_search_blogger():
 7. 어조: 해요체/하십시오체를 쓰지 말고 전문적인 테크 저널 목록형 어조(~이다, ~한다)를 사용할 것.
 """
     
-    # 3. Gemini 2.5 Flash + Google Search Grounding 호출 중... (REST API)
-    print(f"\n[Step 2] Gemini 2.5 Flash + Google Search Grounding 호출 중... (REST API)")
+    # 3. Gemini SDK 스트리밍 호출 (타임아웃 방지)
+    print(f"\n[Step 2] Gemini + Google Search Grounding 스트리밍 호출 중...")
     api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
         print("❌ GEMINI_API_KEY 환경 변수가 설정되지 않았습니다.")
         return
     api_key = api_key.strip().strip('"').strip("'")
-        
-    import requests
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={api_key}"
     
-    payload = {
-        "contents": [{"parts": [{"text": prompt}]}],
-        "tools": [{"googleSearch": {}}],
-        "generationConfig": {
-            "temperature": 0.4
-        }
-    }
+    client = genai.Client(api_key=api_key)
+    article_content = call_gemini_streaming(client, prompt)
     
-    data = None
-    max_retries = 3
-    for attempt in range(max_retries):
-        try:
-            print(f"      [요청 {attempt+1}/{max_retries}] Gemini API 요청 중 (Timeout: 300s)...")
-            response = requests.post(url, json=payload, headers={'Content-Type': 'application/json'}, timeout=300)
-            response.raise_for_status()
-            data = response.json()
-            break
-        except Exception as e:
-            print(f"      ❌ 시도 {attempt+1} 실패: {e}")
-            if attempt < max_retries - 1:
-                print("      -> 30초 대기 후 재시도...")
-                time.sleep(30)
-            else:
-                print("❌ 최종 실패. Gemini API 호출 에러.")
-                return
-        
-    article_content = ""
-    if "candidates" in data and len(data["candidates"]) > 0:
-        candidate = data["candidates"][0]
-        
-        # 짤림 방지: 비정상 종료 시 에러 처리
-        if candidate.get('finishReason') != 'STOP':
-            print(f"❌ 생성 중단됨 (Finish Reason: {candidate.get('finishReason')})")
-            return
-                
-            parts = candidate.get("content", {}).get("parts", [])
-            for part in parts:
-                article_content += part.get("text", "")
-    except Exception as e:
-        print(f"❌ Gemini API 호출 에러: {e}")
-        return
-        
     if not article_content:
-        print("❌ 응답 텍스트가 없습니다.")
+        print("❌ 모든 재시도 실패. 포스트 생성을 중단합니다.")
         return
         
-    # 4. 마크다운 파일 저장
+    # 4. URL 정리 (utm 파라미터 제거)
+    article_content = clean_all_urls_in_text(article_content)
+    
+    # 5. 마크다운 파일 저장
     print(f"\n[Step 3] 블로그 업로드용 파일 저장")
     slug_name = "daily-ai-top3-news"
     file_name = f"{now_kst.strftime('%Y-%m-%d')}-{slug_name}.md"
@@ -171,7 +202,6 @@ categories:
   - AI News
 tags:
   - Deep Research
-  - Gemini 2.0 Flash
   - Google Search Grounding
   - Daily Top 3
 ---
@@ -182,7 +212,7 @@ tags:
     with open(file_path, 'w', encoding='utf-8') as f:
         f.write(final_content)
         
-    print(f"🎉 성공적으로 Gemini 2.5 무인 블로그 포스트가 생성되었습니다!")
+    print(f"🎉 성공적으로 Gemini 무인 블로그 포스트가 생성되었습니다!")
     print(f"📁 위치: {file_path}")
 
 if __name__ == "__main__":
