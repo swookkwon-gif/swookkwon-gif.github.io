@@ -21,15 +21,22 @@ tags:
 
 ## 1. 원본 스탠퍼드 마시멜로 실험의 숨겨진 맹점
 
-1960년대 말에서 1970년대 초, 월터 미셸(Walter Mischel) 교수가 이끈 원래의 스탠퍼드 마시멜로 실험은 심리학 역사상 가장 유명한 실험 중 하나입니다. 하지만 이 연구가 가진 **'표본의 편향성'**은 오랫동안 대중에게 알려지지 않았습니다.
+1970년, 월터 미셸(Walter Mischel) 교수와 에브 에베센(Ebbe B. Ebbesen)이 국제학술지 *Journal of Personality and Social Psychology*에 최초로 발표한 스탠퍼드 마시멜로 실험은 심리학 역사상 가장 유명한 실험 중 하나입니다. 이후 1990년 미셸 교수의 후속 논문에서 "유아기의 만족 지연 능력이 청소년기의 SAT 점수 및 인지 능력과 직결된다"는 결과가 발표되면서 이 실험은 폭발적인 관심을 받게 됩니다. 하지만 이 연구가 가진 **'표본의 편향성'**은 오랫동안 대중에게 알려지지 않았습니다.
 
 원본 실험에 참가한 약 90명의 아이들은 대부분 **스탠퍼드 대학교 교내 어린이집(Bing Nursery School)에 다니는 교직원 및 대학원생들의 자녀**들이었습니다. 즉, 실험 대상의 대다수가 이미 고학력, 고소득 부모를 둔 매우 동질적이고 부유한 집단이었습니다. 
 
 이러한 제한된 표본은 '사회경제적 지위(SES, Socioeconomic Status)'라는 가장 거대한 독립 변수를 통제하지 못하는 결과를 낳았습니다. 부모의 재력, 가정의 안정성, 교육 수준 등 아이의 미래를 결정짓는 핵심 환경 요소들을 무시한 채, 오직 '마시멜로를 참는 개인의 의지력'만이 성공의 열쇠라고 결론지은 것입니다.
 
-## 2. 2018년 재현 연구: 의지력이 아니라 '환경'이었다
+### 과거의 무비판적 수용과 전파
+2018년 재현 연구가 나오기 전까지 약 40년 동안, 이 논문은 의심할 여지 없는 '과학적 진리'로 받아들여졌습니다. 
+* **글로벌 사례:** 뉴욕타임스의 유명 칼럼니스트 데이비드 브룩스(David Brooks)는 이 실험을 인용해 성격과 인내심이 계층 이동의 핵심이라고 주장했고, 대니얼 골먼(Daniel Goleman)의 세계적인 베스트셀러 《감성지능(Emotional Intelligence)》에서도 이 실험을 감정 통제력의 대표적 사례로 비중 있게 다루었습니다. 심지어 월터 미셸 교수 본인도 2014년 《마시멜로 테스트》라는 대중서를 출간하며 이 믿음을 더욱 공고히 했습니다.
+* **한국 사례:** 한국에서도 수많은 자기계발서와 자녀 교육서에서 이 실험을 절대적인 법칙처럼 인용했습니다. 부모들은 자녀의 집중력과 성공을 위해 억지로 인내심 훈련을 시켰고, 학교나 기업의 교육 프로그램에서도 "참는 자가 승리한다"는 논리를 뒷받침하는 단골 소재로 쓰였습니다.
 
-수십 년이 지난 2018년, 뉴욕대(NYU)의 타일러 와츠(Tyler W. Watts)와 UC 어바인(UC Irvine)의 그렉 던컨(Greg J. Duncan) 등은 이 전설적인 실험을 다시 검증하는 [개념적 재현 연구(Conceptual Replication)](https://journals.sagepub.com/doi/10.1177/0956797618761661)를 국제학술지 *Psychological Science*에 발표했습니다.
+## 2. 2018년 재현 연구: 왜 다시 실험했을까?
+
+2010년대 이후 심리학계에는 과거의 유명한 실험들이 다른 표본과 환경에서는 동일하게 나타나지 않는 이른바 **'재현성 위기(Replication Crisis)'**가 큰 화두로 떠올랐습니다. 또한, 2008년 금융위기 이후 소득 불평등이 전 세계적으로 심화되면서, 학계에서는 개인의 '의지력'보다는 '환경과 구조적 요인(SES)'이 인간의 발달에 미치는 영향에 더 주목하기 시작했습니다. 
+
+이러한 맥락 속에서 2018년, 뉴욕대(NYU)의 타일러 와츠(Tyler W. Watts)와 UC 어바인(UC Irvine)의 그렉 던컨(Greg J. Duncan) 등은 과연 "마시멜로를 참는 능력이 부유층 자녀뿐만 아니라 모든 계층의 아이들에게 똑같이 기적을 발휘하는가?"라는 의문을 품고 [개념적 재현 연구(Conceptual Replication)](https://journals.sagepub.com/doi/10.1177/0956797618761661)를 국제학술지 *Psychological Science*에 발표하게 됩니다.
 
 이들은 원본 연구의 한계를 극복하기 위해 인종, 부모의 학력, 소득 수준이 다양한 **900명 이상의 대표성 있는 표본**을 대상으로 실험을 진행했습니다. 그리고 부모의 소득, 가정 환경, 초기 인지 능력 등의 변수를 통제(Control)한 상태에서 데이터를 분석했습니다.
 
@@ -44,7 +51,7 @@ tags:
 그렇다면 왜 사회경제적 지위(SES)가 낮은 환경의 아이들은 마시멜로를 더 빨리 먹어치웠을까요? 이는 결코 그들의 의지력이나 지적 능력이 부족해서가 아닙니다. 행동경제학과 인지심리학은 이를 **'합리적 생존 전략'**으로 설명합니다.
 
 * **환경에 대한 신뢰 (Trust in the Environment):** 부유하고 안정적인 환경에서 자란 아이들은 "나중에 2개를 주겠다"는 어른의 약속이 지켜질 것이라는 강력한 믿음이 있습니다. 반면, 불안정한 환경(가난, 잦은 이사, 결손 가정 등)에서 자란 아이들은 어른의 약속이 깨지는 것을 수없이 경험합니다. 이들에게 나중에 올 2개의 마시멜로는 '불확실한 신기루'일 뿐이며, **지금 눈앞에 있는 1개를 당장 먹어 치우는 것이 생존에 훨씬 유리한 합리적 선택**입니다.
-* **희소성 마인드셋 (Scarcity Mindset):** 하버드대 센딜 멀라이너선(Sendhil Mullainathan) 교수의 연구에 따르면, 결핍(가난)은 인간의 인지적 대역폭(Cognitive Bandwidth)을 크게 갉아먹습니다. 당장의 생존과 결핍을 해결하는 데 뇌의 리소스가 집중되기 때문에, 먼 미래를 위한 '만족 지연'에 에너지를 쏟을 여력이 물리적으로 부족해집니다. 
+* **희소성 마인드셋 (Scarcity Mindset)과 농부 실험:** 2013년, 하버드대 센딜 멀라이너선(Sendhil Mullainathan) 교수와 프린스턴대 엘다 샤퍼(Eldar Shafir) 교수 연구팀은 국제학술지 *Science*에 [Poverty Impedes Cognitive Function](https://www.science.org/doi/10.1126/science.1238041)이라는 기념비적인 논문을 발표했습니다. 이들은 인도 사탕수수 농부들을 대상으로 수확 직전(가장 가난하고 빚에 시달릴 때)과 수확 직후(돈이 풍족할 때)의 인지 능력을 동일 인물을 대상으로 각각 측정했습니다. 그 결과, **동일한 농부임에도 가난할 때의 유동성 지능과 인지 통제력이 수확 후보다 현저히 떨어졌으며, 이는 무려 아이큐(IQ) 13점 하락과 맞먹는 수준**이었습니다. 즉, 결핍(가난)은 인간의 인지적 대역폭(Cognitive Bandwidth)을 크게 갉아먹습니다. 당장의 생존을 걱정하고 빚을 돌려막는 데 뇌의 리소스가 집중되기 때문에, 먼 미래를 위한 '만족 지연'에 에너지를 쏟을 여력이 물리적으로 부족해지는 것입니다.
 
 ## 4. 《마시멜로 이야기》와 한국 사회의 씁쓸한 단면
 
@@ -66,7 +73,10 @@ tags:
 
 ## 📚 참고자료
 
-- Watts, T. W., Duncan, G. J., & Quan, H. (2018). *Revisiting the Marshmallow Test: A Conceptual Replication Investigating Links Between Early Delay of Gratification and Later Outcomes*. Psychological Science, 29(7), 1159-1177.
+- Mischel, W., & Ebbesen, E. B. (1970). *Attention in delay of gratification*. Journal of Personality and Social Psychology, 16(2), 329–337. ([논문 보기](https://psycnet.apa.org/record/1971-00055-001))
+- Shoda, Y., Mischel, W., & Peake, P. K. (1990). *Predicting adolescent cognitive and self-regulatory competencies from preschool delay of gratification: Identifying diagnostic conditions*. Developmental Psychology, 26(6), 978–986. ([논문 보기](https://psycnet.apa.org/record/1991-05705-001))
+- Watts, T. W., Duncan, G. J., & Quan, H. (2018). *Revisiting the Marshmallow Test: A Conceptual Replication Investigating Links Between Early Delay of Gratification and Later Outcomes*. Psychological Science, 29(7), 1159-1177. ([논문 보기](https://journals.sagepub.com/doi/10.1177/0956797618761661))
+- Mani, A., Mullainathan, S., Shafir, E., & Zhao, J. (2013). *Poverty Impedes Cognitive Function*. Science, 341(6149), 976-980. ([논문 보기](https://www.science.org/doi/10.1126/science.1238041))
 - Mullainathan, S., & Shafir, E. (2013). *Scarcity: Why Having Too Little Means So Much*. Times Books.
 - Kidd, C., Palmeri, H., & Aslin, R. N. (2013). *Rational snacking: Young children’s decision-making on the marshmallow task is moderated by beliefs about environmental reliability*. Cognition, 126(1), 109-114.
 - 호아킴 데 포사다 (2005). 《마시멜로 이야기》. 한경BP. (및 관련 대리번역 사태 언론 보도)
