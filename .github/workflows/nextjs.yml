@@ -11,7 +11,7 @@ on:
 
   # Trigger when the daemon jobs finish
   workflow_run:
-    workflows: ["Daily AI Blog Daemon", "Weekly AI Summary"]
+    workflows: ["Daily AI Blog Daemon", "Weekly AI Summary", "Daily AI Digest (Phase 3 — Merge & Publish)"]
     types:
       - completed
 
