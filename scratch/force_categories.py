@@ -5,9 +5,9 @@ POSTS_DIR = "/Users/wook/WookAi/Booklog/content/posts"
 
 dir_to_cat = {
     "Marketing": "Marketing",
-    "2. AI News": "AI News",
-    "3. AI Learnings": "AI Learnings",
-    "4. Career": "Career",
+    "AI News": "AI News",
+    "AI Learnings": "AI Learnings",
+    "Data": "Data",
 }
 
 for root, _, files in os.walk(POSTS_DIR):

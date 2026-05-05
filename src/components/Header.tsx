@@ -22,7 +22,6 @@ export default function Header({ lang }: { lang: string }) {
           <Link href={`/${lang}/category/ai-news`} className="hover:text-blue-600 transition-colors">AI News</Link>
           <Link href={`/${lang}/category/ai-learnings`} className="hover:text-blue-600 transition-colors">AI Learnings</Link>
           <Link href={`/${lang}/category/data`} className="hover:text-blue-600 transition-colors">Data</Link>
-          <Link href={`/${lang}/category/career`} className="hover:text-blue-600 transition-colors">Career</Link>
           <LanguageSwitcher currentLang={lang} />
         </nav>
         
@@ -46,7 +45,6 @@ export default function Header({ lang }: { lang: string }) {
           <Link href={`/${lang}/category/ai-news`} onClick={() => setIsMobileMenuOpen(false)} className="hover:text-blue-600 py-2 border-b border-gray-50">AI News</Link>
           <Link href={`/${lang}/category/ai-learnings`} onClick={() => setIsMobileMenuOpen(false)} className="hover:text-blue-600 py-2 border-b border-gray-50">AI Learnings</Link>
           <Link href={`/${lang}/category/data`} onClick={() => setIsMobileMenuOpen(false)} className="hover:text-blue-600 py-2 border-b border-gray-50">Data</Link>
-          <Link href={`/${lang}/category/career`} onClick={() => setIsMobileMenuOpen(false)} className="hover:text-blue-600 py-2">Career</Link>
         </div>
       )}
     </header>
