@@ -24,43 +24,115 @@ Performance Max(PMax). AI Max. 자동 입찰. 광범위 검색(Broad Match). 구
 
 ## 1. Performance Max의 구조적 문제: "블랙박스가 당신의 돈을 쓰는 법"
 
-### 🎯 문제 1: 브랜드 키워드 잠식 (Brand Cannibalization)
+### 🎯 문제 1: 브랜드 키워드 잠식 — 업계 데이터가 말하는 불편한 진실
 
-PMax는 검색, 쇼핑, 유튜브, 디스플레이, 디스커버, 지메일, 맵스 — 구글의 모든 인벤토리에 걸쳐 자동으로 광고를 배포합니다. 그런데 PMax의 AI는 **'전환을 극대화(Maximize Conversions)'**하도록 설계되어 있습니다.
+PMax는 검색, 쇼핑, 유튜브, 디스플레이, 디스커버, 지메일, 맵스 — 구글의 모든 인벤토리에 걸쳐 자동으로 광고를 배포합니다. PMax의 AI는 **'전환을 극대화(Maximize Conversions)'**하도록 설계되어 있고, 가장 쉽게 전환을 만드는 방법은 **이미 구매하려고 검색한 사람에게 광고를 보여주는 것**입니다.
 
-가장 쉽게 전환을 만드는 방법은 무엇일까요? **이미 당신 브랜드를 알고 있고, 이미 구매하려고 검색한 사람에게 광고를 보여주는 것**입니다.
+이것이 바로 **브랜드 키워드 잠식(Brand Cannibalization)**입니다. 그리고 이 문제의 규모는 추측이 아니라 **데이터로 확인된 사실**입니다.
 
-이것이 바로 **브랜드 키워드 잠식(Brand Cannibalization)**입니다.
+#### 📊 Optmyzr 연구 (2024): "90% 이상의 계정에서 잠식 발생"
 
-PMax는 "eBay 운동화", "나이키 공식몰", "삼성 갤럭시 구매" 같은 브랜드 검색어에 자동으로 입찰합니다. 이 사용자들은 광고가 없어도 자연 검색으로 사이트에 방문했을 사람들입니다. 하지만 PMax가 먼저 그들을 가로챈 뒤, 대시보드에 **"이 전환은 PMax가 만든 것입니다"**라고 보고합니다.
+구글 광고 최적화 플랫폼 Optmyzr는 수천 개의 Google Ads 계정을 분석한 결과, **전체 계정의 90% 이상**에서 PMax와 기존 검색 캠페인 간 키워드 중복(Search Term Overlap)이 발생하고 있음을 확인했습니다. 이는 예외적 상황이 아니라 **구조적 기본값(Default)**입니다.
 
-결과적으로:
-- **PMax의 ROAS는 부풀려집니다** (이미 올 사람을 잡은 것이므로)
-- **총 매출에는 기여가 없거나 미미합니다**
-- **브랜드 검색 캠페인과 예산이 중복됩니다**
+> *출처: Optmyzr, "Performance Max vs. Search: The Overlap Problem" (2024)*
+
+#### 📊 Adalysis 연구 (2024): "PMax vs Search, 누가 더 잘하는가?"
+
+구글 광고 분석 도구 Adalysis는 PMax와 Search 캠페인이 동일한 검색어에서 경쟁하는 상황을 대규모로 분석했습니다. 결과는 충격적입니다.
+
+| 비교 항목 | Search 캠페인 우위 비율 | PMax 우위 비율 |
+|----------|-------------------|-------------|
+| **전환율(CVR)** | **84%** | 16% |
+| **전환 가치** | **84%** | 16% |
+| **클릭률(CTR)** | **65%** | 35% |
+| **노출수(Impressions)** | 39% | **61%** |
+
+이 데이터가 보여주는 구조를 분석하면:
+
+1. **PMax가 노출을 더 많이 가져갑니다(61%)** — AI가 예산을 적극적으로 소진하기 때문
+2. **그러나 전환율은 Search 캠페인이 84%의 경우에서 우월합니다** — 정확한 키워드 매칭이 더 효과적
+3. **결론:** PMax는 Search가 이미 더 잘하고 있는 트래픽을 빼앗아, 더 낮은 효율로 처리하고, 대시보드에는 "제가 이 전환을 만들었습니다"라고 보고합니다
+
+> *출처: Adalysis, "Search vs PMax Performance Comparison" (2024)*
+
+#### 📊 Adalysis 추가 발견: "67%의 PMax 캠페인이 Search와 중복"
+
+같은 연구에서 Adalysis는 분석 대상 PMax 캠페인의 **약 67%**가 기존 Search 캠페인의 키워드와 검색어 수준에서 중복을 보이고 있음을 확인했습니다. 이 중복이 발생하면:
+
+- **PMax가 보고하는 ROAS는 실제보다 부풀려집니다** (이미 올 사람을 잡은 것이므로)
+- **총 매출에는 기여가 없거나 미미합니다** (전체 계정 매출이 동일한데 PMax만 좋아 보임)
+- **브랜드 검색 캠페인의 전환이 감소합니다** (PMax에 빼앗기므로)
 - **광고비는 증가하지만, 실제 신규 고객 획득은 제자리입니다**
 
-### 🎯 문제 2: 유튜브·디스플레이의 저품질 인벤토리
+```mermaid
+flowchart LR
+    A["사용자: '나이키 공식몰' 검색"] --> B{"구글 광고 시스템"}
+    B -->|"기존 방식"| C["브랜드 검색 캠페인\nCPC ₩200 | CVR 8%"]
+    B -->|"PMax 잠식"| D["PMax 캠페인\nCPC ₩350 | CVR 5%"]
+    C --> E["전환 발생\n(Search 성과로 기록)"]
+    D --> F["전환 발생\n(PMax 성과로 기록)"]
+    E --> G["실제 증분: 동일한 전환"]
+    F --> G
+    style D fill:#ff6b6b,color:#fff
+    style F fill:#ff6b6b,color:#fff
+```
 
-PMax가 영상과 배너 광고를 배포할 때, 어디에 노출되는지 광고주가 완전히 통제할 수 없습니다. 이 '블랙박스' 구조 속에서 흔히 발생하는 문제들이 있습니다.
+### 🎯 문제 2: 유튜브·디스플레이의 저품질 인벤토리 — MFA 사이트의 함정
 
-- **MFA(Made for Advertising) 사이트:** 광고 수익만을 목적으로 만들어진 저품질 웹사이트에 노출
-- **유튜브 키즈 채널·무관련 콘텐츠:** 타겟 고객과 무관한 영상에 광고 게재
-- **기존 고객 리타게팅 과잉:** 이미 구매한 고객에게 동일 제품 광고를 반복 노출
+PMax가 영상과 배너 광고를 배포할 때, **어디에 노출되는지 광고주가 완전히 통제할 수 없습니다.** 이 '블랙박스' 구조에서 가장 심각한 문제는 **MFA(Made for Advertising) 사이트**입니다.
 
-구글은 2024~2025년에 걸쳐 게재 위치 제외 기능, 브랜드 제외 리스트 등을 도입했지만, 기본 설정(Default)은 여전히 **"모든 곳에 노출"**입니다. 광고주가 능동적으로 제한을 걸지 않으면, AI는 가장 쉬운 전환(= 이미 아는 사람)을 향해 예산을 투하합니다.
+#### MFA 사이트란?
+
+MFA 사이트는 **광고 수익만을 목적으로 만들어진 저품질 웹사이트**입니다. 자동 생성된 저품질 콘텐츠로 페이지를 채우고, 한 페이지에 수십 개의 광고를 배치하여 광고 노출 수익을 극대화합니다. 이런 사이트에 노출된 광고는:
+
+- **실제 사용자의 관심을 끌지 못합니다** (봇 트래픽 비율이 높음)
+- **브랜드 이미지를 훼손합니다** (광고가 스팸 사이트에 노출됨)
+- **CPM 기준으로는 '저렴'해 보이지만, 전환 기여는 거의 0**입니다
+
+업계 데이터(SpiderAF, 2024)에 따르면, 적극적인 관리 없이 방치된 PMax 캠페인의 디스플레이 예산 중 **상당 부분이 MFA 사이트에 유출**될 수 있습니다. 구글은 2025년에 게재 위치 보고서(Placement Report)와 계정 수준 게재 위치 제외(Account-Level Exclusion) 기능을 강화했지만, **캠페인 수준의 제외는 여전히 불가능**하며, 기본 설정은 여전히 "모든 곳에 노출"입니다.
+
+#### PMax 디스플레이/유튜브 문제 체크리스트
+
+| 문제 유형 | 증상 | 진단 방법 |
+|----------|------|----------|
+| MFA 사이트 노출 | 높은 노출수, 0 전환, 높은 이탈률 | 게재 위치 보고서에서 미확인 도메인 확인 |
+| 유튜브 무관련 채널 | 키즈 채널, 음악 MV 등에 노출 | 유튜브 게재 위치 보고서 확인 |
+| 리타게팅 과잉 | 이미 구매한 고객에게 동일 광고 반복 | GA4에서 전환 경로 분석 |
+| 봇 트래픽 | 비정상적으로 높은 CTR + 0 전환 | 클릭 사기 탐지 도구 활용 |
 
 ### 🎯 문제 3: 구조적 이해충돌 (The Principal-Agent Problem)
 
 여기서 간과하기 쉬운 근본적인 문제가 있습니다.
 
-**구글은 광고 플랫폼이자 동시에 광고 자동화 도구의 제공자입니다.** 즉, 구글은 광고주의 예산을 최적화해 줘야 하는 '에이전트'이면서, 동시에 광고주가 더 많은 돈을 쓸수록 매출이 올라가는 '판매자'입니다.
+**구글은 광고 플랫폼이자 동시에 광고 자동화 도구의 제공자입니다.** 구글은 광고주의 예산을 최적화해 줘야 하는 '에이전트'이면서, 동시에 광고주가 더 많은 돈을 쓸수록 매출이 올라가는 '판매자'입니다.
 
 이것은 경제학에서 **본인-대리인 문제(Principal-Agent Problem)**로 알려진 전형적인 이해충돌 구조입니다.
 
 > **심판이 동시에 한쪽 팀의 감독인 경기에서, 판정의 공정성을 어떻게 보장하겠습니까?**
 
+```mermaid
+flowchart TD
+    A["광고주 (Principal)"] -->|"예산 위탁\n'효율적으로 써주세요'"| B["구글 AI (Agent)"]
+    B -->|"성과 보고\n'ROAS 500%입니다!'"| A
+    B -->|"실제 행동"| C["브랜드 검색 잠식\n+ 충성 고객 타겟팅\n+ 예산 최대 소진"]
+    D["구글 매출"] -->|"광고주가 더 쓸수록\n구글 매출 ↑"| B
+    style C fill:#ff6b6b,color:#fff
+    style D fill:#ffa94d,color:#fff
+```
+
 PMax의 AI가 "예산을 최대한 효율적으로 사용했다"고 보고할 때, 그 효율성의 정의는 **광고주의 실제 매출 증가**가 아니라 **구글 플랫폼 내에서의 전환 수 극대화**에 맞춰져 있을 수 있습니다.
+
+### 🎯 문제 4: AI Max for Search — 새로운 자동화, 동일한 함정
+
+2025~2026년에 걸쳐 구글이 출시한 **AI Max for Search**는 기존 검색 캠페인에 AI 자동화를 더한 제품입니다. 핵심 기능은 **자동 키워드 확장(Automatic Keyword Expansion)**으로, 광고주가 설정한 키워드를 넘어 AI가 "관련이 있다고 판단하는" 검색어로 자동 확장합니다.
+
+이 기능의 위험성:
+
+- **의도하지 않은 검색어 확장:** "프리미엄 가죽 소파"를 타겟팅했는데, AI가 "저렴한 소파 추천"까지 확장
+- **PMax와 동일한 브랜드 잠식 구조:** 브랜드 키워드로의 자동 확장 가능성
+- **Broad Match와의 중첩:** 기존 구문 검색(Phrase Match)·정확 검색(Exact Match) 전략을 무력화
+
+구글은 AI Max를 PMax, Demand Gen과 묶어 **"파워 팩(Power Pack)"**이라는 이름으로 포지셔닝하고 있지만(WordStream, 2026), 업계 전문가들은 이를 **"통제권 포기의 3종 세트"**라고 경고합니다.
 
 ---
 
@@ -165,10 +237,18 @@ AI 시대의 마케터에게 필요한 역량은 더 이상 "AI를 잘 세팅하
 
 ## 📚 참고자료
 
+### 업계 연구 보고서
+- Optmyzr (2024). Performance Max vs. Search: The Overlap Problem — 수천 개 계정 분석 결과 90%+ 중복 확인. ([Optmyzr Blog](https://www.optmyzr.com/blog/))
+- Adalysis (2024). Search vs PMax Performance Comparison — 67% 캠페인 중복, 84% 전환율 우위 데이터. ([Adalysis Blog](https://adalysis.com/blog/))
+- SpiderAF (2024). MFA Sites and Programmatic Ad Fraud — PMax 디스플레이 인벤토리 품질 분석. ([SpiderAF](https://spideraf.com/))
+- Search Engine Land (2023–2025). Performance Max Brand Cannibalization 시리즈. ([Search Engine Land](https://searchengineland.com/))
 
-- Google Performance Max Brand Cannibalization — Industry Reports by Optmyzr, Adalysis, Search Engine Land (2023–2025). ([Search Engine Land](https://searchengineland.com/))
-- Sinan Aral (2020). *The Hype Machine: How Social Media Disrupts Our Elections, Our Economy, and Our Health*. Crown Publishing.
+### 학술 논문
 - Lewis, R. A., & Rao, J. M. (2015). The Unfavorable Economics of Measuring the Returns to Advertising. *Quarterly Journal of Economics*, 130(4), 1941–1973. ([논문 보기](https://doi.org/10.1093/qje/qjv023))
 - Johnson, G. A., Lewis, R. A., & Nubbemeyer, E. I. (2017). Ghost Ads: Improving the Economics of Measuring Online Ad Effectiveness. *Journal of Marketing Research*, 54(6), 867–884.
 - Goldfarb, A., & Tucker, C. (2011). Online Display Advertising: Targeting and Obtrusiveness. *Marketing Science*, 30(3), 389–404.
+
+### 도서 및 기사
+- Sinan Aral (2020). *The Hype Machine: How Social Media Disrupts Our Elections, Our Economy, and Our Health*. Crown Publishing.
 - WordStream (2026). Google's New Power Pack: PMax + Demand Gen + AI Max. ([기사 보기](https://www.wordstream.com/blog/ws/2026/01/15/google-ads-power-pack))
+
