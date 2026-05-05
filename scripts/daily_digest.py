@@ -1,0 +1,286 @@
+#!/usr/bin/env python3
+"""
+daily_digest.py — Phase 3: 통합 데일리 다이제스트 생성
+
+Phase 1(pipeline.py)이 저장한 daily_articles.json과
+Phase 2(gf2_auto_blogger.py)가 저장한 deep_research.json을
+로드하여 단일 통합 포스트를 생성한다.
+
+GitHub Actions에서 호출:
+  python scripts/daily_digest.py
+"""
+import os
+import sys
+import json
+import time
+from datetime import datetime, timezone, timedelta
+
+sys.path.insert(0, os.path.dirname(__file__))
+
+from google import genai
+from google.genai import types
+
+STATE_DIR = os.path.join(os.path.dirname(__file__), 'state')
+DAILY_ARTICLES_PATH = os.path.join(STATE_DIR, 'daily_articles.json')
+DEEP_RESEARCH_PATH = os.path.join(STATE_DIR, 'deep_research.json')
+POSTS_DIR = os.path.join(os.path.dirname(__file__), '..', 'content', 'posts', 'AI News')
+
+
+# ── Utilities ──────────────────────────────────────────────────
+
+def load_json_safe(path: str) -> dict | None:
+    """JSON 파일을 안전하게 로드한다."""
+    if not os.path.exists(path):
+        print(f"   ⚠️ 파일 없음: {path}")
+        return None
+    try:
+        with open(path, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except Exception as e:
+        print(f"   ❌ JSON 로드 실패 ({path}): {e}")
+        return None
+
+
+def clean_json_response(text: str) -> str:
+    """LLM 응답에서 JSON 블록을 추출한다."""
+    text = text.strip()
+    if text.startswith("```json"):
+        text = text[len("```json"):].strip()
+    if text.endswith("```"):
+        text = text[:-len("```")].strip()
+    return text
+
+
+MODELS_TO_TRY = ['gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-1.5-flash-latest']
+
+DIGEST_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "post_title": {"type": "string"},
+        "top_topics": {"type": "array", "items": {"type": "string"}},
+        "markdown_content": {"type": "string"}
+    },
+    "required": ["post_title", "top_topics", "markdown_content"]
+}
+
+
+def call_llm_with_retry(prompt: str, schema: dict, label: str = "LLM") -> dict | None:
+    """LLM 호출 (재시도 + 모델 폴백)."""
+    api_key = os.environ.get("GEMINI_API_KEY")
+    if not api_key:
+        print("   ❌ GEMINI_API_KEY 환경 변수 없음")
+        return None
+    
+    client = genai.Client(api_key=api_key.strip().strip('"').strip("'"))
+
+    for attempt in range(3):
+        for model_name in MODELS_TO_TRY:
+            try:
+                response = client.models.generate_content(
+                    model=model_name,
+                    contents=prompt,
+                    config=types.GenerateContentConfig(
+                        temperature=0.3,
+                        response_mime_type="application/json",
+                        response_schema=schema
+                    )
+                )
+                raw_text = clean_json_response(response.text)
+                return json.loads(raw_text)
+            except json.JSONDecodeError as je:
+                print(f"      ❌ [{label}] JSON 파싱 에러: {je}")
+                time.sleep(10)
+                break
+            except Exception as e:
+                err_msg = str(e)
+                if any(x in err_msg for x in ["429", "RESOURCE_EXHAUSTED", "503", "UNAVAILABLE", "500"]):
+                    print(f"      ⚠️ [{label}] '{model_name}' API 제한. 다른 모델 시도...")
+                    continue
+                else:
+                    print(f"      ❌ [{label}] API 실패: {e}")
+                    return None
+        print(f"      ⏳ [{label}] 모든 모델 실패. 30초 후 재시도... ({attempt+1}/3)")
+        time.sleep(30)
+    return None
+
+
+# ── Main Merge Logic ──────────────────────────────────────────
+
+def merge_and_create_digest():
+    """Phase 1 + Phase 2 데이터를 로드하여 단일 데일리 다이제스트를 생성한다."""
+    now_kst = datetime.now(timezone.utc) + timedelta(hours=9)
+    date_str = now_kst.strftime("%Y-%m-%d")
+
+    print("=======================================================")
+    print("📰 [Phase 3] 통합 데일리 다이제스트 생성")
+    print("=======================================================")
+
+    # ── 1. Phase 1 데이터 로드 ──
+    print("\n📂 Phase 1 데이터 로드 (daily_articles.json)...")
+    articles_data = load_json_safe(DAILY_ARTICLES_PATH)
+    articles = articles_data.get("articles", []) if articles_data else []
+    print(f"   → {len(articles)}건 기사 로드")
+
+    # ── 2. Phase 2 데이터 로드 ──
+    print("\n📂 Phase 2 데이터 로드 (deep_research.json)...")
+    research_data = load_json_safe(DEEP_RESEARCH_PATH)
+    deep_research_md = research_data.get("markdown_content", "") if research_data else ""
+    deep_research_title = research_data.get("title", "") if research_data else ""
+    print(f"   → 딥 리서치 {'있음' if deep_research_md else '없음'}")
+
+    # ── 3. 데이터 유효성 검증 ──
+    if not articles and not deep_research_md:
+        print("\n⚠️ Phase 1, 2 모두 데이터가 없습니다. 포스트 생성을 건너뜁니다.")
+        return
+
+    # ── 4. 통합 다이제스트 생성 ──
+    # 4-A: 딥 리서치만 있고 뉴스레터 기사가 없는 경우 → 딥 리서치만으로 포스트 생성
+    if not articles and deep_research_md:
+        print("\n📝 뉴스레터 기사 없음 — 딥 리서치 단독 포스트 생성")
+        final_md = deep_research_md
+        post_title = deep_research_title or f"Daily Top 3: {now_kst.strftime('%m월 %d일')} 주요 AI 뉴스"
+        save_final_post(date_str, post_title, final_md)
+        return
+
+    # 4-B: 기사가 있는 경우 → LLM으로 통합 다이제스트 생성
+    quality_articles = [a for a in articles if a.get("score", 0) >= 3]
+    low_articles = [a for a in articles if a.get("score", 0) < 3]
+    source_names = sorted(set(a.get("source_name", "Unknown") for a in articles))
+
+    print(f"\n📝 통합 다이제스트 생성 중...")
+    print(f"   총 {len(articles)}개 기사 (3점 이상: {len(quality_articles)}개, 미만: {len(low_articles)}개)")
+    print(f"   소스: {', '.join(source_names)}")
+
+    articles_json = json.dumps(quality_articles, ensure_ascii=False, indent=2)
+    low_json = json.dumps(
+        [{"title": a["title"], "source_name": a.get("source_name",""), "score": a["score"]} for a in low_articles],
+        ensure_ascii=False
+    ) if low_articles else "[]"
+
+    deep_research_section = ""
+    if deep_research_md:
+        deep_research_section = f"""
+
+[Deep Research — 오늘의 Top 3 심층 분석]
+아래는 구글 검색 기반 딥 리서치로 작성된 오늘의 Top 3 뉴스 심층 분석입니다.
+이 내용을 포스트 **가장 상단**에 배치하세요 (있는 그대로 포함, 수정하지 말 것):
+
+{deep_research_md}
+"""
+
+    prompt = f"""
+당신은 AI 데일리 다이제스트 수석 편집장입니다.
+아래는 여러 소스에서 수집 + 분석한 AI 뉴스 기사 목록과 딥 리서치 결과입니다.
+이를 하나의 통합 일간 뉴스 포스트(마크다운 본문)로 재구성하세요.
+{deep_research_section}
+
+[3점 이상 주요 기사]
+{articles_json}
+
+[3점 미만 단신 (하단 기타 뉴스용)]
+{low_json}
+
+[통합 규칙]
+0. **URL 위생 규칙**: 원문 링크로 `substack.com/redirect/...`, `google.com/url?...`, `t.co/...` 등 리다이렉트/트래커 URL을 절대 사용하지 마세요. 반드시 최종 목적지 URL만 사용합니다.
+0. **엄격한 팩트 준수**: 제공된 JSON 데이터(제목, 요약, 수치 등)에 없는 외부 지식을 절대로 덧붙이거나 환각(Hallucination)을 통해 상상해서 지어내지 마세요. 철저하게 주어진 텍스트 내용 안에서만 병합하세요.
+1. **포스트 구성**:
+   - 딥 리서치 Top 3가 있으면 포스트 **최상단**에 배치 (원문 그대로).
+   - 이어서 뉴스레터/RSS 기사 기반 "📰 뉴스레터 주요 뉴스" 섹션 작성.
+2. **중복 뉴스 병합**: 같은 사건/발표를 다루는 기사들(keywords가 유사)을 하나로 합침.
+   - 병합 시 모든 소스 이름을 "소스: A · B · C" 형태로 표기 (볼드체 없이)
+   - 가장 상세한 summary를 기준으로 작성
+3. **중요도 기반 Top 10 선별 및 정렬**:
+   - 뉴스레터/RSS에서 수집된 기사 중 중요도를 평가하여 **상위 10개 기사만** 메인 뉴스로 작성.
+   - 각 기사의 제목에는 아이콘(이모지)을 절대 사용하지 마세요.
+4. **메인 뉴스 포맷**:
+   - 포스트 최상단에 전체 메인 제목(H1, `# 제목`)을 절대 쓰지 마세요.
+   - 각 뉴스: `## 순번. 제목`
+   - 본문 2-4문장 + 핵심 수치가 있으면 불릿으로 강조
+   - 출처 표기:
+     `<br><small style="color: #888;">소스: 7min.ai · AITimes &nbsp;|&nbsp; 🔗 [원문 보기](URL) · [원문 2](URL)</small>`
+   - 각 기사 끝에는 빈 줄 + `---` 구분선 + 빈 줄
+5. **기타 뉴스**: Top 10 이외 기사는 `## 📌 기타 뉴스 모아보기` 섹션에서 소스별 그룹핑.
+6. **post_title**: 날짜 없이 핵심 토픽 2-3개 포함한 매력적 제목
+7. **top_topics**: 상위 3개 토픽 키워드 배열 (태그용)
+"""
+
+    data = call_llm_with_retry(prompt, DIGEST_SCHEMA, label="Daily Digest")
+    if not data:
+        # LLM 실패 시 딥 리서치만이라도 발행
+        if deep_research_md:
+            print("      ⚠️ LLM 병합 실패 — 딥 리서치 단독 발행")
+            post_title = deep_research_title or "AI 데일리 다이제스트"
+            save_final_post(date_str, post_title, deep_research_md)
+        else:
+            print("      ❌ 통합 다이제스트 생성 실패")
+        return
+
+    result_md = data.get("markdown_content", "")
+    post_title = data.get("post_title", "AI 데일리 다이제스트")
+
+    if not result_md:
+        print("      ❌ 생성된 본문이 비어 있습니다.")
+        return
+
+    # 포스트 상단에 소스 요약 라인 추가
+    source_line = f"> 📊 오늘의 AI 뉴스: **{len(quality_articles)}건** | 소스: {', '.join(source_names)}\n\n---\n\n"
+    result_md = source_line + result_md
+
+    title = f"[{now_kst.strftime('%m월 %d일')}] AI 데일리 다이제스트 — {post_title}"
+    save_final_post(date_str, title, result_md)
+
+
+def save_final_post(date_str: str, title: str, content: str):
+    """최종 통합 포스트를 마크다운 파일로 저장한다."""
+    import re
+
+    os.makedirs(POSTS_DIR, exist_ok=True)
+
+    # AI가 생성하는 중복 제목 제거
+    content = re.sub(r'^#\s+[^\n]+\n*', '', content.lstrip())
+    content = re.sub(r'^##\s+[^\n]+\n*', '', content.lstrip())
+
+    # Excerpt 자동 생성
+    clean_content = re.sub(r'<[^>]+>', '', content)
+    clean_content = re.sub(r'https?://[^\s]+', '', clean_content)
+    clean_content = re.sub(r'[#*`\[\]\(\)]', '', clean_content)
+    clean_content = re.sub(r'\s+', ' ', clean_content).strip()
+    excerpt_text = clean_content[:120] + "..." if len(clean_content) > 120 else clean_content
+    excerpt_text = excerpt_text.replace('"', "'").replace('\n', ' ')
+
+    frontmatter = f"""---
+title: '{title.replace("'", "''")}'
+date: '{date_str}'
+excerpt: '{excerpt_text.replace("'", "''")}'
+category: 'AI News'
+---
+
+"""
+    slug = "daily-ai-digest"
+    filename = f"{date_str}-{slug}.md"
+    file_path = os.path.join(POSTS_DIR, filename)
+
+    with open(file_path, 'w', encoding='utf-8') as f:
+        f.write(frontmatter)
+        f.write(content + "\n\n")
+
+    print(f"\n   ✅ 통합 다이제스트 포스트 저장 완료!")
+    print(f"   📁 {file_path}")
+
+
+def cleanup_intermediate_files():
+    """Phase 1, 2의 중간 결과물을 정리한다 (선택적)."""
+    for path in [DAILY_ARTICLES_PATH, DEEP_RESEARCH_PATH]:
+        if os.path.exists(path):
+            os.remove(path)
+            print(f"   🧹 중간 파일 제거: {os.path.basename(path)}")
+
+
+if __name__ == "__main__":
+    merge_and_create_digest()
+    # 중간 파일은 보존 (디버깅 용이성)
+    # cleanup_intermediate_files()
+
+    print("\n=======================================================")
+    print("🎉 Phase 3 완료! 통합 데일리 다이제스트가 발행되었습니다.")
+    print("=======================================================")

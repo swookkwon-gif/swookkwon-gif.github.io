@@ -1,20 +1,25 @@
-name: Gemini Daily Deep Research
+name: Daily AI Digest (Phase 3 — Merge & Publish)
 
 on:
   schedule:
-    # 매일 UTC 20:00 (한국시간 오전 5:00) 구동
-    - cron: '0 20 * * *'
+    # 매일 UTC 20:45 (한국시간 오전 5:45) 구동
+    # Phase 1(오전 4:15) + Phase 2(오전 5:00) 완료 후 실행
+    - cron: '45 20 * * *'
   workflow_dispatch: # 수동 실행 활성화
 
 permissions:
   contents: write # Git 커밋 및 푸시 권한
 
 jobs:
-  research-and-post:
+  merge-and-publish:
     runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -24,25 +29,26 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install google-genai python-dotenv requests
+          pip install google-genai python-dotenv
 
-      - name: Run Deep Research Auto Blogger (Gemini API)
+      - name: Run Daily Digest Merger (Phase 3)
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python scripts/gf2_auto_blogger.py
+        run: python scripts/daily_digest.py
 
       - name: Commit and Push
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          
-          # Phase 2: 딥 리서치 중간 결과물(JSON)만 스테이징 (포스트 미생성)
-          git add scripts/state/ || echo "No state files to add"
-          
+
+          # 통합 포스트 및 상태 파일 스테이징
+          git add "content/posts/AI News/*.md" || echo "No digest posts"
+          git add scripts/state/ || true
+
           if git diff --staged --quiet; then
-            echo "No deep research results to commit."
+            echo "No new digest post to commit."
           else
-            git commit -m "auto: Phase 2 — Gemini deep research completed"
+            git commit -m "auto: daily AI digest — unified post from Phase 1+2"
             git pull --rebase origin main
             git push
           fi

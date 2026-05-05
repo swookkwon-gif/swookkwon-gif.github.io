@@ -1,4 +1,6 @@
 import os
+# Phase 2: Gemini Search Grounding 기반 딥 리서치
+# 결과를 state/deep_research.json에 저장 → Phase 3에서 통합 포스트 생성
 import sys
 import re
 import json
@@ -13,6 +15,8 @@ load_dotenv(os.path.join(os.path.dirname(__file__), '..', '.env.local'))
 
 POSTS_DIR = os.path.join(os.path.dirname(__file__), '..', 'content', 'posts', '2. AI News')
 STATE_FILE = os.path.join(os.path.dirname(__file__), 'state.json')
+STATE_DIR = os.path.join(os.path.dirname(__file__), 'state')
+DEEP_RESEARCH_PATH = os.path.join(STATE_DIR, 'deep_research.json')
 
 # ============ Utilities ============
 
@@ -173,13 +177,8 @@ def run_gemini_search_blogger():
     # 4. URL 정리 (utm 파라미터 제거)
     article_content = clean_all_urls_in_text(article_content)
     
-    # 5. 마크다운 파일 저장
-    print(f"\n[Step 3] 블로그 업로드용 파일 저장")
-    slug_name = "daily-ai-top3-news"
-    file_name = f"{now_kst.strftime('%Y-%m-%d')}-{slug_name}.md"
-    file_path = os.path.join(POSTS_DIR, file_name)
-    
-    os.makedirs(POSTS_DIR, exist_ok=True)
+    # 5. 중간 결과물을 JSON으로 저장 (Phase 3에서 통합 포스트 생성)
+    print(f"\n[Step 3] 딥 리서치 결과 JSON 저장")
     
     display_title = f"Daily Top 3: {now_kst.strftime('%m월 %d일')} 주요 AI 뉴스"
     display_excerpt = "오늘의 핵심 글로벌 AI 및 기술 뉴스 동향을 요약합니다."
@@ -198,26 +197,21 @@ def run_gemini_search_blogger():
             
     clean_article = '\n'.join(lines[content_start_idx:]).strip()
 
-    frontmatter = f"""---
-title: '{display_title.replace("'", "''")}'
-date: {now_kst.strftime('%Y-%m-%d %H:%M:%S')}
-excerpt: '{display_excerpt.replace("'", "''")}'
-categories:
-  - AI News
-tags:
-  - Deep Research
-  - Google Search Grounding
-  - Daily Top 3
----
-
-"""
-    final_content = frontmatter + clean_article
-    
-    with open(file_path, 'w', encoding='utf-8') as f:
-        f.write(final_content)
+    # JSON으로 저장
+    os.makedirs(STATE_DIR, exist_ok=True)
+    research_data = {
+        "date": now_kst.strftime("%Y-%m-%d"),
+        "generated_at": now_kst.isoformat(),
+        "title": display_title,
+        "excerpt": display_excerpt,
+        "markdown_content": clean_article,
+    }
+    with open(DEEP_RESEARCH_PATH, 'w', encoding='utf-8') as f:
+        json.dump(research_data, f, ensure_ascii=False, indent=2)
         
-    print(f"🎉 성공적으로 Gemini 무인 블로그 포스트가 생성되었습니다!")
-    print(f"📁 위치: {file_path}")
+    print(f"🎉 딥 리서치 결과 저장 완료!")
+    print(f"💾 위치: {DEEP_RESEARCH_PATH}")
+    print(f"   → Phase 3(daily_digest.py)에서 통합 포스트 생성 예정")
 
 if __name__ == "__main__":
     run_gemini_search_blogger()

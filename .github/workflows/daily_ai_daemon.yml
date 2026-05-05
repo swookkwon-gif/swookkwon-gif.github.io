@@ -50,17 +50,16 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
-          # 새 마크다운 파일들 및 상태/설정 파일 스테이징
-          git add content/posts/2.\ AI\ News/*.md
-          git add scripts/state/state.json || true
+          # Phase 1: 중간 결과물(JSON) 및 상태 파일만 스테이징 (포스트 미생성)
+          git add scripts/state/ || true
           git add scripts/state.json || true
           git add scripts/config/ || true
           
           # 변경사항이 있을 때만 푸시
           if git diff --staged --quiet; then
-            echo "No new posts or state changes to commit."
+            echo "No state changes to commit."
           else
-            git commit -m "auto: daily AI news blog post & update state.json"
+            git commit -m "auto: Phase 1 — collect & analyze AI news articles"
             git pull --rebase origin main
             git push
           fi

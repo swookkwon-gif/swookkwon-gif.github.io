@@ -1,13 +1,17 @@
 #!/usr/bin/env python3
 """
-pipeline.py — 메인 오케스트레이터
-Collector → Writer(+Reviewer) → Publisher 순서로 에이전트를 호출한다.
+pipeline.py — Phase 1 오케스트레이터 (수집 + 분석 전용)
 
-GitHub Actions에서 기존 auto_blog_daemon.py 대신 이 파일을 호출:
+RSS 피드와 Gmail 뉴스레터를 수집 · 분석한 뒤,
+구조화된 기사 데이터를 state/daily_articles.json에 저장한다.
+포스트 생성은 하지 않는다 — Phase 3(daily_digest.py)에서 담당.
+
+GitHub Actions에서 호출:
   python scripts/pipeline.py
 """
 import os
 import sys
+import json
 import time
 from datetime import datetime, timezone, timedelta
 from slugify import slugify
@@ -16,118 +20,136 @@ from slugify import slugify
 sys.path.insert(0, os.path.dirname(__file__))
 
 from skills.llm_client import LLMClient
-from skills.markdown_utils import auto_fix_content
-from skills.post_writer import create_post_file
 from agents.collector import collect_rss, collect_gmail
 from agents.writer import write_rss_post, write_newsletter_post
-from agents.reviewer import review_and_fix
 from state.state_manager import mark_processed, save_evaluations
 
+STATE_DIR = os.path.join(os.path.dirname(__file__), 'state')
+DAILY_ARTICLES_PATH = os.path.join(STATE_DIR, 'daily_articles.json')
 
-def run_rss_pipeline(llm: LLMClient):
-    """RSS 수집 → 작성 → 검증 → 발행 파이프라인"""
+
+def save_daily_articles(articles: list[dict]):
+    """수집·분석된 기사 목록을 JSON으로 저장한다."""
+    os.makedirs(STATE_DIR, exist_ok=True)
+    now_kst = datetime.now(timezone.utc) + timedelta(hours=9)
+    payload = {
+        "date": now_kst.strftime("%Y-%m-%d"),
+        "generated_at": now_kst.isoformat(),
+        "total_articles": len(articles),
+        "articles": articles,
+    }
+    with open(DAILY_ARTICLES_PATH, 'w', encoding='utf-8') as f:
+        json.dump(payload, f, ensure_ascii=False, indent=2)
+    print(f"   💾 {len(articles)}건 기사 데이터 저장: {DAILY_ARTICLES_PATH}")
+
+
+def run_rss_phase(llm: LLMClient) -> list[dict]:
+    """RSS 수집 → LLM 분석 → 구조화된 기사 목록 반환 (포스트 미생성)."""
     print("\n" + "=" * 55)
-    print("📰 [Phase: RSS Pipeline]")
+    print("📰 [Phase 1-A: RSS 수집 + 분석]")
     print("=" * 55)
 
-    # 1. Collect
     articles = collect_rss()
     if not articles:
-        return
+        return []
 
-    # 2. Write (평가 + 작성을 Writer가 한 번에 수행 — 기존 동작 호환)
-    print(f"\n   📝 Writer: {len(articles)}개 기사 기반 포스트 작성 중...")
+    print(f"\n   📝 Writer: {len(articles)}개 기사 분석 중...")
     result = write_rss_post(articles, llm)
     if result is None:
         print("   ❌ Writer 실패: LLM 응답 없음")
-        return
+        return []
 
-    if not result.get("has_ai_news"):
-        for item in articles:
-            mark_processed("rss", item["id"])
-        print("   ✅ 중요 기사(3점 이상)가 없어 포스트 생략 (처리완료 마킹)")
-        return
-
-    # 3. Review + Auto-fix
-    md_content = result.get("markdown_content", "")
-    md_content, remaining_issues = review_and_fix(md_content)
-
-    # 4. Save evaluations
+    # Evaluations 저장 (state.json에 기록)
     evals = result.get("evaluations", [])
     if evals:
         save_evaluations("Global AI News", evals)
 
-    # 5. Publish
-    now_kst = datetime.now(timezone.utc) + timedelta(hours=9)
-    title = f"[{now_kst.strftime('%m월 %d일')}] AI times, Benzinga 뉴스 요약"
-    file_path = create_post_file("global-ai-news-summary", title, md_content)
-    print(f"   ✅ RSS 포스트 저장: {os.path.basename(file_path)}")
-
-    # 6. Mark processed
+    # RSS 아이템 처리 완료 마킹
     for item in articles:
         mark_processed("rss", item["id"])
 
+    if not result.get("has_ai_news"):
+        print("   ✅ 중요 기사(3점 이상)가 없어 건너뜀 (처리완료 마킹)")
+        return []
 
-def run_gmail_pipeline(llm: LLMClient):
-    """Gmail 뉴스레터 수집 → 작성 → 검증 → 발행 파이프라인"""
+    # evaluations에서 구조화된 기사 데이터 추출
+    structured_articles = []
+    for ev in evals:
+        structured_articles.append({
+            "title": ev.get("target", ""),
+            "summary": ev.get("reasoning", ""),
+            "score": ev.get("score", 0),
+            "source_name": "RSS (AITimes/Benzinga)",
+            "source_urls": [],
+            "keywords": [],
+        })
+
+    print(f"   ✅ RSS 분석 완료: {len(structured_articles)}건")
+    return structured_articles
+
+
+def run_gmail_phase(llm: LLMClient) -> list[dict]:
+    """Gmail 수집 → LLM 분석 → 구조화된 기사 목록 반환 (포스트 미생성)."""
     print("\n" + "=" * 55)
-    print("📧 [Phase: Gmail Newsletter Pipeline]")
+    print("📧 [Phase 1-B: Gmail 뉴스레터 수집 + 분석]")
     print("=" * 55)
 
-    # 1. Collect
     gmail_groups = collect_gmail()
     if not gmail_groups:
-        return
+        return []
 
-    # 2~5. 발신자별 처리
+    all_articles = []
+
     for sender, letters in gmail_groups.items():
-        print(f"\n   -> [{sender}] 뉴스레터 처리 중 ({len(letters)}개)")
+        print(f"\n   -> [{sender}] 뉴스레터 분석 중 ({len(letters)}개)")
 
-        # 2. Write
         result = write_newsletter_post(sender, letters, llm)
         if result is None:
             print(f"   ❌ Writer 실패: [{sender}] LLM 응답 없음")
-            continue
-
-        md_content = result.get("markdown_content", "")
-        if not md_content:
+            # 실패해도 처리 완료 마킹 (무한 재시도 방지)
             for letter in letters:
                 mark_processed("gmail", letter["id"])
-            print(f"   ✅ 중요 기사(3점 이상)가 없어 포스트 생략")
             continue
 
-        # 3. Review + Auto-fix
-        md_content, remaining_issues = review_and_fix(md_content)
-
-        # 4. Save evaluations
+        # Evaluations 저장
         evals = result.get("evaluations", [])
         if evals:
             save_evaluations(sender, evals)
 
-        # 5. Publish
-        post_title = result.get("post_title", "최신 AI 뉴스레터 동향")
-        slug = slugify(sender) + "-newsletter"
-        now_kst = datetime.now(timezone.utc) + timedelta(hours=9)
-        title = f"[{sender}] {post_title}"
-
-        file_path = create_post_file(slug, title, md_content)
-        print(f"   ✅ 뉴스레터 포스트 저장: {os.path.basename(file_path)}")
-
-        # 6. Mark processed
+        # 처리 완료 마킹
         for letter in letters:
             mark_processed("gmail", letter["id"])
+
+        md_content = result.get("markdown_content", "")
+        if not md_content:
+            print(f"   ✅ [{sender}] 중요 기사 없음 — 건너뜀")
+            continue
+
+        # evaluations에서 구조화된 기사 데이터 추출
+        for ev in evals:
+            all_articles.append({
+                "title": ev.get("target", ""),
+                "summary": ev.get("reasoning", ""),
+                "score": ev.get("score", 0),
+                "source_name": sender,
+                "source_urls": [],
+                "keywords": [],
+            })
+
+        print(f"   ✅ [{sender}] {len(evals)}건 분석 완료")
 
         # API Pacing
         print("   (발신자 간 대기 10초...)")
         time.sleep(10)
 
+    return all_articles
+
 
 def main():
     print("=======================================================")
-    print("🚀 [Multi-Agent Pipeline] Blog Post Generator v2.0")
+    print("🚀 [Phase 1] 수집 + 분석 파이프라인 v3.0")
     print("=======================================================")
 
-    # LLM 클라이언트 초기화
     api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
         print("⚠️ GEMINI_API_KEY is missing.")
@@ -135,15 +157,21 @@ def main():
 
     llm = LLMClient(api_key=api_key)
 
-    # Pipeline 실행
-    run_rss_pipeline(llm)
+    # Phase 1-A: RSS
+    rss_articles = run_rss_phase(llm)
 
     print("\n" + "-" * 55)
 
-    run_gmail_pipeline(llm)
+    # Phase 1-B: Gmail
+    gmail_articles = run_gmail_phase(llm)
+
+    # 통합 저장
+    all_articles = rss_articles + gmail_articles
+    save_daily_articles(all_articles)
 
     print("\n=======================================================")
-    print("🎉 Multi-Agent Pipeline 완료!")
+    print(f"🎉 Phase 1 완료! 총 {len(all_articles)}건 기사 수집·분석")
+    print("   → Phase 3(daily_digest.py)에서 통합 포스트 생성 예정")
     print("=======================================================")
 
 
