@@ -109,6 +109,43 @@ export default async function PostPage({
                 return <ChartRenderer dataStr={String(children).replace(/\n$/, '')} />;
               }
               return <code className={className} {...props}>{children}</code>;
+            },
+            img: ({ src, alt, ...props }: any) => {
+              let finalSrc = src || '';
+              
+              // 외부 링크 이미지는 그대로 렌더링
+              if (finalSrc.startsWith('http://') || finalSrc.startsWith('https://')) {
+                return (
+                  <span className="block my-8">
+                    <img src={finalSrc} alt={alt || ''} className="rounded-xl shadow-lg border border-gray-100 mx-auto max-h-[600px] object-contain" {...props} />
+                    {alt && <span className="block text-center text-sm text-gray-500 mt-2">{alt}</span>}
+                  </span>
+                );
+              }
+
+              const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '/wooksai';
+              
+              // 1. 하드코딩된 /wooksai/ 접두사 제거 (정규화)
+              if (finalSrc.startsWith('/wooksai/')) {
+                 finalSrc = finalSrc.replace('/wooksai/', '/');
+              }
+              
+              // 2. basePath가 존재하면 추가 (단, basePath가 '/'가 아니고 finalSrc가 절대경로일 때)
+              if (basePath && basePath !== '/' && finalSrc.startsWith('/')) {
+                 finalSrc = `${basePath}${finalSrc}`;
+              }
+
+              return (
+                <span className="block my-8">
+                  <img 
+                    src={finalSrc} 
+                    alt={alt || ''} 
+                    className="rounded-xl shadow-lg border border-gray-100 mx-auto max-h-[600px] object-contain" 
+                    {...props} 
+                  />
+                  {alt && <span className="block text-center text-sm text-gray-500 mt-2">{alt}</span>}
+                </span>
+              );
             }
           }}
         >
