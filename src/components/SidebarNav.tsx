@@ -25,7 +25,7 @@ interface SidebarNavProps {
 
 export default function SidebarNav({ categories, lang }: SidebarNavProps) {
   const pathname = usePathname();
-  const INITIAL_COUNT = 5;
+  const INITIAL_COUNT = 7;
 
   // 현재 URL에서 활성 카테고리 감지
   const detectActiveCategory = (): string | null => {
@@ -50,6 +50,7 @@ export default function SidebarNav({ categories, lang }: SidebarNavProps) {
   const activeSlug = detectActiveCategory();
   const defaultOpen = categories.length > 0 ? categories[0].slug : null;
   const [openCategory, setOpenCategory] = useState<string | null>(activeSlug || defaultOpen);
+  const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set());
 
   // URL 변경 시 활성 카테고리 갱신
   useEffect(() => {
@@ -61,6 +62,18 @@ export default function SidebarNav({ categories, lang }: SidebarNavProps) {
 
   const toggleCategory = (slug: string) => {
     setOpenCategory(prev => (prev === slug ? null : slug));
+  };
+
+  const toggleExpand = (slug: string) => {
+    setExpandedCategories(prev => {
+      const next = new Set(prev);
+      if (next.has(slug)) {
+        next.delete(slug);
+      } else {
+        next.add(slug);
+      }
+      return next;
+    });
   };
 
   // 현재 보고 있는 포스트의 slug
@@ -83,8 +96,9 @@ export default function SidebarNav({ categories, lang }: SidebarNavProps) {
       <ul className="sidebar-category-list">
         {categories.map((cat) => {
           const isOpen = openCategory === cat.slug;
+          const isExpanded = expandedCategories.has(cat.slug);
           const isActiveCategory = activeSlug === cat.slug;
-          const displayPosts = cat.posts.slice(0, INITIAL_COUNT);
+          const displayPosts = isExpanded ? cat.posts : cat.posts.slice(0, INITIAL_COUNT);
           const hasMore = cat.posts.length > INITIAL_COUNT;
 
           return (
@@ -108,7 +122,7 @@ export default function SidebarNav({ categories, lang }: SidebarNavProps) {
 
               {/* 포스트 리스트 (아코디언) */}
               <div className={`sidebar-posts-wrapper ${isOpen ? "open" : ""}`}>
-                <ul className="sidebar-posts-list">
+                <ul className={`sidebar-posts-list ${isExpanded ? "max-h-[50vh] overflow-y-auto no-scrollbar border-b border-neutral-100" : ""}`}>
                   {displayPosts.map((post) => {
                     const isCurrentPost = currentPostSlug === post.slug;
                     return (
@@ -125,15 +139,17 @@ export default function SidebarNav({ categories, lang }: SidebarNavProps) {
                     );
                   })}
 
-                  {/* 카테고리 전체보기 링크 */}
+                  {/* 더보기 / 접기 버튼 */}
                   {hasMore && (
-                    <li>
-                      <Link
-                        href={`/${lang}/category/${cat.slug}`}
-                        className="sidebar-expand-btn text-neutral-500 hover:text-blue-600 hover:border-blue-200 transition-colors"
+                    <li className={isExpanded ? "sticky bottom-0 bg-white/95 backdrop-blur-sm z-10 pt-2 pb-1 border-t border-neutral-100/50" : ""}>
+                      <button
+                        onClick={() => toggleExpand(cat.slug)}
+                        className="sidebar-expand-btn"
                       >
-                        카테고리 전체보기 ({cat.posts.length}) &rarr;
-                      </Link>
+                        {isExpanded
+                          ? `↑ 접기`
+                          : `+ ${cat.posts.length - INITIAL_COUNT}개 더보기`}
+                      </button>
                     </li>
                   )}
                 </ul>
