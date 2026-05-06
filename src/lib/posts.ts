@@ -75,14 +75,12 @@ export function getSortedPostsData(lang: string = 'ko'): PostData[] {
       
       if (!isNaN(d.getTime())) {
         sortTimestamp = d.getTime();
-        // Format to YYYY-MM-DD HH:mm (KST)
+        // Format to YYYY-MM-DD (KST)
         const kstDate = new Date(d.getTime() + (9 * 60 * 60 * 1000));
         const yyyy = kstDate.getUTCFullYear();
         const mm = String(kstDate.getUTCMonth() + 1).padStart(2, '0');
         const dd = String(kstDate.getUTCDate()).padStart(2, '0');
-        const hh = String(kstDate.getUTCHours()).padStart(2, '0');
-        const min = String(kstDate.getUTCMinutes()).padStart(2, '0');
-        postDateStr = `${yyyy}-${mm}-${dd} ${hh}:${min}`;
+        postDateStr = `${yyyy}-${mm}-${dd}`;
       } else {
         postDateStr = String(data.date).split('T')[0];
       }
@@ -157,9 +155,7 @@ export function getPostData(slug: string, lang: string = 'ko'): PostData {
       const yyyy = kstDate.getUTCFullYear();
       const mm = String(kstDate.getUTCMonth() + 1).padStart(2, '0');
       const dd = String(kstDate.getUTCDate()).padStart(2, '0');
-      const hh = String(kstDate.getUTCHours()).padStart(2, '0');
-      const min = String(kstDate.getUTCMinutes()).padStart(2, '0');
-      postDateStr = `${yyyy}-${mm}-${dd} ${hh}:${min}`;
+      postDateStr = `${yyyy}-${mm}-${dd}`;
     } else {
       postDateStr = String(data.date).split('T')[0];
     }
