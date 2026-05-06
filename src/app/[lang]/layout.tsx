@@ -3,6 +3,7 @@ import { Inter, Outfit } from "next/font/google";
 import "../globals.css";
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
+import { getSortedPostsData } from "@/lib/posts";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
@@ -25,10 +26,27 @@ export default async function RootLayout({
 }>) {
   const { lang } = await params;
 
+  // Header에 전달할 카테고리별 포스트 수 계산
+  const posts = getSortedPostsData(lang);
+  const categoriesMap = posts.reduce((acc, post) => {
+    const cat = post.category || "Insight";
+    acc[cat] = (acc[cat] || 0) + 1;
+    return acc;
+  }, {} as Record<string, number>);
+  
+  const excludedCategories = new Set(['backups']);
+  const categoryCounts = Object.entries(categoriesMap)
+    .filter(([name]) => !excludedCategories.has(name.toLowerCase()))
+    .map(([name, count]) => ({
+      name,
+      slug: name.toLowerCase().replace(/\s+/g, '-'),
+      count
+    }));
+
   return (
     <html lang={lang} className={`${inter.variable} ${outfit.variable}`}>
       <body className="antialiased overflow-x-hidden min-h-screen bg-white">
-        <Header lang={lang} />
+        <Header lang={lang} categoryCounts={categoryCounts} />
         
         {/* Minimal Mistakes 2-column Layout */}
         <div className="max-w-[1280px] mx-auto px-6 pt-2 md:pt-3 pb-8 md:flex md:gap-12 lg:gap-16">

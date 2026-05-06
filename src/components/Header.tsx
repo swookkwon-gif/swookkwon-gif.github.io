@@ -5,8 +5,24 @@ import { Menu, X } from "lucide-react";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useState } from "react";
 
-export default function Header({ lang }: { lang: string }) {
+interface CategoryCount {
+  name: string;
+  slug: string;
+  count: number;
+}
+
+export default function Header({ lang, categoryCounts }: { lang: string; categoryCounts?: CategoryCount[] }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  // Fallback to hardcoded if not provided
+  const defaultCategories = [
+    { name: "Marketing", slug: "marketing", count: 0 },
+    { name: "AI News", slug: "ai-news", count: 0 },
+    { name: "AI Learnings", slug: "ai-learnings", count: 0 },
+    { name: "Data", slug: "data", count: 0 },
+  ];
+  
+  const displayCategories = categoryCounts || defaultCategories;
 
   return (
     <header className="border-b border-gray-100 bg-white relative z-50">
@@ -18,10 +34,11 @@ export default function Header({ lang }: { lang: string }) {
         
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8 text-[13px] font-bold text-neutral-500 uppercase tracking-wider">
-          <Link href={`/${lang}/category/marketing`} className="hover:text-blue-600 transition-colors">Marketing</Link>
-          <Link href={`/${lang}/category/ai-news`} className="hover:text-blue-600 transition-colors">AI News</Link>
-          <Link href={`/${lang}/category/ai-learnings`} className="hover:text-blue-600 transition-colors">AI Learnings</Link>
-          <Link href={`/${lang}/category/data`} className="hover:text-blue-600 transition-colors">Data</Link>
+          {displayCategories.map(cat => (
+            <Link key={cat.slug} href={`/${lang}/category/${cat.slug}`} className="hover:text-blue-600 transition-colors">
+              {cat.name}
+            </Link>
+          ))}
           <LanguageSwitcher currentLang={lang} />
         </nav>
         
@@ -41,10 +58,12 @@ export default function Header({ lang }: { lang: string }) {
       {/* Mobile Nav Dropdown */}
       {isMobileMenuOpen && (
         <div className="md:hidden absolute top-16 left-0 w-full bg-white border-b border-gray-100 shadow-lg px-6 py-4 flex flex-col gap-4 text-sm font-bold text-neutral-600 uppercase tracking-wider">
-          <Link href={`/${lang}/category/marketing`} onClick={() => setIsMobileMenuOpen(false)} className="hover:text-blue-600 py-2 border-b border-gray-50">Marketing</Link>
-          <Link href={`/${lang}/category/ai-news`} onClick={() => setIsMobileMenuOpen(false)} className="hover:text-blue-600 py-2 border-b border-gray-50">AI News</Link>
-          <Link href={`/${lang}/category/ai-learnings`} onClick={() => setIsMobileMenuOpen(false)} className="hover:text-blue-600 py-2 border-b border-gray-50">AI Learnings</Link>
-          <Link href={`/${lang}/category/data`} onClick={() => setIsMobileMenuOpen(false)} className="hover:text-blue-600 py-2 border-b border-gray-50">Data</Link>
+          {displayCategories.map(cat => (
+            <Link key={cat.slug} href={`/${lang}/category/${cat.slug}`} onClick={() => setIsMobileMenuOpen(false)} className="hover:text-blue-600 py-2 border-b border-gray-50 flex items-center justify-between">
+              <span>{cat.name}</span>
+              <span className="text-xs text-neutral-400 bg-neutral-100 px-2.5 py-0.5 rounded-full">{cat.count}</span>
+            </Link>
+          ))}
         </div>
       )}
     </header>

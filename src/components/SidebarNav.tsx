@@ -48,7 +48,8 @@ export default function SidebarNav({ categories, lang }: SidebarNavProps) {
   };
 
   const activeSlug = detectActiveCategory();
-  const [openCategory, setOpenCategory] = useState<string | null>(activeSlug);
+  const defaultOpen = categories.length > 0 ? categories[0].slug : null;
+  const [openCategory, setOpenCategory] = useState<string | null>(activeSlug || defaultOpen);
   const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set());
 
   // URL 변경 시 활성 카테고리 갱신
