@@ -17,7 +17,7 @@ client = genai.Client(api_key=api_key)
 
 POSTS_DIR = os.path.join(os.path.dirname(__file__), '..', 'content', 'posts', 'AI News')
 
-MODELS_TO_TRY = ['gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-1.5-flash-latest']
+MODELS_TO_TRY = ['gemini-2.5-flash', 'gemini-2.5-pro']
 
 DIGEST_SCHEMA = {
     "type": "object",
@@ -51,7 +51,12 @@ def call_llm(prompt: str) -> dict:
                 )
             )
             raw_text = clean_json_response(response.text)
-            return json.loads(raw_text)
+            try:
+                return json.loads(raw_text)
+            except Exception as json_e:
+                print(f"JSON Parse Error: {json_e}")
+                print(f"Raw Text: {raw_text[:500]}...")
+                raise json_e
         except Exception as e:
             print(f"Error with {model_name}: {e}")
             continue
