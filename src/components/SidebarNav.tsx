@@ -50,7 +50,6 @@ export default function SidebarNav({ categories, lang }: SidebarNavProps) {
   const activeSlug = detectActiveCategory();
   const defaultOpen = categories.length > 0 ? categories[0].slug : null;
   const [openCategory, setOpenCategory] = useState<string | null>(activeSlug || defaultOpen);
-  const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set());
 
   // URL 변경 시 활성 카테고리 갱신
   useEffect(() => {
@@ -62,18 +61,6 @@ export default function SidebarNav({ categories, lang }: SidebarNavProps) {
 
   const toggleCategory = (slug: string) => {
     setOpenCategory(prev => (prev === slug ? null : slug));
-  };
-
-  const toggleExpand = (slug: string) => {
-    setExpandedCategories(prev => {
-      const next = new Set(prev);
-      if (next.has(slug)) {
-        next.delete(slug);
-      } else {
-        next.add(slug);
-      }
-      return next;
-    });
   };
 
   // 현재 보고 있는 포스트의 slug
@@ -96,9 +83,8 @@ export default function SidebarNav({ categories, lang }: SidebarNavProps) {
       <ul className="sidebar-category-list">
         {categories.map((cat) => {
           const isOpen = openCategory === cat.slug;
-          const isExpanded = expandedCategories.has(cat.slug);
           const isActiveCategory = activeSlug === cat.slug;
-          const displayPosts = isExpanded ? cat.posts : cat.posts.slice(0, INITIAL_COUNT);
+          const displayPosts = cat.posts.slice(0, INITIAL_COUNT);
           const hasMore = cat.posts.length > INITIAL_COUNT;
 
           return (
@@ -139,17 +125,15 @@ export default function SidebarNav({ categories, lang }: SidebarNavProps) {
                     );
                   })}
 
-                  {/* 더보기 / 접기 버튼 */}
+                  {/* 카테고리 전체보기 링크 */}
                   {hasMore && (
                     <li>
-                      <button
-                        onClick={() => toggleExpand(cat.slug)}
-                        className="sidebar-expand-btn"
+                      <Link
+                        href={`/${lang}/category/${cat.slug}`}
+                        className="sidebar-expand-btn text-neutral-500 hover:text-blue-600 hover:border-blue-200 transition-colors"
                       >
-                        {isExpanded
-                          ? `접기`
-                          : `+ ${cat.posts.length - INITIAL_COUNT}개 더보기`}
-                      </button>
+                        카테고리 전체보기 ({cat.posts.length}) &rarr;
+                      </Link>
                     </li>
                   )}
                 </ul>
