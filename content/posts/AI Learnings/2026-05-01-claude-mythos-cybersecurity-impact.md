@@ -2,7 +2,7 @@
 title: "클로드 미토스(Claude Mythos)의 충격: AI가 촉발한 글로벌 사이버 보안 위기와 경제적 파장"
 date: 2026-05-01T15:00:00+09:00
 excerpt: "최근 발표된 앤스로픽의 프론티어 모델 '클로드 미토스(Claude Mythos)'가 보여준 압도적인 사이버 보안 및 해킹 능력이 기존 IT 인프라, 개인 뱅킹, 비트코인, 그리고 세계 경제 전반에 미칠 거대한 파장을 심층 분석합니다."
-category: Tech
+category: AI Learnings
 tags: ["Claude Mythos", "Anthropic", "Cybersecurity", "Hacking", "Bitcoin", "Finance", "AI Security"]
 ---
 

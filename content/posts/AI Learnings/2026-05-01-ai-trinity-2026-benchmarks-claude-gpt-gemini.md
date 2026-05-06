@@ -2,7 +2,7 @@
 title: "2026년 AI 대격돌: Claude Opus 4.7 vs GPT-5.5 vs Gemini 3.1 Pro 벤치마크 총망라"
 date: 2026-05-01T21:00:00+09:00
 excerpt: "단순한 챗봇을 넘어 '자율 에이전트' 시대로 진입한 2026년. 최고의 AI 모델은 무엇일까요? 코딩, 복잡한 추론, 멀티모달, 환각률(Hallucination), 가성비까지 철저한 벤치마크 데이터를 바탕으로 클로드, 챗GPT, 제미나이의 강점과 약점을 심층 비교 분석합니다."
-category: Tech
+category: AI Learnings
 tags: ["AI Benchmarks", "Claude Opus 4.7", "GPT-5.5", "Gemini 3.1 Pro", "LLM", "HLE", "SWE-bench"]
 ---
 

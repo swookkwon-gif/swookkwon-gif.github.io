@@ -2,7 +2,7 @@
 title: "클로드(Claude)의 탄생: 오픈AI를 떠난 남매, 앤스로픽(Anthropic)의 역사와 기업 가치 추이"
 date: 2026-05-01T15:30:00+09:00
 excerpt: "최강의 AI 모델 중 하나인 '클로드(Claude)'를 만든 앤스로픽(Anthropic)은 어떤 회사일까요? 다리오 아모데이와 다니엘라 아모데이 남매의 창업 스토리부터 오픈AI와의 결별 이유, 그리고 3,800억 달러 가치로 성장하기까지의 투자 히스토리를 총정리합니다."
-category: Tech
+category: AI Learnings
 tags: ["Anthropic", "Claude", "OpenAI", "Dario Amodei", "AI Startup", "Investment"]
 ---
 

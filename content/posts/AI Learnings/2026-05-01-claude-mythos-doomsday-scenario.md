@@ -2,7 +2,7 @@
 title: "클로드 미토스(Claude Mythos)가 대중에게 공개된다면? 금융·군사·IT가 직면할 최악의 시나리오"
 date: 2026-05-01T16:00:00+09:00
 excerpt: "앤스로픽의 비밀 병기 '클로드 미토스'가 유출되거나 대중에 공개될 경우 발생할 수 있는 파국적 시나리오를 심층 분석합니다. 기존 AI(Opus 4.7)와의 속도 및 성공률 비교, 개인 은행 계좌 탈취, 자율 살상 무기 통제 상실 등 충격적인 예상 파장을 다룹니다."
-category: Tech
+category: AI Learnings
 tags: ["Claude Mythos", "Anthropic", "Cybersecurity", "AGI", "Military AI", "Crypto Hacking"]
 ---
 

@@ -2,7 +2,7 @@
 title: "[리뷰] 앤스로픽 CEO 다리오 아모데이 렉스 프리드먼 팟캐스트 핵심 요약: 2026-2027년 AGI 도래와 긍정적 미래"
 date: 2026-05-01T15:00:00+09:00
 excerpt: "클로드(Claude)의 창시자 다리오 아모데이가 렉스 프리드먼 팟캐스트에서 밝힌 AGI 타임라인(2026-2027), 스케일링 법칙, AI 안전(ASL), 그리고 낙관적 미래를 그리는 '자애로운 은총의 기계(Machines of Loving Grace)' 에세이에 대한 심층 요약입니다."
-category: Tech
+category: AI Learnings
 tags: ["Anthropic", "Dario Amodei", "Lex Fridman", "AGI", "Claude", "Constitutional AI", "AI Safety"]
 ---
 

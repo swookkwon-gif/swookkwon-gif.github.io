@@ -2,7 +2,7 @@
 title: "왜 AI가 점점 멍청해지는 걸까? — Gemini 3.1 Pro의 답 누락과 Claude Opus 4.6의 토큰 한도 에러 분석"
 date: 2026-05-05T22:45:00+09:00
 excerpt: "Gemini 3.1 Pro가 작업을 빠뜨리거나 엉뚱한 답을 내고, Claude Opus 4.6이 토큰 한도 초과 에러를 쏟아내는 이유를 기술적으로 파헤친다. 원인, 메커니즘, 그리고 실전 대응 전략까지."
-category: Tech
+category: AI Learnings
 tags: ["Gemini", "Claude", "LLM", "AI 장애", "토큰", "컨텍스트"]
 ---
 
