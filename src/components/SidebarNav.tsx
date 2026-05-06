@@ -122,7 +122,7 @@ export default function SidebarNav({ categories, lang }: SidebarNavProps) {
 
               {/* 포스트 리스트 (아코디언) */}
               <div className={`sidebar-posts-wrapper ${isOpen ? "open" : ""}`}>
-                <ul className={`sidebar-posts-list ${isExpanded ? "max-h-[50vh] overflow-y-auto no-scrollbar border-b border-neutral-100" : ""}`}>
+                <ul className={`sidebar-posts-list ${isExpanded ? "max-h-[50vh] overflow-y-auto custom-scrollbar border-b border-neutral-100 pr-1" : ""}`}>
                   {displayPosts.map((post) => {
                     const isCurrentPost = currentPostSlug === post.slug;
                     return (
@@ -139,16 +139,14 @@ export default function SidebarNav({ categories, lang }: SidebarNavProps) {
                     );
                   })}
 
-                  {/* 더보기 / 접기 버튼 */}
-                  {hasMore && (
-                    <li className={isExpanded ? "sticky bottom-0 bg-white/95 backdrop-blur-sm z-10 pt-2 pb-1 border-t border-neutral-100/50" : ""}>
+                  {/* 더보기 버튼 (확장 시 버튼 숨김 - 내부 스크롤 제공) */}
+                  {hasMore && !isExpanded && (
+                    <li className="pt-2 pb-1">
                       <button
                         onClick={() => toggleExpand(cat.slug)}
                         className="sidebar-expand-btn"
                       >
-                        {isExpanded
-                          ? `↑ 접기`
-                          : `+ ${cat.posts.length - INITIAL_COUNT}개 더보기`}
+                        + {cat.posts.length - INITIAL_COUNT}개 더보기
                       </button>
                     </li>
                   )}
