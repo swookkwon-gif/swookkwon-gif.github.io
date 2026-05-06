@@ -58,7 +58,10 @@ def call_llm(prompt: str) -> dict:
     return None
 
 def main():
-    date_str = "2026-04-26"
+    if len(sys.argv) < 2:
+        print("Usage: python consolidate_past_date.py YYYY-MM-DD")
+        sys.exit(1)
+    date_str = sys.argv[1]
     files = [f for f in os.listdir(POSTS_DIR) if f.startswith(date_str)]
     
     print(f"Found {len(files)} files for {date_str}: {files}")
@@ -73,7 +76,7 @@ def main():
 
     prompt = f"""
 당신은 AI 데일리 다이제스트 수석 편집장입니다.
-아래는 4월 26일에 수집된 여러 AI 뉴스 기사들(마크다운 원본)입니다.
+아래는 수집된 여러 AI 뉴스 기사들(마크다운 원본)입니다.
 이를 하나의 통합 일간 뉴스 포스트(마크다운 본문)로 재구성하세요.
 
 [원본 기사 내용들]
@@ -92,7 +95,7 @@ def main():
    - 출처 표기:
      `<br><small style="color: #888;">소스: 소스명 &nbsp;|&nbsp; 🔗 [원문 보기](URL)</small>`
    - 각 기사 끝에는 빈 줄 + `---` 구분선 + 빈 줄
-4. **post_title**: 핵심 토픽 2-3개 포함한 매력적 제목
+4. **post_title**: 날짜나 'AI 데일리 다이제스트' 등의 단어 없이, **가장 중요한 상위 3개 뉴스의 핵심 요약 제목**을 콤마(,)로 연결하여 작성하세요. (예: "오픈AI 새 모델 발표, 메타 라마3 오픈소스 공개, 애플 AI 전략")
 5. **top_topics**: 상위 3개 토픽 키워드 배열
 """
 
