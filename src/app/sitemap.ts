@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 import { getSortedPostsData } from '@/lib/posts';
 
-const BASE_URL = 'https://swookkwon-gif.github.io/wooksai';
+const BASE_URL = 'https://swookkwon-gif.github.io';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   // 한국어 글 목록 가져오기

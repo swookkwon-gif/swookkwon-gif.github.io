@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://swookkwon-gif.github.io/wooksai/sitemap.xml',
+    sitemap: 'https://swookkwon-gif.github.io/sitemap.xml',
   };
 }
