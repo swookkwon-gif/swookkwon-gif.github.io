@@ -49,10 +49,10 @@ export default async function RootLayout({
         <Header lang={lang} categoryCounts={categoryCounts} />
         
         {/* Minimal Mistakes 2-column Layout */}
-        <div className="max-w-[1280px] mx-auto px-6 pt-2 md:pt-3 pb-8 md:flex md:gap-12 lg:gap-16">
+        <div className="max-w-[1180px] mx-auto px-6 pt-2 md:pt-3 pb-8 md:flex md:gap-10 lg:gap-14">
           <Sidebar lang={lang} />
           
-          <main className="flex-1 w-full max-w-4xl min-w-0">
+          <main className="flex-1 w-full max-w-3xl min-w-0">
             {children}
           </main>
         </div>

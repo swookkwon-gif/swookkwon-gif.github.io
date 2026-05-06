@@ -30,7 +30,7 @@ export default function Sidebar({ lang }: { lang: string }) {
   }));
 
   return (
-    <aside className="hidden md:block w-[310px] shrink-0">
+    <aside className="hidden md:block w-[340px] shrink-0">
       <div className="md:sticky md:top-6 md:max-h-[calc(100vh-3rem)] md:overflow-y-auto no-scrollbar pt-2">
         <SidebarNav categories={categories} lang={lang} />
       </div>
