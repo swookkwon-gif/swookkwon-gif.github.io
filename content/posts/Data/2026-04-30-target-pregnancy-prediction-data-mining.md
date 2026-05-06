@@ -43,7 +43,7 @@ tags: ["Data Science", "Statistics", "Predictive Analytics", "Data Mining", "Tar
 
 유통업계에서 '임산부'는 황금알을 낳는 거위입니다. 아기가 태어나는 시점은 인간의 평생 소비 습관이 완전히 뒤바뀌는 유일한 시기이기 때문입니다. 이때 자사 마트로 고객을 끌어들이면 수십 년간 엄청난 매출을 확보할 수 있습니다.
 
-![예측 분석 인포그래픽](/wooksai/images/target_predictive_analytics.png)
+![예측 분석 인포그래픽](/images/target_predictive_analytics.png)
 *(타겟의 임신 예측 스코어 알고리즘을 시각화한 인포그래픽. 무관해 보이는 상품의 조합이 강력한 인사이트를 만들어낸다.)*
 
 분석팀은 과거에 매장에 '임신 축하 등록(Baby Registry)'을 했던 여성들의 과거 구매 데이터를 샅샅이 뒤져보았습니다(Data Mining). 그러자 소름 돋는 패턴이 발견되었습니다.

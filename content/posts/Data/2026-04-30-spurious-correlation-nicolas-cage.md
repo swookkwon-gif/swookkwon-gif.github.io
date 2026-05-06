@@ -20,7 +20,7 @@ tags: ["Data Science", "Statistics", "Spurious Correlation", "Causation", "Tyler
 
 그중 전 세계적으로 가장 유명해진 그래프가 바로 이것입니다.
 
-![허위 상관관계 인포그래픽](/wooksai/images/spurious_correlation.png)
+![허위 상관관계 인포그래픽](/images/spurious_correlation.png)
 *(니콜라스 케이지의 영화 출연 편수와 수영장 익사자 수의 상관관계. 완벽에 가깝게 같이 오르고 같이 떨어집니다.)*
 
 1999년부터 2009년까지 10년 치의 데이터를 분석한 결과:

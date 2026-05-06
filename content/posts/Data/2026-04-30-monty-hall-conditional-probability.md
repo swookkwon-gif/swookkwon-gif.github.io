@@ -14,7 +14,7 @@ tags: ["Data Science", "Statistics", "Conditional Probability", "Monty Hall", "M
 
 ## 🚪 1. 염소인가, 최고급 스포츠카인가?
 
-![몬티 홀 진행자](/wooksai/images/monty_hall.jpg)
+![몬티 홀 진행자](/images/monty_hall.jpg)
 *(1960~70년대 미국 최고의 인기 TV 쇼 'Let's Make a Deal'의 명진행자 몬티 홀. 출처: Wikimedia Commons)*
 
 이 문제는 미국의 유명 TV 게임 쇼 였던 *'Let's Make a Deal'*의 진행자 **몬티 홀(Monty Hall)**의 이름을 따서 만들어졌습니다. 게임의 규칙은 아주 간단합니다.
@@ -53,7 +53,7 @@ tags: ["Data Science", "Statistics", "Conditional Probability", "Monty Hall", "M
 
 직관을 완전히 배제하고, 가능한 모든 경우의 수를 따져보겠습니다. 당신이 처음 문을 고를 때 스포츠카를 고를 확률은 당연히 1/3, 염소를 고를 확률은 2/3입니다.
 
-![몬티 홀 문제 시각화 인포그래픽](/wooksai/images/monty_hall_infographic.png)
+![몬티 홀 문제 시각화 인포그래픽](/images/monty_hall_infographic.png)
 *(선택을 유지할 때와 바꿀 때의 확률을 시각화한 조건부 확률 트리)*
 
 진행자 몬티 홀의 행동에는 아주 중요한 **조건(Condition)**이 하나 있습니다. 그는 **"반드시 염소가 있는 문을 열어준다"**는 것입니다.

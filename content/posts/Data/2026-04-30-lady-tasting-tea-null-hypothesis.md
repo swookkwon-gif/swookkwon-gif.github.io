@@ -22,7 +22,7 @@ tags: ["Data Science", "Statistics", "Null Hypothesis", "p-value", "Ronald Fishe
 
 단순히 한 잔을 주고 맞혀보라고 하는 것은 의미가 없습니다. 찍어서 맞힐 확률이 50%나 되니까요. 그래서 피셔는 아주 정교한 **'무작위 대조 실험(Randomized Controlled Trial)'**을 설계합니다.
 
-![밀크티를 맛보는 여인 인포그래픽](/wooksai/images/lady_tasting_tea.png)
+![밀크티를 맛보는 여인 인포그래픽](/images/lady_tasting_tea.png)
 *(피셔가 설계한 8잔의 밀크티 실험과 귀무가설의 원리를 보여주는 데이터 시각화)*
 
 1.  **8잔의 찻잔**을 준비합니다.

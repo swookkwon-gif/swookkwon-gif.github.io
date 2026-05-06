@@ -25,7 +25,7 @@ tags: ["Data Science", "Statistics", "Bayes Theorem", "False Positive", "Paradox
 
 수학적으로 차근차근 따져봅시다. 이해하기 쉽게 인구 1,000만 명의 가상 도시를 예로 들어보겠습니다.
 
-![거짓 양성 패러독스 인포그래픽](/wooksai/images/false_positive_paradox.png)
+![거짓 양성 패러독스 인포그래픽](/images/false_positive_paradox.png)
 *(99% 정확한 테스트의 함정: 1명의 진짜 환자(빨간 점)를 찾아내는 과정에서, 멀쩡한 10명(주황색 점)이 거짓 양성 판정을 받습니다.)*
 
 **[조건 정리]**

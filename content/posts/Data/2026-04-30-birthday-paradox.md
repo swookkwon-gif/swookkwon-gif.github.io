@@ -37,7 +37,7 @@ tags: ["Data Science", "Statistics", "Birthday Paradox", "Probability", "Combina
 
 이 패러독스가 발생하는 핵심 이유는 우리가 **확률을 계산하는 '관점'의 오류** 때문입니다.
 
-![생일 패러독스 인포그래픽](/wooksai/images/birthday_paradox.png)
+![생일 패러독스 인포그래픽](/images/birthday_paradox.png)
 *(23명이 모였을 때 발생하는 경우의 수(네트워크)를 보여주는 시각화. 나와의 비교가 아니라 모든 사람 간의 1:1 비교가 핵심입니다.)*
 
 우리는 무의식적으로 **'나(내 생일)'**를 기준으로 확률을 계산합니다.

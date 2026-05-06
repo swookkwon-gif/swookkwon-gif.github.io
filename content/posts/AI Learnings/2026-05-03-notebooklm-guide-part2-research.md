@@ -26,7 +26,7 @@ reading_time: '8분'
 
 ### Step 1: Deep Research 시작
 
-![Deep Research 인터페이스 — 검색어 입력과 연구 모드 선택](/wooksai/images/notebooklm-guide/nlm-deep-research.png)
+![Deep Research 인터페이스 — 검색어 입력과 연구 모드 선택](/images/notebooklm-guide/nlm-deep-research.png)
 
 1. 노트북 화면의 **소스 추가** 영역에서 상단 검색창에 조사 주제를 입력합니다.
 2. 검색 범위를 선택합니다:
@@ -71,7 +71,7 @@ reading_time: '8분'
 
 NotebookLM의 채팅은 일반 AI 챗봇과 근본적으로 다릅니다. **내가 추가한 소스만**을 기반으로 답변하며, 모든 답변에 **출처 번호**가 달립니다.
 
-![AI 채팅 응답 — 소스 54개 기반의 상세 답변과 출처 인용 번호](/wooksai/images/notebooklm-guide/nlm-chat-response.png)
+![AI 채팅 응답 — 소스 54개 기반의 상세 답변과 출처 인용 번호](/images/notebooklm-guide/nlm-chat-response.png)
 
 위 스크린샷에서 볼 수 있듯이:
 
@@ -135,7 +135,7 @@ NotebookLM의 채팅은 일반 AI 챗봇과 근본적으로 다릅니다. **내�
 
 NotebookLM의 **노트(Note)**는 AI 채팅 결과를 저장하거나, 직접 메모를 작성하여 보관하는 기능입니다. 소스가 '입력'이라면, 노트는 '출력'에 해당합니다.
 
-![노트 관리 화면 — 생성된 아티팩트와 메모가 스튜디오 패널에 정리됨](/wooksai/images/notebooklm-guide/nlm-notes.png)
+![노트 관리 화면 — 생성된 아티팩트와 메모가 스튜디오 패널에 정리됨](/images/notebooklm-guide/nlm-notes.png)
 
 ### 노트 생성 방법
 

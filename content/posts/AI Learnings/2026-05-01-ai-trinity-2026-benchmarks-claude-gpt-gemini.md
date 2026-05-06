@@ -6,7 +6,7 @@ category: AI Learnings
 tags: ["AI Benchmarks", "Claude Opus 4.7", "GPT-5.5", "Gemini 3.1 Pro", "LLM", "HLE", "SWE-bench"]
 ---
 
-![2026년 AI 프론티어 3대장 성능 벤치마크 비교](/wooksai/images/ai_trinity_benchmark_2026.png)
+![2026년 AI 프론티어 3대장 성능 벤치마크 비교](/images/ai_trinity_benchmark_2026.png)
 
 2026년, 인공지능 시장은 단순한 글짓기 도구를 넘어 **스스로 계획하고 실행하며 수정하는 '자율 에이전트(Autonomous Agent)'**들의 전쟁터로 진화했습니다. 
 

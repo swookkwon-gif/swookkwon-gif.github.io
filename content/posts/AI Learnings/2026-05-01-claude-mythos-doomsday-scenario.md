@@ -6,7 +6,7 @@ category: AI Learnings
 tags: ["Claude Mythos", "Anthropic", "Cybersecurity", "AGI", "Military AI", "Crypto Hacking"]
 ---
 
-![은행의 3중 방어벽을 쉽게 뚫고 금융 사고를 일으키는 미토스 시각화](/wooksai/images/mythos_bank_heist_crash.png)
+![은행의 3중 방어벽을 쉽게 뚫고 금융 사고를 일으키는 미토스 시각화](/images/mythos_bank_heist_crash.png)
 
 앤스로픽(Anthropic)이 엄격한 통제 환경(Project Glasswing)에서만 다루고 있는 **'클로드 미토스(Claude Mythos)'**. 만약 이 모델이 해커 집단에 유출되거나 오픈소스로 대중에게 공개된다면 어떤 일이 벌어질까요? 
 

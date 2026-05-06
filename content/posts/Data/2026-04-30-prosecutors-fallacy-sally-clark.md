@@ -44,7 +44,7 @@ tags: ["Data Science", "Statistics", "Prosecutor's Fallacy", "Probability", "Sal
 
 재판 소식을 들은 영국의 왕립 통계학회(Royal Statistical Society)는 경악을 금치 못했고, 즉각 반박 성명을 냈습니다. 메도우 교수의 계산에는 두 가지 치명적인 오류가 있었습니다.
 
-![검사의 오류 인포그래픽](/wooksai/images/prosecutors_fallacy.png)
+![검사의 오류 인포그래픽](/images/prosecutors_fallacy.png)
 *(저울의 한쪽을 짓누르는 잘못된 7,300만 분의 1의 확률. 하지만 두 아기의 유전자와 환경은 '독립 사건'이 아닙니다.)*
 
 ### 오류 1: '독립 사건'이 아니라 '종속 사건'이다

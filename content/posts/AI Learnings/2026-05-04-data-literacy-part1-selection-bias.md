@@ -30,7 +30,7 @@ tags: ["Marketing", "Data Literacy", "Selection Bias", "Analytics"]
 
 ## 2. 선택 편향 (Selection Bias)이란 무엇인가?
 
-![멤버십 프로그램의 선택 편향](/wooksai/images/loyalty_selection_bias.png)
+![멤버십 프로그램의 선택 편향](/images/loyalty_selection_bias.png)
 *깔때기(Funnel)를 쉽게 통과하는 사람들은 이미 별표(VIP 자격)를 들고 있던 사람들입니다. 마케팅 프로그램이 그들을 특별하게 만든 것이 아니라, 특별한 사람들이 스스로 마케팅 프로그램을 '선택'한 것입니다. (AI Generated)*
 
 위의 카페 사례에서 마케터가 범한 오류는 **상관관계(Correlation)와 인과관계(Causation)를 혼동**한 전형적인 사례입니다. 이를 데이터 분석 용어로 **'선택 편향(Selection Bias)'** 중에서도 '자가 선택 효과(Self-Selection Effect)'라고 부릅니다.

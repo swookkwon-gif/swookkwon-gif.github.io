@@ -18,7 +18,7 @@ tags: ["Data Science", "Statistics", "Will Rogers Phenomenon", "Stage Migration"
 
 상식적으로 한 집단의 사람이 다른 집단으로 이동하면, 한쪽의 평균이 오르면 다른 쪽은 떨어져야 정상 아닐까요? 하지만 수학적으로 양쪽의 평균을 동시에 올리는 것은 아주 간단합니다.
 
-![윌 로저스 현상 인포그래픽](/wooksai/images/will_rogers_phenomenon.png)
+![윌 로저스 현상 인포그래픽](/images/will_rogers_phenomenon.png)
 *(수치 이동에 따른 윌 로저스 현상을 명확하게 보여주는 데이터 시각화)*
 
 여기 두 개의 집단이 있습니다.

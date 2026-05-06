@@ -39,7 +39,7 @@ tags: ["Data Science", "Data Visualization", "Statistics", "Anscombe's Quartet",
 
 명령대로 4개의 데이터를 시각화하는 순간, 믿을 수 없는 반전이 펼쳐집니다.
 
-![앤스컴의 콰르텟 인포그래픽](/wooksai/images/anscombes_quartet.png)
+![앤스컴의 콰르텟 인포그래픽](/images/anscombes_quartet.png)
 *(숫자는 완벽히 동일하지만, 그래프로 그리는 순간 드러나는 4가지 완전히 다른 형태의 데이터 구조)*
 
 *   **데이터 I**: 우리가 흔히 예상하는 이상적이고 정상적인 선형 관계(Linear)입니다. 점들이 회귀선 주위에 골고루 퍼져 있습니다.

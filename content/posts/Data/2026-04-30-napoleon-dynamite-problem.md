@@ -35,7 +35,7 @@ tags: ["Data Science", "Machine Learning", "Recommendation System", "Netflix Pri
 
 그 영화가 바로 **«나폴레옹 다이너마이트»**였습니다.
 
-![나폴레옹 다이너마이트 알고리즘 에러 시각화](/wooksai/images/napoleon_dynamite.png)
+![나폴레옹 다이너마이트 알고리즘 에러 시각화](/images/napoleon_dynamite.png)
 *(넷플릭스 추천 알고리즘의 악몽: 잘 정돈된 유저 클러스터링(좌측)이 '나폴레옹 다이너마이트'라는 이상치(우측)를 만나는 순간, 예측선이 무작위로 산산조각 나며 붕괴합니다.)*
 
 이 영화는 미국의 전형적인 너드(Nerd) 고등학생의 찌질하고 기상천외한 일상을 다룬 초저예산 독립 영화입니다. 엄청난 마니아층(Cult)을 양산하며 흥행에 성공했지만, 영화의 내용이 너무나도 괴상하고 독특했습니다.

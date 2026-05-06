@@ -22,7 +22,7 @@ tags: ["AI", "Karpathy", "AutoResearch", "AI Agent", "Software 3.0", "Automation
 
 AutoResearch를 이해하려면 먼저 카파시가 제시한 소프트웨어 패러다임의 진화를 알아야 합니다.
 
-![소프트웨어 패러다임의 진화](/wooksai/images/software_evolution_paradigm.png)
+![소프트웨어 패러다임의 진화](/images/software_evolution_paradigm.png)
 *카파시가 정의한 소프트웨어의 세 가지 시대. 코드를 직접 타이핑하던 1.0 시대에서, 데이터로 모델을 학습시키는 2.0을 거쳐, 자연어 프롬프트 자체가 프로그램이 되는 3.0 시대로 진화하고 있습니다. (AI Generated)*
 
 ### Software 1.0: 인간이 코드를 짠다
@@ -42,7 +42,7 @@ AutoResearch는 바로 이 **Software 3.0** 패러다임의 가장 실용적인 
 
 AutoResearch의 핵심은 놀라울 정도로 단순합니다. 복잡한 인프라도, 거대한 프레임워크도 필요 없습니다. 단 세 개의 파일과 하나의 피드백 루프(Feedback Loop)가 전부입니다.
 
-![카파시 루프 다이어그램](/wooksai/images/autoresearch_loop_diagram.png)
+![카파시 루프 다이어그램](/images/autoresearch_loop_diagram.png)
 *AutoResearch의 핵심인 자율 최적화 루프(The Karpathy Loop). AI 에이전트는 이 다섯 단계를 인간의 개입 없이 끝없이 반복하며, 산을 오르듯(Hill-climbing) 성능을 개선해 나갑니다. (AI Generated)*
 
 ### 루프의 작동 원리 (5단계)

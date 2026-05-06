@@ -60,7 +60,7 @@ tags: ["Marketing", "Data Literacy", "Simpson's Paradox", "A/B Testing", "Analyt
 
 ## 3. 왜 이런 역설이 발생하는가? (잠복 변수의 장난)
 
-![심슨의 역설 인포그래픽](/wooksai/images/simpsons_paradox_marketing.png)
+![심슨의 역설 인포그래픽](/images/simpsons_paradox_marketing.png)
 *전체 데이터를 뭉뚱그려 보면 파란색 큰 화살표처럼 우상향하는 것처럼 보이지만, 내부의 세부 그룹(빨간 화살표)을 뜯어보면 사실상 모든 지표가 하락하고 있는 현상을 직관적으로 보여줍니다. (AI Generated)*
 
 이런 말도 안 되는 역설이 발생하는 이유는 **'모집단의 불균형(Mix Shift)'**과 **'잠복 변수(Lurking Variable)'**를 무시했기 때문입니다.

@@ -18,7 +18,7 @@ tags: ["Marketing", "Data Literacy", "Attribution", "MMM", "Analytics"]
 
 ## 1. 섀도우 스트라이커와 이기적인 골잡이
 
-![라스트 클릭 기여도 비유](/wooksai/images/last_click_attribution_marketing.png)
+![라스트 클릭 기여도 비유](/images/last_click_attribution_marketing.png)
 *골을 넣은 스트라이커(검색 광고)는 화려한 스포트라이트를 받으며 100%의 성과를 인정받습니다. 하지만 어시스트를 찔러준 미드필더와 수비수(유튜브 영상, 브랜딩 광고)는 어둠 속에서 아무런 데이터적 보상을 받지 못합니다. (AI Generated)*
 
 한 고객이 당신의 제품을 구매하기까지의 여정(Customer Journey)을 축구 경기에 비유해 봅시다.

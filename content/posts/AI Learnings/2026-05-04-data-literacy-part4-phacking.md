@@ -32,7 +32,7 @@ tags: ["Marketing", "Data Literacy", "A/B Testing", "P-Hacking", "Statistics"]
 
 ## 2. 거짓 양성(False Positive)과 Peeking Problem
 
-![P-해킹과 거짓 양성](/wooksai/images/phacking_false_positive_marketing.png)
+![P-해킹과 거짓 양성](/images/phacking_false_positive_marketing.png)
 *테스트가 정상적으로 끝날 때(우측 유령선)까지 기다리지 않고, 우연히 그래프가 튀어 오른 순간에 가위로 결승선을 잘라버려(Early Stopping) 억지 승리를 만들어내는 모습. 이를 P-Hacking이라고 부릅니다. (AI Generated)*
 
 동전을 10번 던졌을 때 우연히 앞면이 8번 연속으로 나올 확률은 존재합니다. 하지만 10,000번을 던지면 결국 50:50으로 수렴하게 됩니다. A/B 테스트도 마찬가지입니다. 테스트 극초반에는 트래픽(표본 수)이 적기 때문에, 단 몇 명의 우연한 구매만으로도 전환율이 미친 듯이 요동(Fluctuation)칩니다.

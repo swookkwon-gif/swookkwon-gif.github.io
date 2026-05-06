@@ -16,7 +16,7 @@ tags: ["Data Science", "Statistics", "Spatial Data", "John Snow", "Epidemiology"
 
 ## 🤔 1. "나쁜 공기가 원인이라면 왜 폐가 아니라 장이 망가질까?"
 
-![존 스노우 의사](/wooksai/images/john_snow.jpg)
+![존 스노우 의사](/images/john_snow.jpg)
 *(현대 역학과 공중보건학의 아버지로 불리는 존 스노우. 왕좌의 게임 주인공과 이름이 같습니다. 출처: Wikimedia Commons)*
 
 존 스노우는 환자들의 증상을 면밀히 관찰한 뒤 한 가지 합리적인 의심을 품었습니다. 
@@ -30,7 +30,7 @@ tags: ["Data Science", "Statistics", "Spatial Data", "John Snow", "Epidemiology"
 
 존 스노우는 밤낮으로 소호 지역을 돌아다니며 사망자가 발생한 집의 주소를 수집했습니다. 그리고 수집한 사망자 데이터를 단순히 장부(엑셀 표)에 기록하는 대신, **런던 시내 지도 위에 '검은색 점(Dot)'으로 찍기 시작했습니다.** 한 집에서 사망자가 3명 나왔다면, 그 집 위치에 점을 3개 겹쳐 찍는 방식이었습니다.
 
-![존 스노우 콜레라 지도](/wooksai/images/snow_cholera_map.jpg)
+![존 스노우 콜레라 지도](/images/snow_cholera_map.jpg)
 *(존 스노우가 직접 그린 오리지널 브로드 스트리트 콜레라 지도. 출처: Wikimedia Commons)*
 
 모든 데이터를 지도 위에 매핑(Mapping)하자, 충격적인 패턴이 눈앞에 드러났습니다. 
@@ -42,7 +42,7 @@ tags: ["Data Science", "Statistics", "Spatial Data", "John Snow", "Epidemiology"
 
 지도는 원인을 지목하고 있었지만, 존 스노우는 데이터 과학자답게 예외 케이스(Outlier)들을 교차 검증했습니다.
 
-![공간 클러스터링 인포그래픽](/wooksai/images/spatial_clustering_cholera.png)
+![공간 클러스터링 인포그래픽](/images/spatial_clustering_cholera.png)
 *(공간 클러스터링을 현대적 데이터 시각화로 재해석한 인포그래픽. 붉은 점들이 펌프를 중심으로 밀집해 있다.)*
 
 1.  **펌프 바로 옆에 있는데도 생존한 사람들**: 펌프 바로 옆에 양조장(맥주 공장)이 하나 있었습니다. 하지만 양조장 노동자 70명 중에는 사망자가 단 한 명도 없었습니다. 조사 결과, 노동자들은 물 대신 공장에서 무제한 제공되는 맥주를 마셨고, 맥주는 끓이는 과정을 거치기 때문에 콜레라균이 모두 죽었던 것입니다.

@@ -20,7 +20,7 @@ tags: ["Data Science", "Statistics", "Sampling Bias", "George Gallup", "Literary
 
 당시 미국에는 여론조사 분야의 절대 권력자가 있었습니다. 바로 주간지 **«리터러리 다이제스트(The Literary Digest)»**였습니다. 이 잡지사는 1920년부터 무려 4번의 대선 결과를 한 번의 오차도 없이 정확하게 맞혀내며 국민적인 신뢰를 얻고 있었습니다.
 
-![리터러리 다이제스트 잡지](/wooksai/images/literary_digest.png)
+![리터러리 다이제스트 잡지](/images/literary_digest.png)
 *(당시 엄청난 권위를 자랑하던 리터러리 다이제스트 잡지. 출처: Wikimedia Commons)*
 
 1936년에도 그들은 엄청난 스케일의 조사를 단행했습니다. 무려 **1,000만 장의 모의 투표용지**를 전국에 우편으로 발송했고, 그중 **240만 장**이 회수되었습니다. 현대의 여론조사 표본이 보통 1,000명 수준인 것을 생각하면 240만 명이라는 숫자는 전무후무한, 그야말로 압도적인 '빅데이터'였습니다.
@@ -35,7 +35,7 @@ tags: ["Data Science", "Statistics", "Sampling Bias", "George Gallup", "Literary
 선거 결과는 어땠을까요? 
 뚜껑을 열어보니 공화당의 랜던이 압승하기는커녕, **루스벨트가 전체 48개 주 가운데 무려 46개 주를 싹쓸이하며 60% 이상의 득표율로 미국 역사상 유례없는 대승**을 거두었습니다. 
 
-![프랭클린 D. 루스벨트](/wooksai/images/fdr_1936.jpg)
+![프랭클린 D. 루스벨트](/images/fdr_1936.jpg)
 *(압도적인 지지율로 재선에 성공한 루스벨트 대통령. 출처: Wikimedia Commons)*
 
 240만 명이라는 엄청난 데이터를 바탕으로 한 «리터러리 다이제스트»의 예측은 완벽하게 빗나갔고, 그들은 신뢰도를 모두 잃은 채 불과 2년 뒤 파산하여 역사 속으로 사라지고 말았습니다. 
@@ -50,7 +50,7 @@ tags: ["Data Science", "Statistics", "Sampling Bias", "George Gallup", "Literary
 
 당시 1936년은 미국이 대공황(Great Depression)의 한가운데 있던 시절입니다. 그 시절에 집에 전화기가 있고 자동차를 굴릴 수 있는 사람은 **상류층과 부유층**뿐이었습니다. 그리고 미국의 부유층은 전통적으로 보수 성향의 공화당(랜던 후보) 지지자였습니다.
 
-![표본 추출 편향 시각화 인포그래픽](/wooksai/images/sampling_bias_infographic.png)
+![표본 추출 편향 시각화 인포그래픽](/images/sampling_bias_infographic.png)
 *(수백만 개의 데이터라도 한쪽 계층에 편중되면 완전히 잘못된 결과를 낳는다. 반면 데이터가 작아도 모집단의 비율을 정확히 반영하면 예측은 적중한다.)*
 
 반면, 대공황의 직격탄을 맞아 전화도 차도 없었던 수천만 명의 노동자와 빈민층은 루스벨트의 뉴딜(New Deal) 정책을 열렬히 지지했습니다. 하지만 **이들의 목소리는 잡지사의 '240만 명 데이터' 안에 단 한 명도 포함되지 못했습니다.**
@@ -63,7 +63,7 @@ tags: ["Data Science", "Statistics", "Sampling Bias", "George Gallup", "Literary
 
 이 참담한 실패의 한가운데서, 통계학 역사에 길이 남을 영웅이 등장합니다. 바로 현대 여론조사의 아버지라 불리는 **조지 갤럽(George Gallup)**입니다.
 
-![조지 갤럽](/wooksai/images/george_gallup.png)
+![조지 갤럽](/images/george_gallup.png)
 *(여론조사의 전설이 된 조지 갤럽. 출처: Wikimedia Commons)*
 
 당시 30대의 젊은 통계학자였던 갤럽은 «리터러리 다이제스트»가 240만 명을 조사할 때, **고작 5만 명**의 데이터만으로 루스벨트의 당선을 정확하게 예측해 냈습니다.

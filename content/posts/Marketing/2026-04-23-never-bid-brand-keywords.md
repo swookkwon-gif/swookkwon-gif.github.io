@@ -5,7 +5,7 @@ excerpt: "Meta CMO - 브랜드 키워드 광고 하지 마라, 그러나 예외�
 category: Marketing
 ---
 
-![Brand Keyword Expansion Strategy](/wooksai/images/brand_bidding_hero.png)
+![Brand Keyword Expansion Strategy](/images/brand_bidding_hero.png)
 
 디지털 마케팅 담당자들, 구글 직원들을 포함한 마케팅 업계 관계자들과 브랜드 키워드 검색광고(SA)에 대해 이야기를 나누다 보면,
 늘 첨예하게 대립하는 두 가지 주장을 마주하게 됩니다.

@@ -26,7 +26,7 @@ category: Marketing
 
 연구진은 이 가설을 증명하기 위해 거대한 스위치를 내렸습니다. Yahoo와 MSN에서 **'eBay'가 들어간 브랜드 키워드 검색 광고를 완전히 중단**해본 것이죠. 아래는 그 충격적인 결과를 보여주는 실제 실험 데이터입니다.
 
-![eBay Brand Search Experiment Results](/wooksai/images/tadelis_fig_7_1.jpeg)
+![eBay Brand Search Experiment Results](/images/tadelis_fig_7_1.jpeg)
 <br/>
 <caption class="text-sm text-neutral-500 text-center block mb-8">*가운데 파란 음영 처리된 기간이 광고를 껐을 때입니다. 유료 클릭(MSN Paid)이 소멸하자 자연 검색(MSN Natural)이 기둥처럼 치솟습니다.*</caption>
 

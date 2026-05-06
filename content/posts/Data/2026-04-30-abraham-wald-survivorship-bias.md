@@ -16,7 +16,7 @@ tags: ["Data Science", "Statistics", "Survivorship Bias", "Abraham Wald", "생�
 
 ## 🛩️ 폭격기의 생존율을 높여라!
 
-![대공포를 맞고 간신히 귀환한 실제 B-17 폭격기](/wooksai/images/b17_flak_damage.jpg)
+![대공포를 맞고 간신히 귀환한 실제 B-17 폭격기](/images/b17_flak_damage.jpg)
 *(2차 세계대전 당시 대공포(Flak)를 맞고 간신히 귀환한 미군의 B-17 폭격기. 출처: Wikimedia Commons)*
 
 2차 세계대전이 한창이던 1943년, 미군 수뇌부에는 비상이 걸렸습니다. 유럽 전선으로 출격한 B-17 폭격기들이 나치 독일군의 대공포를 맞고 속절없이 추락하여 엄청난 조종사들이 희생되고 있었기 때문입니다.
@@ -29,7 +29,7 @@ tags: ["Data Science", "Statistics", "Survivorship Bias", "Abraham Wald", "생�
 
 당시 미군이 수집했던 기체 부위별 피격 데이터(1제곱피트당 총탄 자국 수)의 실제 수치는 다음과 같았습니다.
 
-![생존자 편향의 함정: 돌아온 폭격기의 총탄 자국](/wooksai/images/survivorship_bias.png)
+![생존자 편향의 함정: 돌아온 폭격기의 총탄 자국](/images/survivorship_bias.png)
 *(총탄이 많이 박힌 곳을 보강해야 할까, 아니면 총탄이 없는 곳을 보강해야 할까?)*
 
 *   **기타 부위(날개 등)**: 1.80발

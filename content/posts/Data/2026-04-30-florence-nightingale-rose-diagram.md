@@ -18,7 +18,7 @@ tags: ["Data Science", "Statistics", "Data Visualization", "Florence Nightingale
 
 그녀가 병원에 도착해 사망자 데이터를 꼼꼼히 기록하고 분석해 본 결과, 충격적인 진실이 드러났습니다. 막사에서 죽어 나가는 병사들의 대다수는 러시아군의 총알에 맞아서 죽은 것이 아니었습니다. **사망자의 절대다수는 비위생적인 환경 때문에 걸린 콜레라, 장티푸스, 이질 같은 '예방 가능한 전염병' 때문에 죽어가고 있었습니다.**
 
-![플로렌스 나이팅게일](/wooksai/images/florence_nightingale.jpg)
+![플로렌스 나이팅게일](/images/florence_nightingale.jpg)
 *(단순한 간호사를 넘어 탁월한 통계학자이자 행정가였던 플로렌스 나이팅게일. 출처: Wikimedia Commons)*
 
 나이팅게일은 이 참혹한 죽음을 막기 위해 하수도를 정비하고 깨끗한 물과 환기 시설을 갖춰야 한다며 영국 의회와 군 수뇌부에 예산 지원을 간곡히 요청했습니다.
@@ -33,7 +33,7 @@ tags: ["Data Science", "Statistics", "Data Visualization", "Florence Nightingale
 
 나이팅게일은 숫자를 인간의 뇌에 직접 꽂아 넣을 방법을 고민했습니다. 그리고 **'폴라 에어리어 차트(Polar Area Chart)'**, 훗날 그녀의 이름을 따 **'장미 도표(Rose Diagram)'**라 불리게 되는 역사적인 데이터 시각화 차트를 발명해 냅니다.
 
-![나이팅게일 원본 차트](/wooksai/images/nightingale_mortality.jpg)
+![나이팅게일 원본 차트](/images/nightingale_mortality.jpg)
 *(나이팅게일이 의회를 설득하기 위해 직접 그린 오리지널 장미 도표. 출처: Wikimedia Commons)*
 
 원형의 파이 차트(Pie Chart)가 각도를 쪼개어 비율을 나타낸다면, 나이팅게일의 차트는 열두 달을 의미하는 12개의 조각으로 원을 나누고, **사망자의 수에 비례하여 부채꼴의 반지름(넓이)을 뻗어 나가게** 그렸습니다. 
@@ -43,7 +43,7 @@ tags: ["Data Science", "Statistics", "Data Visualization", "Florence Nightingale
 *   **빨간색**: 전투 중 입은 부상으로 인한 사망 (어쩔 수 없는 죽음)
 *   **파란색**: 비위생적인 환경으로 인한 전염병 사망 (예방 가능한 죽음)
 
-![장미 도표 현대적 시각화](/wooksai/images/nightingale_rose_diagram.png)
+![장미 도표 현대적 시각화](/images/nightingale_rose_diagram.png)
 *(장미 도표의 핵심을 현대적인 데이터 인포그래픽으로 재구성한 시각화)*
 
 결과는 시각적으로 엄청난 충격이었습니다. 빨간색(전투 사망자) 영역은 원의 중심에 아주 작게 웅크리고 있는 반면, **파란색(전염병 사망자) 영역은 화면을 집어삼킬 듯이 거대하게 펼쳐져 있었습니다.**

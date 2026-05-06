@@ -25,7 +25,7 @@ tags: ["Marketing", "Data Literacy", "Survivorship Bias", "Churn", "Analytics"]
 
 이 80년 전의 통계적 통찰은 오늘날의 디지털 마케팅 퍼널(Funnel)에도 소름 돋도록 정확하게 적용됩니다.
 
-![마케팅 퍼널과 생존자 편향](/wooksai/images/survivorship_bias_marketing.png)
+![마케팅 퍼널과 생존자 편향](/images/survivorship_bias_marketing.png)
 *깔때기 밑바닥까지 살아남은 소수의 '활성 유저'들은 확성기를 들고 의견을 내지만, 깔때기 중간에 뚫린 구멍으로 추락해 버린 압도적 다수의 '이탈 유저'들은 아무런 데이터도 남기지 않은 채 침묵합니다. (AI Generated)*
 
 ---

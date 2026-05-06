@@ -18,7 +18,7 @@ tags: ["AI", "STORM", "Deep Research", "NotebookLM", "Perplexity", "Blog Automat
 
 ## 1. 주요 AI 리서치 프레임워크 비교
 
-![AI 리서치 도구 비교](/wooksai/images/ai_research_stack_comparison.png)
+![AI 리서치 도구 비교](/images/ai_research_stack_comparison.png)
 *각 AI 리서치 도구는 Discovery(발견), Synthesis(종합), Validation(검증), Publication(발행)이라는 연구 파이프라인의 서로 다른 단계에서 강점을 발휘합니다. 하나의 도구만 쓰는 것이 아니라, 단계별로 적합한 도구를 조합하는 '리서치 스택'을 구축하는 것이 핵심입니다. (AI Generated)*
 
 ### ① 스탠포드 STORM — 구조적 글쓰기의 정석

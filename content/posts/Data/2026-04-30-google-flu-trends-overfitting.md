@@ -28,7 +28,7 @@ tags: ["Data Science", "Big Data", "Google Flu Trends", "Overfitting", "Algorith
 하지만 시간이 흘러 CDC가 실제 병원 진료 데이터를 집계해 보니 결과는 황당했습니다.
 구글 독감 트렌드가 예측한 환자 수는 **실제 독감 환자 수보다 무려 2배(130% 오차)나 뻥튀기**되어 있었던 것입니다. 
 
-![구글 독감 트렌드 실패 인포그래픽](/wooksai/images/google_flu_trends.png)
+![구글 독감 트렌드 실패 인포그래픽](/images/google_flu_trends.png)
 *(실제 독감 환자 수(파란 선)를 무시하고 미친 듯이 치솟아 버린 구글 알고리즘의 예측치(빨간 선). 이는 '과적합(Overfitting)'과 상관관계의 함정이 낳은 비극입니다.)*
 
 도대체 그 완벽했던 구글의 5천만 개 빅데이터 알고리즘에 무슨 일이 벌어진 것일까요?

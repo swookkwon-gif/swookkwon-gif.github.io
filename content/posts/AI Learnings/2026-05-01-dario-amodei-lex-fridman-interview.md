@@ -6,7 +6,7 @@ category: AI Learnings
 tags: ["Anthropic", "Dario Amodei", "Lex Fridman", "AGI", "Claude", "Constitutional AI", "AI Safety"]
 ---
 
-![다리오 아모데이가 그리는 긍정적 AGI 미래 '자애로운 은총의 기계(Machines of Loving Grace)'](/wooksai/images/dario_amodei_interview_hero.png)
+![다리오 아모데이가 그리는 긍정적 AGI 미래 '자애로운 은총의 기계(Machines of Loving Grace)'](/images/dario_amodei_interview_hero.png)
 
 가장 똑똑하고 안전한 AI 모델로 꼽히는 **'클로드(Claude)'**를 탄생시킨 앤스로픽(Anthropic)의 CEO **다리오 아모데이(Dario Amodei)**가 유명 팟캐스트인 **렉스 프리드먼(Lex Fridman)** 쇼에 출연해 무려 5시간에 걸친 심도 깊은 인터뷰를 진행했습니다. 
 

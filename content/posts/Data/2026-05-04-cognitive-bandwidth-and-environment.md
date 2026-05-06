@@ -18,7 +18,7 @@ tags:
 
 ---
 
-![인지적 대역폭 일러스트](/wooksai/images/cognitive_bandwidth.png)
+![인지적 대역폭 일러스트](/images/cognitive_bandwidth.png)
 *우리의 뇌는 한정된 배터리를 가진 전자기기와 같습니다. 결핍과 스트레스는 이 배터리를 무서운 속도로 방전시킵니다. (AI Generated)*
 
 ## 1. '결핍의 심리학': 뇌에 일어나는 치명적 오류들
@@ -27,7 +27,7 @@ tags:
 
 ### 터널링 효과 (Tunneling)
 
-![터널링 효과 인포그래픽](/wooksai/images/tunneling_effect.png)
+![터널링 효과 인포그래픽](/images/tunneling_effect.png)
 *결핍은 터널링 효과를 유발하여 시급한 문제에만 매몰되게 하고, 건강이나 가족 같은 장기적인 가치를 시야에서 사라지게 만듭니다. (AI Generated)*
 
 소방관이 불길 속에서 시야가 좁아지는 현상처럼, 결핍은 우리의 시야를 좁게 만듭니다(Tunnel Vision). 당장 갚아야 할 카드값이나 내일 아침까지 끝내야 하는 데드라인에 쫓기면, 뇌의 모든 리소스가 그 '가장 시급한 문제'에 쏠리게 됩니다. 
@@ -52,7 +52,7 @@ tags:
 
 ### 수면 부족 (Sleep Deprivation)
 
-![수면 부족과 뇌 신경망 분리](/wooksai/images/sleep_deprivation_brain.png)
+![수면 부족과 뇌 신경망 분리](/images/sleep_deprivation_brain.png)
 *수면 부족은 전두엽(파란색)과 편도체(빨간색) 사이의 신경망 연결을 끊어버려, 뇌가 작은 자극에도 과민하게 폭발하도록 만듭니다. (AI Generated)*
 
 UC 버클리의 수면 과학자 매튜 워커(Matthew Walker) 교수는 수면 부족이 뇌의 전두엽과 편도체 사이의 연결을 물리적으로 끊어버린다고 경고합니다. fMRI 뇌 스캔 연구에 따르면, 하룻밤만 잠을 설쳐도 감정을 통제하는 전두엽의 제동 장치가 풀리며 뇌는 스트레스에 무려 60% 이상 과민 반응하게 됩니다. 
@@ -68,7 +68,7 @@ UC 버클리의 수면 과학자 매튜 워커(Matthew Walker) 교수는 수면 
 
 ### ② 슬러지(Sludge) 제거하기
 
-![슬러지와 선택 설계 인포그래픽](/wooksai/images/choice_architecture_sludge.png)
+![슬러지와 선택 설계 인포그래픽](/images/choice_architecture_sludge.png)
 *매끄러운 목표 달성(오른쪽)을 가로막는 수많은 알림과 복잡한 절차들(슬러지)을 선제적으로 제거하는 것이 중요합니다. (AI Generated)*
 
 *   **연구 근거:** 넛지(Nudge)가 좋은 결정을 유도하는 장치라면, '슬러지(Sludge)'는 끈적한 진흙처럼 좋은 결정을 가로막는 불필요한 마찰력(Friction)입니다. 스마트폰의 수많은 알림, 복잡한 비밀번호 찾기 절차, 어수선한 책상 등이 모두 슬러지입니다. 특히 텍사스 대학의 연구에 따르면, 스마트폰이 책상 위에 놓여 있는 것만으로도 뇌는 이를 무시하는 데 대역폭을 사용하여 인지 능력이 저하됩니다.

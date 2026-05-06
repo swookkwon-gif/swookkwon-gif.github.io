@@ -39,7 +39,7 @@ tags: ["Data Science", "Statistics", "Freakonomics", "Correlation", "Data Analys
 
 그리고 승부 조작의 완벽한 증거를 찾아냈습니다.
 
-![스모 승부 조작 데이터 시각화](/wooksai/images/freakonomics_sumo.png)
+![스모 승부 조작 데이터 시각화](/images/freakonomics_sumo.png)
 *(Freakonomics 데이터 시각화 재현: 7승에서 비정상적으로 푹 꺼지고, 8승에서 비정상적으로 솟아오른 기형적인 분포)*
 
 정상적인 스포츠 경기라면 선수의 승수 분포는 정규분포(종 모양) 형태를 띠거나 자연스러운 곡선을 그려야 합니다. 7승을 하는 선수의 수와 8승을 하는 선수의 수는 비슷해야 정상입니다.
