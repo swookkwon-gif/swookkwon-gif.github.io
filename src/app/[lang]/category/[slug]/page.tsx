@@ -46,7 +46,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
       <div className="flex flex-col">
         {filteredPosts.map((post) => (
           <article key={post.slug} className="mm-post-item group">
-            <h2 className="text-xl md:text-2xl font-bold mb-2">
+            <h2 className="text-lg md:text-xl font-bold mb-2">
               <Link href={`/${lang}/posts/${post.slug}`} className="text-neutral-900 group-hover:text-blue-600 transition-colors">
                 {post.title}
               </Link>

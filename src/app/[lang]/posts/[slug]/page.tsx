@@ -28,7 +28,7 @@ export default async function PostPage({
   return (
     <article className="font-sans w-full max-w-none pt-4 md:pt-0">
       <header className="mb-8 md:mb-10">
-        <h1 className="text-2xl md:text-4xl font-bold mb-4 md:mb-6 text-neutral-900 tracking-tight leading-[1.3]">
+        <h1 className="text-xl md:text-3xl font-bold mb-3 md:mb-5 text-neutral-900 tracking-tight leading-[1.3]">
           {post.title}
         </h1>
         <div className="flex items-center gap-4 text-xs font-semibold text-neutral-500 uppercase tracking-widest mb-6 pb-6 border-b border-neutral-100">
