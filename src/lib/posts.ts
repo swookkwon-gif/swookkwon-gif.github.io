@@ -66,22 +66,43 @@ export function getSortedPostsData(lang: string = 'ko'): PostData[] {
       ? parentFolder.replace(/^\d+\.\s*/, '') 
       : (data.category || 'Insight');
 
-    const postDate = data.date instanceof Date 
-      ? data.date.toISOString().split('T')[0]
-      : (data.date ? String(data.date).split('T')[0] : new Date().toISOString().split('T')[0]);
+    let postDateStr = '';
+    let sortTimestamp = 0;
+    try {
+      const rawDate = data.date || new Date();
+      // gray-matter parses valid dates into Date objects
+      const d = rawDate instanceof Date ? rawDate : new Date(String(rawDate));
+      
+      if (!isNaN(d.getTime())) {
+        sortTimestamp = d.getTime();
+        // Format to YYYY-MM-DD HH:mm (KST)
+        const kstDate = new Date(d.getTime() + (9 * 60 * 60 * 1000));
+        const yyyy = kstDate.getUTCFullYear();
+        const mm = String(kstDate.getUTCMonth() + 1).padStart(2, '0');
+        const dd = String(kstDate.getUTCDate()).padStart(2, '0');
+        const hh = String(kstDate.getUTCHours()).padStart(2, '0');
+        const min = String(kstDate.getUTCMinutes()).padStart(2, '0');
+        postDateStr = `${yyyy}-${mm}-${dd} ${hh}:${min}`;
+      } else {
+        postDateStr = String(data.date).split('T')[0];
+      }
+    } catch (e) {
+      postDateStr = String(data.date).split('T')[0];
+    }
 
     return {
       ...data,
       slug,
       content,
       title: data.title,
-      date: postDate,
+      date: postDateStr,
+      _sortTimestamp: sortTimestamp, // 내부 정렬용 필드
       excerpt: data.excerpt || generateExcerpt(content),
       category: derivedCategory,
-    } as PostData;
+    } as PostData & { _sortTimestamp: number };
   });
 
-  return allPostsData.sort((a, b) => (a.date < b.date ? 1 : -1));
+  return allPostsData.sort((a, b) => (a._sortTimestamp < b._sortTimestamp ? 1 : -1));
 }
 
 export function getPostData(slug: string, lang: string = 'ko'): PostData {
@@ -126,16 +147,32 @@ export function getPostData(slug: string, lang: string = 'ko'): PostData {
       .map(p => ({ slug: p.slug, title: p.title, date: p.date, category: p.category, excerpt: p.excerpt }));
   }
 
-  const postDate = data.date instanceof Date 
-    ? data.date.toISOString().split('T')[0]
-    : (data.date ? String(data.date).split('T')[0] : new Date().toISOString().split('T')[0]);
+  let postDateStr = '';
+  try {
+    const rawDate = data.date || new Date();
+    const d = rawDate instanceof Date ? rawDate : new Date(String(rawDate));
+    
+    if (!isNaN(d.getTime())) {
+      const kstDate = new Date(d.getTime() + (9 * 60 * 60 * 1000));
+      const yyyy = kstDate.getUTCFullYear();
+      const mm = String(kstDate.getUTCMonth() + 1).padStart(2, '0');
+      const dd = String(kstDate.getUTCDate()).padStart(2, '0');
+      const hh = String(kstDate.getUTCHours()).padStart(2, '0');
+      const min = String(kstDate.getUTCMinutes()).padStart(2, '0');
+      postDateStr = `${yyyy}-${mm}-${dd} ${hh}:${min}`;
+    } else {
+      postDateStr = String(data.date).split('T')[0];
+    }
+  } catch (e) {
+    postDateStr = String(data.date).split('T')[0];
+  }
 
   return {
     ...data,
     slug,
     content,
     title: data.title,
-    date: postDate,
+    date: postDateStr,
     excerpt: data.excerpt || generateExcerpt(content),
     category: derivedCategory,
     relatedPosts,
