@@ -1,6 +1,6 @@
 ---
-title: "2주 만에 100개 — '1인 AI 미디어'를 만든 무인 블로그 파이프라인 구축기"
-date: 2026-04-30T14:00:00+09:00
+title: "2주 만에 포스트 100개 — AI 자동 블로그 구축기 - v0.1"
+date: 2026-05-06T14:00:00+09:00
 excerpt: "GitHub Actions, Next.js, Gemini 2.5 Search Grounding을 결합하여 2주 만에 100개 이상의 전문 분석 포스트를 생산한 1인 AI 미디어 파이프라인의 설계, 구현, 그리고 성과를 공유한다."
 category: AI Learnings
 tags: ["AI Agent", "GitHub Actions", "Next.js", "Gemini API", "Automation", "1인 미디어"]

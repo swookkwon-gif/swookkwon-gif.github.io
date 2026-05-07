@@ -1,0 +1,8 @@
+{
+  "AITimes": {
+    "title_exclude": ["단신", "["]
+  },
+  "global": {
+    "title_exclude": []
+  }
+}

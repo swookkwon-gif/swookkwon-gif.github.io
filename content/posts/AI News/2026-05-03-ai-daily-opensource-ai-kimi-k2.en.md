@@ -1,5 +1,5 @@
 ---
-title: '[May 03] AI Daily Digest — Open Source AI Breakthroughs, AI Reasoning Limits and Ethical Dilemmas, Enterprise AI Strategies'
+title: 'May 03 AI Daily — Open Source AI Breakthroughs, AI Reasoning Limits'
 date: '2026-05-03'
 excerpt: 'AI technology is advancing at an unprecedented pace, driving innovation across various sectors. In particular, alongside the rapid rise of open-source AI models, there are active, in-depth discussions on the fundamental limits and ethical considerations of AI, as well as strategies for successful enterprise AI adoption...'
 category: 'AI News'

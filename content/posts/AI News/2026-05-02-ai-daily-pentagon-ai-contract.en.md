@@ -1,5 +1,5 @@
 ---
-title: '[May 02] AI Daily Digest — Pentagon AI Contracts, Big Tech AI Revenue Surges, Deepening AI Agent and LLM Performance Race'
+title: 'May 02 AI Daily — Pentagon AI Contracts, Big Tech AI Revenue Surges'
 date: '2026-05-02'
 excerpt: '1. Pentagon Signs AI Deployment Contracts for Classified Networks with Major AI Firms (Excluding Anthropic). The US Department of Defense has signed contracts with 7 major AI companies, including SpaceX, OpenAI, Google, NVIDIA...'
 category: 'AI News'

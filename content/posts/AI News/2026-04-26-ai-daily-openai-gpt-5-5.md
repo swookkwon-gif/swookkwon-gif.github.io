@@ -1,5 +1,5 @@
 ---
-title: '[04월 26일] AI 데일리 다이제스트 — OpenAI GPT-5.5 출시, DeepSeek V4 공개, Anthropic Claude 성능 문제 해결'
+title: '4월 26일 AI 데일리 — OpenAI GPT-5.5 출시, DeepSeek V4 공개'
 date: '2026-04-26'
 excerpt: '1. OpenAI의 GPT-5.5 출시: 에이전트 시대 가속화 및 안전 강화 OpenAI는 GPT-5.5를 출시하며 단일 프롬프트에서 에이전트 스타일 실행으로 상호작용 모델을 변화시켰습니다. 이 시스템은 단계를 계획...'
 category: 'AI News'

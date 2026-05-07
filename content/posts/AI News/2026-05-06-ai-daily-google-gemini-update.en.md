@@ -1,5 +1,5 @@
 ---
-title: 'Google Gemini Update, NVIDIA Next-Gen GPUs, OpenAI Enterprise Solutions Enhanced'
+title: 'May 06 AI Daily — Google Gemini Update, NVIDIA Next-Gen GPUs'
 date: '2026-05-06'
 excerpt: 'Recently, Google announced a massive update to its multimodal AI model, Gemini. This update focuses on enhancing reasoning capabilities, multimodal understanding, and coding skills. In particular, complex data analysis...'
 category: 'AI News'

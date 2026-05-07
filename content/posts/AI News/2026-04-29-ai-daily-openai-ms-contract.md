@@ -1,5 +1,5 @@
 ---
-title: '[04월 29일] AI 데일리 다이제스트 — OpenAI-MS 독점 계약 종료 및 AWS 진출, 구글 국방부와 기밀 AI 계약 체결, 일론 머스크 vs OpenAI 재판 개시'
+title: '4월 29일 AI 데일리 — OpenAI-MS 독점 계약 종료, 구글 국방부 기밀 AI 계약'
 date: '2026-04-29'
 excerpt: '1. OpenAI, MS 독점 계약 종료하고 AWS 베드락에 합류 OpenAI가 마이크로소프트MS와의 독점 클라우드 파트너십을 종료하고 비독점 라이선스 체제로 전환했습니다. 이에 따라 최신 모델인 GPT-5.5와 코...'
 category: 'AI News'

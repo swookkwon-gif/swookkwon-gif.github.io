@@ -1,5 +1,5 @@
 ---
-title: '[May 04] AI Daily Digest — Google AI Healthcare Expansion, MS In-House AI Chips, NVIDIA Unveils Next-Gen GPU'
+title: 'May 04 AI Daily — Google AI Healthcare Expansion, MS In-House AI Chips'
 date: '2026-05-04'
 excerpt: '1. Google Announces Massive Expansion in AI Healthcare and New Partnerships. Google recently announced a large-scale expansion plan in the AI healthcare sector, unveiling new partnerships with several medical institutions and pharmaceutical companies...'
 category: 'AI News'

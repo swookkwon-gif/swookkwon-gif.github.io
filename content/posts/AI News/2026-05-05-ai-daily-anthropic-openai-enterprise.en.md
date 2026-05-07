@@ -1,5 +1,5 @@
 ---
-title: '[May 05] AI Daily Digest — Anthropic & OpenAI Enter Enterprise AI, DeepSeek & Mistral Open Source Models, US Tightens AI Regulation'
+title: 'May 05 AI Daily — Anthropic & OpenAI Enter Enterprise AI, DeepSeek Models'
 date: '2026-05-05'
 excerpt: '1. Anthropic and OpenAI secure massive investments, accelerating enterprise AI market entry. AI leaders are building new business models to provide direct solutions to the enterprise market rather than just offering APIs...'
 category: 'AI News'

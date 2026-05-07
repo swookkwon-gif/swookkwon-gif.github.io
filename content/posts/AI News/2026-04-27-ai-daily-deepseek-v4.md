@@ -1,5 +1,5 @@
 ---
-title: '[04월 27일] AI 데일리 다이제스트 — DeepSeek V4, 구글 AI 컴퓨팅 리더십 강화, AI 에이전트 활용 확산'
+title: '4월 27일 AI 데일리 — DeepSeek V4 공개, 구글 AI 컴퓨팅 리더십 강화'
 date: '2026-04-27'
 excerpt: '1. DeepSeek V4 공개: 저렴하고 효율적인 AI의 귀환 및 중국 기술 굴기 중국 AI 연구소 DeepSeek이 V4의 프리뷰 버전을 공개하며, 100만 토큰 컨텍스트 창과 Huawei 칩 지원, 그리고 선도...'
 category: 'AI News'
