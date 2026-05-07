@@ -8,6 +8,7 @@ import Link from "next/link";
 import { ArrowLeft, Calendar, Tag, ChevronLeft, ChevronRight } from "lucide-react";
 import React from "react";
 import ChartRenderer from "@/components/ChartRenderer";
+import MermaidRenderer from "@/components/MermaidRenderer";
 
 export async function generateStaticParams() {
   const postsKo = getSortedPostsData('ko');
@@ -108,6 +109,9 @@ export default async function PostPage({
               const match = /language-(\w+)/.exec(className || '');
               if (!inline && match && match[1] === 'chart') {
                 return <ChartRenderer dataStr={String(children).replace(/\n$/, '')} />;
+              }
+              if (!inline && match && match[1] === 'mermaid') {
+                return <MermaidRenderer chart={String(children).replace(/\n$/, '')} />;
               }
               return <code className={className} {...props}>{children}</code>;
             },
