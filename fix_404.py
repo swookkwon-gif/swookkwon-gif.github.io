@@ -1,6 +1,6 @@
 import re
 
-file_path = "content/posts/2. AI News/2026-04-30-global-ai-news-summary.md"
+file_path = "content/posts/AI News/2026-04-30-global-ai-news-summary.md"
 
 with open(file_path, "r", encoding="utf-8") as f:
     content = f.read()

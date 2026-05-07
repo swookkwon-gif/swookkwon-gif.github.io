@@ -9,7 +9,7 @@ load_dotenv(os.path.join(os.path.dirname(__file__), '..', '.env.local'))
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 client = genai.Client(api_key=GEMINI_API_KEY)
 
-FILE_PATH = os.path.join(os.path.dirname(__file__), '..', 'content', 'posts', '2. AI News', '2026-04-28-tldr-newsletter.md')
+FILE_PATH = os.path.join(os.path.dirname(__file__), '..', 'content', 'posts', 'AI News', '2026-04-28-tldr-newsletter.md')
 
 def fix_newsletter():
     print(f"🔄 Fixing {os.path.basename(FILE_PATH)}...")

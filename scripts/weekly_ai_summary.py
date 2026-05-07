@@ -16,7 +16,7 @@ if not GEMINI_API_KEY:
     print("⚠️ GEMINI_API_KEY is missing.")
     import sys; sys.exit(1)
 
-POSTS_DIR = os.path.join(os.path.dirname(__file__), '..', 'content', 'posts', '2. AI News')
+POSTS_DIR = os.path.join(os.path.dirname(__file__), '..', 'content', 'posts', 'AI News')
 
 def get_recent_posts(days=7):
     recent_texts = []

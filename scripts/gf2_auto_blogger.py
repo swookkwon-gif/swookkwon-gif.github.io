@@ -13,7 +13,7 @@ from urllib.parse import urlparse, urlunparse, parse_qsl, urlencode
 
 load_dotenv(os.path.join(os.path.dirname(__file__), '..', '.env.local'))
 
-POSTS_DIR = os.path.join(os.path.dirname(__file__), '..', 'content', 'posts', '2. AI News')
+POSTS_DIR = os.path.join(os.path.dirname(__file__), '..', 'content', 'posts', 'AI News')
 STATE_FILE = os.path.join(os.path.dirname(__file__), 'state.json')
 STATE_DIR = os.path.join(os.path.dirname(__file__), 'state')
 DEEP_RESEARCH_PATH = os.path.join(STATE_DIR, 'deep_research.json')

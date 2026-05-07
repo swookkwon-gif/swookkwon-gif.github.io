@@ -60,7 +60,7 @@ export function getSortedPostsData(lang: string = 'ko'): PostData[] {
     const fileContents = fs.readFileSync(fullPath, 'utf8');
     const { data, content } = matter(fileContents);
     
-    // 부모 폴더 이름에서 카테고리 추출 (예: "2. AI News" -> "AI News")
+    // 부모 폴더 이름에서 카테고리 추출 (예: "AI News" -> "AI News")
     const parentFolder = path.basename(path.dirname(fullPath));
     const derivedCategory = parentFolder !== 'posts' 
       ? parentFolder.replace(/^\d+\.\s*/, '') 

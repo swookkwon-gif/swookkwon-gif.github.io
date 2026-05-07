@@ -6,7 +6,7 @@ from datetime import datetime, timezone, timedelta
 import re
 
 # 블로그 포스트 저장 경로
-POSTS_DIR = os.path.join(os.path.dirname(__file__), '..', 'content', 'posts', '3. Deep Dive')
+POSTS_DIR = os.path.join(os.path.dirname(__file__), '..', 'content', 'posts', 'AI Learnings')
 
 def run_nlm_cmd(cmd_list, timeout=300):
     """

@@ -9,7 +9,7 @@ load_dotenv(os.path.join(os.path.dirname(__file__), '..', '.env.local'))
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 client = genai.Client(api_key=GEMINI_API_KEY)
 
-POSTS_DIR = os.path.join(os.path.dirname(__file__), '..', 'content', 'posts', '2. AI News')
+POSTS_DIR = os.path.join(os.path.dirname(__file__), '..', 'content', 'posts', 'AI News')
 
 def reformat_post(file_path):
     print(f"🔄 Reformatting {os.path.basename(file_path)}...")

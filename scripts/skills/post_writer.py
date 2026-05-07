@@ -9,7 +9,7 @@ from datetime import datetime, timezone, timedelta
 
 from skills.markdown_utils import generate_excerpt, count_words, estimate_reading_time
 
-POSTS_DIR = os.path.join(os.path.dirname(__file__), '..', '..', 'content', 'posts', '2. AI News')
+POSTS_DIR = os.path.join(os.path.dirname(__file__), '..', '..', 'content', 'posts', 'AI News')
 
 
 def ensure_posts_dir(target_dir: str | None = None):
@@ -34,7 +34,7 @@ def create_post_file(
         post_title: 포스트 제목
         content: 마크다운 본문
         category: 카테고리
-        posts_dir: 포스트 저장 디렉토리 (기본: content/posts/2. AI News/)
+        posts_dir: 포스트 저장 디렉토리 (기본: content/posts/AI News/)
     
     Returns:
         생성된 파일의 절대 경로

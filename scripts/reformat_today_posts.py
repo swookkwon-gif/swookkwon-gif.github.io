@@ -10,7 +10,7 @@ load_dotenv(os.path.join(os.path.dirname(__file__), '..', '.env.local'))
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 client = genai.Client(api_key=GEMINI_API_KEY)
 
-POSTS_DIR = os.path.join(os.path.dirname(__file__), '..', 'content', 'posts', '2. AI News')
+POSTS_DIR = os.path.join(os.path.dirname(__file__), '..', 'content', 'posts', 'AI News')
 TARGET_FILES = [
     '2026-04-29-today-ai-top3-news-gf2-script.md',
     '2026-04-29-today-ai-top3-news-gf2.md',
