@@ -10,7 +10,7 @@ const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
 
 export const metadata: Metadata = {
   title: "Wook's AI and Marketing",
-  description: "AI와 디지털 마케팅의 실무적인 인사이트, 트렌드, 그리고 커리어를 다루는 블로그입니다.",
+  description: "글로벌 Digital Marketing & eCommerce 전문가. Data와 AI를 공부하면서 배운 내용들을 AI로 만든 자동화 블로그로 기록합니다.",
   verification: {
     google: "VEKICMa0sx4OpQaX_Aj0-5pNDI9NrEjyK9D7-W_R0Ug",
   },
