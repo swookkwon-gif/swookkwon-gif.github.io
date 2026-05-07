@@ -67,7 +67,7 @@ def reformat_post(file_path):
         print(f"❌ Error processing {file_path}: {e}")
 
 if __name__ == "__main__":
-    # Find all past daily/today top 3 posts
+    # Find all past daily/today top 10 posts
     files = os.listdir(POSTS_DIR)
     target_files = [f for f in files if "today-ai-top3-news" in f or "daily-ai-top3-news" in f]
     

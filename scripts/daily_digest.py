@@ -138,7 +138,7 @@ def merge_and_create_digest():
     if not articles and deep_research_md:
         print("\n📝 뉴스레터 기사 없음 — 딥 리서치 단독 포스트 생성")
         final_md = deep_research_md
-        post_title = deep_research_title or f"Daily Top 3: {now_kst.strftime('%m월 %d일')} 주요 AI 뉴스"
+        post_title = deep_research_title or f"Daily Top 10: {now_kst.strftime('%m월 %d일')} 주요 AI 뉴스"
         save_final_post(date_str, post_title, final_md)
         return
 
@@ -161,8 +161,8 @@ def merge_and_create_digest():
     if deep_research_md:
         deep_research_section = f"""
 
-[Deep Research — 오늘의 Top 3 심층 분석]
-아래는 구글 검색 기반 딥 리서치로 작성된 오늘의 Top 3 뉴스 심층 분석입니다.
+[Deep Research — 오늘의 Top 10 심층 분석]
+아래는 구글 검색 기반 딥 리서치로 작성된 오늘의 Top 10 뉴스 심층 분석입니다.
 이 내용을 포스트 **가장 상단**에 배치하세요 (있는 그대로 포함, 수정하지 말 것):
 
 {deep_research_md}
@@ -184,7 +184,7 @@ def merge_and_create_digest():
 0. **URL 위생 규칙**: 원문 링크로 `substack.com/redirect/...`, `google.com/url?...`, `t.co/...` 등 리다이렉트/트래커 URL을 절대 사용하지 마세요. 반드시 최종 목적지 URL만 사용합니다.
 0. **엄격한 팩트 준수**: 제공된 JSON 데이터(제목, 요약, 수치 등)에 없는 외부 지식을 절대로 덧붙이거나 환각(Hallucination)을 통해 상상해서 지어내지 마세요. 철저하게 주어진 텍스트 내용 안에서만 병합하세요.
 1. **포스트 구성**:
-   - 딥 리서치 Top 3가 있으면 포스트 **최상단**에 배치 (원문 그대로).
+   - 딥 리서치 Top 10이 있으면 포스트 **최상단**에 배치 (원문 그대로).
    - 이어서 뉴스레터/RSS 기사 기반 "📰 뉴스레터 주요 뉴스" 섹션 작성.
 2. **중복 뉴스 병합**: 같은 사건/발표를 다루는 기사들(keywords가 유사)을 하나로 합침.
    - 병합 시 모든 소스 이름을 "소스: A · B · C" 형태로 표기 (볼드체 없이)

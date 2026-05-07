@@ -69,7 +69,7 @@ def cmd_adhoc(args):
 def cmd_daily(args):
     """Daily Top3 뉴스 리서치 실행."""
     print("=" * 55)
-    print("📰 [Daily Top 3] AI 뉴스 리서치")
+    print("📰 [Daily Top 10] AI 뉴스 리서치")
     print("=" * 55)
 
     file_path = research_daily_top3()
@@ -191,7 +191,7 @@ def main():
     p_adhoc.set_defaults(func=cmd_adhoc)
 
     # daily
-    p_daily = subparsers.add_parser("daily", help="Daily Top 3 AI 뉴스")
+    p_daily = subparsers.add_parser("daily", help="Daily Top 10 AI 뉴스")
     p_daily.set_defaults(func=cmd_daily)
 
     # series
