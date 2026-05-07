@@ -5,30 +5,13 @@ import time
 import json
 import base64
 import feedparser
+import subprocess
 from datetime import datetime, timezone, timedelta
-from slugify import slugify
 from google import genai
 from google.genai import types
 from googleapiclient.discovery import build
 from dotenv import load_dotenv
 from urllib.parse import urlparse, urlunparse, parse_qsl, urlencode
-
-def clean_url(url):
-    """URL에서 utm_으로 시작하는 파라미터를 제거하고, ?amp 이후를 통째로 삭제한다."""
-    try:
-        # ?amp 또는 &amp가 등장하면 그 부분부터 문자열을 자릅니다 (이후 모든 파라미터 삭제)
-        if '?amp' in url:
-            url = url.split('?amp')[0]
-        elif '&amp' in url:
-            url = url.split('&amp')[0]
-            
-        parsed = urlparse(url)
-        query_params = parse_qsl(parsed.query, keep_blank_values=True)
-        cleaned_params = [(k, v) for k, v in query_params if not k.lower().startswith('utm_') and not k.lower().startswith('amp')]
-        cleaned_query = urlencode(cleaned_params)
-        return urlunparse(parsed._replace(query=cleaned_query))
-    except Exception:
-        return url
 
 from state_manager import is_processed, mark_processed, save_evaluations
 from auth import authenticate_gmail
@@ -36,64 +19,51 @@ from auth import authenticate_gmail
 load_dotenv(".env.local")
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 if not GEMINI_API_KEY:
-    print("⚠️ GEMINI_API_KEY is missing. Export it or add it to .env.local")
+    print("⚠️ GEMINI_API_KEY is missing.")
     import sys; sys.exit(1)
 
 POSTS_DIR = os.path.join(os.path.dirname(__file__), '..', 'content', 'posts', '2. AI News')
-if not os.path.exists(POSTS_DIR):
-    os.makedirs(POSTS_DIR)
+CONFIG_DIR = os.path.join(os.path.dirname(__file__), 'config')
+if not os.path.exists(POSTS_DIR): os.makedirs(POSTS_DIR)
 
 TARGET_LABEL_NAME = "AI News"
 
-FEEDS = [
-    {"name": "AITimes", "url": "https://www.aitimes.com/rss/allArticle.xml", "keywords": ["인공지능", "AI", "머신러닝", "LLM", "모델"]},
-    {"name": "Benzinga Korea", "url": "https://kr.benzinga.com/feed/", "keywords": ["AI", "인공지능", "엔비디아", "반도체"]}
-]
+# =============== UTILS ===============
+
+def clean_url(url):
+    try:
+        if '?amp' in url: url = url.split('?amp')[0]
+        elif '&amp' in url: url = url.split('&amp')[0]
+        parsed = urlparse(url)
+        query_params = parse_qsl(parsed.query, keep_blank_values=True)
+        cleaned_params = [(k, v) for k, v in query_params if not k.lower().startswith('utm_') and not k.lower().startswith('amp')]
+        return urlunparse(parsed._replace(query=urlencode(cleaned_params)))
+    except Exception:
+        return url
 
 def clean_json_response(text):
     text = text.strip()
-    if text.startswith("```json"):
-        text = text[len("```json"):].strip()
-    if text.endswith("```"):
-        text = text[:-len("```")].strip()
+    if text.startswith("```json"): text = text[len("```json"):].strip()
+    if text.endswith("```"): text = text[:-len("```")].strip()
     return text
 
-def load_guidelines_and_feedback():
-    rules_path = os.path.join(os.path.dirname(__file__), 'custom_eval_rules.txt')
-    feedback_path = os.path.join(os.path.dirname(__file__), 'feedback.json')
-    
-    rules = "- 판단 기준이 누적 중입니다."
-    if os.path.exists(rules_path):
-        with open(rules_path, 'r', encoding='utf-8') as f:
-            content = f.read().strip()
-            if content: rules = content
-            
-    feedback = "- 최신 수동 교정 예시가 없습니다."
-    if os.path.exists(feedback_path):
-        try:
-            with open(feedback_path, 'r', encoding='utf-8') as f:
-                raw_data = json.load(f)
-                fb_data = raw_data.get("feedbacks", []) if isinstance(raw_data, dict) else raw_data
-                
-                if fb_data:
-                    feedback = ""
-                    # 최근 5개만 반영
-                    for fb in fb_data[-5:]:
-                        feedback += f"- 대상 기사/키워드: '{fb.get('keyword_or_title', '')}'\n  -> (사용자 최종 점수: {fb.get('user_score', '')}점)\n  -> 판단 이유: {fb.get('reasoning', '')}\n"
-        except Exception:
-            pass
-            
-    return rules, feedback.strip()
+def load_config():
+    feeds_path = os.path.join(CONFIG_DIR, 'feeds.json')
+    excl_path = os.path.join(CONFIG_DIR, 'exclusion_rules.json')
+    feeds = []
+    excl = {}
+    if os.path.exists(feeds_path):
+        with open(feeds_path, 'r', encoding='utf-8') as f:
+            feeds = json.load(f)
+    if os.path.exists(excl_path):
+        with open(excl_path, 'r', encoding='utf-8') as f:
+            excl = json.load(f)
+    return feeds, excl
 
 def create_markdown_post_file(filename_slug, post_title, content, category="AI News"):
     now_kst = datetime.now(timezone.utc) + timedelta(hours=9)
     date_str = now_kst.strftime("%Y-%m-%d")
     
-    # AI가 본문 최상단에 강제 생성하는 제목들(H1, H2) 중복 방지를 위해 삭제
-    content = re.sub(r'^#\s+[^\n]+\n*', '', content.lstrip())
-    content = re.sub(r'^##\s+[^\n]+\n*', '', content.lstrip())
-    
-    # 본문 첫 부분을 바탕으로 excerpt(요약문) 자동 생성 (제목 반복 방지)
     clean_content = re.sub(r'<[^>]+>', '', content)
     clean_content = re.sub(r'https?://[^\s]+', '', clean_content)
     clean_content = re.sub(r'[#*`\[\]\(\)]', '', clean_content)
@@ -101,502 +71,289 @@ def create_markdown_post_file(filename_slug, post_title, content, category="AI N
     excerpt_text = clean_content[:120] + "..." if len(clean_content) > 120 else clean_content
     excerpt_text = excerpt_text.replace('"', "'").replace('\n', ' ')
     
-    frontmatter = f"""---
-title: '{post_title.replace("'", "''")}'
-date: '{date_str}'
-excerpt: '{excerpt_text.replace("'", "''")}'
-category: '{category.replace("'", "''")}'
----
-
-"""
+    frontmatter = f"---\ntitle: '{post_title.replace(chr(39), chr(39)*2)}'\ndate: '{date_str}'\nexcerpt: '{excerpt_text.replace(chr(39), chr(39)*2)}'\ncategory: '{category}'\n---\n\n"
     filename = f"{date_str}-{filename_slug}.md"
     file_path = os.path.join(POSTS_DIR, filename)
-    mode = "w" if not os.path.exists(file_path) else "a"
-    
-    with open(file_path, mode, encoding="utf-8") as f:
-        if mode == "w":
-            f.write(frontmatter)
-        f.write(content + "\n\n")
+    with open(file_path, "w", encoding="utf-8") as f:
+        f.write(frontmatter + content + "\n\n")
 
-# =============== SHARED LLM HELPER ===============
+# =============== LLM CALLER ===============
 
-ARTICLE_ANALYSIS_SCHEMA = {
-    "type": "object",
-    "properties": {
-        "has_ai_news": {"type": "boolean"},
-        "articles": {
-            "type": "array",
-            "items": {
-                "type": "object",
-                "properties": {
-                    "title": {"type": "string"},
-                    "summary": {"type": "string"},
-                    "source_urls": {"type": "array", "items": {"type": "string"}},
-                    "keywords": {"type": "array", "items": {"type": "string"}},
-                    "score": {"type": "number"},
-                    "has_numbers": {"type": "boolean"},
-                    "key_figures": {"type": "array", "items": {"type": "string"}}
-                },
-                "required": ["title", "summary", "source_urls", "keywords", "score"]
-            }
-        }
-    },
-    "required": ["has_ai_news", "articles"]
-}
-
-def call_llm_with_retry(prompt, schema, label="LLM"):
-    """공용 LLM 호출 헬퍼 (재시도 + 모델 폴백)"""
+def call_llm_with_retry(prompt, schema=None, label="LLM", use_search=False):
     client = genai.Client(api_key=GEMINI_API_KEY)
-    models_to_try = ['gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-1.5-flash-latest', 'gemini-1.5-flash-8b']
+    models_to_try = ['gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-1.5-flash-latest']
     
     for attempt in range(3):
         for model_name in models_to_try:
             try:
+                tools = [types.Tool(google_search=types.GoogleSearch())] if use_search else None
+                config = types.GenerateContentConfig(temperature=0.3)
+                if schema:
+                    config.response_mime_type = "application/json"
+                    config.response_schema = schema
+                if tools:
+                    config.tools = tools
+                    
                 response = client.models.generate_content(
                     model=model_name,
                     contents=prompt,
-                    config=types.GenerateContentConfig(
-                        temperature=0.3,
-                        response_mime_type="application/json",
-                        response_schema=schema
-                    )
+                    config=config
                 )
-                raw_text = clean_json_response(response.text)
-                return json.loads(raw_text)
-            except json.JSONDecodeError as je:
-                print(f"      ❌ [{label}] JSON 에러. 10초 대기 후 재시도... ({je})")
-                time.sleep(10)
-                break
+                if schema:
+                    raw_text = clean_json_response(response.text)
+                    return json.loads(raw_text)
+                return response.text
             except Exception as e:
                 err_msg = str(e)
-                if any(x in err_msg for x in ["429", "RESOURCE_EXHAUSTED", "503", "UNAVAILABLE", "500"]):
-                    print(f"      [경고] [{label}] '{model_name}' API 제한. 다른 모델 시도...")
+                if "429" in err_msg or "RESOURCE_EXHAUSTED" in err_msg:
                     continue
-                else:
-                    print(f"      ❌ [{label}] API 실패: {e}")
-                    return None
-        print(f"      ❌ [{label}] 모든 모델 할당량 초과: 30초 대기 후 재시도... ({attempt+1}/3)")
+                elif isinstance(e, json.JSONDecodeError):
+                    print(f"      ❌ [{label}] JSON 에러. 재시도...")
+                    time.sleep(10)
+                    break
+        print(f"      ⏳ [{label}] 대기 중... ({attempt+1}/3)")
         time.sleep(30)
     return None
 
+EXTRACT_SCHEMA = {
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "title": {"type": "string"},
+            "url": {"type": "string"},
+            "summary": {"type": "string"}
+        },
+        "required": ["title", "url", "summary"]
+    }
+}
 
-# =============== RSS PROCESSING ===============
+# =============== PHASE 1: COLLECTION ===============
 
-
-def collect_rss_articles(feeds):
-    """RSS 피드를 수집하고 구조화된 기사 배열을 반환한다."""
-    items_to_process = []
+def collect_rss_articles():
+    feeds, exclusion_rules = load_config()
+    all_rss_items = []
     
     for feed in feeds:
-        print(f"\n🔍 대상 RSS: {feed['name']}")
-        parsed_feed = feedparser.parse(feed['url'])
-        
+        print(f"\n🔍 [RSS] {feed['name']} 수집 중...")
+        parsed = feedparser.parse(feed['url'])
         now = datetime.now(timezone.utc)
         
-        for entry in parsed_feed.entries:
+        feed_rules = exclusion_rules.get(feed['name'], {})
+        global_rules = exclusion_rules.get('global', {})
+        title_excludes = feed_rules.get('title_exclude', []) + global_rules.get('title_exclude', [])
+        
+        items_to_process = []
+        for entry in parsed.entries:
             try:
-                raw_url = entry.get('link', entry.get('id', ''))
-                url_id = clean_url(raw_url)
-                if not url_id or is_processed("rss", url_id):
-                    continue
+                url_id = clean_url(entry.get('link', entry.get('id', '')))
+                if not url_id or is_processed("rss", url_id): continue
                     
                 dt = datetime(*entry.published_parsed[:6], tzinfo=timezone.utc) if 'published_parsed' in entry and entry.published_parsed else now
-                if (now - dt).days > 2:
-                    continue
+                if (now - dt).days > 2: continue
                 
-                content = ""
-                if 'content' in entry:
-                    content = entry.content[0].value
-                elif 'summary' in entry:
-                    content = entry.summary
-                    
                 title = entry.get('title', 'No Title')
+                if any(excl in title for excl in title_excludes): continue
                 
-                # Keywords filtering
+                content = entry.get('content', [{'value': ''}])[0]['value'] if 'content' in entry else entry.get('summary', '')
+                
                 keywords = feed.get('keywords', [])
                 if keywords:
                     combined_text = (title + " " + content).lower()
-                    if not any(k.lower() in combined_text for k in keywords):
-                        continue
+                    if not any(k.lower() in combined_text for k in keywords): continue
                 
-                items_to_process.append({
-                    "feed_name": feed['name'],
-                    "id": url_id,
-                    "title": title,
-                    "link": url_id,
-                    "content": content
-                })
-            except Exception as e:
-                pass
+                items_to_process.append({"title": title, "url": url_id, "content": content[:3000]})
+            except Exception: pass
+            
+        if not items_to_process:
+            print(" └ 새 기사 없음.")
+            continue
+            
+        # Chunking for LLM
+        for i in range(0, len(items_to_process), 20):
+            chunk = items_to_process[i:i+20]
+            articles_text = ""
+            for idx, item in enumerate(chunk):
+                articles_text += f"\n[Article {idx}]\nTitle: {item['title']}\nURL: {item['url']}\nContent: {item['content'][:500]}\n"
+                
+            prompt = f"다음은 {feed['name']}의 RSS 기사들입니다. AI, 머신러닝, LLM 산업과 무관한 쓰레기 기사를 버리고 진짜 AI 뉴스만 추출하세요.\n{articles_text}"
+            data = call_llm_with_retry(prompt, EXTRACT_SCHEMA, label=f"RSS-{feed['name']}")
+            
+            if data:
+                for art in data:
+                    all_rss_items.append({
+                        "title": art["title"], "url": art["url"], "summary": art["summary"], 
+                        "source_name": feed['name'], "content_raw": next((c["content"] for c in chunk if c["url"] == art["url"]), art["summary"])
+                    })
+            for item in chunk:
+                mark_processed("rss", item["url"])
+                
+        print(f" └ {feed['name']}: {len(items_to_process)}개 중 {len(all_rss_items)}개 유효 기사 추출")
+        
+    return all_rss_items
 
-    if not items_to_process:
-        print(" └ 처리할 새로운 기사가 없습니다.")
-        return []
 
-    print(f" └ 총 {len(items_to_process)}개의 새 기사 처리 중...")
-    
-    articles_text = ""
-    for idx, item in enumerate(items_to_process, 1):
-        snippet = item['content'][:5000]
-        articles_text += f"\n\n--- 기사 {idx} (출처: {item['feed_name']}) ---\n제목: {item['title']}\n링크: {item['link']}\n"
-        articles_text += f"내용(HTML): {snippet}\n"
-
-    custom_rules, custom_feedback = load_guidelines_and_feedback()
-
-    prompt = f"""
-당신은 최고 수준의 AI 뉴스 에디터입니다.
-아래 여러 RSS 소스에서 수집된 기사들을 분석하여 구조화된 JSON 배열로 반환하세요.
-
-[사용자 맞춤형 평가 핵심 룰]
-{custom_rules}
-
-[최근 사용자 직접 교정 예시 (Few-Shot)]
-{custom_feedback}
-
-[원문 정보]
-{articles_text}
-
-[요구사항]
-0. **URL 위생 규칙**: 원문 링크로 `substack.com/redirect/...`, `google.com/url?...`, `t.co/...` 등 리다이렉트/트래커 URL을 절대 사용하지 마세요. 반드시 최종 목적지 URL만 사용합니다.
-0. **엄격한 팩트 준수**: 절대 외부 지식을 개입시키거나 환각(Hallucination)을 만들지 마세요. 오직 제공된 원문 텍스트 내에 존재하는 사실과 수치만 엄격하게 요약해야 합니다.
-1. AI, 머신러닝, LLM 비즈니스와 무관한 기사는 무시하세요.
-2. AI 기사가 하나라도 있으면 has_ai_news=true, 아니면 false.
-3. 각 기사를 개별 article 객체로 반환:
-   - title: 한국어 제목
-   - summary: 2-4문장 핵심 요약. 구체적 수치/금액을 반드시 포함.
-   - source_urls: 원문 URL 배열 (절대 조작/축약 금지)
-   - keywords: 핵심 키워드 3-5개 (예: ["Meta", "로봇", "인수"])
-   - score: 1-5점 (5=핵심 트렌드, 1=단순 단신)
-   - has_numbers: 금액/수치 포함 여부
-   - key_figures: 핵심 수치 배열 (예: ["$150억", "20만 인스턴스"])
-4. score 3점 미만 기사도 포함하되, 정확한 점수를 매기세요.
-"""
-    data = call_llm_with_retry(prompt, ARTICLE_ANALYSIS_SCHEMA, label="RSS")
-    if not data:
-        return []
-    
-    # Mark RSS items as processed
-    for item in items_to_process:
-        mark_processed("rss", item["id"])
-    
-    articles = data.get("articles", [])
-    # 소스 이름 태깅
-    for art in articles:
-        art["source_name"] = "RSS (AITimes/Benzinga)"
-    
-    evals = [{"target": a["title"], "score": a["score"], "reasoning": ", ".join(a.get("keywords", []))} for a in articles]
-    if evals:
-        save_evaluations("Global AI News", evals)
-    
-    print(f"      ✅ RSS에서 {len(articles)}개 기사 분석 완료")
-    time.sleep(5)
-    return articles
-
-# =============== GMAIL PROCESSING ===============
-
-def get_email_body(payload, max_length=15000):
+def get_email_body(payload):
     text_content = ""
     def extract_text(part):
         nonlocal text_content
         mime_type = part.get('mimeType', '')
         if mime_type == 'text/plain':
             data = part.get('body', {}).get('data', '')
-            if data:
-                text_content += base64.urlsafe_b64decode(data).decode('utf-8', 'ignore') + "\n"
+            if data: text_content += base64.urlsafe_b64decode(data).decode('utf-8', 'ignore') + "\n"
         elif mime_type == 'text/html':
             data = part.get('body', {}).get('data', '')
             if data:
                 html_code = base64.urlsafe_b64decode(data).decode('utf-8', 'ignore')
-                # Preserve links: convert <a href="URL">text</a> to "text (Link: URL)"
-                def _remove_utm_from_a(match):
-                    link = clean_url(match.group(1))
-                    text = match.group(2)
-                    return f"{text} (Link: {link})"
-                
+                def _remove_utm_from_a(match): return f"{match.group(2)} (URL: {clean_url(match.group(1))})"
                 html_code = re.sub(r'<a\s+[^>]*href=["\'](https?://[^"\']+)["\'][^>]*>(.*?)</a>', _remove_utm_from_a, html_code, flags=re.IGNORECASE|re.DOTALL)
-                # Strip remaining HTML tags
                 clean_text = re.sub(r'<[^>]+>', ' ', html_code)
-                # Collapse multiple spaces and newlines
-                clean_text = re.sub(r'\s+', ' ', clean_text).strip()
-                text_content += clean_text + "\n"
+                text_content += re.sub(r'\s+', ' ', clean_text).strip() + "\n"
         elif 'parts' in part:
-            for subpart in part['parts']:
-                extract_text(subpart)
+            for subpart in part['parts']: extract_text(subpart)
     
     extract_text(payload)
     if not text_content:
         data = payload.get('body', {}).get('data', '')
-        if data:
-            text_content = base64.urlsafe_b64decode(data).decode('utf-8', 'ignore')
-    
-    # Strip quoted email trails
-    reply_patterns = [r'\nOn\s.*?\s*wrote:', r'\nFrom:\s.*?\nSent:\s', r'\n_{10,}', r'\n-----Original Message-----']
-    first_match_idx = len(text_content)
-    for pattern in reply_patterns:
-        match = re.search(pattern, text_content, flags=re.IGNORECASE)
-        if match and match.start() < first_match_idx:
-            first_match_idx = match.start()
-            
-    text_content = text_content[:first_match_idx].strip()
-    return text_content[:max_length]
-
-def get_gmail_service():
-    creds = authenticate_gmail(account="mail1")
-    if not creds: return None
-    return build('gmail', 'v1', credentials=creds)
-
-def fetch_unprocessed_newsletters(service, label_id):
-    today = datetime.now()
-    # 기존 2일에서 7일로 확장하여 '기존 이메일'도 처리될 수 있도록 변경
-    lookback_days = 7
-    last_week = today - timedelta(days=lookback_days)
-    start_date = last_week.strftime("%Y/%m/%d")
-    
-    print(f" └ Gmail 검색 범위: {start_date} 이후 (최근 {lookback_days}일)")
-    results = service.users().messages().list(userId='me', q=f'after:{start_date}', labelIds=[label_id], maxResults=50).execute()
-    messages = results.get('messages', [])
-    
-    unprocessed = []
-    for msg in messages:
-        msg_id = msg['id']
-        if not is_processed("gmail", msg_id):
-            unprocessed.append(msg_id)
-            
-    return unprocessed
+        if data: text_content = base64.urlsafe_b64decode(data).decode('utf-8', 'ignore')
+    return text_content[:10000]
 
 def collect_gmail_articles():
-    """Gmail 뉴스레터를 수집하고 구조화된 기사 배열을 반환한다."""
-    print("\n🔍 대상 Gmail: swookkwon@gmail AI News")
-    service = get_gmail_service()
-    if not service: return []
-    
-    # Get Label ID
+    print("\n🔍 [Gmail] 뉴스레터 수집 중...")
+    creds = authenticate_gmail(account="mail1")
+    if not creds: return []
+    service = build('gmail', 'v1', credentials=creds)
     res = service.users().labels().list(userId='me').execute()
     label_id = next((l['id'] for l in res.get('labels', []) if TARGET_LABEL_NAME.lower() in l['name'].lower()), None)
-    
     if not label_id: return []
     
-    unprocessed_ids = fetch_unprocessed_newsletters(service, label_id)
-    if not unprocessed_ids:
-        print(" └ 처리할 새로운 이메일 뉴스레터가 없습니다.")
-        return []
-        
-    print(f" └ {len(unprocessed_ids)}개의 새 이메일 스크랩 중...")
+    last_week = datetime.now() - timedelta(days=7)
+    results = service.users().messages().list(userId='me', q=f'after:{last_week.strftime("%Y/%m/%d")}', labelIds=[label_id], maxResults=50).execute()
     
     emails_by_sender = {}
-    
-    for step in range(0, len(unprocessed_ids), 10):
-        chunk = unprocessed_ids[step:step+10]
-        for msg_id in chunk:
-            try:
-                msg = service.users().messages().get(userId='me', id=msg_id, format='full').execute()
-                headers = msg['payload'].get('headers', [])
-                subject = next((h['value'] for h in headers if h['name'].lower() == 'subject'), "No Subject")
-                sender_full = next((h['value'] for h in headers if h['name'].lower() == 'from'), "Unknown Sender")
-                
-                sender_match = re.match(r'(.*?)\s*<.*?>', sender_full)
-                sender = sender_match.group(1).strip().replace('"', '') if sender_match else sender_full
-                
-                body = get_email_body(msg['payload'])
-                
-                if not sender in emails_by_sender:
-                    emails_by_sender[sender] = []
-                    
-                emails_by_sender[sender].append({"id": msg_id, "subject": subject, "body": body})
-                print(f"    - [{sender}] {subject[:30]}...")
-            except Exception as e:
-                print(f"    - [오류] {msg_id} 본문 파싱 실패: {e}")
-                pass
-                
-        time.sleep(0.5)
-
-    all_gmail_articles = []
-    custom_rules, custom_feedback = load_guidelines_and_feedback()
-
+    for msg in results.get('messages', []):
+        msg_id = msg['id']
+        if not is_processed("gmail", msg_id):
+            full_msg = service.users().messages().get(userId='me', id=msg_id, format='full').execute()
+            headers = full_msg['payload'].get('headers', [])
+            subject = next((h['value'] for h in headers if h['name'].lower() == 'subject'), "No Subject")
+            sender_full = next((h['value'] for h in headers if h['name'].lower() == 'from'), "Unknown")
+            sender = re.match(r'(.*?)\s*<.*?>', sender_full)
+            sender = sender.group(1).strip().replace('"', '') if sender else sender_full
+            body = get_email_body(full_msg['payload'])
+            
+            emails_by_sender.setdefault(sender, []).append({"id": msg_id, "subject": subject, "body": body})
+            
+    all_gmail_items = []
     for sender, letters in emails_by_sender.items():
-        print(f"\n   -> [{sender}] 보낸 뉴스레터 파싱 중 ({len(letters)}개)")
-        
-        articles_text = ""
-        for idx, letter in enumerate(letters, 1):
-            articles_text += f"\n\n[제목: {letter['subject']}]\n{letter['body']}\n"
+        print(f" └ {sender} 메일 {len(letters)}개 파싱 중...")
+        for letter in letters:
+            prompt = f"다음 뉴스레터 본문에서 개별 AI 뉴스 기사를 모두 추출하세요. 광고나 쓸데없는 말은 무시하세요.\n[제목: {letter['subject']}]\n{letter['body']}"
+            data = call_llm_with_retry(prompt, EXTRACT_SCHEMA, label=f"Gmail-{sender}")
+            if data:
+                for art in data:
+                    all_gmail_items.append({
+                        "title": art["title"], "url": art["url"], "summary": art["summary"], 
+                        "source_name": sender, "content_raw": art["summary"]
+                    })
+            mark_processed("gmail", letter["id"])
+            time.sleep(3)
             
-        prompt = f"""
-당신은 수석 뉴스레터 AI 에디터입니다.
-발신자 [{sender}]가 보낸 뉴스레터에서 개별 뉴스 기사를 추출하여 구조화된 JSON 배열로 반환하세요.
+    return all_gmail_items
 
-[사용자 맞춤형 평가 핵심 룰]
-{custom_rules}
-
-[최근 사용자 직접 교정 예시 (Few-Shot)]
-{custom_feedback}
-
-[뉴스레터 데이터]
-{articles_text}
-
-[요구사항]
-0. **URL 위생 규칙**: 원문 링크로 `substack.com/redirect/...`, `google.com/url?...`, `t.co/...` 등 리다이렉트/트래커 URL을 절대 사용하지 마세요. 반드시 최종 목적지 URL만 사용합니다.
-0. **엄격한 팩트 준수**: 절대 외부 지식을 개입시키거나 환각(Hallucination)을 만들지 마세요. 오직 제공된 원문 텍스트 내에 존재하는 사실과 수치만 엄격하게 요약해야 합니다.
-1. 뉴스레터 내 각각의 뉴스 기사/도구/소식을 개별 article 객체로 추출하세요.
-2. 각 article:
-   - title: 한국어 제목
-   - summary: 2-4문장 핵심 요약. 수치/금액을 반드시 포함.
-   - source_urls: 원문 URL 배열 (뉴스레터에 포함된 링크 그대로 사용)
-   - keywords: 핵심 키워드 3-5개
-   - score: 1-5점 (5=핵심, 1=가십)
-   - has_numbers: 금액/수치 포함 여부
-   - key_figures: 핵심 수치 배열
-3. AI/LLM과 무관한 기사도 추출하되 낮은 점수를 매기세요.
-"""
-        data = call_llm_with_retry(prompt, ARTICLE_ANALYSIS_SCHEMA, label=f"Gmail-{sender}")
-        if data:
-            articles = data.get("articles", [])
-            for art in articles:
-                art["source_name"] = sender
-            all_gmail_articles.extend(articles)
-            
-            evals = [{"target": a["title"], "score": a["score"], "reasoning": ", ".join(a.get("keywords", []))} for a in articles]
-            if evals:
-                save_evaluations(sender, evals)
-            
-            # Mark emails as processed
-            for letter in letters:
-                mark_processed("gmail", letter["id"])
-            print(f"      ✅ [{sender}] {len(articles)}개 기사 분석 완료")
-        else:
-            # LLM 실패 시에도 처리 완료 마킹 (무한 재시도 방지)
-            for letter in letters:
-                mark_processed("gmail", letter["id"])
-        
-        print("      (발신자 간 기본 대기 10초...)")
-        time.sleep(10)
-    
-    return all_gmail_articles
-
-
-# =============== PHASE 2: MERGE & CREATE DAILY DIGEST ===============
-
-DAILY_DIGEST_SCHEMA = {
-    "type": "object",
-    "properties": {
-        "post_title": {"type": "string"},
-        "top_topics": {"type": "array", "items": {"type": "string"}},
-        "markdown_content": {"type": "string"}
-    },
-    "required": ["post_title", "top_topics", "markdown_content"]
-}
+def run_nlm(cmd_args):
+    print(f" └ 실행: {' '.join(cmd_args)}")
+    result = subprocess.run(cmd_args, capture_output=True, text=True)
+    if result.returncode != 0:
+        print(f" ❌ NLM 오류: {result.stderr}")
+    return result.stdout
 
 def merge_and_create_daily_digest(all_articles):
-    """모든 소스의 분석 결과를 받아 하나의 통합 포스트 생성."""
     if not all_articles:
-        print("\n⚠️ 통합할 기사가 없습니다.")
+        print("\n⚠️ 수집된 기사가 없습니다.")
         return
+        
+    print(f"\n🧠 [NotebookLM Phase] {len(all_articles)}개 기사 처리 및 노트북 생성 중...")
     
-    # 3점 미만 기사 필터링
-    quality_articles = [a for a in all_articles if a.get("score", 0) >= 3]
-    low_articles = [a for a in all_articles if a.get("score", 0) < 3]
-    
-    if not quality_articles:
-        print("\n⚠️ 3점 이상 기사가 없어 포스트를 생략합니다.")
-        return
-    
-    # 소스 목록 집계
-    source_names = sorted(set(a.get("source_name", "Unknown") for a in all_articles))
-    
-    print(f"\n📝 통합 다이제스트 생성 중...")
-    print(f"   총 {len(all_articles)}개 기사 (3점 이상: {len(quality_articles)}개, 미만: {len(low_articles)}개)")
-    print(f"   소스: {', '.join(source_names)}")
-    
-    articles_json = json.dumps(quality_articles, ensure_ascii=False, indent=2)
-    low_json = json.dumps([{"title": a["title"], "source_name": a.get("source_name",""), "score": a["score"]} for a in low_articles], ensure_ascii=False) if low_articles else "[]"
-    
-    prompt = f"""
-당신은 AI 데일리 다이제스트 수석 편집장입니다.
-아래는 여러 소스에서 수집 + 분석한 AI 뉴스 기사 목록입니다.
-이를 하나의 통합 일간 뉴스 포스트(마크다운 본문)으로 재구성하세요.
-
-[3점 이상 주요 기사]
-{articles_json}
-
-[3점 미만 단신 (하단 기타 뉴스용)]
-{low_json}
-
-[통합 규칙]
-0. **URL 위생 규칙**: 원문 링크로 `substack.com/redirect/...`, `google.com/url?...`, `t.co/...` 등 리다이렉트/트래커 URL을 절대 사용하지 마세요. 반드시 최종 목적지 URL만 사용합니다.
-0. **엄격한 팩트 준수**: 제공된 JSON 데이터(제목, 요약, 수치 등)에 없는 외부 지식을 절대로 덧붙이거나 환각(Hallucination)을 통해 상상해서 지어내지 마세요. 철저하게 주어진 텍스트 내용 안에서만 병합하세요.
-1. **중복 뉴스 병합**: 같은 사건/발표를 다루는 기사들(keywords가 유사)을 하나로 합침.
-   - 병합 시 모든 소스 이름을 "소스: A · B · C" 형태로 표기 (볼드체 없이)
-   - 가장 상세한 summary를 기준으로 작성
-2. **중요도 기반 Top 10 선별 및 정렬**:
-   - 수집된 모든 기사 중 중요도를 평가하여 **가장 중요한 상위 10개 기사만(Top 10)** 메인 뉴스로 작성하세요.
-   - S등급(3개 이상 소스 보도 + 수치 포함), A등급(2개 이상 소스 보도 또는 빅테크+금액)을 우선으로 선별합니다.
-   - 각 기사의 제목에는 아이콘(이모지)을 절대 사용하지 마세요. 심플하게 번호와 제목만 표시합니다.
-3. **메인 뉴스(Top 10) 포맷**:
-   - 포스트 최상단에 전체 메인 제목(H1, `# 제목`)을 절대 쓰지 마세요.
-   - 각 뉴스: `## 순번. 제목` (예: `## 1. 메타 로봇 스타트업 인수`)
-   - 본문 2-4문장 + 핵심 수치가 있으면 불릿으로 강조
-   - 뉴스 하단 출처 표기 (본문 내용 직후에 줄 띄움 없이 <br> 태그를 사용하여 줄바꿈 후 작성하며, 볼드체 처리 없이 작성):
-     `<br><small style="color: #888;">소스: 7min.ai · AITimes &nbsp;|&nbsp; 🔗 [원문 보기](URL) · [원문 2](URL)</small>`
-   - 중요: 원문 링크가 여러 개일 경우 반드시 위 예시처럼 하나의 `<small>` 태그 안에 모두 가운뎃점(·)으로 연결해서 작성하세요. 절대 `<small>` 태그 바깥에 텍스트나 링크를 적지 마세요.
-   - 각 기사가 끝난 후에는 빈 줄 추가, `---` 구분선, 다시 빈 줄 추가를 통해 다음 기사와 여유 공간을 확보할 것.
-4. **그 외 기사 (소스별/URL별 그룹핑)**:
-   - Top 10에 들어가지 못한 **나머지 모든 기사들**(주요 기사의 11위 이하 및 단신 포함)은 절대 개별 메인 뉴스 형식으로 작성하지 말고, 포스트 하단의 `## 📌 기타 뉴스 모아보기` 섹션에 통합하세요.
-   - 이 섹션에서는 개별 기사마다 링크를 반복해서 쓰지 말고, **소스(Source)와 원문 URL을 기준으로 그룹화**하여 깔끔하게 보여줍니다.
-   - 포맷 예시:
-     ### 🔹 소스: [What's Hot 🔥 in Enterprise IT/VC](해당 소스/뉴스레터의 URL)
-     * **기사 제목 1**: 기사 핵심 내용 한 줄 요약
-     * **기사 제목 2**: 기사 핵심 내용 한 줄 요약
-     
-     ### 🔹 소스: [7min.ai](해당 소스/뉴스레터의 URL)
-     * **기사 제목 3**: 기사 핵심 내용 한 줄 요약
-5. **post_title**: 날짜 없이 핵심 토픽 2-3개 포함한 매력적 제목
-   (예: "메타 로봇 스타트업 인수, MCP 보안 취약점 발견, Grok 4.3 출시")
-6. **top_topics**: 상위 3개 토픽 키워드 배열 (태그용)
-"""
-    data = call_llm_with_retry(prompt, DAILY_DIGEST_SCHEMA, label="Daily Digest")
-    if not data:
-        print("      ❌ 통합 다이제스트 생성 실패")
-        return
-    
-    result_md = data.get("markdown_content", "")
-    post_title = data.get("post_title", "AI 데일리 다이제스트")
-    top_topics = data.get("top_topics", [])
-    
-    if not result_md:
-        print("      ❌ 생성된 본문이 비어 있습니다.")
-        return
-    
-    # 포스트 상단에 소스 요약 라인 추가
     now_kst = datetime.now(timezone.utc) + timedelta(hours=9)
-    source_line = f"> 📊 오늘의 AI 뉴스: **{len(quality_articles)}건** | 소스: {', '.join(source_names)}\n\n---\n\n"
-    result_md = source_line + result_md
+    date_str = now_kst.strftime("%Y%m%d")
     
+    sources_text = f"오늘({now_kst.strftime('%Y년 %m월 %d일')}) 수집된 AI 뉴스(RSS 및 이메일 뉴스레터) 기초 데이터입니다:\n\n"
+    for idx, art in enumerate(all_articles):
+        sources_text += f"[기사 {idx+1}]\n제목: {art['title']}\n출처: {art['source_name']}\nURL: {art['url']}\n요약: {art['summary']}\n\n"
+        
+    sources_file = os.path.join(POSTS_DIR, f"temp_sources_{date_str}.txt")
+    with open(sources_file, "w", encoding="utf-8") as f:
+        f.write(sources_text)
+        
+    nb_name = f"DailyNews_Archive_{date_str}"
+    out = run_nlm(["nlm", "notebook", "create", nb_name])
+    
+    import re
+    match = re.search(r'[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}', out)
+    if not match:
+        print("❌ 노트북 생성 실패")
+        return
+    nb_id = match.group(0)
+    print(f" └ 생성된 노트북 ID: {nb_id}")
+    
+    run_nlm(["nlm", "source", "add", nb_id, "--file", sources_file, "--wait"])
+    
+    print(" └ 딥 리서치(Deep Research) 가동 중... (수 분 소요될 수 있습니다)")
+    run_nlm(["nlm", "research", "start", "오늘 전 세계에서 가장 파급력이 큰 AI 산업 및 오픈소스 기술 동향 뉴스", "--mode", "fast", "--notebook-id", nb_id, "--auto-import"])
+    
+    print("\n✍️ [NotebookLM Phase] 요약본(포스트) 생성 중...")
+    query_prompt = """당신은 최고 수준의 AI 뉴스 에디터입니다.
+현재 이 노트북에 수집된 모든 소스(RSS/뉴스레터 기초 자료 + 딥 리서치로 발굴된 최신 웹 자료)를 종합하여, 오늘 가장 중요한 AI 뉴스 주제 Top 10을 클러스터링하고, 상세한 블로그 포스트를 마크다운 형식으로 작성하세요.
+
+[작성 지침]
+1. 맨 위에 간단한 인사말이나 서론 없이 바로 본론부터 시작하세요.
+2. 각 주제(클러스터)마다 H2(##) 제목을 달고, 3~4문장의 깊이 있는 상세 요약과 분석을 제공하세요.
+3. 각 주제 하단에는 반드시 출처(소스 이름과 원문 URL)를 링크와 함께 명시하세요. 기초 자료에 있는 소스라면 기초 자료의 URL을 쓰세요.
+4. 투자 금액, 벤치마크 점수 등 데이터와 숫자가 있다면 적극적으로 활용하여 전문가 수준으로 작성하세요.
+5. Top 10 외에 언급할 만한 기타 뉴스들은 '📌 기타 뉴스 모아보기' 섹션에 제목과 링크 리스트 형태로 첨부하세요.
+6. 마지막으로, 블로그 포스트에 들어갈 마크다운 텍스트 원문만 출력하세요. (```markdown 같은 포맷팅 백틱도 제외)"""
+
+    query_out = run_nlm(["nlm", "query", "notebook", nb_id, query_prompt, "--json"])
+    try:
+        data = json.loads(query_out)
+        post_content = data.get("answer", "").strip()
+        if post_content.startswith("```markdown"):
+            post_content = post_content[len("```markdown"):].strip()
+        if post_content.endswith("```"):
+            post_content = post_content[:-3].strip()
+    except Exception as e:
+        print(f" ❌ NotebookLM Query 파싱 실패: {e}")
+        return
+
+    title_prompt = "방금 작성된 마크다운 내용에서 다루는 주요 주제 3가지를 콤마로 이어 매력적인 메인 제목을 만들어주세요. (예: 메타 새 모델 공개, 오픈AI 펀딩 확보). 출력은 백틱 없이 순수 텍스트 한 줄만 하세요."
+    title_res = run_nlm(["nlm", "query", "notebook", nb_id, title_prompt, "--json"])
+    try:
+        post_title = json.loads(title_res).get("answer", "최신 AI 주요 동향").strip()
+    except:
+        post_title = "최신 AI 주요 동향"
+        
     slug = "daily-ai-digest"
     title = f"[{now_kst.strftime('%m월 %d일')}] AI 데일리 다이제스트 — {post_title}"
     
-    create_markdown_post_file(slug, title, result_md, category="AI News")
-    print(f"      ✅ 통합 다이제스트 포스트 완료: {title}")
-
+    post_content = f"> 📊 오늘의 AI 트렌드: NotebookLM 딥 리서치 파이프라인을 통해 수집 및 심층 분석된 결과입니다.\n\n---\n\n{post_content}"
+    
+    create_markdown_post_file(slug, title, post_content, category="AI News")
+    print(f"✅ 통합 다이제스트 포스트 완료: {title}")
+    
+    if os.path.exists(sources_file):
+        os.remove(sources_file)
 
 if __name__ == "__main__":
     print("=======================================================")
-    print("🚀 [Auto Daemon] Booklog AI BlogPost Parser 봇 시작")
+    print("🚀 [Auto Daemon v3.5] NotebookLM Deep Research 기반 AI 파이프라인")
     print("=======================================================")
     
     all_articles = []
     
-    # Phase 1: 소스별 수집 + 분석
-    print("\n--- Phase 1: 소스별 수집 + 분석 ---")
+    all_articles.extend(collect_rss_articles())
+    all_articles.extend(collect_gmail_articles())
     
-    rss_articles = collect_rss_articles(FEEDS)
-    all_articles.extend(rss_articles)
-        
-    print("\n-------------------------------------------------------")
-    
-    gmail_articles = collect_gmail_articles()
-    all_articles.extend(gmail_articles)
-    
-    # Phase 2: 통합 다이제스트 생성
-    print("\n--- Phase 2: 통합 다이제스트 생성 ---")
     merge_and_create_daily_digest(all_articles)
     
     print("\n=======================================================")
