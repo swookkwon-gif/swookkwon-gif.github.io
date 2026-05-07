@@ -40,7 +40,7 @@ SEO나 구축 편의성 때문에 원래는 Google의 blogger.com을 고려했�
 ## 3. 블로그 자동화 구조
 블로그 자동화는 크게 **데일리 뉴스(Daily News)**와 **주제별 심층 분석(Deep Research)** 으로 구성되어 있습니다. 전체적인 파이프라인의 조감도는 다음과 같습니다.
 
-![AI Pipeline Architecture](/images/ai-pipeline-minimal.png)
+![AI Pipeline Architecture](/images/ai-pipeline-diagram-v2.png)
 *데이터 수집부터 NotebookLM 심층 리서치를 거쳐 퍼블리싱까지 이어지는 자동화 파이프라인*
 
 ### 🔄 데일리 파이프라인 (Daily Flow)
