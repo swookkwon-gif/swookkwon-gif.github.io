@@ -32,8 +32,8 @@ SEO나 구축 편의성 때문에 원래는 Google의 blogger.com을 고려했�
 블로그의 핵심 두뇌는 크게 **데일리 뉴스(Daily News)**와 **주제별 심층 분석(Ad-hoc)** 파이프라인으로 구성되어 있습니다.
 
 ### 🔄 데일리 파이프라인 (Daily Flow)
-1. **RSS 피드 수집**: 파이썬 스크립트가 매일 자동으로 AITimes, Benzinga Korea, The AI 등 주요 국내 AI 매체의 RSS 피드를 크롤링하여 기본 뉴스 데이터를 수집합니다.
-2. **NotebookLM 심층 리서치 (Deep Research)**: 구글의 NotebookLM을 CLI 및 MCP(Model Context Protocol) 형태로 연동하여, 수집된 기사들을 기반으로 **Hacker News, TLDR, TechCrunch 등 글로벌 주요 IT 매체의 최신 트렌드를 웹 검색으로 교차 검증 및 보완**하도록 지시합니다. 이를 통해 전체 내용을 **'오늘의 Top 3 핵심 트렌드'**와 **'기타 단신'**으로 분류하고 심층 요약합니다.
+1. **RSS 피드 및 이메일 뉴스레터 수집**: AITimes 등 국내외 주요 AI 매체의 RSS 피드를 웹에서 크롤링함과 동시에, TLDR, The Rundown AI, AI Breakfast 등 글로벌 유력 AI 뉴스레터들을 Gmail API를 통해 파이썬 스크립트가 매일 자동으로 수집합니다.
+2. **NotebookLM 심층 리서치 (Deep Research)**: 구글의 NotebookLM을 CLI 및 MCP(Model Context Protocol) 형태로 연동하여, 수집된 수십 개의 기사 URL을 입력하고 **'오늘의 Top 3 핵심 트렌드'**와 **'기타 단신'**으로 분류하고 심층 요약합니다.
 3. **포스트 자동 생성 및 포맷팅**: `auto_blog_daemon.py`와 `daily_digest.py` 백엔드 스크립트가 NotebookLM의 요약 노트를 건네받아, 사전에 정의된 완벽한 Markdown 포맷으로 블로그 포스트를 렌더링하고 `content/posts/AI News` 디렉토리에 저장합니다.
 
 ### 🎯 단발성 심층 리서치 (Ad-hoc Flow)
