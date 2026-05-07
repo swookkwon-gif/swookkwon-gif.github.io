@@ -79,20 +79,17 @@ def create_markdown_post_file(filename_slug, post_title, content, category="AI N
 
 # =============== LLM CALLER ===============
 
-def call_llm_with_retry(prompt, schema=None, label="LLM", use_search=False):
+def call_llm_with_retry(prompt, schema=None, label="LLM"):
     client = genai.Client(api_key=GEMINI_API_KEY)
     models_to_try = ['gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-1.5-flash-latest']
     
     for attempt in range(3):
         for model_name in models_to_try:
             try:
-                tools = [types.Tool(google_search=types.GoogleSearch())] if use_search else None
                 config = types.GenerateContentConfig(temperature=0.3)
                 if schema:
                     config.response_mime_type = "application/json"
                     config.response_schema = schema
-                if tools:
-                    config.tools = tools
                     
                 response = client.models.generate_content(
                     model=model_name,
