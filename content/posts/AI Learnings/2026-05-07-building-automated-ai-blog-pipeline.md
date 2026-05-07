@@ -32,13 +32,32 @@ SEO나 구축 편의성 때문에 원래는 Google의 blogger.com을 고려했�
 블로그 자동화는 크게 **데일리 뉴스(Daily News)**와 **주제별 심층 분석(Deep Research)** 으로 구성되어 있습니다. 전체적인 파이프라인의 조감도는 다음과 같습니다.
 
 ![AI Pipeline Architecture](/images/ai-pipeline-architecture.png)
-*데이터 수집(RSS, 메일)부터 NotebookLM의 심층 리서치를 거쳐 블로그 퍼블리싱까지 이어지는 파이프라인의 시각화*
+*데이터 수집(RSS, 메일)부터 NotebookLM의 심층 리서치를 거쳐 블로그 퍼블리싱까지 이어지는 파이프라인 스케치*
 
 ```mermaid
 graph LR
-    A[인터넷/Data] --> B(Python 에이전트)
-    B <--> C((NotebookLM 엔진))
-    B --> D[GitHub 블로그 배포]
+    subgraph Sources ["수집 (Data Sources)"]
+        RSS[RSS / Newsletters]
+        Search[Web Search]
+    end
+
+    subgraph Agents ["자동화 (Python Agents)"]
+        Daemon[auto_blog_daemon.py]
+        Research[research_pipeline.py]
+        Digest[daily_digest.py]
+    end
+
+    NLM((NotebookLM<br>Deep Research))
+    Git[GitHub Pages<br>블로그 배포]
+
+    RSS --> Daemon
+    Daemon <--> NLM
+    Daemon --> Digest
+    
+    Search -.-> NLM
+    Research <--> NLM
+    Research --> Git
+    Digest --> Git
 ```
 
 ### 🔄 데일리 파이프라인 (Daily Flow)
