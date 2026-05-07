@@ -27,6 +27,13 @@
       "pattern": "^###.*\\n[^\\n]",
       "severity": "warning",
       "auto_fix": true
+    },
+    {
+      "rule": "no_cliche_intros",
+      "description": "진부한 인사말 금지 (안녕하세요, 블로거입니다 등)",
+      "pattern": "^(?:안녕하세요|반갑습니다|오늘 포스팅에서는|이번 포스팅에서는|오늘 소개할|이번에 소개할).*?(?:블로거입니다|알아보겠습니다|살펴보겠습니다)\\.?\\n?",
+      "severity": "error",
+      "auto_fix": true
     }
   ],
   "content_checks": [

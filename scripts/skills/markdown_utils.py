@@ -62,11 +62,18 @@ def ensure_empty_line_after_headings(content: str) -> str:
     )
 
 
+def strip_cliche_intros(content: str) -> str:
+    """진부한 인사말 및 서론 블록을 제거한다."""
+    pattern = r'^(?:안녕하세요|반갑습니다|오늘 포스팅에서는|이번 포스팅에서는|오늘 소개할|이번에 소개할).*?(?:블로거입니다|알아보겠습니다|살펴보겠습니다)\.?\n*'
+    return re.sub(pattern, '', content, flags=re.MULTILINE)
+
+
 # ── 통합 자동 수정 ────────────────────────────────────────────
 
 def auto_fix_content(content: str) -> str:
     """모든 자동 수정을 순서대로 적용한다."""
     content = strip_duplicate_h1(content)
+    content = strip_cliche_intros(content)
     content = fix_heading_links(content)
     content = wrap_raw_urls(content)
     content = ensure_empty_line_after_headings(content)
