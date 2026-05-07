@@ -38,7 +38,7 @@ RESEARCH_WRITING_PROMPT = """이 노트북에 저장된 모든 리서치 원문(
 DAILY_TOP3_PROMPT = """위에서 리서치하여 저장한 소스를 바탕으로 아주 상세한 기술 블로그 포스트를 한국어로 작성해줘.
 
 [요구사항]
-1. 첫 번째 줄: "TITLE: 키워드1, 키워드2, 키워드3" (Top 3 뉴스의 핵심 팩트만 콤마로 나열)
+1. 첫 번째 줄: "TITLE: M월 D일 AI 데일리 — 뉴스1 요약, 뉴스2 요약" (대괄호 절대 금지. 날짜로 시작하고 뒤에 가장 중요한 1~2개 뉴스의 핵심 요약을 덧붙일 것. 예: 5월 7일 AI 데일리 — 빅테크 인프라 투자 급증, 오픈AI 합작법인 출범)
 2. 두 번째 줄: "EXCERPT: 2~3문장 요약"
 3. 본문에 H1(#) 사용 금지. 바로 첫 소제목(##)으로 시작.
 4. Top 3 심층 분석: 가장 중요한 3개 뉴스를 각각 큰 소제목(##)으로 구분.
@@ -219,7 +219,7 @@ def research_daily_top3(
     # 4. 메타데이터 추출 + 품질 검증
     title, excerpt, content = extract_metadata(raw_article)
     if not title:
-        title = f"Daily Top 3: {now_kst.strftime('%m월 %d일')} 주요 AI 뉴스"
+        title = f"{now_kst.strftime('%-m월 %-d일')} AI 데일리 — 주요 AI 뉴스"
     if not excerpt:
         excerpt = "오늘의 핵심 글로벌 AI 및 기술 뉴스 동향을 요약합니다."
 
