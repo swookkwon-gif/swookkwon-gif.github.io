@@ -123,7 +123,7 @@ export default async function PostPage({
                 );
               }
 
-              const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '/wooksai';
+              const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
               
               // 1. 하드코딩된 /wooksai/ 접두사 제거 (정규화)
               if (finalSrc.startsWith('/wooksai/')) {

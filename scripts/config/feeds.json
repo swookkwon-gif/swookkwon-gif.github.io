@@ -8,5 +8,10 @@
     "name": "Benzinga Korea",
     "url": "https://kr.benzinga.com/feed/",
     "keywords": ["AI", "인공지능", "엔비디아", "반도체"]
+  },
+  {
+    "name": "The AI",
+    "url": "https://www.newstheai.com/rss/clickTop.xml",
+    "keywords": ["AI", "인공지능"]
   }
 ]

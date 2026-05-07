@@ -5,12 +5,25 @@ RSS 피드와 Gmail 뉴스레터에서 원시 데이터를 수집한다.
 LLM 호출 없이 순수 데이터 수집만 담당한다.
 """
 import time
+import json
+import os
 import feedparser
 from datetime import datetime, timezone, timedelta
 
 from skills.config_loader import load_feeds
 from skills.gmail_reader import get_gmail_service, get_label_id, fetch_newsletters
 from state.state_manager import is_processed
+
+EXCLUSION_RULES_PATH = os.path.join(os.path.dirname(__file__), '..', 'config', 'exclusion_rules.json')
+
+def load_exclusion_rules() -> dict:
+    if os.path.exists(EXCLUSION_RULES_PATH):
+        try:
+            with open(EXCLUSION_RULES_PATH, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        except Exception as e:
+            print(f" └ 제외 규칙 파일 로드 실패: {e}")
+    return {}
 
 
 def collect_rss(feeds: list[dict] | None = None) -> list[dict]:
@@ -23,6 +36,7 @@ def collect_rss(feeds: list[dict] | None = None) -> list[dict]:
     if feeds is None:
         feeds = load_feeds()
 
+    exclusion_rules = load_exclusion_rules()
     articles = []
     now = datetime.now(timezone.utc)
 
@@ -55,6 +69,14 @@ def collect_rss(feeds: list[dict] | None = None) -> list[dict]:
                     content = entry.summary
 
                 title = entry.get('title', 'No Title')
+
+                # 제외 규칙 (Exclusion rules) 적용
+                feed_rules = exclusion_rules.get(feed['name'], {})
+                global_rules = exclusion_rules.get('global', {})
+                title_excludes = feed_rules.get('title_exclude', []) + global_rules.get('title_exclude', [])
+                
+                if any(excl in title for excl in title_excludes):
+                    continue
 
                 # 키워드 필터링
                 keywords = feed.get('keywords', [])
