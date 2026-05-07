@@ -29,9 +29,67 @@ SEO나 구축 편의성 때문에 원래는 Google의 blogger.com을 고려했�
 ---
 
 ## 3. 블로그 자동화 구조
-블로그 자동화는 크게 **데일리 뉴스(Daily News)**와 **주제별 심층 분석(Deep Research)** 으로 구성되어 있습니다.
+블로그 자동화는 크게 **데일리 뉴스(Daily News)**와 **주제별 심층 분석(Deep Research)** 으로 구성되어 있습니다. 전체적인 파이프라인의 조감도는 다음과 같습니다.
+
+```mermaid
+graph TD
+    subgraph Data_Sources["Data Sources (정보 수집)"]
+        A1[RSS Feeds]
+        A2[Newsletters via Gmail]
+        A3[Web Search / Reddit]
+    end
+
+    subgraph Python_Automation["Python Automation (백엔드 에이전트)"]
+        B1["auto_blog_daemon.py<br>(AI Manager)"]
+        B2["research_pipeline.py<br>(Deep Research Agent)"]
+        B3["daily_digest.py<br>(Editor / Formatter)"]
+    end
+
+    subgraph Core_AI_Engine["Core AI Engine"]
+        C(("NotebookLM<br>Deep Research Engine"))
+    end
+
+    subgraph Storage_Deployment["Storage & Deployment"]
+        D1[/"Local Markdown Files"\]
+        D2[GitHub Actions CI/CD]
+        D3((GitHub Pages Blog))
+    end
+
+    A1 --> B1
+    A2 --> B1
+    B1 -- "요약 요청" --> C
+    C -- "포스트 초안" --> B3
+    
+    A3 -. "자율 웹 탐색" .-> C
+    B2 -- "심층 조사 지시" --> C
+    C -- "분석 리포트" --> B2
+
+    B3 --> D1
+    B2 --> D1
+    D1 --> D2
+    D2 --> D3
+```
 
 ### 🔄 데일리 파이프라인 (Daily Flow)
+매일 아침 전 세계의 AI 뉴스를 모아 요약본을 발행하는 파이프라인입니다.
+
+```mermaid
+sequenceDiagram
+    participant Web as 인터넷 (RSS/Newsletters)
+    participant Manager as auto_blog_daemon.py
+    participant NLM as NotebookLM
+    participant Editor as daily_digest.py
+    participant Git as GitHub (MD File)
+
+    Manager->>Web: 매일 아침 최신 뉴스 수집
+    Web-->>Manager: 수십 개의 원문 기사 반환
+    Manager->>NLM: 기사 전달 및 "Top 10 뉴스 요약" 지시
+    NLM-->>Manager: AI가 작성한 초안 (JSON/Text)
+    Manager->>Editor: 초안 전달
+    Editor->>Editor: 마크다운 렌더링, 링크 검증, 태그 부착
+    Editor->>Git: 'AI News' 폴더에 최종 파일 저장
+```
+
 1. **RSS 피드 및 이메일 뉴스레터 수집**: AITimes 등 국내외 주요 AI 매체의 RSS 피드를 웹에서 크롤링함과 동시에, TLDR, The Rundown AI, AI Breakfast 등 글로벌 유력 AI 뉴스레터들을 Gmail API를 통해 파이썬 스크립트가 매일 자동으로 수집합니다.
 2. **NotebookLM 심층 리서치 (Deep Research)**: 구글의 NotebookLM을 CLI 및 MCP(Model Context Protocol) 형태로 연동하여, 수집된 수십 개의 기사를 입력하고 **'오늘의 주요 뉴스 Top 10'**과 **'기타 단신'**으로 분류하여 심층 요약합니다.
 3. **포스트 자동 생성 및 포맷팅**: AI가 요약한 결과를 실제 블로그 글로 예쁘게 다듬는 과정은 두 개의 파이썬 스크립트가 협력하여 처리합니다.
@@ -39,6 +97,25 @@ SEO나 구축 편의성 때문에 원래는 Google의 blogger.com을 고려했�
    * `daily_digest.py`: **'출판 편집자'** 역할을 합니다. AI가 작성한 초안을 넘겨받아 블로그 템플릿에 맞게 제목, 날짜, 태그를 붙여주고, 누락된 기사 원문 링크(URL)를 매칭하여 최종적인 예쁜 블로그 파일로 완성한 뒤 `AI News` 폴더에 저장합니다.
 
 ### 🎯 심층 리서치 (Deep Research Flow)
+특정 주제에 대한 심층 리포트를 원할 때 실행되는 비정기(Ad-hoc) 파이프라인입니다.
+
+```mermaid
+sequenceDiagram
+    participant User as 나 (User)
+    participant Agent as research_pipeline.py
+    participant NLM as NotebookLM
+    participant Web as 구글 검색 / 웹 포럼
+    participant Git as GitHub (MD File)
+
+    User->>Agent: 지시: "최신 AI 모델 성능 저하 원인 분석해줘"
+    Agent->>NLM: Deep Research 모드 가동
+    NLM->>Web: 자율적인 웹 탐색 및 자료 수집
+    Web-->>NLM: 논문, Reddit, 블로그 등 방대한 문서
+    NLM->>NLM: 컨텍스트 분석 및 정보 통합
+    NLM-->>Agent: 고품질의 블로그 포스트 초안 반환
+    Agent->>Git: 지정된 폴더에 마크다운 파일 생성
+```
+
 "최신 AI 모델들의 성능이 왜 자꾸 떨어질까?"에 대한 조사 지시를 내리면, `research_pipeline.py` 파이썬 에이전트가 **NotebookLM의 'Deep Research' 엔진을 호출**합니다. 그러면 NotebookLM이 스스로 구글 검색을 통해 Reddit, 개발자 포럼 등의 방대한 웹 자료를 수집하고 심층 분석하여, **[왜 AI가 점점 멍청해지는 걸까? — 성능 저하 원인 분석](/posts/AI%20Learnings/2026-05-05-gemini-claude-degradation-analysis)** 이라는 고품질의 블로그 포스트를 단 몇 분 만에 완성하고 발행해 줍니다.
 
 ---
