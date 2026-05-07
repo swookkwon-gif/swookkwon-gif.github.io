@@ -38,10 +38,10 @@ SEO나 구축 편의성 때문에 원래는 Google의 blogger.com을 고려했�
    * `auto_blog_daemon.py`: **'AI 매니저'** 역할을 합니다. 구글 NotebookLM에게 "수집된 기사들을 읽고 Top 10을 뽑아서 글을 써줘"라고 명령을 내리고, 완성된 초안을 받아오는 역할을 합니다.
    * `daily_digest.py`: **'출판 편집자'** 역할을 합니다. AI가 작성한 초안을 넘겨받아 블로그 템플릿에 맞게 제목, 날짜, 태그를 붙여주고, 누락된 기사 원문 링크(URL)를 매칭하여 최종적인 예쁜 블로그 파일로 완성한 뒤 `AI News` 폴더에 저장합니다.
 
-### 🎯 단발성 심층 리서치 (Deep Research Flow)
-데일리 뉴스 외에도 "어제 발표된 특정 AI 논문 번역 및 분석"이나 "특정 기업의 기술 스택 요약"과 같은 단발성 지시를 내리면, `research_pipeline.py` 에이전트가 작동하여 해당 주제에 대한 구글 검색 및 자료를 동적으로 수집하고 분석 리포트 형태의 블로그 포스트를 즉시 생성합니다.
+### 🎯 심층 리서치 (Deep Research Flow)
+데일리 뉴스 외에도 "어제 발표된 특정 AI 논문 번역 및 분석"이나 "특정 기업의 기술 스택 요약"과 같은 단발성 지시를 내리면, `research_pipeline.py` 파이썬 에이전트가 **NotebookLM과 구글 검색을 연동**하여 해당 주제에 대한 방대한 자료를 동적으로 수집하고, 이를 바탕으로 분석 리포트 형태의 블로그 포스트를 즉시 생성해 냅니다.
 
-* 💡 **실제 발행 예시**: 최근 "최신 AI 모델들의 성능이 왜 자꾸 떨어질까?"라는 궁금증이 생겼을 때, 터미널에 `python scripts/research_pipeline.py adhoc --query "Gemini 3.1 Pro와 Claude Opus 4.6 성능 저하 원인 분석"` 이라는 명령어 한 줄만 입력했습니다. 그 결과 AI 에이전트가 스스로 해외 Reddit과 개발자 포럼 등을 딥 리서치하여 **[왜 AI가 점점 멍청해지는 걸까? — 성능 저하 원인 분석](/posts/AI%20Learnings/2026-05-05-gemini-claude-degradation-analysis)** 이라는 고품질의 심층 분석 포스트를 단 몇 분 만에 작성하여 블로그에 발행해주었습니다.
+* 💡 **실제 발행 예시**: 최근 "최신 AI 모델들의 성능이 왜 자꾸 떨어질까?"라는 궁금증이 생겼을 때, 터미널에 `python scripts/research_pipeline.py adhoc --query "Gemini 3.1 Pro와 Claude Opus 4.6 성능 저하 원인 분석"` 이라는 명령어 한 줄만 입력했습니다. 그 결과 파이썬 에이전트가 스스로 해외 Reddit과 개발자 포럼 자료를 수집해 NotebookLM에 밀어넣고 딥 리서치를 수행하여, **[왜 AI가 점점 멍청해지는 걸까? — 성능 저하 원인 분석](/posts/AI%20Learnings/2026-05-05-gemini-claude-degradation-analysis)** 이라는 고품질의 심층 분석 포스트를 단 몇 분 만에 블로그에 발행해주었습니다.
 
 ---
 
