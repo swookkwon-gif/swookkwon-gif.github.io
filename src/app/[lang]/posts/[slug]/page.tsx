@@ -3,6 +3,7 @@ import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import rehypeExternalLinks from "rehype-external-links";
 import remarkGfm from "remark-gfm";
+import remarkKoreanBold from "@/lib/remark-korean-bold";
 import Link from "next/link";
 import { ArrowLeft, Calendar, Tag, ChevronLeft, ChevronRight } from "lucide-react";
 import React from "react";
@@ -54,7 +55,7 @@ export default async function PostPage({
         prose-a:text-blue-600 hover:prose-a:text-blue-500 prose-a:underline-offset-4
         prose-img:rounded-lg prose-img:shadow-md prose-code:text-violet-600 prose-code:bg-neutral-100 prose-code:px-1 prose-code:rounded">
         <ReactMarkdown
-          remarkPlugins={[remarkGfm]}
+          remarkPlugins={[remarkGfm, remarkKoreanBold]}
           rehypePlugins={[rehypeRaw, [rehypeExternalLinks, { target: '_blank', rel: ['noopener', 'noreferrer'] }]]}
           components={{
             blockquote: ({ children, ...props }: any) => {
