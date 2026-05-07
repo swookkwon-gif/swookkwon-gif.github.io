@@ -39,9 +39,10 @@ DAILY_TOP3_PROMPT = """위에서 리서치하여 저장한 소스를 바탕으�
 
 [요구사항]
 1. 첫 번째 줄: "TITLE: M월 D일 AI 데일리 — 뉴스1 요약, 뉴스2 요약" (대괄호 절대 금지. 날짜로 시작하고 뒤에 가장 중요한 1~2개 뉴스의 핵심 요약을 덧붙일 것. 예: 5월 7일 AI 데일리 — 빅테크 인프라 투자 급증, 오픈AI 합작법인 출범)
-2. 두 번째 줄: "EXCERPT: 2~3문장 요약"
-3. 본문에 H1(#) 사용 금지. 바로 첫 소제목(##)으로 시작.
-4. Top 3 심층 분석: 가장 중요한 3개 뉴스를 각각 큰 소제목(##)으로 구분.
+2. 두 번째 줄: "SLUG: ai-daily-[가장 중요한 뉴스 1개의 핵심 키워드를 짧은 영어로 작성 (예: ai-daily-bigtech-infra-investment)]"
+3. 세 번째 줄: "EXCERPT: 2~3문장 요약"
+4. 본문에 H1(#) 사용 금지. 바로 첫 소제목(##)으로 시작.
+5. Top 3 심층 분석: 가장 중요한 3개 뉴스를 각각 큰 소제목(##)으로 구분.
    - 배경 설명(2~3문단) + 핵심 뉴스 + 기술적/산업적 시사점 + 향후 전망을 자연스러운 문단으로 작성.
 5. 하단에 Top 10 뉴스 마크다운 테이블 (순위, 기사 제목, 중요도 점수, 선정 사유).
 6. 레퍼런스: 본문 내 인용은 [^1] 주석, 하단에 [^1]: [기사 제목](URL) 목록.
@@ -81,19 +82,23 @@ def extract_metadata(raw_text: str) -> tuple[str, str, str]:
     lines = raw_text.split('\n')
     title = ""
     excerpt = ""
+    slug = None
     content_start = 0
 
-    for i in range(min(10, len(lines))):
+    for i in range(min(15, len(lines))):
         line = lines[i].strip()
         if line.startswith("TITLE:"):
             title = line.replace("TITLE:", "").replace("[", "").replace("]", "").strip()
+            content_start = max(content_start, i + 1)
+        elif line.startswith("SLUG:"):
+            slug = line.replace("SLUG:", "").replace("[", "").replace("]", "").strip()
             content_start = max(content_start, i + 1)
         elif line.startswith("EXCERPT:"):
             excerpt = line.replace("EXCERPT:", "").replace("[", "").replace("]", "").strip()
             content_start = max(content_start, i + 1)
 
     content = '\n'.join(lines[content_start:]).strip()
-    return title, excerpt, content
+    return title, excerpt, content, slug
 
 
 # ── 리서치 모드별 실행 ─────────────────────────────────────────
@@ -154,7 +159,7 @@ def research_adhoc(
         return None
 
     # 4. 메타데이터 추출 + 품질 검증
-    title, excerpt, content = extract_metadata(raw_article)
+    title, excerpt, content, generated_slug = extract_metadata(raw_article)
     if not title:
         title = f"[Deep Dive] {topic}"
     if not excerpt:
@@ -164,9 +169,12 @@ def research_adhoc(
 
     # 5. 파일 저장
     if not slug:
-        import re
-        slug = re.sub(r'[^a-z0-9가-힣\-]+', '-', topic.lower())
-        slug = re.sub(r'\-+', '-', slug).strip('-')[:60]
+        if generated_slug:
+            slug = generated_slug
+        else:
+            import re
+            slug = re.sub(r'[^a-z0-9가-힣\-]+', '-', topic.lower())
+            slug = re.sub(r'\-+', '-', slug).strip('-')[:60]
 
     # 카테고리별 저장 경로
     posts_dir = os.path.join(
@@ -217,7 +225,7 @@ def research_daily_top3(
         return None
 
     # 4. 메타데이터 추출 + 품질 검증
-    title, excerpt, content = extract_metadata(raw_article)
+    title, excerpt, content, generated_slug = extract_metadata(raw_article)
     if not title:
         title = f"{now_kst.strftime('%-m월 %-d일')} AI 데일리 — 주요 AI 뉴스"
     if not excerpt:
@@ -227,9 +235,13 @@ def research_daily_top3(
 
     # 5. 파일 저장
     import re
-    slug_part = title.split('—')[-1].strip() if '—' in title else title
-    slug_base = re.sub(r'[^a-z0-9가-힣\-]+', '-', slug_part.lower()).strip('-')[:60]
-    slug = re.sub(r'\-+', '-', f"ai-daily-{slug_base}")
+    if generated_slug:
+        slug = generated_slug
+    else:
+        slug_part = title.split('—')[-1].strip() if '—' in title else title
+        slug_base = re.sub(r'[^a-z0-9a-zA-Z\-]+', '-', slug_part.lower()).strip('-')[:60]
+        slug = re.sub(r'\-+', '-', f"ai-daily-{slug_base}")
+        
     file_path = create_post_file(slug, title, content, category="AI News")
     print(f"  ✅ Daily Top3 포스트 저장: {os.path.basename(file_path)}")
     return file_path
@@ -273,7 +285,7 @@ def research_series_chapter(
         return None
 
     # 메타데이터 추출 + 품질 검증
-    title, excerpt, content = extract_metadata(raw_article)
+    title, excerpt, content, generated_slug = extract_metadata(raw_article)
     if not title:
         title = topic
 
