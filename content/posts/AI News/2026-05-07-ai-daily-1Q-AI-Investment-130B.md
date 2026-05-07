@@ -1,11 +1,11 @@
 ---
 title: '5월 7일 AI 데일리 — 빅테크 1분기 AI 인프라 투자 급증, 오픈AI·앤트로픽 엔터프라이즈 JV 출범'
 date: '2026-05-07'
-excerpt: '> 📊 오늘의 AI 트렌드: 주요 뉴스 10건을 노트북LM 딥 리서치를 통해 수집 및 분석한 결과입니다. ---'
+excerpt: '> 📊 오늘의 AI 트렌드: NotebookLM 딥 리서치 파이프라인을 통해 수집 및 심층 분석된 결과입니다. ---'
 category: 'AI News'
 ---
 
-> 📊 오늘의 AI 트렌드: 주요 뉴스 10건을 노트북LM 딥 리서치를 통해 수집 및 분석한 결과입니다.
+> 📊 오늘의 AI 트렌드: NotebookLM 딥 리서치 파이프라인을 통해 수집 및 심층 분석된 결과입니다.
 
 ---
 
@@ -14,7 +14,7 @@ category: 'AI News'
 * 빅테크 4사 1분기 자본 지출 합계: 1,306억 5,000만 달러 (전년 대비 71% 증가) [1]
 * 세레브라스 IPO: 기업 가치 266억 달러, 자금 조달 35억 달러 [2]
 * 판탈라사 해상 AI 데이터센터 투자 유치: 1억 4,000만 달러 [3]
-<br><small style="color: #888;">소스: AI타임스 · 7min.ai · The Rundown AI &nbsp;|&nbsp; 🔗 [원문 보기](https://www.aitimes.com) · [원문 2](https://www.cerebras.ai/press-release/cerebras-systems-announces-launch-of-initial-public-offering) · [원문 3](https://www.businesswire.com/news/home/20260504552400/en/Panthalassa-Raises-%24140-Million-to-Power-AI-at-Sea)</small>
+<br><small style="color: #888;">소스: AI타임스 · 7min.ai · The Rundown AI &nbsp;|&nbsp; 🔗 [원문 보기](https://www.aitimes.com/news/articleView.html?idxno=215432) · [원문 2](https://www.cerebras.ai/press-release/cerebras-systems-announces-launch-of-initial-public-offering) · [원문 3](https://www.businesswire.com/news/home/20260504552400/en/Panthalassa-Raises-%24140-Million-to-Power-AI-at-Sea)</small>
 
 ---
 
