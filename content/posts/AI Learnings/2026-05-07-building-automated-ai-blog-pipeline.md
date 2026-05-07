@@ -5,6 +5,9 @@ excerpt: '> 🚀 내가 자는 동안에도 알아서 AI 뉴스를 수집하고,
 category: 'AI Learnings'
 ---
 
+![Google Trends: 10-Year Global Search Interest (AI vs Crypto)](/images/posts/google-trends-ai-crypto.png)
+*지난 10년간의 구글 트렌드 검색량 추이: AI와 ChatGPT가 기존의 암호화폐(Crypto, Bitcoin) 트렌드를 압도하며 새로운 패러다임을 열고 있습니다.*
+
 ## 1. 왜 자동 AI 블로그인가?
 하루가 다르게 쏟아지는 AI 관련 뉴스는 트렌드를 따라가기가 벅찹니다.
 AI 시대에 적응하기 위해 제가 배워야 할 것들도 급속히 늘어나고 있습니다.
