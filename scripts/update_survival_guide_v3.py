@@ -1,6 +1,6 @@
 import os
 
-FILE_PATH = os.path.join(os.path.dirname(__file__), '..', 'content', 'posts', '3. AI Learnings', '2026-04-28-ai-survival-guide-for-beginners.md')
+FILE_PATH = os.path.join(os.path.dirname(__file__), '..', 'content', 'posts', 'AI Learnings', '2026-04-28-ai-survival-guide-for-beginners.md')
 
 CONTENT = """---
 title: "2026년 일반인을 위한 필수 AI 생존 가이드 (초급~고급 완벽 정리)"

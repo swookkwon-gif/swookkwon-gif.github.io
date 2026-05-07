@@ -11,7 +11,7 @@ if GEMINI_API_KEY:
     GEMINI_API_KEY = GEMINI_API_KEY.strip('"').strip("'")
 client = genai.Client(api_key=GEMINI_API_KEY)
 
-FILE_PATH = os.path.join(os.path.dirname(__file__), '..', 'content', 'posts', '3. AI Learnings', '2026-04-28-ai-survival-guide-for-beginners.md')
+FILE_PATH = os.path.join(os.path.dirname(__file__), '..', 'content', 'posts', 'AI Learnings', '2026-04-28-ai-survival-guide-for-beginners.md')
 
 with open(FILE_PATH, 'r', encoding='utf-8') as f:
     original_content = f.read()

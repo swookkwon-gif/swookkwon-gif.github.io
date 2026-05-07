@@ -4,7 +4,7 @@ import subprocess
 import time
 from datetime import datetime, timezone, timedelta
 
-POSTS_DIR = os.path.join(os.path.dirname(__file__), '..', 'content', 'posts', '3. AI Learnings')
+POSTS_DIR = os.path.join(os.path.dirname(__file__), '..', 'content', 'posts', 'AI Learnings')
 NOTEBOOK_ID = "56829e2f-fd47-4d20-be9f-f54a1c585deb"
 
 TOPICS = [

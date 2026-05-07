@@ -12,7 +12,7 @@ if GEMINI_API_KEY:
     GEMINI_API_KEY = GEMINI_API_KEY.strip('"').strip("'")
 client = genai.Client(api_key=GEMINI_API_KEY)
 
-POSTS_DIR = os.path.join(os.path.dirname(__file__), '..', 'content', 'posts', '3. AI Learnings')
+POSTS_DIR = os.path.join(os.path.dirname(__file__), '..', 'content', 'posts', 'AI Learnings')
 os.makedirs(POSTS_DIR, exist_ok=True)
 
 prompt = """

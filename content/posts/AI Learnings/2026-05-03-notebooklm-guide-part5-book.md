@@ -124,7 +124,7 @@ nlm notebooks create --title "Book: NotebookLM 완전 가이드"
 
 # 각 편의 블로그 포스트를 소스로 추가
 nlm sources add --notebook <BOOK_NB_ID> --type text \
-  --file-path "content/posts/3. AI Learnings/2026-05-03-notebooklm-guide-part1-intro.md" \
+  --file-path "content/posts/AI Learnings/2026-05-03-notebooklm-guide-part1-intro.md" \
   --title "1편: 소개 & 기본 세팅"
 
 # 나머지 편도 동일하게 추가

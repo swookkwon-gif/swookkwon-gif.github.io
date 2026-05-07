@@ -1,6 +1,6 @@
 import os
 
-base_dir = "content/posts/3. AI Learnings"
+base_dir = "content/posts/AI Learnings"
 
 files_data = {
     "2026-04-29-notebooklm-deep-dive.md": {
