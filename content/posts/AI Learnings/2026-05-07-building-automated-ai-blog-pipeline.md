@@ -5,14 +5,14 @@ excerpt: '> 🚀 내가 자는 동안에도 알아서 AI 뉴스를 수집하고,
 category: 'AI Learnings'
 ---
 
-![Google Trends: 10-Year Global Search Interest (AI vs Crypto)](/images/posts/google-trends-ai-crypto.png)
-*지난 10년간의 구글 트렌드 검색량 추이: AI와 ChatGPT가 기존의 암호화폐(Crypto, Bitcoin) 트렌드를 압도하며 새로운 패러다임을 열고 있습니다.*
-
 ## 1. 왜 자동 AI 블로그인가?
 하루가 다르게 쏟아지는 AI 관련 뉴스는 트렌드를 따라가기가 벅찹니다.
 AI 시대에 적응하기 위해 제가 배워야 할 것들도 급속히 늘어나고 있습니다.
 
-따라서 제 바이브 코딩 도전기 2탄은, AI 뉴스들과 제가 배운 것 + 배워야 하는 것들을 주제로, 기사 수집부터 심층 분석, 마크다운 포스트 작성, 그리고 블로그 배포까지 자동화한 **AI 자동 블로그** 구축으로 정했습니다.
+![Google Trends: 10-Year Global Search Interest (AI, Crypto, Covid, War)](/images/posts/google-trends-ai-crypto-covid-war.png)
+*지난 10년간의 구글 트렌드 검색량 추이: 팬데믹(Covid)과 전쟁(War) 같은 역사적 격변기 및 암호화폐(Crypto, Bitcoin) 붐과 비교해 보더라도, 최근 AI와 ChatGPT가 얼마나 거대한 패러다임 전환을 이끌고 있는지 한눈에 확인할 수 있습니다.*
+
+제 바이브 코딩 도전기 2탄은, AI 뉴스들과 제가 배운 것 + 배워야 하는 것들을 주제로, 기사 수집부터 심층 분석, 마크다운 포스트 작성, 그리고 블로그 배포까지 자동화한 **AI 자동 블로그** 로 정했습니다.
 
 ---
 
