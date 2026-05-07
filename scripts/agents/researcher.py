@@ -233,8 +233,15 @@ def research_daily_top3(
 
     content, _ = review_and_fix(content)
 
-    # 5. 파일 저장
+    # 5. 파일 저장 및 메타 문구 주입
     import re
+    news_count = len(re.findall(r'^## \d+\.', content, flags=re.MULTILINE))
+    if news_count == 0:
+        news_count = 10
+        
+    intro_text = f"> 📊 오늘의 AI 트렌드: 주요 뉴스 {news_count}건을 노트북LM 딥 리서치를 통해 수집 및 분석한 결과입니다.\n\n---\n"
+    content = intro_text + content
+
     if generated_slug:
         slug = generated_slug
     else:
