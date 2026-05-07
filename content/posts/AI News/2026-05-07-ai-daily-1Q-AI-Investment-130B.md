@@ -14,7 +14,7 @@ category: 'AI News'
 * 빅테크 4사 1분기 자본 지출 합계: 1,306억 5,000만 달러 (전년 대비 71% 증가) [1]
 * 세레브라스 IPO: 기업 가치 266억 달러, 자금 조달 35억 달러 [2]
 * 판탈라사 해상 AI 데이터센터 투자 유치: 1억 4,000만 달러 [3]
-<br><small style="color: #888;">소스: AI타임스 · 7min.ai · The Rundown AI &nbsp;|&nbsp; 🔗 [원문 보기](https://www.aitimes.com/news/articleView.html?idxno=215432) · [원문 2](https://www.cerebras.ai/press-release/cerebras-systems-announces-launch-of-initial-public-offering) · [원문 3](https://www.businesswire.com/news/home/20260504552400/en/Panthalassa-Raises-%24140-Million-to-Power-AI-at-Sea)</small>
+<br><small style="color: #888;">소스: 🔗 [AI타임스](https://www.aitimes.com/news/articleView.html?idxno=215432) · [7min.ai / Cerebras](https://www.cerebras.ai/press-release/cerebras-systems-announces-launch-of-initial-public-offering) · [The Rundown AI / Panthalassa](https://www.businesswire.com/news/home/20260504552400/en/Panthalassa-Raises-%24140-Million-to-Power-AI-at-Sea)</small>
 
 ---
 
@@ -22,7 +22,7 @@ category: 'AI News'
 프론티어 AI 연구소들이 B2B 엔터프라이즈 시장을 본격적으로 공략하기 위해 사모펀드 및 월가 은행들과 손잡고 기술 배포 전문 합작법인(JV)을 연달아 출범시켰습니다 [4]. 앤트로픽은 블랙스톤, 골드만삭스 등과 함께 15억 달러 규모의 AI 서비스 법인을 설립했으며, 오픈AI는 TPG, 베인캐피탈 등으로부터 40억 달러를 조달해 100억 달러 가치의 '더 디플로이먼트 컴퍼니'를 세웠습니다 [5, 6]. 이는 AI 기업들이 단순한 모델 제공을 넘어, 고객사에 전진 배치될 엔지니어 인력을 통해 레거시 워크플로우를 직접 혁신하는 실질적 솔루션 사업으로 전략을 수정했음을 의미합니다 [5].
 * 오픈AI 합작법인 'The Deployment Company': 조달액 40억 달러, 기업 가치 100억 달러 [6]
 * 앤트로픽 합작법인: 조달액 15억 달러 [5]
-<br><small style="color: #888;">소스: TLDR AI · 7min.ai &nbsp;|&nbsp; 🔗 [원문 보기](https://techcrunch.com/2026/05/04/anthropic-and-openai-are-both-launching-joint-ventures-for-enterprise-ai-services/) · [원문 2](https://www.bloomberg.com/news/articles/2026-05-04/openai-finalizes-10-billion-joint-venture-with-pe-firms-to-deploy-ai)</small>
+<br><small style="color: #888;">소스: 🔗 [TLDR AI / TechCrunch](https://techcrunch.com/2026/05/04/anthropic-and-openai-are-both-launching-joint-ventures-for-enterprise-ai-services/) · [7min.ai / Bloomberg](https://www.bloomberg.com/news/articles/2026-05-04/openai-finalizes-10-billion-joint-venture-with-pe-firms-to-deploy-ai)</small>
 
 ---
 
@@ -31,7 +31,7 @@ category: 'AI News'
 * 메타 Llama 4 Scout 컨텍스트 창: 1,000만 토큰 [9]
 * 미스트랄 Mistral Large 3: 총 675B 매개변수 [8]
 * Kimi K2.5 코딩 벤치마크(HumanEval): 99.0점 [11]
-<br><small style="color: #888;">소스: AI CERTs News · Mistral AI · VERTU Official Site &nbsp;|&nbsp; 🔗 [원문 보기](https://www.aicerts.ai/news/metas-llama-4-and-the-rise-of-open-source-multimodal-ai/) · [원문 2](https://mistral.ai) · [원문 3](https://vertu.com)</small>
+<br><small style="color: #888;">소스: 🔗 [AI CERTs News](https://www.aicerts.ai/news/metas-llama-4-and-the-rise-of-open-source-multimodal-ai/) · [Mistral AI](https://mistral.ai) · [VERTU Official Site](https://vertu.com)</small>
 
 ---
 
@@ -39,14 +39,14 @@ category: 'AI News'
 대규모 언어 모델을 기반으로 한 자율 에이전트가 소프트웨어 엔지니어링 패러다임을 재편하고 있습니다 [12]. 깃허브 실제 버그 해결률을 평가하는 SWE-bench Verified에서 AI의 성능은 2023년 1.96%에서 2026년 4월 기준 78.4%(Claude Opus 4.7)로 급상승했습니다 [13, 14]. 이제 개발자들은 코드를 직접 작성하는 대신 에이전트의 실행을 위임하고 감독하는 역할을 맡게 되었으며, 실제 통제 실험 결과 개발 작업 시간을 최대 55.8%까지 단축시키는 극적인 생산성 향상이 증명되었습니다 [15, 16].
 * SWE-bench Verified 실제 버그 해결률 상승: 1.96%(2023년) -> 78.4%(2026년) [12, 14]
 * 에이전틱 AI 도입 시 작업 시간 단축 효과: 13.6% ~ 55.8% [12, 16]
-<br><small style="color: #888;">소스: arXiv · GeekNews Weekly &nbsp;|&nbsp; 🔗 [원문 보기](https://arxiv.org/abs/2602.17753) · [원문 2](https://news.hada.io/topic?id=28966)</small>
+<br><small style="color: #888;">소스: 🔗 [arXiv](https://arxiv.org/abs/2602.17753) · [GeekNews Weekly](https://news.hada.io/topic?id=28966)</small>
 
 ---
 
 ## 5. 글로벌 AI 규제 강화와 배포 전 정부 사전 검증 가시화
 AI 시스템이 사회 전반에 확산됨에 따라 각국 정부의 규제 방식이 사후 대처에서 엄격한 사전 예방 통제로 전환되고 있습니다 [17]. 미국 트럼프 행정부는 주요 AI 모델을 대중에게 배포하기 전, 정부 관리와 기술 임원이 참여하는 워킹그룹을 통해 보안 검증 절차를 거치도록 하는 행정명령을 논의 중입니다 [18]. 또한, AI를 악용한 해킹 위협이 고도화되면서 미국 규제 당국은 주요 디지털 취약점 패치 의무 기한을 불과 3일로 대폭 단축하는 방안까지 고려하며 보안 체계 구축 압박을 높이고 있습니다 [19].
 * 미국 디지털 취약점 패치 의무 기한 단축 고려안: 3일 [19]
-<br><small style="color: #888;">소스: 7min.ai · AI Breakfast · YouTube &nbsp;|&nbsp; 🔗 [원문 보기](https://www.businessinsider.com/experts-react-government-trump-vetting-ai-models-regulation-innovation-2026-5) · [원문 2](https://www.reuters.com/legal/litigation/us-officials-weigh-cutting-deadlines-fix-digital-flaws-amid-worries-over-ai-2026-05-01/)</small>
+<br><small style="color: #888;">소스: 🔗 [7min.ai / Business Insider](https://www.businessinsider.com/experts-react-government-trump-vetting-ai-models-regulation-innovation-2026-5) · [AI Breakfast / Reuters](https://www.reuters.com/legal/litigation/us-officials-weigh-cutting-deadlines-fix-digital-flaws-amid-worries-over-ai-2026-05-01/)</small>
 
 ---
 
@@ -55,21 +55,21 @@ AI 시스템이 사회 전반에 확산됨에 따라 각국 정부의 규제 방
 * SLM 적정 매개변수 규모: 10억~130억 개 (1-13B) [25]
 * 대형 모델 대비 추론 비용 절감: 90% 이상 [22]
 * 온디바이스 구동 지연 시간: 50~100ms [21]
-<br><small style="color: #888;">소스: Knolli.ai · The Rundown AI &nbsp;|&nbsp; 🔗 [원문 보기](https://knolli.ai) · [원문 2](https://app.therundown.ai/guides/how-to-replace-siri-with-a-free-local-model)</small>
+<br><small style="color: #888;">소스: 🔗 [Knolli.ai](https://knolli.ai) · [The Rundown AI](https://app.therundown.ai/guides/how-to-replace-siri-with-a-free-local-model)</small>
 
 ---
 
 ## 7. 프라이빗 크레딧 시장의 거시경제 뇌관이 된 AI 데이터센터 대출
 AI 인프라 구축을 위해 천문학적인 자본이 쏠리면서, 은행권 대출을 넘어 프라이빗 크레딧(사모신용) 자금까지 투입되자 금융안정위원회(FSB)가 거시경제적 신용 손실 위험을 공식 경고했습니다 [26, 27]. 특히 J.P. 모건과 모건스탠리 등 대형 은행들은 내부 리스크 한도 초과로 인해 오라클 데이터센터를 뒷받침하는 380억 달러 규모의 신디케이트 론을 외부 투자자들에게 할인 매각하며 리스크 덜어내기에 나선 상황입니다 [28]. 데이터센터 공급 과잉이나 전력 부족 문제 발생 시 금융 시스템 전반에 타격이 올 수 있다는 분석이 나옵니다 [29].
 * 은행권 신디케이트 론으로 추진된 오라클 데이터센터 대출 규모: 380억 달러 [28]
-<br><small style="color: #888;">소스: The Guardian · 7min.ai &nbsp;|&nbsp; 🔗 [원문 보기](https://www.theguardian.com/business/2026/may/06/global-finance-watchdog-warns-over-private-credit-industry-fuelling-ai-boom) · [원문 2](https://the-decoder.com/building-ai-data-centers-is-becoming-a-stress-test-for-banks/)</small>
+<br><small style="color: #888;">소스: 🔗 [The Guardian](https://www.theguardian.com/business/2026/may/06/global-finance-watchdog-warns-over-private-credit-industry-fuelling-ai-boom) · [7min.ai / The Decoder](https://the-decoder.com/building-ai-data-centers-is-becoming-a-stress-test-for-banks/)</small>
 
 ---
 
 ## 8. 국방 안보 분야의 AI 파트너십 확대와 프론티어 연구소들의 분열
 미국 국방부가 국가 안보 시스템 및 기밀망 내 AI 통합을 가속하기 위해 오픈AI, 구글, 마이크로소프트, 아마존, 메타 등과 연달아 파트너십을 체결했습니다 [30]. 이 계약들에는 대량 감시나 자율 살상 무기에 AI를 직접 사용하지 않는다는 조항이 포함되었으나, 앤트로픽은 윤리적 우려와 국가 감시 리스크를 이유로 명시적인 거부 의사를 밝히며 국방 프로젝트에서 빠졌습니다 [30, 31]. 기술의 군사적 활용 허용 범위를 두고 주요 AI 연구소 간의 철학적 분열이 선명해지고 있습니다 [30].
 * 국방부 기밀망 계약 참여 기업: 오픈AI, 구글, MS, 아마존, 메타 등 [30]
-<br><small style="color: #888;">소스: AI Breakfast · TLDR AI &nbsp;|&nbsp; 🔗 [원문 보기](https://apnews.com/article/060cecf836c4cebcf012a3ceb5333f2c) · [원문 2](https://tldr.tech/ai/tldrai-2026-05-04?utm_source=tldrai&utm_medium=newsletter&utm_campaign=top-ai-companies-agree-to-pentagon-deals-for-classified-work)</small>
+<br><small style="color: #888;">소스: 🔗 [AI Breakfast / AP News](https://apnews.com/article/060cecf836c4cebcf012a3ceb5333f2c) · [TLDR AI](https://tldr.tech/ai/tldrai-2026-05-04?utm_source=tldrai&utm_medium=newsletter&utm_campaign=top-ai-companies-agree-to-pentagon-deals-for-classified-work)</small>
 
 ---
 
@@ -77,7 +77,7 @@ AI 인프라 구축을 위해 천문학적인 자본이 쏠리면서, 은행권 
 의료 및 바이오 분야에서 AI는 탁월한 분석 성과를 내는 동시에 치명적인 알고리즘 편향 문제를 드러내고 있습니다 [32, 33]. 하버드 의대의 연구 결과, 오픈AI의 o1-preview 모델은 76개 응급실 실제 진단 사례에서 67.1%의 정확도를 기록해 의사들(55.3%, 50.0%)보다 유의미하게 높은 성과를 보였습니다 [32]. 반면, 케냐 정부가 도입한 AI 수단 테스트(Means-testing) 헬스케어 모델은 비정규 노동자의 소득을 무려 83% 비율로 과대 추정하여, 정작 빈곤층에게 더 비싼 의료 보험비를 부과하는 알고리즘의 맹점을 적나라하게 보여주었습니다 [33].
 * o1-preview 응급실 진단 정확도: 67.1% [32]
 * 케냐 AI 모델의 비정규 노동자 소득 과대 추정 비율: 83% [33]
-<br><small style="color: #888;">소스: The Rundown AI · 7min.ai &nbsp;|&nbsp; 🔗 [원문 보기](https://www.harvardmagazine.com/ai/ai-outperforms-doctors-diagnosis-harvard-study) · [원문 2](https://www.theguardian.com/global-development/2026/may/04/kenya-ai-healthcare-reforms-driving-up-costs-for-poor)</small>
+<br><small style="color: #888;">소스: 🔗 [The Rundown AI / Harvard Magazine](https://www.harvardmagazine.com/ai/ai-outperforms-doctors-diagnosis-harvard-study) · [7min.ai / The Guardian](https://www.theguardian.com/global-development/2026/may/04/kenya-ai-healthcare-reforms-driving-up-costs-for-poor)</small>
 
 ---
 
@@ -85,7 +85,7 @@ AI 인프라 구축을 위해 천문학적인 자본이 쏠리면서, 은행권 
 기업들의 AI 도입이 실질적인 비즈니스 성과로 이어지는 가운데, 자율형 에이전틱 AI 확장을 위한 인프라 거버넌스 과제가 대두되고 있습니다 [34]. 엔비디아의 2026년 조사에 따르면 응답 기업의 88%가 AI가 연간 매출 증가에 긍정적인 영향을 미쳤다고 답했습니다 [35]. 반면 맥킨지의 신뢰도 조사에서는 에이전틱 AI 확장의 가장 큰 장애물로 65%의 기업이 보안 및 리스크 우려를 지목했으며, 그중 모델의 부정확성(74%)과 사이버 보안 위협(72%)에 대한 불안이 핵심 문제로 나타났습니다 [36, 37].
 * AI 도입으로 연간 매출 증가를 경험한 기업: 88% [35]
 * 에이전틱 AI 확장의 최대 장벽(보안 및 리스크 우려): 65% [36]
-<br><small style="color: #888;">소스: NVIDIA Blog · McKinsey &nbsp;|&nbsp; 🔗 [원문 보기](https://blogs.nvidia.com/blog/state-of-ai-report-2026/) · [원문 2](https://www.mckinsey.com)</small>
+<br><small style="color: #888;">소스: 🔗 [NVIDIA Blog](https://blogs.nvidia.com/blog/state-of-ai-report-2026/) · [McKinsey](https://www.mckinsey.com)</small>
 
 ---
 
