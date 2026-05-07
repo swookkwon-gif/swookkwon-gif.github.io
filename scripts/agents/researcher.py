@@ -226,7 +226,11 @@ def research_daily_top3(
     content, _ = review_and_fix(content)
 
     # 5. 파일 저장
-    file_path = create_post_file("daily-ai-top3-news", title, content, category="AI News")
+    import re
+    slug_part = title.split('—')[-1].strip() if '—' in title else title
+    slug_base = re.sub(r'[^a-z0-9가-힣\-]+', '-', slug_part.lower()).strip('-')[:60]
+    slug = re.sub(r'\-+', '-', f"ai-daily-{slug_base}")
+    file_path = create_post_file(slug, title, content, category="AI News")
     print(f"  ✅ Daily Top3 포스트 저장: {os.path.basename(file_path)}")
     return file_path
 
