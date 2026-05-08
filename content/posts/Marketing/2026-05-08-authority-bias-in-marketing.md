@@ -85,9 +85,9 @@ CRM의 핵심은 **'조종실 내의 위계질서 타파'**와 **'수평적 소�
 문제는 이러한 플랫폼의 추천이 **'마케터의 이익(ROAS 최적화)'** 보다 **'플랫폼의 이익(광고 소진액 증대)'** 에 부합하는 경우가 많다는 사실입니다. 하지만 흥미롭게도 마케팅 조직 내부의 의사결정 과정을 살펴보면 극명한 권위 편향이 관찰됩니다.
 
 ![Authority Bias in Marketing Decision Making](/images/posts/marketing-authority-bias.png)
-*동일하게 비효율적인 전략이라 하더라도, 발화자가 누구냐에 따라 마케터들의 수용률은 극명하게 달라집니다. '구글의 공식 추천'이라는 딱지가 붙는 순간 비판적 사고는 마비됩니다.*
+*마케팅 의사결정에서의 권위 편향 개념도. Search Engine Land 등 주요 매체의 업계 조사에 따르면 최상위 전문 마케터들은 구글의 '자동 적용(Auto-apply)'을 극도로 불신함에도 불구하고, '공식 플랫폼의 권고'라는 타이틀이 붙는 순간 일반 실무진의 비판적 수용 능력은 크게 저하되는 현상(자동화 편향, Automation Bias)이 발생합니다.*
 
-팀 내의 주니어 마케터나 외부 에이전시가 "효율이 떨어지는 광범위 키워드를 다량으로 추가합시다"라고 제안했다면 당장 거절당했을 것입니다. 하지만 대시보드 상단에 **[Google 최적화 점수 향상 권장]** 이라는 타이틀로 동일한 제안이 나타나면, 전문가들조차 "구글의 머신러닝이 우리보다 더 많은 시그널을 보고 판단했겠지"라며 버튼을 누르고 맙니다. 
+팀 내의 주니어 마케터나 외부 에이전시가 "효율이 떨어지는 광범위 키워드를 다량으로 추가합시다"라고 제안했다면 당장 거절당했을 것입니다. 하지만 대시보드 상단에 **[Google 최적화 점수 향상 권장]** 이라는 타이틀로 동일한 제안이 나타나면, 전문가들조차 "구글의 머신러닝이 우리보다 더 많은 시그널을 보고 판단했겠지"라며 버튼을 누르고 맙니다. (참고: Search Engine Land 리포트) 
 
 마케팅 업계에 만연한 **캡틴증후군**의 전형입니다.
 
@@ -106,6 +106,8 @@ CRM의 핵심은 **'조종실 내의 위계질서 타파'**와 **'수평적 소�
 ## 📚 참고자료
 
 1. Milgram, S. (1963). Behavioral Study of Obedience. *The Journal of Abnormal and Social Psychology*, 67(4), 371–378.
+2. [Search Engine Land] [PPC practitioners still distrust Google auto-apply recommendations](https://searchengineland.com/google-ads-auto-apply-recommendations-advertiser-trust-431050)
+3. Skitka, L. J., Mosier, K. L., & Burdick, M. (1999). Does automation bias decision-making? *International Journal of Human-Computer Studies*, 51(5), 991-1006.
 2. Cialdini, R. B. (1984). *Influence: The Psychology of Persuasion*. Harper Business. (권위 편향에 대한 상세한 심리학적 분석 제공)
 3. Foushee, H. C. (1984). Dyadic behavior in command: Copilots and "Captainitis". *Aviation, Space, and Environmental Medicine*.
 4. Google Ads Help: [About auto-apply recommendations](https://support.google.com/google-ads/answer/10276489?hl=en)
