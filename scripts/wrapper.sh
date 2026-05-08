@@ -16,7 +16,7 @@ if [ "$1" == "daemon" ]; then
     
     # 깃허브 퍼블리싱 (블로그 업로드)
     echo "Pushing changes to GitHub..."
-    git add content/posts/2.\ AI\ News/*.md
+    git add content/posts/AI\ News/*.md
     git commit -m "auto: daily AI news blog post"
     git push origin main
     
@@ -26,7 +26,7 @@ elif [ "$1" == "weekly" ]; then
     
     # 깃허브 퍼블리싱 (블로그 업로드)
     echo "Pushing changes to GitHub..."
-    git add content/posts/2.\ AI\ News/*weekly-ai-review.md
+    git add content/posts/AI\ News/*weekly-ai-review.md
     git commit -m "auto: weekly AI review blog post"
     git push origin main
 else

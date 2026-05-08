@@ -347,7 +347,16 @@ def merge_and_create_daily_digest(all_articles):
     except:
         post_title = "최신 AI 주요 동향"
         
-    slug = "daily-ai-digest"
+    slug_prompt = "방금 작성된 마크다운 내용의 가장 핵심적인 주제를 나타내는 영문 단어 3~4개를 하이픈(-)으로 연결하여 출력하세요. (예: openai-ms-contract, pentagon-ai-contract). 영문 소문자와 하이픈만 사용해야 합니다."
+    slug_res = run_nlm(["nlm", "query", "notebook", nb_id, slug_prompt, "--json"])
+    try:
+        topic_slug = json.loads(slug_res).get("answer", "news").strip().lower()
+        topic_slug = __import__('re').sub(r'[^a-z0-9\-]', '', topic_slug)
+        if topic_slug.startswith("ai-daily-"):
+            topic_slug = topic_slug[len("ai-daily-"):]
+        slug = f"ai-daily-{topic_slug}"
+    except:
+        slug = "ai-daily-news"
     title = f"[{now_kst.strftime('%m월 %d일')}] AI 데일리 다이제스트 — {post_title}"
     
     post_content = f"> 📊 오늘의 AI 트렌드: NotebookLM 딥 리서치 파이프라인을 통해 수집 및 심층 분석된 결과입니다.\n\n---\n\n{post_content}"
