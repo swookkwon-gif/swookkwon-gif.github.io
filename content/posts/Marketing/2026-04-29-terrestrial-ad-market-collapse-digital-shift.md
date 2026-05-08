@@ -61,7 +61,7 @@ tags:
 이제 다가올 10년은 **'AI를 활용한 초개인화 및 생성형 광고'**, 소비자의 실제 구매 데이터와 직결되는 **'리테일 미디어(Retail Media)'**, 그리고 기존 TV의 형태를 빌려왔으나 본질은 디지털인 **'커넥티드 TV(CTV)'** 환경 내에서의 새롭고 치열한 데이터 주도권 싸움이 될 것입니다.
 
 ## 📚 참고자료
-* [eMarketer] Worldwide Ad Spending Forecasts (2004-2024 Trends)
-* [Statista] Global Digital Advertising vs. Traditional TV Advertising Revenue
+* [eMarketer Worldwide Ad Spending Forecasts](https://www.emarketer.com/insights/) (2004-2024 Trends)
+* [Statista Global Digital Advertising vs. Traditional TV Revenue](https://www.statista.com/markets/418/topic/461/advertising/)
 * [제일기획] 대한민국 총 광고비 결산 및 전망 보고서 (2024)
 * [Dentsu] Global Ad Spend Forecasts
