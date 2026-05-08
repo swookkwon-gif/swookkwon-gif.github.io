@@ -59,6 +59,7 @@ category: 'Marketing'
     빨리 이륙해야 한다는 초조함에 사로잡힌 기장이 관제탑의 정식 이륙 허가(Takeoff clearance)도 떨어지기 전에 무리하게 스로틀을 올리며 활주를 시작했을 때, 조종실 블랙박스(CVR)에 남겨진 마지막 대화는 이러했습니다.
     *   **기관사:** "저 팬암(Pan Am)기, 아직 활주로 안 빠져나간 거 아닙니까? (Is he not clear, that Pan American?)"
     *   **기장:** "아냐, 확실히 빠져나갔어! (Oh, yes.)" (단호하게 말을 자르며)
+
     최고 권위자인 기장의 확신에 찬 한마디에 짓눌린 기관사는 더 이상 강하게 이의를 제기하지 못했습니다. 결국 13초 뒤, 이륙을 위해 질주하던 KLM 여객기는 아직 활주로에 남아있던 팬암 여객기를 짙은 안개 속에서 미처 피하지 못하고 정면으로 충돌하고 맙니다.
 
     ![Tenerife Airport Disaster](/images/posts/tenerife-disaster-photo.jpg)
