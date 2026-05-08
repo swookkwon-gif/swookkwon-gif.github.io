@@ -5,6 +5,9 @@ excerpt: 'Gemini CLI의 꽃이라 할 수 있는 Skill 시스템을 이해하고
 category: 'AI Learnings'
 ---
 
+![Skill Pipeline](/images/posts/skill-pipeline-sketch.png)
+*오픈소스 Skill이 개발 파이프라인에 결합되는 과정을 묘사한 스케치. 개발자가 퍼즐 조각(Skill)을 기존 코드(Code)와 자동화 워크플로우(Automation Workflow) 사이에 끼워 넣어 완벽한 파이프라인을 완성하는 모습입니다.*
+
 [Antigravity 활용 가이드] 시리즈의 마지막 편입니다. 1편에서 Antigravity와 Gemini CLI의 차별점을, 2편에서 YOLO 모드와 청킹(Chunking)을 다루었다면, 이번에는 실제 개발 현장에서 가장 유용하게 쓰이는 **Skill 생태계와 확장 방법**에 대해 알아봅니다.
 
 ---

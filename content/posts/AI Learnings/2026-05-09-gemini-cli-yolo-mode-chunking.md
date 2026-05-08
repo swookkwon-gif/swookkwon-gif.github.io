@@ -5,6 +5,9 @@ excerpt: 'Gemini CLI의 강력한 기능인 YOLO 모드를 활용한 브레인�
 category: 'AI Learnings'
 ---
 
+![YOLO Mode and Chunking](/images/posts/yolo-chunking-sketch.png)
+*YOLO 모드와 청킹(Chunking)의 개념 스케치. 방대한 문서가 작게 쪼개져(Chunking) 처리된 후 병합되며, 우측의 순환하는 화살표는 사용자의 개입 없이 지속적으로 반복되는 YOLO 모드 루프를 의미합니다.*
+
 지난 글에서 Antigravity(자율 탐색)와 Gemini CLI(스크립트 자동화)의 역할 분담을 알아보았습니다. 이번에는 개발 워크플로우를 극한으로 끌어올릴 수 있는 Gemini CLI만의 강력한 고급 기능, **YOLO(You Only Look Once) 모드**와 **청킹(Chunking)** 기법을 실전 사례와 함께 살펴보겠습니다.
 
 ---

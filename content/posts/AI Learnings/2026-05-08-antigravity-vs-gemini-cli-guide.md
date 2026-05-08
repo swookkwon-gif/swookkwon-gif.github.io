@@ -5,6 +5,9 @@ excerpt: 'Agentic AI 코딩 어시스턴트인 Antigravity와 강력한 터미�
 category: 'AI Learnings'
 ---
 
+![Antigravity vs Gemini CLI](/images/posts/antigravity-vs-cli-sketch.png)
+*Antigravity와 Gemini CLI의 개념적 차이를 나타낸 스케치. 좌측은 자율적이고 탐색적인 로봇 에이전트, 우측은 결정론적이고 정밀하게 맞물려 돌아가는 자동화 톱니바퀴 메커니즘을 상징합니다.*
+
 Google DeepMind 팀이 주도하는 Advanced Agentic Coding의 결정체인 **Antigravity**는 개발자의 워크플로우를 완전히 뒤바꿔 놓고 있습니다. 하지만 Antigravity 생태계를 100% 활용하기 위해서는 UI 기반의 에이전트 환경과 터미널 기반의 **Gemini CLI**를 정확히 이해하고 구분해서 사용할 줄 알아야 합니다.
 
 이번 시리즈에서는 Antigravity와 Gemini CLI의 차별화된 사용법부터 YOLO 모드를 활용한 브레인스토밍, 그리고 오픈소스 Skill을 활용한 개발 자동화까지 상세히 다루어 보겠습니다. 첫 번째 시간으로, 두 도구의 근본적인 차이와 올바른 활용 전략을 살펴봅니다.
