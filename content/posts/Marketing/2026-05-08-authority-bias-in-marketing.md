@@ -94,9 +94,7 @@ CRM의 핵심은 **'조종실 내의 위계질서 타파'**와 **'수평적 소�
 
 최근 몇 년간 구글 애즈(Google Ads)는 인공지능 기반의 '실적 최대화(Performance Max, PMax)' 캠페인과 '자동 적용 추천(Auto-apply recommendations)' 기능을 강력하게 밀어붙이고 있습니다. 입찰가를 올리고, 광범위 확장 키워드를 추가하고, 새로운 디스플레이 네트워크에 노출하라는 알람이 매일같이 대시보드에 뜹니다.
 
-하지만 **PMax나 자동 적용 추천이 항상 마케터의 성과를 개선해 주지 않는다는 점은 이미 다수의 데이터 기반 연구를 통해 입증된 사실입니다.** 인공지능 광고 모델은 구조적으로 구글의 독점적 '블랙박스(Black box)'로 작동하기 때문에, 학술적인 동료 평가(Peer-review) 논문보다는 Optmyzr, Adalysis 같은 대규모 글로벌 광고 플랫폼 분석 기관들의 실증 연구가 가장 핵심적인 레퍼런스로 꼽힙니다.
-
-최근의 대규모 계정 분석 데이터가 지적하는 PMax와 자동화 기능의 치명적인 한계는 다음과 같습니다.
+하지만 **PMax나 자동 적용 추천이 항상 마케터의 성과를 개선해 주지 않는다는 점은 이미 다수의 데이터 기반 연구를 통해 입증된 사실입니다.** 인공지능 광고 모델은 구조적으로 구글의 독점적 '블랙박스(Black box)'로 작동하기 때문에, Optmyzr, Adalysis 같은 대규모 글로벌 광고 플랫폼 분석 기관들의 실증 연구가 가장 핵심적인 레퍼런스로 꼽히며, 최근의 대규모 계정 분석 데이터가 지적하는 PMax와 자동화 기능의 치명적인 한계는 다음과 같습니다.
 
 *   **저품질 지면으로의 예산 누수:** 광고주는 PMax 캠페인이 정확히 어떤 웹사이트나 유튜브 채널에 노출되었는지 사전에 정밀하게 제어하기 어렵습니다. 이로 인해 브랜드 안전성(Brand Safety)이 훼손되거나 무관심한 타겟에게 클릭을 유도하여 예산이 낭비되는 사례가 빈번합니다.
 *   **기존 우수 캠페인의 카니발리제이션(Cannibalization):** Adalysis 등의 연구에 따르면, PMax는 종종 이미 ROAS 효율이 최상위권인 기존의 '검색(Search)' 캠페인 트래픽(특히 자사 브랜드명 검색)을 가로채어 자신의 성과로 부풀리는 경향이 있습니다. 겉보기 지표와 구글이 제시하는 '최적화 점수'는 좋아 보이지만, 전체 계정 매출의 순증가분(Incremental lift)은 오히려 제자리거나 하락하는 착시 현상을 일으킵니다.
@@ -128,7 +126,9 @@ CRM의 핵심은 **'조종실 내의 위계질서 타파'**와 **'수평적 소�
 1. Milgram, S. (1963). Behavioral Study of Obedience. *The Journal of Abnormal and Social Psychology*, 67(4), 371–378.
 2. [Search Engine Land] [PPC practitioners still distrust Google auto-apply recommendations](https://searchengineland.com/google-ads-auto-apply-recommendations-advertiser-trust-431050)
 3. Skitka, L. J., Mosier, K. L., & Burdick, M. (1999). Does automation bias decision-making? *International Journal of Human-Computer Studies*, 51(5), 991-1006.
-2. Cialdini, R. B. (1984). *Influence: The Psychology of Persuasion*. Harper Business. (권위 편향에 대한 상세한 심리학적 분석 제공)
-3. Foushee, H. C. (1984). Dyadic behavior in command: Copilots and "Captainitis". *Aviation, Space, and Environmental Medicine*.
-4. Google Ads Help: [About auto-apply recommendations](https://support.google.com/google-ads/answer/10276489?hl=en)
-5. Kahneman, D. (2011). *Thinking, Fast and Slow*. Farrar, Straus and Giroux. (시스템 1 사고가 어떻게 권위 편향을 유발하는지 설명)
+4. Cialdini, R. B. (1984). *Influence: The Psychology of Persuasion*. Harper Business. (권위 편향에 대한 상세한 심리학적 분석 제공)
+5. Foushee, H. C. (1984). Dyadic behavior in command: Copilots and "Captainitis". *Aviation, Space, and Environmental Medicine*.
+6. Google Ads Help: [About auto-apply recommendations](https://support.google.com/google-ads/answer/10276489?hl=en)
+7. Kahneman, D. (2011). *Thinking, Fast and Slow*. Farrar, Straus and Giroux. (시스템 1 사고가 어떻게 권위 편향을 유발하는지 설명)
+8. [Optmyzr] [Performance Max Study: Data & Tactics](https://www.optmyzr.com/blog/performance-max-data-study) (대규모 PMax 캠페인 실증 데이터 및 검색 캠페인 카니발리제이션 분석)
+9. [Adalysis] [Performance Max vs Search Campaigns Analysis](https://adalysis.com/blog) (PMax 알고리즘의 성과 부풀리기 현상 및 저품질 지면 예산 누수 연구)
