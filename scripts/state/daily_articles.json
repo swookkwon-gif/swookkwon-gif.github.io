@@ -1,1004 +1,668 @@
 {
   "date": "2026-05-08",
-  "generated_at": "2026-05-08T01:28:45.221526+00:00",
-  "total_articles": 125,
+  "generated_at": "2026-05-08T21:24:22.663344+00:00",
+  "total_articles": 83,
   "articles": [
     {
-      "title": "“자다가 깨면 더 똑똑해진다”...앤트로픽, AI 자기 개선 기능 ‘드리밍’ 공개",
-      "summary": "Anthropic의 에이전트형 AI '드리밍' 기능은 AI의 자기 개선 메커니즘을 다루며, 이는 AI 기술 발전의 중요한 동향입니다. 비록 오픈소스 LLM은 아니지만, 에이전트 기술 전반에 걸쳐 중요한 시사점을 제공합니다.",
-      "score": 4,
-      "source_name": "RSS (AITimes/Benzinga)",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "“인허가 한 곳에서 한 번에”... AIDC 특별법 통과, ‘타임아웃제’로 구축 속도 낸다",
-      "summary": "AI 데이터센터 구축을 위한 특별법 통과는 AI 인프라 확충에 긍정적인 영향을 미치지만, 직접적인 AI 기술 발전 동향과는 거리가 있습니다. AI 산업 생태계 조성에 기여하는 정책적 뉴스입니다.",
-      "score": 3,
-      "source_name": "RSS (AITimes/Benzinga)",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "“피아노 연주까지 1시간이면 끝”...제네시스 AI, 인간 손 능가하는 로봇 모델 공개",
-      "summary": "제네시스 AI의 로봇 AI 모델 '제네-26.5'는 휴머노이드 로봇 분야의 기술 발전을 보여주며, 다양한 로봇 플랫폼에서 동작 가능한 범용성을 강조합니다. AI 응용 분야의 중요한 발전입니다.",
-      "score": 3,
-      "source_name": "RSS (AITimes/Benzinga)",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "\"감정·말투까지 이해\"...인월드 AI, 차세대 음성 모델 ‘리얼타임 TTS-2’ 출시",
-      "summary": "인월드 AI의 '리얼타임 TTS-2'는 감정과 말투를 이해하는 차세대 음성 모델로, 음성 AI 기술의 진보를 보여줍니다. 사용자 경험을 크게 개선할 수 있는 기술적 발전입니다.",
-      "score": 3,
-      "source_name": "RSS (AITimes/Benzinga)",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "크롬, 사용자 동의 없이 4GB '제미나이 나노' 무단 설치 논란",
-      "summary": "구글 제미나이 나노 모델의 무단 설치 논란은 AI 모델 배포 및 개인정보 보호와 관련된 이슈로, 기술적 발전 동향보다는 윤리적/정책적 측면에 가깝습니다.",
-      "score": 2,
-      "source_name": "RSS (AITimes/Benzinga)",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "'AI 추격' 절박한 애플, 사상 처음으로 R&D에 매출 10% 이상 투자",
-      "summary": "애플의 AI R&D 투자 확대는 기업 전략 및 투자 동향에 관한 소식으로, 직접적인 AI 기술 발전 내용보다는 기업의 AI 시장 대응 전략을 다룹니다.",
-      "score": 2,
-      "source_name": "RSS (AITimes/Benzinga)",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "과기부, AX 디바이스 개발·실증 본격화…”일상 생활 확산 목표”",
-      "summary": "과기부의 AX 디바이스 개발 및 실증 사업은 엣지 AI 및 NPU 기반 디바이스 확산을 목표로 하며, AI 기술의 실생활 적용 및 하드웨어 발전에 기여합니다.",
-      "score": 3,
-      "source_name": "RSS (AITimes/Benzinga)",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "딥시크, 기업 가치 72조 '수직 상승'...",
-      "summary": "DeepSeek은 오픈소스 LLM 분야의 핵심 플레이어이며, 기업 가치 급등은 오픈소스 LLM 생태계에 대한 시장의 높은 기대를 반영합니다. 이는 향후 오픈소스 LLM 기술 개발에 막대한 자금 투입으로 이어질 수 있어 매우 중요한 뉴스입니다. (사용자 맞춤형 평가 룰 적용)",
-      "score": 5,
-      "source_name": "RSS (AITimes/Benzinga)",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "구글, 나영석·돌고래유괴단 대담 콘텐츠 공개...",
-      "summary": "구글의 AI 마케팅 인사이트 대담은 AI 기술의 마케팅 활용 사례를 다루는 것으로, 직접적인 AI 기술 발전 동향과는 거리가 있습니다.",
-      "score": 1,
-      "source_name": "RSS (AITimes/Benzinga)",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "과기부, AI 학습데이터 ‘업사이클링’ 사업 공고…“피지컬 AI·추론용 데이터 즉시 공급”",
-      "summary": "AI 학습 데이터 '업사이클링' 사업은 LLM 및 피지컬 AI를 위한 데이터 품질 개선 및 공급을 목표로 하며, AI 모델 성능 향상에 필수적인 데이터 인프라 관련 뉴스입니다.",
-      "score": 3,
-      "source_name": "RSS (AITimes/Benzinga)",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "달파, 오픈AI의 ‘MLE-벤치’서 글로벌 최고 수준 에이전트 성능 입증",
-      "summary": "달파의 AI 에이전트가 OpenAI의 MLE-벤치에서 높은 성능을 기록한 것은 에이전트 기술 발전의 중요한 지표입니다. AI 에이전트의 실질적인 문제 해결 능력을 보여줍니다.",
-      "score": 3,
-      "source_name": "RSS (AITimes/Benzinga)",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "인핸스, 국제 학술대회 3곳서 논문 동시 채택...",
-      "summary": "인핸스의 국제 학술대회 논문 채택 소식은 온톨로지 기반 다중 에이전트 추론을 통한 문화적 정렬 LLM 등 차세대 AI 에이전트 기술 연구 동향을 보여줍니다. LLM의 복잡한 활용 가능성을 제시합니다.",
-      "score": 4,
-      "source_name": "RSS (AITimes/Benzinga)",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "오픈AI, GPU 병목 해결하는 슈퍼컴퓨터 네트워크 규격 'MCR' 공개",
-      "summary": "OpenAI의 MRC(Multipath Reliable Connection) 기술 공개는 대규모 AI 클러스터의 GPU 병목 현상 해결을 위한 네트워크 프로토콜로, AI 모델 학습 인프라 발전에 매우 중요합니다. 이는 오픈소스 LLM을 포함한 모든 대규모 AI 모델 개발에 영향을 미칩니다.",
-      "score": 4,
-      "source_name": "RSS (AITimes/Benzinga)",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "리얼월드, ‘보고 느끼고 기억하는’ 로봇 AI 공개...",
-      "summary": "리얼월드의 로보틱스 파운데이션 모델 'RLDX-1'은 피지컬 AI 분야에서 시각, 언어뿐 아니라 촉각, 작업 기억까지 통합 처리하는 '덱스테리티-퍼스트' 접근을 제시하며, 로봇 AI의 중요한 기술적 진보를 보여줍니다.",
-      "score": 4,
-      "source_name": "RSS (AITimes/Benzinga)",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "바이브컴퍼니, 외부 데이터 즉시 가공하는 '바이브 AI 데이터' 플랫폼 출시",
-      "summary": "바이브컴퍼니의 '바이브 AI 데이터' 플랫폼은 AI 에이전트 특화 데이터 인텔리전스를 제공하여, AI 모델의 추론 활용도를 높이는 데 기여합니다.",
-      "score": 3,
-      "source_name": "RSS (AITimes/Benzinga)",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "엘리스그룹, 스탠다드에너지와 협력 \"AI 데이터센터 전력 부담 대폭 낮춘다\"",
-      "summary": "엘리스그룹과 스탠다드에너지의 AI 모듈형 데이터센터 전력 솔루션 개발 협력은 AI 데이터센터의 전력 효율 및 안정성 확보에 중요한 기여를 합니다. AI 인프라의 지속 가능성 측면에서 중요합니다.",
-      "score": 3,
-      "source_name": "RSS (AITimes/Benzinga)",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "오픈AI·데이원컴퍼니, 어버이날 맞이 ‘시니어 챗GPT 교육’ 행사 개최",
-      "summary": "시니어 대상 챗GPT 교육 행사는 AI의 사회적 확산 측면에서 의미가 있지만, AI 기술 발전 동향과는 직접적인 관련이 없습니다.",
-      "score": 1,
-      "source_name": "RSS (AITimes/Benzinga)",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "파블로항공, 국내 최초 4단계 군집 기술 드론 공연 선보여",
-      "summary": "파블로항공의 4단계 군집 기술 드론 공연은 지능형 분산 임무 통제 등 고도화된 자율 군집 기술을 선보이며, AI 기반 로봇 및 자율 시스템 분야의 발전을 보여줍니다.",
-      "score": 3,
-      "source_name": "RSS (AITimes/Benzinga)",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "\"엔지니어 대신 AI가 서버 장애 잡는다\"...비브라늄랩스, '바이브 AI' 출시",
-      "summary": "비브라늄랩스의 '바이브 AI'는 SRE(사이트 신뢰성 엔지니어링) 장애 대응 플랫폼으로, AI 에이전트가 서버 장애를 자동으로 해결하는 기술을 제시합니다. AI의 실제 운영 효율성 개선 사례입니다.",
-      "score": 3,
-      "source_name": "RSS (AITimes/Benzinga)",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "미·중, 정상회담서 AI 경쟁으로 인한 위기 방지책 논의 예정",
-      "summary": "미·중 정상회담에서 AI 경쟁 위기 방지책 논의는 AI의 지정학적 중요성을 보여주지만, 기술적 발전 동향과는 거리가 있습니다.",
-      "score": 2,
-      "source_name": "RSS (AITimes/Benzinga)",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "사이냅소프트, AI-레디 데이터 구축 시스템 'AI 데이터 파운드리' 출시",
-      "summary": "사이냅소프트의 'AI 데이터 파운드리'는 LLM 및 RAG 시스템 구축에 필요한 비정형 문서 데이터 자동화 시스템으로, AI 모델의 성능 향상에 필수적인 데이터 전처리 기술 발전에 기여합니다.",
-      "score": 3,
-      "source_name": "RSS (AITimes/Benzinga)",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "마키나락스, 국방 참모 AI 에이전트 개발 사업 선정",
-      "summary": "마키나락스의 국방 참모 AI 에이전트 개발 사업 선정은 AI 에이전트 기술의 국방 분야 적용 사례를 보여주며, 특정 도메인에서의 AI 활용 가능성을 확장합니다.",
-      "score": 3,
-      "source_name": "RSS (AITimes/Benzinga)",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "카카오 \"챗GPT 포 카카오 누적 이용자 1100만명 돌파\"",
-      "summary": "카카오의 챗GPT 포 카카오 이용자 수 및 자체 모델 '카나나 2.5' 발표는 국내 AI 서비스 시장 동향을 보여주지만, 기술적 심층 분석보다는 비즈니스 성과와 계획에 가깝습니다.",
-      "score": 2,
-      "source_name": "RSS (AITimes/Benzinga)",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "업스테이지, ‘다음’ 포털 인수로 차세대 AI 포털 공개 예정",
-      "summary": "업스테이지의 다음 포털 인수는 자체 개발 오픈소스 LLM '솔라'를 대규모 포털 서비스에 통합하려는 전략으로, 오픈소스 LLM의 실제 서비스 적용 및 확산에 중대한 영향을 미칩니다. 이는 오픈소스 LLM의 기술적 가치와 활용 가능성을 높이는 중요한 사례입니다. (사용자 맞춤형 평가 룰 적용)",
-      "score": 5,
-      "source_name": "RSS (AITimes/Benzinga)",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "MS, AI 전력난으로 '2030 청정전력 100%' 목표 재검토",
-      "summary": "MS의 AI 전력난으로 인한 청정전력 목표 재검토는 AI 데이터센터의 환경적 영향을 다루는 것으로, AI 기술 발전 자체보다는 인프라 운영의 지속 가능성 이슈입니다.",
-      "score": 2,
-      "source_name": "RSS (AITimes/Benzinga)",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "SKT, 1분기 영업익 5376억...AI 데이터센터 매출 89% 급증",
-      "summary": "SKT의 AI 데이터센터 매출 증가는 AI 인프라 시장의 성장세를 보여주지만, 직접적인 AI 기술 발전 동향과는 거리가 있습니다.",
-      "score": 2,
-      "source_name": "RSS (AITimes/Benzinga)",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "챗GPT의 아버지…이제 중요한 것은 ‘로봇’",
-      "summary": "제목만 있고 내용이 매우 짧아 실질적인 정보나 기술적 분석이 부족합니다.",
-      "score": 1,
-      "source_name": "RSS (AITimes/Benzinga)",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "“시스코의 비극 재현되나” 인텔 주가 거품 경고··· “닷컴 버블 때보다 더 위험”",
-      "summary": "인텔 주가에 대한 거품 경고는 AI 관련 기업의 시장 평가를 다루지만, AI 기술 발전 동향과는 직접적인 관련이 없습니다.",
-      "score": 1,
-      "source_name": "RSS (AITimes/Benzinga)",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "“비트코인, 하락장 끝났나?” 캐시 우드가 전하는 2가지 희소식과 ‘뼈아픈’ 1가지 경고",
-      "summary": "비트코인 및 암호화폐 시장 분석으로, AI 뉴스 범주에 해당하지 않습니다.",
-      "score": 0,
-      "source_name": "RSS (AITimes/Benzinga)",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "우버 CEO “1조 달러 자율주행 시장이 열린다…웨이모 공세에도 사업 끄떡없어”",
-      "summary": "우버 CEO의 자율주행 시장 전망은 AI 기술의 주요 응용 분야인 자율주행 시장의 성장성과 기업 전략을 다룹니다.",
-      "score": 3,
-      "source_name": "RSS (AITimes/Benzinga)",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "“주름 잡아야 아이폰 접는다” 애플, 폴더블폰 ‘최대 약점’ 해결에 총력",
-      "summary": "폴더블폰 디스플레이 기술에 관한 내용으로, AI 뉴스 범주에 해당하지 않습니다.",
-      "score": 0,
-      "source_name": "RSS (AITimes/Benzinga)",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "AMD vs 엔비디아: AMD의 ‘통합 전략’이 2026년 판도 바꿀 이유",
-      "summary": "AMD의 통합 전략(CPU+GPU)과 에이전틱 AI 부상에 따른 CPU 시장 확대는 AI 컴퓨팅 인프라의 핵심 동향입니다. 엔비디아와의 경쟁 구도 속에서 AI 하드웨어 기술 발전에 중요한 시사점을 제공합니다.",
-      "score": 4,
-      "source_name": "RSS (AITimes/Benzinga)",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "“지출이 과하다고? 수요는 이미 넘친다” 짐 크레이머, AI 거품론 반박",
-      "summary": "짐 크레이머의 AI 거품론 반박은 빅테크 기업들의 AI 인프라 투자 확대가 실제 수요에 기반하고 있음을 강조하며, AI 산업의 성장 동력을 이해하는 데 중요합니다.",
-      "score": 3,
-      "source_name": "RSS (AITimes/Benzinga)",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "“인플레이션이 돌아왔다”···원자재값 10년래 최고치, 다시 ‘시동’ 걸린 물가 공포",
-      "summary": "인플레이션 및 원자재 가격 동향에 관한 내용으로, AI 뉴스 범주에 해당하지 않습니다.",
-      "score": 0,
-      "source_name": "RSS (AITimes/Benzinga)",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "“기름값 싼 시절은 끝났다” 피터 쉬프의 독설···”이란 전쟁 이전으로 못 돌아가”",
-      "summary": "유가 및 지정학적 이슈에 관한 내용으로, AI 뉴스 범주에 해당하지 않습니다.",
-      "score": 0,
-      "source_name": "RSS (AITimes/Benzinga)",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "“매출 80배 폭증, 이 정도일 줄은…” 앤트로픽 CEO, “감당하기 힘든 성장 속도” 비명",
-      "summary": "앤트로픽의 클로드 AI 모델의 폭발적인 성장과 컴퓨팅 인프라 부담은 AI 서비스 시장의 급격한 성장과 그에 따른 기술적, 인프라적 과제를 보여줍니다.",
-      "score": 3,
-      "source_name": "RSS (AITimes/Benzinga)",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "Arm 홀딩스의 여유, AMD·인텔·엔비디아 ‘AI CPU’ 총공세에도 “환영”",
-      "summary": "Arm 홀딩스가 AI CPU 시장의 경쟁 심화 속에서도 자사의 코어 효율성을 강조하며 시장 확대를 환영하는 것은 AI 하드웨어 아키텍처의 중요한 동향을 보여줍니다.",
-      "score": 4,
-      "source_name": "RSS (AITimes/Benzinga)",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "[박지환의 인공지능 선긋기] 상황이 바뀌었다, AI 데이터 품질은 ‘정확도’가 아니다",
-      "summary": "AI 데이터 품질에 대한 새로운 관점을 제시하는 기사로, AI 모델의 성능을 좌우하는 데이터의 중요성과 평가 기준 변화에 대한 통찰을 제공합니다.",
-      "score": 3,
-      "source_name": "RSS (AITimes/Benzinga)",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "금융 AI 에이전트 공개한 앤트로픽, 월가 운영 체계 바꾸나",
-      "summary": "앤트로픽의 금융 AI 에이전트 공개는 AI 에이전트 기술이 실제 산업 분야에 적용되어 업무 효율성을 혁신하는 구체적인 사례를 보여줍니다.",
-      "score": 3,
-      "source_name": "RSS (AITimes/Benzinga)",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "하정우·임문영 AI 골든타임에 국회행… “입법 구원투수 vs 정책 추진 공백”",
-      "summary": "AI 전문가들의 국회 진입 소식은 AI 관련 정책 및 입법 환경에 영향을 미칠 수 있지만, 직접적인 AI 기술 발전 동향과는 거리가 있습니다.",
-      "score": 2,
-      "source_name": "RSS (AITimes/Benzinga)",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "AI 컴퓨팅 전쟁의 민낯, 파산 막을 수단은 ‘아직 없다’",
-      "summary": "OpenAI, Anthropic, xAI 등 주요 AI 기업들의 천문학적인 컴퓨팅 비용 지출과 그로 인한 딜레마는 AI 산업의 지속 가능한 성장을 위한 핵심 과제를 조명합니다. 이는 오픈소스 LLM 개발에도 동일하게 적용되는 문제입니다.",
-      "score": 4,
-      "source_name": "RSS (AITimes/Benzinga)",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "‘기름때 묻은 AI’ 마키나락스, 코스닥 간다… 시총 최대 2631억",
-      "summary": "마키나락스의 코스닥 상장 추진은 산업 현장 특화 AI 솔루션 기업의 성장세를 보여주지만, AI 기술 발전 동향보다는 기업의 재무적 성과에 가깝습니다.",
-      "score": 2,
-      "source_name": "RSS (AITimes/Benzinga)",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "[인터뷰] 박용한 이빗 대표 “AI 성능, 데이터로 설계한다”",
-      "summary": "이빗 대표의 인터뷰는 AI 성능이 데이터의 질과 설계 방식에 달려있음을 강조하며, 고난도 데이터 공급의 중요성을 역설합니다. AI 데이터 생태계의 핵심 역할을 조명합니다.",
-      "score": 3,
-      "source_name": "RSS (AITimes/Benzinga)",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "Arm, ‘Performix’로 AI 에이전트 전용 성능 최적화",
-      "summary": "Arm의 'Performix' 툴킷 출시는 AI 에이전트 개발 환경에 특화된 성능 분석 및 최적화 도구를 제공하며, Arm 기반 AI 시스템의 효율성 향상에 기여합니다.",
-      "score": 4,
-      "source_name": "RSS (AITimes/Benzinga)",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "레드햇 RHEL 10.2·9.8, 양자내성암호·기밀 컴퓨팅 전면 도입",
-      "summary": "레드햇 RHEL의 양자내성암호 및 기밀 컴퓨팅 도입은 기업용 OS의 보안 강화와 AI 기반 운영 자동화 기능을 포함하며, AI 시대의 인프라 보안 및 효율성 측면에서 중요합니다.",
-      "score": 3,
-      "source_name": "RSS (AITimes/Benzinga)",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "세일즈포스 태블로, AI 에이전트 실행 플랫폼으로 전환",
-      "summary": "세일즈포스 태블로가 AI 에이전트 기반 실행 플랫폼으로 전환하는 것은 데이터 분석 도구의 AI 통합 및 자동화 트렌드를 보여줍니다.",
-      "score": 3,
-      "source_name": "RSS (AITimes/Benzinga)",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "AXZ 인수 완료한 업스테이지, 다음의 다음을 답할 차례",
-      "summary": "업스테이지의 다음 포털 인수 완료는 자체 개발 오픈소스 LLM '솔라'를 활용한 차세대 AI 포털 구현을 목표로 하며, 오픈소스 LLM의 상업적 활용 및 시장 확장에 매우 중요한 이정표입니다. (사용자 맞춤형 평가 룰 적용)",
-      "score": 5,
-      "source_name": "RSS (AITimes/Benzinga)",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "Anthropic Claude usage limits & SpaceX compute deal",
-      "summary": "Anthropic의 Claude는 독점 모델이며, SpaceX와의 컴퓨팅 파트너십은 기술적 발전보다는 인프라 확장 및 비즈니스 전략에 가깝습니다. 오픈소스 LLM 기술 발전에 대한 직접적인 기여는 미미합니다.",
-      "score": 2,
-      "source_name": "TLDR AI",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "Claude self-improving agents",
-      "summary": "Claude의 에이전트 기능 개선은 AI 에이전트 기술의 발전을 보여주지만, 독점 모델에 대한 업데이트이므로 오픈소스 LLM 기술 발전에 대한 최우선 평가 기준에는 부합하지 않습니다. 일반적인 AI 기술 동향으로 3점을 부여합니다.",
-      "score": 3,
-      "source_name": "TLDR AI",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "China to invest in DeepSeek at $50 billion valuation",
-      "summary": "DeepSeek은 핵심 오픈소스 LLM이며, 중국 정부의 대규모 투자는 오픈소스 LLM 생태계에 중대한 영향을 미치고 기술적 패러다임을 바꿀 잠재력을 가집니다. 이는 오픈소스 LLM 기술 발전 동향을 최우선으로 평가하는 기준에 완벽하게 부합합니다.",
-      "score": 5,
-      "source_name": "TLDR AI",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "OpenAI flips the script (Codex vs Claude Code)",
-      "summary": "OpenAI의 Codex와 GPT-5.5에 대한 내용은 독점 모델에 관한 것이며, 오픈소스 LLM의 기술적 발전에 대한 직접적인 기여나 분석이 아닙니다.",
-      "score": 2,
-      "source_name": "TLDR AI",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "How AI agent memory works",
-      "summary": "AI 에이전트의 메모리 시스템 작동 방식에 대한 심층 분석은 LLM 기반 에이전트의 핵심 기술적 이해를 높이는 데 중요합니다. 특정 모델에 국한되지 않고 전반적인 AI 기술 발전에 기여하는 내용이므로 높은 점수를 부여합니다.",
-      "score": 4,
-      "source_name": "TLDR AI",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "Four levers to specialize your AI agents (SPONSOR)",
-      "summary": "AI 에이전트 전문화에 대한 실용적인 가이드로, AI 개발자에게 유용하지만 오픈소스 LLM의 핵심 기술 발전 동향이나 중대한 기술적 패러다임 변화를 다루지는 않습니다.",
-      "score": 3,
-      "source_name": "TLDR AI",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "NVIDIA Spectrum-X — The open, AI-native Ethernet fabric",
-      "summary": "NVIDIA의 Spectrum-X 및 MRC 기술은 대규모 AI 학습 인프라에 필수적이지만, LLM 모델 자체의 기술적 발전보다는 하드웨어 및 네트워킹 인프라에 초점을 맞춥니다. 오픈소스 LLM 소프트웨어 기술 발전과는 거리가 있습니다.",
-      "score": 3,
-      "source_name": "TLDR AI",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "TokenSpeed: A speed-of-light LLM inference engine for agentic workloads",
-      "summary": "TokenSpeed는 LLM 추론 엔진의 성능 최적화에 대한 핵심 기술 발전입니다. 에이전트 워크로드의 효율성을 극대화하며, 이는 오픈소스 LLM을 포함한 모든 LLM의 실제 적용 가능성과 성능에 중대한 영향을 미칩니다. 기술적 중요도가 매우 높습니다.",
-      "score": 5,
-      "source_name": "TLDR AI",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "vLLM V0 to V1: Correctness before corrections in RL",
-      "summary": "vLLM은 오픈소스 LLM 서빙 엔진으로 널리 사용되며, 이번 업데이트는 추론 정확도와 RL 성능 개선에 초점을 맞춥니다. 이는 오픈소스 LLM 생태계의 기술적 발전에 직접적으로 기여하는 매우 중요한 소식입니다.",
-      "score": 5,
-      "source_name": "TLDR AI",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "ProgramBench launch",
-      "summary": "ProgramBench는 AI 에이전트의 소프트웨어 아키텍처 능력을 평가하는 새로운 벤치마크로, AI 에이전트 기술 발전의 방향을 제시하고 성능을 객관적으로 측정하는 데 매우 중요합니다. 오픈소스 에이전트 개발에도 큰 영향을 미칠 것입니다.",
-      "score": 4,
-      "source_name": "TLDR AI",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "Google is not building a consultancy. It is writing a licensing agreement.",
-      "summary": "Google의 Gemini 모델 라이선싱 전략은 독점 모델의 비즈니스 확장에 관한 내용으로, 오픈소스 LLM의 기술적 발전 동향과는 직접적인 관련이 없습니다.",
-      "score": 1,
-      "source_name": "TLDR AI",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "AI inference just plays by different rules",
-      "summary": "AI 추론의 데이터 성능 요구사항과 관련 인프라 솔루션에 대한 내용은 AI 시스템 운영에 중요하지만, LLM 모델 자체의 기술적 발전 동향과는 거리가 있습니다.",
-      "score": 3,
-      "source_name": "TLDR AI",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "World models can change everything",
-      "summary": "월드 모델에 대한 심층 분석은 AI의 근본적인 발전 방향과 잠재적 패러다임 변화를 다룹니다. 이는 특정 모델에 국한되지 않고 오픈소스 LLM을 포함한 전체 AI 연구 및 개발에 장기적으로 중대한 영향을 미칠 수 있는 중요한 기술적 통찰을 제공합니다.",
-      "score": 4,
-      "source_name": "TLDR AI",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "200ms P99 query latency over 100 billion vectors (SPONSOR)",
-      "summary": "turbopuffer의 벡터 검색 인덱스에 대한 내용은 특정 제품의 성능을 다루는 스폰서 기사로, 오픈소스 LLM의 핵심 기술 발전 동향과는 거리가 있습니다.",
-      "score": 2,
-      "source_name": "TLDR AI",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "Supercomputer networking to accelerate large scale AI training",
-      "summary": "슈퍼컴퓨터 네트워킹은 대규모 AI 모델 학습에 필수적인 인프라 기술이지만, LLM 모델 자체의 기술적 발전 동향보다는 하드웨어 및 네트워킹 측면에 초점을 맞춥니다.",
-      "score": 3,
-      "source_name": "TLDR AI",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "All the demons hiding in your AIS… ranked!",
-      "summary": "LLM에서 나타나는 안정적이고 자가 강화적인 행동 상태에 대한 분석은 LLM의 특성과 한계를 이해하는 데 중요한 기술적 통찰을 제공합니다. 이는 오픈소스 LLM의 연구 및 개발에도 필수적인 정보입니다.",
-      "score": 4,
-      "source_name": "TLDR AI",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "The problem with “mathematically proven” claims about LLMs",
-      "summary": "LLM에 대한 '수학적으로 증명된' 주장들의 문제점을 다루는 기사는 LLM 연구의 방법론과 해석에 대한 비판적 시각을 제공하며, 학술적 논의에 중요하지만 직접적인 기술 발전 소식은 아닙니다.",
-      "score": 3,
-      "source_name": "TLDR AI",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "The April Every AI plan broke",
-      "summary": "AI 구독 플랜 디자인에 대한 내용은 비즈니스 모델에 관한 것으로, 오픈소스 LLM의 기술적 발전 동향과는 무관합니다.",
-      "score": 1,
-      "source_name": "TLDR AI",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "Kimi chatbot maker Moonshot AI valued at $20 billion",
-      "summary": "Moonshot AI의 기업 가치 평가 및 투자 유치 소식은 특정 AI 스타트업의 비즈니스 성과에 관한 것으로, 오픈소스 LLM의 기술적 발전에 대한 직접적인 내용은 아닙니다.",
-      "score": 1,
-      "source_name": "TLDR AI",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "Introducing Harvey's Legal Agent Benchmark",
-      "summary": "Harvey의 Legal Agent Benchmark(LAB)는 법률 분야 AI 에이전트 성능 평가를 위한 오픈소스 도구로, 특정 분야의 AI 에이전트 기술 발전을 촉진하고 오픈소스 커뮤니티에 기여하는 중요한 소식입니다.",
-      "score": 4,
-      "source_name": "TLDR AI",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "Google tests screen sharing and custom agents in Antigravity",
-      "summary": "Google의 Antigravity IDE 테스트 소식은 독점 개발 도구에 관한 것으로, 오픈소스 LLM의 기술적 발전 동향과는 무관합니다.",
-      "score": 1,
-      "source_name": "TLDR AI",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "TLDR VP Marketing Hiring",
-      "summary": "채용 공고로, AI 기술 발전이나 마케팅 트렌드와는 무관한 단순 정보입니다.",
-      "score": 1,
-      "source_name": "TLDR Marketing",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "AI Brands Pumping Ad Dollars into Linear TV",
-      "summary": "주요 AI 기업들의 마케팅 전략 변화를 다루지만, AI 기술 자체의 발전 동향과는 거리가 있습니다. 일반적인 마케팅 트렌드로 평가합니다.",
-      "score": 3,
-      "source_name": "TLDR Marketing",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "Shifting Power in Influencer Marketing",
-      "summary": "인플루언서 마케팅의 변화를 다루는 중요한 마케팅 트렌드이지만, AI 기술 발전과는 직접적인 관련이 없습니다.",
-      "score": 3,
-      "source_name": "TLDR Marketing",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "Content Freshness in SEO (\"Age vs. SERP\")",
-      "summary": "SEO 콘텐츠 전략에 대한 실용적인 조언이지만, AI 기술 발전 동향과는 직접적인 관련이 없습니다.",
-      "score": 3,
-      "source_name": "TLDR Marketing",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "Email A/B Test Interpretation Flaws",
-      "summary": "이메일 A/B 테스트 해석의 함정을 다루는 마케팅 분석 기사로, AI 기술 발전과는 무관합니다.",
-      "score": 3,
-      "source_name": "TLDR Marketing",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "Target's Creator Strategy Overhaul",
-      "summary": "특정 기업의 인플루언서 마케팅 전략 변화를 다루는 기사로, 광범위한 트렌드나 AI 기술 발전과는 거리가 있어 중요도가 낮습니다.",
-      "score": 2,
-      "source_name": "TLDR Marketing",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "Scrunch AI Site Audit (Sponsor)",
-      "summary": "스폰서 광고 콘텐츠로, 뉴스레터의 정보성 기사와는 다릅니다.",
-      "score": 1,
-      "source_name": "TLDR Marketing",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "Implementing WebMCP for AI Agents",
-      "summary": "Google WebMCP는 AI 에이전트가 웹사이트와 직접 상호작용하는 방식을 근본적으로 변화시키는 기술적 진보입니다. 이는 AI 생태계 전반에 중대한 영향을 미치며, AI의 활용 패러다임을 바꿀 잠재력이 있어 최고점을 부여합니다.",
-      "score": 5,
-      "source_name": "TLDR Marketing",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "Managed WordPress Blocking AI Bots",
-      "summary": "관리형 워드프레스 호스팅이 AI 크롤러를 은밀히 차단하는 문제는 AI 모델의 웹 정보 접근성을 심각하게 저해하는 기술적 장벽입니다. 이는 모든 LLM, 특히 오픈소스 LLM의 데이터 수집 및 학습에 결정적인 영향을 미치므로 기술적 중요도가 매우 높습니다.",
-      "score": 5,
-      "source_name": "TLDR Marketing",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "LinkedIn Video Reach Decline",
-      "summary": "링크드인 플랫폼의 콘텐츠 전략 변화를 다루는 기사로, 마케팅 트렌드에 해당하지만 AI 기술 발전과는 직접적인 관련이 없습니다.",
-      "score": 3,
-      "source_name": "TLDR Marketing",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "Meta Using AI for Age Verification",
-      "summary": "메타가 AI를 활용하여 사용자 연령을 추정하는 것은 컴퓨터 비전 및 머신러닝의 중요한 실제 적용 사례입니다. 이는 AI 기술의 사회적 활용과 윤리적 함의를 보여주며, 기술적 중요도가 높습니다.",
-      "score": 4,
-      "source_name": "TLDR Marketing",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "Millennial vs. Gen Z Marketing Trends",
-      "summary": "세대별 마케팅 전략에 대한 일반적인 내용으로, AI 기술 발전과는 무관하며 중요도가 낮습니다.",
-      "score": 2,
-      "source_name": "TLDR Marketing",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "Claude AI Prompts for Job Applications",
-      "summary": "LLM(Claude)의 실용적인 활용 사례를 보여주지만, AI 기술 자체의 발전 동향보다는 응용 측면에 가깝습니다.",
-      "score": 3,
-      "source_name": "TLDR Marketing",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "Common Mistakes with TOFU (Top of Funnel)",
-      "summary": "마케팅 퍼널 상단 전략에 대한 일반적인 조언으로, AI 기술 발전과는 무관하며 중요도가 낮습니다.",
-      "score": 2,
-      "source_name": "TLDR Marketing",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "SPACEXAI SIGNS AGREEMENT WITH ANTHROPIC FOR MASSIVE AI SUPERCOMPUTER ACCESS",
-      "summary": "Anthropic은 주요 빅테크 기업의 독점 AI 모델이며, 이 소식은 오픈소스 LLM의 기술적 발전에 직접적으로 기여하기보다는 빅테크 기업 간의 인프라 협력에 가깝습니다. 하지만 AI 컴퓨팅 파워 확보는 전체 AI 생태계에 중요한 소식이므로 기본 점수 3점을 부여합니다.",
-      "score": 3,
-      "source_name": "TLDR",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "GOOGLE SEARCH AI MODE GETS 'EXPERT ADVICE' FROM REDDIT AND SOCIAL MEDIA",
-      "summary": "구글의 독점 AI 모델 기능 업데이트로, 오픈소스 LLM의 기술적 발전과는 거리가 있습니다. 일반적인 제품 개선 소식으로 판단하여 2점을 부여합니다.",
-      "score": 2,
-      "source_name": "TLDR",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "SPACEX IS STARTING TO MOVE ON FROM THE WORLD'S MOST SUCCESSFUL ROCKET",
-      "summary": "AI 및 LLM 기술 동향과 무관한 우주 산업 소식입니다.",
-      "score": 1,
-      "source_name": "TLDR",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "HUMANOID ROBOTS TO DRIVE NEXT LEG OF CHINA EXPORT DOMINANCE",
-      "summary": "휴머노이드 로봇은 AI 기술을 활용하지만, 오픈소스 LLM의 기술적 발전에 대한 직접적인 소식은 아닙니다. 중국의 산업 동향과 관련된 내용으로, AI 전반의 중요도를 고려하여 3점을 부여합니다.",
-      "score": 3,
-      "source_name": "TLDR",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "DESIGN FROM THE INSIDE",
-      "summary": "소프트웨어 개발 방법론에 대한 글로, AI 및 LLM 기술 동향과 무관합니다.",
-      "score": 1,
-      "source_name": "TLDR",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "SALVATORE SANFILIPPO SUBMITTED A PR ADDING A NEW DATA TYPE - ARRAYS - TO REDIS.",
-      "summary": "데이터베이스 기술 업데이트로, AI 및 LLM 기술 동향과는 직접적인 관련이 적습니다. 일반적인 프로그래밍 소식으로 2점을 부여합니다.",
-      "score": 2,
-      "source_name": "TLDR",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "ANTHROPIC'S CEO SAYS IT COULD GROW BY 80 TIMES THIS YEAR",
-      "summary": "Anthropic의 사업 성장 및 컴퓨팅 파워 수요에 대한 소식으로, 오픈소스 LLM의 기술적 발전보다는 빅테크 기업의 시장 동향에 가깝습니다. AI 산업 전반의 중요도를 고려하여 3점을 부여합니다.",
-      "score": 3,
-      "source_name": "TLDR",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "OPEN WEIGHTS ARE QUIETLY CLOSING UP - AND THAT'S A PROBLEM",
-      "summary": "오픈소스 LLM 생태계의 핵심적인 문제점과 미래 동향을 다루는 기사입니다. 오픈소스 LLM의 기술적 발전과 확산에 중대한 영향을 미칠 수 있는 패러다임 변화 가능성을 제시하므로 최고점인 5점을 부여합니다.",
-      "score": 5,
-      "source_name": "TLDR",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "SPACEX IPO GIVES MUSK UNCHECKED POWER AND FORBIDS INVESTOR LAWSUITS",
-      "summary": "AI 및 LLM 기술 동향과 무관한 기업 지배구조 소식입니다.",
-      "score": 1,
-      "source_name": "TLDR",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "BRAIN OPTIMIZES FOR BITS PER ATP",
-      "summary": "뇌 과학에 대한 흥미로운 통찰이지만, 직접적인 AI 또는 LLM 기술 발전 동향과는 거리가 있습니다.",
-      "score": 2,
-      "source_name": "TLDR",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "GOOGLE'S PROMPT API",
-      "summary": "구글의 독점 API 및 정책에 대한 소식으로, 오픈소스 LLM의 기술적 발전과는 직접적인 관련이 적습니다.",
-      "score": 2,
-      "source_name": "TLDR",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "MOST WIDELY DEPLOYED AND USED DATABASE ENGINE",
-      "summary": "데이터베이스 사용 통계에 대한 글로, AI 및 LLM 기술 동향과 무관합니다.",
-      "score": 1,
-      "source_name": "TLDR",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "THE WRAPPER AND THE CODE",
-      "summary": "앱 스토어 정책 및 개발 관련 소식으로, AI 및 LLM 기술 동향과 무관합니다.",
-      "score": 1,
-      "source_name": "TLDR",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "THE PATIENT CAPITAL OF RECOGNIZING PEOPLE",
-      "summary": "일반적인 비즈니스 통찰에 대한 글로, AI 및 LLM 기술 동향과 무관합니다.",
-      "score": 1,
-      "source_name": "TLDR",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "Anthropic, SpaceX(AI) become unlikely compute partners",
-      "summary": "Anthropic과 SpaceX의 컴퓨팅 자원 파트너십은 주요 LLM 개발사의 인프라 확보 경쟁을 보여주는 중요한 비즈니스 뉴스입니다. 이는 AI 생태계 전반에 영향을 미치지만, 오픈소스 LLM의 기술적 발전에 직접적인 초점을 맞춘 것은 아닙니다.",
-      "score": 4,
-      "source_name": "The Rundown AI",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "A five-step framework for pricing AI products (Stripe Ad)",
-      "summary": "광고성 콘텐츠로, AI 기술 동향이나 오픈소스 LLM 발전에 대한 정보가 아닙니다.",
-      "score": 1,
-      "source_name": "The Rundown AI",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "Mira Murati speaks out in Musk vs. OpenAI trial",
-      "summary": "OpenAI 내부의 법적 분쟁 및 경영진 갈등에 대한 소식으로, 오픈소스 LLM의 기술적 발전 동향과는 거리가 멀고 단순한 가십성 뉴스에 가깝습니다.",
-      "score": 2,
-      "source_name": "The Rundown AI",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "Use Claude Design’s slide decks feature like a pro",
-      "summary": "클로드(Claude)의 기존 기능을 활용하는 방법에 대한 실용적인 가이드입니다. 오픈소스 LLM의 기술적 발전은 아니지만, AI 도구의 실제 활용법을 제시하여 사용자에게 유용합니다.",
-      "score": 3,
-      "source_name": "The Rundown AI",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "Rewire the C-suite for an AI-first world (IBM Ad)",
-      "summary": "광고성 콘텐츠로, AI 기술 동향이나 오픈소스 LLM 발전에 대한 정보가 아닙니다.",
-      "score": 1,
-      "source_name": "The Rundown AI",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "DeepMind picks EVE Online game as next AI testbed",
-      "summary": "구글 딥마인드의 AI 연구 개발 소식으로, 복잡한 환경에서의 AI 에이전트 학습 능력을 시험하는 중요한 기술적 진보를 다룹니다. 오픈소스 LLM은 아니지만, AI 연구의 최전선에서 에이전트 기술 발전에 기여합니다.",
-      "score": 4,
-      "source_name": "The Rundown AI",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "Memoket (Trending AI Tools)",
-      "summary": "스폰서드 광고성 도구 소개입니다.",
-      "score": 1,
-      "source_name": "The Rundown AI",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "Claude Managed Agents (Trending AI Tools)",
-      "summary": "클로드(Claude)의 에이전트 기능 업데이트 소식으로, AI 에이전트의 활용성을 높이는 기능 개선입니다. 오픈소스 LLM의 기술적 발전은 아니지만, 주요 LLM의 기능 향상이라는 점에서 의미가 있습니다.",
-      "score": 3,
-      "source_name": "The Rundown AI",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "GPT 5.5 Instant (Trending AI Tools)",
-      "summary": "OpenAI의 새로운 모델 출시 소식입니다. 독점 모델이지만, 주요 AI 기업의 모델 업데이트는 시장 동향을 파악하는 데 중요합니다.",
-      "score": 3,
-      "source_name": "The Rundown AI",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "Realtime TTS-2 (Trending AI Tools)",
-      "summary": "새로운 음성 AI 기술 소개로, AI의 다양한 응용 분야 중 하나입니다. 오픈소스 LLM의 기술적 발전은 아니지만, AI 기술 전반의 진보를 보여줍니다.",
-      "score": 3,
-      "source_name": "The Rundown AI",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "Subquadratic debuted SubQ",
-      "summary": "12M 토큰 컨텍스트 윈도우와 52배 빠른 속도를 주장하는 새로운 모델의 등장 소식입니다. 이는 LLM의 기술적 한계를 확장하려는 시도로, 기술적 중요도가 높습니다. 오픈소스 여부는 명확치 않으나, 기술적 진보 자체에 가중치를 부여합니다.",
-      "score": 4,
-      "source_name": "The Rundown AI",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "Anthropic launched dreaming, outcomes, and multi-agent orchestration for Managed Agents",
-      "summary": "Anthropic의 매니지드 에이전트 기능 개선 소식입니다. 에이전트의 학습 및 작업 분할 능력을 향상시키는 업데이트로, AI 에이전트의 실용적 활용도를 높이는 데 기여합니다.",
-      "score": 3,
-      "source_name": "The Rundown AI",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "OpenAI teamed up with AMD, Intel, NVIDIA, Microsoft, and Broadcom to open-source MRC",
-      "summary": "대규모 AI 훈련의 안정성을 높이는 MRC 도구를 오픈소스화했다는 소식입니다. 이는 AI 인프라의 핵심 기술을 오픈소스 생태계에 기여하는 것으로, '오픈소스 LLM 기술 발전 동향 최우선 평가' 기준에 완벽히 부합하며 기술적 중요도가 매우 높습니다.",
-      "score": 5,
-      "source_name": "The Rundown AI",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "Chinese AI startup DeepSeek is reportedly nearing a new funding round",
-      "summary": "DeepSeek은 오픈소스 LLM 분야의 핵심 플레이어로, 높은 기업 가치로 투자를 유치한다는 소식은 오픈소스 LLM 생태계의 성장과 중요성을 명확히 보여줍니다. 사용자 맞춤형 평가 룰의 'DeepSeek이나 오픈소스 모델 소식 예제'에 따라 최고 점수를 부여합니다.",
-      "score": 5,
-      "source_name": "The Rundown AI",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "Google announced a new partnership with TuneCore parent Believe",
-      "summary": "음악 AI 관련 파트너십 소식으로, LLM이나 오픈소스 AI 기술 발전과는 직접적인 관련이 적습니다.",
-      "score": 2,
-      "source_name": "The Rundown AI",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "Community AI workflows",
-      "summary": "사용자 AI 활용 사례로, 흥미롭지만 뉴스레터의 핵심 기술 동향이나 오픈소스 LLM 발전과는 거리가 있습니다.",
-      "score": 2,
-      "source_name": "The Rundown AI",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "Highlights: News, Guides & Events",
-      "summary": "이전 뉴스레터 링크 모음으로, 새로운 정보가 아닙니다.",
-      "score": 1,
-      "source_name": "The Rundown AI",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "Anthropic taps SpaceX's Colossus 1 for 220,000 GPUs, doubles Claude Code limits",
-      "summary": "Anthropic은 독점 모델 개발사이지만, 대규모 GPU 확보는 AI 산업 전반의 인프라 확충 동향을 보여주며, 특히 모델 성능 향상과 직결되므로 중요도가 높습니다. 그러나 오픈소스 LLM 기술 발전에 직접적인 기여는 아닙니다.",
+      "title": "파이어폭스, '미소스' 투입 한달 만에 보안 버그 271개 수정",
+      "summary": "앤트로픽의 클로드 미소스를 활용하여 파이어폭스 보안 버그를 대규모로 수정했다는 소식. AI의 실제적인 보안 적용 사례를 보여주지만, 오픈소스 LLM 기술 발전 동향과는 거리가 있고, 독점 모델 활용 사례이다.",
       "score": 3.5,
-      "source_name": "7min.ai",
+      "source_name": "RSS (AITimes/Benzinga)",
       "source_urls": [],
       "keywords": []
     },
     {
-      "title": "Nvidia takes $500M stake in Corning to build out US AI optics manufacturing",
-      "summary": "AI 데이터센터의 핵심 인프라인 광학 연결성 제조 역량 강화는 장기적으로 AI 산업 성장에 필수적입니다. 하지만 LLM 자체의 기술적 발전에 대한 소식은 아닙니다.",
-      "score": 3.0,
-      "source_name": "7min.ai",
+      "title": "트럼프 방중, 엔비디아·보잉 CEO 동행…'역대급 경제협력' 나오나",
+      "summary": "트럼프 대통령의 방중 경제 협력 논의에 엔비디아 CEO가 동행한다는 소식. AI 칩이 언급되지만, AI 기술 자체의 발전 동향이나 오픈소스 LLM과는 직접적인 관련이 적다.",
+      "score": 1,
+      "source_name": "RSS (AITimes/Benzinga)",
       "source_urls": [],
       "keywords": []
     },
     {
-      "title": "Hassett confirms White House is now drafting AI pre-release safety testing order",
-      "summary": "AI 모델의 안전성 테스트 의무화는 AI 개발 및 배포에 중대한 영향을 미치는 정책 변화입니다. 특히 Anthropic의 모델이 정책 변화를 촉발했다는 점에서 주목할 만하지만, 기술적 발전 동향과는 거리가 있습니다.",
-      "score": 3.0,
-      "source_name": "7min.ai",
+      "title": "소프트뱅크, 엔비디아·폭스콘과 '일본산' AI 서버 구축 추진",
+      "summary": "소프트뱅크가 엔비디아, 폭스콘과 협력하여 일본산 AI 서버 구축을 추진한다는 소식. AI 인프라 확장에 대한 내용으로 AI 산업 전반에 중요하지만, 오픈소스 LLM의 기술적 발전에 직접적인 기여는 아니다.",
+      "score": 3,
+      "source_name": "RSS (AITimes/Benzinga)",
       "source_urls": [],
       "keywords": []
     },
     {
-      "title": "Anthropic commits $200B to Google Cloud over five years",
-      "summary": "Anthropic의 구글 클라우드에 대한 막대한 투자는 AI 모델 학습 및 운영에 필요한 컴퓨팅 자원의 중요성을 보여주며, 빅테크 기업 간의 전략적 제휴를 나타냅니다. 이는 AI 산업의 규모와 방향성을 이해하는 데 중요하지만, 오픈소스 LLM 기술 발전과는 직접적인 관련이 적습니다.",
+      "title": "구글, 14만원짜리 '핏빗 에어' 출시...AI 건강 웨어러블에 집중",
+      "summary": "구글의 AI 기반 헬스케어 웨어러블 '핏빗 에어' 출시 소식. AI의 실생활 적용 사례이나, AI 기술 자체의 발전 동향이나 오픈소스 LLM과는 직접적인 관련이 적다.",
+      "score": 2,
+      "source_name": "RSS (AITimes/Benzinga)",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "오픈AI, 미소스 대항마 ‘GPT-5.5-사이버’ 공개...전용·범용 모델 '투트랙' 전략 가동",
+      "summary": "오픈AI가 사이버 보안 특화 AI 모델 'GPT-5.5-사이버'를 공개했다는 소식. 독점 모델이지만, 특정 도메인에 특화된 모델의 발전과 투트랙 전략은 AI 모델 개발 동향에서 중요한 의미를 가진다.",
+      "score": 4,
+      "source_name": "RSS (AITimes/Benzinga)",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "문샷 AI, 메이투안 주도 투자 유치로 기업 가치 29조 평가받아",
+      "summary": "중국 AI 스타트업 문샷 AI의 대규모 투자 유치 소식. AI 산업의 투자 동향을 보여주지만, AI 기술 자체의 발전 동향이나 오픈소스 LLM과는 직접적인 관련이 적다.",
+      "score": 2,
+      "source_name": "RSS (AITimes/Benzinga)",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "알트먼에 테슬라 이사 제안… 머스크, 2018년 오픈AI 흡수 시도 드러나",
+      "summary": "일론 머스크가 2018년 오픈AI를 테슬라에 통합하려 했다는 과거사 소식. AI 기업의 경영권 관련 내용으로, AI 기술 발전 동향과는 무관하다.",
+      "score": 1,
+      "source_name": "RSS (AITimes/Benzinga)",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "엔비디아, 데이터센터 아이렌·광섬유 코닝에 잇달아 투자",
+      "summary": "엔비디아가 데이터센터 개발업체 아이렌과 광통신 기업 코닝에 투자하며 AI 인프라 생태계 확장에 나선다는 소식. AI 인프라 구축의 중요성을 보여주며 AI 산업 전반에 큰 영향을 미치지만, 오픈소스 LLM 기술 발전과는 직접적인 관련이 적다.",
       "score": 3.5,
-      "source_name": "7min.ai",
+      "source_name": "RSS (AITimes/Benzinga)",
       "source_urls": [],
       "keywords": []
     },
     {
-      "title": "Anthropic teaches Claude agents to 'dream' between sessions",
-      "summary": "Anthropic Claude 에이전트의 '꿈꾸기' 기능은 LLM의 장기 기억 및 자가 개선 메커니즘에 대한 흥미로운 기술적 시도입니다. 이는 독점 모델이지만, 에이전트 기술 발전 동향을 보여주므로 높은 점수를 부여합니다.",
-      "score": 4.0,
-      "source_name": "7min.ai",
+      "title": "스포티파이, 맞춤형 음악 추천 'AI DJ' 국내 포함 75개국으로 확대",
+      "summary": "스포티파이의 AI 기반 음악 큐레이션 기능 'AI DJ' 확대 소식. AI의 서비스 적용 사례이나, AI 기술 자체의 발전 동향이나 오픈소스 LLM과는 직접적인 관련이 적다.",
+      "score": 2,
+      "source_name": "RSS (AITimes/Benzinga)",
       "source_urls": [],
       "keywords": []
     },
     {
-      "title": "Genesis AI debuts GENE-26.5 with human-shaped robotic hands cooking and playing piano",
-      "summary": "인간형 로봇 손을 이용한 정교한 작업 수행은 AI가 물리적 세계와 상호작용하는 방식의 중요한 진전을 보여줍니다. 이는 LLM 자체의 기술 발전은 아니지만, AI의 실제 적용 가능성을 확장하는 중요한 기술 동향입니다.",
-      "score": 3.5,
-      "source_name": "7min.ai",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "SpaceX's Texas 'Terafab' chip plant could cost up to $119B",
-      "summary": "SpaceX의 테라팹 반도체 시설 계획은 AI 칩 생산 역량 확보를 위한 막대한 투자를 보여주며, AI 인프라 경쟁의 심화를 나타냅니다. 이는 장기적인 AI 산업의 기반을 다지는 소식이지만, LLM 기술 발전과는 직접적인 관련이 적습니다.",
-      "score": 3.0,
-      "source_name": "7min.ai",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "OpenAI builds MRC networking protocol with AMD, Broadcom, Intel, Microsoft, NVIDIA",
-      "summary": "OpenAI가 AMD, Broadcom 등과 협력하여 개발한 MRC 네트워킹 프로토콜은 AI 슈퍼컴퓨터의 병목 현상을 해결하고 대규모 모델 학습 효율을 극대화하는 핵심 기술 발전입니다. 이는 독점 모델 개발사의 소식이지만, AI 인프라 기술의 근본적인 발전을 다루므로 높은 점수를 부여합니다.",
-      "score": 4.5,
-      "source_name": "7min.ai",
-      "source_urls": [],
-      "keywords": []
-    },
-    {
-      "title": "Scale AI wins $500M Pentagon contract for data and decision-making AI",
-      "summary": "Scale AI의 국방부 계약은 AI 서비스 시장의 성장과 정부의 AI 도입 확대를 보여주지만, LLM의 기술적 발전 동향이나 오픈소스 생태계와는 직접적인 관련이 적습니다.",
+      "title": "과기부, 국내 AI·보안 전문가와 ‘사이버보안 프로젝트 대응’ 간담회 진행",
+      "summary": "과기부가 AI 사이버보안 프로젝트 대응 방안을 논의하기 위한 간담회를 개최했다는 소식. AI의 사회적 영향과 대응에 대한 내용으로 중요하지만, AI 기술 자체의 발전 동향이나 오픈소스 LLM과는 직접적인 관련이 적다.",
       "score": 2.5,
-      "source_name": "7min.ai",
+      "source_name": "RSS (AITimes/Benzinga)",
       "source_urls": [],
       "keywords": []
     },
     {
-      "title": "Moonshot AI hits $20B valuation in $2B Meituan-led round",
-      "summary": "중국의 문샷 AI가 높은 기업 가치를 인정받고 Kimi K2.6 모델이 GPT-5.5 및 Claude와 경쟁하여 오픈 가중치 코딩 벤치마크에서 우위를 점했다는 점은 LLM 기술 경쟁의 심화와 비서구권 LLM의 기술적 역량을 보여주는 중요한 지표입니다. 이는 오픈소스 모델은 아니지만, LLM 기술 발전 동향을 이해하는 데 매우 중요합니다.",
-      "score": 4.5,
-      "source_name": "7min.ai",
+      "title": "애플의 첫 AI 기기는 '카메라 탑재' 에어팟...\"막바지 테스트 중\"",
+      "summary": "애플의 AI 기반 웨어러블 '카메라 탑재 에어팟' 개발 소식. AI의 하드웨어 적용 사례이나, AI 기술 자체의 발전 동향이나 오픈소스 LLM과는 직접적인 관련이 적다.",
+      "score": 2,
+      "source_name": "RSS (AITimes/Benzinga)",
       "source_urls": [],
       "keywords": []
     },
     {
-      "title": "ChatGPT ads open to all US small businesses, $50K minimum dropped",
-      "summary": "ChatGPT 광고 플랫폼 개방은 OpenAI의 수익 모델 확장 전략을 보여주지만, LLM의 기술적 발전 동향이나 오픈소스 생태계와는 직접적인 관련이 적습니다.",
-      "score": 2.0,
-      "source_name": "7min.ai",
+      "title": "강의만 듣는 시대 끝났다...에듀메타, 대화형 AI 언어학습 플랫폼 개발",
+      "summary": "에듀메타가 멀티모달 AI 기반 대화형 언어학습 플랫폼 개발에 나선다는 소식. AI의 교육 분야 적용 사례로 중요하지만, 오픈소스 LLM의 기술적 발전에 직접적인 기여는 아니다.",
+      "score": 3,
+      "source_name": "RSS (AITimes/Benzinga)",
       "source_urls": [],
       "keywords": []
     },
     {
-      "title": "Anthropic Q1 revenue grew 80x year-over-year, Amodei says",
-      "summary": "Anthropic의 폭발적인 매출 성장은 AI 시장의 성장세를 보여주지만, LLM의 기술적 발전 동향이나 오픈소스 생태계와는 직접적인 관련이 적습니다.",
+      "title": "딥엘·클라우드플레어, AI 확대 전략에 따라 대규모 해고 예고",
+      "summary": "AI 도입 가속화로 인한 딥엘, 클라우드플레어의 대규모 감원 소식. AI가 고용 시장에 미치는 영향을 보여주지만, AI 기술 자체의 발전 동향이나 오픈소스 LLM과는 직접적인 관련이 적다.",
+      "score": 2,
+      "source_name": "RSS (AITimes/Benzinga)",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "뉴엔AI, 도메인 특화 AI 데이터 분석 플랫폼 2종 공개",
+      "summary": "뉴엔AI가 도메인 특화 AI 데이터 분석 플랫폼 2종을 공개했다는 소식. AI의 특정 분야 적용 사례로 중요하지만, 오픈소스 LLM의 기술적 발전에 직접적인 기여는 아니다.",
+      "score": 3,
+      "source_name": "RSS (AITimes/Benzinga)",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "플래티어, 오픈AI API 사용량 세계 140위에 포함...”링크드인·넷플릭스 수준”",
+      "summary": "플래티어가 오픈AI API 사용량으로 '10B 토큰 어워드'를 수상했다는 소식. 독점 AI 모델의 활용도를 보여주지만, AI 기술 자체의 발전 동향이나 오픈소스 LLM과는 직접적인 관련이 적다.",
       "score": 2.5,
+      "source_name": "RSS (AITimes/Benzinga)",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "오픈AI, 실시간 음성 작업용 오디오 모델 3종 API에 도입",
+      "summary": "오픈AI가 실시간 음성 작업용 오디오 AI 모델 'GPT-리얼타임' 3종을 API에 도입했다는 소식. 실시간 대화 중 추론, 번역, 전사, 작업 수행이 가능한 음성 모델로, AI 모델의 핵심 기능 발전 동향을 보여준다. 독점 모델이지만 기술적 중요도가 높다.",
+      "score": 4.5,
+      "source_name": "RSS (AITimes/Benzinga)",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "AI는 스페인, 전문가는 프랑스...월드컵 우승 놓고 '동상이몽'",
+      "summary": "AI가 월드컵 우승 후보를 예측했다는 소식. AI의 예측 활용 사례이나, AI 기술 자체의 발전 동향이나 오픈소스 LLM과는 직접적인 관련이 적다.",
+      "score": 1,
+      "source_name": "RSS (AITimes/Benzinga)",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "팀모노리스 “학교에서도 해커톤 개최 가능…올인원 서비스 출시”",
+      "summary": "에듀테크 전문 팀모노리스가 학교 현장을 위한 'AI 해커톤 운영 서비스'를 출시했다는 소식. AI 교육 확산에 기여하지만, AI 기술 자체의 발전 동향이나 오픈소스 LLM과는 직접적인 관련이 적다.",
+      "score": 1.5,
+      "source_name": "RSS (AITimes/Benzinga)",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "오픈AI, 국내에서 ‘챗GPT 광고’ 곧 시작...신규 지역으로 확대",
+      "summary": "오픈AI가 챗GPT 광고 파일럿 운영 지역을 한국으로 확대한다는 소식. 독점 AI 모델의 사업 확장 관련 내용으로, AI 기술 발전 동향과는 무관하다.",
+      "score": 2,
+      "source_name": "RSS (AITimes/Benzinga)",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "금요일 주목해야 할 주식: 더 트레이드 데스크, 코인베이스 등 5종목",
+      "summary": "주식 시장 동향에 대한 일반적인 경제 뉴스. AI, 머신러닝, LLM 비즈니스와 무관하다.",
+      "score": 0,
+      "source_name": "RSS (AITimes/Benzinga)",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "짐 크레이머 “엔비디아, 코닝까지 잡았다···구글·아마존보다 ‘몇 수 위’ 압승”",
+      "summary": "엔비디아가 코닝에 투자하여 AI 인프라 경쟁에서 입지를 강화했다는 소식. AI 데이터센터의 고속 연결성 및 효율성 향상에 기여하는 인프라 투자로, AI 산업 전반에 중요하지만 오픈소스 LLM 기술 발전과는 직접적인 관련이 적다. (기사 8과 연관)",
+      "score": 3.5,
+      "source_name": "RSS (AITimes/Benzinga)",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "캐시 우드 “스페이스X의 궤도 데이터센터 사업, 스타링크 매출 압도할 것”",
+      "summary": "스페이스X의 궤도 데이터센터 사업 전망과 ARK 인베스트의 AI 기업(오픈AI, 앤트로픽, 뉴럴링크) 투자 소식. AI 산업의 투자 동향을 보여주지만, AI 기술 자체의 발전 동향이나 오픈소스 LLM과는 직접적인 관련이 적다.",
+      "score": 2.5,
+      "source_name": "RSS (AITimes/Benzinga)",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "수익률 300% 잭팟 펠로시가 먼저 찍은 ‘데이터브릭스’의 위력···로빈후드 개미들도 ‘선점’ 열풍",
+      "summary": "데이터브릭스 및 오픈AI 등 AI 관련 기업에 대한 투자 동향 소식. AI 산업의 투자 흐름을 보여주지만, AI 기술 자체의 발전 동향이나 오픈소스 LLM과는 직접적인 관련이 적다.",
+      "score": 2,
+      "source_name": "RSS (AITimes/Benzinga)",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "기관은 줍고 고래는 던졌다···이더리움, ‘매도 폭탄’에 휘청",
+      "summary": "이더리움 암호화폐 시장 동향에 대한 뉴스. AI, 머신러닝, LLM 비즈니스와 무관하다.",
+      "score": 0,
+      "source_name": "RSS (AITimes/Benzinga)",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "1조 달러 매출은 시작일 뿐···골드만삭스, 엔비디아의 ‘미친 성장’ 예고",
+      "summary": "골드만삭스의 엔비디아 매출 및 이익 전망 상향 조정 소식. 엔비디아의 블랙웰, 루빈 플랫폼 등 AI 하드웨어 로드맵과 AI CPU 기회, 하이퍼스케일러 외 고객 수요 등 AI 인프라 시장의 핵심 동향을 심층적으로 다룬다. AI 산업 전반의 성장을 이해하는 데 매우 중요하다.",
+      "score": 4,
+      "source_name": "RSS (AITimes/Benzinga)",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "AMD, ‘AI 에이전트’ CPU 수요 폭증에 수혜···1200억 달러 시장 선점 가시화",
+      "summary": "AMD CEO 리사 수의 '에이전틱 AI'가 새로운 CPU 수요 사이클을 주도하며 CPU 시장 규모가 1,200억 달러를 넘어설 것이라는 전망. AI 워크로드 구성 변화에 따른 CPU와 GPU의 역할 변화를 심층적으로 다루며, AI 하드웨어 및 아키텍처의 중요한 기술적, 시장적 동향을 제시한다.",
+      "score": 4.5,
+      "source_name": "RSS (AITimes/Benzinga)",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "비트코인 100만 달러 간다?···매튜 시겔 “게임은 멈추지 않는다, BTC도 마찬가지”",
+      "summary": "비트코인 가격 전망에 대한 암호화폐 뉴스. AI와 비트코인의 융합이 언급되기는 하나, 매우 간접적이며 AI 기술 발전 동향과는 무관하다.",
+      "score": 0.5,
+      "source_name": "RSS (AITimes/Benzinga)",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "젠슨 황이 AI 키울 때마다 돈 번다···’엔비디아 후광’ 수혜주 6종목은?",
+      "summary": "엔비디아의 AI 생태계 확장에 따른 수혜주 분석. 고대역폭 메모리(HBM), 첨단 패키징, 전력 및 냉각, 초고속 연결 등 AI 인프라의 핵심 병목 현상과 관련 기술 기업들을 다루며, AI 스케일링을 위한 기술적, 산업적 중요성을 강조한다.",
+      "score": 4,
+      "source_name": "RSS (AITimes/Benzinga)",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "종목은 500개, 이익은 7개가 싹쓸이···엔비디아·애플 등 ‘매그 7’, S&P 500 이익 55% 점령",
+      "summary": "'매그니피센트 세븐' 기업들이 S&P 500 이익 성장의 대부분을 차지하며, 그 원동력이 AI 도입 확대에 있다는 분석. AI의 경제적 영향력을 보여주지만, AI 기술 자체의 발전 동향이나 오픈소스 LLM과는 직접적인 관련이 적다.",
+      "score": 2.5,
+      "source_name": "RSS (AITimes/Benzinga)",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "‘사스포칼립스’ 이후 SaaS 기업은 무엇을 바꿨나",
+      "summary": "앤트로픽의 '클로드 코워크'와 같은 AI 에이전트가 SaaS 기업의 비즈니스 모델에 미치는 영향에 대한 분석. AI가 산업 구조에 미치는 파급력을 보여주지만, AI 기술 자체의 발전 동향이나 오픈소스 LLM과는 직접적인 관련이 적다.",
+      "score": 2.5,
+      "source_name": "RSS (AITimes/Benzinga)",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "어플라이드, NEXX 인수로 AI 반도체 패키징 영토 확장",
+      "summary": "어플라이드 머티어리얼즈가 NEXX 사업부 인수를 통해 AI 반도체 패키징 분야를 강화한다는 소식. AI 반도체 수요 증가에 따른 첨단 패키징 기술의 중요성을 보여주며, AI 하드웨어 기술 발전에 간접적으로 기여한다.",
+      "score": 3.5,
+      "source_name": "RSS (AITimes/Benzinga)",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "[칼럼] 의료 AI,‘기술’이 아니라 보험·운영·검진 구조 경쟁이다",
+      "summary": "의료 AI 시장의 성장과 AI 의료기기 FDA 승인 급증 등 의료 시스템 전반의 AI 전환(AX) 흐름을 다룬 칼럼. AI의 실제 적용과 시장 동향을 보여주지만, AI 기술 자체의 발전 동향이나 오픈소스 LLM과는 직접적인 관련이 적다.",
+      "score": 2.5,
+      "source_name": "RSS (AITimes/Benzinga)",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "오픈AI, 챗GPT 광고 파일럿 한국 확대",
+      "summary": "오픈AI가 챗GPT 광고 파일럿 운영 지역을 한국으로 확대한다는 소식. 독점 AI 모델의 사업 확장 관련 내용으로, AI 기술 발전 동향과는 무관하다. (기사 19와 중복)",
+      "score": 2,
+      "source_name": "RSS (AITimes/Benzinga)",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "[더AI 현장] 살아 움직이는 AI, 산업 현장으로 진격하다",
+      "summary": "국제인공지능대전(AI EXPO KOREA) 현장 스케치. AI 인프라(GPU 서버, 수냉 기술), LLM 기반 업무 자동화, 피지컬 AI 등 다양한 AI 산업 현장의 동향을 종합적으로 보여준다. AI의 실제 적용 및 산업 확산 측면에서 중요하지만, 특정 오픈소스 LLM의 기술적 발전을 심층적으로 다루지는 않는다.",
+      "score": 3.5,
+      "source_name": "RSS (AITimes/Benzinga)",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "REACH MILLIONS OF TECH PROFESSIONALS AT SCALE (SPONSOR)",
+      "summary": "광고성 콘텐츠로, 정보 가치가 낮습니다.",
+      "score": 1,
+      "source_name": "TLDR Marketing",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "THE PERSONALIZED INTERNET IS HERE",
+      "summary": "Google의 AI 기반 검색 개인화는 AI 기술의 실제 적용 사례이자 사용자 경험에 큰 변화를 가져올 중요한 트렌드입니다. 오픈소스 LLM의 기술적 발전 동향은 아니지만, AI의 광범위한 영향력을 보여줍니다.",
+      "score": 4,
+      "source_name": "TLDR Marketing",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "AS AI FLOODS THE VIDEO FEED, BE PREPARED FOR PEOPLE TO WATCH LESS",
+      "summary": "AI 생성 비디오의 증가가 사용자 피로도에 미치는 영향을 다루며, AI 기술의 사회적, 시장적 함의를 분석합니다. 기술 자체의 발전보다는 그 영향에 초점을 맞춥니다.",
+      "score": 3,
+      "source_name": "TLDR Marketing",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "THE CLAUDE CODE RESEARCH PLAYBOOK BEHIND MY STATE OF MARKETING REPORTS",
+      "summary": "Claude와 같은 LLM을 활용한 마케팅 리서치 워크플로우를 구체적으로 제시하여, AI의 실용적인 비즈니스 적용 방안을 보여줍니다. 독점 모델이지만, AI 활용 전략 측면에서 중요합니다.",
+      "score": 4,
+      "source_name": "TLDR Marketing",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "HOW TO TELL IF A JOURNALIST IS A F.I.T. FOR YOUR STORY",
+      "summary": "일반적인 PR 및 미디어 관계 전략에 대한 내용으로, AI 또는 오픈소스 LLM 기술 발전과는 직접적인 관련이 없습니다.",
+      "score": 2,
+      "source_name": "TLDR Marketing",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "PRE-RENEWAL LIFECYCLE FLOW",
+      "summary": "고객 유지 및 갱신 관련 마케팅 라이프사이클 전략에 대한 내용으로, AI 또는 오픈소스 LLM 기술 발전과는 직접적인 관련이 없습니다.",
+      "score": 2,
+      "source_name": "TLDR Marketing",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "AIROPS NEXT: ONE DAY. ONE STAGE. NYC. (SPONSOR)",
+      "summary": "컨퍼런스 광고성 콘텐츠로, 정보 가치가 낮습니다.",
+      "score": 1,
+      "source_name": "TLDR Marketing",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "THIS CLAUDE SKILL AUTOMATES BRAZE CAMPAIGN REPORTS IN MINUTES",
+      "summary": "Claude를 활용한 마케팅 캠페인 보고서 자동화 사례로, AI를 통한 업무 효율성 증대 방안을 구체적으로 제시합니다. 독점 모델이지만, AI 활용 전략 측면에서 중요합니다.",
+      "score": 4,
+      "source_name": "TLDR Marketing",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "STATE OF SEARCH Q1 2026: BEHAVIORS, TRENDS, AND CLICKS ACROSS THE US & EUROPE",
+      "summary": "검색 시장의 행동, 트렌드, AI 검색 도입 등 전반적인 시장 동향을 다루는 보고서입니다. AI 기술 자체보다는 시장의 변화를 이해하는 데 유용합니다.",
+      "score": 3,
+      "source_name": "TLDR Marketing",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "HOW TO CONNECT YOUTUBE TO GOOGLE MAPS",
+      "summary": "YouTube와 Google Maps 연동에 대한 팁으로, AI 또는 오픈소스 LLM 기술 발전과는 직접적인 관련이 없습니다.",
+      "score": 2,
+      "source_name": "TLDR Marketing",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "INSIDE THE ARTEMIS II SOCIAL MEDIA STRATEGY",
+      "summary": "NASA 아르테미스 II 미션의 소셜 미디어 전략 사례로, AI 또는 오픈소스 LLM 기술 발전과는 직접적인 관련이 없습니다.",
+      "score": 2,
+      "source_name": "TLDR Marketing",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "DIARY OF A BRAND: BANDIT RUNNING",
+      "summary": "커뮤니티 기반 브랜드 성장 전략에 대한 사례 연구로, AI 또는 오픈소스 LLM 기술 발전과는 직접적인 관련이 없습니다.",
+      "score": 2,
+      "source_name": "TLDR Marketing",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "BE TLDR'S FIRST VP MARKETING ($300K-$400K, FULLY REMOTE)",
+      "summary": "채용 공고로, 정보 가치가 낮습니다.",
+      "score": 1,
+      "source_name": "TLDR Marketing",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "3 JOBS IN THE AI INDUSTRY THAT SEOS ARE ALREADY QUALIFIED FOR",
+      "summary": "AI 시대에 SEO 전문가들이 진출할 수 있는 직무를 제시하여, AI가 직업 시장에 미치는 영향을 보여줍니다. AI 기술 자체보다는 관련 직업 동향에 초점을 맞춥니다.",
+      "score": 3,
+      "source_name": "TLDR Marketing",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "HOW TO FILM LOTS O' CONTENT IN 1 DAY",
+      "summary": "콘텐츠 제작 효율화 팁으로, AI 또는 오픈소스 LLM 기술 발전과는 직접적인 관련이 없습니다.",
+      "score": 2,
+      "source_name": "TLDR Marketing",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "Apple's Camera-Equipped AirPods",
+      "summary": "애플의 하드웨어 신제품 소식이며, AI 기능이 포함될 예정이나 오픈소스 LLM 기술 발전 동향과는 거리가 멀어 일반적인 AI 소식으로 평가합니다.",
+      "score": 3,
+      "source_name": "TLDR",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "Google's Screenless Fitbit Air and Google Health App",
+      "summary": "구글의 웨어러블 기기 및 헬스 앱 소식으로, AI 코치 기능이 포함되지만 오픈소스 LLM 기술 발전과는 직접적인 관련이 없어 일반적인 AI 소식으로 평가합니다.",
+      "score": 3,
+      "source_name": "TLDR",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "China's Biotech Industry",
+      "summary": "중국 바이오테크 산업 동향에 대한 기사로, AI나 LLM 기술과는 직접적인 관련이 없어 낮은 점수를 부여합니다.",
+      "score": 1,
+      "source_name": "TLDR",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "AI Revival of Three Mile Island Nuclear Plant",
+      "summary": "AI가 에너지 인프라에 활용되는 사례를 다루지만, LLM 기술 발전 동향이나 오픈소스 LLM과는 직접적인 관련이 적어 중간보다 낮은 점수를 부여합니다.",
+      "score": 2,
+      "source_name": "TLDR",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "Claude RAG Benchmark (Onyx)",
+      "summary": "엔터프라이즈 RAG 벤치마크에 대한 스폰서 기사로, AI 도구의 활용 사례를 다루지만 오픈소스 LLM의 기술적 발전에 대한 내용은 아니므로 중간 점수를 부여합니다.",
+      "score": 3,
+      "source_name": "TLDR",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "Hardening Firefox with Claude Mythos Preview",
+      "summary": "파이어폭스 보안 강화에 AI(Claude Mythos Preview)가 활용된 사례를 다루지만, 오픈소스 LLM의 기술 발전 동향과는 직접적인 관련이 없어 중간 점수를 부여합니다.",
+      "score": 3,
+      "source_name": "TLDR",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "OpenAI's New Realtime Voice and Translation AI Models (GPT-Realtime-2, GPT-Realtime-Translate, GPT-Realtime-Whisper)",
+      "summary": "OpenAI의 실시간 음성 및 번역 AI 모델 출시는 AI 기술 발전 동향에서 중요한 부분입니다. 특히 GPT-5급 추론 능력을 갖춘 GPT-Realtime-2 모델은 기술적 중요도가 높다고 판단하여 높은 점수를 부여합니다. 비록 오픈소스는 아니지만, AI 모델 자체의 발전이라는 점에서 주목할 만합니다.",
+      "score": 4,
+      "source_name": "TLDR",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "Cloudflare AI-Driven Layoffs",
+      "summary": "AI로 인한 기업 구조조정 및 고용 변화에 대한 소식으로, AI의 사회경제적 영향을 보여주지만 LLM 기술 발전 동향과는 직접적인 관련이 없어 중간 점수를 부여합니다.",
+      "score": 3,
+      "source_name": "TLDR",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "Elon Musk's Attempt to Hire OpenAI Founders",
+      "summary": "일론 머스크와 OpenAI 창립자들 간의 과거사에 대한 기사로, AI 산업의 비하인드 스토리를 다루지만 기술 발전 동향과는 거리가 멀어 낮은 점수를 부여합니다.",
+      "score": 2,
+      "source_name": "TLDR",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "AI Load Breaking GitHub",
+      "summary": "AI 부하가 GitHub에 미치는 영향에 대한 분석으로, AI 서비스 운영의 기술적 과제를 보여주지만 LLM 자체의 기술 발전 동향은 아니므로 중간 점수를 부여합니다.",
+      "score": 3,
+      "source_name": "TLDR",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "Codex in Chrome on macOS and Windows",
+      "summary": "AI 에이전트의 브라우저 통합 소식으로, AI 활용 사례를 보여주지만 LLM 기술 발전 동향과는 직접적인 관련이 없어 중간 점수를 부여합니다.",
+      "score": 3,
+      "source_name": "TLDR",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "The Agent Principal-Agent Problem",
+      "summary": "AI 에이전트와 관련된 개념적, 관리적 문제를 다루는 기사로, LLM 기술 발전 동향과는 직접적인 관련이 적어 낮은 점수를 부여합니다.",
+      "score": 2,
+      "source_name": "TLDR",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "Tokenmaxxing, Promomaxxing, and Misaligned Incentives in Tech",
+      "summary": "기술 분야의 인센티브 문제와 관련된 사회경제적 분석으로, LLM 기술 발전 동향과는 직접적인 관련이 없어 낮은 점수를 부여합니다.",
+      "score": 2,
+      "source_name": "TLDR",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "Markets in Everything?",
+      "summary": "시장 경제의 철학적 고찰에 대한 기사로, AI나 LLM 기술과는 직접적인 관련이 없어 낮은 점수를 부여합니다.",
+      "score": 1,
+      "source_name": "TLDR",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "WordPress.org Overhaul",
+      "summary": "워드프레스 플랫폼 업데이트에 대한 소식으로, AI나 LLM 기술과는 직접적인 관련이 없어 낮은 점수를 부여합니다.",
+      "score": 1,
+      "source_name": "TLDR",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "OpenAI’s reasoning upgrade for voice agents",
+      "summary": "OpenAI의 독점 모델 관련 소식으로, 오픈소스 LLM 기술 발전 동향에 대한 최우선 평가 기준에는 부합하지 않습니다. 하지만 실시간 음성 AI 에이전트의 추론 능력, 도구 사용, 대화 흐름 유지 등 전반적인 AI 음성 기술 발전에 있어 중요한 진전을 보여주므로, 일반적인 AI 기술 발전 관점에서 3점을 부여합니다. 오픈소스 가중치 규칙에 따라 5점 만점에서 멀어집니다.",
+      "score": 3,
+      "source_name": "The Rundown AI",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "15+ enterprise leaders on getting data AI-ready (AWS Marketplace)",
+      "summary": "AWS Marketplace의 스폰서 콘텐츠로, AI 기술 발전 동향이나 새로운 모델 공개와는 직접적인 관련이 없습니다. 기업의 데이터 인프라 구축에 대한 일반적인 정보 제공이므로 낮은 점수를 부여합니다.",
+      "score": 1,
+      "source_name": "The Rundown AI",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "Google folds Fitbit into its AI health play",
+      "summary": "구글의 독점 AI 모델을 활용한 헬스케어 애플리케이션 통합 소식입니다. 빅테크 기업의 AI 서비스 확장 사례로 볼 수 있으나, 오픈소스 LLM의 핵심 기술 발전과는 거리가 멀고, 기술적 중요도보다는 서비스 통합 및 비즈니스 전략에 가깝습니다.",
+      "score": 2,
+      "source_name": "The Rundown AI",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "Test multiple AI models with same prompt (AI TRAINING)",
+      "summary": "OpenRouter Fusion을 활용하여 여러 AI 모델을 비교 테스트하는 방법에 대한 가이드입니다. 유용한 활용 팁이지만, 오픈소스 LLM의 기술적 발전 동향이나 새로운 모델 공개와 같은 핵심 기술적 진보 소식은 아닙니다.",
+      "score": 2,
+      "source_name": "The Rundown AI",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "New guide: Tools and workflows to develop AI agents (Weights & Biases)",
+      "summary": "Weights & Biases의 스폰서 콘텐츠로, AI 에이전트 개발을 위한 도구 및 워크플로우에 대한 일반적인 가이드입니다. AI 기술 발전 동향과는 직접적인 관련이 없어 낮은 점수를 부여합니다.",
+      "score": 1,
+      "source_name": "The Rundown AI",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "Anthropic plans for AI that builds itself",
+      "summary": "Anthropic의 독점 모델 관련 소식이지만, AI 시스템의 자기 개선 가능성이라는 매우 중요한 미래 지향적 연구 의제를 다루고 있습니다. 오픈소스 LLM 기술 발전은 아니지만, AI 생태계 전반의 패러다임을 바꿀 수 있는 잠재력을 가진 기술적, 철학적 중요성을 지니므로 높은 점수를 부여합니다. 오픈소스 가중치 규칙으로 인해 5점은 아니지만, 그 중요성을 인정합니다.",
+      "score": 4,
+      "source_name": "The Rundown AI",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "Trending AI Tools",
+      "summary": "다양한 AI 도구들을 나열한 섹션으로, 대부분 독점 모델 기반이거나 일반적인 서비스 도구입니다. 오픈소스 LLM의 핵심 기술 발전 동향과는 거리가 멀어 낮은 점수를 부여합니다.",
+      "score": 1,
+      "source_name": "The Rundown AI",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "Everything else in AI today",
+      "summary": "Spotify, OpenAI, Scale AI, Perplexity, Mozilla 등 다양한 기업의 단신 소식들입니다. 대부분 서비스 업데이트, 비즈니스 계약, 애플리케이션 활용 사례 등으로, 오픈소스 LLM의 핵심 기술 발전 동향과는 직접적인 관련이 없어 낮은 점수를 부여합니다.",
+      "score": 1,
+      "source_name": "The Rundown AI",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "Cloudflare cuts 1,100 employees, citing 'agentic AI era'",
+      "summary": "AI가 기업 구조조정에 미치는 경제적 영향에 대한 소식으로, 오픈소스 LLM의 기술적 발전에 직접적인 관련은 없습니다. 일반적인 AI 도입 트렌드를 보여주지만, 기술적 중요도는 낮습니다.",
+      "score": 2,
+      "source_name": "7min.ai",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "Mozilla says Mythos found 271 Firefox bugs with 'almost no false positives'",
+      "summary": "Anthropic의 Mythos AI 활용 사례로, AI의 실제 적용 능력과 효율성을 보여주지만, 오픈소스 LLM의 기술적 발전에 대한 직접적인 소식은 아닙니다. 빅테크 모델의 응용 사례로 평가합니다.",
+      "score": 3,
+      "source_name": "7min.ai",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "OpenAI ships GPT-Realtime-2 with GPT-5-class reasoning for voice",
+      "summary": "OpenAI의 독점 모델인 GPT-Realtime-2의 기술적 진보에 대한 소식입니다. 음성 AI 분야의 중요한 발전이지만, 오픈소스 LLM 기술 발전 동향에 대한 가중치 규칙에 따라 중간 점수를 부여합니다.",
+      "score": 3,
+      "source_name": "7min.ai",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "Apple's camera-equipped AirPods reach late testing for AI features",
+      "summary": "애플 하드웨어에 AI 기능이 통합되는 소식으로, LLM 자체의 기술적 발전과는 거리가 멥니다. 단순한 AI 제품 적용 사례로 중요도가 낮습니다.",
+      "score": 1,
+      "source_name": "7min.ai",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "Anthropic's Natural Language Autoencoders translate Claude's thoughts into text",
+      "summary": "Anthropic의 독점 모델 관련 소식이지만, Natural Language Autoencoders는 LLM의 내부 작동 방식을 해석하는 데 있어 매우 중요한 기술적 진보입니다. AI 안전 및 투명성 연구에 중대한 영향을 미칠 수 있는 기술적 중요도를 고려하여 높은 점수를 부여합니다.",
+      "score": 4,
+      "source_name": "7min.ai",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "Nvidia invests up to $2.1B in data center developer IREN",
+      "summary": "엔비디아의 데이터센터 투자 소식으로, AI 인프라 확장에 대한 비즈니스 동향을 보여주지만, LLM의 기술적 발전과는 직접적인 관련이 없습니다.",
+      "score": 1,
+      "source_name": "7min.ai",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "DeepL cuts 250 jobs, ~25% of workforce, to rebuild as 'AI-native'",
+      "summary": "DeepL의 AI 기반 구조조정 소식으로, AI가 기업 운영에 미치는 영향을 보여주지만, 오픈소스 LLM의 기술적 발전에 대한 내용은 아닙니다.",
+      "score": 2,
+      "source_name": "7min.ai",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "SoftBank slashes OpenAI margin loan target 40% to $6B",
+      "summary": "소프트뱅크의 OpenAI 관련 금융 소식으로, AI 산업의 투자 환경을 보여주지만, LLM 기술 자체의 발전과는 거리가 멥니다.",
+      "score": 1,
+      "source_name": "7min.ai",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "US probes Nvidia chip smuggling ring to Alibaba via Thailand",
+      "summary": "엔비디아 칩 밀수 관련 지정학적 소식으로, AI 하드웨어 공급망과 관련된 내용이지만, LLM 기술 발전과는 무관합니다.",
+      "score": 1,
+      "source_name": "7min.ai",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "Sakana's 7B RL Conductor orchestrates GPT-5, Claude 4, Gemini 2.5 Pro",
+      "summary": "Sakana AI의 RL Conductor는 다양한 LLM을 효율적으로 조율하는 새로운 기술적 접근 방식입니다. 비록 빅테크 모델들을 활용하지만, 7B 규모의 자체 RL 모델을 통해 LLM 활용의 패러다임을 바꿀 수 있는 잠재력을 가진 기술적 진보로 평가합니다.",
+      "score": 4,
+      "source_name": "7min.ai",
+      "source_urls": [],
+      "keywords": []
+    },
+    {
+      "title": "Zyphra releases ZAYA1-8B reasoning model trained entirely on AMD MI300 GPUs",
+      "summary": "Zyphra의 ZAYA1-8B는 Apache 2.0 라이선스의 오픈소스 LLM이며, AMD MI300 GPU에서 훈련되어 GPT-5급 성능을 달성했습니다. 이는 오픈소스 LLM의 기술적 발전 동향을 직접적으로 다루며, AMD 하드웨어의 LLM 훈련 가능성을 입증하여 오픈소스 LLM 생태계에 중대한 영향을 미칠 수 있는 5점 만점 기사입니다.",
+      "score": 5,
       "source_name": "7min.ai",
       "source_urls": [],
       "keywords": []
