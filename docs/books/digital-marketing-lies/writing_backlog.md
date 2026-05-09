@@ -14,7 +14,7 @@
 | C19 | Part 3 | 광고 플랫폼의 '숨겨진 설정': 낭비의 구조 | **완료** | Marketing | Ramos, Hoffman | 포스팅완료 |
 | C08 | Part 2 | MMM(마케팅 믹스 모델링)의 부활과 한계 | **완료** | Data | Robyn, LightweightMMM | 포스팅완료 |
 | C14 | Part 3 | 앱 마케팅(UAC)의 허수 트래픽과 Fraud 방어 | **완료** | Marketing | AppsFlyer Fraud Report | 포스팅완료 |
-| C15 | Part 3 | 데이터 신호 설계(Signal Design) | 대기 | Data | First-party Data Strategy | 미배정 |
+| C15 | Part 3 | 데이터 신호 설계(Signal Design) | **완료** | Data | First-party Data Strategy | 포스팅완료 |
 | C16 | Part 4 | CEO와 CMO의 데이터 동상이몽 | 대기 | Marketing | HBR Case Study | 미배정 |
 
 ---
