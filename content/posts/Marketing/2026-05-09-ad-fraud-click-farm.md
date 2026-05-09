@@ -2,7 +2,6 @@
 title: "[가짜 트래픽 공장] Click Farm과 Ad Fraud의 실태와 해결책"
 date: 2026-05-09T21:30:00+09:00
 categories:
-  - Data
   - Marketing
 tags:
   - Ad Fraud

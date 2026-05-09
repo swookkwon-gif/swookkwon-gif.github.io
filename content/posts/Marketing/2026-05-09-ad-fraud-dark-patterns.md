@@ -2,7 +2,6 @@
 title: "[사용자의 실수를 훔치다] 모바일 광고 다크 패턴(Dark Patterns) 분석"
 date: 2026-05-09T21:30:00+09:00
 categories:
-  - Data
   - Marketing
 tags:
   - Ad Fraud

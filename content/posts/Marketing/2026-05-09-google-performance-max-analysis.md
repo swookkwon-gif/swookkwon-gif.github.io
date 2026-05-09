@@ -1,7 +1,7 @@
 ---
 title: "구글 Performance Max(PMax)의 진실: 정말 성과에 도움이 될까? (10개의 연구 및 데이터 분석)"
 date: 2026-05-09
-category: Data
+category: Marketing
 tags: [Marketing, Data Analysis, Google Ads, Performance Max, AI Bidding]
 ---
 

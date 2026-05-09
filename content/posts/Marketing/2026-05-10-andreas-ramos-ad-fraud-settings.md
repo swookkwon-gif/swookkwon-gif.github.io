@@ -1,6 +1,6 @@
 ---
 title: "사라진 800억 달러: 디지털 광고 사기의 실태와 플랫폼의 숨겨진 설정 (Andreas Ramos)"
-date: 2026-05-12
+date: 2026-05-10
 category: Marketing
 layout: post
 ---

@@ -2,7 +2,6 @@
 title: "[디지털 마케팅의 암세포] MFA(Made For Advertising) 웹사이트 완전 해부"
 date: 2026-05-09T21:30:00+09:00
 categories:
-  - Data
   - Marketing
 tags:
   - Ad Fraud

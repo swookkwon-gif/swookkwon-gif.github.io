@@ -1,6 +1,6 @@
 ---
 title: "역사상 최대의 사기: ADSCAM과 추적(Tracking)의 위협 (Bob Hoffman)"
-date: 2026-05-11
+date: 2026-05-10
 category: Marketing
 layout: post
 ---

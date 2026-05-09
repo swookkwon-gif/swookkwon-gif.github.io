@@ -2,7 +2,7 @@
 title: "Retargeting Marketing Deep Dive"
 date: 2026-05-09
 categories:
-  - Data
+  - Marketing
 tags:
   - retargeting
   - marketing
