@@ -4,6 +4,7 @@ agents/collector.py — 데이터 수집 에이전트
 RSS 피드와 Gmail 뉴스레터에서 원시 데이터를 수집한다.
 LLM 호출 없이 순수 데이터 수집만 담당한다.
 """
+from __future__ import annotations
 import time
 import json
 import os

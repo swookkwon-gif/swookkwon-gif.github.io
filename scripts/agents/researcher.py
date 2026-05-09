@@ -3,6 +3,7 @@
 agents/researcher.py — NotebookLM Deep Research 에이전트
 ad-hoc, 시리즈, daily 3가지 모드를 지원하는 통합 리서치 에이전트.
 """
+from __future__ import annotations
 import os
 import time
 from datetime import datetime, timezone, timedelta
@@ -105,7 +106,7 @@ def extract_metadata(raw_text: str) -> tuple[str, str, str]:
 
 def research_adhoc(
     topic: str,
-    category: str = "Tech",
+    category: str = "AI Learnings",
     research_mode: str = "fast",
     notebook_id: str | None = None,
     slug: str | None = None,

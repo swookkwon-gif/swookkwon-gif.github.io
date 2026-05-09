@@ -3,6 +3,7 @@
 agents/book_compiler.py — 책 컴파일 에이전트
 시리즈 포스트들을 모아 책(마크다운/PDF)으로 컴파일한다.
 """
+from __future__ import annotations
 import os
 import re
 import json

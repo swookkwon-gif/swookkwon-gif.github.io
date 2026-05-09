@@ -1,3 +1,4 @@
+from __future__ import annotations
 import os
 
 FILE_PATH = os.path.join(os.path.dirname(__file__), '..', 'content', 'posts', 'AI Learnings', '2026-04-28-ai-survival-guide-for-beginners.md')

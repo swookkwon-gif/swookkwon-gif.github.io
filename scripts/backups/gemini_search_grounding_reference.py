@@ -1,3 +1,4 @@
+from __future__ import annotations
 from google import genai
 from google.genai import types
 

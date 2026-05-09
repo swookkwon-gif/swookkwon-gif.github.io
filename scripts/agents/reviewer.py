@@ -5,6 +5,7 @@ Writer가 생성한 마크다운 포스트를 정규식으로 검증하고 자�
 LLM 호출 없이 코드 레벨에서 품질을 강제한다.
 카테고리별 차등 기준을 적용하여 억지로 분량을 늘리는 부작용을 방지한다.
 """
+from __future__ import annotations
 from skills.markdown_utils import (
     validate_post,
     auto_fix_content,

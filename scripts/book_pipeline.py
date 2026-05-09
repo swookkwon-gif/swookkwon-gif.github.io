@@ -19,6 +19,7 @@ book_pipeline.py — 책 출간 파이프라인
   # PDF 출력
   python scripts/book_pipeline.py export --id data-statistics --format pdf
 """
+from __future__ import annotations
 import os
 import sys
 import argparse

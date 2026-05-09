@@ -7,7 +7,7 @@ generate_ai_survival_series)를 하나로 통합한 CLI 도구.
 사용법:
   # Ad-hoc 단건 리서치
   python scripts/research_pipeline.py adhoc "오픈소스 LLM 100만 토큰 컨텍스트 기술"
-  python scripts/research_pipeline.py adhoc "주제" --category "Tech" --mode deep
+  python scripts/research_pipeline.py adhoc "주제" --category "AI Learnings" --mode deep
 
   # Daily Top3 뉴스
   python scripts/research_pipeline.py daily
@@ -18,6 +18,7 @@ generate_ai_survival_series)를 하나로 통합한 CLI 도구.
   # 시리즈 상태 확인
   python scripts/research_pipeline.py status --id ai-survival-guide
 """
+from __future__ import annotations
 import os
 import sys
 import argparse
@@ -184,7 +185,7 @@ def main():
     # adhoc
     p_adhoc = subparsers.add_parser("adhoc", help="Ad-hoc 단건 리서치")
     p_adhoc.add_argument("topic", help="리서치 주제")
-    p_adhoc.add_argument("--category", default="Tech", help="블로그 카테고리 (기본: Tech)")
+    p_adhoc.add_argument("--category", default="AI Learnings", help="블로그 카테고리 (기본: AI Learnings)")
     p_adhoc.add_argument("--mode", default="fast", choices=["fast", "deep"], help="리서치 모드")
     p_adhoc.add_argument("--notebook-id", default=None, help="기존 노트북 ID")
     p_adhoc.add_argument("--slug", default=None, help="파일명 슬러그")

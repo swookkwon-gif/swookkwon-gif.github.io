@@ -9,6 +9,7 @@ Phase 2(gf2_auto_blogger.py)가 저장한 deep_research.json을
 GitHub Actions에서 호출:
   python scripts/daily_digest.py
 """
+from __future__ import annotations
 import os
 import sys
 import json
@@ -151,11 +152,20 @@ def merge_and_create_digest():
     print(f"   총 {len(articles)}개 기사 (3점 이상: {len(quality_articles)}개, 미만: {len(low_articles)}개)")
     print(f"   소스: {', '.join(source_names)}")
 
-    articles_json = json.dumps(quality_articles, ensure_ascii=False, indent=2)
-    low_json = json.dumps(
-        [{"title": a["title"], "source_name": a.get("source_name",""), "score": a["score"]} for a in low_articles],
-        ensure_ascii=False
-    ) if low_articles else "[]"
+    # LLM이 쉽게 읽을 수 있도록 구조 정리
+    quality_list = []
+    for a in quality_articles:
+        url = a.get("source_urls", [""])[0] if a.get("source_urls") else ""
+        quality_list.append({"title": a["title"], "source_name": a.get("source_name", ""), "score": a["score"], "summary": a.get("summary", ""), "url": url})
+        
+    articles_json = json.dumps(quality_list, ensure_ascii=False, indent=2)
+
+    low_list = []
+    for a in low_articles:
+        url = a.get("source_urls", [""])[0] if a.get("source_urls") else ""
+        low_list.append({"title": a["title"], "source_name": a.get("source_name", ""), "score": a["score"], "url": url})
+        
+    low_json = json.dumps(low_list, ensure_ascii=False) if low_list else "[]"
 
     deep_research_section = ""
     if deep_research_md:

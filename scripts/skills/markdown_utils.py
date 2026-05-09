@@ -3,6 +3,7 @@
 skills/markdown_utils.py — 마크다운 품질 검증 및 자동 수정 유틸리티
 Reviewer 에이전트의 핵심 엔진. LLM 호출 없이 정규식으로 즉시 검증/교정한다.
 """
+from __future__ import annotations
 import re
 import json
 import os

@@ -4,6 +4,7 @@ skills/nlm_client.py — NotebookLM CLI 통합 클라이언트
 기존 4개 스크립트에 중복되었던 run_cmd()/run_nlm_cmd()를 하나로 통합한다.
 nlm CLI 도구를 래핑하여 노트북 생성, 리서치, 쿼리 등을 제공한다.
 """
+from __future__ import annotations
 import re
 import json
 import subprocess

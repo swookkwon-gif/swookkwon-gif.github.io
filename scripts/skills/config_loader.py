@@ -3,6 +3,7 @@
 skills/config_loader.py — 설정 파일 통합 로더
 config/ 디렉토리의 JSON/TXT 파일을 로드하는 유틸리티.
 """
+from __future__ import annotations
 import os
 import json
 

@@ -1,3 +1,4 @@
+from __future__ import annotations
 import os
 from googleapiclient.discovery import build
 from auth import authenticate_gmail

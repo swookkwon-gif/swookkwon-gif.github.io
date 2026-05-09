@@ -3,6 +3,7 @@
 skills/post_writer.py — 마크다운 포스트 파일 저장 유틸리티
 frontmatter 생성, 파일 저장, excerpt 추출을 담당한다.
 """
+from __future__ import annotations
 import os
 import re
 from datetime import datetime, timezone, timedelta

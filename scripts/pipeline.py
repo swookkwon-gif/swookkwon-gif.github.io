@@ -9,6 +9,7 @@ RSS 피드와 Gmail 뉴스레터를 수집 · 분석한 뒤,
 GitHub Actions에서 호출:
   python scripts/pipeline.py
 """
+from __future__ import annotations
 import os
 import sys
 import json
@@ -80,7 +81,7 @@ def run_rss_phase(llm: LLMClient) -> list[dict]:
             "summary": ev.get("reasoning", ""),
             "score": ev.get("score", 0),
             "source_name": "RSS (AITimes/Benzinga)",
-            "source_urls": [],
+            "source_urls": [ev.get("url")] if ev.get("url") else [],
             "keywords": [],
         })
 
@@ -132,7 +133,7 @@ def run_gmail_phase(llm: LLMClient) -> list[dict]:
                 "summary": ev.get("reasoning", ""),
                 "score": ev.get("score", 0),
                 "source_name": sender,
-                "source_urls": [],
+                "source_urls": [ev.get("url")] if ev.get("url") else [],
                 "keywords": [],
             })
 

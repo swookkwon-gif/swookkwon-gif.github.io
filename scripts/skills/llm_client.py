@@ -4,6 +4,7 @@ skills/llm_client.py — 통합 LLM 클라이언트
 모든 에이전트가 공유하는 Gemini API 호출 인터페이스.
 모델 폴백, 재시도, JSON 파싱을 자동 처리한다.
 """
+from __future__ import annotations
 import os
 import json
 import time

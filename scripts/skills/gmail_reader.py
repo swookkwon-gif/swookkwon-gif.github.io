@@ -3,6 +3,7 @@
 skills/gmail_reader.py — Gmail 뉴스레터 본문 파싱 유틸리티
 auto_blog_daemon.py에서 추출한 Gmail API 관련 로직.
 """
+from __future__ import annotations
 import re
 import base64
 from datetime import datetime, timedelta

@@ -4,6 +4,7 @@ agents/writer.py — 포스트 작성 에이전트
 Evaluator가 필터링한 기사 데이터를 바탕으로 마크다운 포스트를 작성한다.
 포맷/스타일 규칙에만 집중한다.
 """
+from __future__ import annotations
 from datetime import datetime, timezone, timedelta
 from slugify import slugify
 
@@ -26,8 +27,9 @@ RSS_SCHEMA = {
                     "target": {"type": "string"},
                     "score": {"type": "number"},
                     "reasoning": {"type": "string"},
+                    "url": {"type": "string"}
                 },
-                "required": ["target", "score", "reasoning"],
+                "required": ["target", "score", "reasoning", "url"],
             },
         },
         "markdown_content": {"type": "string"},
@@ -47,8 +49,9 @@ NEWSLETTER_SCHEMA = {
                     "target": {"type": "string"},
                     "score": {"type": "number"},
                     "reasoning": {"type": "string"},
+                    "url": {"type": "string"}
                 },
-                "required": ["target", "score", "reasoning"],
+                "required": ["target", "score", "reasoning", "url"],
             },
         },
         "markdown_content": {"type": "string"},

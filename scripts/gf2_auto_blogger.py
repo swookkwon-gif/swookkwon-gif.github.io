@@ -1,3 +1,4 @@
+from __future__ import annotations
 import os
 # Phase 2: Gemini Search Grounding 기반 딥 리서치
 # 결과를 state/deep_research.json에 저장 → Phase 3에서 통합 포스트 생성
