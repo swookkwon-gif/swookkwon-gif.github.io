@@ -15,7 +15,7 @@
 | C08 | Part 2 | MMM(마케팅 믹스 모델링)의 부활과 한계 | **완료** | Data | Robyn, LightweightMMM | 포스팅완료 |
 | C14 | Part 3 | 앱 마케팅(UAC)의 허수 트래픽과 Fraud 방어 | **완료** | Marketing | AppsFlyer Fraud Report | 포스팅완료 |
 | C15 | Part 3 | 데이터 신호 설계(Signal Design) | **완료** | Data | First-party Data Strategy | 포스팅완료 |
-| C16 | Part 4 | CEO와 CMO의 데이터 동상이몽 | 대기 | Marketing | HBR Case Study | 미배정 |
+| C16 | Part 4 | CEO와 CMO의 데이터 동상이몽 | **완료** | Marketing | HBR Case Study | 포스팅완료 |
 
 ---
 ## 📚 전체 참고 문헌 리스트 (Reference List)
