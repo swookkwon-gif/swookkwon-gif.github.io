@@ -622,7 +622,13 @@
         "https://kr.benzinga.com/news/usa/analystratings/%EC%9E%A0%EC%9E%90%EB%8D%98-%EA%B1%B0%EC%9D%B8%EC%9D%B4-%EA%B9%A8%EC%96%B4%EB%82%AC%EB%8B%A4%EC%95%A0%ED%94%8C-ai-%EC%8B%9C%EB%8C%80%EC%9D%98-%ED%99%A9%EA%B8%88-%EA%B2%BD/",
         "https://kr.benzinga.com/news/usa/trading/%EC%BD%94%EC%9D%B8-%EC%95%88-%ED%8C%94%EC%95%84%EB%8F%84-%EB%B2%84%ED%8B%B4%EB%8B%A4%EC%BD%94%EC%9D%B8%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EA%B0%9C%EC%9D%B8-%ED%88%AC%EC%9E%90%EC%9E%90/",
         "https://kr.benzinga.com/news/usa/trading/%EC%A0%9C2%EC%9D%98-%EC%BD%94%EC%96%B4%EC%9C%84%EB%B8%8C-%EB%90%98%EB%82%98%EB%B2%88%EC%8A%A4%ED%83%80%EC%9D%B8-%EC%97%94%EB%B9%84%EB%94%94%EC%95%84-%EB%82%A0%EA%B0%9C-%EB%8B%A8/",
-        "https://kr.benzinga.com/news/usa/analystratings/%EB%A7%A4%EC%B6%9C-112-%EB%9B%B0%EC%97%88%EC%A7%80%EB%A7%8C-%EC%A3%BC%EA%B0%80%EB%8A%94-%EB%84%90%EB%9B%B0%EA%B8%B0%EC%9B%94%EA%B0%80-%EC%BD%94%EC%96%B4%EC%9C%84%EB%B8%8C/"
+        "https://kr.benzinga.com/news/usa/analystratings/%EB%A7%A4%EC%B6%9C-112-%EB%9B%B0%EC%97%88%EC%A7%80%EB%A7%8C-%EC%A3%BC%EA%B0%80%EB%8A%94-%EB%84%90%EB%9B%B0%EA%B8%B0%EC%9B%94%EA%B0%80-%EC%BD%94%EC%96%B4%EC%9C%84%EB%B8%8C/",
+        "https://www.aitimes.com/news/articleView.html?idxno=210303",
+        "https://www.aitimes.com/news/articleView.html?idxno=210077",
+        "https://www.aitimes.com/news/articleView.html?idxno=210301",
+        "https://www.aitimes.com/news/articleView.html?idxno=210299",
+        "https://www.aitimes.com/news/articleView.html?idxno=210298",
+        "https://www.aitimes.com/news/articleView.html?idxno=210296"
     ],
     "gmail": [
         "19dc9e95c340f362",
@@ -764,7 +770,8 @@
         "19e0c57e351019a0",
         "19e0c1075f521215",
         "19e07d21ecb43c1a",
-        "19e07ac7d2a856aa"
+        "19e07ac7d2a856aa",
+        "19e11312724bf34b"
     ],
     "evaluations": {
         "TestSender": [
@@ -1136,24 +1143,6 @@
             }
         ],
         "7min.ai": [
-            {
-                "target": "Cohere-Aleph Alpha merger",
-                "score": 5,
-                "reasoning": "Major M&A in the AI space, creating a significant European challenger, impacting market dynamics and geopolitical tech competition. High valuation and strategic importance.",
-                "date": "2026-04-26"
-            },
-            {
-                "target": "Anthropic's Project Deal",
-                "score": 3,
-                "reasoning": "Interesting research on AI agent negotiation and \"invisible inequality,\" highlighting ethical and societal implications of autonomous AI. Not a core tech release but important for understanding AI's impact.",
-                "date": "2026-04-26"
-            },
-            {
-                "target": "Sam Altman's apology / OpenAI safety failure",
-                "score": 4,
-                "reasoning": "Significant ethical and safety implications for AI companies, direct impact on human lives, and changes in company policy regarding law enforcement alerts. High public interest and regulatory relevance.",
-                "date": "2026-04-26"
-            },
             {
                 "target": "Alibaba Qwen3.6-27B release",
                 "score": 5,
@@ -2293,6 +2282,76 @@
                 "score": 1,
                 "reasoning": "\ub2cc\ud150\ub3c4 \uc2a4\uc704\uce58 2\uc758 \uac00\uaca9 \uc778\uc0c1\uc740 \uc8fc\ub85c \uc18c\ube44\uc790 \uac00\uc804 \ubc0f \uacf5\uae09\ub9dd \ubb38\uc81c\uc5d0 \uad00\ud55c \uc18c\uc2dd\uc73c\ub85c, AI \uae30\uc220 \ubc1c\uc804\uc774\ub098 \uc624\ud508\uc18c\uc2a4 LLM\uacfc\ub294 \ub9e4\uc6b0 \uac04\uc811\uc801\uc778 \uad00\ub828\uc131\ub9cc \uac00\uc9d1\ub2c8\ub2e4.",
                 "date": "2026-05-09"
+            },
+            {
+                "target": "OpenAI\uc758 \ub9de\ucda4\ud615 AI \uce69 \ud504\ub85c\uc81d\ud2b8 \uc790\uae08 \uc870\ub2ec \ub09c\ud56d",
+                "score": 2,
+                "reasoning": "OpenAI\uc758 \ub9de\ucda4\ud615 \uce69 \ud504\ub85c\uc81d\ud2b8\uc5d0 \ub300\ud55c \uc7ac\uc815\uc801 \uc774\uc288\ub85c, \uc624\ud508\uc18c\uc2a4 LLM\uc758 \uae30\uc220\uc801 \ubc1c\uc804 \ub3d9\ud5a5\uacfc\ub294 \uac70\ub9ac\uac00 \uba40\ub2e4. \ube45\ud14c\ud06c \uae30\uc5c5\uc758 \ub0b4\ubd80 \uc0ac\uc815\uc5d0 \ub300\ud55c \uc18c\uc2dd\uc73c\ub85c, \uae30\uc220\uc801 \uc911\uc694\ub3c4\uac00 \ub0ae\ub2e4.",
+                "url": "https://www.theinformation.com/articles/openais-ai-chip-deal-with-broadcom-hits-18-billion-financing-snag?utm_source=7min&utm_medium=email&utm_campaign=ai-news-2026-05-10",
+                "date": "2026-05-10"
+            },
+            {
+                "target": "ChatGPT 5.5 Pro\uc758 \ubc15\uc0ac\uae09 \uc218\ud559 \uc5f0\uad6c \ub2a5\ub825 \uc785\uc99d",
+                "score": 4,
+                "reasoning": "OpenAI\uc758 \ubaa8\ub378\uc774\uc9c0\ub9cc, LLM\uc774 \ubc15\uc0ac\uae09 \uc218\ud559 \uc5f0\uad6c\ub97c \uc218\ud589\ud560 \uc218 \uc788\uc74c\uc744 \uc785\uc99d\ud55c \uae30\uc220\uc801 \uc131\uacfc\uc774\ub2e4. \uc774\ub294 \ubaa8\ub378\uc758 \ucd94\ub860 \ubc0f \ubb38\uc81c \ud574\uacb0 \ub2a5\ub825\uc758 \uc911\ub300\ud55c \ubc1c\uc804\uc744 \uc758\ubbf8\ud558\uba70, AI\uc758 \uc5f0\uad6c \ubd84\uc57c \uc801\uc6a9 \uac00\ub2a5\uc131\uc744 \ubcf4\uc5ec\uc8fc\ub294 \uc911\uc694\ud55c \uc18c\uc2dd\uc774\ub2e4. \uc624\ud508\uc18c\uc2a4\ub294 \uc544\ub2c8\uc9c0\ub9cc, LLM\uc758 \uae30\uc220\uc801 \ubc1c\uc804 \ub3d9\ud5a5\uc5d0 \ud574\ub2f9\ud558\ubbc0\ub85c 3\uc810 \uc774\uc0c1\uc73c\ub85c \ud3c9\uac00\ud55c\ub2e4.",
+                "url": "https://the-decoder.com/fields-medalist-says-chatgpt-5-5-pro-delivered-phd-level-math-research-in-under-two-hours-with-zero-human-help/?utm_source=7min&utm_medium=email&utm_campaign=ai-news-2026-05-10",
+                "date": "2026-05-10"
+            },
+            {
+                "target": "AI \ubaa8\ub378\uc758 '\uc0cc\ub4dc\ubc31\ud0b9' \ubc29\uc9c0 \ud6c8\ub828 \uc5f0\uad6c",
+                "score": 4,
+                "reasoning": "AI \ubaa8\ub378\uc758 \uc548\uc804\uc131 \ubc0f \uc2e0\ub8b0\uc131 \ud655\ubcf4\ub97c \uc704\ud55c \uc911\uc694\ud55c \uae30\uc220\uc801 \uc5f0\uad6c\uc774\ub2e4. \ubaa8\ub378\uc774 \uc758\ub3c4\uc801\uc73c\ub85c \uc131\ub2a5\uc744 \uc228\uae30\ub294 '\uc0cc\ub4dc\ubc31\ud0b9' \ud604\uc0c1\uc744 \ubc29\uc9c0\ud558\ub294 \ubc29\ubc95\ub860\uc740 AI \uc2dc\uc2a4\ud15c\uc758 \uc608\uce21 \uac00\ub2a5\uc131\uacfc \uc548\uc815\uc131\uc744 \ub192\uc774\ub294 \ub370 \uae30\uc5ec\ud558\uba70, \uc774\ub294 \ubaa8\ub4e0 LLM \uac1c\ubc1c\uc5d0 \uc911\uc694\ud55c \uc2dc\uc0ac\uc810\uc744 \uc81c\uacf5\ud55c\ub2e4.",
+                "url": "https://the-decoder.com/researchers-may-have-found-a-way-to-stop-ai-models-from-intentionally-playing-dumb-during-safety-evaluations/?utm_source=7min&utm_medium=email&utm_campaign=ai-news-2026-05-10",
+                "date": "2026-05-10"
+            },
+            {
+                "target": "Claude\uc758 \ud611\ubc15 \ud589\uc704 \uc6d0\uc778 \ubd84\uc11d \ubc0f \ud574\uacb0",
+                "score": 4,
+                "reasoning": "AI \ubaa8\ub378\uc758 \uc704\ud5d8\ud55c \ud589\ub3d9(\ud611\ubc15)\uc758 \uad6c\uccb4\uc801\uc778 \uc6d0\uc778\uc744 \ud6c8\ub828 \ub370\uc774\ud130\uc5d0\uc11c \ucc3e\uc544\ub0b4\uace0, \uc774\ub97c \ud2b9\uc815 \uac1c\uc785\uc73c\ub85c \ud574\uacb0\ud588\ub2e4\ub294 \uc810\uc5d0\uc11c \uae30\uc220\uc801 \uc911\uc694\uc131\uc774 \ub192\ub2e4. \uc774\ub294 AI \uc548\uc804\uc131 \uc5f0\uad6c\uc758 \uc2e4\uc9c8\uc801\uc778 \uc9c4\uc804\uc744 \ubcf4\uc5ec\uc8fc\uba70, \ubaa8\ub378\uc758 \uc608\uce21 \ubd88\uac00\ub2a5\ud55c \ud589\ub3d9\uc744 \uc81c\uc5b4\ud558\ub294 \ub370 \ud544\uc694\ud55c \ud1b5\ucc30\uc744 \uc81c\uacf5\ud55c\ub2e4.",
+                "url": "https://www.businessinsider.com/anthropic-claude-blackmail-explanation-internet-portrayal-ai-evil-2026-5?utm_source=7min&utm_medium=email&utm_campaign=ai-news-2026-05-10",
+                "date": "2026-05-10"
+            },
+            {
+                "target": "Nvidia\uc758 AI \ud22c\uc790 \ub3d9\ud5a5 \ubc0f \uc21c\ud658 \ud22c\uc790 \ub17c\ub780",
+                "score": 2,
+                "reasoning": "Nvidia\uc758 \ub300\uaddc\ubaa8 AI \ud22c\uc790\ub294 \uc2dc\uc7a5 \ub3d9\ud5a5\uc744 \ubcf4\uc5ec\uc8fc\uc9c0\ub9cc, \uc624\ud508\uc18c\uc2a4 LLM\uc758 \ud575\uc2ec \uae30\uc220 \ubc1c\uc804 \ub3d9\ud5a5\uacfc\ub294 \uc9c1\uc811\uc801\uc778 \uad00\ub828\uc774 \uc801\ub2e4. \uc774\ub294 \uc8fc\ub85c AI \uc0b0\uc5c5\uc758 \uc7ac\uc815\uc801, \uacbd\uc81c\uc801 \uce21\uba74\uc5d0 \ucd08\uc810\uc744 \ub9de\ucd98 \uc18c\uc2dd\uc774\ub2e4.",
+                "url": "https://www.cnbc.com/2026/05/09/nvidia-embraces-ai-investor-topping-40-billion-in-equity-bets-2026.html?utm_source=7min&utm_medium=email&utm_campaign=ai-news-2026-05-10",
+                "date": "2026-05-10"
+            },
+            {
+                "target": "\ud004\ucef4 CEO, AI \uae30\ubc18 \ud3ec\uc2a4\ud2b8-\uc2a4\ub9c8\ud2b8\ud3f0 \uae30\uae30 \uac1c\ubc1c \uc2dc\uc0ac",
+                "score": 3,
+                "reasoning": "AI \uae30\uc220\uc774 \uc2a4\ub9c8\ud2b8\ud3f0 \uc774\ud6c4\uc758 \uc0c8\ub85c\uc6b4 \ub514\ubc14\uc774\uc2a4 \ud615\ud0dc\ub85c \ud655\uc7a5\ub420 \uac83\uc774\ub77c\ub294 \uc804\ub9dd\uc740 AI\uc758 \ubbf8\ub798 \uc801\uc6a9 \ubc29\ud5a5\uc744 \ubcf4\uc5ec\uc900\ub2e4. \uc774\ub294 LLM \uc790\uccb4\uc758 \uae30\uc220 \ubc1c\uc804\ubcf4\ub2e4\ub294 AI \uae30\uc220\uc758 \ud655\uc0b0 \ubc0f \ud558\ub4dc\uc6e8\uc5b4 \uc0dd\ud0dc\uacc4 \ubcc0\ud654\uc5d0 \ub300\ud55c \uc18c\uc2dd\uc73c\ub85c, AI \uc0b0\uc5c5 \uc804\ubc18\uc758 \ud750\ub984\uc744 \uc774\ud574\ud558\ub294 \ub370 \uc911\uc694\ud558\ubbc0\ub85c 3\uc810\uc744 \ubd80\uc5ec\ud55c\ub2e4.",
+                "url": "https://fortune.com/2026/05/09/qualcomm-smartphone-ai-secret-device-openai-meta-wearables-agents/?utm_source=7min&utm_medium=email&utm_campaign=ai-news-2026-05-10",
+                "date": "2026-05-10"
+            },
+            {
+                "target": "Figure AI \ud734\uba38\ub178\uc774\ub4dc \ub85c\ubd07\uc758 \uc790\uc728 \uc791\uc5c5 \uc2dc\uc5f0",
+                "score": 3,
+                "reasoning": "\ud734\uba38\ub178\uc774\ub4dc \ub85c\ubd07\uc774 \ubcf5\uc7a1\ud55c \uc77c\uc0c1 \uc791\uc5c5\uc744 \uc790\uc728\uc801\uc73c\ub85c \uc218\ud589\ud558\ub294 \ub2a5\ub825\uc740 AI\uac00 \ubb3c\ub9ac\uc801 \uc138\uacc4\uc640 \uc0c1\ud638\uc791\uc6a9\ud558\ub294 \uae30\uc220\uc758 \ubc1c\uc804\uc744 \ubcf4\uc5ec\uc900\ub2e4. \uc774\ub294 LLM \uc790\uccb4\uc758 \ubc1c\uc804\uc740 \uc544\ub2c8\uc9c0\ub9cc, AI \uae30\uc220\uc758 \uc2e4\uc81c \uc801\uc6a9 \ubc0f \ub85c\ubd07 \uacf5\ud559 \ubd84\uc57c\uc758 \uc911\uc694\ud55c \uc9c4\uc804\uc744 \uc758\ubbf8\ud55c\ub2e4.",
+                "url": "https://www.figure.ai/news/helix-02-bedroom-tidy?utm_source=7min&utm_medium=email&utm_campaign=ai-news-2026-05-10",
+                "date": "2026-05-10"
+            },
+            {
+                "target": "\uc720\ub7fd\uc911\uc559\uc740\ud589, AI \ub9ac\uc2a4\ud06c\uc5d0 \ub530\ub978 \uae08\uc735 \uc2dc\uc7a5 \uc778\ud504\ub77c \uc7ac\uac80\ud1a0 \uc694\uad6c",
+                "score": 1,
+                "reasoning": "AI\uac00 \uae08\uc735 \uc2dc\uc7a5\uc5d0 \ubbf8\uce58\ub294 \ub9ac\uc2a4\ud06c\uc640 \uaddc\uc81c \ud544\uc694\uc131\uc5d0 \ub300\ud55c \ub17c\uc758\ub85c, AI \uae30\uc220 \uc790\uccb4\uc758 \ubc1c\uc804 \ub3d9\ud5a5\uacfc\ub294 \uc9c1\uc811\uc801\uc778 \uad00\ub828\uc774 \uc801\ub2e4. \uc774\ub294 \uc815\ucc45 \ubc0f \uac70\ubc84\ub10c\uc2a4 \uc601\uc5ed\uc758 \uc18c\uc2dd\uc774\ub2e4.",
+                "url": "https://www.bloomberg.com/news/articles/2026-05-09/ecb-s-escriva-says-ai-risks-prompt-finance-infrastructure-review?utm_source=7min&utm_medium=email&utm_campaign=ai-news-2026-05-10",
+                "date": "2026-05-10"
+            },
+            {
+                "target": "AI \uad00\ub828 \uba54\ubaa8\ub9ac \ubc18\ub3c4\uccb4 \uc8fc\uc2dd \uc2dc\uc7a5 \ub3d9\ud5a5",
+                "score": 1,
+                "reasoning": "AI \uad00\ub828 \uba54\ubaa8\ub9ac \ubc18\ub3c4\uccb4 \uc2dc\uc7a5\uc758 \ud22c\uc790 \ub3d9\ud5a5\uc5d0 \ub300\ud55c \uc18c\uc2dd\uc73c\ub85c, AI \uae30\uc220 \uc790\uccb4\uc758 \ubc1c\uc804 \ub3d9\ud5a5\uacfc\ub294 \uc9c1\uc811\uc801\uc778 \uad00\ub828\uc774 \uc801\ub2e4. \uc774\ub294 \uacbd\uc81c \ubc0f \ud22c\uc790 \uc2dc\uc7a5\uc758 \ud750\ub984\uc744 \ub2e4\ub8ec\ub2e4.",
+                "url": "https://www.businessinsider.com/memory-stocks-rally-chips-tech-stock-market-investing-sndk-mu-2026-5?utm_source=7min&utm_medium=email&utm_campaign=ai-news-2026-05-10",
+                "date": "2026-05-10"
+            },
+            {
+                "target": "\uc911\uad6d, AI \ub370\uc774\ud130\uc13c\ud130\uc5d0 \uce5c\ud658\uacbd \uc804\ub825 \uc0ac\uc6a9 \uc758\ubb34\ud654",
+                "score": 1,
+                "reasoning": "AI \ub370\uc774\ud130\uc13c\ud130\uc758 \uce5c\ud658\uacbd \uc5d0\ub108\uc9c0 \uc0ac\uc6a9 \uc758\ubb34\ud654\ub294 \ud658\uacbd \uc815\ucc45 \ubc0f \uaddc\uc81c\uc5d0 \ub300\ud55c \uc18c\uc2dd\uc73c\ub85c, AI \uae30\uc220 \uc790\uccb4\uc758 \ubc1c\uc804 \ub3d9\ud5a5\uacfc\ub294 \uc9c1\uc811\uc801\uc778 \uad00\ub828\uc774 \uc801\ub2e4.",
+                "url": "https://www.bloomberg.com/news/articles/2024-05-10/china-s-ai-data-centers-must-use-green-power-under-new-rules",
+                "date": "2026-05-10"
             }
         ],
         "Azeem Azhar, Exponential View": [
@@ -12237,42 +12296,6 @@
         ],
         "Global AI News": [
             {
-                "target": "\uc8fc\uac04 \uc2dc\uc7a5 \ub3d9\ud5a5: \uc5ed\ub300\uae09 \ubbf8\uad6d \uc99d\uc2dc \ub7a0\ub9ac, \uc5f0\uc900 \ub0b4 \uc758\uacac \ucc28\uc774, \uc778\ud50c\ub808\uc774\uc158 \uacbd\uace0\ub4f1",
-                "score": 1,
-                "reasoning": "This article is a general weekly market trend analysis, mentioning AI capital expenditure as a market driver but not focusing on AI technology itself.",
-                "date": "2026-05-03"
-            },
-            {
-                "target": "\u201c2002\ub144 \uc774\ud6c4 \uc774\ub7f0 \uc0c1\uc2b9\uc740 \uc5c6\uc5c8\ub2e4\u201d \ub098\uc2a4\ub2e5 100 \uc9c0\uc218 \uc5ed\ub300\uae09 4\uc6d4\u00b7\u00b7\u00b7\uc9c0\uae08 \uc62c\ub77c\ud0c0\ub3c4 \ub420\uae4c?",
-                "score": 1,
-                "reasoning": "This article is about the historical performance of the Nasdaq 100 index and investment statistics, not directly related to AI technology or business.",
-                "date": "2026-05-03"
-            },
-            {
-                "target": "JAL, \ud558\ub124\ub2e4 \uacf5\ud56d\uc5d0 \uc720\ub2c8\ud2b8\ub9ac \ud734\uba38\ub178\uc774\ub4dc \ud22c\uc785...\uc778\ub825\ub09c \uc815\uba74 \ub3cc\ud30c",
-                "score": 2,
-                "reasoning": "\ud734\uba38\ub178\uc774\ub4dc \ub85c\ubd07\uc758 \uc2e4\uc81c \uc0b0\uc5c5 \uc801\uc6a9 \uc0ac\ub840\ub85c, AI \uae30\uc220\uc758 \ud65c\uc6a9\uc744 \ubcf4\uc5ec\uc8fc\uc9c0\ub9cc, AI \ud575\uc2ec \uae30\uc220 \ubc1c\uc804\uc774\ub098 LLM \ub3d9\ud5a5\uacfc\ub294 \uac70\ub9ac\uac00 \uba40\uc5b4 \uc911\uc694\ub3c4\uac00 \ub0ae\uc74c.",
-                "date": "2026-05-03"
-            },
-            {
-                "target": "'AI \uad50\uc721' \ud504\ub9ac\uc70c\ub9b0\uc774 \uc6b0\uac04\ub2e4\ub85c \uac04 \uc774\uc720\ub294...\"\uc9c4\uc815\uc131\uc5d0 \uae30\uc220\uc744 \ub354\ud558\ub2e4\"",
-                "score": 1,
-                "reasoning": "AI \uad50\uc721 \uc194\ub8e8\uc158 \uae30\uc5c5\uc758 \uc0ac\ud68c \uacf5\ud5cc \ubc0f \ud574\uc678 \uc9c4\ucd9c \uc18c\uc2dd\uc73c\ub85c, AI \uae30\uc220 \uc790\uccb4\uc758 \ubc1c\uc804 \ub3d9\ud5a5\uacfc\ub294 \ubb34\uad00\ud558\uc5ec \uc911\uc694\ub3c4\uac00 \ub9e4\uc6b0 \ub0ae\uc74c.",
-                "date": "2026-05-03"
-            },
-            {
-                "target": "\"\ub531\ub531\ud55c \ub2f4\ub2f9\uc790 \uac19\ub358 \ub9d0\ud22c \ubc97\uc5b4\ub098\"... GPT-5.5, '4o'\uc758 \ub9e4\ub825 \ub418\ucc3e\ub098",
-                "score": 3,
-                "reasoning": "\uc624\ud508AI\uc758 \ub3c5\uc810 LLM\uc778 GPT-5.5\uc758 \uc0ac\uc6a9\uc790 \uacbd\ud5d8 \uac1c\uc120\uc5d0 \ub300\ud55c \uc18c\uc2dd\uc73c\ub85c, LLM \uad00\ub828 \ub274\uc2a4\uc774\uae34 \ud558\ub098 \uc624\ud508\uc18c\uc2a4 LLM\uc758 \uae30\uc220\uc801 \ubc1c\uc804\uc5d0 \ub300\ud55c \ub0b4\uc6a9\uc740 \uc544\ub2c8\ubbc0\ub85c \uc911\uac04 \uc815\ub3c4\uc758 \uc911\uc694\ub3c4\ub97c \ubd80\uc5ec\ud568.",
-                "date": "2026-05-03"
-            },
-            {
-                "target": "\uc911\uad6d \uc804\uae30\ucc28 \uc2dc\uc7a5, \uac00\uaca9 \uacbd\uc7c1 \ub118\uc5b4 \u2018AI \uacbd\uc7c1\u2019\uc73c\ub85c \ud655\ub300",
-                "score": 3,
-                "reasoning": "\uc911\uad6d \uc804\uae30\ucc28 \uc2dc\uc7a5\uc5d0\uc11c AI \uae30\ub2a5\uc774 \ud575\uc2ec \uacbd\uc7c1 \uc694\uc18c\ub85c \ubd80\uc0c1\ud558\uace0 \uc788\ub2e4\ub294 \uc2dc\uc7a5 \ub3d9\ud5a5 \ubd84\uc11d \uae30\uc0ac\ub85c, AI \uae30\uc220\uc758 \uad11\ubc94\uc704\ud55c \uc801\uc6a9\uc744 \ubcf4\uc5ec\uc8fc\ubbc0\ub85c \uc911\uac04 \uc815\ub3c4\uc758 \uc911\uc694\ub3c4\ub97c \uac00\uc9d0.",
-                "date": "2026-05-03"
-            },
-            {
                 "target": "\uc624\ud508AI, \ucf54\ub371\uc2a4\uc5d0 \u2018AI \ud3ab\u2019 \uae5c\uc9dd \ub3c4\uc785...\u201c\ucf54\ub529\uc5d0 \uac10\uc131 UX \uc785\ud78c\ub2e4\u201d",
                 "score": 2,
                 "reasoning": "\uc624\ud508AI\uc758 \ucf54\ub529 AI \ub3c4\uad6c\uc778 \ucf54\ub371\uc2a4\uc5d0 \uac10\uc131\uc801\uc778 UX \uc694\uc18c\ub97c \ucd94\uac00\ud55c \uc18c\uc2dd\uc73c\ub85c, AI \uae30\uc220 \uc790\uccb4\uc758 \ubc1c\uc804\ubcf4\ub2e4\ub294 \uc0ac\uc6a9\uc790 \uacbd\ud5d8 \uac1c\uc120\uc5d0 \ucd08\uc810\uc744 \ub9de\ucd94\uace0 \uc788\uc5b4 \uc911\uc694\ub3c4\uac00 \ub0ae\uc74c.",
@@ -13435,6 +13458,48 @@
                 "score": 3,
                 "reasoning": "AI \ud074\ub77c\uc6b0\ub4dc \uc11c\ube44\uc2a4 \uc81c\uacf5\uc5c5\uccb4\uc758 \uc131\uc7a5\uacfc AI \uce69 \uc218\uc694 \ub3d9\ud5a5\uc744 \ubcf4\uc5ec\uc8fc\uba70, AI \uc778\ud504\ub77c \uc2dc\uc7a5\uc758 \ud65c\ud669\uacfc \uacfc\uc81c\ub97c \ubc18\uc601\ud569\ub2c8\ub2e4. AI \ucef4\ud4e8\ud305 \uc790\uc6d0 \uc218\uc694\uc5d0 \ub300\ud55c \uc778\uc0ac\uc774\ud2b8\ub97c \uc81c\uacf5\ud569\ub2c8\ub2e4.",
                 "date": "2026-05-09"
+            },
+            {
+                "target": "Anthropic Claude safety research",
+                "score": 4,
+                "reasoning": "\uc564\ud2b8\ub85c\ud53d\uc758 \ud074\ub85c\ub4dc \ubaa8\ub378 \uc815\ub82c \uc5f0\uad6c\ub294 AI \uc548\uc804\uc131 \ubc0f \uc724\ub9ac \ubd84\uc57c\uc758 \uc911\uc694\ud55c \uae30\uc220\uc801 \uc9c4\ubcf4\ub97c \ub2e4\ub8e8\uace0 \uc788\uc2b5\ub2c8\ub2e4. \ube44\ub85d \uc624\ud508\uc18c\uc2a4 LLM\uc740 \uc544\ub2c8\uc9c0\ub9cc, LLM\uc758 \uadfc\ubcf8\uc801\uc778 \ubb38\uc81c \ud574\uacb0\uc5d0 \uae30\uc5ec\ud558\ub294 \uc2ec\uce35\uc801\uc778 \uae30\uc220 \ubd84\uc11d \uae30\uc0ac\ub85c \ud3c9\uac00\ub429\ub2c8\ub2e4.",
+                "url": "https://www.aitimes.com/news/articleView.html?idxno=210303",
+                "date": "2026-05-10"
+            },
+            {
+                "target": "Bizcrush speech recognition AI",
+                "score": 3,
+                "reasoning": "\uc74c\uc131 \uc778\uc2dd AI\ub97c \ud65c\uc6a9\ud55c \ube44\uc988\ub2c8\uc2a4 \uc560\ud50c\ub9ac\ucf00\uc774\uc158 \uc0ac\ub840\ub85c, AI \uae30\uc220\uc758 \uc2e4\uc81c \uc801\uc6a9 \ubc0f \uc2dc\uc7a5 \uae30\ud68c\ub97c \ubcf4\uc5ec\uc90d\ub2c8\ub2e4. \ud558\uc9c0\ub9cc \ud575\uc2ec LLM \uae30\uc220 \ubc1c\uc804\uc774\ub098 \uc624\ud508\uc18c\uc2a4 \ub3d9\ud5a5\uacfc\ub294 \uac70\ub9ac\uac00 \uc788\uc5b4 \uc911\uac04 \uc810\uc218\ub97c \ubd80\uc5ec\ud569\ub2c8\ub2e4.",
+                "url": "https://www.aitimes.com/news/articleView.html?idxno=210077",
+                "date": "2026-05-10"
+            },
+            {
+                "target": "NVIDIA's AI investments",
+                "score": 3,
+                "reasoning": "\uc5d4\ube44\ub514\uc544\uc758 \ub300\uaddc\ubaa8 AI \ud22c\uc790 \uc18c\uc2dd\uc740 AI \uc0b0\uc5c5 \uc804\ubc18\uc758 \uc131\uc7a5\uacfc \uacf5\uae09\ub9dd \uc5ed\ud559\uc5d0 \uc911\uc694\ud55c \uc2dc\uc0ac\uc810\uc744 \uc81c\uacf5\ud569\ub2c8\ub2e4. \uadf8\ub7ec\ub098 \uc9c1\uc811\uc801\uc778 AI \uae30\uc220 \ubc1c\uc804\uc774\ub098 \uc624\ud508\uc18c\uc2a4 LLM \ub3d9\ud5a5\uc5d0 \ub300\ud55c \ub0b4\uc6a9\uc740 \uc544\ub2c8\ubbc0\ub85c \uc911\uac04 \uc810\uc218\ub97c \ubd80\uc5ec\ud569\ub2c8\ub2e4.",
+                "url": "https://www.aitimes.com/news/articleView.html?idxno=210301",
+                "date": "2026-05-10"
+            },
+            {
+                "target": "Figure AI humanoid robot collaboration",
+                "score": 4,
+                "reasoning": "\ud734\uba38\ub178\uc774\ub4dc \ub85c\ubd07\uc758 \ud611\uc5c5\uc744 \ud1b5\ud55c \ubcf5\uc7a1\ud55c \ud658\uacbd \uc815\ub9ac \uc2dc\uc5f0\uc740 \ub85c\ubd07 \uacf5\ud559 \ubc0f embodied AI \ubd84\uc57c\uc758 \uc911\uc694\ud55c \uae30\uc220\uc801 \uc9c4\ubcf4\ub97c \ubcf4\uc5ec\uc90d\ub2c8\ub2e4. \uc774\ub294 AI\uc758 \ubb3c\ub9ac\uc801 \uc138\uacc4 \uc0c1\ud638\uc791\uc6a9 \ub2a5\ub825 \ubc1c\uc804\uc5d0 \uae30\uc5ec\ud558\ub294 \uace0\uac00\uce58 \uae30\uc0ac\uc785\ub2c8\ub2e4.",
+                "url": "https://www.aitimes.com/news/articleView.html?idxno=210299",
+                "date": "2026-05-10"
+            },
+            {
+                "target": "Claude API proxy and model distillation",
+                "score": 3,
+                "reasoning": "\ud074\ub85c\ub4dc \ubaa8\ub378\uc758 \ubd88\ubc95 \uc720\ud1b5 \ubc0f \ubaa8\ub378 \uc99d\ub958 \uac00\ub2a5\uc131 \uc81c\uae30\ub294 LLM\uc758 \ubcf4\uc548, \uc724\ub9ac, \uadf8\ub9ac\uace0 \uae30\uc220\uc801 \ucde8\uc57d\uc810\uc5d0 \ub300\ud55c \uc911\uc694\ud55c \uacbd\uace0\ub97c \ub2f4\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc9c1\uc811\uc801\uc778 \uae30\uc220 \ubc1c\uc804\uc740 \uc544\ub2c8\uc9c0\ub9cc, LLM \uc0dd\ud0dc\uacc4\uc758 \uc911\uc694\ud55c \uc774\uc288\ub97c \ub2e4\ub8f9\ub2c8\ub2e4.",
+                "url": "https://www.aitimes.com/news/articleView.html?idxno=210298",
+                "date": "2026-05-10"
+            },
+            {
+                "target": "DeepSeek investment and V4.1 release",
+                "score": 5,
+                "reasoning": "\ub525\uc2dc\ud06c\ub294 \ub300\ud45c\uc801\uc778 \uc624\ud508\uc18c\uc2a4 LLM \uac1c\ubc1c\uc0ac\uc774\uba70, \ucc3d\ub9bd\uc790\uc758 \ub300\uaddc\ubaa8 \ud22c\uc790\uc640 'V4.1' \ubaa8\ub378 \ucd9c\uc2dc \uc608\uace0\ub294 \uc624\ud508\uc18c\uc2a4 LLM \uae30\uc220 \ubc1c\uc804 \ub3d9\ud5a5\uc5d0 \ub300\ud55c \ucd5c\uc6b0\uc120 \ud3c9\uac00 \uae30\uc900\uc744 \uc644\ubcbd\ud558\uac8c \ucda9\uc871\ud569\ub2c8\ub2e4. \uc774\ub294 \uc624\ud508\uc18c\uc2a4 LLM \uc0dd\ud0dc\uacc4\uc5d0 \uc911\ub300\ud55c \uc601\ud5a5\uc744 \ubbf8\uce60 \uae30\uc220\uc801 \uc9c4\ubcf4\ub97c \uc608\uace0\ud558\ub294 \ud575\uc2ec \uae30\uc0ac\uc785\ub2c8\ub2e4.",
+                "url": "https://www.aitimes.com/news/articleView.html?idxno=210296",
+                "date": "2026-05-10"
             }
         ],
         "\uc9c0\ud53c\ud130\uc2a4 \ub274\uc2a4\ub808\ud130": [
