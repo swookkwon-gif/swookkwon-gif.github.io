@@ -19,7 +19,7 @@
 | C20 | Part 2 | 디지털 애널리틱스(Digital Analytics) 완전 정복 | **완료** | Data | Web vs App Analytics | 포스팅완료 |
 | C21 | Part 2 | 어트리뷰션(Attribution) 모델의 딜레마 | **완료** | Data | Attribution Models | 포스팅완료 |
 | C22 | Part 3 | A/B 테스트와 통계적 유의성의 함정 | **완료** | Data | A/B Testing, P-value | 포스팅완료 |
-| C23 | Part 3 | 퍼스트 파티 데이터와 서버 사이드 트래킹 | 대기 | Data | CAPI, Server-side tracking | 미배정 |
+| C23 | Part 3 | 퍼스트 파티 데이터와 서버 사이드 트래킹 | **완료** | Data | CAPI, Server-side tracking | 포스팅완료 |
 
 ---
 ## 📚 전체 참고 문헌 리스트 (Reference List)
