@@ -1,0 +1,66 @@
+name: Deep Research to Blog Post
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write # Git 커밋 및 푸시 권한
+  issues: write   # 이슈 댓글 및 닫기 권한
+
+jobs:
+  process-issue:
+    # 이슈 제목에 'blog', 'post', '포스트', '포스팅', '블로그'가 포함되어 있을 때만 실행
+    if: contains(github.event.issue.title, 'blog') || contains(github.event.issue.title, 'post') || contains(github.event.issue.title, '포스트') || contains(github.event.issue.title, '포스팅') || contains(github.event.issue.title, '블로그') || contains(github.event.issue.title, 'Blog') || contains(github.event.issue.title, 'Post')
+    runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install google-genai
+
+      - name: Save Issue Content to file
+        run: |
+          cat << 'EOF' > issue_body.txt
+          ${{ github.event.issue.body }}
+          EOF
+          cat << 'EOF' > issue_title.txt
+          ${{ github.event.issue.title }}
+          EOF
+
+      - name: Run Script to Generate Blog Post
+        run: python scripts/issue_to_blog.py
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          git add content/posts/
+          
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "feat(blog): 🤖 Auto-generated post from Issue #${{ github.event.issue.number }}"
+            git pull --rebase origin main
+            git push
+          fi
+
+      - name: Comment and Close Issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue comment ${{ github.event.issue.number }} --body "🚀 AI 포스팅이 성공적으로 생성되어 블로그에 배포되었습니다!"
+          gh issue close ${{ github.event.issue.number }} --reason "completed"
