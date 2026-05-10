@@ -17,7 +17,7 @@
 | C15 | Part 3 | 데이터 신호 설계(Signal Design) | **완료** | Data | First-party Data Strategy | 포스팅완료 |
 | C16 | Part 4 | CEO와 CMO의 데이터 동상이몽 | **완료** | Marketing | HBR Case Study | 포스팅완료 |
 | C20 | Part 2 | 디지털 애널리틱스(Digital Analytics) 완전 정복 | **완료** | Data | Web vs App Analytics | 포스팅완료 |
-| C21 | Part 2 | 어트리뷰션(Attribution) 모델의 딜레마 | 대기 | Data | Attribution Models | 미배정 |
+| C21 | Part 2 | 어트리뷰션(Attribution) 모델의 딜레마 | **완료** | Data | Attribution Models | 포스팅완료 |
 | C22 | Part 3 | A/B 테스트와 통계적 유의성의 함정 | 대기 | Data | A/B Testing, P-value | 미배정 |
 | C23 | Part 3 | 퍼스트 파티 데이터와 서버 사이드 트래킹 | 대기 | Data | CAPI, Server-side tracking | 미배정 |
 
