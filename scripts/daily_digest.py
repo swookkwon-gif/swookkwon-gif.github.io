@@ -238,7 +238,7 @@ def merge_and_create_digest():
     source_line = f"> 📊 오늘의 AI 뉴스: **{len(quality_articles)}건** | 소스: {', '.join(source_names)}\n\n---\n\n"
     result_md = source_line + result_md
 
-    title = f"[{now_kst.strftime('%m월 %d일')}] AI 데일리 다이제스트 — {post_title}"
+    title = f"{now_kst.month}월 {now_kst.day}일 AI 데일리 — {post_title}"
     save_final_post(date_str, title, result_md)
 
 

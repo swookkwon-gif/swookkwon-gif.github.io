@@ -359,7 +359,7 @@ def merge_and_create_daily_digest(all_articles):
         slug = f"ai-daily-{topic_slug}"
     except:
         slug = "ai-daily-news"
-    title = f"[{now_kst.strftime('%m월 %d일')}] AI 데일리 다이제스트 — {post_title}"
+    title = f"{now_kst.month}월 {now_kst.day}일 AI 데일리 — {post_title}"
     
     post_content = f"> 📊 오늘의 AI 트렌드: NotebookLM 딥 리서치 파이프라인을 통해 수집 및 심층 분석된 결과입니다.\n\n---\n\n{post_content}"
     

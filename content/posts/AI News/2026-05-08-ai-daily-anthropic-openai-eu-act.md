@@ -1,5 +1,5 @@
 ---
-title: '[05월 08일] AI 데일리 다이제스트 — Anthropic 440억 달러 ARR, OpenAI 500억 달러 인프라 투자, EU AI Act 기한 연장'
+title: '5월 8일 AI 데일리 — Anthropic 440억 달러 ARR, OpenAI 500억 달러 인프라 투자, EU AI Act 기한 연장'
 date: '2026-05-08'
 excerpt: '> 📊 오늘의 AI 뉴스: 77건 | 소스: 7min.ai, RSS AITimes/Benzinga, TLDR, TLDR AI, TLDR Marketing, The Rundown AI --- --- Anthropic,...'
 category: 'AI News'

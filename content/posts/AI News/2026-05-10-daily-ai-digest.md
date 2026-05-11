@@ -1,5 +1,5 @@
 ---
-title: '[05월 10일] AI 데일리 다이제스트 — DeepSeek 500억 달러 가치 평가, Zyphra ZAYA1-8B 공개, Hugging Face 로봇 앱 스토어 출시'
+title: '5월 10일 AI 데일리 — DeepSeek 500억 달러 가치 평가, Zyphra ZAYA1-8B 공개, Hugging Face 로봇 앱 스토어 출시'
 date: '2026-05-10'
 excerpt: '> 📊 오늘의 AI 뉴스: 70건 | 소스: 7min.ai, AI Breakfast, Ed Sim from What''s Hot 🔥 in Enterprise IT/VC, RSS AITimes/Benzinga, TLDR...'
 category: 'AI News'

@@ -114,7 +114,7 @@ def main():
     result_md = data.get("markdown_content", "")
     post_title = data.get("post_title", "AI 데일리 다이제스트")
 
-    title = f"[{date_str[-5:-3]}월 {date_str[-2:]}일] AI 데일리 다이제스트 — {post_title}"
+    title = f"{int(date_str[5:7])}월 {int(date_str[8:10])}일 AI 데일리 — {post_title}"
     
     # Excerpt 생성
     clean_content = re.sub(r'<[^>]+>', '', result_md)

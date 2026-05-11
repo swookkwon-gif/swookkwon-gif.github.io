@@ -1,5 +1,5 @@
 ---
-title: '[05월 09일] AI 데일리 다이제스트 — 구글 제미니 1.5 플래시 업데이트, 오픈AI 실시간 음성 AI, 엔비디아 AI 하드웨어 경쟁 심화'
+title: '5월 9일 AI 데일리 — 구글 제미니 1.5 플래시 업데이트, 오픈AI 실시간 음성 AI, 엔비디아 AI 하드웨어 경쟁 심화'
 date: '2026-05-09'
 excerpt: '> 📊 오늘의 AI 뉴스: 34건 | 소스: 7min.ai, RSS AITimes/Benzinga, TLDR, TLDR Marketing, The Rundown AI --- 구글, 제미니 1.5 플래시 모델 업데이트...'
 category: 'AI News'
