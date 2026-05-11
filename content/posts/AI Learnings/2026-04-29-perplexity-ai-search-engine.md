@@ -20,7 +20,6 @@ tags:
 
 ChatGPT가 글을 써주는 똑똑한 조수라면, Perplexity는 **최신 뉴스와 인터넷 트렌드를 꿰뚫고 있는 초고속 리서치 전문가**입니다.
 
-![Perplexity AI 검색 결과 스크린샷](https://images.unsplash.com/photo-1432821596592-e2c18b78144f?auto=format&fit=crop&q=80&w=1000)
 *▲ Perplexity 검색 화면: 사용자의 질문에 대해 실시간으로 웹을 스캔한 뒤, 상단에 참고한 출처(Sources)를 나열하고 하단에 완벽한 요약 답변을 제공합니다.*
 
 1.  **실시간 웹 크롤링과 거짓말(환각) 방지:**

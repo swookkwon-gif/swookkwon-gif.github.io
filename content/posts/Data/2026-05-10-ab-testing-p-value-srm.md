@@ -1,6 +1,6 @@
 ---
 title: "A/B 테스트와 통계적 유의성의 함정: p-value의 진실과 가짜 승리(False Positive) 피하기"
-date: 2026-05-11T17:00:00+09:00
+date: 2026-05-10T17:00:00+09:00
 categories:
   - Data
 tags:

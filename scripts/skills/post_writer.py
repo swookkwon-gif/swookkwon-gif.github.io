@@ -45,6 +45,7 @@ def create_post_file(
 
     now_kst = datetime.now(timezone.utc) + timedelta(hours=9)
     date_str = now_kst.strftime("%Y-%m-%d")
+    full_datetime_str = now_kst.strftime("%Y-%m-%dT%H:%M:%S+09:00")
 
     excerpt_text = generate_excerpt(content)
 
@@ -54,7 +55,7 @@ def create_post_file(
 
     frontmatter = f"""---
 title: '{post_title.replace("'", "''")}'
-date: '{date_str}'
+date: '{full_datetime_str}'
 excerpt: '{excerpt_text.replace("'", "''")}'
 category: '{category.replace("'", "''")}'
 word_count: {word_count}

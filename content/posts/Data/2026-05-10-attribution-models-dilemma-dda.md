@@ -1,6 +1,6 @@
 ---
 title: "어트리뷰션(Attribution) 모델의 딜레마: 라스트 클릭의 종말과 데이터 기반 기여(DDA)의 부상"
-date: 2026-05-11T16:30:00+09:00
+date: 2026-05-10T16:30:00+09:00
 categories:
   - Data
 tags:

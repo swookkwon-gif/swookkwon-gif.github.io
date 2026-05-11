@@ -18,7 +18,6 @@ tags:
 
 ### 1. OpenClaw의 3가지 독보적 역량 (왜 로컬 에이전트인가?)
 
-![OpenClaw 터미널 실행 스크린샷](https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&q=80&w=1000)
 *▲ OpenClaw 실행 화면: 터미널 기반으로 백그라운드에서 동작하며, 로컬 파일 시스템에 직접 접근하는 로그를 확인할 수 있습니다.*
 
 1.  **로컬 파일 시스템 제어 권한 (File System Access):[^2]**

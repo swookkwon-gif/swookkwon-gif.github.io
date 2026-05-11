@@ -1,10 +1,15 @@
 import os
 import re
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 from google import genai
 from google.genai import types
 
 def main():
+    # KST 시간 설정 (생성 완료 시간을 정확히 고정)
+    now_kst = datetime.now(timezone.utc) + timedelta(hours=9)
+    date_str = now_kst.strftime("%Y-%m-%d")
+    full_datetime_str = now_kst.strftime("%Y-%m-%dT%H:%M:%S+09:00")
+
     # 1. 이슈 내용 읽기
     try:
         with open('issue_title.txt', 'r', encoding='utf-8') as f:
@@ -34,7 +39,7 @@ def main():
 [요구사항]
 1. 반드시 Jekyll/Hugo 호환 Frontmatter를 최상단에 포함할 것.
    - title: "{issue_title}" (이슈 제목을 참고하되 더 매력적으로 변경 가능, 딥리서치 태그 제거)
-   - date: YYYY-MM-DD HH:MM:SS (현재 시간으로 포맷팅)
+   - date: {full_datetime_str}
    - categories: "Marketing" 또는 "Data" 중 내용에 가장 잘 맞는 것 하나 선택 (배열 형태)
    - tags: 내용에 맞는 핵심 키워드 3~5개 추출 (배열 형태)
 2. 내용은 수정/삭제하지 말고, 원본 텍스트의 인사이트를 모두 살려서 구조만 예쁘게 다듬을 것.
@@ -69,9 +74,7 @@ def main():
     if "categories: [\"Data\"]" in markdown_content or "categories: ['Data']" in markdown_content or "categories:\n  - Data" in markdown_content:
         folder_name = "Data"
 
-    # 4. 파일 저장 (현재 시간 기준 파일명)
-    now = datetime.now()
-    date_str = now.strftime("%Y-%m-%d")
+    # 4. 파일 저장 (정확한 KST 시간 기준 파일명)
     
     # 영문 슬러그 생성 (간단히)
     safe_title = re.sub(r'[^a-zA-Z0-9가-힣]+', '-', issue_title.lower()).strip('-')

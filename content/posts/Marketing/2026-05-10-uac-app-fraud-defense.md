@@ -1,6 +1,6 @@
 ---
 title: "[앱 마케팅의 함정] UAC 허수 트래픽의 실태와 Fraud 방어 전략"
-date: 2026-05-11T09:00:00+09:00
+date: 2026-05-10T09:00:00+09:00
 categories:
   - Marketing
 tags:

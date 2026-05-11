@@ -20,6 +20,18 @@
 | C21 | Part 2 | 어트리뷰션(Attribution) 모델의 딜레마 | **완료** | Data | Attribution Models | 포스팅완료 |
 | C22 | Part 3 | A/B 테스트와 통계적 유의성의 함정 | **완료** | Data | A/B Testing, P-value | 포스팅완료 |
 | C23 | Part 3 | 퍼스트 파티 데이터와 서버 사이드 트래킹 | **완료** | Data | CAPI, Server-side tracking | 포스팅완료 |
+| P01 | Phase 1 | "ROAS는 가짜다" - Attribution과 Incrementality | **완료** | Data | Lewis & Rao (2015) | 포스팅완료 |
+| P02 | Phase 1 | 브랜드 검색광고, 방어인가 예산 낭비인가? | **완료** | Data | Blake et al. (2015) | 포스팅완료 |
+| P03 | Phase 1 | 디지털 광고의 서브프라임 모기지 사태 | **완료** | Marketing | Tim Hwang, Bob Hoffman | 포스팅완료 |
+| P04 | Phase 2 | 통제 불능 PMax의 블랙박스 해체 | **완료** | Data | smec 2025 PMax 리포트 | 포스팅완료 |
+| P05 | Phase 2 | 당신의 광고비는 봇이 클릭하고 있다 (MFA) | **완료** | Marketing | Dr. Augustine Fou | 포스팅완료 |
+| P06 | Phase 2 | 게재 위치 감사와 UAC 허수 트래픽 | **완료** | Data | Placement Audit 가이드 | 포스팅완료 |
+| P07 | Phase 3 | 상관/인과, 교란 변수, 유의성의 함정 | **완료** | Data | Simpson's Paradox | 포스팅완료 |
+| P08 | Phase 3 | 타겟팅의 비효율성과 심리적 함정 | **완료** | Marketing | Authority/Vendor Bias | 포스팅완료 |
+| P09 | Phase 3 | 경영진을 속이는 리포트와 대시보드 | **완료** | Data | Audit List | 포스팅완료 |
+| P10 | Phase 4 | 포스트 쿠키 시대: CAPI와 MMM의 부활 | **완료** | Data | CAPI, MMM | 포스팅완료 |
+| P11 | Phase 4 | AI에 끌려가지 않는 '신호 설계자' 전략 | **완료** | Data | Data Signal | 포스팅완료 |
+| P12 | Phase 4 | Vibe Coding 기반 낭비 감시 자동화 (n8n) | **완료** | Dev | n8n, Antigravity | 포스팅완료 |
 
 ---
 ## 📚 전체 참고 문헌 리스트 (Reference List)
@@ -29,6 +41,8 @@
 - **Blake, Nosko, Tadelis (2015)**, *Consumer Heterogeneity and Paid Search Effectiveness*, eBay Case Study.
 - **Tim Hwang**, *Subprime Attention Crisis: Advertising and the Time Bomb at the Heart of the Internet* (2020)
 - **Lazer et al. (2014)**, *The Parable of Google Flu: Traps in Big Data Analysis*, Science.
+- **Lewis, R. A., & Rao, J. M. (2015)**, *On the near-impossibility of measuring the returns to advertising.* The Quarterly Journal of Economics.
+- **Johnson, G. A., Lewis, R. A., & Nubbemeyer, E. I. (2017)**, *Ghost ads: Improving the economics of measuring online ad effectiveness.* Journal of Marketing Research.
 - **Optmyzr (2024)**, *The State of Performance Max Report*.
 - **SpiderAF (2024)**, *Digital Ad Fraud Trend Report*.
 

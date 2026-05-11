@@ -20,7 +20,6 @@ tags:
 
 기존의 챗봇이나 에디터 내장 AI는 '화면 안'에 갇혀 있었습니다. AI가 코드를 짜주면 사용자가 복사해서 붙여넣고, 에러가 나면 복사해서 다시 물어봐야 하는 수동 핑퐁 게임이 필수적이었습니다.
 
-![Claude Code 터미널 실행 스크린샷](https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=1000)
 *▲ Claude Code 터미널 환경: 개발자가 자연어로 지시하면 AI가 `ls`, `grep`, `pytest` 등의 터미널 명령어를 직접 실행하며 스스로 작업합니다.*
 
 *   **시스템 제어의 끝판왕:** 터미널은 패키지를 설치(`npm install`), 서버를 구동(`python manage.py`), 코드를 빌드할 수 있는 통제실입니다. Claude Code는 이 통제실의 키를 쥐고 있습니다.

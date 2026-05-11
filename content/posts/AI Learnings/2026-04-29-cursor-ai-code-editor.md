@@ -20,7 +20,6 @@ Cursor는 VS Code를 포크(Fork)하여 만들어졌기 때문에 기존 환경�
 
 브라우저에서 ChatGPT를 켜놓고 코드를 복사&붙여넣기 하던 시절은 끝났습니다. Cursor는 사용자의 코드 파일 안에 직접 개입합니다.
 
-![Cursor 에디터 화면 스크린샷](https://images.unsplash.com/photo-1550439062-609e1531270e?auto=format&fit=crop&q=80&w=1000)
 *▲ Cursor 에디터 화면: 코드 중간에 `CMD+K`를 누르고 자연어로 지시하면, 기존 코드 위로 수정된 코드가 즉시 오버레이되어 나타납니다.*
 
 1.  **CMD+K (인라인 편집 모드):**

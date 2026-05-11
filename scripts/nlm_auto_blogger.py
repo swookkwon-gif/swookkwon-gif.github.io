@@ -95,10 +95,10 @@ def run_daily_ai_deep_research():
 4. Top 10 심층 분석:
    - 가장 중요한 10개의 뉴스를 각각 큰 소제목(##)으로 구분해.
    - 각 뉴스별로 소식의 핵심을 요약하고(2~3줄), 이어서 기술적 및 산업적 시사점을 깊이 있게 분석하여 줄글로 자연스럽게 작성해. (단, '[소식 요약]', '[시사점]' 같은 영역별 제목이나 괄호 표기는 절대 사용하지 말고 자연스러운 문단으로 구성할 것)
-5. 레퍼런스 및 주석:
+5. 레퍼런스 및 주석 (중요: URL 링크 필수 포함!):
    - 본문 내에서 참고한 기사를 인용할 때는 마크다운 표준 주석 문법인 `[^1]` 형태를 사용하여 클릭 시 하단으로 스크롤 되도록 작성해.
-   - 포스트 가장 하단에는 본문에 사용된 주석 번호 1번부터 순서대로 정렬하여 `[^1]: [기사 제목](URL)` 형태의 목록으로 명확하게 제공해.
-   - 만약 기사의 정확한 원본 URL을 찾을 수 없다면 억지로 생성하지 말고 `[^1]: 기사 제목` 형태로 링크 없이 표기해.
+   - 포스트 가장 하단에는 본문에 사용된 주석 번호 1번부터 순서대로 정렬하여 `[^1]: [기사 제목](실제 원본 URL)` 형태의 목록으로 명확하게 제공해.
+   - **절대 누락 금지**: 각 뉴스의 원본 출처를 확인할 수 있는 실제 웹 주소(URL, https://...)를 마크다운 링크 문법 `(URL)` 안에 반드시 텍스트로 명시적으로 출력해야 해!
 6. 어조: 해요체/하십시오체를 쓰지 말고 전문적인 테크 저널 목록형 어조(~이다, ~한다)를 사용할 것.
 """
     success, article_content = run_cmd(["nlm", "notebook", "query", notebook_id, writing_prompt], timeout=600)
@@ -130,19 +130,22 @@ def run_daily_ai_deep_research():
     display_title = f"Daily Top 10: {now_kst.strftime('%m월 %d일')} 주요 AI 뉴스"
     display_excerpt = "오늘의 핵심 글로벌 AI 및 기술 뉴스 동향을 요약합니다."
     
-    lines = clean_article.split('\\n')
+    lines = clean_article.split('\n')
     content_start_idx = 0
     
     for i in range(min(5, len(lines))):
         line = lines[i].strip()
-        if line.startswith("TITLE:"):
-            display_title = line.replace("TITLE:", "").replace("[", "").replace("]", "").strip()
+        title_match = re.match(r'^(?:\*\*)?TITLE(?:\*\*)?\s*:\s*(.*)', line, re.IGNORECASE)
+        excerpt_match = re.match(r'^(?:\*\*)?EXCERPT(?:\*\*)?\s*:\s*(.*)', line, re.IGNORECASE)
+        
+        if title_match:
+            display_title = title_match.group(1).replace("[", "").replace("]", "").strip()
             content_start_idx = max(content_start_idx, i + 1)
-        elif line.startswith("EXCERPT:"):
-            display_excerpt = line.replace("EXCERPT:", "").replace("[", "").replace("]", "").strip()
+        elif excerpt_match:
+            display_excerpt = excerpt_match.group(1).replace("[", "").replace("]", "").strip()
             content_start_idx = max(content_start_idx, i + 1)
             
-    clean_article = '\\n'.join(lines[content_start_idx:]).strip()
+    clean_article = '\n'.join(lines[content_start_idx:]).strip()
 
     # 휴먼리더블 포스트 제목 (기본값 대비 우선순위 반영)
     frontmatter = f"""---

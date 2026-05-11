@@ -48,7 +48,6 @@ tags: ["데이터분석", "인지과학", "학습법", "메타분석", "팩트�
 1.  **인출 연습(Active Recall):** 책을 덮고 머릿속에서 강제로 정보를 끄집어내는 연습 시험(Practice Testing)
 2.  **분산 학습(Spaced Repetition):** 벼락치기(Massed practice)를 버리고 잊어버릴 만할 때 다시 복습하여 망각 곡선을 평탄하게 만드는 방식
 
-![망각 곡선과 분산 학습](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/ForgettingCurve.svg/800px-ForgettingCurve.svg.png)
 *독일의 심리학자 헤르만 에빙하우스의 망각 곡선. 단순 반복 읽기는 이 곡선을 이길 수 없으며, 시간 간격을 둔 인출 연습(분산 학습)만이 기억을 장기화합니다.*
 
 ### 🤔 왜 아직도 믿을까?

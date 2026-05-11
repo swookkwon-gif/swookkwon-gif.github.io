@@ -1,6 +1,6 @@
 ---
 title: "CEO와 CMO의 데이터 동상이몽: 마케팅 대시보드가 재무제표를 속이는 법"
-date: 2026-05-11T15:00:00+09:00
+date: 2026-05-10T15:00:00+09:00
 categories:
   - Marketing
 tags:
