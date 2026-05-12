@@ -43,6 +43,10 @@ tags: ["프로그래매틱", "DSP", "SSP", "RTB", "디지털 마케팅", "광고
 2.  **기술세(Tech Tax)와 불투명성**: 광고주가 100원을 쓰면, DSP, SSP, Ad Exchange 등 중간 상인들이 수수료(Tech Tax)로 30~50원을 떼어갑니다. 실제 매체에는 50원만 전달되는 심각한 불투명성(Black Box) 문제가 있습니다.
 3.  **브랜드 안전성(Brand Safety)**: 알고리즘이 혐오 콘텐츠나 가짜 뉴스 사이트에 내 브랜드 광고를 띄워 브랜드 이미지를 심각하게 훼손할 위험이 항상 존재합니다.
 
+> 💡 **심층 분석(Deep-Dive) 보러 가기** 
+> * 사기 수법과 브랜드 안전성 방어 기술 👉 [[Ad Tech 심화] 내 광고비는 누가 훔쳐가는가? (Ad Fraud, MFA, 그리고 브랜드 세이프티)](./2026-05-12-adtech-ad-fraud-brand-safety.md)
+> * 수수료(Tech Tax)와 투명성의 실체 👉 [[광고비의 행방불명] DSP와 SSP 사이, 내 예산 절반은 어디로 사라졌나? (Tech Tax의 실체)](./2026-05-12-adtech-supply-chain-tech-tax.md)
+
 ---
 
 ## 4. 학술적 성과 검증: 정말 돈값을 하는가? (Incrementality)
