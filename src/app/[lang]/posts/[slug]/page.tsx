@@ -163,7 +163,7 @@ export default async function PostPage({
         <section className="mt-16 pt-12 border-t border-neutral-200">
           <div className="flex items-center justify-between mb-8">
             <h3 className="text-xl font-bold text-neutral-900 flex items-center gap-2">
-              💡 {lang === 'en' ? 'More from' : ''} <Link href={`/${lang}/category/${(post.category || "Insight").toLowerCase().replace(/\s+/g, '-')}`} className="hover:text-blue-600 transition-colors underline decoration-2 underline-offset-4 decoration-blue-100 hover:decoration-blue-400">{post.category}</Link> {lang === 'en' ? 'category' : '카테고리의 다른 글'}
+              💡 {lang === 'en' ? 'More from' : ''} <Link href={`/${lang}/category/${(post.category || "Insight").toLowerCase().replace(/\s+/g, '-')}`} className="hover:text-blue-600 transition-colors underline decoration-2 underline-offset-4 decoration-blue-100 hover:decoration-blue-400">{post.category}</Link> {lang === 'en' ? '' : '의 다른 글'}
             </h3>
             {post.categoryTotalCount && post.categoryTotalCount > 7 && (
               <Link 
