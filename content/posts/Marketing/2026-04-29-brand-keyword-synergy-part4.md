@@ -2,8 +2,12 @@
 title: "[브랜드 검색광고 딜레마 4편] 시너지 이펙트: SEO와 SEM의 완벽한 앙상블"
 date: 2026-04-29T14:00:00Z
 description: "유료 광고와 자연 검색은 정말 서로를 갉아먹는 적일까요? 2025년 최신 모바일 연구와 학술 데이터를 통해 두 채널이 만났을 때 폭발하는 강력한 시너지 효과를 분석합니다."
-category: AI Learnings
-tags: ["Marketing", "SEO", "SEM", "Academic Research", "Synergy"]
+category: Marketing
+tags: ["Brand Keywords", "SEO", "SEM", "Academic Research", "Synergy"]
+related_posts:
+  - 2026-04-29-brand-keyword-cannibalization-part1
+  - 2026-04-29-brand-keyword-defense-part2
+  - 2026-04-29-brand-keyword-size-part3
 ---
 
 *본 포스팅은 Perplexity, NotebookLM, Claude를 결합한 하이브리드 AI 학술 리서치 파이프라인을 통해 전 세계의 저명한 마케팅 논문 수십 편을 분석하여 작성된 **[브랜드 키워드 딜레마] 4부작 기획 시리즈**의 마지막 글입니다.*

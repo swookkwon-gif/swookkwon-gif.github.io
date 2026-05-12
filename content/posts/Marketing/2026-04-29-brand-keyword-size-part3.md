@@ -2,15 +2,19 @@
 title: "[브랜드 검색광고 딜레마 3편] 체급의 차이: 브랜드 규모에 따라 달라지는 광고 생존 공식"
 date: 2026-04-29T13:00:00Z
 description: "eBay의 '광고 무용론'은 대기업만의 배부른 소리일까요? 중소 브랜드와 신규 비즈니스에게 왜 검색 광고가 여전히 폭발적인 성장을 견인하는 필수 생존 공식인지 학술 데이터를 통해 증명합니다."
-category: AI Learnings
-tags: ["Marketing", "SEM", "Academic Research", "SMB", "Growth"]
+category: Marketing
+tags: ["Brand Keywords", "SEM", "Academic Research", "SMB", "Growth"]
+related_posts:
+  - 2026-04-29-brand-keyword-cannibalization-part1
+  - 2026-04-29-brand-keyword-defense-part2
+  - 2026-04-29-brand-keyword-synergy-part4
 ---
 
 *본 포스팅은 Perplexity, NotebookLM, Claude를 결합한 하이브리드 AI 학술 리서치 파이프라인을 통해 전 세계의 저명한 마케팅 논문 수십 편을 분석하여 작성된 **[브랜드 키워드 딜레마] 4부작 기획 시리즈**의 세 번째 글입니다.*
 
 ---
 
-[1편](https://wooksai.github.io/posts/3.%20AI%20Learnings/2026-04-29-brand-keyword-cannibalization-part1)에서 다룬 "브랜드 키워드 광고는 무료 트래픽을 갉아먹는 예산 낭비다"라는 결론은 eBay의 2015년 대규모 필드 실험에 기반을 두고 있습니다. [1, 2, 3] 
+[1편](/ko/posts/2026-04-29-brand-keyword-cannibalization-part1)에서 다룬 "브랜드 키워드 광고는 무료 트래픽을 갉아먹는 예산 낭비다"라는 결론은 eBay의 2015년 대규모 필드 실험에 기반을 두고 있습니다. [1, 2, 3] 
 
 하지만 이 논문을 읽은 전 세계의 수많은 스타트업과 중소기업 마케터들은 의문에 빠졌습니다. **"우리는 전 국민이 다 아는 eBay가 아닌데, 우리도 똑같이 광고를 꺼버려도 될까?"**
 

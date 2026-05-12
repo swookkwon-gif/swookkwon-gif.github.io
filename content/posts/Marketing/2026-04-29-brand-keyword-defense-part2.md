@@ -2,15 +2,19 @@
 title: "[브랜드 검색광고 딜레마 2편] 최선의 방어: 하이에나 같은 경쟁사들로부터 내 영토 지키기"
 date: 2026-04-29T12:00:00Z
 description: "내 키워드 광고를 껐더니 경쟁사가 20%의 트래픽을 빼앗아갔다? '타겟팅 포획(Poaching)'과 '증분 클릭당 비용(CPIC)' 개념을 통해 검색 광고의 필수적인 방어 메커니즘을 알아봅니다."
-category: AI Learnings
-tags: ["Marketing", "SEM", "Academic Research", "Competitive Strategy"]
+category: Marketing
+tags: ["Brand Keywords", "SEM", "Academic Research", "Competitive Strategy", "CPIC"]
+related_posts:
+  - 2026-04-29-brand-keyword-cannibalization-part1
+  - 2026-04-29-brand-keyword-size-part3
+  - 2026-04-29-brand-keyword-synergy-part4
 ---
 
 *본 포스팅은 Perplexity, NotebookLM, Claude를 결합한 하이브리드 AI 학술 리서치 파이프라인을 통해 전 세계의 저명한 마케팅 논문 수십 편을 분석하여 작성된 **[브랜드 키워드 딜레마] 4부작 기획 시리즈**의 두 번째 글입니다.*
 
 ---
 
-[지난 1편](https://wooksai.github.io/posts/3.%20AI%20Learnings/2026-04-29-brand-keyword-cannibalization-part1)에서는 막대한 예산을 들여 자사 브랜드 키워드에 검색 광고(SA)를 집행하는 것이, 사실은 무료로 얻을 수 있는 자연 검색(Organic Search) 트래픽을 스스로 돈을 내고 사 오는 **'자기 잠식(Cannibalization)'**에 불과하다는 뼈아픈 진실을 알아보았습니다.
+[지난 1편](/ko/posts/2026-04-29-brand-keyword-cannibalization-part1)에서는 막대한 예산을 들여 자사 브랜드 키워드에 검색 광고(SA)를 집행하는 것이, 사실은 무료로 얻을 수 있는 자연 검색(Organic Search) 트래픽을 스스로 돈을 내고 사 오는 **'자기 잠식(Cannibalization)'**에 불과하다는 뼈아픈 진실을 알아보았습니다.
 
 그렇다면 마케터들은 왜 바보같이 계속해서 브랜드 키워드에 막대한 예산을 쏟아붓고 있는 것일까요? 
 

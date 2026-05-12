@@ -1,8 +1,12 @@
 ---
 title: "브랜드 키워드 광고는 돈 낭비일까?"
 date: "2026-04-23"
-excerpt: "Meta CMO - 브랜드 키워드 광고 하지 마라, 그러나 예외는 있다"
+description: "Meta CMO Alex Schultz가 LinkedIn에 공개한 브랜드 키워드 광고 전략. 증분성(Incrementality) 부재의 근거와 예외 상황을 실무자 관점에서 분석합니다."
 category: Marketing
+tags: ["Brand Keywords", "SEM", "Incrementality", "Alex Schultz", "Meta"]
+related_posts:
+  - 2026-04-29-brand-keyword-cannibalization-part1
+  - 2026-04-29-brand-keyword-defense-part2
 ---
 
 ![Brand Keyword Expansion Strategy](/images/brand_bidding_hero.png)
