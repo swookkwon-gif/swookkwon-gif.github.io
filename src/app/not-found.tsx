@@ -17,10 +17,12 @@ export default function NotFound() {
     }
   }, []);
 
+  const isEn = typeof window !== 'undefined' && window.location.pathname.startsWith('/en');
+
   if (isRedirecting) {
     return (
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', fontFamily: 'sans-serif' }}>
-        <p>이전 주소로 접속하셨습니다. 올바른 주소로 이동 중입니다...</p>
+        <p>{isEn ? 'Redirecting to the correct address...' : '이전 주소로 접속하셨습니다. 올바른 주소로 이동 중입니다...'}</p>
       </div>
     );
   }
@@ -28,8 +30,8 @@ export default function NotFound() {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100vh', fontFamily: 'sans-serif' }}>
       <h1>404 - Page Not Found</h1>
-      <p>요청하신 페이지를 찾을 수 없거나 이동되었습니다.</p>
-      <a href="/ko" style={{ marginTop: '20px', color: '#0070f3', textDecoration: 'none' }}>메인 홈으로 돌아가기</a>
+      <p>{isEn ? 'The page you are looking for could not be found or has been moved.' : '요청하신 페이지를 찾을 수 없거나 이동되었습니다.'}</p>
+      <a href={isEn ? "/en" : "/ko"} style={{ marginTop: '20px', color: '#0070f3', textDecoration: 'none' }}>{isEn ? 'Go to Homepage' : '메인 홈으로 돌아가기'}</a>
     </div>
   );
 }

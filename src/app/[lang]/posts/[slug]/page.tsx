@@ -163,14 +163,14 @@ export default async function PostPage({
         <section className="mt-16 pt-12 border-t border-neutral-200">
           <div className="flex items-center justify-between mb-8">
             <h3 className="text-xl font-bold text-neutral-900 flex items-center gap-2">
-              💡 <Link href={`/${lang}/category/${(post.category || "Insight").toLowerCase().replace(/\s+/g, '-')}`} className="hover:text-blue-600 transition-colors underline decoration-2 underline-offset-4 decoration-blue-100 hover:decoration-blue-400">{post.category}</Link> 카테고리의 다른 글
+              💡 {lang === 'en' ? 'More from' : ''} <Link href={`/${lang}/category/${(post.category || "Insight").toLowerCase().replace(/\s+/g, '-')}`} className="hover:text-blue-600 transition-colors underline decoration-2 underline-offset-4 decoration-blue-100 hover:decoration-blue-400">{post.category}</Link> {lang === 'en' ? 'category' : '카테고리의 다른 글'}
             </h3>
             {post.categoryTotalCount && post.categoryTotalCount > 7 && (
               <Link 
                 href={`/${lang}/category/${post.category.toLowerCase().replace(/\s+/g, '-')}`}
                 className="text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors"
               >
-                전체보기 &rarr;
+                {lang === 'en' ? 'View all' : '전체보기'} &rarr;
               </Link>
             )}
           </div>
@@ -201,7 +201,7 @@ export default async function PostPage({
           className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-neutral-100 text-neutral-600 hover:bg-blue-50 hover:text-blue-600 transition-colors group text-sm font-bold"
         >
           <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform" />
-          목록으로 돌아가기
+          {lang === 'en' ? 'Back to list' : '목록으로 돌아가기'}
         </Link>
       </div>
     </article>
