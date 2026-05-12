@@ -49,9 +49,27 @@ function generateExcerpt(content: string, length: number = 150): string {
 export function getSortedPostsData(lang: string = 'ko'): PostData[] {
   const allFiles = getAllMarkdownFiles(postsDirectory);
   
-  const filteredFiles = allFiles.filter(file => {
-    if (lang === 'en') return file.endsWith('.en.md');
-    return file.endsWith('.md') && !file.endsWith('.en.md');
+  const fileMap = new Map<string, { en?: string, ko?: string }>();
+  allFiles.forEach(file => {
+    const fileName = path.basename(file);
+    const slug = fileName.replace(/\.(en|ko)?\.?md$/, '');
+    if (!fileMap.has(slug)) fileMap.set(slug, {});
+    
+    if (fileName.endsWith('.en.md')) {
+      fileMap.get(slug)!.en = file;
+    } else if (fileName.endsWith('.md')) {
+      fileMap.get(slug)!.ko = file;
+    }
+  });
+
+  const filteredFiles: string[] = [];
+  fileMap.forEach(langs => {
+    if (lang === 'en') {
+      if (langs.en) filteredFiles.push(langs.en);
+      else if (langs.ko) filteredFiles.push(langs.ko);
+    } else {
+      if (langs.ko) filteredFiles.push(langs.ko);
+    }
   });
 
   const allPostsData = filteredFiles.map((fullPath) => {
@@ -106,7 +124,7 @@ export function getSortedPostsData(lang: string = 'ko'): PostData[] {
 export function getPostData(slug: string, lang: string = 'ko'): PostData {
   const allFiles = getAllMarkdownFiles(postsDirectory);
   
-  const targetFile = allFiles.find(file => {
+  let targetFile = allFiles.find(file => {
     const fileName = path.basename(file);
     const fileSlug = fileName.replace(/\.(en|ko)?\.?md$/, '');
     if (fileSlug !== slug) return false;
@@ -114,6 +132,15 @@ export function getPostData(slug: string, lang: string = 'ko'): PostData {
     if (lang === 'en') return fileName.endsWith('.en.md');
     return fileName.endsWith('.md') && !fileName.endsWith('.en.md');
   });
+  
+  // Fallback to Korean if English file doesn't exist
+  if (!targetFile && lang === 'en') {
+    targetFile = allFiles.find(file => {
+      const fileName = path.basename(file);
+      const fileSlug = fileName.replace(/\.(en|ko)?\.?md$/, '');
+      return fileSlug === slug && fileName.endsWith('.md') && !fileName.endsWith('.en.md');
+    });
+  }
   
   if (!targetFile) {
     throw new Error(`Post not found for slug: ${slug}`);
