@@ -13,6 +13,23 @@ tags: ["문맥타게팅", "ContextualTargeting", "쿠키리스", "NLP", "시맨�
 
 ---
 
+## 📈 문맥 타게팅 시장, 얼마나 커졌나? (글로벌 데이터)
+
+쿠키리스 전환이 가속화되면서, 문맥 타게팅 시장은 폭발적으로 성장하고 있습니다.
+
+| 지표 | 수치 | 출처 |
+| :--- | :---: | :---: |
+| 글로벌 문맥 광고 시장 규모 (2024) | **$211.6B** (약 287조 원) | SilverPush |
+| 글로벌 문맥 광고 시장 규모 (2025 전망) | **$233.9B** (약 318조 원) | SilverPush |
+| 문맥 광고 클릭률(CTR) 향상 | 비문맥 대비 **+50%** | 업계 복수 연구 |
+| 문맥 광고 전환율 향상 | 비문맥 대비 **+30%** | 업계 복수 연구 |
+| 문맥 광고를 더 편하게 느끼는 소비자 비율 | **79%** | DoubleVerify / IAS |
+| 문맥 데이터를 활용하는 마케터 비율 | **74%** | Agility Ads |
+
+주목할 점은 문맥 광고가 행동 기반 타게팅 대비 CTR에서 **5~8%** 이내, 전환 품질에서 **10~12%** 이내의 성과를 보이면서, **브랜드 안전성(Brand Safety)에서는 일관되게 우위**에 있다는 것입니다.
+
+---
+
 ## 1. 과거의 문맥 타게팅: 단순 무식한 '키워드 매칭'
 
 원래 문맥 타게팅은 프로그래매틱 광고가 태동하던 시절 쓰이던 구식 기술이었습니다. 사람을 추적할 수 없으니, **'현재 이 사람이 읽고 있는 기사'**에 맞춰 광고를 띄우는 방식이었습니다. 
@@ -48,6 +65,22 @@ tags: ["문맥타게팅", "ContextualTargeting", "쿠키리스", "NLP", "시맨�
 
 ---
 
+## 4. 누가 이 기술을 만들고 있나? (주요 벤더 비교)
+
+문맥 타게팅 기술은 단순히 구글이나 메타만의 영역이 아닙니다. 전문 애드테크 기업들이 이 영역을 선도하고 있습니다.
+
+| 기업 | 핵심 기술 | 차별점 |
+| :--- | :--- | :--- |
+| **GumGum** | Computer Vision + NLP | 이미지/영상 내 물체 인식을 통한 시각적 문맥 분석에 특화 |
+| **Seedtag** | LIZ (AI 엔진) | 유럽 시장 1위. 기사 내 시맨틱 분석 + 감정 분류에 강점 |
+| **IAS (Integral Ad Science)** | Context Control | 브랜드 세이프티 + 문맥 타게팅을 통합 제공하는 검증 솔루션 |
+| **DoubleVerify** | Authentic Brand Suitability | 부정적 문맥 회피를 넘어 '긍정적 문맥 선택'까지 지원 |
+| **Oracle Advertising (Grapeshot)** | 키워드 + 시맨틱 하이브리드 | 기존 키워드 매칭과 AI 시맨틱 분석을 결합한 대규모 분류 체계 |
+
+이들의 경쟁이 치열해지면서 문맥 분석의 정밀도는 매년 눈에 띄게 향상되고 있습니다.
+
+---
+
 ## 💡 결론: 가장 사생활 친화적인, 가장 정교한 타겟팅
 
 서드파티 쿠키가 몰락하면서 애드테크 업계는 큰 혼란을 겪었지만, 이는 오히려 기술적 진보를 앞당기는 촉매제가 되었습니다.
@@ -56,9 +89,16 @@ tags: ["문맥타게팅", "ContextualTargeting", "쿠키리스", "NLP", "시맨�
 
 데이터가 사라진 시대, 마케터가 집중해야 할 것은 숫자가 아니라 **'콘텐츠의 맥락'**입니다.
 
+### 🛠️ 실무 마케터 Action Items
+
+1.  **문맥 타게팅 A/B 테스트 시작**: 현재 운영 중인 행동 타게팅 캠페인의 10~20% 예산을 문맥 타게팅으로 분리하여 성과를 비교 측정하세요.
+2.  **부정 문맥 차단 + 긍정 문맥 선택**: 단순히 위험한 키워드를 차단(Blocklist)하는 것을 넘어, 내 브랜드와 시너지를 낼 수 있는 긍정적 문맥을 적극적으로 선택(Allowlist)하는 전략으로 전환하세요.
+3.  **Video Contextual 도입 검토**: 유튜브, 틱톡 등 영상 매체에 대한 프레임 단위 분석(Computer Vision) 기반의 문맥 타게팅 벤더를 테스트하여, 쿠키 없이도 영상 환경에서의 광고 관련성(Relevance)을 확보하세요.
+
 ---
 
 ## 📚 참고자료
-1. *The Resurgence of Contextual Advertising in a Post-Cookie World* (쿠키리스 시대의 문맥 타게팅 보고서)
-2. *Deep Learning for Semantic Analysis in AdTech* (자연어 처리 및 감정 분석 작동 원리)
-3. IAB (Interactive Advertising Bureau), *Brand Safety and Contextual Targeting Guidelines* 
+1. SilverPush, *Global Contextual Advertising Market Report*, 2024–2025.
+2. DoubleVerify / IAS, *Contextual vs Behavioral Targeting Performance Study*, 2025.
+3. GumGum, *Computer Vision for Contextual Intelligence* (기술 백서).
+4. IAB (Interactive Advertising Bureau), *Brand Safety and Contextual Targeting Guidelines*.

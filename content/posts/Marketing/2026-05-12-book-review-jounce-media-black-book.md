@@ -31,10 +31,32 @@ SPO(Supply Path Optimization) 편에서 등장하는 가장 유명한 시각 자
 
 이 과정에서 광고주는 **"나 자신과 입찰 경쟁을 하는(Bidding against oneself)"** 기형적인 현상이 벌어지며 불필요한 단가 상승과 수수료 중복 지출을 겪게 됩니다.
 
+#### 📊 ANA 벤치마크 스터디: 광고주 $1의 행방
+
+ANA(Association of National Advertisers)의 2024년 프로그래매틱 투명성 벤치마크에 따르면:
+
+| 항목 | 비율 |
+| :--- | :---: |
+| DSP에 투입된 광고주 예산 ($1.00) | 100% |
+| 실제 매체에 도달하는 금액 (Working Media) | **$0.44 (44분)** |
+| 기술 수수료 (Tech Tax) + 비투명 병목 | **$0.56 (56분)** |
+
+2023년에는 이 비율이 $0.36(36분)에 불과했으니, SPO 노력이 시장 전반에 확산되면서 투명성이 개선되고 있음을 보여줍니다. 그러나 여전히 **광고주 예산의 절반 이상이 미들맨에게 빠져나간다는 사실**은 변함이 없습니다.
+
 ### 2. 헤더 비딩(Header Bidding)의 민낯
 매체(퍼블리셔) 입장에서 쓰인 헤더 비딩 편은 구글의 독점을 꼬집습니다. 
-과거에는 구글(AdX)이 가장 먼저 광고를 살 권리(Waterfall 방식)를 독점했습니다. 이를 타파하기 위해 매체들이 웹사이트 헤더(Header) 영역에 자바스크립트를 삽입하여 구글을 포함한 모든 SSP가 **'동시에'** 입찰하게 만든 것이 헤더 비딩입니다. 
-책은 이 기술적 반란이 퍼블리셔의 수익(Yield)을 어떻게 30% 이상 끌어올렸는지 수치로 증명합니다.
+과거에는 구글(AdX)이 가장 먼저 광고를 살 권리(Waterfall 방식)를 독점했습니다. 이를 타파하기 위해 매체들이 웹사이트 헤더(Header) 영역에 자바스크립트(**Prebid.js** 등의 오픈소스 라이브러리)를 삽입하여 구글을 포함한 모든 SSP가 **'동시에'** 입찰하게 만든 것이 헤더 비딩입니다.
+
+책은 이 기술적 반란이 퍼블리셔의 수익(Yield)을 어떻게 **30% 이상** 끌어올렸는지 수치로 증명합니다.
+
+> 헤더 비딩은 단순한 기술 변화가 아니라, 매체의 광고 수익 주도권을 특정 플랫폼(구글)의 독점에서 해방시킨 **구조적 혁명**이었다.
+
+### 3. ads.txt 와 sellers.json: 신뢰의 기반
+
+SPO를 논할 때 빠질 수 없는 기술적 기반이 있습니다. IAB가 제정한 **ads.txt**(매체측)와 **sellers.json**(SSP측) 파일입니다.
+
+*   **ads.txt**: 퍼블리셔가 자신의 광고 지면을 판매할 권한을 부여한 SSP 목록을 공개적으로 선언하는 파일입니다. DSP는 입찰 전 이 파일을 검증하여 도메인 스푸핑(Domain Spoofing)을 방지합니다.
+*   **sellers.json**: SSP가 자신을 통해 거래되는 모든 판매자(퍼블리셔/리셀러)의 정체를 공개하는 파일입니다. 이 두 파일을 교차 검증하면 중간 경로의 투명성을 확보할 수 있습니다.
 
 ### 3. PMP(Private Marketplace)로의 대이동 트렌드
 오픈 익스체인지(OEX)는 말 그대로 누구나 들어올 수 있는 '난장판'입니다. 이곳에는 앞서 다룬 MFA 사이트와 가짜 트래픽이 득실거립니다. 
@@ -47,11 +69,24 @@ SPO(Supply Path Optimization) 편에서 등장하는 가장 유명한 시각 자
 이 가이드 시리즈는 "어떻게 타겟팅을 잘 할까"를 넘어 "어떻게 파이프라인(Supply Path)을 잘 뚫을까"를 고민하게 만듭니다.
 
 *   **실무 추천 액션 (SPO 적용하기)**: 
-    내가 쓰는 DSP 대시보드에서 똑같은 조선일보 웹사이트 지면을 사더라도 어떤 SSP(예: Rubicon, PubMatic, Google AdX)를 거쳐서 사는 게 가장 저렴한 수수료(Take rate)를 지불하는지 분석해야 합니다. 불필요하고 중복되는 SSP 경로를 차단(Turn off)하는 것만으로도 CPA(전환단가)를 즉시 낮출 수 있습니다.
+    내가 쓰는 DSP 대시보드에서 똑같은 조선일보 웹사이트 지면을 사더라도 어떤 SSP(예: Magnite, PubMatic, Google AdX)를 거쳐서 사는 게 가장 저렴한 수수료(Take rate)를 지불하는지 분석해야 합니다.
+
+#### 📊 SPO 도입 시 기대 효과
+
+| 지표 | 개선 효과 | 출처 |
+| :--- | :---: | :---: |
+| CPM(단가) 절감 | 평균 **20%** | Programmatic I/O 2025 |
+| 미디어 생산성 향상 | 약 **35%** | ANA Supply Chain Study |
+| 탄소 발자국 감소 | 약 **56%** | Internet Retailing |
+
+불필요하고 중복되는 SSP 경로를 차단(Turn off)하는 것만으로도 CPA(전환단가)를 즉시 낮출 수 있습니다. 나아가, 중복 입찰을 제거함으로써 불필요한 서버 호출이 줄어 **환경적 지속가능성(Sustainability)**에도 기여할 수 있다는 점은 주목할 만합니다.
 
 ---
 
 ## 📚 참고자료
 1. Jounce Media, *The Little Black Book of Supply Path Optimization*.
 2. Jounce Media, *The Little Black Book of Header Bidding*.
-3. (해당 시리즈는 Jounce Media 공식 웹사이트에서 PDF 형태로 정기 배포됩니다.)
+3. ANA(Association of National Advertisers), *Programmatic Benchmark Study*, 2024.
+4. IAB Tech Lab, *ads.txt & sellers.json Specification*.
+5. Prebid.org, *Prebid.js: Open-Source Header Bidding Solution*.
+6. (해당 시리즈는 Jounce Media 공식 웹사이트에서 PDF 형태로 정기 배포됩니다.)
