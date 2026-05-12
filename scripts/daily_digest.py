@@ -139,7 +139,7 @@ def merge_and_create_digest():
     if not articles and deep_research_md:
         print("\n📝 뉴스레터 기사 없음 — 딥 리서치 단독 포스트 생성")
         final_md = deep_research_md
-        post_title = deep_research_title or f"Daily Top 1: {now_kst.strftime('%m월 %d일')} 주요 AI 뉴스"
+        post_title = deep_research_title or f"Daily Top 10: {now_kst.strftime('%m월 %d일')} 주요 AI 뉴스"
         save_final_post(date_str, post_title, final_md)
         return
 
@@ -171,8 +171,8 @@ def merge_and_create_digest():
     if deep_research_md:
         deep_research_section = f"""
 
-[Deep Research — 오늘의 핵심 1개 뉴스 심층 분석]
-아래는 구글 검색 기반 딥 리서치로 작성된 오늘의 가장 중요한 뉴스 1개의 심층 분석입니다.
+[Deep Research — 오늘의 Top 10 심층 분석]
+아래는 구글 검색 기반 딥 리서치로 작성된 오늘의 Top 10 뉴스 심층 분석입니다.
 이 내용을 포스트 **가장 상단**에 배치하세요 (있는 그대로 포함, 수정하지 말 것):
 
 {deep_research_md}
@@ -194,26 +194,26 @@ def merge_and_create_digest():
 0. **URL 위생 규칙**: 원문 링크로 `substack.com/redirect/...`, `google.com/url?...`, `t.co/...` 등 리다이렉트/트래커 URL을 절대 사용하지 마세요. 반드시 최종 목적지 URL만 사용합니다.
 0. **엄격한 팩트 준수**: 제공된 JSON 데이터(제목, 요약, 수치 등)에 없는 외부 지식을 절대로 덧붙이거나 환각(Hallucination)을 통해 상상해서 지어내지 마세요. 철저하게 주어진 텍스트 내용 안에서만 병합하세요.
 1. **포스트 구성**:
-   - 딥 리서치 심층 뉴스가 있으면 포스트 **최상단**에 배치 (원문 그대로).
+   - 딥 리서치 Top 10이 있으면 포스트 **최상단**에 배치 (원문 그대로).
    - 이어서 뉴스레터/RSS 기사 기반 "📰 뉴스레터 주요 뉴스" 섹션 작성.
 2. **중복 뉴스 병합**: 같은 사건/발표를 다루는 기사들(keywords가 유사)을 하나로 합침.
    - 병합 시 모든 소스 이름을 "소스: A · B · C" 형태로 표기 (볼드체 없이)
    - 가장 상세한 summary를 기준으로 작성
-3. **중요도 기반 핵심 메인 뉴스 선별**:
-   - 뉴스레터/RSS에서 수집된 기사 중 **가장 중요한 1개 기사만** 메인 뉴스로 상세히 작성하세요. (단, 딥 리서치 뉴스에 이미 포함된 내용이라면, 두 번째로 중요한 뉴스를 메인으로 선택하세요.)
-   - 제목에는 아이콘(이모지)을 절대 사용하지 마세요.
+3. **중요도 기반 Top 10 선별 및 정렬**:
+   - 뉴스레터/RSS에서 수집된 기사 중 중요도를 평가하여 **상위 10개 기사만** 메인 뉴스로 작성.
+   - 각 기사의 제목에는 아이콘(이모지)을 절대 사용하지 마세요.
 4. **메인 뉴스 포맷**:
    - 포스트 최상단에 전체 메인 제목(H1, `# 제목`)을 절대 쓰지 마세요.
-   - 각 메인 뉴스: `## 제목`
+   - 각 뉴스: `## 순번. 제목`
    - 본문 2-4문장 + 핵심 수치가 있으면 불릿으로 강조
-   - 메인 뉴스가 끝날 때 다음 형식으로 출처 표기 (반드시 기사 URL 링크를 포함할 것):
-     `<br><small style="color: #888;">소스: 7min.ai · AITimes &nbsp;|&nbsp; 🔗 [원문 보기](URL)</small>`
-   - 메인 뉴스 끝에는 빈 줄 + `---` 구분선 + 빈 줄
-5. **기타 뉴스**: 메인 뉴스 이외 모든 나머지 기사(3점 이상 및 3점 미만 전체)는 `## 📌 기타 뉴스 모아보기` 섹션에서 소스별 그룹핑.
-   - 소스별 하위 제목은 `### 🔹 소스: 매체명` 형식으로 작성.
-   - 각 기사는 반드시 `* **[기사 제목](URL)**: 요약 한 줄` 형태로 작성하여 **URL 링크가 올바르게 작동**하도록 하세요. (데이터의 'url' 필드 사용). 만약 URL이 없다면 `* **기사 제목**: 요약 한 줄` 형태로 작성.
-6. **post_title**: **오늘의 가장 중요한 핵심 뉴스 1개**를 선정하여, 뉴스 내용을 상세히 알 수 있도록 제목 길이를 기존보다 **1.5배 이상 길게** 작성하세요. 구체적이고 명확한 서술형 또는 문장형으로 작성해야 합니다. (예: "구글, 제미니 1.5 플래시 모델 대규모 업데이트를 통해 멀티모달 컨텍스트 윈도우 대폭 확장")
-7. **top_topics**: 파일명에 사용할 수 있도록, 선정한 1개의 핵심 뉴스를 표현하는 영문 소문자와 하이픈(-)으로만 구성된 단일 키워드 문자열 1개만 배열에 담아 제공하세요. (예: ["gemini-1-5-flash-context-update"])
+   - 출처 표기:
+     `<br><small style="color: #888;">소스: 7min.ai · AITimes &nbsp;|&nbsp; 🔗 [원문 보기](URL) · [원문 2](URL)</small>`
+   - 각 기사 끝에는 빈 줄 + `---` 구분선 + 빈 줄
+5. **기타 뉴스**: Top 10 이외 기사는 `## 📌 기타 뉴스 모아보기` 섹션에서 소스별 그룹핑.
+   - 소스 홈페이지 링크는 걸지 말고 `### 🔹 소스: 매체명` 형식으로 작성하세요.
+   - 각 기사는 `* **[기사 제목](기사 URL)**: 요약 한 줄` 형태로 작성하며, URL이 없는 기사도 제외하지 말고 링크 없이 `* **기사 제목**: 요약 한 줄` 형태로 작성하세요.
+6. **post_title**: 날짜나 'AI 데일리 다이제스트' 등의 단어 없이, **가장 중요한 상위 3~4개 뉴스의 구체적인 핵심 내용을 포함하여 기존보다 1.5배 이상 길고 상세하게** 콤마(,)로 연결하여 작성하세요. (예: "구글 제미니 1.5 플래시 멀티모달 컨텍스트 확장, 엔비디아 차세대 AI 칩 블랙웰 혁신 아키텍처 공개, 오픈AI 개발자용 초경량 API 모델 전격 출시")
+7. **top_topics**: 파일명에 사용할 수 있도록, 상위 3개 토픽을 영문 소문자와 하이픈(-)만 포함한 짧은 영문 키워드로 제공하세요. (예: ["google-gemini", "nvidia-blackwell", "openai-model"])
 """
 
     data = call_llm_with_retry(prompt, DIGEST_SCHEMA, label="Daily Digest")
@@ -274,11 +274,8 @@ category: 'AI News'
         cleaned_topics = [re.sub(r'[^a-z0-9\-]', '', t.lower()) for t in top_topics]
         cleaned_topics = [t for t in cleaned_topics if t]
         if cleaned_topics:
-            topic_slug = cleaned_topics[0]
-            if topic_slug.startswith("ai-daily-"):
-                slug = topic_slug
-            else:
-                slug = f"ai-daily-{topic_slug}"
+            topic_slug = "-".join(cleaned_topics[:3])
+            slug = f"ai-daily-{topic_slug}"
             
     filename = f"{date_str}-{slug}.md"
     file_path = os.path.join(POSTS_DIR, filename)

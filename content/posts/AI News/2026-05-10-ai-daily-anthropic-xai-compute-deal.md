@@ -1,5 +1,5 @@
 ---
-title: 'Anthropic, Elon Musk의 xAI 컴퓨팅 자원 전량 확보하며 AI 모델 개발 및 인프라 시장의 전략적 지형 변화를 주도하다'
+title: '5월 10일 AI 데일리 — Anthropic, 일론 머스크 xAI의 콜로서스 1 데이터센터 22만장 GPU 컴퓨팅 자원 전량 임대로 AI 인프라 확충 및 오픈AI 견제 본격화'
 date: '2026-05-10'
 excerpt: 'Anthropic이 Elon Musk의 xAI가 소유한 멤피스 데이터센터 ''콜로서스 1''의 모든 컴퓨팅 자원을 클로드Claude 모델 학습 및 서빙에 활용하기로 합의했다. 이 계약은 22만 장 규모의 엔비디아NVID...'
 category: 'AI News'

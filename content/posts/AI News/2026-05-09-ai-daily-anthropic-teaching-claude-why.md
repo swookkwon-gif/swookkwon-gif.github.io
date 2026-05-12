@@ -1,5 +1,5 @@
 ---
-title: 'Anthropic, AI 모델의 내부 사고 과정을 자연어로 해독하고 에이전트 정렬 문제를 해결하는 혁신적인 연구 결과 발표'
+title: '5월 9일 AI 데일리 — Anthropic, AI 모델의 내부 사고 과정을 자연어로 해독하는 NLA 도구 개발 및 에이전트 정렬 문제 해결을 통한 AI 안전성 혁신 연구 결과 발표'
 date: '2026-05-09'
 excerpt: 'Anthropic은 2026년 5월 7일, 인공지능 모델의 내부 사고 과정을 해독하고 에이전트 정렬agentic misalignment 문제를 해결하는 데 중요한 진전을 이룬 두 가지 연구 논문을 발표했다. 이 중 ...'
 category: 'AI News'
