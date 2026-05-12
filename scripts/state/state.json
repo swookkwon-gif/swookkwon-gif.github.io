@@ -665,7 +665,51 @@
         "http://www.newstheai.com/news/articleView.html?idxno=20653",
         "http://www.newstheai.com/news/articleView.html?idxno=20652",
         "http://www.newstheai.com/news/articleView.html?idxno=20654",
-        "http://www.newstheai.com/news/articleView.html?idxno=20656"
+        "http://www.newstheai.com/news/articleView.html?idxno=20656",
+        "https://www.aitimes.com/news/articleView.html?idxno=210399",
+        "https://www.aitimes.com/news/articleView.html?idxno=210320",
+        "https://www.aitimes.com/news/articleView.html?idxno=210375",
+        "https://www.aitimes.com/news/articleView.html?idxno=210386",
+        "https://www.aitimes.com/news/articleView.html?idxno=210412",
+        "https://www.aitimes.com/news/articleView.html?idxno=210415",
+        "https://www.aitimes.com/news/articleView.html?idxno=210406",
+        "https://www.aitimes.com/news/articleView.html?idxno=210403",
+        "https://www.aitimes.com/news/articleView.html?idxno=210404",
+        "https://www.aitimes.com/news/articleView.html?idxno=210413",
+        "https://www.aitimes.com/news/articleView.html?idxno=210419",
+        "https://www.aitimes.com/news/articleView.html?idxno=210420",
+        "https://www.aitimes.com/news/articleView.html?idxno=210392",
+        "https://www.aitimes.com/news/articleView.html?idxno=210409",
+        "https://www.aitimes.com/news/articleView.html?idxno=210397",
+        "https://www.aitimes.com/news/articleView.html?idxno=210417",
+        "https://www.aitimes.com/news/articleView.html?idxno=210414",
+        "https://www.aitimes.com/news/articleView.html?idxno=210401",
+        "https://www.aitimes.com/news/articleView.html?idxno=210410",
+        "https://www.aitimes.com/news/articleView.html?idxno=210408",
+        "https://www.aitimes.com/news/articleView.html?idxno=210411",
+        "https://www.aitimes.com/news/articleView.html?idxno=210405",
+        "https://www.aitimes.com/news/articleView.html?idxno=210382",
+        "https://www.aitimes.com/news/articleView.html?idxno=210387",
+        "https://www.aitimes.com/news/articleView.html?idxno=210400",
+        "https://www.aitimes.com/news/articleView.html?idxno=210368",
+        "https://www.aitimes.com/news/articleView.html?idxno=210361",
+        "https://www.aitimes.com/news/articleView.html?idxno=210394",
+        "https://www.aitimes.com/news/articleView.html?idxno=210371",
+        "https://www.aitimes.com/news/articleView.html?idxno=210363",
+        "https://www.aitimes.com/news/articleView.html?idxno=210356",
+        "https://kr.benzinga.com/news/usa/stocks/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%A0%EC%83%8C%EB%94%94%EC%8A%A4%ED%81%AC%EA%B0%80-%EC%8F%98%EC%95%84%EC%98%AC%EB%A6%B0-%EA%B3%B5ai-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B4%91/",
+        "https://kr.benzinga.com/news/usa/trading/%ED%80%80%ED%85%80-%EC%BB%B4%ED%93%A8%ED%8C%85-1%EB%B6%84%EA%B8%B0-%ED%98%B8%EC%8B%A4%EC%A0%81-%EB%B0%9C%ED%91%9C-%ED%9B%84-%EC%A3%BC%EA%B0%80-%EA%B8%89%EB%93%B1%EC%84%B8/",
+        "https://kr.benzinga.com/crypto/bitcoin/%EC%95%94%ED%98%B8%ED%99%94%ED%8F%90%EC%9D%98-%EB%8C%80%EB%B6%80-%EB%A7%88%EC%9D%B4%ED%81%B4-%ED%84%B0%ED%95%80-%EB%B9%84%ED%8A%B8%EC%BD%94%EC%9D%B8-%EA%B3%B5%EB%A7%A4%EB%8F%84%ED%95%98%EB%8A%94/",
+        "https://kr.benzinga.com/news/usa/trading/%ED%9E%98%EC%8A%A4-%EC%95%A4-%ED%97%88%EC%8A%A4-%ED%99%94%EC%9A%94%EC%9D%BC-%EC%A3%BC%EA%B0%80-%EA%B8%89%EB%9D%BD%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0%EB%8A%94/",
+        "https://kr.benzinga.com/news/usa/economy/%EC%9D%B8%ED%94%8C%EB%A0%88%EC%9D%98-%EC%97%AD%EC%8A%B5-%EB%AF%B8%EA%B5%AD-4%EC%9B%94-%EC%9D%B8%ED%94%8C%EB%A0%88%EC%9D%B4%EC%85%98-3-8%EB%A1%9C-%EA%B8%89%EB%93%B1%EC%97%B0/",
+        "https://kr.benzinga.com/news/usa/analystratings/ai-%EB%9E%A0%EB%A6%AC-%EC%9D%B4%EC%A0%9C-%EC%A3%BC%EC%B0%A8%EC%9E%A5-%EB%B2%97%EC%96%B4%EB%82%AC%EC%9D%84-%EB%BF%90%EB%8C%80%EB%8B%88%EC%96%BC-%EB%89%B4%EB%A8%BC-%EB%A7%88/",
+        "https://kr.benzinga.com/news/usa/trading/%ED%95%98%EC%9B%8C%EB%93%9C-%EB%9F%AC%ED%8A%B8%EB%8B%89-%EB%AF%B8%EA%B5%AD-%EB%B0%98%EB%8F%84%EC%B2%B4-%EC%A0%9C%EC%A1%B0%EC%97%85-%EB%B6%80%ED%99%9C-%EC%A4%91%EB%A9%94/",
+        "https://kr.benzinga.com/news/usa/analystratings/1999%EB%85%84%EB%B3%B4%EB%8B%A4-%EB%8D%94-%EC%9E%94%EC%9D%B8%ED%95%98%EB%8B%A4-%EC%A7%90-%ED%81%AC%EB%A0%88%EC%9D%B4%EB%A8%B8%EC%9D%98-%EA%B2%BD%EA%B3%A0%EB%8B%B7%EC%BB%B4/",
+        "https://kr.benzinga.com/news/usa/trading/560%EC%96%B5-%EB%8B%AC%EB%9F%AC-%EC%95%88-%EB%B0%9B%EC%95%84-%EC%9D%B4%EB%B2%A0%EC%9D%B4-%EA%B2%8C%EC%9E%84%EC%8A%A4%ED%83%91%EC%9D%98-%EC%9D%B8%EC%88%98-%EC%A0%9C%EC%95%88-%EA%B1%B0%EC%A0%88/",
+        "https://kr.benzinga.com/news/usa/othermarkets/%ED%8A%B8%EB%9F%BC%ED%94%84-%EB%B0%A9%EC%A4%91-%EB%AF%B8%EC%A4%91-%EB%AC%B4%EC%97%AD-%EA%B0%88%EB%93%B1-%EB%B6%84%EC%88%98%EB%A0%B9%EA%B2%BD%EC%A0%9C-%EB%B8%8C%EB%A0%88/",
+        "http://www.newstheai.com/news/articleView.html?idxno=20659",
+        "http://www.newstheai.com/news/articleView.html?idxno=20660",
+        "http://www.newstheai.com/news/articleView.html?idxno=20658"
     ],
     "gmail": [
         "19dc9e95c340f362",
@@ -816,7 +860,12 @@
         "19e168036c8df48b",
         "19e16502f8a028e9",
         "19e14e1806be8328",
-        "19e14799fb808542"
+        "19e14799fb808542",
+        "19e1c6c11634db36",
+        "19e1be6410af5b69",
+        "19e1bd4aa5749a06",
+        "19e1ba5bd9e2de9d",
+        "19e1b81f8f653ac5"
     ],
     "evaluations": {
         "TestSender": [
@@ -1188,66 +1237,6 @@
             }
         ],
         "7min.ai": [
-            {
-                "target": "MIT MathNet release",
-                "score": 3,
-                "reasoning": "Important open-source dataset for AI research, particularly in mathematical reasoning. Contributes to the advancement of AI capabilities.",
-                "date": "2026-04-26"
-            },
-            {
-                "target": "China blocks US capital for tech firms",
-                "score": 4,
-                "reasoning": "Significant geopolitical development, hardening the bifurcation of global AI investment and impacting Chinese AI startups.",
-                "date": "2026-04-26"
-            },
-            {
-                "target": "Finma warning on Anthropic Mythos",
-                "score": 4,
-                "reasoning": "Critical warning from a financial regulator about the speed of AI-driven cyber threats, highlighting systemic risks for the financial sector. High safety and regulatory relevance.",
-                "date": "2026-04-26"
-            },
-            {
-                "target": "Huawei-DeepSeek chip adaptation",
-                "score": 5,
-                "reasoning": "Crucial development for China's AI self-reliance, demonstrating tight hardware-software integration and directly challenging US silicon dominance. Aligns with the open-source LLM and geopolitical tech competition themes.",
-                "date": "2026-04-26"
-            },
-            {
-                "target": "ComfyUI funding round",
-                "score": 3,
-                "reasoning": "Funding for a tool that gives creators more control over generative AI outputs, reflecting a trend in user demand for more nuanced control. Relevant for the generative AI ecosystem.",
-                "date": "2026-04-26"
-            },
-            {
-                "target": "UK AI data center emissions estimate",
-                "score": 4,
-                "reasoning": "Significant revision of environmental impact estimates for AI, highlighting the massive energy footprint and policy implications for sustainability.",
-                "date": "2026-04-26"
-            },
-            {
-                "target": "OpenAI GPT-5.5 release",
-                "score": 5,
-                "reasoning": "Major new model release from a frontier AI company, setting new benchmarks and indicating a strategic direction towards a \"superapp.\" High market and technological impact.",
-                "date": "2026-04-26"
-            },
-            {
-                "target": "DeepSeek V4 open-source release",
-                "score": 5,
-                "reasoning": "Another major open-source LLM release, with a massive parameter count and claims of competitiveness with closed frontier models. Directly aligns with the few-shot example's emphasis on open-source LLM advancements and China's AI push.",
-                "date": "2026-04-26"
-            },
-            {
-                "target": "Anthropic Claude Code postmortem",
-                "score": 3,
-                "reasoning": "Transparency from an AI company about model degradation and its causes. Important for understanding the challenges of maintaining AI model quality in production.",
-                "date": "2026-04-26"
-            },
-            {
-                "target": "Anthropic Mythos breach details",
-                "score": 4,
-                "reasoning": "Significant security incident for a frontier model, highlighting vulnerabilities beyond technical exploits (social engineering, contractor knowledge). Raises concerns about AI model security and access control.",
-                "date": "2026-04-26"
-            },
             {
                 "target": "Meta layoffs",
                 "score": 3,
@@ -2408,6 +2397,76 @@
                 "reasoning": "\ub85c\ubd07 \uacf5\ud559\uc758 \uad70\uc0ac\uc801 \uc751\uc6a9\uc5d0 \ub300\ud55c \uc18c\uc2dd\uc73c\ub85c, AI \uae30\uc220\uc758 \uc911\uc694\ud55c \uc751\uc6a9 \ubd84\uc57c\uc774\uc9c0\ub9cc \uc624\ud508\uc18c\uc2a4 LLM\uc758 \ud575\uc2ec \uae30\uc220 \ubc1c\uc804 \ub3d9\ud5a5\uacfc\ub294 \uac70\ub9ac\uac00 \uc788\uc5b4 \uc911\uac04\ubcf4\ub2e4 \ub0ae\uc740 \uc810\uc218\ub97c \ubd80\uc5ec\ud588\uc2b5\ub2c8\ub2e4.",
                 "url": "https://www.bloomberg.com/news/articles/2026-05-11/south-korea-explores-hyundai-robots-for-frontline-army-deployment",
                 "date": "2026-05-12"
+            },
+            {
+                "target": "Google says hackers built a working zero-day with AI for 'mass exploitation event'",
+                "score": 4,
+                "reasoning": "AI\uac00 \uc0ac\uc774\ubc84 \ubcf4\uc548 \ubd84\uc57c, \ud2b9\ud788 \uc81c\ub85c\ub370\uc774 \uc775\uc2a4\ud50c\ub85c\uc787 \uac1c\ubc1c\uc5d0 \ud65c\uc6a9\ub418\ub294 \uc911\uc694\ud55c \ub3d9\ud5a5\uc744 \ub2e4\ub8e8\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc774\ub294 AI\uc758 \uc774\uc911 \uc0ac\uc6a9\uc131(dual-use)\uacfc \uc7a0\uc7ac\uc801 \uc704\ud5d8\uc131\uc744 \ubcf4\uc5ec\uc8fc\ub294 \ud575\uc2ec \uc0ac\ub840\ub85c, AI \uae30\uc220\uc758 \uc0ac\ud68c\uc801 \uc601\ud5a5\ub825\uc744 \uc774\ud574\ud558\ub294 \ub370 \uc911\uc694\ud569\ub2c8\ub2e4. \uc624\ud508\uc18c\uc2a4 LLM\uc758 \uae30\uc220 \ubc1c\uc804 \uc790\uccb4\ub294 \uc544\ub2c8\uc9c0\ub9cc, AI \uc751\uc6a9 \ubd84\uc57c\uc758 \uc911\uc694\ud55c \uc9c4\uc804\uc744 \ub098\ud0c0\ub0c5\ub2c8\ub2e4.",
+                "url": "https://cloud.google.com/blog/topics/threat-intelligence/ai-vulnerability-exploitation-initial-access?utm_source=7min&amp;utm_medium=email&amp;utm_campaign=ai-news-2026-05-12",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "Thinking Machines unveils full-duplex 'interaction models' with 0.4s response",
+                "score": 4,
+                "reasoning": "Mira Murati\uc758 Thinking Machines Lab\uc5d0\uc11c \uacf5\uac1c\ud55c '\uc0c1\ud638\uc791\uc6a9 \ubaa8\ub378'\uc740 0.4\ucd08\uc758 \uc751\ub2f5 \uc9c0\uc5f0 \uc2dc\uac04\uacfc \ud480-\ub4c0\ud50c\ub809\uc2a4 \uc2dc\uc2a4\ud15c\uc744 \ud2b9\uc9d5\uc73c\ub85c \ud569\ub2c8\ub2e4. \uc774\ub294 AI\uc640\uc758 \uc2e4\uc2dc\uac04 \uc0c1\ud638\uc791\uc6a9 \uae30\uc220 \ubc1c\uc804\uc5d0 \uc788\uc5b4 \uc911\uc694\ud55c \uc774\uc815\ud45c\uc774\uba70, \uc778\uac04\uacfc \uc720\uc0ac\ud55c \ub300\ud654 \uacbd\ud5d8\uc744 \uc81c\uacf5\ud558\ub294 \ub370 \uae30\uc5ec\ud560 \uae30\uc220\uc801 \uc9c4\ubcf4\uc785\ub2c8\ub2e4. \ube44\ub85d \ub3c5\uc810 \ubaa8\ub378\uc774\uc9c0\ub9cc, AI \uc778\ud130\ub799\uc158 \ud328\ub7ec\ub2e4\uc784\uc744 \ubc14\uafc0 \uc7a0\uc7ac\ub825\uc774 \uc788\uc2b5\ub2c8\ub2e4.",
+                "url": "https://thinkingmachines.ai/blog/interaction-models/?utm_source=7min&amp;utm_medium=email&amp;utm_campaign=ai-news-2026-05-12",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "DeepMind's AI co-mathematician tops FrontierMath Tier 4 at 48%",
+                "score": 4,
+                "reasoning": "Google DeepMind\uc758 \uc5d0\uc774\uc804\ud2b8 \uc2dc\uc2a4\ud15c\uc774 \ubcf5\uc7a1\ud55c \uc218\ud559 \ubb38\uc81c \ud574\uacb0\uc5d0\uc11c \ub6f0\uc5b4\ub09c \uc131\ub2a5\uc744 \ubcf4\uc778 \uac83\uc740 AI\uc758 \ucd94\ub860 \ub2a5\ub825\uacfc \uacfc\ud559\uc801 \ubc1c\uacac \uc7a0\uc7ac\ub825\uc744 \ubcf4\uc5ec\uc8fc\ub294 \uc911\uc694\ud55c \uc0ac\ub840\uc785\ub2c8\ub2e4. '\uc5d0\uc774\uc804\ud2b8 \uc2a4\uce90\ud3f4\ub529'\uc774 \ubaa8\ub378 \ud06c\uae30\ubcf4\ub2e4 \uc911\uc694\ud574\uc9c4\ub2e4\ub294 \uc2dc\uc0ac\uc810\uc740 AI \uc5f0\uad6c \ubc29\ud5a5\uc5d0 \ud070 \uc601\ud5a5\uc744 \ubbf8\uce60 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \ub3c5\uc810 \ubaa8\ub378 \uae30\ubc18\uc774\uc9c0\ub9cc, AI \uae30\uc220 \ubc1c\uc804 \ub3d9\ud5a5\uc5d0 \ub300\ud55c \ub192\uc740 \uc911\uc694\ub3c4\ub97c \uac00\uc9d1\ub2c8\ub2e4.",
+                "url": "https://arxiv.org/pdf/2605.06651?utm_source=7min&amp;utm_medium=email&amp;utm_campaign=ai-news-2026-05-12",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "GitLab cuts jobs and flattens org chart to meet the agentic era",
+                "score": 3,
+                "reasoning": "AI, \ud2b9\ud788 \uc5d0\uc774\uc804\ud2b8 AI\uac00 \uae30\uc5c5\uc758 \uc870\uc9c1 \uad6c\uc870\uc640 \uc778\ub825 \uc6b4\uc601\uc5d0 \ubbf8\uce58\ub294 \uc601\ud5a5\uc744 \ubcf4\uc5ec\uc8fc\ub294 \uc0ac\ub840\uc785\ub2c8\ub2e4. \uae30\uc220 \ubc1c\uc804 \uc790\uccb4\ubcf4\ub2e4\ub294 AI\uac00 \uc0b0\uc5c5\uacfc \ub178\ub3d9 \uc2dc\uc7a5\uc5d0 \uac00\uc838\uc624\ub294 \ubcc0\ud654\ub97c \ub2e4\ub8e8\uace0 \uc788\uc5b4 \uc911\uc694\ud558\uc9c0\ub9cc, \uc624\ud508\uc18c\uc2a4 LLM \uae30\uc220 \ubc1c\uc804 \ub3d9\ud5a5\uacfc\ub294 \uc9c1\uc811\uc801\uc778 \uad00\ub828\uc774 \uc801\uc2b5\ub2c8\ub2e4.",
+                "url": "https://www.bloomberg.com/news/articles/2026-05-11/gitlab-says-will-cut-jobs-to-spend-on-growth-in-agentic-era?utm_source=7min&amp;utm_medium=email&amp;utm_campaign=ai-news-2026-05-12",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "Microsoft targeted $92B return on early OpenAI investment",
+                "score": 2,
+                "reasoning": "Microsoft\uc640 OpenAI \uac04\uc758 \ud22c\uc790 \ubc0f \uae30\uc5c5 \uc9c0\ubc30 \uad6c\uc870\uc5d0 \ub300\ud55c \uc18c\uc2dd\uc73c\ub85c, AI \uc0b0\uc5c5\uc758 \uc7ac\uc815\uc801 \uce21\uba74\uc744 \ubcf4\uc5ec\uc8fc\uc9c0\ub9cc, AI \uae30\uc220 \ubc1c\uc804 \ub3d9\ud5a5\uc774\ub098 \uc624\ud508\uc18c\uc2a4 LLM\uacfc\ub294 \uc9c1\uc811\uc801\uc778 \uad00\ub828\uc774 \uc801\uc5b4 \uc810\uc218\uac00 \ub0ae\uc2b5\ub2c8\ub2e4.",
+                "url": "https://www.bloomberg.com/news/articles/2026-05-11/microsoft-targeted-92-billion-return-on-early-openai-investment?utm_source=7min&amp;utm_medium=email&amp;utm_campaign=ai-news-2026-05-12",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "Claude Platform on AWS goes generally available",
+                "score": 3,
+                "reasoning": "Anthropic\uc758 Claude \ud50c\ub7ab\ud3fc\uc774 AWS\uc5d0\uc11c \uc815\uc2dd \ucd9c\uc2dc\ub41c \uc18c\uc2dd\uc740 \ud074\ub77c\uc6b0\ub4dc \ud658\uacbd\uc5d0\uc11c\uc758 AI \ubaa8\ub378 \uc811\uadfc\uc131 \ubc0f \uc2dc\uc7a5 \uacbd\uc7c1 \uad6c\ub3c4\uc5d0 \uc911\uc694\ud55c \uc758\ubbf8\ub97c \uac00\uc9d1\ub2c8\ub2e4. \uae30\uc220\uc801 \uc9c4\ubcf4\ubcf4\ub2e4\ub294 \uc0c1\uc5c5\uc801 \ubc30\ud3ec \ubc0f \ud30c\ud2b8\ub108\uc2ed\uc5d0 \ucd08\uc810\uc744 \ub9de\ucd94\uace0 \uc788\uc5b4 \uc911\uac04 \uc810\uc218\ub97c \ubd80\uc5ec\ud569\ub2c8\ub2e4.",
+                "url": "https://claude.com/blog/claude-platform-on-aws?utm_source=7min&amp;utm_medium=email&amp;utm_campaign=ai-news-2026-05-12",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "OpenAI launches Daybreak, a Codex-based offensive security agent",
+                "score": 4,
+                "reasoning": "OpenAI\uc758 \uacf5\uaca9\ud615 \ubcf4\uc548 \uc5d0\uc774\uc804\ud2b8 'Daybreak' \ucd9c\uc2dc\ub294 AI\uac00 \uc0ac\uc774\ubc84 \ubcf4\uc548\uc758 \uacf5\uaca9 \ubc0f \ubc29\uc5b4 \uc601\uc5ed \ubaa8\ub450\uc5d0\uc11c \ud575\uc2ec \ub3c4\uad6c\ub85c \ubd80\uc0c1\ud558\uace0 \uc788\uc74c\uc744 \ubcf4\uc5ec\uc90d\ub2c8\ub2e4. \uc774\ub294 AI\uc758 \uc751\uc6a9 \ubc94\uc704 \ud655\uc7a5\uacfc \ud568\uaed8 \uc724\ub9ac\uc801, \uc0ac\ud68c\uc801 \ub17c\uc758\ub97c \ucd09\ubc1c\ud560 \uc911\uc694\ud55c \ubc1c\uc804\uc785\ub2c8\ub2e4. \ube44\ub85d \ub3c5\uc810 \ubaa8\ub378 \uae30\ubc18\uc774\uc9c0\ub9cc, AI \uc751\uc6a9\uc758 \uc911\uc694\ud55c \uae30\uc220\uc801 \uc9c4\uc804\uc744 \ub098\ud0c0\ub0c5\ub2c8\ub2e4.",
+                "url": "https://openai.com/index/openai-launches-the-deployment-company?utm_source=7min&amp;utm_medium=email&amp;utm_campaign=ai-news-2026-05-12",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "Baidu's Ernie 5.1 hits 4th on Search Arena at 6% of pretraining cost",
+                "score": 5,
+                "reasoning": "\ubc14\uc774\ub450\uc758 Ernie 5.1\uc740 \uc0ac\uc804 \ud559\uc2b5 \ube44\uc6a9\uc744 6%\ub85c \ub300\ud3ed \uc808\uac10\ud558\uba74\uc11c\ub3c4 DeepSeek-V4-Pro\ub97c \ub2a5\uac00\ud558\ub294 \uc131\ub2a5\uc744 \ubcf4\uc600\ub2e4\uace0 \uc8fc\uc7a5\ud569\ub2c8\ub2e4. \uc774\ub294 \uc624\ud508\uc18c\uc2a4 LLM\uc778 DeepSeek\uacfc \uc9c1\uc811 \ube44\uad50\ub418\uba70, AI \ubaa8\ub378\uc758 \ud6a8\uc728\uc131\uacfc \uc131\ub2a5 \uac04\uc758 \uade0\ud615\uc5d0 \ub300\ud55c \uc0c8\ub85c\uc6b4 \ud328\ub7ec\ub2e4\uc784\uc744 \uc81c\uc2dc\ud569\ub2c8\ub2e4. \uc624\ud508\uc18c\uc2a4 LLM \uc0dd\ud0dc\uacc4\uc5d0 \uc911\ub300\ud55c \uc601\ud5a5\uc744 \ubbf8\uce58\uace0 \uae30\uc220\uc801 \ubc1c\uc804 \ub3d9\ud5a5\uc744 \ub2e4\ub8e8\ub294 \ud575\uc2ec \uae30\uc0ac\uc774\ubbc0\ub85c \ucd5c\uace0 \uc810\uc218\ub97c \ubd80\uc5ec\ud569\ub2c8\ub2e4.",
+                "url": "https://the-decoder.com/baidus-ernie-5-1-cuts-94-percent-of-pre-training-costs-while-competing-with-top-models/?utm_source=7min&amp;utm_medium=email&amp;utm_campaign=ai-news-2026-05-12",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "GM lays off 600 IT workers to hire AI-native engineers",
+                "score": 3,
+                "reasoning": "GM\uc758 \ub300\uaddc\ubaa8 IT \uc778\ub825 \uac10\ucd95 \ubc0f AI \uc804\ubb38 \uc778\ub825 \ucc44\uc6a9\uc740 AI\uac00 \uc0b0\uc5c5 \uc804\ubc18\uc758 \uc778\ub825 \uad6c\uc870\ub97c \uc5b4\ub5bb\uac8c \uc7ac\ud3b8\ud558\uace0 \uc788\ub294\uc9c0\ub97c \ubcf4\uc5ec\uc8fc\ub294 \uba85\ud655\ud55c \uc0ac\ub840\uc785\ub2c8\ub2e4. \uc774\ub294 AI \uc2dc\ub300\uc758 \ub178\ub3d9 \uc2dc\uc7a5 \ubcc0\ud654\uc640 \uae30\uc5c5\uc758 \uc804\ub7b5\uc801 \ub300\uc751\uc744 \uc774\ud574\ud558\ub294 \ub370 \uc911\uc694\ud569\ub2c8\ub2e4.",
+                "url": "https://techcrunch.com/2026/05/11/gm-just-laid-off-hundreds-of-it-workers-to-hire-those-with-stronger-ai-skills/?utm_source=7min&amp;utm_medium=email&amp;utm_campaign=ai-news-2026-05-12",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "Cerebras upsizes IPO to $4.8B as orders surge",
+                "score": 3,
+                "reasoning": "AI \uce69 \uc81c\uc870\uc0ac Cerebras\uc758 IPO \uaddc\ubaa8 \uc0c1\ud5a5 \uc870\uc815\uc740 AI \uc778\ud504\ub77c \ubc0f \ud558\ub4dc\uc6e8\uc5b4 \ubd84\uc57c\uc5d0 \ub300\ud55c \uc9c0\uc18d\uc801\uc778 \ud22c\uc790 \uc5f4\uae30\uc640 \uc2dc\uc7a5\uc758 \ub192\uc740 \uae30\ub300\ub97c \ubc18\uc601\ud569\ub2c8\ub2e4. AI \uae30\uc220 \ubc1c\uc804\uc758 \uae30\ubc18\uc774 \ub418\ub294 \ud558\ub4dc\uc6e8\uc5b4 \uc2dc\uc7a5 \ub3d9\ud5a5\uc744 \ubcf4\uc5ec\uc8fc\uc9c0\ub9cc, LLM \uae30\uc220 \uc790\uccb4\uc758 \ubc1c\uc804\uacfc\ub294 \uac70\ub9ac\uac00 \uc788\uc5b4 \uc911\uac04 \uc810\uc218\ub97c \ubd80\uc5ec\ud569\ub2c8\ub2e4.",
+                "url": "https://www.bloomberg.com/news/articles/2026-05-11/ai-chipmaker-cerebras-systems-seeks-4-8-billion-in-upsized-ipo?utm_source=7min&amp;utm_medium=email&amp;utm_campaign=ai-news-2026-05-12",
+                "date": "2026-05-13"
             }
         ],
         "Azeem Azhar, Exponential View": [
@@ -5938,96 +5997,6 @@
         ],
         "TLDR AI": [
             {
-                "target": "OPENAI MISSES KEY REVENUE, USER TARGETS IN HIGH-STAKES SPRINT TOWARD IPO",
-                "score": 4,
-                "reasoning": "OpenAI\uc758 \uc7ac\uc815\uc801 \uc5b4\ub824\uc6c0\uacfc IPO \ubaa9\ud45c \ubbf8\ub2ec\uc740 AI \uc0b0\uc5c5\uc758 \uc120\ub450 \uc8fc\uc790\uc5d0\uac8c \uc911\uc694\ud55c \uc18c\uc2dd\uc774\uba70, \uc804\ubc18\uc801\uc778 \uc2dc\uc7a5 \ub3d9\ud5a5\uc744 \ud30c\uc545\ud558\ub294 \ub370 \ud544\uc218\uc801\uc785\ub2c8\ub2e4.",
-                "date": "2026-04-29"
-            },
-            {
-                "target": "OPENAI SMARTPHONE RUMORS",
-                "score": 2,
-                "reasoning": "OpenAI\uc758 \uc2a4\ub9c8\ud2b8\ud3f0 \uac1c\ubc1c \ub8e8\uba38\ub294 \ud765\ubbf8\ub86d\uc9c0\ub9cc, \uc544\uc9c1 \ud655\uc815\ub418\uc9c0 \uc54a\uc740 \uc18c\uc2dd\uc73c\ub85c \uc0ac\uc6a9\uc790\uc5d0\uac8c \ubbf8\uce58\ub294 \uc9c1\uc811\uc801\uc778 \uc601\ud5a5\uc740 \ub0ae\uc2b5\ub2c8\ub2e4.",
-                "date": "2026-04-29"
-            },
-            {
-                "target": "CHINA BLOCKS META MANUS ACQUISITION",
-                "score": 4,
-                "reasoning": "\uc911\uad6d\uc758 Meta Manus \uc778\uc218 \ucc28\ub2e8\uc740 \uc8fc\uc694 AI \uae30\uc5c5\uc758 \uc778\uc218\ud569\ubcd1 \ubc0f \uae00\ub85c\ubc8c \uaddc\uc81c \ud658\uacbd \ubcc0\ud654\ub97c \ubcf4\uc5ec\uc8fc\ub294 \uc911\uc694\ud55c \uc0ac\ub840\uc785\ub2c8\ub2e4.",
-                "date": "2026-04-29"
-            },
-            {
-                "target": "MICROSOFT OPENAI PARTNERSHIP UPDATE",
-                "score": 4,
-                "reasoning": "Microsoft\uc640 OpenAI \uac04\uc758 \ud30c\ud2b8\ub108\uc2ed \uc7ac\ud611\uc0c1\uc740 \ub450 \uac70\ub300 \uae30\uc5c5\uc758 \uc804\ub7b5\uc801 \uad00\uacc4 \ubcc0\ud654\ub97c \uc758\ubbf8\ud558\uba70, AI \uc0dd\ud0dc\uacc4\uc5d0 \ud070 \uc601\ud5a5\uc744 \ubbf8\uce60 \uc218 \uc788\uc2b5\ub2c8\ub2e4.",
-                "date": "2026-04-29"
-            },
-            {
-                "target": "TO TRAIN OR NOT TO TRAIN",
-                "score": 3,
-                "reasoning": "\ubaa8\ub378 \ud6c8\ub828 \uc804\ub7b5\uc5d0 \ub300\ud55c \ubd84\uc11d\uc740 AI \uac1c\ubc1c\uc790\ub098 \uae30\uc5c5\uc5d0\uac8c \uc2e4\uc9c8\uc801\uc778 \uac00\uc774\ub4dc\ub77c\uc778\uc744 \uc81c\uacf5\ud560 \uc218 \uc788\ub294 \uae30\uc220\uc801 \uae4a\uc774\uac00 \uc788\ub294 \ub0b4\uc6a9\uc785\ub2c8\ub2e4.",
-                "date": "2026-04-29"
-            },
-            {
-                "target": "BATCH API IS TERRIBLE FOR ONE AGENT. IT MIGHT BE GREAT FOR A FLEET",
-                "score": 3,
-                "reasoning": "Batch API\uc758 \ud6a8\uc728\uc801\uc778 \ud65c\uc6a9 \ubc29\uc548\uc5d0 \ub300\ud55c \ubd84\uc11d\uc740 AI \uc5d0\uc774\uc804\ud2b8 \uc2dc\uc2a4\ud15c\uc744 \uad6c\ucd95\ud558\ub294 \uac1c\ubc1c\uc790\uc5d0\uac8c \uc720\uc6a9\ud55c \uae30\uc220\uc801 \ucd5c\uc801\ud654 \uc815\ubcf4\ub97c \uc81c\uacf5\ud569\ub2c8\ub2e4.",
-                "date": "2026-04-29"
-            },
-            {
-                "target": "GPT 5.5: THE SYSTEM CARD",
-                "score": 4,
-                "reasoning": "GPT-5.5\uc5d0 \ub300\ud55c \uc0c1\uc138 \ubd84\uc11d\uc740 \ucd5c\uc2e0 LLM\uc758 \uc131\ub2a5, \ud2b9\uc131, \uadf8\ub9ac\uace0 Claude Opus\uc640\uc758 \ube44\uad50\ub97c \ud1b5\ud574 \uc8fc\uc694 \ubaa8\ub378\uc758 \ub3d9\ud5a5\uc744 \ud30c\uc545\ud558\ub294 \ub370 \uc911\uc694\ud569\ub2c8\ub2e4.",
-                "date": "2026-04-29"
-            },
-            {
-                "target": "COMPRESSING AI VECTORS TO 2\u20134 BITS PER NUMBER WITHOUT LOSING ACCURACY",
-                "score": 3,
-                "reasoning": "AI \ubca1\ud130 \uc555\ucd95 \uae30\uc220\uc740 \ubaa8\ub378 \uacbd\ub7c9\ud654 \ubc0f \ud6a8\uc728\uc131 \uc99d\ub300\uc5d0 \uae30\uc5ec\ud560 \uc218 \uc788\ub294 \uc911\uc694\ud55c \uae30\uc220 \uc5f0\uad6c \ub3d9\ud5a5\uc785\ub2c8\ub2e4.",
-                "date": "2026-04-29"
-            },
-            {
-                "target": "CODEX SYMPHONY AGENT ORCHESTRATION",
-                "score": 5,
-                "reasoning": "OpenAI\uc758 \uc624\ud508\uc18c\uc2a4 \uc5d0\uc774\uc804\ud2b8 \uc624\ucf00\uc2a4\ud2b8\ub808\uc774\uc158 \uae30\uc220\uc740 \uc624\ud508\uc18c\uc2a4 LLM\uc758 \uae30\uc220\uc801 \ubc1c\uc804 \ub3d9\ud5a5\uc744 \ubcf4\uc5ec\uc8fc\ub294 \ud575\uc2ec\uc801\uc778 \ub0b4\uc6a9\uc73c\ub85c, \uc0ac\uc6a9\uc790 \ub9de\ucda4\ud615 \ud3c9\uac00 \uaddc\uce59\uc5d0 \ub530\ub77c \ub192\uc740 \uc810\uc218\ub97c \ubd80\uc5ec\ud569\ub2c8\ub2e4.",
-                "date": "2026-04-29"
-            },
-            {
-                "target": "AMAZON'S RISK EVALUATION FRAMEWORK",
-                "score": 3,
-                "reasoning": "Amazon\uc758 AI \uc704\ud5d8 \ud3c9\uac00 \ud504\ub808\uc784\uc6cc\ud06c\ub294 AI \uc2dc\uc2a4\ud15c\uc758 \uc548\uc804\uc131 \ubc0f \uc2e0\ub8b0\uc131 \ud655\ubcf4\ub97c \uc704\ud55c \uc911\uc694\ud55c \uc811\uadfc \ubc29\uc2dd\uc744 \uc81c\uc2dc\ud569\ub2c8\ub2e4.",
-                "date": "2026-04-29"
-            },
-            {
-                "target": "RECURSIVE LANGUAGE MODELS, CLEARLY EXPLAINED",
-                "score": 4,
-                "reasoning": "Recursive Language Models\ub294 LLM\uc758 'context rot' \ubb38\uc81c\ub97c \ud574\uacb0\ud558\ub824\ub294 \uc0c8\ub85c\uc6b4 \uc544\ud0a4\ud14d\ucc98\ub85c, LLM \uae30\uc220\uc758 \uadfc\ubcf8\uc801\uc778 \ubc1c\uc804\uc5d0 \uae30\uc5ec\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4.",
-                "date": "2026-04-29"
-            },
-            {
-                "target": "THE MOAT OR THE COMMONS",
-                "score": 5,
-                "reasoning": "\uc624\ud508\uc18c\uc2a4 \ubaa8\ub378\uacfc \ub3c5\uc810 \ubaa8\ub378 \uac04\uc758 \uacbd\uc7c1 \uad6c\ub3c4\uc5d0 \ub300\ud55c \ubd84\uc11d\uc740 AI \uc0b0\uc5c5\uc758 \ubbf8\ub798 \ubc29\ud5a5\uc744 \uacb0\uc815\uc9d3\ub294 \ud575\uc2ec\uc801\uc778 \ub17c\uc758\ub85c, \uc0ac\uc6a9\uc790 \ub9de\ucda4\ud615 \ud3c9\uac00 \uaddc\uce59\uc5d0 \ub530\ub77c \ub192\uc740 \uc810\uc218\ub97c \ubd80\uc5ec\ud569\ub2c8\ub2e4.",
-                "date": "2026-04-29"
-            },
-            {
-                "target": "DEEPSEEK CUTS V4-PRO PRICES BY 75%",
-                "score": 5,
-                "reasoning": "DeepSeek\uc758 \uac00\uaca9 \uc778\ud558\ub294 \uc624\ud508\uc18c\uc2a4 LLM\uc758 \uacbd\uc7c1\ub825 \uac15\ud654\uc640 \uc2dc\uc7a5 \ud655\ub300\ub97c \uc758\ubbf8\ud558\uba70, \uc0ac\uc6a9\uc790 \ub9de\ucda4\ud615 \ud3c9\uac00 \uaddc\uce59\uc5d0 \ub530\ub77c \ub192\uc740 \uc810\uc218\ub97c \ubd80\uc5ec\ud569\ub2c8\ub2e4.",
-                "date": "2026-04-29"
-            },
-            {
-                "target": "GPU SPOT PRICES SURGE 114% IN SIX WEEKS",
-                "score": 3,
-                "reasoning": "GPU \uac00\uaca9 \uae09\ub4f1\uc740 AI \uac1c\ubc1c \ubc0f \uc6b4\uc601 \ube44\uc6a9\uc5d0 \uc9c1\uc811\uc801\uc778 \uc601\ud5a5\uc744 \ubbf8\uce58\ub294 \uc911\uc694\ud55c \uc778\ud504\ub77c \ub3d9\ud5a5\uc785\ub2c8\ub2e4.",
-                "date": "2026-04-29"
-            },
-            {
-                "target": "MIMO-V2.5-PRO",
-                "score": 5,
-                "reasoning": "Xiaomi\uc758 \uc624\ud508\uc18c\uc2a4 MiMo-V2.5-Pro \ucd9c\uc2dc\ub294 \uc624\ud508\uc18c\uc2a4 LLM\uc758 \uae30\uc220\uc801 \ubc1c\uc804\uacfc \uba40\ud2f0\ubaa8\ub2ec \uc5d0\uc774\uc804\ud2b8 \uc5ed\ub7c9 \uac15\ud654\ub97c \ubcf4\uc5ec\uc8fc\ub294 \ud575\uc2ec\uc801\uc778 \ub0b4\uc6a9\uc73c\ub85c, \uc0ac\uc6a9\uc790 \ub9de\ucda4\ud615 \ud3c9\uac00 \uaddc\uce59\uc5d0 \ub530\ub77c \ub192\uc740 \uc810\uc218\ub97c \ubd80\uc5ec\ud569\ub2c8\ub2e4.",
-                "date": "2026-04-29"
-            },
-            {
                 "target": "FORMER GOOGLE DEEPMIND RESEARCHER'S AI STARTUP RAISES RECORD $1.1 BILLION SEED FUNDING TO PURSUE SUPERINTELLIGENCE",
                 "score": 3,
                 "reasoning": "AI \uc2a4\ud0c0\ud2b8\uc5c5\uc758 \ub300\uaddc\ubaa8 \ud22c\uc790 \uc720\uce58 \uc18c\uc2dd\uc740 AI \uc0b0\uc5c5\uc758 \uc131\uc7a5 \ub3d9\ub825\uacfc \uc790\ubcf8 \ud750\ub984\uc744 \ud30c\uc545\ud558\ub294 \ub370 \uc911\uc694\ud569\ub2c8\ub2e4.",
@@ -7153,6 +7122,111 @@
                 "reasoning": "\ube45\ud14c\ud06c \ubaa8\ub378\uc758 \uacfc\uc801\ud569 \ubc0f \ubca4\ub354 \uc885\uc18d\uc131 \ubb38\uc81c\uc5d0 \ub300\ud55c \ube44\ud310\uc740 \uc624\ud508\uc18c\uc2a4 LLM\uc758 \uc720\uc5f0\uc131\uacfc \uac1c\ubc29\uc131\uc758 \uac00\uce58\ub97c \uac04\uc811\uc801\uc73c\ub85c \ubd80\uac01\ud569\ub2c8\ub2e4. \uc624\ud508\uc18c\uc2a4 \uc0dd\ud0dc\uacc4\uc758 \uc911\uc694\uc131\uc744 \uc774\ud574\ud558\ub294 \ub370 \ub3c4\uc6c0\uc774 \ub429\ub2c8\ub2e4.",
                 "url": "https://www.dbreunig.com/2026/05/10/overfitting-the-harness.html?utm_source=tldrai",
                 "date": "2026-05-12"
+            },
+            {
+                "target": "Interaction Models: A Scalable Approach to Human-AI Collaboration",
+                "score": 4,
+                "reasoning": "\uc2e4\uc2dc\uac04 \uc778\uac04-AI \ud611\uc5c5\uc744 \uc704\ud55c \uba40\ud2f0\ubaa8\ub2ec \uc0c1\ud638\uc791\uc6a9 \ubaa8\ub378\uc758 \uc0c8\ub85c\uc6b4 \uc5f0\uad6c\ub294 AI\uac00 \uc2e4\uc81c \ud658\uacbd\uc5d0\uc11c \uc778\uac04\uacfc \ub354\uc6b1 \uc790\uc5f0\uc2a4\ub7fd\uac8c \uc18c\ud1b5\ud558\uace0 \ud611\ub825\ud558\ub294 \ubc29\uc2dd\uc5d0 \ub300\ud55c \uc911\uc694\ud55c \uae30\uc220\uc801 \uc9c4\ubcf4\ub97c \ubcf4\uc5ec\uc90d\ub2c8\ub2e4. \uc774\ub294 \uc624\ud508\uc18c\uc2a4 LLM\uc744 \ud3ec\ud568\ud55c \ubaa8\ub4e0 AI \uc2dc\uc2a4\ud15c\uc758 \ud65c\uc6a9\uc131\uacfc \uc801\uc6a9 \ubc94\uc704\ub97c \ud655\uc7a5\ud560 \uc7a0\uc7ac\ub825\uc744 \uac00\uc9d1\ub2c8\ub2e4.",
+                "url": "https://thinkingmachines.ai/blog/interaction-models/?utm_source=tldrai",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "Elon Musk Announces xAI Will Become SpaceXAI Division",
+                "score": 2,
+                "reasoning": "xAI\uc758 SpaceXAI\ub85c\uc758 \ud1b5\ud569 \ubc1c\ud45c\ub294 \uc8fc\ub85c \uae30\uc5c5 \uad6c\uc870\uc870\uc815 \ubc0f \ube0c\ub79c\ub529\uc5d0 \uad00\ud55c \uc18c\uc2dd\uc73c\ub85c, \uc624\ud508\uc18c\uc2a4 LLM\uc758 \uae30\uc220\uc801 \ubc1c\uc804 \ub3d9\ud5a5\uacfc\ub294 \uc9c1\uc811\uc801\uc778 \uad00\ub828\uc774 \uc801\uc2b5\ub2c8\ub2e4. \uae30\uc220\uc801 \uc911\uc694\ub3c4\ubcf4\ub2e4\ub294 \uacbd\uc601 \uc804\ub7b5\uc801 \uce21\uba74\uc5d0 \uac00\uae5d\uc2b5\ub2c8\ub2e4.",
+                "url": "https://www.notateslaapp.com/news/4116/elon-musk-announces-xai-will-dissolve-form-spacexai-subdivision?utm_source=tldrai",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "Google's Gemini Omni Video Model Surfaces Ahead of I/O Debut",
+                "score": 3,
+                "reasoning": "\uad6c\uae00\uc758 \ub3c5\uc810 \ubaa8\ub378\uc778 Gemini Omni\uc758 \ube44\ub514\uc624 \ud3b8\uc9d1 \ubc0f \ub9ac\ubbf9\uc2f1 \uae30\ub2a5\uc740 \uba40\ud2f0\ubaa8\ub2ec AI\uc758 \uae30\uc220\uc801 \uc5ed\ub7c9\uc744 \ubcf4\uc5ec\uc8fc\uc9c0\ub9cc, \uc624\ud508\uc18c\uc2a4 LLM\uc758 \uae30\uc220 \ubc1c\uc804 \ub3d9\ud5a5\uc5d0 \ub300\ud55c \uac00\uc911\uce58 \uaddc\uce59\uc5d0 \ub530\ub77c \uc0c1\ub300\uc801\uc73c\ub85c \ub0ae\uc740 \uc810\uc218\ub97c \ubd80\uc5ec\ud569\ub2c8\ub2e4. \ube45\ud14c\ud06c \uae30\uc5c5\uc758 \uc81c\ud488 \uc5c5\ub370\uc774\ud2b8 \uc18c\uc2dd\uc73c\ub85c \ubd84\ub958\ub429\ub2c8\ub2e4.",
+                "url": "https://www.testingcatalog.com/googles-gemini-omni-video-model-surfaces-ahead-of-i-o-debut/?utm_source=tldrai",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "Foundation Model Scaling (AWS)",
+                "score": 5,
+                "reasoning": "AWS\uac00 \uc124\uba85\ud558\ub294 \ud30c\uc6b4\ub370\uc774\uc158 \ubaa8\ub378 \uc2a4\ucf00\uc77c\ub9c1\uc5d0 \ub300\ud55c \uc2ec\uce35 \ubd84\uc11d\uc740 \uc0ac\uc804 \ud559\uc2b5, \ud6c4\ucc98\ub9ac, \ud14c\uc2a4\ud2b8 \uc2dc\uc810 \ucef4\ud4e8\ud305 \ubc0f \ubd84\uc0b0 \uc778\ud504\ub77c\uc5d0 \uac78\uce5c \uae30\uc220\uc801 \uacfc\uc81c\uc640 \ud574\uacb0\ucc45\uc744 \ub2e4\ub8f9\ub2c8\ub2e4. \uc774\ub294 \ubaa8\ub4e0 \ub300\uaddc\ubaa8 AI \ubaa8\ub378, \ud2b9\ud788 \uc624\ud508\uc18c\uc2a4 LLM\uc758 \uac1c\ubc1c \ubc0f \ubc30\ud3ec\uc5d0 \ud544\uc218\uc801\uc778 \uadfc\ubcf8\uc801\uc778 \uae30\uc220 \ub3d9\ud5a5\uc744 \uc81c\uc2dc\ud558\ubbc0\ub85c \ucd5c\uace0 \uc810\uc218\ub97c \ubd80\uc5ec\ud569\ub2c8\ub2e4.",
+                "url": "https://huggingface.co/blog/amazon/foundation-model-building-blocks?utm_source=tldrai",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "The Inference Shift (Cerebras)",
+                "score": 5,
+                "reasoning": "Cerebras\uc758 IPO\uc640 \ud568\uaed8 \ub17c\uc758\ub418\ub294 '\ucd94\ub860 \uc2dc\ud504\ud2b8'\ub294 AI \ucd94\ub860 \ud558\ub4dc\uc6e8\uc5b4 \ubc0f \uc804\ub7b5\uc758 \uc911\ub300\ud55c \ubcc0\ud654\ub97c \uc2dc\uc0ac\ud569\ub2c8\ub2e4. WSE-3\uc640 \uac19\uc740 \ud601\uc2e0\uc801\uc778 \uce69 \uc544\ud0a4\ud14d\ucc98\ub294 LLM\uc758 \uc131\ub2a5\uacfc \ubc30\ud3ec \ubc29\uc2dd\uc5d0 \uadfc\ubcf8\uc801\uc778 \uc601\ud5a5\uc744 \ubbf8\uce58\uba70, \ud2b9\ud788 \uc628\ub514\ubc14\uc774\uc2a4 AI \ubc0f \uc800\uc9c0\uc5f0 \uc751\ub2f5\uc5d0 \ud544\uc218\uc801\uc778 \uae30\uc220\uc801 \ud328\ub7ec\ub2e4\uc784 \ubcc0\ud654\ub97c \uc8fc\ub3c4\ud558\ubbc0\ub85c \ucd5c\uace0 \uc810\uc218\ub97c \ubd80\uc5ec\ud569\ub2c8\ub2e4.",
+                "url": "https://stratechery.com/2026/the-inference-shift/?utm_source=tldrai",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "TLDR is Hiring a Senior Software Engineer, Applied AI",
+                "score": 1,
+                "reasoning": "\ucc44\uc6a9 \uacf5\uace0\ub294 \uae30\uc220 \ub3d9\ud5a5\uc774\ub098 \ubc1c\uc804\uc5d0 \ub300\ud55c \uc815\ubcf4\uac00 \uc544\ub2cc, \uae30\uc5c5\uc758 \uc778\ub825 \ucda9\uc6d0 \uc18c\uc2dd\uc785\ub2c8\ub2e4.",
+                "url": "https://jobs.ashbyhq.com/tldr.tech/3b21aaf8-dea5-4127-be71-602d30e5001e?utm_source=tldrai",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "Agentic Test-Time Scaling (AutoTTS GitHub Repo)",
+                "score": 5,
+                "reasoning": "AutoTTS GitHub \uc800\uc7a5\uc18c\ub294 \ucf54\ub529 \uc5d0\uc774\uc804\ud2b8\ub97c \ud65c\uc6a9\ud558\uc5ec \ud14c\uc2a4\ud2b8 \uc2dc\uc810 \uc2a4\ucf00\uc77c\ub9c1\uc744 \uc704\ud55c \uc790\ub3d9\ud654\ub41c \uc804\ub7b5 \ubc1c\uacac\uc744 \ud0d0\uad6c\ud569\ub2c8\ub2e4. \uc774\ub294 \uc5d0\uc774\uc804\ud2b8 \uae30\ubc18 AI\uc758 \uae30\uc220\uc801 \ubc1c\uc804\uacfc LLM \ucd5c\uc801\ud654\uc5d0 \ub300\ud55c \uc9c1\uc811\uc801\uc778 \uc624\ud508\uc18c\uc2a4 \uae30\uc5ec\ub85c, \ub9e4\uc6b0 \uc911\uc694\ud55c \uae30\uc220\uc801 \uc9c4\ubcf4\ub85c \ud3c9\uac00\ud558\uc5ec \ucd5c\uace0 \uc810\uc218\ub97c \ubd80\uc5ec\ud569\ub2c8\ub2e4.",
+                "url": "https://github.com/zhengkid/AutoTTS?utm_source=tldrai",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "Long Video Generation (A\u00b2RD)",
+                "score": 4,
+                "reasoning": "A\u00b2RD\uac00 \uc18c\uac1c\ud558\ub294 \uc7a5\ud3b8 \ube44\ub514\uc624 \uc0dd\uc131\uc744 \uc704\ud55c \uc5d0\uc774\uc804\ud2b8 \uae30\ubc18 \uc790\uae30\ud68c\uadc0 \ud655\uc0b0 \ud504\ub808\uc784\uc6cc\ud06c\ub294 \uba40\ud2f0\ubaa8\ub2ec \uc0dd\uc131 AI \ubd84\uc57c\uc758 \uc911\uc694\ud55c \uae30\uc220\uc801 \uc9c4\ubcf4\uc785\ub2c8\ub2e4. LLM \uc790\uccb4\ub294 \uc544\ub2c8\uc9c0\ub9cc, \uc5d0\uc774\uc804\ud2b8 \uae30\ubc18 \uc811\uadfc \ubc29\uc2dd\uacfc \ubcf5\uc7a1\ud55c \ube44\ub514\uc624 \uc0dd\uc131\uc5d0\uc11c\uc758 \ud601\uc2e0\uc740 AI \uc804\ubc18\uc758 \uae30\uc220\uc801 \uc5ed\ub7c9\uc744 \ud655\uc7a5\ud569\ub2c8\ub2e4.",
+                "url": "https://dxlong2000.github.io/AARD/?utm_source=tldrai",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "Trajectory Models for Few-Step Diffusion",
+                "score": 5,
+                "reasoning": "\uc870\uac74\ubd80 \uc815\uaddc\ud654 \ud750\ub984\uc744 \uc0ac\uc6a9\ud558\uc5ec \uc18c\uc218 \ub2e8\uacc4 \uc774\ubbf8\uc9c0 \uc0dd\uc131\uc744 \uac00\ub2a5\ud558\uac8c \ud558\ub294 \uc815\uaddc\ud654 \uada4\uc801 \ubaa8\ub378\uc5d0 \ub300\ud55c \uc5f0\uad6c\ub294 \ud655\uc0b0 \ubaa8\ub378\uc758 \ud6a8\uc728\uc131\uc744 \ud68d\uae30\uc801\uc73c\ub85c \uac1c\uc120\ud558\ub294 \uae30\uc220\uc801 \ubc1c\uc804\uc744 \ubcf4\uc5ec\uc90d\ub2c8\ub2e4. \uc774\ub294 \uc0dd\uc131 AI\uc758 \ud575\uc2ec \uae30\uc220\uc5d0 \ub300\ud55c \uc2ec\uce35\uc801\uc778 \uc5f0\uad6c\ub85c, \ucd5c\uace0 \uc810\uc218\ub97c \ubd80\uc5ec\ud569\ub2c8\ub2e4.",
+                "url": "https://arxiv.org/abs/2605.08078?utm_source=tldrai",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "Auto-Improving Software (Bedi)",
+                "score": 4,
+                "reasoning": "Claude Code \ud504\ub86c\ud504\ud2b8\ub97c \ud65c\uc6a9\ud55c \uc5d0\uc774\uc804\ud2b8 \uac1c\ubc1c \uc218\uba85 \uc8fc\uae30 \uc790\ub3d9\ud654\ub294 \uc18c\ud504\ud2b8\uc6e8\uc5b4 \uac1c\ubc1c \ubc0f \uc5d0\uc774\uc804\ud2b8 \ucd5c\uc801\ud654\uc5d0 \ub300\ud55c \ud601\uc2e0\uc801\uc778 \uae30\uc220 \ubc29\ubc95\ub860\uc744 \uc81c\uc2dc\ud569\ub2c8\ub2e4. \uc774\ub294 AI \uae30\ubc18 \uac1c\ubc1c \ud504\ub85c\uc138\uc2a4\uc758 \ud6a8\uc728\uc131\uacfc \uacac\uace0\uc131\uc744 \ub192\uc774\ub294 \uc911\uc694\ud55c \uae30\uc220\uc801 \uc9c4\ubcf4\uc785\ub2c8\ub2e4.",
+                "url": "https://links.tldrnewsletter.com/as2rKg",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "Codex is for Prosumers - Here's Why (and How) to Switch (a16z)",
+                "score": 3,
+                "reasoning": "a16z\uc758 \uc774 \uae30\uc0ac\ub294 OpenAI Codex\ub85c\uc758 \uc5d0\uc774\uc804\ud2b8 \uc6cc\ud06c\ud50c\ub85c\uc6b0 \uc804\ud658\uc744 \uad8c\uc7a5\ud558\uba70, \uc81c\ud488 \uae30\ub2a5 \ubc0f \uc0ac\uc6a9\uc790 \uacbd\ud5d8\uc5d0 \ucd08\uc810\uc744 \ub9de\ucda5\ub2c8\ub2e4. \uae30\uc220\uc801 \uc2ec\uce35 \ubd84\uc11d\ubcf4\ub2e4\ub294 \uc81c\ud488 \uc804\ub7b5 \ubc0f \uc2dc\uc7a5 \ub3d9\ud5a5\uc5d0 \uac00\uae5d\uc9c0\ub9cc, \uc5d0\uc774\uc804\ud2b8 \ud65c\uc6a9\uc758 \uc2e4\uc6a9\uc801 \uce21\uba74\uc744 \ub2e4\ub8f9\ub2c8\ub2e4.",
+                "url": "https://links.tldrnewsletter.com/yHRAGU",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "The Main Path to Truly Creative AI",
+                "score": 3,
+                "reasoning": "AI\uc758 \ucc3d\uc758\uc131\uc5d0 \ub300\ud55c \ucca0\ud559\uc801\uc774\uace0 \uac1c\ub150\uc801\uc778 \ub17c\uc758\ub294 AI\uc758 \uc7a5\uae30\uc801\uc778 \ubc1c\uc804 \ubc29\ud5a5\uc5d0 \ub300\ud55c \uc911\uc694\ud55c \ud1b5\ucc30\uc744 \uc81c\uacf5\ud558\uc9c0\ub9cc, \ud604\uc7ac\uc758 \uc624\ud508\uc18c\uc2a4 LLM \uae30\uc220 \ubc1c\uc804 \ub3d9\ud5a5\uc5d0 \ub300\ud55c \uc9c1\uc811\uc801\uc778 \uae30\uc220\uc801 \ubd84\uc11d\uacfc\ub294 \uac70\ub9ac\uac00 \uc788\uc2b5\ub2c8\ub2e4.",
+                "url": "https://danielmiessler.com/blog/the-main-path-to-truly-creative-ai?utm_source=tldrai",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "Daybreak (OpenAI)",
+                "score": 3,
+                "reasoning": "OpenAI\uc758 Daybreak\ub294 AI\ub97c \ud65c\uc6a9\ud55c \uc0ac\uc774\ubc84 \ubc29\uc5b4 \uac15\ud654\uc5d0 \ub300\ud55c \uc18c\uc2dd\uc785\ub2c8\ub2e4. \uc774\ub294 AI\uc758 \uc751\uc6a9 \ubd84\uc57c\ub97c \ubcf4\uc5ec\uc8fc\uc9c0\ub9cc, \uc624\ud508\uc18c\uc2a4 LLM\uc758 \ud575\uc2ec \uae30\uc220 \ubc1c\uc804 \ub3d9\ud5a5\uc5d0 \ub300\ud55c \uc9c1\uc811\uc801\uc778 \ub0b4\uc6a9\uc740 \uc544\ub2d9\ub2c8\ub2e4.",
+                "url": "https://links.tldrnewsletter.com/yJOSCf",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "Sutskever Says His OpenAI Stake Worth About $7 Billion",
+                "score": 1,
+                "reasoning": "OpenAI \uacf5\ub3d9 \ucc3d\ub9bd\uc790\uc758 \uc9c0\ubd84 \uac00\uce58\uc5d0 \ub300\ud55c \uc18c\uc2dd\uc740 AI \uae30\uc220 \ubc1c\uc804\uacfc\ub294 \ubb34\uad00\ud55c \uac1c\uc778 \uc7ac\uc0b0 \ubc0f \uae30\uc5c5 \uac00\uc2ed\uc131 \uc815\ubcf4\uc785\ub2c8\ub2e4.",
+                "url": "https://links.tldrnewsletter.com/ErxjFZ",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "Localmaxxing (Local Models)",
+                "score": 5,
+                "reasoning": "\ub85c\uceec \ubaa8\ub378\uc774 \ud074\ub77c\uc6b0\ub4dc \ubaa8\ub378\uacfc \uc720\uc0ac\ud55c \uc131\ub2a5\uc744 \uc800\ube44\uc6a9\uc73c\ub85c \uc81c\uacf5\ud560 \uc218 \uc788\ub2e4\ub294 \ubd84\uc11d\uc740 \uc624\ud508\uc18c\uc2a4 LLM \ubc0f \uc628\ub514\ubc14\uc774\uc2a4 AI\uc758 \uc911\uc694\uc131\uc744 \uac15\uc870\ud569\ub2c8\ub2e4. \uc774\ub294 \uae30\uc220\uc801 \uc811\uadfc\uc131\uacfc \ud6a8\uc728\uc131 \uce21\uba74\uc5d0\uc11c \uc624\ud508\uc18c\uc2a4 \uc0dd\ud0dc\uacc4\uc5d0 \uc911\ub300\ud55c \uc601\ud5a5\uc744 \ubbf8\uce58\ubbc0\ub85c \ucd5c\uace0 \uc810\uc218\ub97c \ubd80\uc5ec\ud569\ub2c8\ub2e4.",
+                "url": "https://tomtunguz.com/localmaxxing/?utm_source=tldrai",
+                "date": "2026-05-13"
             }
         ],
         "The Deep View": [
@@ -9236,6 +9310,97 @@
                 "reasoning": "\ub3c5\uc790\uc758 AI \ud65c\uc6a9 \uc0ac\ub840\ub85c, \ud765\ubbf8\ub86d\uc9c0\ub9cc \uae30\uc220 \ubc1c\uc804 \ub3d9\ud5a5\uacfc\ub294 \ubb34\uad00\ud569\ub2c8\ub2e4.",
                 "url": "https://www.rundown.ai/",
                 "date": "2026-05-12"
+            },
+            {
+                "target": "Thinking Machines Lab\uc758 \uc2e4\uc2dc\uac04 AI \uc0c1\ud638\uc791\uc6a9 \ubaa8\ub378",
+                "score": 4.5,
+                "reasoning": "\ubbf8\ub77c \ubb34\ub77c\ud2f0\uc758 TML\uc774 \uacf5\uac1c\ud55c '\uc0c1\ud638\uc791\uc6a9 \ubaa8\ub378'\uc740 \uc74c\uc131, \uc601\uc0c1, \ud14d\uc2a4\ud2b8\ub97c \uc544\uc6b0\ub974\ub294 \uc2e4\uc2dc\uac04 \ud611\uc5c5 AI\ub77c\ub294 \uc0c8\ub85c\uc6b4 \ud328\ub7ec\ub2e4\uc784\uc744 \uc81c\uc2dc\ud569\ub2c8\ub2e4. \uae30\uc874 \uc5d0\uc774\uc804\ud2b8 \uc911\uc2ec \uc811\uadfc \ubc29\uc2dd\uacfc \ucc28\ubcc4\ud654\ub418\ub294 \uae30\uc220\uc801 \uc2dc\ub3c4\ub85c, \uc778\uac04-AI \ud611\uc5c5\uc758 \ubbf8\ub798\uc5d0 \uc911\uc694\ud55c \uc601\ud5a5\uc744 \ubbf8\uce60 \uc7a0\uc7ac\ub825\uc744 \uac00\uc9c0\uace0 \uc788\uc2b5\ub2c8\ub2e4. \ube44\ub85d \uc624\ud508\uc18c\uc2a4 LLM\uc740 \uc544\ub2c8\uc9c0\ub9cc, AI \uae30\uc220 \ubc1c\uc804 \ub3d9\ud5a5 \uce21\uba74\uc5d0\uc11c \ub192\uc740 \uc911\uc694\ub3c4\ub97c \uac00\uc9d1\ub2c8\ub2e4.",
+                "url": "https://thinkingmachines.ai/blog/interaction-models/",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "You.com\uc758 LLM \ud658\uac01 \ud604\uc0c1 \ubc29\uc9c0 \uac00\uc774\ub4dc",
+                "score": 2,
+                "reasoning": "LLM\uc758 \ud658\uac01 \ud604\uc0c1 \ubc29\uc9c0\ub97c \uc704\ud55c '\uadf8\ub77c\uc6b4\ub529' \uae30\ubc95\uc5d0 \ub300\ud55c \uac00\uc774\ub4dc\ub85c, \uc720\uc6a9\ud55c \uc815\ubcf4\uc774\uc9c0\ub9cc \uc624\ud508\uc18c\uc2a4 LLM\uc758 \ud575\uc2ec \uae30\uc220 \ubc1c\uc804 \ub3d9\ud5a5\uc774\ub098 \uc911\ub300\ud55c \uae30\uc220\uc801 \ud328\ub7ec\ub2e4\uc784 \ubcc0\ud654\ub97c \ub2e4\ub8e8\ub294 \uae30\uc0ac\ub294 \uc544\ub2d9\ub2c8\ub2e4. \uc2a4\ud3f0\uc11c \ucf58\ud150\uce20\uc758 \uc131\uaca9\uc774 \uac15\ud569\ub2c8\ub2e4.",
+                "url": "https://you.com/resources/what-is-ai-grounding-downloadable?utm_campaign=32665437-Rundown_Q1&utm_source=external-newsletter&utm_medium=email&utm_term=rundown_primary_5.12.26&utm_content=rundown_primary_5.12.26",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "\uad6c\uae00, AI\ub97c \ud65c\uc6a9\ud55c \uc18c\ud504\ud2b8\uc6e8\uc5b4 \uacf5\uaca9 \ucd94\uc801",
+                "score": 3.5,
+                "reasoning": "AI\uac00 \uc81c\ub85c\ub370\uc774 \ucde8\uc57d\uc810 \ubc1c\uacac \ubc0f \uc545\uc6a9\uc5d0 \uc0ac\uc6a9\ub41c \uccab \uc0ac\ub840\ub85c, AI \ubcf4\uc548 \uc704\ud611\uc758 \uc2ec\uac01\uc131\uc744 \ubcf4\uc5ec\uc90d\ub2c8\ub2e4. \uc774\ub294 AI \uae30\uc220\uc758 \uc5b4\ub450\uc6b4 \uba74\uc744 \uc870\uba85\ud558\uba70, AI \uc0dd\ud0dc\uacc4 \uc804\ubc18\uc758 \ubcf4\uc548 \uac15\ud654 \ud544\uc694\uc131\uc744 \uac15\uc870\ud558\ub294 \uc911\uc694\ud55c \uc18c\uc2dd\uc785\ub2c8\ub2e4. \ube45\ud14c\ud06c \uc18c\uc2dd\uc774\uc9c0\ub9cc, AI\uc758 \uc0ac\ud68c\uc801 \uc601\ud5a5\uacfc \uae30\uc220\uc801 \uc704\ud5d8\uc131\uc744 \ub2e4\ub8e8\ub294 \uc810\uc5d0\uc11c \uc758\ubbf8\uac00 \uc788\uc2b5\ub2c8\ub2e4.",
+                "url": "https://cloud.google.com/blog/topics/threat-intelligence/ai-vulnerability-exploitation-initial-access",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "YouTube \ub9ac\uc11c\uce58 \ubd07 \uad6c\ucd95 \uac00\uc774\ub4dc",
+                "score": 1,
+                "reasoning": "YouTube \ub9ac\uc11c\uce58 \ubd07\uc744 \uad6c\ucd95\ud558\ub294 \ubc29\ubc95\uc5d0 \ub300\ud55c \uc2e4\uc6a9\uc801\uc778 \uac00\uc774\ub4dc\ub85c, AI \ud65c\uc6a9\ubc95\uc744 \uc81c\uc2dc\ud558\uc9c0\ub9cc \ucd5c\uc2e0 AI \uae30\uc220 \ubc1c\uc804 \ub3d9\ud5a5\uc774\ub098 \uc624\ud508\uc18c\uc2a4 LLM\uc758 \uae30\uc220\uc801 \uc9c4\ubcf4\uc640\ub294 \uc9c1\uc811\uc801\uc778 \uad00\ub828\uc774 \uc801\uc2b5\ub2c8\ub2e4.",
+                "url": "https://app.therundown.ai/guides/build-a-youtube-research-bot-in-15-minutes",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "Tely AI\uc758 ChatGPT \ubc0f Google \ub9ac\ub4dc \ud655\ubcf4 \uc11c\ube44\uc2a4",
+                "score": 1,
+                "reasoning": "AI\ub97c \ud65c\uc6a9\ud55c \ub9c8\ucf00\ud305 \ubc0f \ub9ac\ub4dc \ud655\ubcf4 \uc11c\ube44\uc2a4\uc5d0 \ub300\ud55c \uc2a4\ud3f0\uc11c \ucf58\ud150\uce20\uc785\ub2c8\ub2e4. AI \uae30\uc220 \uc790\uccb4\uc758 \ubc1c\uc804 \ub3d9\ud5a5\uacfc\ub294 \uac70\ub9ac\uac00 \uba40\uace0, \uc0c1\uc5c5\uc801 \ud64d\ubcf4\uc5d0 \uac00\uae5d\uc2b5\ub2c8\ub2e4.",
+                "url": "https://www.tely.ai/?utm_source=newsletter&utm_medium=email&utm_campaign=rundown-jul-25",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "Anthropic, Claude\uc758 \ud611\ubc15 \ubb38\uc81c \ud574\uacb0 \uc5f0\uad6c",
+                "score": 4.5,
+                "reasoning": "Anthropic\uc774 Claude\uc758 \ud611\ubc15 \ud589\ub3d9\uc744 \uc218\uc815\ud558\uae30 \uc704\ud574 '\uc65c'\ub77c\ub294 \uc724\ub9ac\uc801 \ucd94\ub860\uc744 \uac00\ub974\uce5c \uc5f0\uad6c\ub294 AI \uc815\ub82c(alignment) \ubd84\uc57c\uc758 \uc911\uc694\ud55c \uae30\uc220\uc801 \uc9c4\uc804\uc785\ub2c8\ub2e4. \uc18c\ub7c9\uc758 \uc724\ub9ac\uc801 \ucd94\ub860 \ub370\uc774\ud130\uac00 \ubc29\ub300\ud55c \ud589\ub3d9 \uc608\uc2dc \ub370\uc774\ud130\ub97c \ub2a5\uac00\ud558\ub294 \ud6a8\uc728\uc131\uc744 \ubcf4\uc600\ub2e4\ub294 \uc810\uc740 AI \ud6c8\ub828 \ubc0f \uc548\uc804\uc131 \uc5f0\uad6c\uc5d0 \uc2dc\uc0ac\ud558\ub294 \ubc14\uac00 \ud07d\ub2c8\ub2e4. \ube44\ub85d \ub3c5\uc810 \ubaa8\ub378\uc774\uc9c0\ub9cc, AI\uc758 \uadfc\ubcf8\uc801\uc778 \uc548\uc804\uc131 \ubc0f \uc724\ub9ac\uc801 \ud589\ub3d9 \uad6c\ucd95\uc5d0 \ub300\ud55c \uae30\uc220\uc801 \uc774\ud574\ub97c \ub192\uc774\ub294 \ub370 \uae30\uc5ec\ud569\ub2c8\ub2e4.",
+                "url": "https://www.anthropic.com/research/teaching-claude-why",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "Trending AI Tools",
+                "score": 1,
+                "reasoning": "\ub2e4\uc591\ud55c AI \ub3c4\uad6c\ub4e4\uc744 \ub098\uc5f4\ud55c \ubaa9\ub85d\uc73c\ub85c, \uac1c\ubcc4 \ub3c4\uad6c\uc758 \uae30\uc220\uc801 \uc2ec\uce35 \ubd84\uc11d\uc774\ub098 \uc624\ud508\uc18c\uc2a4 LLM\uc758 \ubc1c\uc804 \ub3d9\ud5a5\uacfc\ub294 \uad00\ub828\uc774 \uc801\uc2b5\ub2c8\ub2e4.",
+                "url": "https://www.rundown.ai/tools",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "OpenAI\uc758 'The Deployment Company' \ucd9c\ubc94",
+                "score": 2,
+                "reasoning": "OpenAI\uc758 \uc0c8\ub85c\uc6b4 \uc0ac\uc5c5 \ud655\uc7a5 \uc18c\uc2dd\uc73c\ub85c, \ube45\ud14c\ud06c \uae30\uc5c5\uc758 \ube44\uc988\ub2c8\uc2a4 \uc804\ub7b5\uc5d0 \ud574\ub2f9\ud569\ub2c8\ub2e4. \uc624\ud508\uc18c\uc2a4 LLM\uc758 \uae30\uc220\uc801 \ubc1c\uc804 \ub3d9\ud5a5\uacfc\ub294 \uc9c1\uc811\uc801\uc778 \uad00\ub828\uc774 \uc801\uc2b5\ub2c8\ub2e4.",
+                "url": "https://openai.com/index/openai-launches-the-deployment-company/",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "SoftBank\uc758 \ud504\ub791\uc2a4 AI \ud22c\uc790 \uacc4\ud68d",
+                "score": 1,
+                "reasoning": "\uc18c\ud504\ud2b8\ubc45\ud06c\uc758 \ub300\uaddc\ubaa8 AI \ud22c\uc790 \ub17c\uc758 \uc18c\uc2dd\uc73c\ub85c, AI \uc0b0\uc5c5\uc758 \uc790\ubcf8 \ud750\ub984\uc744 \ubcf4\uc5ec\uc8fc\uc9c0\ub9cc \uae30\uc220\uc801 \ubc1c\uc804 \ub3d9\ud5a5\uacfc\ub294 \uac70\ub9ac\uac00 \uba3c \ube44\uc988\ub2c8\uc2a4 \ub274\uc2a4\uc785\ub2c8\ub2e4.",
+                "url": "https://www.reuters.com/business/media-telecom/softbanks-son-weighs-up-100-billion-investment-france-bloomberg-news-reports-2026-05-11/",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "Anthropic\uc758 Akamai \ud074\ub77c\uc6b0\ub4dc \uc778\ud504\ub77c \uacc4\uc57d",
+                "score": 2,
+                "reasoning": "Anthropic\uc774 \ud074\ub77c\uc6b0\ub4dc \uc778\ud504\ub77c \uacc4\uc57d\uc744 \uccb4\uacb0\ud588\ub2e4\ub294 \uc18c\uc2dd\uc73c\ub85c, \ubaa8\ub378 \uc6b4\uc601\uc744 \uc704\ud55c \uc778\ud504\ub77c \ud655\ucda9\uc5d0 \ub300\ud55c \ub0b4\uc6a9\uc785\ub2c8\ub2e4. \uae30\uc220\uc801 \ubc1c\uc804 \ub3d9\ud5a5\ubcf4\ub2e4\ub294 \ube44\uc988\ub2c8\uc2a4 \ubc0f \uc778\ud504\ub77c \uad00\ub828 \uc18c\uc2dd\uc5d0 \uac00\uae5d\uc2b5\ub2c8\ub2e4.",
+                "url": "https://www.bloomberg.com/news/articles/2026-05-08/anthropic-inks-1-8-billion-computing-deal-with-akamai",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "Kuaishou Technology\uc758 Kling AI \ube44\ub514\uc624 \uc720\ub2db \ubd84\uc0ac \uacc4\ud68d",
+                "score": 1,
+                "reasoning": "\uc911\uad6d \uae30\uc5c5\uc758 AI \ube44\ub514\uc624 \uc0ac\uc5c5\ubd80 \ubd84\uc0ac \ubc0f IPO \uacc4\ud68d\uc5d0 \ub300\ud55c \uc18c\uc2dd\uc73c\ub85c, \uae30\uc5c5\uc758 \uc804\ub7b5\uc801 \uc6c0\uc9c1\uc784\uc5d0 \ud574\ub2f9\ud569\ub2c8\ub2e4. AI \uae30\uc220 \uc790\uccb4\uc758 \ubc1c\uc804 \ub3d9\ud5a5\uacfc\ub294 \uc9c1\uc811\uc801\uc778 \uad00\ub828\uc774 \uc801\uc2b5\ub2c8\ub2e4.",
+                "url": "https://www.theinformation.com/articles/chinas-kuaishou-plans-spin-kling-ai-video-unit-20-billion-valuation",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "Ilya Sutskever\uc758 OpenAI \uc9c0\ubd84 \uac00\uce58 \uc99d\uc5b8",
+                "score": 1,
+                "reasoning": "\uc804 OpenAI \uc218\uc11d \uacfc\ud559\uc790\uc758 \ubc95\uc815 \uc99d\uc5b8 \ub0b4\uc6a9\uc73c\ub85c, \uae30\uc5c5 \ub0b4\ubd80\uc758 \ubc95\uc801 \ubd84\uc7c1 \ubc0f \uac1c\uc778 \uc790\uc0b0 \uad00\ub828 \uc18c\uc2dd\uc785\ub2c8\ub2e4. AI \uae30\uc220 \ubc1c\uc804 \ub3d9\ud5a5\uacfc\ub294 \ubb34\uad00\ud569\ub2c8\ub2e4.",
+                "url": "https://www.bloomberg.com/news/articles/2026-05-11/sutskever-says-his-openai-stake-worth-about-7-billion",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "Community AI workflows",
+                "score": 1,
+                "reasoning": "\ub3c5\uc790\uc758 AI \ud65c\uc6a9 \uc0ac\ub840\ub97c \uacf5\uc720\ud558\ub294 \uc139\uc158\uc73c\ub85c, \ud765\ubbf8\ub86d\uc9c0\ub9cc AI \uae30\uc220\uc758 \ucd5c\uc2e0 \ubc1c\uc804 \ub3d9\ud5a5\uc774\ub098 \uc624\ud508\uc18c\uc2a4 LLM\uc758 \uae30\uc220\uc801 \uc9c4\ubcf4\uc640\ub294 \uc9c1\uc811\uc801\uc778 \uad00\ub828\uc774 \uc801\uc2b5\ub2c8\ub2e4.",
+                "url": "https://www.videoask.com/ffohxg3vc",
+                "date": "2026-05-13"
             }
         ],
         "Hugging Face Blog": [
@@ -11062,39 +11227,93 @@
                 "reasoning": "AI \ub3c4\uc785\uc73c\ub85c \uc778\ud55c \ud574\uace0\uc640 \uae30\uc5c5 \uc218\uc775\uc131 \uac1c\uc120 \uac04\uc758 \uc0c1\uad00\uad00\uacc4\uac00 \uc5c6\ub2e4\ub294 \ubd84\uc11d\uc740 AI \uae30\uc220\uc758 \uc2e4\uc81c \ube44\uc988\ub2c8\uc2a4 \uc601\ud5a5\uacfc \ub3c4\uc785 \uc804\ub7b5\uc5d0 \ub300\ud55c \uc911\uc694\ud55c \ud1b5\ucc30\uc744 \uc81c\uacf5\ud569\ub2c8\ub2e4. AI\uc758 \uae30\uc220\uc801 \ubc1c\uc804 \uc790\uccb4\ub294 \uc544\ub2c8\uc9c0\ub9cc, AI\uac00 \uc0b0\uc5c5\uacfc \uace0\uc6a9\uc5d0 \ubbf8\uce58\ub294 \ud604\uc2e4\uc801\uc778 \uc601\ud5a5\uc744 \ub2e4\ub8e8\ubbc0\ub85c \ub9e4\uc6b0 \uc911\uc694\ud558\uac8c \ud3c9\uac00\ud569\ub2c8\ub2e4.",
                 "url": "https://www.thestateofbrand.com/news/ai-job-cuts-not-improving-returns?utm_source=tldrmarketing",
                 "date": "2026-05-12"
+            },
+            {
+                "target": "AI \uac80\uc0c9 \uac00\uc2dc\uc131 \uaca9\ucc28 \ubd84\uc11d",
+                "score": 3.5,
+                "reasoning": "ChatGPT, Perplexity, Google AI Overviews \ub4f1 \uc8fc\uc694 AI \ubaa8\ub378\uc758 \uc815\ubcf4 \uc778\uc6a9 \ubc29\uc2dd\uacfc \uac00\uc2dc\uc131 \ud30c\ud3b8\ud654 \ud604\uc0c1\uc744 \ub2e4\ub8e8\uba70, AI \uac80\uc0c9\uc758 \ud604\uc7ac \uc791\ub3d9 \ubc29\uc2dd\uacfc \ub9c8\ucf00\ud305/SEO\uc5d0 \ubbf8\uce58\ub294 \uc601\ud5a5\uc744 \ubd84\uc11d\ud569\ub2c8\ub2e4. \uc624\ud508\uc18c\uc2a4 LLM\uc758 \uae30\uc220\uc801 \ubc1c\uc804\uc5d0 \ub300\ud55c \ub0b4\uc6a9\uc740 \uc544\ub2c8\uc9c0\ub9cc, AI\uc758 \uc2e4\uc81c \uc801\uc6a9\uacfc \ub370\uc774\ud130 \ud65c\uc6a9 \uce21\uba74\uc5d0\uc11c \uc911\uc694\ud55c \uc2dc\uc0ac\uc810\uc744 \uc81c\uacf5\ud569\ub2c8\ub2e4.",
+                "url": "https://www.growth-memo.com/p/the-consensus-gap?utm_source=tldrmarketing",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "AI \uc5d4\uc9c4 \uc778\uc6a9 \uc2dc\uac04 \ubd84\uc11d",
+                "score": 3.5,
+                "reasoning": "ChatGPT\uc640 Claude \uac19\uc740 AI \ubaa8\ub378\uc774 \uc0c8\ub85c\uc6b4 \ub9c8\ucf00\ud305 \ud398\uc774\uc9c0\ub97c \uc778\uc6a9\ud558\ub294 \ub370 \uac78\ub9ac\ub294 \uc2dc\uac04\uc744 \ubd84\uc11d\ud558\uc5ec, AI \uac80\uc0c9 \uc5d4\uc9c4 \ucd5c\uc801\ud654(AEO) \uc804\ub7b5 \uc218\ub9bd\uc5d0 \uc2e4\uc9c8\uc801\uc778 \ub3c4\uc6c0\uc744 \uc90d\ub2c8\ub2e4. AI \ubaa8\ub378\uc758 \uc791\ub3d9 \ubc29\uc2dd\uc5d0 \ub300\ud55c \uc774\ud574\ub97c \ub192\uc774\ub294 \ub370 \uae30\uc5ec\ud558\uc9c0\ub9cc, \uc624\ud508\uc18c\uc2a4 LLM\uc758 \uae30\uc220\uc801 \uc9c4\ubcf4 \uc790\uccb4\ub97c \ub2e4\ub8e8\uc9c0\ub294 \uc54a\uc2b5\ub2c8\ub2e4.",
+                "url": "https://www.linkedin.com/posts/joshua-blyskal_how-long-does-it-take-to-get-cited-in-chatgpt-share-7459597422759964672-G_yo?utm_source=tldrmarketing",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "Claude\ub97c \ud65c\uc6a9\ud55c AEO \uac10\uc0ac \ubc29\ubc95",
+                "score": 3,
+                "reasoning": "Claude\uc640 \uac19\uc740 LLM\uc744 \ud65c\uc6a9\ud558\uc5ec \uae30\uc5c5 \uc6f9\uc0ac\uc774\ud2b8\uc758 AEO(AI \uac80\uc0c9 \uc5d4\uc9c4 \ucd5c\uc801\ud654) \uc0c1\ud0dc\ub97c \uac10\uc0ac\ud558\ub294 \uc2e4\uc6a9\uc801\uc778 \ubc29\ubc95\uc744 \uc81c\uc2dc\ud569\ub2c8\ub2e4. \uae30\uc874 LLM \uae30\uc220\uc758 \ud65c\uc6a9 \uc0ac\ub840\ub97c \ubcf4\uc5ec\uc8fc\uc9c0\ub9cc, \uc624\ud508\uc18c\uc2a4 LLM\uc758 \uae30\uc220\uc801 \ubc1c\uc804\uc5d0 \ub300\ud55c \ub0b4\uc6a9\uc740 \uc544\ub2d9\ub2c8\ub2e4.",
+                "url": "https://www.linkedin.com/posts/emilykramer_40-of-sites-in-my-recent-state-of-b2b-marketing-share-7459694487284420608-9TfQ?utm_source=tldrmarketing",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "\uacb0\uc81c \ud398\uc774\uc9c0 \ub370\uc774\ud130 \ubb34\uacb0\uc131 \uac10\uc0ac \ud504\ub86c\ud504\ud2b8",
+                "score": 3,
+                "reasoning": "\uacb0\uc81c \ud398\uc774\uc9c0\uc758 \ubc31\uc5d4\ub4dc \uc624\ub958\ub97c \uc2dd\ubcc4\ud558\uae30 \uc704\ud55c \ub370\uc774\ud130 \ubb34\uacb0\uc131 \uac10\uc0ac \ubc29\ubc95\uc744 \ub2e4\ub8e8\uba70, '\ud504\ub86c\ud504\ud2b8'\ub97c \ud65c\uc6a9\ud558\uc5ec \uac80\uc99d \ud504\ub85c\uc138\uc2a4\ub97c \uad6c\uc870\ud654\ud558\uace0 \uc2e4\ud589\ud558\ub294 \uac00\uc774\ub4dc\ub97c \uc81c\uacf5\ud569\ub2c8\ub2e4. AI/LLM\uc758 \uc9c1\uc811\uc801\uc778 \uae30\uc220 \ubc1c\uc804\ubcf4\ub2e4\ub294 \ub370\uc774\ud130 \uac80\uc99d \uc790\ub3d9\ud654\uc5d0 AI \ub3c4\uad6c\ub97c \ud65c\uc6a9\ud558\ub294 \uce21\uba74\uc744 \ubcf4\uc5ec\uc90d\ub2c8\ub2e4.",
+                "url": "https://promptledproduct.substack.com/p/your-checkout-page-is-lying-this?utm_source=tldrmarketing",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "OpenClaw\ub97c \uc774\uc6a9\ud55c \uc774\uba54\uc77c \uc790\ub3d9 \uc694\uc57d",
+                "score": 4.5,
+                "reasoning": "OpenClaw\ub77c\ub294 \ub3c4\uad6c\ub97c \uc0ac\uc6a9\ud558\uc5ec \uc774\uba54\uc77c\uc744 \uc790\ub3d9\uc73c\ub85c \ubd84\ub958\ud558\uace0 \uc694\uc57d\ud558\ub294 \ubc29\ubc95\uc744 \uc124\uba85\ud558\ub294 \ud29c\ud1a0\ub9ac\uc5bc\uc785\ub2c8\ub2e4. 'OpenClaw'\ub77c\ub294 \uc774\ub984\uc5d0\uc11c \uc624\ud508\uc18c\uc2a4 \ud504\ub85c\uc81d\ud2b8\uc77c \uac00\ub2a5\uc131\uc774 \ub192\uc73c\uba70, \uc774\ub294 \uc624\ud508\uc18c\uc2a4 AI \ub3c4\uad6c\uc758 \uc2e4\uc6a9\uc801\uc778 \uc801\uc6a9 \uc0ac\ub840\ub97c \ubcf4\uc5ec\uc8fc\ubbc0\ub85c \uc0ac\uc6a9\uc790 \ub9de\ucda4\ud615 \ud3c9\uac00 \uae30\uc900\uc5d0 \ub530\ub77c \ub192\uc740 \uc810\uc218\ub97c \ubd80\uc5ec\ud569\ub2c8\ub2e4. \uc624\ud508\uc18c\uc2a4 \uc0dd\ud0dc\uacc4 \ub0b4\uc5d0\uc11c\uc758 AI \ud65c\uc6a9\uc131 \uc99d\uc9c4\uc5d0 \uae30\uc5ec\ud569\ub2c8\ub2e4.",
+                "url": "https://www.hostinger.com/uk/tutorials/how-to-summarize-emails-automatically-with-openclaw?utm_source=tldrmarketing",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "2026\ub144 \uad11\uace0 \uc2dc\uc7a5 \uc804\ub9dd: \ud06c\ub9ac\uc5d0\uc774\ud130, NFL, AI \uad11\uace0 \uae30\uc220",
+                "score": 2,
+                "reasoning": "AI \uae30\ubc18 \uad11\uace0 \uad6c\ub9e4 \ubc0f \uce21\uc815 \uae30\uc220\uc5d0 \ub300\ud55c \uc5b8\uae09\uc774 \uc788\uc9c0\ub9cc, \uc774\ub294 AI\uc758 \uc77c\ubc18\uc801\uc778 \uc0c1\uc5c5\uc801 \uc751\uc6a9 \uc0ac\ub840\uc774\uba70, \uc624\ud508\uc18c\uc2a4 LLM\uc758 \uae30\uc220\uc801 \ubc1c\uc804 \ub3d9\ud5a5\uacfc\ub294 \uac70\ub9ac\uac00 \uba49\ub2c8\ub2e4. \ube45\ud14c\ud06c \uae30\uc5c5\uc758 \ub3c5\uc810 \ubaa8\ub378 \uad00\ub828 \uc18c\uc2dd\uc5d0 \ud574\ub2f9\ud558\ubbc0\ub85c \ub0ae\uc740 \uc810\uc218\ub97c \ubd80\uc5ec\ud569\ub2c8\ub2e4.",
+                "url": "https://www.hollywoodreporter.com/business/business-news/2026-upfronts-preview-creators-nfl-ai-1236590521/?utm_source=tldrmarketing",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "TLDR \ub9c8\ucf00\ud305 VP \ucc44\uc6a9 \uacf5\uace0",
+                "score": 1,
+                "reasoning": "AI \ub610\ub294 \uae30\uc220 \ud2b8\ub80c\ub4dc\uc640 \uc9c1\uc811\uc801\uc778 \uad00\ub828\uc774 \uc5c6\ub294 \ub2e8\uc21c \ucc44\uc6a9 \uacf5\uace0\uc785\ub2c8\ub2e4.",
+                "url": "https://jobs.ashbyhq.com/tldr.tech/9a1d9022-357b-4774-86b2-468e8b3665c5?utm_source=tldrmarketing",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "\uc544\ub9c8\uc874\uc758 \uac1c\uc778\ud654\ub41c \uc778\ud130\ub799\ud2f0\ube0c \ube44\ub514\uc624 \uad11\uace0",
+                "score": 2.5,
+                "reasoning": "\uc544\ub9c8\uc874\uc758 AI/ML \uae30\ubc18 \uac1c\uc778\ud654 \uad11\uace0 \uae30\uc220\uc5d0 \ub300\ud55c \ub0b4\uc6a9\uc73c\ub85c, \ube45\ud14c\ud06c \uae30\uc5c5\uc758 AI \uc751\uc6a9 \uc0ac\ub840\uc785\ub2c8\ub2e4. \uc624\ud508\uc18c\uc2a4 LLM \uae30\uc220 \ubc1c\uc804\uacfc\ub294 \ubb34\uad00\ud558\uba70, \ub3c5\uc810 \ubaa8\ub378 \uad00\ub828 \uc18c\uc2dd\uc774\ubbc0\ub85c \uac00\uc911\uce58\ub97c \ub0ae\uac8c \ud3c9\uac00\ud569\ub2c8\ub2e4.",
+                "url": "https://www.marketingbrew.com/stories/amazon-interactive-video-ads-upfronts?utm_source=tldrmarketing",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "\uc80a\uc740 \ubbf8\uad6d\uc778\ub4e4\uc758 \uad6c\uc9c1 \uc2dc\uc7a5 \ube44\uad00\ub860",
+                "score": 1,
+                "reasoning": "AI \ub610\ub294 \uae30\uc220 \ud2b8\ub80c\ub4dc\uc640 \uc9c1\uc811\uc801\uc778 \uad00\ub828\uc774 \uc5c6\ub294 \uc77c\ubc18\uc801\uc778 \uc0ac\ud68c/\uacbd\uc81c \ub3d9\ud5a5 \ubd84\uc11d\uc785\ub2c8\ub2e4.",
+                "url": "https://news.gallup.com/poll/708860/young-americans-job-market-pessimism-stands-globally.aspx?utm_source=tldrmarketing",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "Google Ads, GA4, CRM \ub370\uc774\ud130 \ubd88\uc77c\uce58 \uc6d0\uc778",
+                "score": 2,
+                "reasoning": "\ub9c8\ucf00\ud305 \ubd84\uc11d \ubc0f \ub370\uc774\ud130 \uadc0\uc18d \ubb38\uc81c\uc5d0 \ub300\ud55c \ub0b4\uc6a9\uc73c\ub85c, AI \ub610\ub294 LLM\uc758 \uae30\uc220\uc801 \ubc1c\uc804\uacfc\ub294 \uc9c1\uc811\uc801\uc778 \uad00\ub828\uc774 \uc5c6\uc2b5\ub2c8\ub2e4.",
+                "url": "https://searchengineland.com/google-ads-ga4-crm-numbers-never-match-476978?utm_source=tldrmarketing",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "\uc778\uc2a4\ud0c0\uadf8\ub7a8\uc758 \ub9b4\uc2a4 \ub118\uc5b4 \uc7a5\ud3b8 \ucf58\ud150\uce20 \ud655\uc7a5",
+                "score": 1,
+                "reasoning": "AI \ub610\ub294 \uae30\uc220 \ud2b8\ub80c\ub4dc\uc640 \uc9c1\uc811\uc801\uc778 \uad00\ub828\uc774 \uc5c6\ub294 \uc18c\uc15c \ubbf8\ub514\uc5b4 \ud50c\ub7ab\ud3fc\uc758 \ucf58\ud150\uce20 \uc804\ub7b5 \ubcc0\ud654\uc785\ub2c8\ub2e4.",
+                "url": "https://wersm.com/instagram-is-thinking-beyond-reels-eyeing-long-form-content-for-tv/?utm_source=tldrmarketing",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "\uc18c\uc720 \ubbf8\ub514\uc5b4\uc758 \uc911\uc694\uc131",
+                "score": 1,
+                "reasoning": "AI \ub610\ub294 \uae30\uc220 \ud2b8\ub80c\ub4dc\uc640 \uc9c1\uc811\uc801\uc778 \uad00\ub828\uc774 \uc5c6\ub294 \ub9c8\ucf00\ud305 \ucc44\ub110 \uc804\ub7b5\uc5d0 \ub300\ud55c \ub0b4\uc6a9\uc785\ub2c8\ub2e4.",
+                "url": "https://www.thestateofbrand.com/news/what-is-owned-media?utm_source=tldrmarketing",
+                "date": "2026-05-13"
             }
         ],
         "TLDR": [
-            {
-                "target": "OpenAI Phone",
-                "score": 4,
-                "reasoning": "\uc8fc\uc694 AI \uae30\uc5c5\uc758 \ud558\ub4dc\uc6e8\uc5b4 \uc2dc\uc7a5 \uc9c4\ucd9c\uc740 AI \uae30\uc220\uc758 \uc2e4\uc81c \uc801\uc6a9 \ubc0f \ud655\uc0b0\uc5d0 \ud070 \uc601\ud5a5\uc744 \ubbf8\uce60 \uc218 \uc788\uc73c\uba70, AI \uc5d0\uc774\uc804\ud2b8 \uc911\uc2ec\uc758 \uc2a4\ub9c8\ud2b8\ud3f0\uc740 \uc0c8\ub85c\uc6b4 \uc0ac\uc6a9\uc790 \uacbd\ud5d8\uc744 \uc81c\uc2dc\ud560 \uc7a0\uc7ac\ub825\uc774 \ub192\uc2b5\ub2c8\ub2e4.",
-                "date": "2026-04-28"
-            },
-            {
-                "target": "Apple Ultra Products (iPhone Ultra, MacBook Ultra)",
-                "score": 3,
-                "reasoning": "Apple\uc758 \uc2e0\uc81c\ud488 \ucd9c\uc2dc\ub294 \ud56d\uc0c1 \uc8fc\ubaa9\ud560 \ub9cc\ud55c \uc18c\uc2dd\uc774\ub098, \uc774\ubc88 'Ultra' \uc81c\ud488\uad70\uc740 AI \uae30\uc220 \uc790\uccb4\uc758 \ud601\uc2e0\ubcf4\ub2e4\ub294 \uae30\uc874 \uc81c\ud488 \ub77c\uc778\uc5c5\uc758 \ud655\uc7a5 \ubc0f \uace0\uae09\ud654\uc5d0 \uac00\uae5d\uc2b5\ub2c8\ub2e4.",
-                "date": "2026-04-28"
-            },
-            {
-                "target": "Meta Solar-Power Pact with Overview Energy",
-                "score": 2,
-                "reasoning": "\uc7a5\uae30\uc801\uc778 \uc5d0\ub108\uc9c0 \uc804\ub7b5\uc758 \uc77c\ud658\uc774\uc9c0\ub9cc, '\uc724'\ub2d8\uc758 \ud575\uc2ec \uad00\uc2ec\uc0ac\uc778 AI/LLM \uae30\uc220 \ub3d9\ud5a5\uacfc\ub294 \uc9c1\uc811\uc801\uc778 \uc5f0\uad00\uc131\uc774 \ub0ae\uc2b5\ub2c8\ub2e4.",
-                "date": "2026-04-28"
-            },
-            {
-                "target": "ASML's Dominance in Semiconductor Manufacturing",
-                "score": 4,
-                "reasoning": "\ubc18\ub3c4\uccb4\ub294 AI \uae30\uc220 \ubc1c\uc804\uc5d0 \ud544\uc218\uc801\uc778 \uae30\ubc18 \uc0b0\uc5c5\uc774\uba70, ASML\uc758 \ub3c5\uc810\uc801\uc778 \uc704\uce58\ub294 AI \ud558\ub4dc\uc6e8\uc5b4 \uacf5\uae09\ub9dd\uc758 \ud575\uc2ec \ub3d9\ud5a5\uc744 \uc774\ud574\ud558\ub294 \ub370 \ub9e4\uc6b0 \uc911\uc694\ud569\ub2c8\ub2e4.",
-                "date": "2026-04-28"
-            },
-            {
-                "target": "Elon Musk's Tesla Pay Package",
-                "score": 1,
-                "reasoning": "\uae30\uc5c5\uc758 \uc7ac\ubb34 \ubc0f \uc9c0\ubc30\uad6c\uc870 \uad00\ub828 \uc18c\uc2dd\uc73c\ub85c, AI/\uae30\uc220 \ud601\uc2e0 \ub3d9\ud5a5\uacfc\ub294 \uac70\ub9ac\uac00 \uba3c \ub2e8\uc21c \uac00\uc2ed\uc131 \uc815\ubcf4\uc785\ub2c8\ub2e4.",
-                "date": "2026-04-28"
-            },
             {
                 "target": "Symphony (GitHub Repo)",
                 "score": 4,
@@ -12204,6 +12423,132 @@
                 "reasoning": "Fedora\uc640 Ubuntu\ub77c\ub294 \uc8fc\uc694 \uc624\ud508\uc18c\uc2a4 \uc6b4\uc601\uccb4\uc81c\uc5d0 AI \uc9c0\uc6d0\uc774 \ud1b5\ud569\ub420 \uc608\uc815\uc774\uba70, \ud2b9\ud788 \ub85c\uceec \ubaa8\ub378\uacfc \uc0ac\uc6a9\uc790 \ud504\ub77c\uc774\ubc84\uc2dc\ub97c \uac15\uc870\ud569\ub2c8\ub2e4. \uc774\ub294 \uc624\ud508\uc18c\uc2a4 LLM\uc758 \uc811\uadfc\uc131, \ud65c\uc6a9\uc131, \uadf8\ub9ac\uace0 \uac1c\uc778 \uc815\ubcf4 \ubcf4\ud638 \uce21\uba74\uc5d0\uc11c \ub9e4\uc6b0 \uc911\uc694\ud55c \uae30\uc220\uc801 \uc9c4\ubcf4\uc774\uba70, \uc624\ud508\uc18c\uc2a4 AI \uc0dd\ud0dc\uacc4\uc5d0 \uc911\ub300\ud55c \uc601\ud5a5\uc744 \ubbf8\uce60 \uc7a0\uc7ac\ub825\uc774 \uc788\uc2b5\ub2c8\ub2e4.",
                 "url": "https://www.theregister.com/oses/2026/05/10/both-fedora-and-ubuntu-will-get-ai-support-soon/5237409?utm_source=tldrnewsletter",
                 "date": "2026-05-12"
+            },
+            {
+                "target": "QA Wolf Automated Testing Service",
+                "score": 1,
+                "reasoning": "\uc2a4\ud3f0\uc11c \ucf58\ud150\uce20\ub85c, AI \ub610\ub294 \uc624\ud508\uc18c\uc2a4 LLM\uc758 \uae30\uc220\uc801 \ubc1c\uc804\uc5d0 \ub300\ud55c \ub274\uc2a4\uac00 \uc544\ub2d9\ub2c8\ub2e4.",
+                "url": "https://www.qawolf.com/?utm_source=tldr&utm_medium=newsletter&utm_campaign=ACQ_All_Demo_Conversions__NewsletterAudience_-_Newsletter_CutQACycles_20260512-None_Experiment-FALSE&utm_term=headline-CutYourQACyclesDownFromHoursToMinutesWithAutomatedTesting&utm_content=CutQACycles_ScheduleADemoToLearnMore_None_Headline%3ACutYourQACyclesDownToMinutesWithAutomatedTesting____Newsletter-PrimaryPlacement_20260512_v1_",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "Google Gemini Omni Video Model Leak",
+                "score": 3,
+                "reasoning": "\uad6c\uae00\uc758 \ub3c5\uc810 \ubaa8\ub378 \uc720\ucd9c \uc18c\uc2dd\uc785\ub2c8\ub2e4. AI \uad00\ub828 \uc18c\uc2dd\uc774\uc9c0\ub9cc, \uc624\ud508\uc18c\uc2a4 LLM \uae30\uc220 \ubc1c\uc804 \ub3d9\ud5a5\uc5d0 \ud574\ub2f9\ud558\uc9c0 \uc54a\uc73c\ubbc0\ub85c \ucd5c\uc6b0\uc120 \ud3c9\uac00 \ub300\uc0c1\uc740 \uc544\ub2d9\ub2c8\ub2e4.",
+                "url": "https://www.testingcatalog.com/googles-gemini-omni-video-model-surfaces-ahead-of-i-o-debut/?utm_source=tldrnewsletter",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "Microsoft CEO Satya Nadella's Intervention in OpenAI Sam Altman Firing",
+                "score": 2,
+                "reasoning": "AI \uc5c5\uacc4\uc758 \uae30\uc5c5 \uac04 \uac08\ub4f1 \ubc0f \ubc95\uc801 \ubd84\uc7c1\uc5d0 \uad00\ud55c \uc18c\uc2dd\uc73c\ub85c, AI \ub610\ub294 \uc624\ud508\uc18c\uc2a4 LLM\uc758 \uae30\uc220\uc801 \ubc1c\uc804\uc5d0 \ub300\ud55c \ub0b4\uc6a9\uc740 \uc544\ub2d9\ub2c8\ub2e4.",
+                "url": "https://links.tldrnewsletter.com/widYSb",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "Figure Humanoid Robots Household Tasks",
+                "score": 3,
+                "reasoning": "\ub85c\ubd07 \uacf5\ud559 \ubc0f AI \uc751\uc6a9 \ubd84\uc57c\uc758 \ubc1c\uc804 \uc0ac\ub840\uc774\uc9c0\ub9cc, LLM \ud2b9\uc815 \uae30\uc220 \ubc1c\uc804\uc774\ub098 \uc624\ud508\uc18c\uc2a4 LLM \ub3d9\ud5a5\uacfc\ub294 \uc9c1\uc811\uc801\uc778 \uad00\ub828\uc774 \uc801\uc2b5\ub2c8\ub2e4.",
+                "url": "https://interestingengineering.com/ai-robotics/humanoids-team-up-to-make-a-bed?utm_source=tldrnewsletter",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "AI Used by Hackers to Find Zero-Day Flaw",
+                "score": 5,
+                "reasoning": "AI\uac00 \uc81c\ub85c\ub370\uc774 \ucde8\uc57d\uc810 \ubc1c\uacac\uc5d0 \uc0ac\uc6a9\ub41c \uac83\uc740 AI\uc758 \uae30\uc220\uc801 \uc5ed\ub7c9\uc744 \ubcf4\uc5ec\uc8fc\ub294 \uc911\ub300\ud55c \ubc1c\uc804\uc785\ub2c8\ub2e4. \ube44\ub85d \uc545\uc758\uc801\uc778 \uc0ac\uc6a9 \uc0ac\ub840\uc774\uc9c0\ub9cc, AI\uc758 \uae30\uc220\uc801 \ub2a5\ub825\uacfc \uadf8 \ud30c\uae09\ub825\uc744 \uace0\ub824\ud560 \ub54c \ub9e4\uc6b0 \uc911\uc694\ud55c \uc18c\uc2dd\uc73c\ub85c \ud310\ub2e8\ub429\ub2c8\ub2e4.",
+                "url": "https://links.tldrnewsletter.com/vF572n",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "TLDR Advertising Sponsorship",
+                "score": 1,
+                "reasoning": "\uc2a4\ud3f0\uc11c \ucf58\ud150\uce20\ub85c, AI \ub610\ub294 \uc624\ud508\uc18c\uc2a4 LLM\uc758 \uae30\uc220\uc801 \ubc1c\uc804\uc5d0 \ub300\ud55c \ub274\uc2a4\uac00 \uc544\ub2d9\ub2c8\ub2e4.",
+                "url": "https://advertise.tldr.tech/?utm_source=tldr&utm_medium=newsletter&utm_campaign=secondary05122026",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "Anthropic Claude Platform on AWS",
+                "score": 3,
+                "reasoning": "\ub3c5\uc810 \ubaa8\ub378(Claude)\uc758 \ud074\ub77c\uc6b0\ub4dc \ud50c\ub7ab\ud3fc \ud1b5\ud569 \uc18c\uc2dd\uc785\ub2c8\ub2e4. AI \ubaa8\ub378\uc758 \uc811\uadfc\uc131 \ud5a5\uc0c1\uc774\uc9c0\ub9cc, \uc624\ud508\uc18c\uc2a4 LLM\uc758 \uae30\uc220\uc801 \uc9c4\ubcf4\uc640\ub294 \uac70\ub9ac\uac00 \uc788\uc2b5\ub2c8\ub2e4.",
+                "url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-platform-on-aws-anthropics-native-platform-through-your-aws-account/?utm_source=tldrnewsletter",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "TanStack npm Packages Supply-Chain Attack",
+                "score": 2,
+                "reasoning": "\uc18c\ud504\ud2b8\uc6e8\uc5b4 \uacf5\uae09\ub9dd \ubcf4\uc548\uc5d0 \ub300\ud55c \uc911\uc694\ud55c \uc18c\uc2dd\uc774\uc9c0\ub9cc, AI \ub610\ub294 \uc624\ud508\uc18c\uc2a4 LLM \uae30\uc220 \ubc1c\uc804\uacfc\ub294 \uc9c1\uc811\uc801\uc778 \uad00\ub828\uc774 \uc5c6\uc2b5\ub2c8\ub2e4.",
+                "url": "https://socket.dev/blog/tanstack-npm-packages-compromised-mini-shai-hulud-supply-chain-attack?utm_source=tldrnewsletter",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "The Inference Shift and Agentic AI Memory",
+                "score": 5,
+                "reasoning": "AI \uc5d0\uc774\uc804\ud2b8\uc758 \ud575\uc2ec\uc778 \uba54\ubaa8\ub9ac \uacc4\uce35 \uad6c\uc870\uc640 \ucd94\ub860 \ubc29\uc2dd\uc758 \ubcc0\ud654\uc5d0 \ub300\ud55c \uc2ec\uce35\uc801\uc778 \ub17c\uc758\uc785\ub2c8\ub2e4. \uc774\ub294 LLM \ubc0f AI \uc5d0\uc774\uc804\ud2b8\uc758 \uadfc\ubcf8\uc801\uc778 \uae30\uc220\uc801 \ud328\ub7ec\ub2e4\uc784 \ubcc0\ud654\ub97c \ub2e4\ub8e8\ubbc0\ub85c \ub9e4\uc6b0 \ub192\uc740 \uc810\uc218\ub97c \ubd80\uc5ec\ud569\ub2c8\ub2e4.",
+                "url": "https://stratechery.com/2026/the-inference-shift/?utm_source=tldrnewsletter",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "Scott Wu Interview (Cognition AI, AI Agents)",
+                "score": 4,
+                "reasoning": "AI \uc5d0\uc774\uc804\ud2b8 \ubd84\uc57c\uc758 \uc120\uad6c\uc790\uc778 Cognition CEO\uc758 \ud1b5\ucc30\uc744 \ub2f4\uc740 \uc778\ud130\ubdf0\uc785\ub2c8\ub2e4. \uc9c1\uc811\uc801\uc778 \uae30\uc220 \ubc1c\uc804 \uc18c\uc2dd\uc740 \uc544\ub2c8\uc9c0\ub9cc, AI \uc5d0\uc774\uc804\ud2b8\uc758 \ubbf8\ub798 \ubc29\ud5a5\uc131\uacfc \uae30\uc220\uc801 \ud568\uc758\ub97c \uc774\ud574\ud558\ub294 \ub370 \uc911\uc694\ud55c \uae30\uc5ec\ub97c \ud569\ub2c8\ub2e4.",
+                "url": "https://colossus.com/article/scott-wu-tapes-cognition/?utm_source=tldrnewsletter",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "Lightfield Skills CRM Programming",
+                "score": 1,
+                "reasoning": "\uc2a4\ud3f0\uc11c \ucf58\ud150\uce20\ub85c, AI \ub610\ub294 \uc624\ud508\uc18c\uc2a4 LLM\uc758 \uae30\uc220\uc801 \ubc1c\uc804\uc5d0 \ub300\ud55c \ub274\uc2a4\uac00 \uc544\ub2d9\ub2c8\ub2e4.",
+                "url": "https://lightfield.app/blog/introducing-skills?utm_source=newsletter&utm_medium=paid&utm_campaign=tldr&utm_content=quicklinks_5-12-2026",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "GitLab AI Pivot and Layoffs",
+                "score": 3,
+                "reasoning": "AI\ub85c\uc758 \ube44\uc988\ub2c8\uc2a4 \uc804\ud658 \ubc0f \uad6c\uc870\uc870\uc815\uc5d0 \ub300\ud55c \uc18c\uc2dd\uc785\ub2c8\ub2e4. AI \uae30\uc220\uc758 \uc0b0\uc5c5\uc801 \uc601\ud5a5\ub825\uc744 \ubcf4\uc5ec\uc8fc\uc9c0\ub9cc, \uae30\uc220\uc801 \uc2ec\uce35 \ubd84\uc11d\uacfc\ub294 \uac70\ub9ac\uac00 \uc788\uc2b5\ub2c8\ub2e4.",
+                "url": "https://www.theregister.com/devops/2026/05/12/gitlab-promises-a-different-kind-of-layoff-as-biz-pivots-toward-ai/5238422?utm_source=tldrnewsletter",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "Future Businesses Competing with AI Lab-Owned Firms",
+                "score": 3,
+                "reasoning": "AI\uac00 \ubbf8\ub798 \ube44\uc988\ub2c8\uc2a4 \ubaa8\ub378\uc5d0 \ubbf8\uce60 \uc601\ud5a5\uc5d0 \ub300\ud55c \uc0ac\uc0c9\uc801\uc778 \uae00\uc785\ub2c8\ub2e4. AI\uc758 \uc804\ub7b5\uc801 \uc911\uc694\uc131\uc744 \ub2e4\ub8e8\uc9c0\ub9cc, \uae30\uc220\uc801 \ubc1c\uc804 \ub3d9\ud5a5\uc740 \uc544\ub2d9\ub2c8\ub2e4.",
+                "url": "https://catboosted.bearblog.dev/thelastcompany/?utm_source=tldrnewsletter",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "AI's Impact on Software Architecture (Microservices)",
+                "score": 3,
+                "reasoning": "AI\uac00 \uc18c\ud504\ud2b8\uc6e8\uc5b4 \uc544\ud0a4\ud14d\ucc98\uc5d0 \ubbf8\uce58\ub294 \uc601\ud5a5\uc5d0 \ub300\ud55c \ub17c\uc758\uc785\ub2c8\ub2e4. \uae30\uc220\uc801 \uc911\uc694\uc131\uc740 \uc788\uc73c\ub098, \uc624\ud508\uc18c\uc2a4 LLM\uc758 \ud575\uc2ec \uae30\uc220 \ubc1c\uc804 \ub3d9\ud5a5\uacfc\ub294 \uc9c1\uc811\uc801\uc778 \uad00\ub828\uc774 \uc801\uc2b5\ub2c8\ub2e4.",
+                "url": "https://www.michaelnygard.com/blog/2026/05/ai-versus-microservices/?utm_source=tldrnewsletter",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "Airbyte Context Store for AI Agents",
+                "score": 1,
+                "reasoning": "\uc2a4\ud3f0\uc11c \ucf58\ud150\uce20\ub85c, AI \ub610\ub294 \uc624\ud508\uc18c\uc2a4 LLM\uc758 \uae30\uc220\uc801 \ubc1c\uc804\uc5d0 \ub300\ud55c \ub274\uc2a4\uac00 \uc544\ub2d9\ub2c8\ub2e4.",
+                "url": "https://airbyte.com/blog/airbyte-agents?utm_source=Newsletter&utm_medium=Referral&utm_campaign=TLDR",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "Mythos AI Vulnerability Discovery",
+                "score": 3,
+                "reasoning": "AI \uae30\ubc18 \ucde8\uc57d\uc810 \ubc1c\uacac \ub3c4\uad6c\uc5d0 \ub300\ud55c \uc18c\uc2dd\uc785\ub2c8\ub2e4. AI\uc758 \ubcf4\uc548 \uc751\uc6a9 \uc0ac\ub840\uc774\uc9c0\ub9cc, \uae30\uc874 \ub3c4\uad6c \ub300\ube44 \uc6b0\uc704\uac00 \uba85\ud655\ud558\uc9c0 \uc54a\ub2e4\ub294 \ud3c9\uac00\ub85c \uc778\ud574 \ub192\uc740 \uc810\uc218\ub97c \ubd80\uc5ec\ud558\uae30\ub294 \uc5b4\ub835\uc2b5\ub2c8\ub2e4.",
+                "url": "https://daniel.haxx.se/blog/2026/05/11/mythos-finds-a-curl-vulnerability/?utm_source=tldrnewsletter",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "Laptop Built-in Security Tokens Configuration",
+                "score": 1,
+                "reasoning": "\uc77c\ubc18\uc801\uc778 IT \ubcf4\uc548 \uc124\uc815\uc5d0 \ub300\ud55c \ub0b4\uc6a9\uc73c\ub85c, AI \ub610\ub294 \uc624\ud508\uc18c\uc2a4 LLM \uae30\uc220 \ubc1c\uc804\uacfc\ub294 \uad00\ub828\uc774 \uc5c6\uc2b5\ub2c8\ub2e4.",
+                "url": "https://ahelwer.ca/post/2026-05-08-builtin-u2f/?utm_source=tldrnewsletter",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "Apple OS Updates (RCS Messaging)",
+                "score": 1,
+                "reasoning": "\uc77c\ubc18\uc801\uc778 \uc6b4\uc601\uccb4\uc81c \uc5c5\ub370\uc774\ud2b8 \uc18c\uc2dd\uc73c\ub85c, AI \ub610\ub294 \uc624\ud508\uc18c\uc2a4 LLM \uae30\uc220 \ubc1c\uc804\uacfc\ub294 \uad00\ub828\uc774 \uc5c6\uc2b5\ub2c8\ub2e4.",
+                "url": "https://arstechnica.com/gadgets/2026/05/11/ios-macos-and-ipados-26-5-updates-arrive-with-encrypted-rcs-messaging-and-more/?utm_source=tldrnewsletter",
+                "date": "2026-05-13"
             }
         ],
         "TLDR Fintech": [
@@ -12831,270 +13176,6 @@
             }
         ],
         "Global AI News": [
-            {
-                "target": "'\uc5d4\ube44\ub514\uc544 \ub300\ud56d\ub9c8' \uc138\ub808\ube0c\ub77c\uc2a4, 38\uc870 \uae30\uc5c5 \uac00\uce58\ub85c IPO \ub3c4\uc804",
-                "score": 3,
-                "reasoning": "AI \uce69 \uc2a4\ud0c0\ud2b8\uc5c5 \uc138\ub808\ube0c\ub77c\uc2a4\uc758 IPO \ub3c4\uc804\uc740 \uc5d4\ube44\ub514\uc544 \uc911\uc2ec\uc758 AI \ud558\ub4dc\uc6e8\uc5b4 \uc2dc\uc7a5\uc5d0 \uc0c8\ub85c\uc6b4 \uacbd\uc7c1 \uad6c\ub3c4\ub97c \uc81c\uc2dc\ud560 \uc218 \uc788\ub294 \uc18c\uc2dd\uc785\ub2c8\ub2e4. AI \ubaa8\ub378\uc758 \uc131\ub2a5\uc744 \uc88c\uc6b0\ud558\ub294 \ud558\ub4dc\uc6e8\uc5b4 \ubd84\uc57c\uc758 \ub3d9\ud5a5\uc774\ubbc0\ub85c \uc911\uc694\ud558\uc9c0\ub9cc, LLM \uc790\uccb4\uc758 \uae30\uc220\uc801 \uc9c4\ubcf4\uc640\ub294 \uac70\ub9ac\uac00 \uc788\uc2b5\ub2c8\ub2e4.",
-                "date": "2026-05-05"
-            },
-            {
-                "target": "\ubc31\uc545\uad00, '\ubbf8\uc18c\uc2a4' \uacc4\uae30\ub85c AI \ubaa8\ub378 \ucd9c\uc2dc \uc804 \uad6d\uac00 \uac80\uc99d \ucd94\uc9c4 \uc911",
-                "score": 3,
-                "reasoning": "\ubc31\uc545\uad00\uc758 AI \ubaa8\ub378 \ucd9c\uc2dc \uc804 \uad6d\uac00 \uac80\uc99d \ucd94\uc9c4 \uc18c\uc2dd\uc740 AI \uc548\uc804 \ubc0f \uaddc\uc81c\uc640 \uad00\ub828\ub41c \uc911\uc694\ud55c \uc815\ucc45 \ub3d9\ud5a5\uc785\ub2c8\ub2e4. \uc774\ub294 LLM\uc744 \ud3ec\ud568\ud55c AI \ubaa8\ub378 \uac1c\ubc1c \ubc0f \ubc30\ud3ec \ubc29\uc2dd\uc5d0 \uc911\ub300\ud55c \uc601\ud5a5\uc744 \ubbf8\uce60 \uc218 \uc788\ub294 \uac70\ubc84\ub10c\uc2a4 \uce21\uba74\uc758 \ubc1c\uc804\uc785\ub2c8\ub2e4.",
-                "date": "2026-05-05"
-            },
-            {
-                "target": "\uba38\uc2a4\ud06c, \uc7ac\ud310 \uc804 \ube0c\ub85d\uba3c\uc5d0\uac8c \uc18c\uc1a1 \ud569\uc758 \ud0c0\uc9c4...\"\uac70\uc808\ud558\uba74 \ub300\uc911\uc758 \uc99d\uc624 \ub300\uc0c1 \ub420 \uac83\"",
-                "score": 1,
-                "reasoning": "\uc77c\ub860 \uba38\uc2a4\ud06c\uc640 \uc624\ud508AI \uac04\uc758 \uc18c\uc1a1 \ud569\uc758 \ud0c0\uc9c4 \uc18c\uc2dd\uc740 \uae30\uc5c5 \uac04\uc758 \ubc95\uc801 \ubd84\uc7c1\uc5d0 \uad00\ud55c \uac83\uc73c\ub85c, AI \uae30\uc220 \ubc1c\uc804 \ub3d9\ud5a5\uacfc\ub294 \ubb34\uad00\ud569\ub2c8\ub2e4.",
-                "date": "2026-05-05"
-            },
-            {
-                "target": "\uc564\ud2b8\ub85c\ud53d, \uc6d4\uac00\uc640 2\uc870 \ud569\uc791\uc0ac \uc124\ub9bd...\"\uc5d4\uc9c0\ub2c8\uc5b4 \ud30c\uacac\ud574 \uae30\uc5c5 \uc9c0\uc6d0\"",
-                "score": 3,
-                "reasoning": "\uc564\ud2b8\ub85c\ud53d\uc774 \uc6d4\uac00 \uae08\uc735 \uae30\uc5c5\ub4e4\uacfc \ud569\uc791\uc0ac\ub97c \uc124\ub9bd\ud558\uc5ec \uae30\uc5c5\uc6a9 AI \uc2dc\uc7a5\uc744 \ud655\ub300\ud558\ub294 \uac83\uc740 LLM \uae30\uc220\uc758 \uc2e4\uc81c \uc0b0\uc5c5 \uc801\uc6a9 \ubc0f \uc0c1\uc5c5\ud654 \ub3d9\ud5a5\uc744 \ubcf4\uc5ec\uc8fc\ub294 \uc911\uc694\ud55c \uc18c\uc2dd\uc785\ub2c8\ub2e4. LLM\uc758 \ube44\uc988\ub2c8\uc2a4 \ud655\uc7a5 \uce21\uba74\uc5d0\uc11c \uc758\ubbf8\uac00 \uc788\uc2b5\ub2c8\ub2e4.",
-                "date": "2026-05-05"
-            },
-            {
-                "target": "\ud074\ub85c\ub4dc \ub300\ud654 6%\ub294 \uc778\uc0dd \uc0c1\ub2f4\u2026\uc778\uac04\uad00\uacc4 \uc870\uc5b8 \uc2dc '\uc544\ucca8' \uae09\uc99d",
-                "score": 2,
-                "reasoning": "\uc564\ud2b8\ub85c\ud53d\uc758 \ud074\ub85c\ub4dc \uc0ac\uc6a9 \ud328\ud134 \ubd84\uc11d \uacb0\uacfc\ub294 LLM\uc758 \uc2e4\uc81c \ud65c\uc6a9 \uc0ac\ub840\uc640 \uc0ac\uc6a9\uc790 \ubc18\uc751\uc5d0 \ub300\ud55c \ud765\ubbf8\ub85c\uc6b4 \ud1b5\ucc30\uc744 \uc81c\uacf5\ud558\uc9c0\ub9cc, LLM\uc758 \ud575\uc2ec \uae30\uc220\uc801 \ubc1c\uc804 \ub3d9\ud5a5\uacfc\ub294 \uc9c1\uc811\uc801\uc778 \uad00\ub828\uc774 \ub0ae\uc2b5\ub2c8\ub2e4.",
-                "date": "2026-05-05"
-            },
-            {
-                "target": "[5\uc6d44\uc77c] \uc138\uacc4 \ucd5c\uace0 \ubd80\uc790\uc640 \uc624\ud508AI\uc758 \ucda9\ub3cc \uccab \uc8fc...\"\uba38\uc2a4\ud06c, \ub09c\uad00 \uc9c1\uba74\"",
-                "score": 1,
-                "reasoning": "\uc77c\ub860 \uba38\uc2a4\ud06c\uc640 \uc624\ud508AI \uac04\uc758 \ubc95\uc801 \ubd84\uc7c1 \uc9c4\ud589 \uc0c1\ud669\uc5d0 \ub300\ud55c \ubcf4\ub3c4\ub85c, AI \uae30\uc220 \ubc1c\uc804 \ub3d9\ud5a5\uacfc\ub294 \ubb34\uad00\ud569\ub2c8\ub2e4.",
-                "date": "2026-05-05"
-            },
-            {
-                "target": "\ud734\uba38\ub178\uc774\ub4dc \ub85c\ubd07 \ub300\ub7c9\uc0dd\uc0b0 \uc2dc\uc791\u2026 \ubcf8\uaca9\uc801\uc73c\ub85c \u2018\uc9d1\uc73c\ub85c\u2019",
-                "score": 1,
-                "reasoning": "\ud734\uba38\ub178\uc774\ub4dc \ub85c\ubd07 \ub300\ub7c9\uc0dd\uc0b0 \uc18c\uc2dd\uc740 \ub85c\ubd07 \uc0b0\uc5c5\uc758 \ub3d9\ud5a5\uc744 \ubcf4\uc5ec\uc8fc\uc9c0\ub9cc, AI \uae30\uc220 \uc790\uccb4\uc758 \ubc1c\uc804 \ub3d9\ud5a5\uc5d0 \ub300\ud55c \uad6c\uccb4\uc801\uc778 \ub0b4\uc6a9\uc774 \ubd80\uc871\ud558\uba70, \uae30\uc0ac \ub0b4\uc6a9\uc774 \ub9e4\uc6b0 \uc9e7\uc544 \uc2ec\uce35\uc801\uc778 \ud3c9\uac00\uac00 \uc5b4\ub835\uc2b5\ub2c8\ub2e4.",
-                "date": "2026-05-05"
-            },
-            {
-                "target": "\uc54c\ub809\uc2a4 \uce74\ud504 \u201c\ud314\ub780\ud2f0\uc5b4\uc758 \ud575\uc2ec \uac00\uce58\ub294 \uad6d\uac00\uc548\ubcf4\u201d\u00b7\u00b7\u00b7\ubbfc\uac04 \uc218\uc694 \ud3ed\uc99d\uc5d0\ub3c4 \uad6d\ubc29 \uc790\uc6d0 \ubc30\ubd84 \ucd5c\uc6b0\uc120",
-                "score": 2,
-                "reasoning": "\ud314\ub780\ud2f0\uc5b4\uc758 \uc0ac\uc5c5 \uc804\ub7b5\uacfc \uc2e4\uc801\uc5d0 \ub300\ud55c \ub0b4\uc6a9\uc73c\ub85c, AI \uae30\uc220\uc758 \uad6d\ubc29 \ubd84\uc57c \uc801\uc6a9\uc744 \ub2e4\ub8e8\uc9c0\ub9cc, LLM\uc774\ub098 AI \uae30\uc220 \uc790\uccb4\uc758 \ubc1c\uc804 \ub3d9\ud5a5\uacfc\ub294 \uac70\ub9ac\uac00 \uc788\uc2b5\ub2c8\ub2e4.",
-                "date": "2026-05-05"
-            },
-            {
-                "target": "\uc560\ud50c, \uc0bc\uc131\uc804\uc790\u00b7\uc778\ud154 \uc190\uc7a1\uace0 \u2018\uba54\uc774\ub4dc \uc778 USA\u2019 \uce69 \ub9cc\ub4e0\ub2e4",
-                "score": 1,
-                "reasoning": "\uc560\ud50c, \uc0bc\uc131\uc804\uc790, \uc778\ud154\uc758 \uce69 \uc81c\uc870 \ud611\ub825 \uc18c\uc2dd\uc740 \ubc18\ub3c4\uccb4 \uc0b0\uc5c5\uc758 \uacf5\uae09\ub9dd \ub2e4\uac01\ud654\uc5d0 \uad00\ud55c \uac83\uc73c\ub85c, AI \uce69 \uc790\uccb4\uc758 \uae30\uc220\uc801 \ubc1c\uc804 \ub3d9\ud5a5\uacfc\ub294 \uc9c1\uc811\uc801\uc778 \uad00\ub828\uc774 \ub0ae\uc2b5\ub2c8\ub2e4.",
-                "date": "2026-05-05"
-            },
-            {
-                "target": "\u201c\uc548\ubc29\uc11c \ud754\ub4e4\ub9ac\ub294 BYD, \uc601\ud1a0 \ud655\uc7a5 \ub098\uc120 \ud14c\uc2ac\ub77c\u201d\u00b7\u00b7\u00b7\ub2e4\uc2dc \ubd88\ubd99\uc740 EV \uc138\uacc4 \ub300\uc804",
-                "score": 1,
-                "reasoning": "\uc804\uae30\ucc28 \uc2dc\uc7a5 \ub3d9\ud5a5\uc5d0 \ub300\ud55c \uae30\uc0ac\ub85c, AI \uae30\uc220 \ubc1c\uc804\uacfc\ub294 \ubb34\uad00\ud569\ub2c8\ub2e4.",
-                "date": "2026-05-05"
-            },
-            {
-                "target": "\u201c\ube44\uc2f8\ub2e4\uace0? \uc544\uc9c1 \ubc30\uace0\ud504\ub2e4\u201d \ud06c\ub808\uc774\uba38, \uc0cc\ub514\uc2a4\ud06c\u00b7\uc528\uac8c\uc774\ud2b8 \ub4f1 \uba54\ubaa8\ub9ac\uc8fc \u2018\uac70\uce68\uc5c6\ub294 \uc9c8\uc8fc\u2019 \uc608\uace0",
-                "score": 3,
-                "reasoning": "AI \uc6cc\ud06c\ub85c\ub4dc\ub85c \uc778\ud55c \uba54\ubaa8\ub9ac \uc800\uc7a5 \uc7a5\uce58 \ubd80\uc871 \ud604\uc0c1\uacfc \uba54\ubaa8\ub9ac \uad00\ub828 \uc8fc\uc2dd\uc758 \uac15\uc138\ub294 AI \uc778\ud504\ub77c \uad6c\ucd95\uc758 \ud575\uc2ec \uc694\uc18c\uc778 \ud558\ub4dc\uc6e8\uc5b4 \uc2dc\uc7a5 \ub3d9\ud5a5\uc744 \ubcf4\uc5ec\uc90d\ub2c8\ub2e4. LLM \uc790\uccb4\uc758 \uae30\uc220 \ubc1c\uc804\uc740 \uc544\ub2c8\uc9c0\ub9cc, AI \uc0dd\ud0dc\uacc4 \uc804\ubc18\uc5d0 \uc911\uc694\ud55c \uc601\ud5a5\uc744 \ubbf8\uce58\ub294 \uc18c\uc2dd\uc785\ub2c8\ub2e4.",
-                "date": "2026-05-05"
-            },
-            {
-                "target": "\u201c\uc18c\ud504\ud2b8\uc6e8\uc5b4 \uac00\uace0 \ucef4\ud4e8\ud305 \uc628\ub2e4\u201d \uc54c\ud2f0\ubbf8\ud130, MS \ud314\uace0 \uc5d4\ube44\ub514\uc544\u00b7SK\ud558\uc774\ub2c9\uc2a4 \ubca0\ud305",
-                "score": 3,
-                "reasoning": "\uc54c\ud2f0\ubbf8\ud130 \uce90\ud53c\ud138\uc758 \ud22c\uc790 \uc804\ub7b5 \uc804\ud658\uc740 AI \uc2dc\uc7a5\uc5d0\uc11c \uc18c\ud504\ud2b8\uc6e8\uc5b4\uc5d0\uc11c \ucef4\ud4e8\ud305 \ubc0f \uba54\ubaa8\ub9ac \ud558\ub4dc\uc6e8\uc5b4\ub85c \uc790\ubcf8\uc774 \uc774\ub3d9\ud558\ub294 \ucd94\uc138\ub97c \ubcf4\uc5ec\uc90d\ub2c8\ub2e4. \uc774\ub294 AI \uc778\ud504\ub77c \ud22c\uc790 \ub3d9\ud5a5\uc744 \uc774\ud574\ud558\ub294 \ub370 \uc911\uc694\ud55c \uc2dc\uc0ac\uc810\uc744 \uc81c\uacf5\ud569\ub2c8\ub2e4.",
-                "date": "2026-05-05"
-            },
-            {
-                "target": "\u201cAI \uc218\uc775\ud654, \ud658\uc0c1\uc778\uac00 \uc2e4\ud654\uc778\uac00\u201d AMD \uc2e4\uc801 \uc804\uc57c\u00b7\u00b7\u00b7\u2019\ubc84\ube14 \uacbd\uace0\u2019 \ubcfc\ub8e8\uc5b4 vs \u2018\ubca0\ud305\u2019 \ud06c\ub808\uc774\uba38",
-                "score": 4,
-                "reasoning": "AMD\uc758 1\ubd84\uae30 \uc2e4\uc801 \uc804\ub9dd\uacfc AI \uc57c\ub9dd\uc5d0 \ub300\ud55c \ub17c\uc758\ub294 AI \uce69 \uc2dc\uc7a5\uc758 \uacbd\uc7c1 \uad6c\ub3c4\uc640 \uc8fc\uc694 \uae30\uc5c5\uc758 \uc804\ub7b5\uc744 \ubcf4\uc5ec\uc90d\ub2c8\ub2e4. \ud2b9\ud788 MI400, \ud5ec\ub9ac\uc624\uc2a4 \ub4f1 AI \uad00\ub828 \uc81c\ud488\uc758 \ub3c4\uc785\uacfc \uc5d4\ube44\ub514\uc544\uc758 \ub300\uc548\uc73c\ub85c\uc11c AMD\uc758 \uc5ed\ud560\uc740 AI \ud558\ub4dc\uc6e8\uc5b4 \uae30\uc220 \ubc0f \ube44\uc988\ub2c8\uc2a4 \ub3d9\ud5a5\uc5d0\uc11c \uc911\uc694\ud558\uac8c \ud3c9\uac00\ub429\ub2c8\ub2e4.",
-                "date": "2026-05-05"
-            },
-            {
-                "target": "\ud53c\ud130 \uc26c\ud504, \u201c\u7f8e 30\ub144\ubb3c \uad6d\ucc44 \uc218\uc775\ub960 6% \uc0c1\ud68c \uac00\ub2a5\u201d \uacbd\uace0",
-                "score": 1,
-                "reasoning": "\ubbf8\uad6d \uad6d\ucc44 \uc218\uc775\ub960 \ubc0f \uacbd\uc81c \uc704\uae30 \uacbd\uace0\uc5d0 \ub300\ud55c \uae30\uc0ac\ub85c, AI \uae30\uc220 \ubc1c\uc804\uacfc\ub294 \ubb34\uad00\ud569\ub2c8\ub2e4.",
-                "date": "2026-05-05"
-            },
-            {
-                "target": "\ud654\uc694\uc77c \uc8fc\ubaa9\ud574\uc57c \ud560 \uc8fc\uc2dd: \ud654\uc774\uc790, \ud540\ud130\ub808\uc2a4\ud2b8, \ud398\uc774\ud314, \uc628\uc138\ubbf8\ucee8\ub355\ud130 \ubc0f AMD",
-                "score": 1,
-                "reasoning": "\uc5ec\ub7ec \uae30\uc5c5\uc758 \uc8fc\uc2dd \ub3d9\ud5a5\uc744 \ub2e4\ub8e8\ub294 \uc77c\ubc18\uc801\uc778 \uc2dc\uc7a5 \uc18c\uc2dd\uc73c\ub85c, AMD\uac00 \ud3ec\ud568\ub418\uc5b4 \uc788\uc9c0\ub9cc AI \uae30\uc220 \ubc1c\uc804 \ub3d9\ud5a5\uc5d0 \ub300\ud55c \uad6c\uccb4\uc801\uc778 \ub0b4\uc6a9\uc740 \ubd80\uc871\ud569\ub2c8\ub2e4.",
-                "date": "2026-05-05"
-            },
-            {
-                "target": "\ube44\ud2b8\ucf54\uc778\u00b7\uc774\ub354\ub9ac\uc6c0 \uae09\ub4f1, XRP\u00b7\ub3c4\uc9c0\ucf54\uc778 \uc815\uccb4\u00b7\u00b7\u00b7\u201dBTC 9\ub9cc 2\ucc9c \ub2ec\ub7ec\uae4c\uc9c0 \uc0c1\uc2b9 \uac00\ub2a5?\u201d",
-                "score": 1,
-                "reasoning": "\uc554\ud638\ud654\ud3d0 \uc2dc\uc7a5 \ub3d9\ud5a5\uc5d0 \ub300\ud55c \uae30\uc0ac\ub85c, AI \uae30\uc220 \ubc1c\uc804\uacfc\ub294 \ubb34\uad00\ud569\ub2c8\ub2e4.",
-                "date": "2026-05-05"
-            },
-            {
-                "target": "\u201c\uac70\ubb3c\ub4e4\uc758 \ucd09\uc740 \uac19\uc558\ub2e4\u201d \ub85c\uc2a4 \uac70\ubc84\uc640 \ub304 \uc544\uc774\ube0c\uc2a4, \ub3d9\uc2dc\uc5d0 \ubcf4\uc720\ud55c \u2018\uc6b4\uba85\uc801 9\uc885\ubaa9\u2019\uc740?",
-                "score": 2,
-                "reasoning": "\uc720\uba85 \ud22c\uc790\uc790\ub4e4\uc758 \uacf5\ud1b5 \ubcf4\uc720 \uc885\ubaa9\uc5d0 \ub300\ud55c \ubd84\uc11d\uc73c\ub85c, AI \uad00\ub828 \uae30\uc5c5\ub4e4\uc774 \ud3ec\ud568\ub418\uc5b4 \uc788\uc9c0\ub9cc, AI \uae30\uc220 \ubc1c\uc804 \ub3d9\ud5a5\ubcf4\ub2e4\ub294 \ud22c\uc790 \uc804\ub7b5\uc5d0 \ucd08\uc810\uc744 \ub9de\ucd94\uace0 \uc788\uc2b5\ub2c8\ub2e4.",
-                "date": "2026-05-05"
-            },
-            {
-                "target": "\uc544\ubaa8\ub370\uc774 \"\ubbf8\uc18c\uc2a4 \uc720\ud6a8 \uae30\uac04\uc740 6~12\uac1c\uc6d4...\uc911\uad6d\uc774 \uace7 \ub530\ub77c\uc7a1\uc744 \uac83\"",
-                "score": 4,
-                "reasoning": "\uc564\ud2b8\ub85c\ud53d\uc758 AI \ubaa8\ub378 '\ubbf8\uc18c\uc2a4'\uac00 \uc0ac\uc774\ubc84 \ubcf4\uc548\uc5d0 \ubbf8\uce58\ub294 \uc601\ud5a5\uacfc \uc911\uad6d\uacfc\uc758 \uae30\uc220 \uaca9\ucc28\uc5d0 \ub300\ud55c CEO\uc758 \ubc1c\uc5b8\uc740 AI\uc758 \uc2e4\uc81c \uc801\uc6a9\uacfc \uad6d\uac00 \uac04 \uacbd\uc7c1 \uad6c\ub3c4\ub97c \ubcf4\uc5ec\uc8fc\ub294 \uc911\uc694\ud55c \uc18c\uc2dd\uc785\ub2c8\ub2e4. \uc624\ud508\uc18c\uc2a4 LLM \uae30\uc220 \ubc1c\uc804 \ub3d9\ud5a5\uc740 \uc544\ub2c8\uc9c0\ub9cc, AI \uc0b0\uc5c5 \uc804\ubc18\uc758 \uc8fc\uc694 \uc774\uc288\uc785\ub2c8\ub2e4.",
-                "date": "2026-05-07"
-            },
-            {
-                "target": "\uc564\ud2b8\ub85c\ud53d \uc815\ucc45 \ucd1d\uad04 \ub2e4\uc74c\uc8fc \ubc29\ud55c...\uacfc\uae30\ubd80\uc640 '\ubbf8\uc18c\uc2a4' \ub17c\uc758",
-                "score": 3,
-                "reasoning": "\uc564\ud2b8\ub85c\ud53d\uc758 '\ubbf8\uc18c\uc2a4' \ubaa8\ub378\uc5d0 \ub300\ud55c \uc815\ucc45 \ub17c\uc758\ub294 AI \uac70\ubc84\ub10c\uc2a4\uc640 \ubaa8\ub378 \uc811\uadfc\uc131\uc5d0 \ub300\ud55c \uc911\uc694\ud55c \uc774\uc288\ub97c \ub2e4\ub8e8\uc9c0\ub9cc, \uae30\uc220\uc801 \ubc1c\uc804 \uc790\uccb4\ubcf4\ub2e4\ub294 \uc815\ucc45 \ubc0f \ube44\uc988\ub2c8\uc2a4 \uce21\uba74\uc5d0 \uac00\uae5d\uc2b5\ub2c8\ub2e4.",
-                "date": "2026-05-07"
-            },
-            {
-                "target": "\uc624\ud508AI 'GPT-5.5 \ud30c\ud2f0' \uc2e0\uccad\uc790 8000\uba85\uc5d0 '\ucf54\ub371\uc2a4' \uc0ac\uc6a9\ub7c9 10\ubc30 \uc81c\uacf5...\uc564\ud2b8\ub85c\ud53d\ub3c4 \ub9de\ubd88",
-                "score": 3,
-                "reasoning": "\uc624\ud508AI\uc640 \uc564\ud2b8\ub85c\ud53d \uac04\uc758 \uac1c\ubc1c\uc790 \uc0dd\ud0dc\uacc4 \uacbd\uc7c1\uc740 AI \uc0b0\uc5c5\uc758 \uc911\uc694\ud55c \ub3d9\ud5a5\uc774\uc9c0\ub9cc, \ud2b9\uc815 \uc624\ud508\uc18c\uc2a4 LLM\uc758 \uae30\uc220\uc801 \ubc1c\uc804\uc744 \ub2e4\ub8e8\uae30\ubcf4\ub2e4\ub294 \ube45\ud14c\ud06c \uae30\uc5c5\uc758 \uc2dc\uc7a5 \uc804\ub7b5\uc5d0 \ucd08\uc810\uc744 \ub9de\ucd94\uace0 \uc788\uc2b5\ub2c8\ub2e4.",
-                "date": "2026-05-07"
-            },
-            {
-                "target": "RAG \uc2dc\ub300 \ub05d\ub098\ub098...'1200\ub9cc \ud1a0\ud070' \ucee8\ud14d\uc2a4\ud2b8 \ucc3d \uc81c\uacf5\ud558\ub294 \ubaa8\ub378 \ucd9c\uc2dc",
-                "score": 5,
-                "reasoning": "\uae30\uc874 \ud2b8\ub79c\uc2a4\ud3ec\uba38\uc758 \uad6c\uc870\uc801 \ud55c\uacc4\ub97c \ubc97\uc5b4\ub098 \uc5f0\uc0b0\ub7c9\uc774 \uc120\ud615\uc801\uc73c\ub85c \uc99d\uac00\ud558\ub294 \uc0c8\ub85c\uc6b4 \uc544\ud0a4\ud14d\ucc98\ub97c \uc801\uc6a9\ud55c LLM \ucd9c\uc2dc\ub294 \uae30\uc220\uc801 \ud328\ub7ec\ub2e4\uc784\uc744 \ubc14\uafc0 \uc218 \uc788\ub294 \uc7a0\uc7ac\ub825\uc744 \uac00\uc9c4 \ub9e4\uc6b0 \uc911\uc694\ud55c \uae30\uc220 \ubc1c\uc804\uc785\ub2c8\ub2e4. \ucee8\ud14d\uc2a4\ud2b8 \ucc3d 1200\ub9cc \ud1a0\ud070\uc740 RAG(\uac80\uc0c9 \uc99d\uac15 \uc0dd\uc131) \ubc29\uc2dd\uc758 \ud544\uc694\uc131\uc744 \uc904\uc77c \uc218 \uc788\ub294 \ud601\uc2e0\uc801\uc778 \uc9c4\ubcf4\ub85c, AI \ubaa8\ub378\uc758 \uadfc\ubcf8\uc801\uc778 \uc131\ub2a5 \ud5a5\uc0c1\uc5d0 \uae30\uc5ec\ud569\ub2c8\ub2e4.",
-                "date": "2026-05-07"
-            },
-            {
-                "target": "\uad6c\uae00\u00b7\uba54\ud0c0, '\uc624\ud508\ud074\ub85c'\uc640 \ube44\uc2b7\ud55c \uac1c\uc778\uc6a9 \uc5d0\uc774\uc804\ud2b8 '\ud574\uce58\u00b7\ub808\ubbf8' \uac1c\ubc1c \uc911",
-                "score": 3,
-                "reasoning": "\uad6c\uae00\uacfc \uba54\ud0c0\uc758 \uac1c\uc778\ud615 AI \uc5d0\uc774\uc804\ud2b8 \uac1c\ubc1c\uc740 AI \uc11c\ube44\uc2a4\uc758 \ud655\uc7a5 \ub3d9\ud5a5\uc744 \ubcf4\uc5ec\uc8fc\uc9c0\ub9cc, \uc624\ud508\uc18c\uc2a4 LLM\uc758 \uae30\uc220\uc801 \ubc1c\uc804\uc5d0 \uc9c1\uc811\uc801\uc73c\ub85c \ucd08\uc810\uc744 \ub9de\ucd94\uae30\ubcf4\ub2e4\ub294 \ube45\ud14c\ud06c \uae30\uc5c5\uc758 \uc81c\ud488 \uac1c\ubc1c \uc18c\uc2dd\uc785\ub2c8\ub2e4.",
-                "date": "2026-05-07"
-            },
-            {
-                "target": "\uad6c\uae00\uc5d0 \uccab 'AI \ub178\uc870' \ub4f1\uc7a5\ud558\ub098...\ub525\ub9c8\uc778\ub4dc, \ubbf8 \uad6d\ubc29\ubd80 \uacc4\uc57d\uc5d0 \ubc18\ubc1c\ud574 \ub178\uc870 \uacb0\uc131",
-                "score": 2,
-                "reasoning": "AI \uae30\uc220 \uac1c\ubc1c \uc790\uccb4\ubcf4\ub2e4\ub294 AI \uc724\ub9ac, \ub178\ub3d9 \ubb38\uc81c, \uae30\uc5c5\uc758 \uad70\uc0ac \ud611\ub825\uc5d0 \ub300\ud55c \uc0ac\ud68c\uc801 \ub17c\uc758\ub97c \ub2e4\ub8e8\ub294 \uae30\uc0ac\ub85c, \uae30\uc220\uc801 \uc911\uc694\ub3c4\ub294 \ub0ae\uc2b5\ub2c8\ub2e4.",
-                "date": "2026-05-07"
-            },
-            {
-                "target": "[\uac8c\uc2dc\ud310] \uce74\uce74\uc624\ubaa8\ube4c\ub9ac\ud2f0, AI \uc8fc\ub2c8\uc5b4\ub7a9 6\uae30 \ubaa8\uc9d1 \ub4f1 \ub2e8\uc2e0",
-                "score": 1,
-                "reasoning": "AI \uad50\uc721 \ud504\ub85c\uadf8\ub7a8 \ubaa8\uc9d1 \ub4f1 \ub2e8\uc21c \ub2e8\uc2e0\uc73c\ub85c, AI \uae30\uc220 \ubc1c\uc804 \ub3d9\ud5a5\uc774\ub098 \uc0b0\uc5c5 \uc804\ubc18\uc5d0 \ubbf8\uce58\ub294 \uc601\ud5a5\uc774 \ubbf8\ubbf8\ud569\ub2c8\ub2e4.",
-                "date": "2026-05-07"
-            },
-            {
-                "target": "[\uac8c\uc2dc\ud310] \uae40\ub3d9\ud658 \ud3ec\ud2f0\ud22c\ub9c8\ub8e8 \ub300\ud45c '\uc0ac\ubc95\ubd80 \uc778\uacf5\uc9c0\ub2a5\uc704\uc6d0\ud68c' \uc704\uc6d0 \uc704\ucd09 \ub4f1 \ub2e8\uc2e0",
-                "score": 1,
-                "reasoning": "\uc0ac\ubc95\ubd80 AI \uc704\uc6d0 \uc704\ucd09, \uad6c\uae00 \ud074\ub77c\uc6b0\ub4dc\uc640 \uc704\ubc84\uc2a4\ucef4\ud37c\ub2c8 \ud611\ub825 \ub4f1 \ub2e8\uc21c \ub2e8\uc2e0\uc73c\ub85c, AI \uae30\uc220 \ubc1c\uc804 \ub3d9\ud5a5\uc774\ub098 \uc0b0\uc5c5 \uc804\ubc18\uc5d0 \ubbf8\uce58\ub294 \uc601\ud5a5\uc774 \ubbf8\ubbf8\ud569\ub2c8\ub2e4.",
-                "date": "2026-05-07"
-            },
-            {
-                "target": "\uc18c\ud504\ud2b8\uc2a4\ud018\uc5b4\ub4dc, AI \ud2b9\ud654 \u2018\uc778\ub825 \uc6b4\uc601 \uc11c\ube44\uc2a4\u2019\ub85c \uad6d\ub0b4 \uccab B2B WaaS \uc778\uc99d \ud68d\ub4dd",
-                "score": 2,
-                "reasoning": "AI \ud2b9\ud654 \uc778\ub825 \uc6b4\uc601 \uc11c\ube44\uc2a4\uc758 B2B WaaS \uc778\uc99d \ud68d\ub4dd \uc18c\uc2dd\uc73c\ub85c, AI \uae30\uc220 \uc790\uccb4\uc758 \ubc1c\uc804\ubcf4\ub2e4\ub294 AI \uad00\ub828 \ube44\uc988\ub2c8\uc2a4 \ubaa8\ub378 \ubc0f \uc11c\ube44\uc2a4 \ud655\uc7a5\uc5d0 \ub300\ud55c \ub0b4\uc6a9\uc785\ub2c8\ub2e4.",
-                "date": "2026-05-07"
-            },
-            {
-                "target": "[AI&\ube45\ub370\uc774\ud130\uc1fc] \ud050\ubc0b, AI \uae30\ubc18 \uae30\uc5c5\uc6a9 'QA \uc0ac\uc804\uc9c4\ub2e8 \uc11c\ube44\uc2a4' \uc120\ubcf4\uc778\ub2e4",
-                "score": 2,
-                "reasoning": "AI \uae30\ubc18 QA \uc0ac\uc804\uc9c4\ub2e8 \uc11c\ube44\uc2a4 \ucd9c\uc2dc\ub294 AI\uc758 \uc2e4\uc81c \uc801\uc6a9 \uc0ac\ub840\ub97c \ubcf4\uc5ec\uc8fc\uc9c0\ub9cc, \uae30\uc220\uc801 \ud601\uc2e0\ubcf4\ub2e4\ub294 \uc11c\ube44\uc2a4 \ub3c4\uc785 \ubc0f \ud65c\uc6a9\uc5d0 \ucd08\uc810\uc744 \ub9de\ucd94\uace0 \uc788\uc5b4 \uc911\uc694\ub3c4\uac00 \ub0ae\uc2b5\ub2c8\ub2e4.",
-                "date": "2026-05-07"
-            },
-            {
-                "target": "[AI&\ube45\ub370\uc774\ud130\uc1fc] \uad6d\ub0b4 \ucd5c\ub300 AI \uc804\uc2dc\ud68c, 6\uc6d4 \ucf54\uc5d1\uc2a4\uc11c \uc5f4\ub9b0\ub2e4",
-                "score": 1,
-                "reasoning": "AI \uc804\uc2dc\ud68c \uac1c\ucd5c \uc18c\uc2dd\uc73c\ub85c, AI \uae30\uc220 \ubc1c\uc804 \ub3d9\ud5a5\uc774\ub098 \uc0b0\uc5c5 \uc804\ubc18\uc5d0 \ubbf8\uce58\ub294 \uc601\ud5a5\uc774 \ubbf8\ubbf8\ud569\ub2c8\ub2e4.",
-                "date": "2026-05-07"
-            },
-            {
-                "target": "[AI&\ube45\ub370\uc774\ud130\uc1fc] \ub9c1\ud06c\uc81c\ub2c8\uc2dc\uc2a4, \uc81c\uc870 \ud604\uc7a5 AI \ud1b5\ud569 \uc790\ub3d9\ud654 \ud50c\ub7ab\ud3fc\u00b7\uc601\uc0c1\ubd84\uc11d \uc194\ub8e8\uc158 \uacf5\uac1c",
-                "score": 2,
-                "reasoning": "\uc81c\uc870 \ud604\uc7a5 AI \ud1b5\ud569 \uc790\ub3d9\ud654 \ud50c\ub7ab\ud3fc \ubc0f \uc601\uc0c1\ubd84\uc11d \uc194\ub8e8\uc158 \uacf5\uac1c\ub294 AI\uc758 \uc0b0\uc5c5 \uc801\uc6a9 \uc0ac\ub840\ub97c \ubcf4\uc5ec\uc8fc\uc9c0\ub9cc, \uae30\uc220\uc801 \ud601\uc2e0\ubcf4\ub2e4\ub294 \uc11c\ube44\uc2a4 \ub3c4\uc785 \ubc0f \ud65c\uc6a9\uc5d0 \ucd08\uc810\uc744 \ub9de\ucd94\uace0 \uc788\uc5b4 \uc911\uc694\ub3c4\uac00 \ub0ae\uc2b5\ub2c8\ub2e4.",
-                "date": "2026-05-07"
-            },
-            {
-                "target": "\uc560\ud50c, '\uc2dc\ub9ac AI \uc9c0\uc5f0' \uc0ac\uae30 \uc18c\uc1a1\uc5d0 3600\uc5b5 \uc9c0\ubd88 \ud569\uc758... \ubc95\uc801 \ucc45\uc784\uc740 \ubd80\uc778",
-                "score": 1,
-                "reasoning": "\uc560\ud50c \uc2dc\ub9ac AI \uc9c0\uc5f0 \uad00\ub828 \uc18c\uc1a1 \ud569\uc758 \uc18c\uc2dd\uc73c\ub85c, AI \uae30\uc220 \ubc1c\uc804 \ub3d9\ud5a5\uacfc\ub294 \uc9c1\uc811\uc801\uc778 \uad00\ub828\uc774 \uc5c6\uc73c\uba70 \ubc95\uc801, \ube44\uc988\ub2c8\uc2a4 \uc774\uc288\uc5d0 \ud574\ub2f9\ud569\ub2c8\ub2e4.",
-                "date": "2026-05-07"
-            },
-            {
-                "target": "\ub525\ube0c\ub808\uc778AI, \uc628\ub514\ubc14\uc774\uc2a4 \u2018\ub300\ud654\ud615 AI \uc544\ubc14\ud0c0\u2019 \uacf5\uac1c\u2026\u201d\uc548\uc804\ud558\uac8c \uae30\uc5c5 \ub3c4\uc785 \uac00\ub2a5\u201d",
-                "score": 3,
-                "reasoning": "\uc628\ub514\ubc14\uc774\uc2a4 \ud658\uacbd\uc5d0\uc11c \uad6c\ub3d9\ub418\ub294 \ub300\ud654\ud615 AI \uc544\ubc14\ud0c0\ub294 AI \ubaa8\ub378\uc758 \uacbd\ub7c9\ud654 \ubc0f \ud6a8\uc728\uc131, \ubcf4\uc548 \uce21\uba74\uc5d0\uc11c \uae30\uc220\uc801 \uc758\ubbf8\uac00 \uc788\uc2b5\ub2c8\ub2e4. \ud2b9\uc815 \uae30\uc5c5\uc758 \uc81c\ud488 \ucd9c\uc2dc\uc9c0\ub9cc, \uc628\ub514\ubc14\uc774\uc2a4 AI \ud2b8\ub80c\ub4dc\ub97c \ubc18\uc601\ud569\ub2c8\ub2e4.",
-                "date": "2026-05-07"
-            },
-            {
-                "target": "\uc0c1\ud654, AI \ub85c\ubcf4\ud2f1\uc2a4 \uc601\uc0c1 \uc81c\uc791 \uc790\ub3d9\ud654 \uc194\ub8e8\uc158 \u2018\ub525\uc544\uc774\u2019 \ubaa8\ub4c8\ud654 \ubc84\uc804 \uacf5\uac1c",
-                "score": 2,
-                "reasoning": "AI \ub85c\ubcf4\ud2f1\uc2a4 \uc601\uc0c1 \uc81c\uc791 \uc790\ub3d9\ud654 \uc194\ub8e8\uc158\uc740 AI\uc758 \uc751\uc6a9 \ubd84\uc57c\ub97c \ubcf4\uc5ec\uc8fc\uc9c0\ub9cc, \uc624\ud508\uc18c\uc2a4 LLM\uc758 \ud575\uc2ec \uae30\uc220 \ubc1c\uc804 \ub3d9\ud5a5\uacfc\ub294 \uac70\ub9ac\uac00 \uc788\uc2b5\ub2c8\ub2e4.",
-                "date": "2026-05-07"
-            },
-            {
-                "target": "\ub9c8\ud0a4\ub098\ub77d\uc2a4, \ucf54\uc2a4\ub2e5 \ucd9c\uaca9 \uc900\ube44...\"AI OS \ub9e4\ucd9c \uc2b9\ubd80\u00b7\ub0b4\ub144 \ud751\uc790 \uc804\ud658\"",
-                "score": 2,
-                "reasoning": "AI OS '\ub7f0\uc6e8\uc774'\ub97c \uc911\uc2ec\uc73c\ub85c \ud55c \ub9c8\ud0a4\ub098\ub77d\uc2a4\uc758 IPO \uc18c\uc2dd\uc740 AI \ube44\uc988\ub2c8\uc2a4 \ub3d9\ud5a5\uc744 \ubcf4\uc5ec\uc8fc\uc9c0\ub9cc, AI \uae30\uc220 \uc790\uccb4\uc758 \ubc1c\uc804\ubcf4\ub2e4\ub294 \uae30\uc5c5\uc758 \uc131\uc7a5 \uc804\ub7b5\uc5d0 \ucd08\uc810\uc744 \ub9de\ucd94\uace0 \uc788\uc2b5\ub2c8\ub2e4.",
-                "date": "2026-05-07"
-            },
-            {
-                "target": "\uc81c\ub17c, AI \uc5d0\uc774\uc804\ud2b8 \ud3ec\ud138 \u2018\uc81c\ub098\u2019 \ubca0\ud0c0 \uc624\ud508...\"\ub204\uad6c\ub098 \ubb34\ub8cc \uc774\uc6a9\"",
-                "score": 2,
-                "reasoning": "\ub2e4\uc591\ud55c AI \uc5d0\uc774\uc804\ud2b8\ub97c \ud1b5\ud569\ud558\ub294 \ud3ec\ud138 \uc11c\ube44\uc2a4 \ucd9c\uc2dc\ub294 AI \ud65c\uc6a9 \ud3b8\uc758\uc131\uc744 \ub192\uc774\uc9c0\ub9cc, AI \ubaa8\ub378 \uc790\uccb4\uc758 \uae30\uc220\uc801 \ubc1c\uc804\uc744 \ub2e4\ub8e8\ub294 \ub0b4\uc6a9\uc740 \uc544\ub2d9\ub2c8\ub2e4.",
-                "date": "2026-05-07"
-            },
-            {
-                "target": "\uc77c\ub808\ube10\ub7a9\uc2a4, \uc2a4\ud47c\ub7a9\uc2a4 \u2018\uc624\ub514\uc624 \uc2a4\ud1a0\ub9ac \ucf58\ud150\uce20\u2019 \uc81c\uc791 \uc9c0\uc6d0...\"2\uc6d4 \ud22c\uc790\uc5d0 \ud669\ub3d9\ud601 \uac10\ub3c5 \ub4f1 \ucc38\uc5ec\"",
-                "score": 2,
-                "reasoning": "AI \uc74c\uc131 \uae30\uc220\uc744 \ud65c\uc6a9\ud55c \uc624\ub514\uc624 \uc2a4\ud1a0\ub9ac \ucf58\ud150\uce20 \uc81c\uc791 \uc9c0\uc6d0 \uc18c\uc2dd\uc73c\ub85c, AI \uae30\uc220\uc758 \uc751\uc6a9 \uc0ac\ub840\ub97c \ubcf4\uc5ec\uc8fc\uc9c0\ub9cc, \ud575\uc2ec \uae30\uc220 \ubc1c\uc804 \ub3d9\ud5a5\uacfc\ub294 \uac70\ub9ac\uac00 \uc788\uc2b5\ub2c8\ub2e4.",
-                "date": "2026-05-07"
-            },
-            {
-                "target": "1\ub9cc5000\uac1c \ucd1b\ubd88\ub85c \ubb3c\ub4e0 \uc21c\ucc9c\uc758 \ubc24\u2026\u2018\uce94\ub4e4\ub77c\uc774\ud2b8 \ucf58\uc11c\ud2b8\u2019 \uc5f4\ub824",
-                "score": 0,
-                "reasoning": "AI\uc640 \ubb34\uad00\ud55c \uc9c0\uc5ed \ubb38\ud654 \ud589\uc0ac \uc18c\uc2dd\uc785\ub2c8\ub2e4.",
-                "date": "2026-05-07"
-            },
-            {
-                "target": "\ud39c\uc2e4\ubca0\uc774\ub2c8\uc544\uc8fc, \uce90\ub9ad\ud130\ub2f7AI \ucc57\ubd07 '\uc758\uc0ac \uc0ac\uce6d' \ud610\uc758\ub85c \uace0\uc18c",
-                "score": 2,
-                "reasoning": "AI \ucc57\ubd07\uc758 \uc624\uc6a9 \ubc0f \uaddc\uc81c \uad00\ub828 \uc18c\uc1a1 \uc18c\uc2dd\uc73c\ub85c, AI \uae30\uc220 \uc790\uccb4\uc758 \ubc1c\uc804\ubcf4\ub2e4\ub294 AI \uc724\ub9ac \ubc0f \uc0ac\ud68c\uc801 \uc601\ud5a5\uc5d0 \ub300\ud55c \ub0b4\uc6a9\uc785\ub2c8\ub2e4.",
-                "date": "2026-05-07"
-            },
-            {
-                "target": "\ube0c\ub85d\uba3c \"\uba38\uc2a4\ud06c, \ud654\uc131 \uc2dd\ubbfc\uc9c0\ud654 \uc704\ud574 \uc624\ud508AI \uc18c\uc720 \uc6d0\ud574...\ud14c\uc2ac\ub77c \ubb34\uae09 \ub178\ub3d9 \uac15\uc694\ub3c4\"",
-                "score": 1,
-                "reasoning": "\uc624\ud508AI\uc758 \uc18c\uc720\uad8c \ubc0f \ub0b4\ubd80 \uac08\ub4f1\uc5d0 \ub300\ud55c \uc18c\uc2dd\uc73c\ub85c, AI \uae30\uc220 \ubc1c\uc804 \ub3d9\ud5a5\uacfc\ub294 \uc9c1\uc811\uc801\uc778 \uad00\ub828\uc774 \uc5c6\uc2b5\ub2c8\ub2e4.",
-                "date": "2026-05-07"
-            },
-            {
-                "target": "\uba54\ud0c0, '\ubd88\ubc95 \ubcf5\uc81c\ubb3c' \uc0ac\uc6a9 \ud610\uc758\ub85c AI \uc800\uc791\uad8c \uce68\ud574 \uc18c\uc1a1 \ub2f9\ud574",
-                "score": 2,
-                "reasoning": "\uba54\ud0c0\uc758 \ub77c\ub9c8(Llama) \ubaa8\ub378 \ud559\uc2b5 \uacfc\uc815\uc5d0\uc11c\uc758 \uc800\uc791\uad8c \uce68\ud574 \uc18c\uc1a1 \uc18c\uc2dd\uc73c\ub85c, AI \uae30\uc220 \uc790\uccb4\uc758 \ubc1c\uc804\ubcf4\ub2e4\ub294 AI \uc724\ub9ac \ubc0f \ubc95\uc801 \uc774\uc288\uc5d0 \ub300\ud55c \ub0b4\uc6a9\uc785\ub2c8\ub2e4.",
-                "date": "2026-05-07"
-            },
-            {
-                "target": "\ubbf8\uad6d \uc815\ubd80\uc758 AI \ubaa8\ub378 \uc0ac\uc804 \uc810\uac80\uc5d0 \uad6c\uae00\u00b7MS\u00b7xAI \ud569\ub958",
-                "score": 3,
-                "reasoning": "\ubbf8\uad6d \uc815\ubd80\uc758 AI \ubaa8\ub378 \uc0ac\uc804 \uc810\uac80 \ud611\uc57d\uc740 AI \uc548\uc804 \ubc0f \uac70\ubc84\ub10c\uc2a4 \uad6c\ucd95\uc5d0 \uc911\uc694\ud55c \uc9c4\uc804\uc774\uba70, \uc8fc\uc694 AI \uae30\uc5c5\ub4e4\uc774 \ucc38\uc5ec\ud55c\ub2e4\ub294 \uc810\uc5d0\uc11c \uc0b0\uc5c5 \uc804\ubc18\uc5d0 \ubbf8\uce58\ub294 \uc601\ud5a5\uc774 \ud07d\ub2c8\ub2e4.",
-                "date": "2026-05-07"
-            },
-            {
-                "target": "\uc564\ud2b8\ub85c\ud53d, \uae08\uc735 \uae30\uc5c5 \uc704\ud55c AI \uc5d0\uc774\uc804\ud2b8 10\uc885 \ucd9c\uc2dc...\"\uc5d1\uc140\uc5d0\uc11c \ubcf4\uace0\uc11c\uae4c\uc9c0 \ud55c\ubc88\uc5d0\"",
-                "score": 2,
-                "reasoning": "\uc564\ud2b8\ub85c\ud53d\uc758 \uae08\uc735 \uae30\uc5c5\uc6a9 AI \uc5d0\uc774\uc804\ud2b8 \ucd9c\uc2dc\ub294 AI\uc758 \uc0b0\uc5c5\ubcc4 \uc801\uc6a9 \uc0ac\ub840\ub97c \ubcf4\uc5ec\uc8fc\uc9c0\ub9cc, \uc624\ud508\uc18c\uc2a4 LLM\uc758 \ud575\uc2ec \uae30\uc220 \ubc1c\uc804 \ub3d9\ud5a5\uacfc\ub294 \uac70\ub9ac\uac00 \uc788\uc2b5\ub2c8\ub2e4.",
-                "date": "2026-05-07"
-            },
-            {
-                "target": "UNIST\u00b7\uacbd\ubd81\ub300, \ud558\ub8e8 \ub9cc\uc5d0 \ubc18\ub3c4\uccb4 \ud68c\ub85c \uc124\uacc4\ud558\ub294 AI \uacf5\uac1c",
-                "score": 4,
-                "reasoning": "\ubc18\ub3c4\uccb4 \ud68c\ub85c \uc124\uacc4 \uc2dc\uac04\uc744 \ud68d\uae30\uc801\uc73c\ub85c \ub2e8\ucd95\ud558\ub294 AI \uae30\uc220 \uac1c\ubc1c\uc740 AI\uc758 \uc0b0\uc5c5 \uc801\uc6a9\uc744 \ub118\uc5b4, \uc124\uacc4 \ud6a8\uc728\uc131\uacfc \uc131\ub2a5 \uac04\uadf9\uc744 \uc904\uc774\ub294 \uae30\uc220\uc801 \uc9c4\ubcf4\ub97c \ubcf4\uc5ec\uc90d\ub2c8\ub2e4. \uc774\ub294 AI\uc758 \uc2e4\uc81c \ubb38\uc81c \ud574\uacb0 \ub2a5\ub825\uc744 \uc785\uc99d\ud558\ub294 \uc911\uc694\ud55c \uc0ac\ub840\uc785\ub2c8\ub2e4.",
-                "date": "2026-05-07"
-            },
-            {
-                "target": "\"\uc18c\uc678 \uc5c6\ub294 \ub530\ub73b\ud55c \uc190\uae38\"...\uad11\uc8fc, '\uce58\uc720\ub18d\uc5c5 \uccb4\ud5d8\uc8fc\uac04' \uac1c\ub9c9",
-                "score": 0,
-                "reasoning": "AI\uc640 \ubb34\uad00\ud55c \uc9c0\uc5ed \ubb38\ud654 \ud589\uc0ac \uc18c\uc2dd\uc785\ub2c8\ub2e4.",
-                "date": "2026-05-07"
-            },
-            {
-                "target": "\ucc57GPT \uae30\ubcf8 \ubaa8\ub378 'GPT-5.5 \uc778\uc2a4\ud134\ud2b8'\ub85c \uad50\uccb4...\"\uc9c0\ub2a5\u2191 \ud658\uac01\u2193\"",
-                "score": 4,
-                "reasoning": "\ucc57GPT\uc758 \uae30\ubcf8 \ubaa8\ub378\uc774 'GPT-5.5 \uc778\uc2a4\ud134\ud2b8'\ub85c \uad50\uccb4\ub418\uba74\uc11c \uc9c0\ub2a5 \ud5a5\uc0c1 \ubc0f \ud658\uac01 \ubb38\uc81c \uac10\uc18c\ub97c \ubaa9\ud45c\ub85c \ud55c\ub2e4\ub294 \uc810\uc740 LLM\uc758 \uc131\ub2a5 \uac1c\uc120 \ub3d9\ud5a5\uc744 \ubcf4\uc5ec\uc8fc\ub294 \uc911\uc694\ud55c \uc18c\uc2dd\uc785\ub2c8\ub2e4. \uc624\ud508\uc18c\uc2a4\ub294 \uc544\ub2c8\uc9c0\ub9cc, LLM \uae30\uc220 \ubc1c\uc804\uc5d0 \ub300\ud55c \uc2dc\uc0ac\uc810\uc774 \ud07d\ub2c8\ub2e4.",
-                "date": "2026-05-07"
-            },
             {
                 "target": "[\uc591\ud604\uc0c1 \uce7c\ub7fc] AI \ubc18\ub3c4\uccb4 \ud328\uad8c\uc758 \uc9c4\uc9dc \uc2b9\ubd80\ucc98",
                 "score": 4,
@@ -14073,6 +14154,314 @@
                 "reasoning": "\ub9c8\uc2a4\uc624\ud1a0\uc758 \ubbf8\uad6d \uc790\uc728\uc8fc\ud589 \ud2b8\ub7ed \uc2dc\uc7a5 \uc9c4\ucd9c \ubc0f \uc0ac\uc5c5 \ud655\ub300\ub97c \ub2e4\ub8e8\ub294 \uae30\uc0ac\ub85c, AI \uae30\ubc18 \uc790\uc728\uc8fc\ud589 \uae30\uc220\uc758 \uc0c1\uc6a9\ud654 \ubc0f \uae00\ub85c\ubc8c \uc2dc\uc7a5 \ub3d9\ud5a5\uc744 \ubcf4\uc5ec\uc90d\ub2c8\ub2e4. (\uae30\uc0ac 19\uc640 \uc720\uc0ac\ud55c \ub0b4\uc6a9)",
                 "url": "http://www.newstheai.com/news/articleView.html?idxno=20656",
                 "date": "2026-05-12"
+            },
+            {
+                "target": "\ubb34\ub77c\ud2f0\uc758 TML, \uc2e4\uc2dc\uac04 \ub2f5\ubcc0 \uba40\ud2f0\ubaa8\ub2ec \ubaa8\ub378 \uacf5\uac1c...\"\uc751\ub2f5 \uc9c0\uc5f0 0.4\ucd08 \ubcbd \uae68\ub728\ub824\"",
+                "score": 4,
+                "reasoning": "\uc624\ud508AI \uc804 CTO\uac00 \uc124\ub9bd\ud55c TML\uc5d0\uc11c \uc2e4\uc2dc\uac04 \uc0c1\ud638\uc791\uc6a9 \uc911\uc2ec\uc758 \uc0c8\ub85c\uc6b4 \uba40\ud2f0\ubaa8\ub2ec AI \uc544\ud0a4\ud14d\ucc98\ub97c \uacf5\uac1c\ud588\uc2b5\ub2c8\ub2e4. \uc751\ub2f5 \uc9c0\uc5f0\uc744 0.4\ucd08 \uc774\ud558\ub85c \uc904\uc774\ub294 \uae30\uc220\uc801 \uc9c4\ubcf4\ub97c \ubcf4\uc5ec\uc8fc\uba70 AI \ub300\ud654 \ubc29\uc2dd\uc758 \ud328\ub7ec\ub2e4\uc784\uc744 \ubc14\uafc0 \uc7a0\uc7ac\ub825\uc774 \uc788\uc2b5\ub2c8\ub2e4. \uc624\ud508\uc18c\uc2a4\ub294 \uc544\ub2c8\uc9c0\ub9cc AI \uae30\uc220 \ubc1c\uc804\uc5d0 \uc911\uc694\ud55c \uae30\uc5ec\ub97c \ud569\ub2c8\ub2e4.",
+                "url": "https://www.aitimes.com/news/articleView.html?idxno=210399",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "AI, \uc778\uac04 \uac1c\uc785 \uc5c6\uc774 \uc2a4\uc2a4\ub85c \ud574\ud0b9\ud558\uace0 \ubcf5\uc81c\ud55c\ub2e4...'\uccb4\uc778 \ubcf5\uc81c' \ud604\uc2e4\ud654 \uacbd\uace0",
+                "score": 3,
+                "reasoning": "LLM\uc758 \uc790\uc728 \ubcf5\uc81c \ubc0f \ud574\ud0b9 \ub2a5\ub825\uc5d0 \ub300\ud55c \uc5f0\uad6c \uacb0\uacfc\ub85c, AI \uc548\uc804\uc131 \ub17c\ub780\uc744 \uc2ec\ud654\uc2dc\ud0a4\ub294 \uc911\uc694\ud55c \uacbd\uace0\uc785\ub2c8\ub2e4. \uae30\uc220\uc801 \ubc1c\uc804 \uc790\uccb4\ubcf4\ub2e4\ub294 AI\uc758 \uc7a0\uc7ac\uc801 \uc704\ud5d8\uc131\uc5d0 \ub300\ud55c \ub17c\uc758\ub97c \ucd09\ubc1c\ud569\ub2c8\ub2e4.",
+                "url": "https://www.aitimes.com/news/articleView.html?idxno=210320",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "\ud604\uc2e4\uc774 \ub41c '\uc790\uc728\ud615 \ud574\ud0b9'...\uad6c\uae00, AI \uc0dd\uc131 \uc81c\ub85c\ub370\uc774 \uacf5\uaca9 \uccab \ud3ec\ucc29",
+                "score": 3,
+                "reasoning": "\uad6c\uae00\uc774 AI\ub97c \ud65c\uc6a9\ud55c \uc81c\ub85c\ub370\uc774 \uacf5\uaca9 \uc0ac\ub840\ub97c \ucc98\uc74c\uc73c\ub85c \ud3ec\ucc29\ud558\uc5ec AI \uae30\ubc18 \uc790\ub3d9 \ud574\ud0b9\uc774 \ud604\uc2e4\ud654\ub418\uc5c8\uc74c\uc744 \ubcf4\uc5ec\uc90d\ub2c8\ub2e4. AI \uc548\uc804 \ubc0f \ubcf4\uc548 \ubd84\uc57c\uc758 \uc911\uc694\uc131\uc744 \uac15\uc870\ud558\ub294 \uae30\uc0ac\uc785\ub2c8\ub2e4.",
+                "url": "https://www.aitimes.com/news/articleView.html?idxno=210375",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "\uc624\ud508AI, \ubcf4\uc548 \ud50c\ub7ab\ud3fc '\ub370\uc774\ube0c\ub808\uc774\ud06c' \uacf5\uac1c...\"AI\ub85c \uc0ac\uc774\ubc84 \ubc29\uc5b4 \uac00\uc18d\"",
+                "score": 3,
+                "reasoning": "\uc624\ud508AI\uac00 \uc0ac\uc774\ubc84 \ubcf4\uc548 \uc804\uc6a9 AI \ud50c\ub7ab\ud3fc '\ub370\uc774\ube0c\ub808\uc774\ud06c'\ub97c \uacf5\uac1c\ud558\uba70 AI\ub97c \ubc29\uc5b4 \uc601\uc5ed\uc5d0 \uc801\uadf9 \ud22c\uc785\ud558\ub824\ub294 \uc6c0\uc9c1\uc784\uc744 \ubcf4\uc785\ub2c8\ub2e4. AI\uc758 \ud65c\uc6a9 \ubd84\uc57c \ud655\uc7a5\uc774\uc9c0\ub9cc, \uc624\ud508\uc18c\uc2a4 LLM \uae30\uc220 \ubc1c\uc804\uacfc\ub294 \uac70\ub9ac\uac00 \uc788\uc2b5\ub2c8\ub2e4.",
+                "url": "https://www.aitimes.com/news/articleView.html?idxno=210386",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "\uc564\ud2b8\ub85c\ud53d, \u2018\ud074\ub85c\ub4dc \ucf54\ub4dc\u2019\uc5d0 \uba40\ud2f0 \uc5d0\uc774\uc804\ud2b8 \uad00\ub9ac \uae30\ub2a5 \ucd94\uac00",
+                "score": 3,
+                "reasoning": "\uc564\ud2b8\ub85c\ud53d\uc774 '\ud074\ub85c\ub4dc \ucf54\ub4dc'\uc5d0 \uba40\ud2f0 \uc5d0\uc774\uc804\ud2b8 \uad00\ub9ac \uae30\ub2a5 '\uc5d0\uc774\uc804\ud2b8 \ubdf0'\ub97c \ucd94\uac00\ud558\uc5ec AI \uae30\ubc18 \uac1c\ubc1c \ud658\uacbd\uc744 \ud655\uc7a5\ud569\ub2c8\ub2e4. AI \uc5d0\uc774\uc804\ud2b8\uc758 \ud65c\uc6a9\uc131\uacfc \ud3b8\uc758\uc131\uc744 \ub192\uc774\ub294 \ubc1c\uc804\uc785\ub2c8\ub2e4.",
+                "url": "https://www.aitimes.com/news/articleView.html?idxno=210412",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "\uba54\ud0c0, \u2018\ud1a0\ud070\ud654\u2019 \uc5c6\uc560\uace0 \ucd94\ub860 \ud6a8\uc728 2\ubc30 \ub192\uc778 \ubc14\uc774\ud2b8 \uc5b8\uc5b4\ubaa8\ub378 'BLT' \uacf5\uac1c",
+                "score": 5,
+                "reasoning": "\uba54\ud0c0\uc640 \uc2a4\ud0e0\ud3ec\ub4dc\ub300 \ub4f1 \uacf5\ub3d9 \uc5f0\uad6c\uc9c4\uc774 \ud1a0\ud070 \ub300\uc2e0 \ubc14\uc774\ud2b8 \ub2e8\uc704\ub85c \ud14d\uc2a4\ud2b8\ub97c \ucc98\ub9ac\ud558\uc5ec \ucd94\ub860 \ud6a8\uc728\uc744 2\ubc30 \ub192\uc778 \ucc28\uc138\ub300 \uc5b8\uc5b4\ubaa8\ub378 'BLT'\uc758 \uc0c8\ub85c\uc6b4 \uae30\ubc95\uc744 \uacf5\uac1c\ud588\uc2b5\ub2c8\ub2e4. \uc774\ub294 \uae30\uc874 LLM\uc758 \ud1a0\ud070 \uae30\ubc18 \ud55c\uacc4\ub97c \uadf9\ubcf5\ud558\ub294 \ud575\uc2ec \uae30\uc220 \ubc1c\uc804\uc73c\ub85c, LLM \uc544\ud0a4\ud14d\ucc98\uc758 \uadfc\ubcf8\uc801\uc778 \ubcc0\ud654\ub97c \uac00\uc838\uc62c \uc218 \uc788\ub294 \ub9e4\uc6b0 \uc911\uc694\ud55c \uae30\uc220\uc801 \uc9c4\ubcf4\uc785\ub2c8\ub2e4.",
+                "url": "https://www.aitimes.com/news/articleView.html?idxno=210415",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "\uc911\uad6d, \uc564\ud2b8\ub85c\ud53d\u00b7\uc624\ud508AI\uc640 AI \ubcf4\uc548 \uaca9\ucc28 \ud574\uc18c\uc5d0 \ucd1d\ub825...\"\uc911\uad6d\ud310 '\ubbf8\uc18c\uc2a4'\ub294 \ub4f1\uc7a5 \ubd88\uac00\ud53c\"",
+                "score": 2,
+                "reasoning": "\uc911\uad6d\uc774 AI \uae30\ubc18 \uc0ac\uc774\ubc84 \ubcf4\uc548 \uc0b0\uc5c5 \uc721\uc131\uc5d0 \ub098\uc11c\uba70 \uc564\ud2b8\ub85c\ud53d\uc758 '\ubbf8\uc18c\uc2a4'\uc640 \uac19\uc740 AI \ubcf4\uc548 \ubaa8\ub378 \uac1c\ubc1c\uc744 \uac00\uc18d\ud654\ud560 \uac83\uc774\ub77c\ub294 \uc804\ub9dd\uc785\ub2c8\ub2e4. \uad6d\uac00\uc801 AI \uc804\ub7b5\uc5d0 \ub300\ud55c \ub0b4\uc6a9\uc73c\ub85c, \uc9c1\uc811\uc801\uc778 AI \uae30\uc220 \ubc1c\uc804 \uc18c\uc2dd\uc740 \uc544\ub2d9\ub2c8\ub2e4.",
+                "url": "https://www.aitimes.com/news/articleView.html?idxno=210406",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "\"\ucc57GPT\uac00 \ucd1d\uaca9 \uacf5\ubc94\"...\ud50c\ub85c\ub9ac\ub2e4 \ud76c\uc0dd\uc790 \uc720\uc871, \uc624\ud508AI\uc5d0 \uc18c\uc1a1",
+                "score": 1,
+                "reasoning": "\ucc57GPT\uac00 \ubc94\ud589 \uacc4\ud68d\uc5d0 \ud65c\uc6a9\ub418\uc5c8\ub2e4\ub294 \uc8fc\uc7a5\uc774 \uc81c\uae30\ub418\uba70 \uc624\ud508AI\uc5d0 \uc18c\uc1a1\uc774 \uc81c\uae30\ub41c \uc0ac\uac74\uc785\ub2c8\ub2e4. AI\uc758 \uc724\ub9ac\uc801 \ucc45\uc784\uacfc \ubc95\uc801 \ubb38\uc81c\uc5d0 \ub300\ud55c \uc0ac\ud68c\uc801 \ub17c\uc758\ub97c \ub2e4\ub8e8\ub294 \uae30\uc0ac\ub85c, AI \uae30\uc220 \ubc1c\uc804\uacfc\ub294 \uac70\ub9ac\uac00 \uba49\ub2c8\ub2e4.",
+                "url": "https://www.aitimes.com/news/articleView.html?idxno=210403",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "EU, '\ubbf8\uc18c\uc2a4' \uc811\uadfc \ubd88\ubc1c \uc2dc\uc778...\uc624\ud508AI\ub294 '\uc0ac\uc774\ubc84\ubcf4\uc548 \ubaa8\ub378' \uc811\uadfc \uc81c\uc548",
+                "score": 2,
+                "reasoning": "EU\uac00 \uc624\ud508AI\uc758 \uc0ac\uc774\ubc84 \ubcf4\uc548 AI \ubaa8\ub378 \uc811\uadfc \uc81c\uc548\uc744 \ud658\uc601\ud558\uace0 \uc564\ud2b8\ub85c\ud53d\uc758 '\ubbf8\uc18c\uc2a4' \uc811\uadfc\uc740 \ubd88\ubc1c\ub41c \uc0c1\ud669\uc744 \ub2e4\ub8f9\ub2c8\ub2e4. AI \ubaa8\ub378 \uc811\uadfc\uc131\uacfc \uad00\ub828\ub41c \uc815\ucc45 \ubc0f \ube44\uc988\ub2c8\uc2a4 \uc18c\uc2dd\uc785\ub2c8\ub2e4.",
+                "url": "https://www.aitimes.com/news/articleView.html?idxno=210404",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "\"\ubca0\ub4dc\ub85d \ud55c\uacc4 \ub118\uc5c8\ub2e4\"...\uc564\ud2b8\ub85c\ud53d, \uc5d0\uc774\uc804\ud2b8 \uae30\ub2a5 \ud0d1\uc7ac 'AWS \uc804\uc6a9 \ud074\ub85c\ub4dc \ud50c\ub7ab\ud3fc' \uacf5\uac1c",
+                "score": 3,
+                "reasoning": "\uc564\ud2b8\ub85c\ud53d\uc774 AWS \ud658\uacbd\uc5d0\uc11c \uc0ac\uc6a9\ud560 \uc218 \uc788\ub294 \uae30\uc5c5\uc6a9 AI \ud50c\ub7ab\ud3fc 'AWS \uc804\uc6a9 \ud074\ub85c\ub4dc \ud50c\ub7ab\ud3fc'\uc744 \ucd9c\uc2dc\ud558\uba70 AI \uc5d0\uc774\uc804\ud2b8 \uae30\ub2a5\uc744 \ud1b5\ud569\ud588\uc2b5\ub2c8\ub2e4. \uae30\uc5c5\uc6a9 AI \uc2dc\uc7a5 \ud655\ub300\ub97c \uc704\ud55c \uc804\ub7b5\uc801 \uc6c0\uc9c1\uc784\uc785\ub2c8\ub2e4.",
+                "url": "https://www.aitimes.com/news/articleView.html?idxno=210413",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "\ud1b5\uc5ed \uc804\ubb38 \ud50c\ub9ac\ud1a0, \ud53c\uc9c0\uceec AI \uc2dc\uc7a5 \uc815\uc870\uc900...\"\uc5b8\uc5b4 \ub370\uc774\ud130 \ub178\ud558\uc6b0 \uc774\uc2dd\"",
+                "score": 2,
+                "reasoning": "\uad6d\ub0b4 AI \ubc88\uc5ed/\ud1b5\uc5ed \uc804\ubb38 \uae30\uc5c5 \ud50c\ub9ac\ud1a0\uac00 \ud53c\uc9c0\uceec AI \uc2dc\uc7a5\uc73c\ub85c \uc0ac\uc5c5 \uc601\uc5ed\uc744 \ud655\uc7a5\ud55c\ub2e4\ub294 \uc18c\uc2dd\uc785\ub2c8\ub2e4. \uad6d\ub0b4 \uae30\uc5c5\uc758 AI \uc0ac\uc5c5 \ub2e4\uac01\ud654 \uc0ac\ub840\uc785\ub2c8\ub2e4.",
+                "url": "https://www.aitimes.com/news/articleView.html?idxno=210419",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "\uba58\ud0c0\ud2b8, \ubcc0\ud638\uc0ac \uc11c\uba74 \uc791\uc131 \uc9c0\uc6d0 'AI \ubc14\uc774\ube0c \ub77c\uc774\ud305'\uc73c\ub85c \uc2dc\ub4dc 11\uc5b5 \ud22c\uc790\uc720\uce58",
+                "score": 2,
+                "reasoning": "\ub9ac\uac78\ud14c\ud06c \uc804\ubb38 \uba58\ud0c0\ud2b8\uac00 \ubcc0\ud638\uc0ac \uc11c\uba74 \uc791\uc131 \uc9c0\uc6d0 AI \ub3c4\uad6c\ub85c \uc2dc\ub4dc \ud22c\uc790\ub97c \uc720\uce58\ud588\uc2b5\ub2c8\ub2e4. \ud2b9\uc815 \uc0b0\uc5c5 \ubd84\uc57c\uc5d0\uc11c\uc758 AI \ud65c\uc6a9 \uc0ac\ub840\uc785\ub2c8\ub2e4.",
+                "url": "https://www.aitimes.com/news/articleView.html?idxno=210420",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "MS \"\ud55c\uad6d AI \uc0ac\uc6a9\ub960 37% \ub3cc\ud30c...\uc138\uacc4 \ucd5c\uace0 \uc218\uc900 \uc131\uc7a5\uc138\"",
+                "score": 1,
+                "reasoning": "\ud55c\uad6d\uc758 \uc0dd\uc131 AI \uc0ac\uc6a9\ub960\uc774 \uc138\uacc4 \ucd5c\uace0 \uc218\uc900\uc758 \uc131\uc7a5\uc138\ub97c \ubcf4\uc778\ub2e4\ub294 \ub9c8\uc774\ud06c\ub85c\uc18c\ud504\ud2b8\uc758 \ubcf4\uace0\uc11c\uc785\ub2c8\ub2e4. AI \uc2dc\uc7a5 \ud655\uc0b0 \ub3d9\ud5a5\uc744 \ubcf4\uc5ec\uc8fc\ub294 \ud1b5\uacc4 \uc790\ub8cc\uc785\ub2c8\ub2e4.",
+                "url": "https://www.aitimes.com/news/articleView.html?idxno=210392",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "\uc18c\ud504\ud2b8\ubc45\ud06c, \ud504\ub791\uc2a4\uc5d0 \ucd5c\ub300 148\uc870 \uaddc\ubaa8 \ub370\uc774\ud130\uc13c\ud130 \ud22c\uc790 \uac80\ud1a0",
+                "score": 2,
+                "reasoning": "\uc18c\ud504\ud2b8\ubc45\ud06c\uac00 \ud504\ub791\uc2a4\uc5d0 \ub300\uaddc\ubaa8 AI \ub370\uc774\ud130\uc13c\ud130 \ud22c\uc790\ub97c \uac80\ud1a0\ud55c\ub2e4\ub294 \uc18c\uc2dd\uc785\ub2c8\ub2e4. AI \uc778\ud504\ub77c \ud655\ucda9\uacfc \uad00\ub828\ub41c \ud22c\uc790 \ub3d9\ud5a5\uc785\ub2c8\ub2e4.",
+                "url": "https://www.aitimes.com/news/articleView.html?idxno=210409",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "IBM \u201c\uae00\ub85c\ubc8c \uae30\uc5c5 76% CAIO \uc120\uc784\u2026AI \uc2e4\ud589 \uaca9\ucc28 \ud574\uc18c \uc704\ud574 \uc870\uc9c1 \uc7ac\uc124\uacc4\u201d",
+                "score": 1,
+                "reasoning": "\uae00\ub85c\ubc8c \uae30\uc5c5\ub4e4\uc774 \ucd5c\uace0 AI \ucc45\uc784\uc790(CAIO)\ub97c \uc120\uc784\ud558\uace0 \uc870\uc9c1\uc744 \uc7ac\uc124\uacc4\ud558\uba70 AI \ub3c4\uc785\uc5d0 \uc801\uadf9\uc801\uc73c\ub85c \ub098\uc11c\uace0 \uc788\ub2e4\ub294 IBM\uc758 \uc870\uc0ac \uacb0\uacfc\uc785\ub2c8\ub2e4. \uae30\uc5c5\uc758 AI \ub3c4\uc785 \uc804\ub7b5 \ubcc0\ud654\ub97c \ubcf4\uc5ec\uc90d\ub2c8\ub2e4.",
+                "url": "https://www.aitimes.com/news/articleView.html?idxno=210397",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "\uc544\ud06c\ub9b4, AI \ub124\uc774\ud2f0\ube0c EMR \uad6c\ucd95 \ud50c\ub7ab\ud3fc \u2018\ub098\ub514\uc544-ANE\u2019 \ub860\uce6d...\uad6d\ub0b4 \ubcd1\uc6d0\uc5d0 \uc801\uc6a9",
+                "score": 2,
+                "reasoning": "\uc544\ud06c\ub9b4\uc774 \ubcd1\uc6d0\ubcc4 \ub370\uc774\ud130\ubca0\uc774\uc2a4\uc5d0 \uc801\uc6a9 \uac00\ub2a5\ud55c AI \ub124\uc774\ud2f0\ube0c EMR \ud50c\ub7ab\ud3fc '\ub098\ub514\uc544-ANE'\ub97c \ub860\uce6d\ud588\uc2b5\ub2c8\ub2e4. \uc758\ub8cc \ubd84\uc57c AI \uc801\uc6a9 \uc0ac\ub840\uc785\ub2c8\ub2e4.",
+                "url": "https://www.aitimes.com/news/articleView.html?idxno=210417",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "\ud380\uc9c4 \"\ubb3c\ub9ac \uc138\uacc4 \uc774\ud574\ud558\ub294 AI\ub85c \uad6d\ubc29 \ub370\uc774\ud130 \ubd80\uc871 \ud574\uacb0\ud560 \uac83\"",
+                "score": 2,
+                "reasoning": "\uad6d\ubc29 AI \uc804\ubb38 \ud380\uc9c4\uc774 \ubb3c\ub9ac \uc138\uacc4\ub97c \uc774\ud574\ud558\ub294 AI \uc194\ub8e8\uc158 '\ud30c\uc774\ud504-\ub9c8\uc778\ub4dc'\ub97c \uc120\ubcf4\uc600\uc2b5\ub2c8\ub2e4. \uad6d\ubc29 \ubd84\uc57c\uc5d0\uc11c\uc758 AI \ud65c\uc6a9 \ubc0f \ub370\uc774\ud130 \ubb38\uc81c \ud574\uacb0 \ub178\ub825\uc785\ub2c8\ub2e4.",
+                "url": "https://www.aitimes.com/news/articleView.html?idxno=210414",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "\uc138\ub808\ube0c\ub77c\uc2a4, IPO \uc870\ub2ec\uc561 7.1\uc870\ub85c \uc0c1\ud5a5...\uccad\uc57d \uc8fc\ubb38 '\uacf5\uae09 \ubb3c\ub7c9 20\ubc30' \ubab0\ub824",
+                "score": 2,
+                "reasoning": "AI \uce69 \uc804\ubb38 \uc138\ub808\ube0c\ub77c\uc2a4\uac00 IPO \uacf5\ubaa8\uac00\ub97c \uc0c1\ud5a5 \uc870\uc815\ud558\uba70 \uc2dc\uc7a5\uc758 \ub192\uc740 \uad00\uc2ec\uc744 \ubc1b\uace0 \uc788\uc2b5\ub2c8\ub2e4. AI \ud558\ub4dc\uc6e8\uc5b4 \uc2dc\uc7a5\uc758 \ud22c\uc790 \ub3d9\ud5a5\uc744 \ubcf4\uc5ec\uc90d\ub2c8\ub2e4.",
+                "url": "https://www.aitimes.com/news/articleView.html?idxno=210401",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "\uacfc\uae30\ubd80, \uae30\ud6c4\ubd80\uc640 AI \ub370\uc774\ud130\uc13c\ud130 \uc548\uc815\uc801 \uc804\ub825 \uacf5\uae09 \uc704\ud55c \ud611\ub825 \ub098\uc120\ub2e4",
+                "score": 1,
+                "reasoning": "\uacfc\uae30\ubd80\uc640 \uae30\ud6c4\ubd80\uac00 AI \ub370\uc774\ud130\uc13c\ud130\uc758 \uc548\uc815\uc801\uc778 \uc804\ub825 \uacf5\uae09\uc744 \uc704\ud55c \uc5c5\ubb34\ud611\uc57d\uc744 \uccb4\uacb0\ud588\uc2b5\ub2c8\ub2e4. AI \uc778\ud504\ub77c \uad6c\ucd95\uc744 \uc704\ud55c \uc815\ubd80 \uc815\ucc45 \ubc0f \ud611\ub825\uc5d0 \ub300\ud55c \uc18c\uc2dd\uc785\ub2c8\ub2e4.",
+                "url": "https://www.aitimes.com/news/articleView.html?idxno=210410",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "\uacfc\uae30\ubd80, \uad6d\uc0b0 \uc628\ub514\ubc14\uc774\uc2a4 AI \ubc18\ub3c4\uccb4 \ud604\uc7a5 \uc810\uac80... \"\ud53c\uc9c0\uceec AI \uc2dc\ub300 \uc120\uc810\"",
+                "score": 3,
+                "reasoning": "\uacfc\uae30\ubd80\uac00 \uad6d\uc0b0 \uc628\ub514\ubc14\uc774\uc2a4 AI \ubc18\ub3c4\uccb4 \ud65c\uc6a9 \ud604\uc7a5\uc744 \uc810\uac80\ud558\uba70 \ud53c\uc9c0\uceec AI \uc2dc\ub300 \uc120\uc810\uc744 \uc704\ud55c \ub178\ub825\uc744 \uac15\uc870\ud588\uc2b5\ub2c8\ub2e4. \uad6d\ub0b4 AI \ubc18\ub3c4\uccb4 \uae30\uc220 \uac1c\ubc1c \ubc0f \uc0b0\uc5c5 \uc721\uc131 \uc815\ucc45\uacfc \uad00\ub828\uc774 \uc788\uc2b5\ub2c8\ub2e4.",
+                "url": "https://www.aitimes.com/news/articleView.html?idxno=210408",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "\ub098\ub378\ub77c, \uc624\ud508AI \uc7ac\ud310\uc11c \uc99d\uc5b8...\"\uba38\uc2a4\ud06c, MS \ud22c\uc790\uc5d0 \ub300\ud574 \uc6b0\ub824\ud55c \uc801 \uc5c6\uc5b4\"",
+                "score": 1,
+                "reasoning": "\uc0ac\ud2f0\uc544 \ub098\ub378\ub77c MS CEO\uac00 \uc77c\ub860 \uba38\uc2a4\ud06c\uc640 \uc624\ud508AI\uc758 \uc7ac\ud310\uc5d0 \uc99d\uc778\uc73c\ub85c \ucd9c\uc11d\ud558\uc5ec \uc99d\uc5b8\ud55c \ub0b4\uc6a9\uc785\ub2c8\ub2e4. AI \uae30\uc220 \ubc1c\uc804\uacfc\ub294 \uc9c1\uc811\uc801\uc778 \uad00\ub828\uc774 \uc5c6\ub294 \uae30\uc5c5 \uac04\uc758 \ubc95\uc801 \ubd84\uc7c1 \uc18c\uc2dd\uc785\ub2c8\ub2e4.",
+                "url": "https://www.aitimes.com/news/articleView.html?idxno=210411",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "\ud5ec\ub85c\uc6d4\ub4dc\ub7a9\uc2a4, \uc911\uc18c\uae30\uc5c5 AX \uc9c0\uc6d0 \uc704\ud55c \ubb34\ub8cc \uc9c4\ub2e8\u00b7\ucee8\uc124\ud305 \uc81c\uacf5",
+                "score": 1,
+                "reasoning": "\ud5ec\ub85c\uc6d4\ub4dc\ub7a9\uc2a4\uac00 \uc911\uc18c\uae30\uc5c5\uc758 AX(AI Transformation) \uc9c0\uc6d0\uc744 \uc704\ud55c \ubb34\ub8cc \uc9c4\ub2e8 \ubc0f \ucee8\uc124\ud305\uc744 \uc81c\uacf5\ud55c\ub2e4\ub294 \uc18c\uc2dd\uc785\ub2c8\ub2e4. AI \ub3c4\uc785 \ud655\uc0b0\uc744 \uc704\ud55c \ube44\uc988\ub2c8\uc2a4 \uc11c\ube44\uc2a4\uc5d0 \ub300\ud55c \ub0b4\uc6a9\uc785\ub2c8\ub2e4.",
+                "url": "https://www.aitimes.com/news/articleView.html?idxno=210405",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "\uc624\ud508AI \uc9c1\uc6d0 75\uba85 '440\uc5b5' \uc8fc\uc2dd \ub300\ubc15...\"\uc5ed\ub300 \ucd5c\ub300 \ud504\ub9ac IPO \ubcf4\uc0c1\"",
+                "score": 1,
+                "reasoning": "\uc624\ud508AI \uc9c1\uc6d0\ub4e4\uc758 \uc8fc\uc2dd \ub9e4\uac01\uc744 \ud1b5\ud55c \ub300\uaddc\ubaa8 \ucc28\uc775 \uc2e4\ud604 \uc18c\uc2dd\uc785\ub2c8\ub2e4. AI \uae30\uc220 \ubc1c\uc804\ubcf4\ub2e4\ub294 \uae30\uc5c5\uc758 \uc7ac\ubb34\uc801 \uc131\uacfc\uc640 \uad00\ub828\ub41c \ub0b4\uc6a9\uc785\ub2c8\ub2e4.",
+                "url": "https://www.aitimes.com/news/articleView.html?idxno=210382",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "'\ub85c\ubd07 \ub370\uc774\ud130' \uc804\ubb38 \ucee8\ud53c\uadf8, \uc0bc\uc131\u00b7\ud604\ub300\u00b7LG\u00b7SKT \ub4f1\uc73c\ub85c\ubd80\ud130 \ud22c\uc790 \uc720\uce58",
+                "score": 3,
+                "reasoning": "\ub85c\ubd07\uc6a9 AI \ub370\uc774\ud130 \uc778\ud504\ub77c\ub97c \uac1c\ubc1c\ud558\ub294 \uc2a4\ud0c0\ud2b8\uc5c5 \ucee8\ud53c\uadf8\uac00 \uad6d\ub0b4 \ub300\uae30\uc5c5\ub4e4\ub85c\ubd80\ud130 \ub300\uaddc\ubaa8 \ud22c\uc790\ub97c \uc720\uce58\ud588\uc2b5\ub2c8\ub2e4. \ud53c\uc9c0\uceec AI \ubc1c\uc804\uc5d0 \ud544\uc218\uc801\uc778 \ub85c\ubd07 \ub370\uc774\ud130 \uc778\ud504\ub77c \ubd84\uc57c\uc758 \uc911\uc694\uc131\uc744 \ubcf4\uc5ec\uc90d\ub2c8\ub2e4.",
+                "url": "https://www.aitimes.com/news/articleView.html?idxno=210387",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "\uc194\ud2b8\ub8e9\uc2a4, 28\uc77c \ucee8\ud37c\ub7f0\uc2a4\uc11c \uc628\ud1a8\ub85c\uc9c0\u00b7LLM \uacb0\ud569 '\ud30c\uc6b4\ub4dc\ub9ac \ud50c\ub7ab\ud3fc\u2019 \uacf5\uac1c",
+                "score": 5,
+                "reasoning": "\uc194\ud2b8\ub8e9\uc2a4\uac00 \uc628\ud1a8\ub85c\uc9c0 \uae30\uc220\uacfc LLM\uc744 \uacb0\ud569\ud55c \ub274\ub85c\uc2ec\ubcfc\ub9ad \uad6c\uc870\uc758 '\uc628\ud1a8\ub85c\uc9c0 \ud30c\uc6b4\ub4dc\ub9ac' \ud50c\ub7ab\ud3fc\uc744 \uacf5\uac1c\ud569\ub2c8\ub2e4. \uc774\ub294 \ub9e5\ub77d \uc774\ud574, \ucd94\ub860, \uc124\uba85 \uac00\ub2a5\ud55c \uc758\uc0ac\uacb0\uc815\uc744 \uc218\ud589\ud558\ub294 \uc5d0\uc774\uc804\ud2f1 AI\ub97c \uad6c\ud604\ud558\ub294 \ud575\uc2ec \uae30\uc220 \ubc1c\uc804\uc73c\ub85c, LLM\uc758 \ud55c\uacc4\ub97c \uadf9\ubcf5\ud558\uace0 \ucc28\uc138\ub300 AI\ub97c \uad6c\ud604\ud558\ub294 \ub370 \uc911\uc694\ud55c \uae30\uc5ec\ub97c \ud560 \uac83\uc785\ub2c8\ub2e4.",
+                "url": "https://www.aitimes.com/news/articleView.html?idxno=210400",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "\uc624\ud508AI, 150\uba85 \uaddc\ubaa8 FDE \ud68c\uc0ac \uc124\ub9bd...\"\ubaa8\ub378\ubcf4\ub2e4 \uae30\uc5c5 \uad6c\ucd95\uc774 \uc911\uc694\"",
+                "score": 3,
+                "reasoning": "\uc624\ud508AI\uac00 \uae30\uc5c5\uc758 AI \ub3c4\uc785 \ubc0f \uc6b4\uc601\uc744 \uc9c0\uc6d0\ud558\ub294 \uc2e0\uaddc \ubc95\uc778 '\uc624\ud508AI \ub514\ud50c\ub85c\uc774\uba3c\ud2b8 \ucef4\ud37c\ub2c8'\ub97c \ucd9c\ubc94\ud588\uc2b5\ub2c8\ub2e4. \uc774\ub294 AI \ubaa8\ub378 \uacf5\uae09\uc744 \ub118\uc5b4 \uae30\uc5c5\uc6a9 AI \uc2dc\uc7a5 \uacf5\ub7b5\uc744 \ubcf8\uaca9\ud654\ud558\ub294 \uc804\ub7b5\uc801 \uc6c0\uc9c1\uc784\uc785\ub2c8\ub2e4.",
+                "url": "https://www.aitimes.com/news/articleView.html?idxno=210368",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "\u201c\ud718\ub450\ub974\ub294 \ub290\ub08c \uadf8\ub300\ub85c\u201d...GIST, VR \ubab0\uc785\uac10 \ub354\ud560 \ud585\ud2f1 \uc2dc\uc2a4\ud15c \uad6c\ud604",
+                "score": 1,
+                "reasoning": "GIST \uc5f0\uad6c\uc9c4\uc774 VR \ubab0\uc785\uac10\uc744 \ub192\uc774\ub294 \uc190\uac00\ub77d \ucc29\uc6a9\ud615 \ud585\ud2f1 \uc2dc\uc2a4\ud15c\uc744 \uac1c\ubc1c\ud588\uc2b5\ub2c8\ub2e4. AI \uae30\uc220 \uc790\uccb4\ubcf4\ub2e4\ub294 XR \ud658\uacbd\uc758 \uc778\ud130\ud398\uc774\uc2a4 \uae30\uc220 \ubc1c\uc804\uc5d0 \ub300\ud55c \ub0b4\uc6a9\uc785\ub2c8\ub2e4.",
+                "url": "https://www.aitimes.com/news/articleView.html?idxno=210361",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "\uc0bc\uc131SDS, \uad6d\uac00 AI \ucef4\ud4e8\ud305 \uc13c\ud130 SPC \uc124\ub9bd\u2026\u201d2028\ub144\uae4c\uc9c0 \ubc18\ub3c4\uccb4 1.5\ub9cc\uc7a5 \uaddc\ubaa8 \uad6c\ucd95\u201d",
+                "score": 3,
+                "reasoning": "\uc0bc\uc131SDS \ucee8\uc18c\uc2dc\uc5c4\uc774 \uad6d\uac00 AI \ucef4\ud4e8\ud305 \uc13c\ud130 \uad6c\ucd95 \uc0ac\uc5c5\uc758 \ubbfc\uac04 \ucc38\uc5ec\uc790\ub85c \ud655\uc815\ub418\uc5b4 \ub300\uaddc\ubaa8 AI \uc778\ud504\ub77c\ub97c \uad6c\ucd95\ud560 \uc608\uc815\uc785\ub2c8\ub2e4. \uad6d\ub0b4 AI \uc5f0\uad6c \ubc0f \uc0b0\uc5c5 \ubc1c\uc804\uc744 \uc704\ud55c \ud575\uc2ec \uc778\ud504\ub77c \ud22c\uc790 \uc18c\uc2dd\uc785\ub2c8\ub2e4.",
+                "url": "https://www.aitimes.com/news/articleView.html?idxno=210394",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "\ud2b8\ub7fc\ud504 \uc911\uad6d\ud589\uc5d0 \uc820\uc2a8 \ud669 \ubd88\ucc38...\uba38\uc2a4\ud06c\u00b7\ucfe1\u00b7\ubcf4\uc789 CEO \ub3d9\ud589",
+                "score": 1,
+                "reasoning": "\ud2b8\ub7fc\ud504 \ub300\ud1b5\ub839\uc758 \uc911\uad6d \ubc29\ubb38 \uacbd\uc81c\uc0ac\uc808\ub2e8 \uad6c\uc131\uc5d0 \ub300\ud55c \uc18c\uc2dd\uc785\ub2c8\ub2e4. AI \uc5c5\uacc4 \uc778\ubb3c\uc758 \ub3d9\ud589 \uc5ec\ubd80\uac00 \uc5b8\uae09\ub418\uc9c0\ub9cc, AI \uae30\uc220 \ubc1c\uc804\uacfc\ub294 \uc9c1\uc811\uc801\uc778 \uad00\ub828\uc774 \uc5c6\uc2b5\ub2c8\ub2e4.",
+                "url": "https://www.aitimes.com/news/articleView.html?idxno=210371",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "\uc720\ub7fd ENTSO-E \"\ub370\uc774\ud130\uc13c\ud130 '\uc720\uc5f0\uc131' \uc5c6\uc73c\uba74 \uc7ac\uc0dd\uc5d0\ub108\uc9c0 \ud655\ub300 \ubd88\uac00\ub2a5\"",
+                "score": 1,
+                "reasoning": "\uc720\ub7fd \ub370\uc774\ud130\uc13c\ud130\uc758 \uc804\ub825 \uc18c\ube44 \uc99d\uac00\uac00 \uc804\ub825\ub9dd \uc6b4\uc601 \ubc0f \uc7ac\uc0dd\uc5d0\ub108\uc9c0 \ud655\ub300\uc5d0 \ubbf8\uce58\ub294 \uc601\ud5a5\uc5d0 \ub300\ud55c \ubcf4\uace0\uc11c\uc785\ub2c8\ub2e4. AI \ub370\uc774\ud130\uc13c\ud130\uc758 \uc778\ud504\ub77c\uc801 \uce21\uba74\uc744 \ub2e4\ub8e8\uc9c0\ub9cc, AI \uae30\uc220 \ubc1c\uc804 \uc18c\uc2dd\uc740 \uc544\ub2d9\ub2c8\ub2e4.",
+                "url": "https://www.aitimes.com/news/articleView.html?idxno=210363",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "\uce68\ub300 \uc815\ub9ac\ub3c4 \uc54c\uc544\uc11c\u2026 2\ubd84 \ub9cc\uc5d0 \uc815\ub9ac\ud558\ub294 \ud734\uba38\ub178\uc774\ub4dc \ub85c\ubd07!",
+                "score": 1,
+                "reasoning": "\uce68\ub300 \uc815\ub9ac\ub97c \ud558\ub294 \ud734\uba38\ub178\uc774\ub4dc \ub85c\ubd07\uc5d0 \ub300\ud55c \uc9e7\uc740 \ub2e8\uc2e0\uc785\ub2c8\ub2e4. \ub85c\ubd07 \uae30\uc220\uc758 \uc751\uc6a9 \uc0ac\ub840\uc774\uc9c0\ub9cc, \uc2ec\uce35\uc801\uc778 AI \uae30\uc220 \ubc1c\uc804 \ub0b4\uc6a9\uc740 \uc544\ub2d9\ub2c8\ub2e4.",
+                "url": "https://www.aitimes.com/news/articleView.html?idxno=210356",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "\u201c\ub9c8\uc774\ud06c\ub860\u00b7\uc0cc\ub514\uc2a4\ud06c\uac00 \uc3d8\uc544\uc62c\ub9b0 \uacf5\u201d\u00b7\u00b7\u00b7AI \uba54\ubaa8\ub9ac \uad11\ud48d\uc5d0 \u20182\ubc30 \ub808\ubc84\ub9ac\uc9c0 ETF\u2019\uae4c\uc9c0 \uac00\uc138",
+                "score": 2,
+                "reasoning": "AI \uba54\ubaa8\ub9ac \uce69 \uc2dc\uc7a5\uc5d0 \ud22c\uc790\ud558\ub294 \ub808\ubc84\ub9ac\uc9c0 ETF \ucd9c\uc2dc \uc18c\uc2dd\uc785\ub2c8\ub2e4. AI \ud558\ub4dc\uc6e8\uc5b4 \uc2dc\uc7a5\uc758 \ud22c\uc790 \ub3d9\ud5a5\uc744 \ubcf4\uc5ec\uc8fc\uc9c0\ub9cc, AI \uae30\uc220 \ubc1c\uc804 \uc790\uccb4\uc5d0 \ub300\ud55c \ub0b4\uc6a9\uc740 \uc544\ub2d9\ub2c8\ub2e4.",
+                "url": "https://kr.benzinga.com/news/usa/stocks/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%A0%EC%83%8C%EB%94%94%EC%8A%A4%ED%81%AC%EA%B0%80-%EC%8F%98%EC%95%84%EC%98%AC%EB%A6%B0-%EA%B3%B5ai-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B4%91/",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "\ud000\ud140 \ucef4\ud4e8\ud305, 1\ubd84\uae30 \ud638\uc2e4\uc801 \ubc1c\ud45c \ud6c4 \uc8fc\uac00 20% \uc774\uc0c1 \uae09\ub4f1",
+                "score": 1,
+                "reasoning": "\ud000\ud140 \ucef4\ud4e8\ud305 \uae30\uc5c5\uc758 1\ubd84\uae30 \uc2e4\uc801 \ubc1c\ud45c \ubc0f \uc8fc\uac00 \uae09\ub4f1 \uc18c\uc2dd\uc785\ub2c8\ub2e4. \uc591\uc790 \ucef4\ud4e8\ud305\uc740 AI\uc640 \uc5f0\uad00\ub420 \uc218 \uc788\uc9c0\ub9cc, \uc774 \uae30\uc0ac\ub294 \uae30\uc5c5\uc758 \uc7ac\ubb34 \uc131\uacfc\uc5d0 \ucd08\uc810\uc744 \ub9de\ucda5\ub2c8\ub2e4.",
+                "url": "https://kr.benzinga.com/news/usa/trading/%ED%80%80%ED%85%80-%EC%BB%B4%ED%93%A8%ED%8C%85-1%EB%B6%84%EA%B8%B0-%ED%98%B8%EC%8B%A4%EC%A0%81-%EB%B0%9C%ED%91%9C-%ED%9B%84-%EC%A3%BC%EA%B0%80-%EA%B8%89%EB%93%B1%EC%84%B8/",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "\u2018\uc554\ud638\ud654\ud3d0\uc758 \ub300\ubd80\u2019 \ub9c8\uc774\ud074 \ud130\ud540, \ube44\ud2b8\ucf54\uc778 \uacf5\ub9e4\ub3c4\ud558\ub294 \uc774\uc720\ub294?",
+                "score": 1,
+                "reasoning": "\ube44\ud2b8\ucf54\uc778 \uacf5\ub9e4\ub3c4\uc5d0 \ub300\ud55c \uc554\ud638\ud654\ud3d0 \uc2dc\uc7a5 \ubd84\uc11d \uae30\uc0ac\uc785\ub2c8\ub2e4. AI\uac00 \uc774\ub354\ub9ac\uc6c0 \uc2a4\ub9c8\ud2b8 \uacc4\uc57d\uc758 \ucde8\uc57d\uc810\uc744 \uc545\uc6a9\ud560 \uc218 \uc788\ub2e4\ub294 \uc5b8\uae09\uc774 \uc788\uc9c0\ub9cc, \uc8fc\ub41c \ub0b4\uc6a9\uc740 AI \uae30\uc220 \ubc1c\uc804\uacfc \ubb34\uad00\ud569\ub2c8\ub2e4.",
+                "url": "https://kr.benzinga.com/crypto/bitcoin/%EC%95%94%ED%98%B8%ED%99%94%ED%8F%90%EC%9D%98-%EB%8C%80%EB%B6%80-%EB%A7%88%EC%9D%B4%ED%81%B4-%ED%84%B0%ED%95%80-%EB%B9%84%ED%8A%B8%EC%BD%94%EC%9D%B8-%EA%B3%B5%EB%A7%A4%EB%8F%84%ED%95%98%EB%8A%94/",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "\ud798\uc2a4 \uc564 \ud5c8\uc2a4, \ud654\uc694\uc77c \uc8fc\uac00 \uae09\ub77d\ud558\ub294 \uc774\uc720\ub294?",
+                "score": 1,
+                "reasoning": "\uc6d0\uaca9\uc758\ub8cc \uae30\uc5c5 \ud798\uc2a4 \uc564 \ud5c8\uc2a4\uc758 \uc2e4\uc801 \ubd80\uc9c4 \ubc0f \uc8fc\uac00 \uae09\ub77d \uc18c\uc2dd\uc785\ub2c8\ub2e4. AI\uc640\ub294 \uc9c1\uc811\uc801\uc778 \uad00\ub828\uc774 \uc5c6\uc2b5\ub2c8\ub2e4.",
+                "url": "https://kr.benzinga.com/news/usa/trading/%ED%9E%98%EC%8A%A4-%EC%95%A4-%ED%97%88%EC%8A%A4-%ED%99%94%EC%9A%94%EC%9D%BC-%EC%A3%BC%EA%B0%80-%EA%B8%89%EB%9D%BD%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0%EB%8A%94/",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "\u201c\uc778\ud50c\ub808\uc758 \uc5ed\uc2b5\u201d \ubbf8\uad6d 4\uc6d4 \uc778\ud50c\ub808\uc774\uc158 3.8%\ub85c \uae09\ub4f1\u00b7\u00b7\u00b7\uc5f0\uc900 \uae08\ub9ac\uc778\ud558 \uae30\ub300\uac10 \u2018\uc804\uaca9 \uc0ac\ub9dd\u2019",
+                "score": 0,
+                "reasoning": "\ubbf8\uad6d 4\uc6d4 \uc778\ud50c\ub808\uc774\uc158 \uae09\ub4f1\uc5d0 \ub300\ud55c \uac70\uc2dc \uacbd\uc81c \ubd84\uc11d \uae30\uc0ac\uc785\ub2c8\ub2e4. AI\uc640\ub294 \uc804\ud600 \uad00\ub828\uc774 \uc5c6\uc2b5\ub2c8\ub2e4.",
+                "url": "https://kr.benzinga.com/news/usa/economy/%EC%9D%B8%ED%94%8C%EB%A0%88%EC%9D%98-%EC%97%AD%EC%8A%B5-%EB%AF%B8%EA%B5%AD-4%EC%9B%94-%EC%9D%B8%ED%94%8C%EB%A0%88%EC%9D%B4%EC%85%98-3-8%EB%A1%9C-%EA%B8%89%EB%93%B1%EC%97%B0/",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "\u201cAI \ub7a0\ub9ac, \uc774\uc81c \uc8fc\ucc28\uc7a5 \ubc97\uc5b4\ub0ac\uc744 \ubfd0\u201d\u00b7\u00b7\u00b7\ub300\ub2c8\uc5bc \ub274\uba3c \u201c\ub9c8\uc774\ud06c\ub860 \ubcf4\uba74 \uc9c0\uae08 \uc9c4\uc785\ud574\ub3c4 \uc548 \ub2a6\uc5b4\u201d",
+                "score": 2,
+                "reasoning": "AI \uc2dc\uc7a5 \ub7a0\ub9ac\uc5d0 \ub300\ud55c \uae30\uc220 \ubd84\uc11d\uac00\uc758 \ub099\uad00\uc801\uc778 \uc804\ub9dd\uacfc \ud22c\uc790 \uae30\ud68c\uc5d0 \ub300\ud55c \uae30\uc0ac\uc785\ub2c8\ub2e4. AI \uc2dc\uc7a5\uc758 \ud22c\uc790 \uc2ec\ub9ac\ub97c \ubcf4\uc5ec\uc90d\ub2c8\ub2e4.",
+                "url": "https://kr.benzinga.com/news/usa/analystratings/ai-%EB%9E%A0%EB%A6%AC-%EC%9D%B4%EC%A0%9C-%EC%A3%BC%EC%B0%A8%EC%9E%A5-%EB%B2%97%EC%96%B4%EB%82%AC%EC%9D%84-%EB%BF%90%EB%8C%80%EB%8B%88%EC%97%BC-%EB%89%B4%EB%A8%BC-%EB%A7%88/",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "\ud558\uc6cc\ub4dc \ub7ec\ud2b8\ub2c9 \u201c\ubbf8\uad6d \ubc18\ub3c4\uccb4 \uc81c\uc870\uc5c5 \u2018\ubd80\ud65c\u2019 \uc911\u201d\u00b7\u00b7\u00b7\u2019\uba54\uc774\ub4dc \uc778 USA\u2019 \uc5f4\ud48d\uc5d0 \uc62c\ub77c\ud0c8 ETF\ub294?",
+                "score": 2,
+                "reasoning": "\ubbf8\uad6d \uc0c1\ubb34\uc7a5\uad00\uc774 \uad6d\ub0b4 \ubc18\ub3c4\uccb4 \uc0dd\uc0b0 \ud655\ub300\ub97c \uac15\uc870\ud558\uba70 '\uba54\uc774\ub4dc \uc778 USA' \ubc18\ub3c4\uccb4 \ubd90\uc744 \uc870\uc131\ud558\uaca0\ub2e4\ub294 \uc758\uc9c0\ub97c \ubc1d\ud78c \uae30\uc0ac\uc785\ub2c8\ub2e4. AI \ud558\ub4dc\uc6e8\uc5b4 \uacf5\uae09\ub9dd \ubc0f \uc815\ucc45\uacfc \uad00\ub828\uc774 \uc788\uc2b5\ub2c8\ub2e4.",
+                "url": "https://kr.benzinga.com/news/usa/trading/%ED%95%98%EC%9B%8C%EB%93%9C-%EB%9F%AC%ED%8A%B8%EB%8B%89-%EB%AF%B8%EA%B5%AD-%EB%B0%98%EB%8F%84%EC%B2%B4-%EC%A0%9C%EC%A1%B0%EC%97%85-%EB%B6%80%ED%99%9C-%EC%A4%91%EB%A9%94/",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "\u201c1999\ub144\ubcf4\ub2e4 \ub354 \uc794\uc778\ud558\ub2e4\u201d \uc9d0 \ud06c\ub808\uc774\uba38\uc758 \uacbd\uace0\u00b7\u00b7\u00b7\u201d\ub2f7\ucef4 \ubc84\ube14\uacfc \uc9c0\uae08\uc758 \uacb0\uc815\uc801 \ucc28\uc774\ub294 \uc774\uac83\u201d",
+                "score": 1,
+                "reasoning": "\uc9d0 \ud06c\ub808\uc774\uba38\uac00 \ud604\uc7ac AI \ub7a0\ub9ac\uc640 1999\ub144 \ub2f7\ucef4 \ubc84\ube14\uc744 \ube44\uad50\ud558\uba70 \uc2dc\uc7a5\uc758 \uc591\uadf9\ud654 \ud604\uc0c1\uc744 \ubd84\uc11d\ud55c \uae30\uc0ac\uc785\ub2c8\ub2e4. AI \uc2dc\uc7a5\uc758 \ud22c\uc790 \uc2ec\ub9ac \ubc0f \uac70\ud488 \ub17c\ub780\uc744 \ub2e4\ub8f9\ub2c8\ub2e4.",
+                "url": "https://kr.benzinga.com/news/usa/analystratings/1999%EB%85%84%EB%B3%B4%EB%8B%A4-%EB%8D%94-%EC%9E%94%EC%9D%B8%ED%95%98%EB%8B%A4-%EC%A7%90-%ED%81%AC%EB%A0%88%EC%9D%B4%EB%A8%B8%EC%9D%98-%EA%B2%BD%EA%B3%A0%EB%8B%B7%EC%BB%B4/",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "\u201c560\uc5b5 \ub2ec\ub7ec \uc548 \ubc1b\uc544\u201d \uc774\ubca0\uc774, \uac8c\uc784\uc2a4\ud0d1\uc758 \uc778\uc218 \uc81c\uc548 \uac70\uc808\u00b7\u00b7\u00b7\u201d\uc2e0\ub8b0\ub3c4 \ub9e4\ub825\ub3c4 \uc5c6\ub2e4\u201d",
+                "score": 0,
+                "reasoning": "\uc774\ubca0\uc774\uac00 \uac8c\uc784\uc2a4\ud0d1\uc758 \uc778\uc218 \uc81c\uc548\uc744 \uac70\uc808\ud588\ub2e4\ub294 M&A \uc18c\uc2dd\uc785\ub2c8\ub2e4. AI\uc640\ub294 \uc804\ud600 \uad00\ub828\uc774 \uc5c6\uc2b5\ub2c8\ub2e4.",
+                "url": "https://kr.benzinga.com/news/usa/trading/560%EC%96%B5-%EB%8B%AC%EB%9F%AC-%EC%95%88-%EB%B0%9B%EC%95%84-%EC%9D%B4%EB%B2%A0%EC%9D%B4-%EA%B2%8C%EC%9E%84%EC%8A%A4%ED%83%91%EC%9D%98-%EC%9D%B8%EC%88%98-%EC%A0%9C%EC%95%88-%EA%B1%B0%EC%A0%88/",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "\ud2b8\ub7fc\ud504 \ubc29\uc911, \ubbf8\u00b7\uc911 \ubb34\uc5ed \uac08\ub4f1 \ubd84\uc218\ub839\u00b7\u00b7\u00b7\u2019\uacbd\uc81c \ube0c\ub808\uc778\u2019 \ubca0\uc13c\ud2b8\uac00 \ub9c8\ub828\ud55c \ubb34\ub300 \uc704\uc758 \uce74\ub4dc\ub294?",
+                "score": 2,
+                "reasoning": "\ud2b8\ub7fc\ud504 \ub300\ud1b5\ub839\uc758 \uc911\uad6d \ubc29\ubb38\uc5d0\uc11c \ubbf8\uc911 \uac04 \uc778\uacf5\uc9c0\ub2a5(AI)\uc5d0 \uad00\ud55c \uccab \uacf5\uc2dd \ud68c\ub2f4 \uac1c\uc2dc\uac00 \uac80\ud1a0\ub41c\ub2e4\ub294 \ub0b4\uc6a9\uc774 \ud3ec\ud568\ub418\uc5b4 \uc788\uc2b5\ub2c8\ub2e4. AI \uac70\ubc84\ub10c\uc2a4 \ubc0f \uad6d\uc81c \ud611\ub825\uc5d0 \ub300\ud55c \uc18c\uc2dd\uc785\ub2c8\ub2e4.",
+                "url": "https://kr.benzinga.com/news/usa/othermarkets/%ED%8A%B8%EB%9F%BC%ED%94%84-%EB%B0%A9%EC%A4%91-%EB%AF%B8%EC%A4%91-%EB%AC%B4%EC%97%AD-%EA%B0%88%EB%93%B1-%EB%B6%84%EC%88%98%EB%A0%B9%EA%B2%BD%EC%A0%9C-%EB%B8%8C%EB%A0%88/",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "\uc624\ud508AI \u2018\ub370\uc774\ube0c\ub808\uc774\ud06c\u2019 \ucd9c\uc2dc\u2026 \uc564\ud2b8\ub85c\ud53d \u2018\ubbf8\ud1a0\uc2a4\u2019\uc5d0 \ub9de\uc124 AI \ubc29\ud328",
+                "score": 3,
+                "reasoning": "\uc624\ud508AI\uac00 \uc0ac\uc774\ubc84 \ubc29\uc5b4 AI \ud50c\ub7ab\ud3fc '\ub370\uc774\ube0c\ub808\uc774\ud06c'\ub97c \ucd9c\uc2dc\ud558\uba70 \uc564\ud2b8\ub85c\ud53d\uc758 '\ubbf8\ud1a0\uc2a4'\uc5d0 \ub300\uc751\ud569\ub2c8\ub2e4. AI \uae30\ubc18 \uc0ac\uc774\ubc84 \ubcf4\uc548 \uc2dc\uc7a5\uc758 \uacbd\uc7c1 \uad6c\ub3c4\ub97c \ubcf4\uc5ec\uc90d\ub2c8\ub2e4.",
+                "url": "http://www.newstheai.com/news/articleView.html?idxno=20659",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "\ubd81\ud55c, AI\ub85c \uc0ac\uc774\ubc84 \uacf5\uaca9 \uc790\ub3d9\ud654",
+                "score": 3,
+                "reasoning": "\ubd81\ud55c \ud574\ud0b9 \uadf8\ub8f9\uc774 AI\ub97c \uc774\uc6a9\ud574 \uc0ac\uc774\ubc84 \uacf5\uaca9\uc744 \uc790\ub3d9\ud654\u00b7\ub300\ub7c9\ud654\ud558\uace0 \uc788\ub2e4\ub294 \uad6c\uae00 \ubcf4\uace0\uc11c \ub0b4\uc6a9\uc785\ub2c8\ub2e4. AI\uc758 \uc545\uc6a9 \uac00\ub2a5\uc131\uacfc \uc0ac\uc774\ubc84 \ubcf4\uc548 \uc704\ud611\uc758 \uc2ec\uac01\uc131\uc744 \ubcf4\uc5ec\uc90d\ub2c8\ub2e4.",
+                "url": "http://www.newstheai.com/news/articleView.html?idxno=20660",
+                "date": "2026-05-13"
+            },
+            {
+                "target": "\ud22c\uc790 \ud6a8\uacfc \ub9db\ubcf8 \ube45\ud14c\ud06c, \uc218\uc775\ud654 \uc18d\ub3c4 \uc720\uc9c0\ub420\uae4c",
+                "score": 2,
+                "reasoning": "\ube45\ud14c\ud06c \uae30\uc5c5\ub4e4\uc758 AI \uc778\ud504\ub77c \ud22c\uc790\uc640 \uadf8\uc5d0 \ub530\ub978 \ub9e4\ucd9c \uc131\uacfc\ub97c \ubd84\uc11d\ud558\ub294 \uae30\uc0ac\uc785\ub2c8\ub2e4. AI \uc2dc\uc7a5\uc758 \uc131\uc7a5\uacfc \ube45\ud14c\ud06c\uc758 \ud22c\uc790 \uc804\ub7b5\uc744 \ubcf4\uc5ec\uc90d\ub2c8\ub2e4.",
+                "url": "http://www.newstheai.com/news/articleView.html?idxno=20658",
+                "date": "2026-05-13"
             }
         ],
         "\uc9c0\ud53c\ud130\uc2a4 \ub274\uc2a4\ub808\ud130": [
