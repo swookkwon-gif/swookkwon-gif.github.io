@@ -14,7 +14,7 @@ tags:
 
 ![Server-Side Tracking vs Client-Side Pixel](/images/server_side_tracking_capi.png)
 
-# 1. 서드 파티 쿠키의 종말과 '신호 손실(Signal Loss)'의 위기
+## 1. 서드 파티 쿠키의 종말과 '신호 손실(Signal Loss)'의 위기
 
 지난 수십 년간 디지털 마케팅 산업을 지탱해 온 핵심 인프라는 **서드 파티 쿠키(Third-party Cookies)**였습니다. 광고주들은 이를 통해 고객이 여러 웹사이트를 돌아다니는 궤적을 추적하고, 정교한 타겟팅과 기여 분석(Attribution)을 수행해 왔습니다. 
 
@@ -22,7 +22,7 @@ tags:
 
 ---
 
-## 2. 기존 브라우저 픽셀(Pixel) 방식의 치명적 한계
+### 2. 기존 브라우저 픽셀(Pixel) 방식의 치명적 한계
 
 지금까지 우리가 사용하던 페이스북 픽셀, 구글 애널리틱스 스크립트 등은 모두 사용자의 웹 브라우저 위에서 자바스크립트로 동작하는 **클라이언트 사이드 트래킹(Client-side Tracking)** 방식입니다. 이 방식은 현재 세 가지 거대한 장벽에 직면해 있습니다.
 
@@ -32,7 +32,7 @@ tags:
 
 ---
 
-## 3. 퍼스트 파티(First-Party) & 제로 파티(Zero-Party) 데이터의 부상
+### 3. 퍼스트 파티(First-Party) & 제로 파티(Zero-Party) 데이터의 부상
 
 이러한 위기 속에서 유일한 돌파구는 기업이 고객과 직접 관계를 맺고 동의를 얻어 수집하는 데이터에 투자하는 것입니다.
 
@@ -43,7 +43,7 @@ tags:
 
 ---
 
-## 4. 해결책: 서버 사이드 트래킹 (Server-Side Tracking, SST)
+### 4. 해결책: 서버 사이드 트래킹 (Server-Side Tracking, SST)
 
 픽셀의 한계를 극복하기 위해 등장한 기술적 패러다임 전환이 바로 **서버 사이드 트래킹**입니다.
 
@@ -58,25 +58,25 @@ tags:
 
 ---
 
-## 5. 메타 전환 API (Meta Conversions API, CAPI)의 원리
+### 5. 메타 전환 API (Meta Conversions API, CAPI)의 원리
 
 메타(페이스북/인스타그램) 광고 성과를 방어하기 위한 필수 무기가 바로 **CAPI(Conversions API)**입니다. CAPI는 웹 브라우저(픽셀)를 거치지 않고, 기업의 서버에서 메타의 서버로 직접 구매 및 전환 데이터를 쏘아주는 기술입니다.
 
-### 이벤트 매치 품질 (Event Match Quality, EMQ)
+#### 이벤트 매치 품질 (Event Match Quality, EMQ)
 CAPI로 데이터를 보낸다고 끝이 아닙니다. 메타가 이 데이터가 '누구'의 것인지 식별할 수 있어야 합니다. 이를 위해 이메일, 전화번호(해싱 필수), IP 주소, 브라우저 User-Agent, 클릭 ID(`_fbc`), 브라우저 쿠키(`_fbp`) 등의 파라미터를 최대한 많이 담아 보내야 하며, 이 매칭 확률을 점수화한 것이 EMQ입니다.
 
-### 중복 제거 (Deduplication) 전략
+#### 중복 제거 (Deduplication) 전략
 가장 중요한 것은 **하이브리드 세팅**입니다. 브라우저 픽셀과 서버 CAPI를 동시에 작동시켜 상호 보완하게 만듭니다. 이때 하나의 구매가 두 번 집계되는 것을 막기 위해, 브라우저와 서버 양쪽에서 동일한 `event_id`(예: 주문번호)를 담아 메타로 전송해야 합니다. 메타는 이 ID를 대조하여 중복된 이벤트를 깔끔하게 하나로 통합합니다.
 
 ---
 
-## 6. 결론: 프라이버시 중심(Privacy-First) 시대의 마케팅
+### 6. 결론: 프라이버시 중심(Privacy-First) 시대의 마케팅
 
 서버 사이드 트래킹으로 확보한 정제된 퍼스트 파티 데이터는 향후 **데이터 클린룸(Data Clean Rooms)**이나 에이전틱 AI 시스템의 핵심 연료가 됩니다. 
 
 데이터 프라이버시는 마케팅을 방해하는 규제가 아니라, 고객의 신뢰를 얻고 진정한 충성 고객을 구별해내는 강력한 무기입니다. 브라우저 픽셀의 환상에서 벗어나, 탄탄한 서버 사이드 인프라와 퍼스트 파티 데이터 전략을 구축하는 브랜드만이 쿠키리스(Cookieless) 시대의 최후의 승자가 될 것입니다.
 
-## 📚 참고자료
+### 📚 참고자료
 - NotebookLM 딥리서치 리포트: 프라이버시 우선 시대의 퍼스트 파티 데이터 전략과 서버 사이드 트래킹 기술 고도화 보고서 (2026)
 - Google Cloud, *Modern Marketer's Strategic Advantage: AI Powered Data Clean Rooms*
 - Usercentrics, *How Marketers Can Prepare For A Cookieless Future*
