@@ -1,5 +1,5 @@
 ---
-title: '5월 13일 AI 데일리 — AI 보안 위협 급증과 Anthropic Mythos 모델 공개 보류, OpenAI의 사이버 보안 플랫폼 ''데이 브레이크'' 출시, 메타의 바이트 언어모델 ''BLT''로 LLM 효율성 2배 향상, 솔트룩스의 온톨로지-LLM 결합 뉴로심볼릭 AI 플랫폼 공개, 그리고 실시간 멀티모달 AI 상호작용 모델의 등장'
+title: 'AI 해킹 위협 급증 및 앤스로픽 Mythos 모델 공개 보류'
 date: '2026-05-13'
 excerpt: '> 📊 오늘의 AI 뉴스: 53건 | 소스: 7min.ai, RSS AITimes/Benzinga, TLDR, TLDR AI, TLDR Marketing, The Rundown AI --- 구글의 AI 기반 해킹 위...'
 category: 'AI News'
