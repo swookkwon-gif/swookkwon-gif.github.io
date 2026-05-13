@@ -9,8 +9,8 @@ category: 'AI Learnings'
 하루가 다르게 쏟아지는 AI 관련 뉴스는 트렌드를 따라가기가 벅찹니다.
 AI 시대에 적응하기 위해 제가 배워야 할 것들도 급속히 늘어나고 있습니다.
 
-![Google Trends: Global Search Interest (AI, Bitcoin, War, Inflation)](/images/posts/google-trends-ai-bitcoin-war-inflation.png)
-*지난 5년(2021~2026)간 글로벌 구글 트렌드 검색량 추이: 전쟁(War)과 글로벌 경제 위기의 상징인 인플레이션(Inflation), 그리고 비트코인(Bitcoin) 붐과 비교해 보더라도 최근 AI가 얼마나 거대한 패러다임 전환을 이끌고 있는지 한눈에 확인할 수 있습니다.*
+![Google Trends: 20-Year Global Search Interest (AI, Bitcoin, War, iPhone, Financial Crisis)](/images/posts/google-trends-mega-20yrs.png)
+*지난 20년(2006~2026)간 글로벌 구글 트렌드 검색량 추이: 전쟁(War), 아이폰(iPhone) 혁명, 글로벌 금융위기(Financial Crisis), 그리고 비트코인(Bitcoin) 붐과 비교해 보더라도 최근 AI가 얼마나 거대한 패러다임 전환을 이끌고 있는지 한눈에 확인할 수 있습니다.*
 
 제 바이브 코딩 도전기 2탄은, AI 뉴스들과 제가 배운 것 + 배워야 하는 것들을 주제로, 기사 수집부터 심층 분석, 마크다운 포스트 작성, 그리고 블로그 배포까지 자동화한 **AI 자동 블로그** 로 정했습니다.
 
