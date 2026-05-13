@@ -1,5 +1,5 @@
 ---
-title: 'AI 해킹 위협 급증 및 앤스로픽 Mythos 모델 공개 보류'
+title: '5월 13일 - AI 해킹 위협 급증 및 앤스로픽 Mythos 모델 공개 보류'
 date: '2026-05-13'
 excerpt: '> 📊 오늘의 AI 뉴스: 53건 | 소스: 7min.ai, RSS AITimes/Benzinga, TLDR, TLDR AI, TLDR Marketing, The Rundown AI --- 구글의 AI 기반 해킹 위...'
 category: 'AI News'

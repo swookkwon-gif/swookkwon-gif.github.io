@@ -140,7 +140,8 @@ def merge_and_create_digest():
         print("\n📝 뉴스레터 기사 없음 — 딥 리서치 단독 포스트 생성")
         final_md = deep_research_md
         post_title = deep_research_title or f"Daily Top 10: {now_kst.strftime('%m월 %d일')} 주요 AI 뉴스"
-        save_final_post(date_str, post_title, final_md)
+        title = f"{now_kst.month}월 {now_kst.day}일 - {post_title}"
+        save_final_post(date_str, title, final_md)
         return
 
     # 4-B: 기사가 있는 경우 → LLM으로 통합 다이제스트 생성
@@ -222,7 +223,8 @@ def merge_and_create_digest():
         if deep_research_md:
             print("      ⚠️ LLM 병합 실패 — 딥 리서치 단독 발행")
             post_title = deep_research_title or "AI 데일리 다이제스트"
-            save_final_post(date_str, post_title, deep_research_md, [])
+            title = f"{now_kst.month}월 {now_kst.day}일 - {post_title}"
+            save_final_post(date_str, title, deep_research_md, [])
         else:
             print("      ❌ 통합 다이제스트 생성 실패")
         return
@@ -238,7 +240,7 @@ def merge_and_create_digest():
     source_line = f"> 📊 오늘의 AI 뉴스: **{len(quality_articles)}건** | 소스: {', '.join(source_names)}\n\n---\n\n"
     result_md = source_line + result_md
 
-    title = f"{now_kst.month}월 {now_kst.day}일 AI 데일리 — {post_title}"
+    title = f"{now_kst.month}월 {now_kst.day}일 - {post_title}"
     top_topics = data.get("top_topics", [])
     save_final_post(date_str, title, result_md, top_topics)
 
