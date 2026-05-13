@@ -59,6 +59,10 @@ export default async function PostPage({
           remarkPlugins={[remarkGfm, remarkKoreanBold]}
           rehypePlugins={[rehypeRaw, [rehypeExternalLinks, { target: '_blank', rel: ['noopener', 'noreferrer'] }]]}
           components={{
+            h1: ({ children, ...props }: any) => {
+              // 본문 내에 실수로 삽입된 H1(#)을 H2로 강제 강등하여 메인 타이틀(H1)과의 위계 역전 방지 및 SEO 최적화
+              return <h2 {...props}>{children}</h2>;
+            },
             blockquote: ({ children, ...props }: any) => {
               // Custom blockquotes (GitHub Alerts)
               const firstChild = React.Children.toArray(children)[0] as any;
