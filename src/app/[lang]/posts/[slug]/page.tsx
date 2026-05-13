@@ -4,6 +4,24 @@ import rehypeRaw from "rehype-raw";
 import rehypeExternalLinks from "rehype-external-links";
 import remarkGfm from "remark-gfm";
 import remarkKoreanBold from "@/lib/remark-korean-bold";
+import { visit } from 'unist-util-visit';
+
+// 커스텀 Remark 플러그인: 문서 내에 H1(depth: 1)이 존재할 경우에만 모든 헤딩을 1단계씩 연쇄 강등합니다.
+function remarkDemoteHeadings() {
+  return (tree: any) => {
+    let hasH1 = false;
+    visit(tree, 'heading', (node: any) => {
+      if (node.depth === 1) hasH1 = true;
+    });
+    
+    if (hasH1) {
+      visit(tree, 'heading', (node: any) => {
+        if (node.depth < 6) node.depth += 1;
+      });
+    }
+  };
+}
+
 import Link from "next/link";
 import { ArrowLeft, Calendar, Tag, ChevronLeft, ChevronRight } from "lucide-react";
 import React from "react";
@@ -56,13 +74,9 @@ export default async function PostPage({
         prose-a:text-blue-600 hover:prose-a:text-blue-500 prose-a:underline-offset-4
         prose-img:rounded-lg prose-img:shadow-md prose-code:text-violet-600 prose-code:bg-neutral-100 prose-code:px-1 prose-code:rounded">
         <ReactMarkdown
-          remarkPlugins={[remarkGfm, remarkKoreanBold]}
+          remarkPlugins={[remarkGfm, remarkKoreanBold, remarkDemoteHeadings]}
           rehypePlugins={[rehypeRaw, [rehypeExternalLinks, { target: '_blank', rel: ['noopener', 'noreferrer'] }]]}
           components={{
-            h1: ({ children, ...props }: any) => {
-              // 본문 내에 실수로 삽입된 H1(#)을 H2로 강제 강등하여 메인 타이틀(H1)과의 위계 역전 방지 및 SEO 최적화
-              return <h2 {...props}>{children}</h2>;
-            },
             blockquote: ({ children, ...props }: any) => {
               // Custom blockquotes (GitHub Alerts)
               const firstChild = React.Children.toArray(children)[0] as any;
