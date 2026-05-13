@@ -14,7 +14,6 @@ tags:
 
 ![FastMCP Concept Architecture](/images/fastmcp-concept.png)
 
-# FastMCP: LLM 시대를 위한 완벽한 MCP 프레임워크
 
 ## 1. FastMCP의 정의와 등장 배경
 
