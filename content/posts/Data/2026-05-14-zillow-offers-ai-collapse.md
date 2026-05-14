@@ -95,3 +95,29 @@ tags: ["Data Science", "Zillow Offers", "Concept Drift", "Algorithm Bias", "AI G
 3. **AI의 통제권(Sovereign Override)을 포기하지 마라:** AI는 리스크를 계산할 수 있지만, 리스크를 감당하고 책임을 지는 것은 결국 인간입니다. 인간 전문가의 직관과 경고 시스템을 시스템에서 제거하는 순간, 재앙은 시작됩니다.
 
 수천억 원의 수업료를 치른 질로우의 사례는, "우리는 방대한 데이터를 가지고 있으니 AI에 모든 것을 맡겨도 된다"고 믿는 수많은 기업들에게 서늘한 경고를 남깁니다.
+
+---
+
+## 🌅 에필로그: 2026년 질로우의 부활, 투기꾼에서 '슈퍼 앱'으로
+
+그렇다면 6천억 원을 날려버렸던 질로우는 현재 어떻게 되었을까요? 파산했을까요?
+놀랍게도 **2026년 현재, 질로우는 극적인 부활에 성공**했습니다. 
+
+그 비결은 역설적이게도 **'가장 빠르고 잔인한 손절(Cut losses)'**에 있었습니다. 리치 바튼 CEO는 2021년 3분기 손실을 확인하자마자, 자신의 최대 역점 사업이었던 iBuying을 단칼에 폐쇄하고 7,000채의 집을 헐값에라도 전부 처분해 버렸습니다. 이 빠른 손절이 없었다면 2022~2023년의 금리 인상 폭격기 속에서 회사는 완전히 파산했을 것입니다.
+
+**'자본 리스크(투기)'**를 떠안는 iBuying 사업을 완전히 버린 질로우는 자신들의 핵심 역량인 **'소프트웨어와 플랫폼'**으로 회귀했습니다.
+*   **주택 슈퍼 앱(Housing Super App) 피벗:** 집을 직접 사는 대신, 집을 구하는 사람과 중개인, 대출(Zillow Home Loans), 투어 예약(ShowingTime)을 매끄럽게 연결하는 생태계 구축에 집중했습니다.
+*   **리스크 없는 수익 창출:** 막대한 자본이 드는 부동산 매입 대신, 렌탈(임대) 중개와 주택 담보 대출 비즈니스, 에이전트용 CRM 소프트웨어 판매에 집중하여 안정적인 더블 디짓(Double-digit) 성장을 이뤄냈습니다.
+
+결국 질로우는 2025년 마침내 **연간 순이익(GAAP) 흑자 전환**에 성공하며, 부동산 시장의 침체 속에서도 매출이 전년 대비 18% 성장(2026년 1분기 기준)하는 저력을 보여주고 있습니다. 
+
+AI가 모든 것을 해결해 줄 것이라는 오만(Hubris)을 버리고, 기술을 '투기 수단'이 아닌 '인간(중개인과 구매자)을 돕는 도구'로 제자리에 되돌려 놓았을 때 비로소 진정한 비즈니스의 부활이 시작된 것입니다.
+
+---
+
+## 📚 참고자료
+*   **The Wall Street Journal (2021):** "Zillow Quits Home-Flipping Business, Cites Inability to Forecast Prices"
+*   **Zillow Group:** Q3 2021 Shareholder Letter (Rich Barton CEO)
+*   **George Akerlof (1970):** "The Market for 'Lemons': Quality Uncertainty and the Market Mechanism" (Quarterly Journal of Economics) - *역선택(Adverse Selection) 관련 이론*
+*   **Bloomberg (2025/2026):** "Zillow's Pivot to the Housing Super App Pays Off with GAAP Profitability"
+*   **Gordon, Zettelmeyer, Bhargava, Chapsky (2019):** "A Comparison of Approaches to Advertising Measurement: Evidence from Big Field Experiments at Facebook" (관련 데이터/통계 모델 한계 연구)
