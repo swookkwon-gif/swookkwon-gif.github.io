@@ -80,6 +80,24 @@ tags: ["Data Science", "Statistics", "Survivorship Bias", "Abraham Wald", "생�
 
 ---
 
+## 📈 현대 금융 시장의 생존자 편향: 뮤추얼 펀드의 '무덤'
+
+전투기 총탄 자국 이야기가 먼 옛날의 군사 에피소드처럼 들리시나요? 지금 당장 은행이나 증권사 창구에 가서 흔히 볼 수 있는 금융 상품 안내장을 떠올려 보세요. 
+
+**"당사 주식형 펀드의 지난 10년 평균 수익률은 시장(S&P 500)을 가볍게 뛰어넘었습니다. 지금 투자하세요!"**
+
+이 통계는 거짓말이 아닙니다. 하지만 아주 끔찍한 생존자 편향이 숨어있습니다. 아브라함 발드가 비행기 날개를 보던 시선으로 이 데이터를 다시 봐야 합니다. S&P 다우존스 인덱스가 매년 발표하는 **SPIVA(S&P Indices Versus Active) 스코어카드**를 보면 진짜 진실이 드러납니다.
+
+![뮤추얼 펀드의 무덤: 생존자 편향](/images/spiva_survivorship_bias.png)
+*(15년 후, 100개의 펀드 중 살아남은 펀드는 단 42개뿐입니다.)*
+
+*   **진실 1 (추락한 비행기):** 15년 전 시장에 존재했던 주식형 펀드 중 **무려 60% 가까이가 수익률 악화로 인해 시장에서 청산(Liquidated)되거나 다른 펀드에 흡수 합병(Merged)** 되었습니다. 
+*   **진실 2 (왜곡된 평균):** 투자사가 자랑하는 '10년 평균 수익률'은 이 참혹하게 망해서 사라진 60%의 펀드 수익률을 쏙 빼놓은 채, 끝까지 살아남은 상위 40%의 **'생존자(Winners)'들의 수익률만 모아서 평균을 낸 것**입니다.
+
+투자자들은 이미 바다에 추락해 버린 60%의 펀드(보이지 않는 데이터)는 알지 못한 채, 살아 돌아온 40%의 펀드 날개만 쓰다듬으며 "이 투자사는 정말 실력이 좋구나"라는 치명적인 착각에 빠지게 됩니다. 
+
+---
+
 ## 📝 맺음말: "보이지 않는 데이터"를 상상하는 힘
 
 빅데이터와 AI 시대가 도래하면서, 우리는 눈앞에 숫자가 주어지면 그것이 진리라고 무비판적으로 수용하는 경향이 생겼습니다. AI 모델을 훈련시킬 때도 이런 '생존자 데이터'만 편식해서 넣으면, AI는 현실과 동떨어진 바보 같은 결론을 내리게 됩니다.
@@ -94,3 +112,4 @@ tags: ["Data Science", "Statistics", "Survivorship Bias", "Abraham Wald", "생�
 **[참고 문헌 (References)]**
 1. Mangel, Marc; Samaniego, Francisco J. (1984). *"Abraham Wald's work on aircraft survivability"*. Journal of the American Statistical Association.
 2. Mcgrayne, Sharon Bertsch (2011). *"The Theory That Would Not Die"*. Yale University Press.
+3. S&P Dow Jones Indices. *"SPIVA® (S&P Indices Versus Active) Scorecard"*. (Active Fund Survivorship and Attrition rates)
