@@ -110,17 +110,32 @@ def nlm_configure_chat(notebook_id: str, custom_prompt: str) -> bool:
 
 
 def nlm_query(notebook_id: str, question: str, timeout: int = 180) -> str:
-    """노트북에 질문하고 응답을 반환한다."""
+    """노트북에 질문하고 응답을 반환한다. JSON 래핑 응답을 자동 파싱."""
     output = nlm_run(
         ["notebook", "query", notebook_id, question, "--timeout", str(timeout)],
         timeout=timeout + 30,
     )
-    return output
+    if not output:
+        return ""
+
+    # NLM CLI가 JSON wrapper로 응답할 경우 answer 필드 추출
+    try:
+        import json as _json
+        parsed = _json.loads(output)
+        # {"value": {"answer": "..."}} 형식
+        if isinstance(parsed, dict):
+            value = parsed.get("value", parsed)
+            if isinstance(value, dict) and "answer" in value:
+                return value["answer"]
+        return output
+    except (ValueError, _json.JSONDecodeError):
+        # JSON이 아니면 원문 그대로 반환
+        return output
 
 
 def nlm_delete_notebook(notebook_id: str):
     """노트북을 삭제한다."""
-    nlm_run(["notebook", "delete", notebook_id, "--yes"], timeout=15)
+    nlm_run(["notebook", "delete", notebook_id, "-y"], timeout=15)
 
 
 # ── 데이터 포맷터 ────────────────────────────────────────────
@@ -190,6 +205,25 @@ def parse_and_save_post(raw_response: str, date_str: str, now_kst: datetime):
     if len(display_title) > 50:
         display_title = display_title[:47] + "..."
 
+    # 메타데이터 추출 실패 시 본문 첫 소제목에서 제목 추출
+    remaining_lines = lines[content_start:]
+    if display_title == f"{now_kst.month}월 {now_kst.day}일 - 주요 AI 뉴스":
+        for line in remaining_lines:
+            heading_match = re.match(r'^##\s+(.+)', line.strip())
+            if heading_match:
+                raw_title = heading_match.group(1).strip()
+                display_title = f"{now_kst.month}월 {now_kst.day}일 - {raw_title}"
+                if len(display_title) > 50:
+                    display_title = display_title[:47] + "..."
+                break
+
+    # TOP_TOPICS 추출 실패 시 제목에서 슬러그 자동 생성
+    if slug_parts == ["daily-ai-digest"]:
+        # 한글 제목에서 핵심 키워드 추출 → 영문 슬러그
+        import hashlib
+        title_hash = hashlib.md5(display_title.encode()).hexdigest()[:8]
+        slug_parts = [f"news-{title_hash}"]
+
     # 본문 추출 (메타데이터 라인 제거)
     content = "\n".join(lines[content_start:]).strip()
 
@@ -250,16 +284,16 @@ CHAT_PROMPT = """당신은 AI 데일리 다이제스트 수석 편집장입니�
 
 QUERY_PROMPT = """소스에 포함된 모든 뉴스를 분석하여 통합 AI 데일리 다이제스트 블로그 포스트를 작성해주세요.
 
-반드시 응답의 첫 세 줄에 아래 메타데이터를 작성하세요:
-- 첫째 줄: TITLE: [가장 중요한 1개 뉴스를 골라 간결한 제목, 50자 이내]
-- 둘째 줄: EXCERPT: [전체 요약 2~3문장]
-- 셋째 줄: TOP_TOPICS: [영문 슬러그 1~3개, 예: ai-security, nvidia-earnings]
+반드시 응답의 첫 세 줄에 아래 메타데이터를 작성하세요 (이 줄들은 본문과 분리하여 첫 세 줄에만 작성):
+TITLE: 가장 중요한 1개 뉴스를 골라 간결한 제목 (50자 이내, 대괄호 없이)
+EXCERPT: 전체 요약 2~3문장
+TOP_TOPICS: 영문 슬러그 1~3개, 예: ai-security, nvidia-earnings
 
 그 아래에 본문을 작성하세요:
-1. 가장 중요한 뉴스 5~10개를 ## 소제목으로 상세 분석
-2. 각 뉴스에 원문 마크다운 링크 필수
+1. 가장 중요한 뉴스 5~10개를 ## 소제목으로 상세 분석 (각 뉴스 2~4문단)
+2. 각 뉴스에 원문 마크다운 링크를 반드시 포함하되, URL은 소스의 실제 웹 주소를 사용하세요. (URL), (PDF) 같은 플레이스홀더는 절대 사용하지 마세요.
 3. 하단에 기타 단신 섹션 (## 📌 기타 단신 모아보기)
-4. 최하단에 ## 📚 참고자료"""
+4. 최하단에 ## 📚 참고자료 (각 참고자료에 실제 URL 포함)"""
 
 
 def run_nlm_pipeline(skip_research: bool = False, deep_mode: bool = False):
