@@ -148,9 +148,10 @@ def run_gemini_search_blogger():
 리서치한 결과를 바탕으로 아래 가이드라인을 엄격히 준수하여 아주 상세한 기술 블로그 포스트를 한국어로 작성해 주세요.
 
 [작성 가이드라인]
-1. 메타 데이터 생성 (반드시 첫 두 줄에 작성):
-   - 첫 번째 줄은 "TITLE: [제목]" 형식으로 작성하되, 대괄호 `[]`는 빼고 제목 텍스트만 적어. 제목은 가장 중요한 Top 10 뉴스의 핵심 내용을 기존보다 1.5배 이상 길고 상세하게 구체적으로 나열해. '시사하는 바' 같은 주관적 문구는 넣지 마.
+1. 메타 데이터 생성 (반드시 첫 세 줄에 작성):
+   - 첫 번째 줄은 "TITLE: [제목]" 형식으로 작성하되, 대괄호 `[]`는 빼고 제목 텍스트만 적어. 제목은 가장 중요하고 파급력이 큰 단 1개의 핵심 뉴스만을 선택하여 간결하고 임팩트 있는 제목으로 작성해. 제목의 길이는 공백 포함하여 **절대 50자를 초과하지 마세요**.
    - 두 번째 줄은 "EXCERPT: [요약문]" 형식으로 전체 포스트를 2~3문장(약 100~150자)으로 요약한 프리뷰 텍스트를 적어.
+   - 세 번째 줄은 "TOP_TOPICS: [topic1, topic2]" 형식으로 작성하되, 포스트의 핵심 주제를 영문 소문자와 하이픈(-)만으로 이루어진 짧은 영문 슬러그 형태로 1~3개 적어.
 2. 본문 서식: 가독성을 높이기 위해 텍스트 단락 구분을 명확히 하고, 적절한 줄바꿈을 사용할 것.
 3. Top 10 심층 분석:
    - 검색된 10개의 뉴스 중 가장 중요한 **5개의 뉴스**를 선별하여 각각 큰 소제목(##)으로 구분해 작성해. (반드시 5개를 꽉 채워서 작성할 것)
@@ -185,21 +186,27 @@ def run_gemini_search_blogger():
     
     display_title = f"Daily Top 10: {now_kst.strftime('%m월 %d일')} 주요 AI 뉴스"
     display_excerpt = "오늘의 핵심 글로벌 AI 및 기술 뉴스 동향을 요약합니다."
+    display_topics = []
     
     lines = article_content.split('\n')
     content_start_idx = 0
     
     import re
-    for i in range(min(10, len(lines))):
+    for i in range(min(15, len(lines))):
         line = lines[i].strip()
         title_match = re.match(r'^(?:\*\*)?TITLE(?:\*\*)?\s*:\s*(.*)', line, re.IGNORECASE)
         excerpt_match = re.match(r'^(?:\*\*)?EXCERPT(?:\*\*)?\s*:\s*(.*)', line, re.IGNORECASE)
+        top_topics_match = re.match(r'^(?:\*\*)?TOP_TOPICS(?:\*\*)?\s*:\s*(.*)', line, re.IGNORECASE)
         
         if title_match:
             display_title = title_match.group(1).replace("[", "").replace("]", "").strip()
             content_start_idx = max(content_start_idx, i + 1)
         elif excerpt_match:
             display_excerpt = excerpt_match.group(1).replace("[", "").replace("]", "").strip()
+            content_start_idx = max(content_start_idx, i + 1)
+        elif top_topics_match:
+            topics_str = top_topics_match.group(1).replace("[", "").replace("]", "").strip()
+            display_topics = [t.strip() for t in topics_str.split(",") if t.strip()]
             content_start_idx = max(content_start_idx, i + 1)
             
     clean_article = '\n'.join(lines[content_start_idx:]).strip()
@@ -211,6 +218,7 @@ def run_gemini_search_blogger():
         "generated_at": now_kst.isoformat(),
         "title": display_title,
         "excerpt": display_excerpt,
+        "top_topics": display_topics,
         "markdown_content": clean_article,
     }
     with open(DEEP_RESEARCH_PATH, 'w', encoding='utf-8') as f:
