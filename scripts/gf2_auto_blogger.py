@@ -184,7 +184,7 @@ def run_gemini_search_blogger():
     # 5. 중간 결과물을 JSON으로 저장 (Phase 3에서 통합 포스트 생성)
     print(f"\n[Step 3] 딥 리서치 결과 JSON 저장")
     
-    display_title = f"Daily Top 10: {now_kst.strftime('%m월 %d일')} 주요 AI 뉴스"
+    display_title = f"{now_kst.month}월 {now_kst.day}일 - 주요 AI 뉴스"
     display_excerpt = "오늘의 핵심 글로벌 AI 및 기술 뉴스 동향을 요약합니다."
     display_topics = []
     

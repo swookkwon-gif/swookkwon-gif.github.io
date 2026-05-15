@@ -222,8 +222,11 @@ def merge_and_create_digest():
         # LLM 실패 시 딥 리서치만이라도 발행
         if deep_research_md:
             print("      ⚠️ LLM 병합 실패 — 딥 리서치 단독 발행")
-            post_title = deep_research_title or "AI 데일리 다이제스트"
+            post_title = deep_research_title or "주요 AI 뉴스 요약"
             title = f"{now_kst.month}월 {now_kst.day}일 - {post_title}"
+            # 안전장치: 50자 초과 시 강제 절삭
+            if len(title) > 50:
+                title = title[:47] + "..."
             save_final_post(date_str, title, deep_research_md, [])
         else:
             print("      ❌ 통합 다이제스트 생성 실패")
@@ -241,6 +244,9 @@ def merge_and_create_digest():
     result_md = source_line + result_md
 
     title = f"{now_kst.month}월 {now_kst.day}일 - {post_title}"
+    # 안전장치: 50자 초과 시 강제 절삭
+    if len(title) > 50:
+        title = title[:47] + "..."
     top_topics = data.get("top_topics", [])
     save_final_post(date_str, title, result_md, top_topics)
 
