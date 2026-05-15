@@ -22,7 +22,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 
 from skills.llm_client import LLMClient
 from agents.collector import collect_rss, collect_gmail
-from agents.writer import write_rss_post, write_newsletter_post
+from agents.writer import write_rss_post, write_newsletters_batch
 from state.state_manager import mark_processed, save_evaluations
 
 STATE_DIR = os.path.join(os.path.dirname(__file__), 'state')
@@ -90,59 +90,60 @@ def run_rss_phase(llm: LLMClient) -> list[dict]:
 
 
 def run_gmail_phase(llm: LLMClient) -> list[dict]:
-    """Gmail 수집 → LLM 분석 → 구조화된 기사 목록 반환 (포스트 미생성)."""
+    """Gmail 수집 → LLM 일괄 분석 → 구조화된 기사 목록 반환 (포스트 미생성)."""
     print("\n" + "=" * 55)
-    print("📧 [Phase 1-B: Gmail 뉴스레터 수집 + 분석]")
+    print("📧 [Phase 1-B: Gmail 뉴스레터 수집 + 일괄 분석]")
     print("=" * 55)
 
     gmail_groups = collect_gmail()
     if not gmail_groups:
         return []
 
-    all_articles = []
+    # 전체 발신자/뉴스레터 수 출력
+    total_letters = sum(len(letters) for letters in gmail_groups.values())
+    print(f"\n   📬 총 {len(gmail_groups)}개 발신자, {total_letters}건 뉴스레터 수집됨")
 
+    # 일괄 LLM 호출 (발신자 수에 관계없이 1회)
+    result = write_newsletters_batch(gmail_groups, llm)
+
+    # 결과에 관계없이 모든 메시지를 처리 완료 마킹 (무한 재시도 방지)
     for sender, letters in gmail_groups.items():
-        print(f"\n   -> [{sender}] 뉴스레터 분석 중 ({len(letters)}개)")
-
-        result = write_newsletter_post(sender, letters, llm)
-        if result is None:
-            print(f"   ❌ Writer 실패: [{sender}] LLM 응답 없음")
-            # 실패해도 처리 완료 마킹 (무한 재시도 방지)
-            for letter in letters:
-                mark_processed("gmail", letter["id"])
-            continue
-
-        # Evaluations 저장
-        evals = result.get("evaluations", [])
-        if evals:
-            save_evaluations(sender, evals)
-
-        # 처리 완료 마킹
         for letter in letters:
             mark_processed("gmail", letter["id"])
 
-        md_content = result.get("markdown_content", "")
-        if not md_content:
-            print(f"   ✅ [{sender}] 중요 기사 없음 — 건너뜀")
-            continue
+    if result is None:
+        print("   ❌ Writer 실패: 뉴스레터 일괄 분석 LLM 응답 없음")
+        return []
 
-        # evaluations에서 구조화된 기사 데이터 추출
-        for ev in evals:
-            all_articles.append({
-                "title": ev.get("target", ""),
-                "summary": ev.get("reasoning", ""),
-                "score": ev.get("score", 0),
-                "source_name": sender,
-                "source_urls": [ev.get("url")] if ev.get("url") else [],
-                "keywords": [],
-            })
+    # Evaluations 저장 (통합 결과를 "Newsletter Batch"로 저장)
+    evals = result.get("evaluations", [])
+    if evals:
+        save_evaluations("Newsletter Batch", evals)
 
-        print(f"   ✅ [{sender}] {len(evals)}건 분석 완료")
+    md_content = result.get("markdown_content", "")
+    if not md_content:
+        print("   ✅ 중요 기사 없음 — 건너뜀")
+        return []
 
-        # API Pacing
-        print("   (발신자 간 대기 10초...)")
-        time.sleep(10)
+    # evaluations에서 구조화된 기사 데이터 추출
+    all_articles = []
+    for ev in evals:
+        # reasoning에서 발신자 이름 추출 시도, 실패 시 "Newsletter" 사용
+        source = "Newsletter"
+        for sender in gmail_groups.keys():
+            if sender.lower() in ev.get("reasoning", "").lower():
+                source = sender
+                break
+        all_articles.append({
+            "title": ev.get("target", ""),
+            "summary": ev.get("reasoning", ""),
+            "score": ev.get("score", 0),
+            "source_name": source,
+            "source_urls": [ev.get("url")] if ev.get("url") else [],
+            "keywords": [],
+        })
 
+    print(f"   ✅ 뉴스레터 일괄 분석 완료: {len(evals)}건 평가")
     return all_articles
 
 

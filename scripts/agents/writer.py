@@ -108,7 +108,7 @@ def write_rss_post(articles: list[dict], llm: LLMClient) -> dict | None:
         prompt=prompt,
         schema=RSS_SCHEMA,
         reviewer_fn=review_llm_output,
-        max_rounds=2,
+        max_rounds=1,
     )
 
 
@@ -157,5 +157,67 @@ def write_newsletter_post(sender: str, letters: list[dict], llm: LLMClient) -> d
         prompt=prompt,
         schema=NEWSLETTER_SCHEMA,
         reviewer_fn=review_llm_output,
-        max_rounds=2,
+        max_rounds=1,
+    )
+
+
+# ── 뉴스레터 일괄 분석 (API 최적화) ────────────────────────────
+
+def write_newsletters_batch(all_senders: dict[str, list[dict]], llm: LLMClient) -> dict | None:
+    """
+    모든 발신자의 뉴스레터를 하나의 LLM 호출로 일괄 분석한다.
+    기존 write_newsletter_post()가 발신자마다 개별 호출하던 것을 1회로 통합.
+
+    Args:
+        all_senders: {"발신자명": [{"id", "subject", "body"}, ...], ...}
+        llm: LLMClient 인스턴스
+
+    Returns:
+        dict: {"post_title": str, "evaluations": list, "markdown_content": str}
+    """
+    prompts = load_prompts()
+    custom_rules, custom_feedback = load_guidelines()
+
+    # 모든 뉴스레터 본문을 하나의 텍스트로 합침
+    articles_text = ""
+    total_letters = 0
+    sender_list = []
+    for sender, letters in all_senders.items():
+        sender_list.append(sender)
+        for idx, letter in enumerate(letters, 1):
+            total_letters += 1
+            articles_text += (
+                f"\n\n--- [{sender}] 뉴스레터 {idx} ---\n"
+                f"[제목: {letter['subject']}]\n{letter['body']}\n"
+            )
+
+    requirements = prompts.get("gmail_requirements", "")
+    # {sender} 치환을 전체 발신자 목록으로 대체
+    sender_names = ", ".join(sender_list)
+    requirements = requirements.replace("{sender}", sender_names)
+
+    prompt = f"""당신은 '윤(Yoon)' 님을 위한 수석 뉴스레터 AI 에디터입니다.
+아래 여러 발신자({sender_names})가 보낸 뉴스레터 데이터를 **통합 분석**하여 블로그 포스트를 작성합니다.
+각 기사의 evaluations에는 반드시 해당 기사가 속한 발신자 이름도 reasoning에 포함해 주세요.
+
+[사용자 맞춤형 평가 핵심 룰]
+{custom_rules}
+
+[최근 사용자 직접 교정 예시 (Few-Shot)]
+{custom_feedback}
+
+[뉴스레터 데이터 ({total_letters}건, 발신자 {len(sender_list)}명)]
+{articles_text}
+
+[요구사항]
+{requirements}
+"""
+
+    print(f"   📦 뉴스레터 일괄 분석: {len(sender_list)}개 발신자, {total_letters}건 → 1회 LLM 호출")
+
+    return llm.call_with_review(
+        prompt=prompt,
+        schema=NEWSLETTER_SCHEMA,
+        reviewer_fn=review_llm_output,
+        max_rounds=1,
     )
