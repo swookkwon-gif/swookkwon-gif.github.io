@@ -151,6 +151,12 @@ def main():
     print("🚀 [Phase 1] 수집 + 분석 파이프라인 v3.0")
     print("=======================================================")
 
+    # Delete stale intermediate files from previous failed runs
+    state_file = os.path.join(STATE_DIR, "daily_articles.json")
+    if os.path.exists(state_file):
+        os.remove(state_file)
+        print(f"🧹 이전 세션의 잔류 데이터({state_file})를 삭제했습니다.")
+
     api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
         print("⚠️ GEMINI_API_KEY is missing.")

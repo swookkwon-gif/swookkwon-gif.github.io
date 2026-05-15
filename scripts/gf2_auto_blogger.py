@@ -71,7 +71,7 @@ def load_recent_covered_news(days=2):
 
 # ============ Main Pipeline ============
 
-MODELS_TO_TRY = ['gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-1.5-flash']
+MODELS_TO_TRY = ['gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-1.5-flash-latest']
 
 def call_gemini_streaming(client, prompt):
     """SDK 스트리밍 방식으로 Gemini를 호출한다. 타임아웃 문제를 근본적으로 해결."""
@@ -121,6 +121,12 @@ def run_gemini_search_blogger():
     print(f"🚀 [Gemini 2.5 Auto Blogger] 자동 생성 파이프라인 시작")
     print(f"==================================================")
     
+    # 파이프라인 시작 전 이전 실패로 남아있을 수 있는 stale 데이터 삭제
+    state_file = os.path.join(STATE_DIR, "deep_research.json")
+    if os.path.exists(state_file):
+        os.remove(state_file)
+        print(f"🧹 이전 세션의 잔류 데이터({state_file})를 삭제했습니다.")
+
     # 1. 최근에 다룬 뉴스 리스트업 (중복 방지 메모리)
     recent_news = load_recent_covered_news(days=2)
     negative_prompt = ""

@@ -300,8 +300,8 @@ def cleanup_intermediate_files():
 
 if __name__ == "__main__":
     merge_and_create_digest()
-    # 중간 파일은 보존 (디버깅 용이성)
-    # cleanup_intermediate_files()
+    # 성공적으로 생성 완료 후 중간 파일 삭제
+    cleanup_intermediate_files()
 
     print("\n=======================================================")
     print("🎉 Phase 3 완료! 통합 데일리 다이제스트가 발행되었습니다.")
