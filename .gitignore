@@ -46,6 +46,8 @@ content/posts/backups/
 # Python & Temporary
 .venv/
 job.log
+temp_*.json
+temp_*.md
 
 scripts/credentials.json
 scripts/token_*.json
