@@ -1,9 +1,10 @@
 name: Gemini Daily Deep Research
 
 on:
-  schedule:
-    # 매일 UTC 20:00 (한국시간 오전 5:00) 구동
-    - cron: '0 20 * * *'
+  # schedule:
+  #   # 매일 UTC 20:00 (한국시간 오전 5:00) 구동
+  #   # [DISABLED 2026-05-16] NLM 로컬 파이프라인으로 전환
+  #   - cron: '0 20 * * *'
   workflow_dispatch: # 수동 실행 활성화
 
 permissions:
