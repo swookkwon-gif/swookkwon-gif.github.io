@@ -109,7 +109,7 @@ def nlm_configure_chat(notebook_id: str, custom_prompt: str) -> bool:
     return bool(output)
 
 
-def nlm_query(notebook_id: str, question: str, timeout: int = 180) -> str:
+def nlm_query(notebook_id: str, question: str, timeout: int = 300) -> str:
     """노트북에 질문하고 응답을 반환한다. JSON 래핑 응답을 자동 파싱."""
     output = nlm_run(
         ["notebook", "query", notebook_id, question, "--timeout", str(timeout)],
@@ -141,31 +141,41 @@ def nlm_delete_notebook(notebook_id: str):
 # ── 데이터 포맷터 ────────────────────────────────────────────
 
 def format_rss_as_markdown(articles: list[dict]) -> str:
-    """RSS 기사 목록을 NotebookLM 소스용 마크다운으로 변환한다."""
+    """RSS 기사 목록을 NotebookLM 소스용 마크다운으로 변환한다.
+    각 기사에 [출처]와 [URL]을 명시하여 NLM이 인용 시 사용하도록 한다."""
     if not articles:
         return ""
 
     lines = ["# RSS 뉴스 수집 결과\n"]
+    lines.append("아래 각 기사의 [출처]와 [원문 URL]을 본문 작성 시 반드시 인용하세요.\n")
     for idx, art in enumerate(articles, 1):
         lines.append(f"## {idx}. {art['title']}")
-        lines.append(f"- 출처: {art['source_name']}")
-        lines.append(f"- URL: {art['url']}")
+        lines.append(f"[출처: {art['source_name']}]")
+        lines.append(f"[원문 URL: {art['url']}]")
         content_preview = art.get('content', '')[:2000]
         lines.append(f"\n{content_preview}\n")
     return "\n".join(lines)
 
 
 def format_gmail_as_markdown(gmail_groups: dict[str, list[dict]]) -> str:
-    """Gmail 뉴스레터를 NotebookLM 소스용 마크다운으로 변환한다."""
+    """Gmail 뉴스레터를 NotebookLM 소스용 마크다운으로 변환한다.
+    각 뉴스레터에 [출처: 뉴스레터명]을 명시하고, 본문 내 Link 패턴을 보존한다."""
     if not gmail_groups:
         return ""
 
     lines = ["# Gmail 뉴스레터 수집 결과\n"]
+    lines.append("아래 각 뉴스레터의 [출처]를 본문 작성 시 반드시 인용하세요.\n")
     for sender, letters in gmail_groups.items():
-        lines.append(f"## 발신자: {sender}\n")
         for idx, letter in enumerate(letters, 1):
-            lines.append(f"### {idx}. {letter['subject']}")
+            lines.append(f"## [{sender}] {letter['subject']}")
+            lines.append(f"[출처: {sender}]")
             body_preview = letter.get('body', '')[:5000]
+            # body에서 (Link: URL) 패턴을 마크다운 링크로 변환
+            body_preview = re.sub(
+                r'([^(]+?)\s*\(Link:\s*(https?://[^)]+)\)',
+                r'[\1](\2)',
+                body_preview,
+            )
             lines.append(f"\n{body_preview}\n")
     return "\n".join(lines)
 
@@ -274,13 +284,19 @@ CHAT_PROMPT = """당신은 AI 데일리 다이제스트 수석 편집장입니�
 노트북에 추가된 소스(RSS 뉴스, Gmail 뉴스레터, 웹 리서치)를 종합하여
 한국어로 된 고품질 테크 블로그 포스트를 작성합니다.
 
-[작성 규칙]
+[절대 규칙]
 - 포스트 최상단에 H1(# 제목)을 절대 쓰지 마세요.
 - 소제목은 ## 형식으로 작성하세요.
-- 각 뉴스에 원문 출처 마크다운 링크를 반드시 포함하세요.
+- [1], [2] 같은 숫자 인용은 절대 사용하지 마세요. 대신 소스의 [출처: ...]에 표기된 이름을 사용하세요.
 - 어조: 전문적 테크 저널 어조(~이다, ~한다)를 사용하세요.
-- 기사 간 중복되는 내용은 병합하세요.
-- 하단에 '## 📚 참고자료' 섹션을 추가하세요."""
+- 동일한 뉴스가 여러 소스에서 다뤄졌다면, 반드시 병합하고 출처를 모두 표기하세요.
+- 하단에 '## 📚 참고자료' 섹션을 추가하세요.
+
+[출처 표기 규칙]
+- 각 뉴스 소제목 바로 아래에 * 관련 출처: 형식으로 해당 뉴스를 다룬 소스명과 원문 링크를 나열하세요.
+- 형식: * 관련 출처: [기사제목](원문URL) — 출처명1, 출처명2, ...
+- 여러 소스에서 다뤄진 경우: * 📰 N개 소스에서 보도: 출처명1, 출처명2, 출처명3
+- 소스의 [원문 URL: ...] 태그에 있는 실제 URL을 사용하세요. 절대 (URL), (PDF) 같은 플레이스홀더를 쓰지 마세요."""
 
 QUERY_PROMPT = """소스에 포함된 모든 뉴스를 분석하여 통합 AI 데일리 다이제스트 블로그 포스트를 작성해주세요.
 
@@ -290,10 +306,20 @@ EXCERPT: 전체 요약 2~3문장
 TOP_TOPICS: 영문 슬러그 1~3개, 예: ai-security, nvidia-earnings
 
 그 아래에 본문을 작성하세요:
-1. 가장 중요한 뉴스 5~10개를 ## 소제목으로 상세 분석 (각 뉴스 2~4문단)
-2. 각 뉴스에 원문 마크다운 링크를 반드시 포함하되, URL은 소스의 실제 웹 주소를 사용하세요. (URL), (PDF) 같은 플레이스홀더는 절대 사용하지 마세요.
-3. 하단에 기타 단신 섹션 (## 📌 기타 단신 모아보기)
-4. 최하단에 ## 📚 참고자료 (각 참고자료에 실제 URL 포함)"""
+
+[필수 구조]
+1. 가장 중요한 뉴스 5~8개를 ## 소제목으로 상세 분석 (각 뉴스 2~3문단)
+2. 각 ## 소제목 바로 아래에 반드시 아래 형식으로 출처를 표기하세요:
+   * 관련 출처: [기사제목](원문URL) — 출처명
+   * 📰 N개 소스에서 보도: 출처명1, 출처명2 (동일 뉴스가 여러 소스에 있을 때)
+3. 본문 안의 주요 사실에는 인라인 링크 [텍스트](URL)를 사용하세요.
+4. 하단에 기타 단신 섹션 (## 📌 기타 단신 모아보기) — 각 단신에도 출처명과 링크 포함
+5. 최하단에 ## 📚 참고자료 — 본문에 인용된 모든 원문의 [제목](URL) 목록
+
+[금지사항]
+- [1], [2], [3] 같은 숫자 인용 절대 금지
+- (URL), (PDF) 같은 플레이스홀더 절대 금지
+- 소스의 [원문 URL: ...] 태그에 있는 실제 URL을 사용하세요"""
 
 
 def run_nlm_pipeline(skip_research: bool = False, deep_mode: bool = False):
@@ -394,7 +420,7 @@ def run_nlm_pipeline(skip_research: bool = False, deep_mode: bool = False):
         print("✍️ [Step 6] 통합 포스트 생성 쿼리")
         print("─" * 50)
 
-        response = nlm_query(notebook_id, QUERY_PROMPT, timeout=180)
+        response = nlm_query(notebook_id, QUERY_PROMPT, timeout=300)
         if not response:
             print("   ❌ NLM 쿼리 실패 — 종료")
             return
