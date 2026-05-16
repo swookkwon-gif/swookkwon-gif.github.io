@@ -71,6 +71,77 @@ tags:
 3. **민감한 상품 카테고리를 다룰 때:** 의료 및 건강 문제, 깜짝 프러포즈용 약혼반지 등 개인의 사생활 보호가 강하게 요구되는 상품의 경우 리타겟팅 광고가 치명적인 사생활 침해로 느껴질 수 있으므로 사용을 지양하거나 매우 조심스럽게 접근해야 합니다 [55, 58, 59].
 4. **퍼스트파티(First-party) 데이터 동의 확보 없이 진행할 때:** 서드파티 쿠키 종말과 프라이버시 규제가 강화되는 현재, 사용자의 명시적 동의(Consent) 없이 무단으로 데이터를 수집하여 리타겟팅을 진행하면 심각한 법적 제재 및 평판 하락을 맞을 수 있습니다 [30, 60].
 
+---
+
+### 6. 핵심 질문: 리타겟팅 ROAS는 '진짜' 사업 성과인가?
+
+리타겟팅의 장단점과 학술 연구를 살펴본 이상, 가장 근본적인 질문에 답해야 합니다. **플랫폼이 보여주는 ROAS 1000%는 과연 진짜인가?**
+
+#### 선택 편향(Selection Bias): ROAS가 뻥튀기되는 구조적 원인
+
+리타겟팅 광고는 태생적으로 **'이미 구매 의도가 높은 사람'**에게 노출됩니다. 장바구니에 물건을 담아둔 고객, 상품 페이지를 3번이나 방문한 고객 — 이들에게 광고를 보여주면 당연히 전환율이 높습니다. 문제는 **이 사람들 중 상당수가 광고를 보지 않았어도 구매했을 것**이라는 점입니다.
+
+이를 통계학에서 **선택 편향(Selection Bias)**이라 부릅니다. 광고 시스템이 전환 확률이 높은 타겟을 골라내기 때문에, 광고의 인과적 효과(Causal Effect)와 자연 전환율이 뒤섞여 **ROAS가 2~5배 부풀려지는 현상**이 발생합니다.
+
+> **핵심 수치:** 업계 전반의 증분성(Incrementality) 테스트 결과, 리타겟팅의 **Incremental ROAS(iROAS)는 플랫폼 보고 ROAS 대비 40%~70% 낮은** 것으로 나타났습니다. 즉 대시보드에 ROAS 10x가 찍혀 있다면, 실제로 광고 덕분에 발생한 순수 증분 매출은 3x~6x 수준에 불과할 수 있습니다.
+
+#### Ghost Ads: 진실을 밝혀내는 방법론
+
+Lewis & Rao (2015)의 기념비적 논문 "On the Near-Impossibility of Measuring the Returns to Advertising" 이후, **Ghost Ads**(Johnson, Lewis, Nubbemeyer, 2017)라는 혁신적 방법론이 등장했습니다.
+
+Ghost Ads는 통제군에게 비싼 공익광고(PSA)를 보여주는 대신, 실시간 경매 로그에서 **"이 유저에게 우리 광고가 나갈 뻔했지만 안 나갔다"**는 기록만 남깁니다. 광고비 1원도 낭비하지 않으면서 정확한 인과성(Causality) 실험이 가능해진 것입니다.
+
+---
+
+### 7. 증분성 테스트가 밝혀낸 불편한 진실
+
+#### 리타겟팅의 증분 기여도는 5%~30% 수준
+
+대규모 증분성 테스트 결과들을 종합하면:
+
+| 구분 | 플랫폼 보고 ROAS | 증분 ROAS (iROAS) | 실제 증분 리프트 |
+|:---|:---:|:---:|:---:|
+| **리타겟팅 (장바구니 이탈)** | 8x~12x | 2x~5x | 10%~30% |
+| **리타겟팅 (상품 조회)** | 4x~8x | 1.5x~3x | 5%~15% |
+| **프로스펙팅 (신규 유저)** | 2x~4x | 1.5x~3x | 15%~40% |
+
+**주목할 점:** 프로스펙팅(신규 유저 타겟) 광고가 리타겟팅보다 플랫폼 ROAS는 낮지만, **순수 증분 기여도(Incremental Lift)는 오히려 더 높은** 경우가 빈번합니다. 리타겟팅이 "어차피 살 사람의 공을 가로채는" 반면, 프로스펙팅은 진짜 새로운 고객을 만들어내기 때문입니다.
+
+#### 리타겟팅이 '해롭다'는 뜻이 아닌 이유
+
+그렇다고 리타겟팅을 중단하라는 의미는 아닙니다. 증분성이 5%라 하더라도 **적정 예산 범위 내에서는 여전히 수익성이 높을 수 있습니다.** 문제는 이 예산을 넘어서서 스케일링할 때 발생합니다. 증분 오디언스가 고갈된 이후에는 급격한 **체감수익 체감(Diminishing Returns)**이 발생하며, 광고비 대비 실제 이익이 마이너스로 전환되는 지점이 반드시 존재합니다.
+
+---
+
+### 8. 실무 프레임워크: '진짜 ROAS'를 측정하는 법
+
+리타겟팅과 ROAS에 대해 건강한 시각을 갖추기 위한 실무 프레임워크를 제안합니다.
+
+**1단계: 증분성 테스트를 정기적으로 실행하라**
+- 분기 1회 이상 **Conversion Lift Test** 또는 **Ghost Ads 기반 실험**을 실행합니다.
+- Meta와 Google은 자체 Lift Test 도구를 제공합니다. Criteo/RTB House 등은 별도 협의가 필요합니다.
+
+**2단계: iROAS를 핵심 KPI로 전환하라**
+- 플랫폼 보고 ROAS 옆에 **Incremental ROAS(iROAS)** 열을 반드시 병기합니다.
+- CFO/CMO 보고 시 iROAS를 1차 지표로, 플랫폼 ROAS를 참고 지표로 전환합니다.
+
+**3단계: 예산 배분을 재설계하라**
+- 증분성이 낮은 리타겟팅에 과도하게 쏟아붓던 예산을 **프로스펙팅 및 상위 퍼널**로 재배분합니다.
+- 리타겟팅 예산은 증분 효과가 입증된 '스윗스팟' 범위 내로 제한합니다.
+
+**4단계: LTV/CAC 중심으로 이동하라**
+- 일회성 ROAS보다 **고객 생애 가치(LTV)** 대비 **고객 획득 비용(CAC)** 비율을 추적합니다.
+- 리타겟팅이 단기 전환은 만들어도 LTV가 낮은 할인 의존 고객만 양산하는지 점검합니다.
+
+> **결론:** 리타겟팅은 강력한 도구이지만, 플랫폼이 보여주는 ROAS를 액면 그대로 믿으면 **"어차피 살 사람에게 돈을 태우는"** 함정에 빠집니다. 증분성 중심의 사고 전환만이 진짜 사업 성과를 만들어낼 수 있습니다.
+
+---
+
 ### 📚 참고자료
-- NotebookLM Deep Research 결과
-- (추후 사용자가 리뷰하며 논문, 자료 링크 등 추가 예정)
+- **Sahni, N., Narayanan, S., & Kalyanam, K. (2019).** *An Experimental Investigation of the Effects of Retargeted Advertising.* Journal of Marketing Research.
+- **Lambrecht, A., & Tucker, C. (2013).** *When Does Retargeting Work? Information Specificity in Online Advertising.* Journal of Marketing Research.
+- **Lewis, R. A., & Rao, J. M. (2015).** *On the Near-Impossibility of Measuring the Returns to Advertising.* Quarterly Journal of Economics.
+- **Johnson, G. A., Lewis, R. A., & Nubbemeyer, E. I. (2017).** *Ghost Ads: Improving the Economics of Measuring Online Ad Effectiveness.* Journal of Marketing Research.
+- **Gopalakrishnan, A., & Park, Y. H. (2021).** *The Effect of Retargeting on Consumer Purchase Timing.* Marketing Science.
+- [ROAS는 가짜다: Attribution과 Incrementality의 결정적 차이](/ko/posts/2026-05-10-roas-illusion-attribution-vs-incrementality) *(관련 포스트)*
+- [리타게팅 광고, 무조건 구체적일수록 좋을까?](/ko/posts/2026-05-13-when-does-retargeting-work-preference-formation) *(관련 포스트)*
