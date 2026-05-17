@@ -1,5 +1,11 @@
+import { Metadata } from "next";
 import Link from "next/link";
 import { getSortedPostsData } from "@/lib/posts";
+
+export const metadata: Metadata = {
+  title: "All Posts",
+  description: "Browse all posts",
+};
 
 export default async function PostsArchivePage({
   params,

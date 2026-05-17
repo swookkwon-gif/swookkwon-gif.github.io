@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import { getSortedPostsData, getPostData } from "@/lib/posts";
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
@@ -27,6 +28,26 @@ import { ArrowLeft, Calendar, Tag, ChevronLeft, ChevronRight } from "lucide-reac
 import React from "react";
 import ChartRenderer from "@/components/ChartRenderer";
 import MermaidRenderer from "@/components/MermaidRenderer";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string; slug: string }>;
+}): Promise<Metadata> {
+  const { lang, slug } = await params;
+  const post = getPostData(slug, lang);
+
+  return {
+    title: post.title,
+    description: post.excerpt || post.title,
+    openGraph: {
+      title: post.title,
+      description: post.excerpt || post.title,
+      type: "article",
+      url: `/${lang}/posts/${slug}`,
+    },
+  };
+}
 
 export async function generateStaticParams() {
   const postsKo = getSortedPostsData('ko');

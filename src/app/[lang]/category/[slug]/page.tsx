@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import Link from "next/link";
 import { getSortedPostsData } from "@/lib/posts";
 import { notFound } from "next/navigation";
@@ -21,6 +22,35 @@ export async function generateStaticParams() {
     ...categoriesKo.map(category => ({ lang: 'ko', slug: category.toLowerCase().replace(/\s+/g, '-') })),
     ...categoriesEn.map(category => ({ lang: 'en', slug: category.toLowerCase().replace(/\s+/g, '-') }))
   ];
+}
+
+export async function generateMetadata({ params }: CategoryPageProps): Promise<Metadata> {
+  const { slug, lang } = await params;
+  const posts = getSortedPostsData(lang);
+  
+  const filteredPosts = posts.filter(post => {
+    const postCategorySlug = (post.category || 'Insight').toLowerCase().replace(/\s+/g, '-');
+    return postCategorySlug === slug;
+  });
+
+  if (filteredPosts.length === 0) {
+    return {
+      title: 'Category Not Found',
+    };
+  }
+
+  const displayCategory = filteredPosts[0].category;
+  const title = `${displayCategory} | Category`;
+
+  return {
+    title,
+    description: `Articles in the ${displayCategory} category`,
+    openGraph: {
+      title,
+      description: `Articles in the ${displayCategory} category`,
+      url: `/${lang}/category/${slug}`,
+    }
+  };
 }
 
 export default async function CategoryPage({ params }: CategoryPageProps) {
