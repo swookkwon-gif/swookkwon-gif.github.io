@@ -45,6 +45,9 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
   return {
     title,
     description: `Articles in the ${displayCategory} category`,
+    alternates: {
+      canonical: `/${lang}/category/${slug}`,
+    },
     openGraph: {
       title,
       description: `Articles in the ${displayCategory} category`,

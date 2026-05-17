@@ -11,6 +11,7 @@ export interface PostData {
   excerpt: string;
   category: string;
   content: string;
+  tags?: string[];
   related?: string[];
   relatedPosts?: { slug: string; title: string; date: string; category: string; excerpt: string }[];
   categoryTotalCount?: number;

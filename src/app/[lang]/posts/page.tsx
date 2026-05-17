@@ -2,10 +2,21 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { getSortedPostsData } from "@/lib/posts";
 
-export const metadata: Metadata = {
-  title: "All Posts",
-  description: "Browse all posts",
-};
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  return {
+    title: "All Posts",
+    description: "Browse all posts",
+    alternates: {
+      canonical: `/${lang}/posts`,
+    },
+    openGraph: {
+      title: "All Posts",
+      description: "Browse all posts",
+      url: `/${lang}/posts`,
+    }
+  };
+}
 
 export default async function PostsArchivePage({
   params,

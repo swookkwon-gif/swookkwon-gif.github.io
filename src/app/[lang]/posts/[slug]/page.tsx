@@ -37,15 +37,29 @@ export async function generateMetadata({
   const { lang, slug } = await params;
   const post = getPostData(slug, lang);
 
+  const url = `/${lang}/posts/${slug}`;
+  
   return {
     title: post.title,
     description: post.excerpt || post.title,
+    keywords: post.tags,
+    alternates: {
+      canonical: url,
+    },
     openGraph: {
       title: post.title,
       description: post.excerpt || post.title,
       type: "article",
-      url: `/${lang}/posts/${slug}`,
+      url,
+      publishedTime: post.date,
+      authors: ["Wook Kwon"],
+      tags: post.tags,
     },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.excerpt || post.title,
+    }
   };
 }
 
@@ -66,8 +80,29 @@ export default async function PostPage({
   const { lang, slug } = await params;
   const post = getPostData(slug, lang);
 
+  // AEO JSON-LD Schema
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.excerpt || post.title,
+    author: {
+      "@type": "Person",
+      name: "Wook Kwon",
+      url: "https://www.linkedin.com/in/wook-kwon/"
+    },
+    datePublished: post.date,
+    dateModified: post.date,
+    url: `https://swookkwon-gif.github.io/${lang}/posts/${slug}`,
+    keywords: post.tags?.join(", ") || "",
+  };
+
   return (
     <article className="font-sans w-full max-w-none pt-4 md:pt-0">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <header className="mb-8 md:mb-10">
         <h1 className="text-xl md:text-3xl font-bold mb-3 md:mb-5 text-neutral-900 tracking-tight leading-[1.3]">
           {post.title}
