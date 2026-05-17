@@ -26,7 +26,7 @@ Gemini CLI의 `--yolo` 플래그는 사용자의 승인 절차를 생략하고 A
 # 1단계: 초안 작성
 gemini --yolo "새로운 AI 팟캐스트를 위한 기획안 초안을 작성해줘." > draft.md
 
-# 2단계 ~ 4단계: 3번의 자율 개선 이터레이션 (YOLO 모드)
+# 2단계 - 4단계: 3번의 자율 개선 이터레이션 (YOLO 모드)
 for i in {1..3}
 do
   gemini --yolo "이전 기획안(draft.md)을 읽고, 비판적인 시각으로 약점을 찾아 더 창의적이고 도발적으로 수정해줘." --file draft.md > temp.md

@@ -31,7 +31,7 @@ category: 'AI News'
 
 ## 4. Anthropic의 공격적 확장: 900억 달러 펀딩 라운드 추진 및 금융권 JV
 
-Anthropic이 850억~900억 달러 밸류에이션으로 50억 달러 규모의 펀딩 라운드를 진행 중이며, 이는 OpenAI의 밸류에이션을 넘어설 가능성이 있습니다. 또한, Anthropic은 블랙스톤, 골드만삭스 등 월스트리트 주요 기업들과 15억 달러 규모의 합작 투자 계약을 체결할 예정입니다. 이 합작 투자는 사모펀드 지원 기업들을 대상으로 AI 도구를 판매하는 것을 목표로 하며, Anthropic의 컨설팅 부문을 담당할 회사를 설립할 계획입니다.
+Anthropic이 850억-900억 달러 밸류에이션으로 50억 달러 규모의 펀딩 라운드를 진행 중이며, 이는 OpenAI의 밸류에이션을 넘어설 가능성이 있습니다. 또한, Anthropic은 블랙스톤, 골드만삭스 등 월스트리트 주요 기업들과 15억 달러 규모의 합작 투자 계약을 체결할 예정입니다. 이 합작 투자는 사모펀드 지원 기업들을 대상으로 AI 도구를 판매하는 것을 목표로 하며, Anthropic의 컨설팅 부문을 담당할 회사를 설립할 계획입니다.
 
 <br><small style="color: #888;">소스: 지피터스 뉴스레터 · Global AI News Summary &nbsp;|&nbsp; 🔗 [원문 보기](https://techcrunch.com/2026/04/29/sources-anthropic-could-raise-a-new-50b-round-at-a-valuation-of-900b/) &nbsp;|&nbsp; 🔗 [원문 보기](https://kr.benzinga.com/news/usa/stocks/%EC%82%AC%EB%AA%A8%ED%8E%80%EB%93%9C%EB%8F%84-%EC%9D%B4%EC%A0%A0-ai%EB%B9%A8-%EC%95%B8%ED%8A%B8%EB%A1%9C%ED%94%BD-%EB%B8%94%EB%9E%99%EC%8A%A4%ED%86%A4%EA%B3%A8%EB%93%9C%EB%A7%8C%EC%82%AD/)</small>
 

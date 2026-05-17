@@ -15,7 +15,7 @@ tags: ["Data Science", "Statistics", "Conditional Probability", "Monty Hall", "M
 ## 🚪 1. 염소인가, 최고급 스포츠카인가?
 
 ![몬티 홀 진행자](/images/monty_hall.jpg)
-*(1960~70년대 미국 최고의 인기 TV 쇼 'Let's Make a Deal'의 명진행자 몬티 홀. 출처: Wikimedia Commons)*
+*(1960-70년대 미국 최고의 인기 TV 쇼 'Let's Make a Deal'의 명진행자 몬티 홀. 출처: Wikimedia Commons)*
 
 이 문제는 미국의 유명 TV 게임 쇼 였던 *'Let's Make a Deal'*의 진행자 **몬티 홀(Monty Hall)**의 이름을 따서 만들어졌습니다. 게임의 규칙은 아주 간단합니다.
 

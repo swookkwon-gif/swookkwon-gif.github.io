@@ -38,7 +38,7 @@ category: 'AI News'
 ## 현실화된 AI 사이버 위협과 소버린 보안의 부상
 * 📰 4개 소스에서 보도: AITimes, Coaio, TLDR, The AI
 
-AI 기술이 사이버 공격에 활용되면서 글로벌 보안 인프라에 비상이 걸렸다. 미국 보안 연구진이 [애플이 5년간 공들인 맥OS 보안 체계를 앤트로픽의 AI 모델 '미소스(Mythos)'를 활용해 단 5일 만에 무력화](https://www.aitimes.com/news/articleView.html?idxno=210563)하는 데 성공했다. 이에 팔로알토 네트웍스는 기업들이 [AI 기반 사이버 공격에 대비할 수 있는 시간이 3~5개월에 불과하다고 강력히 경고](https://www.aitimes.com/news/articleView.html?idxno=210539)했다.
+AI 기술이 사이버 공격에 활용되면서 글로벌 보안 인프라에 비상이 걸렸다. 미국 보안 연구진이 [애플이 5년간 공들인 맥OS 보안 체계를 앤트로픽의 AI 모델 '미소스(Mythos)'를 활용해 단 5일 만에 무력화](https://www.aitimes.com/news/articleView.html?idxno=210563)하는 데 성공했다. 이에 팔로알토 네트웍스는 기업들이 [AI 기반 사이버 공격에 대비할 수 있는 시간이 3-5개월에 불과하다고 강력히 경고](https://www.aitimes.com/news/articleView.html?idxno=210539)했다.
 
 이러한 위협에 맞서 각국의 대응도 빨라지고 있다. 메가존클라우드의 보안 브랜드 [HALO는 해커의 AI 공격 속도를 따라잡기 위한 '초자동화' 방어 체계를 발표](http://www.newstheai.com/news/articleView.html?idxno=20680)했으며, 프랑스의 AI 기업 미스트랄(Mistral)은 미국의 미소스 모델에 대항하여 [유럽 은행권과 손잡고 사이버 보안 특화 '소버린(Sovereign) 보안 모델' 개발에 착수](https://www.aitimes.com/news/articleView.html?idxno=210538)했다.
 

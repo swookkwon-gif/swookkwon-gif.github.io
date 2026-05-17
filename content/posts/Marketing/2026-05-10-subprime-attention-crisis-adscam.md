@@ -26,7 +26,7 @@ graph TD
     A[광고주 예산 100달러] --> B[DSP / 에이전시 수수료]
     B --> C[Ad Exchange / SSP 수수료]
     C --> D[Data Provider / Tracking 수수료]
-    D --> E[퍼블리셔 최종 수익 (약 30~40달러)]
+    D --> E[퍼블리셔 최종 수익 (약 30-40달러)]
     E --> F[이 중 상당수는 봇 트래픽 / MFA]
     
     style A fill:#4CAF50,color:white

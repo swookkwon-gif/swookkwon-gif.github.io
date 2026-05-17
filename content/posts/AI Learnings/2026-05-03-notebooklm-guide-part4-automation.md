@@ -99,14 +99,14 @@ nlm sources add --notebook <ID> --type file --file-path "./report.pdf"
 ### 웹 리서치 실행
 
 ```bash
-# Fast Research (약 30초, ~10개 소스)
+# Fast Research (약 30초, 약 10개 소스)
 nlm research start \
   --notebook <ID> \
   --query "AI agent security vulnerabilities 2026" \
   --mode fast \
   --source web
 
-# Deep Research (약 5분, ~40개 소스)
+# Deep Research (약 5분, 약 40개 소스)
 nlm research start \
   --notebook <ID> \
   --query "AI agent security vulnerabilities 2026" \

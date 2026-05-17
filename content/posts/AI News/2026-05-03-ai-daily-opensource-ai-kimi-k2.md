@@ -39,7 +39,7 @@ xAI가 Grok 사용자들을 위한 'Custom Voices' 기능을 새롭게 선보였
 
 ## 5. UiPath, RPA에서 AI 오케스트레이션으로 진화하며 기업 AI 도입 성공 전략 제시
 로봇 프로세스 자동화(RPA) 선두 주자였던 UiPath가 AI 에이전트, 자동화, 그리고 사람의 협업을 조율하는 '에이전트 기반 비즈니스 오케스트레이션' 기업으로 진화하고 있습니다. UiPath CMO 마이클 아탈라는 많은 기업이 AI 파일럿 단계에서 좌초하는 핵심 원인으로 '조정 부족'을 지목하며, AI를 단일 도구가 아닌 비즈니스 목표와 연결된 통합 시스템으로 인식하고 워크플로우를 재설계하는 것이 성공의 핵심이라고 강조했습니다.
-*   AI 프로젝트 70~80% 파일럿 단계 좌초
+*   AI 프로젝트 70-80% 파일럿 단계 좌초
 <br><small style="color: #888;">소스: The Rundown AI &nbsp;|&nbsp; 🔗 [원문 보기](https://www.therundown.ai/p/exclusive-uipath-cmo-michael-atalla-on-ai-at-work)</small>
 
 ---
