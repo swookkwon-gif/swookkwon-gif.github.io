@@ -270,6 +270,8 @@ category: 'AI News'
 
     with open(file_path, 'w', encoding='utf-8') as f:
         f.write(frontmatter)
+        from skills.markdown_utils import auto_fix_content
+        content = auto_fix_content(content)
         f.write(content + "\n\n")
 
     print(f"\n   ✅ 포스트 저장 완료!")

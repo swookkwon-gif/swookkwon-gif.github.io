@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-from __future__ import annotations
+from __future__ from skills.markdown_utils import auto_fix_content
+import annotations
 import os
 import time
 import json
@@ -65,6 +66,8 @@ category: "Weekly Digest"
     
     with open(file_path, "w", encoding="utf-8") as f:
         f.write(frontmatter)
+        from skills.markdown_utils import auto_fix_content
+        content = auto_fix_content(content)
         f.write(content + "\n")
         
     print(f"✅ 주간 요약 포스트가 생성되었습니다: {filename}")

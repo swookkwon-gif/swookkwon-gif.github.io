@@ -93,6 +93,8 @@ def main():
     os.makedirs(os.path.dirname(filepath), exist_ok=True)
     
     with open(filepath, 'w', encoding='utf-8') as f:
+        from skills.markdown_utils import auto_fix_content
+        markdown_content = auto_fix_content(markdown_content)
         f.write(markdown_content)
         
     print(f"Successfully created blog post at {filepath}")

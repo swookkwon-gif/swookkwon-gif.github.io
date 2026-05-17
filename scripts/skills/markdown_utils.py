@@ -69,6 +69,17 @@ def strip_cliche_intros(content: str) -> str:
     return re.sub(pattern, '', content, flags=re.MULTILINE)
 
 
+def fix_strikethrough_tildes(content: str) -> str:
+    """마크다운 파서에서 취소선(strikethrough) 오류를 유발하는 ~ 기호를 정리한다."""
+    # 1. " ~ " -> " - "
+    content = content.replace(' ~ ', ' - ')
+    # 2. Approx "~" -> "약 " (if at start of word and followed by digit or $)
+    content = re.sub(r'(^|[\s\(\[\{])\~(?=[\d\$])', r'\1약 ', content)
+    # 3. Ranges "A~B" -> "A-B" (A is Korean, English, Digit, %. B is Korean, English, Digit, $)
+    content = re.sub(r'([가-힣A-Za-z0-9%])\~([가-힣A-Za-z0-9\$])', r'\1-\2', content)
+    return content
+
+
 # ── 통합 자동 수정 ────────────────────────────────────────────
 
 def auto_fix_content(content: str) -> str:
@@ -78,6 +89,7 @@ def auto_fix_content(content: str) -> str:
     content = fix_heading_links(content)
     content = wrap_raw_urls(content)
     content = ensure_empty_line_after_headings(content)
+    content = fix_strikethrough_tildes(content)
     return content
 
 
