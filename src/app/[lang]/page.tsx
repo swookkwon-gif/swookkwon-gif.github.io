@@ -1,5 +1,15 @@
 import Link from "next/link";
 import { getSortedPostsData } from "@/lib/posts";
+import { Metadata } from "next";
+
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  return {
+    alternates: {
+      canonical: `/${lang}`,
+    },
+  };
+}
 
 export default async function Home({
   params,

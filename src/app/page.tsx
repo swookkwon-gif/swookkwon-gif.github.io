@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   verification: {
     google: "VEKICMa0sx4OpQaX_Aj0-5pNDI9NrEjyK9D7-W_R0Ug",
   },
+  alternates: {
+    canonical: '/',
+  },
 };
 
 export default function RootPage() {
