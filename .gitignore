@@ -56,3 +56,9 @@ scripts/token_*.json
 __pycache__/
 *.pyc
 venv/
+
+# Private materials
+/linkedin_posts/
+*.pdf
+*.pptx
+*.png
