@@ -7,14 +7,12 @@ import remarkGfm from "remark-gfm";
 import remarkKoreanBold from "@/lib/remark-korean-bold";
 import { visit } from 'unist-util-visit';
 
-// 커스텀 Remark 플러그인: 문서 내에 H1(depth: 1)이 존재할 경우에만 모든 헤딩을 1단계씩 연쇄 강등합니다.
 function remarkDemoteHeadings() {
   return (tree: any) => {
     let hasH1 = false;
     visit(tree, 'heading', (node: any) => {
       if (node.depth === 1) hasH1 = true;
     });
-    
     if (hasH1) {
       visit(tree, 'heading', (node: any) => {
         if (node.depth < 6) node.depth += 1;
@@ -24,28 +22,27 @@ function remarkDemoteHeadings() {
 }
 
 import Link from "next/link";
-import { ArrowLeft, Calendar, Tag, ChevronLeft, ChevronRight } from "lucide-react";
+import { ArrowLeft, Calendar, Tag } from "lucide-react";
 import React from "react";
 import ChartRenderer from "@/components/ChartRenderer";
 import MermaidRenderer from "@/components/MermaidRenderer";
 
+const lang = 'ko';
+
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ lang: string; slug: string }>;
+  params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
-  const { lang, slug } = await params;
+  const { slug } = await params;
   const post = getPostData(slug, lang);
+  const url = `/posts/${slug}`;
 
-  const url = `/${lang}/posts/${slug}`;
-  
   return {
     title: post.title,
     description: post.excerpt || post.title,
     keywords: post.tags,
-    alternates: {
-      canonical: url,
-    },
+    alternates: { canonical: url },
     openGraph: {
       title: post.title,
       description: post.excerpt || post.title,
@@ -64,23 +61,18 @@ export async function generateMetadata({
 }
 
 export async function generateStaticParams() {
-  const postsKo = getSortedPostsData('ko');
-  const postsEn = getSortedPostsData('en');
-  return [
-    ...postsKo.map((post) => ({ lang: 'ko', slug: post.slug })),
-    ...postsEn.map((post) => ({ lang: 'en', slug: post.slug }))
-  ];
+  const posts = getSortedPostsData(lang);
+  return posts.map((post) => ({ slug: post.slug }));
 }
 
 export default async function PostPage({
   params,
 }: {
-  params: Promise<{ lang: string; slug: string }>;
+  params: Promise<{ slug: string }>;
 }) {
-  const { lang, slug } = await params;
+  const { slug } = await params;
   const post = getPostData(slug, lang);
 
-  // AEO JSON-LD Schema
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -93,7 +85,7 @@ export default async function PostPage({
     },
     datePublished: post.date,
     dateModified: post.date,
-    url: `https://swookkwon-gif.github.io/${lang}/posts/${slug}`,
+    url: `https://swookkwon-gif.github.io/posts/${slug}`,
     keywords: post.tags?.join(", ") || "",
   };
 
@@ -108,8 +100,8 @@ export default async function PostPage({
           {post.title}
         </h1>
         <div className="flex items-center gap-4 text-xs font-semibold text-neutral-500 uppercase tracking-widest mb-6 pb-6 border-b border-neutral-100">
-          <Link 
-            href={`/${lang}/category/${(post.category || "Insight").toLowerCase().replace(/\s+/g, '-')}`}
+          <Link
+            href={`/category/${(post.category || "Insight").toLowerCase().replace(/\s+/g, '-')}`}
             className="flex items-center gap-1.5 hover:text-blue-600 transition-colors"
           >
             <Tag size={14} /> {post.category || "Insight"}
@@ -134,31 +126,25 @@ export default async function PostPage({
           rehypePlugins={[rehypeRaw, [rehypeExternalLinks, { target: '_blank', rel: ['noopener', 'noreferrer'] }]]}
           components={{
             blockquote: ({ children, ...props }: any) => {
-              // Custom blockquotes (GitHub Alerts)
               const firstChild = React.Children.toArray(children)[0] as any;
               const firstChildContent = firstChild?.props?.children;
               const firstText = Array.isArray(firstChildContent) ? firstChildContent[0] : firstChildContent;
-              
               if (typeof firstText === 'string' && firstText.match(/^\[!(NOTE|TIP|WARNING|IMPORTANT|CAUTION)\]/i)) {
                 return <blockquote className="my-6" {...props}>{children}</blockquote>;
               }
-              // Fallback
               return <blockquote className="my-6 border-l-4 border-gray-200 pl-4 py-1 italic text-neutral-600 bg-neutral-50/50 rounded-r-lg" {...props}>{children}</blockquote>;
             },
             p: ({ children, ...props }: any) => {
-              // Extract alerts inside paragraphs
               const firstChild = React.Children.toArray(children)[0];
               if (typeof firstChild === 'string' && firstChild.match(/^\[!(NOTE|TIP|WARNING|IMPORTANT|CAUTION)\]/i)) {
-                 const match = firstChild.match(/^\[!(.*?)\]/i);
-                 const type = match ? match[1].toUpperCase() : 'NOTE';
-                 
-                 const newChildren = React.Children.map(children, (child, index) => {
-                    if (index === 0 && typeof child === 'string') {
-                       return child.replace(/^\[!.*?\]/i, '').trimStart();
-                    }
-                    return child;
-                 });
-    
+                const match = firstChild.match(/^\[!(.*?)\]/i);
+                const type = match ? match[1].toUpperCase() : 'NOTE';
+                const newChildren = React.Children.map(children, (child, index) => {
+                  if (index === 0 && typeof child === 'string') {
+                    return child.replace(/^\[!.*?\]/i, '').trimStart();
+                  }
+                  return child;
+                });
                 const styles: Record<string, string> = {
                   'NOTE': 'bg-blue-50/80 border-blue-500 text-blue-900',
                   'TIP': 'bg-emerald-50/80 border-emerald-500 text-emerald-900',
@@ -169,13 +155,12 @@ export default async function PostPage({
                 const icons: Record<string, string> = {
                   'NOTE': 'ℹ️', 'TIP': '✨', 'WARNING': '⚠️', 'IMPORTANT': '🔥', 'CAUTION': '🛑'
                 };
-    
-                 return (
-                   <div className={`border-l-4 p-5 rounded-r-lg ${styles[type] || styles['NOTE']} not-prose mb-6 shadow-sm`}>
-                      <div className="font-bold flex items-center gap-2 mb-2 text-sm tracking-wide">{icons[type]} {type}</div>
-                      <div className="text-[16px] leading-[1.75] opacity-90">{newChildren}</div>
-                   </div>
-                 );
+                return (
+                  <div className={`border-l-4 p-5 rounded-r-lg ${styles[type] || styles['NOTE']} not-prose mb-6 shadow-sm`}>
+                    <div className="font-bold flex items-center gap-2 mb-2 text-sm tracking-wide">{icons[type]} {type}</div>
+                    <div className="text-[16px] leading-[1.75] opacity-90">{newChildren}</div>
+                  </div>
+                );
               }
               return <p {...props}>{children}</p>;
             },
@@ -191,8 +176,6 @@ export default async function PostPage({
             },
             img: ({ src, alt, ...props }: any) => {
               let finalSrc = src || '';
-              
-              // 외부 링크 이미지는 그대로 렌더링
               if (finalSrc.startsWith('http://') || finalSrc.startsWith('https://')) {
                 return (
                   <span className="block my-8">
@@ -201,27 +184,16 @@ export default async function PostPage({
                   </span>
                 );
               }
-
               const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-              
-              // 1. 하드코딩된 /wooksai/ 접두사 제거 (정규화)
               if (finalSrc.startsWith('/wooksai/')) {
-                 finalSrc = finalSrc.replace('/wooksai/', '/');
+                finalSrc = finalSrc.replace('/wooksai/', '/');
               }
-              
-              // 2. basePath가 존재하면 추가 (단, basePath가 '/'가 아니고 finalSrc가 절대경로일 때)
               if (basePath && basePath !== '/' && finalSrc.startsWith('/')) {
-                 finalSrc = `${basePath}${finalSrc}`;
+                finalSrc = `${basePath}${finalSrc}`;
               }
-
               return (
                 <span className="block my-8">
-                  <img 
-                    src={finalSrc} 
-                    alt={alt || ''} 
-                    className="rounded-xl shadow-lg border border-gray-100 mx-auto max-h-[600px] object-contain" 
-                    {...props} 
-                  />
+                  <img src={finalSrc} alt={alt || ''} className="rounded-xl shadow-lg border border-gray-100 mx-auto max-h-[600px] object-contain" {...props} />
                   {alt && <span className="block text-center text-sm text-gray-500 mt-2">{alt}</span>}
                 </span>
               );
@@ -232,25 +204,24 @@ export default async function PostPage({
         </ReactMarkdown>
       </div>
 
-      {/* Related Posts Section (Up to 7 posts from the same category) */}
       {post.relatedPosts && post.relatedPosts.length > 0 && (
         <section className="mt-16 pt-12 border-t border-neutral-200">
           <div className="flex items-center justify-between mb-8">
             <h3 className="text-xl font-bold text-neutral-900 flex items-center gap-2">
-              💡 {lang === 'en' ? 'More from' : ''} <Link href={`/${lang}/category/${(post.category || "Insight").toLowerCase().replace(/\s+/g, '-')}`} className="hover:text-blue-600 transition-colors underline decoration-2 underline-offset-4 decoration-blue-100 hover:decoration-blue-400">{post.category}</Link> {lang === 'en' ? '' : '의 다른 글'}
+              💡 <Link href={`/category/${(post.category || "Insight").toLowerCase().replace(/\s+/g, '-')}`} className="hover:text-blue-600 transition-colors underline decoration-2 underline-offset-4 decoration-blue-100 hover:decoration-blue-400">{post.category}</Link>의 다른 글
             </h3>
             {post.categoryTotalCount && post.categoryTotalCount > 7 && (
-              <Link 
-                href={`/${lang}/category/${post.category.toLowerCase().replace(/\s+/g, '-')}`}
+              <Link
+                href={`/category/${post.category.toLowerCase().replace(/\s+/g, '-')}`}
                 className="text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors"
               >
-                {lang === 'en' ? 'View all' : '전체보기'} &rarr;
+                전체보기 &rarr;
               </Link>
             )}
           </div>
           <div className="flex flex-col gap-4">
             {post.relatedPosts.map(rel => (
-              <Link key={rel.slug} href={`/${lang}/posts/${rel.slug}`} className="group flex flex-col sm:flex-row sm:items-center justify-between p-4 bg-white border border-gray-100 rounded-xl hover:border-blue-200 hover:shadow-sm transition-all gap-4">
+              <Link key={rel.slug} href={`/posts/${rel.slug}`} className="group flex flex-col sm:flex-row sm:items-center justify-between p-4 bg-white border border-gray-100 rounded-xl hover:border-blue-200 hover:shadow-sm transition-all gap-4">
                 <div className="flex-1">
                   <h4 className="text-[16px] font-bold text-neutral-800 group-hover:text-blue-700 transition-colors line-clamp-1 mb-1">
                     {rel.title}
@@ -268,14 +239,13 @@ export default async function PostPage({
         </section>
       )}
 
-      {/* Back to List Link at Bottom */}
       <div className="mt-12 pt-8 border-t border-neutral-100 flex justify-center">
         <Link
-          href={`/${lang}/posts`}
+          href="/posts"
           className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-neutral-100 text-neutral-600 hover:bg-blue-50 hover:text-blue-600 transition-colors group text-sm font-bold"
         >
           <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform" />
-          {lang === 'en' ? 'Back to list' : '목록으로 돌아가기'}
+          목록으로 돌아가기
         </Link>
       </div>
     </article>

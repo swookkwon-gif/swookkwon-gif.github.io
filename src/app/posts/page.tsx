@@ -2,38 +2,29 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { getSortedPostsData } from "@/lib/posts";
 
-export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
-  const { lang } = await params;
-  return {
+export const metadata: Metadata = {
+  title: "All Posts",
+  description: "Browse all posts",
+  alternates: {
+    canonical: '/posts',
+  },
+  openGraph: {
     title: "All Posts",
     description: "Browse all posts",
-    alternates: {
-      canonical: `/${lang}/posts`,
-    },
-    openGraph: {
-      title: "All Posts",
-      description: "Browse all posts",
-      url: `/${lang}/posts`,
-    }
-  };
-}
+    url: '/posts',
+  }
+};
 
-export default async function PostsArchivePage({
-  params,
-}: {
-  params: Promise<{ lang: string }>;
-}) {
-  const { lang } = await params;
-  const posts = getSortedPostsData(lang);
+export default async function PostsArchivePage() {
+  const posts = getSortedPostsData('ko');
 
   return (
     <div className="font-sans">
-      {/* Post List */}
       <div className="flex flex-col">
         {posts.map((post) => (
           <article key={post.slug} className="mm-post-item group">
             <h2 className="text-xl md:text-2xl font-bold mb-2">
-              <Link href={`/${lang}/posts/${post.slug}`} className="text-neutral-900 group-hover:text-blue-600 transition-colors">
+              <Link href={`/posts/${post.slug}`} className="text-neutral-900 group-hover:text-blue-600 transition-colors">
                 {post.title}
               </Link>
             </h2>

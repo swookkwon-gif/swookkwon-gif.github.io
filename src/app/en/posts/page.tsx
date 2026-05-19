@@ -1,24 +1,28 @@
+import { Metadata } from "next";
 import Link from "next/link";
 import { getSortedPostsData } from "@/lib/posts";
-import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  alternates: {
-    canonical: '/',
-  },
+  title: "All Posts",
+  description: "Browse all English posts",
+  alternates: { canonical: '/en/posts' },
+  openGraph: {
+    title: "All Posts",
+    description: "Browse all English posts",
+    url: '/en/posts',
+  }
 };
 
-export default async function Home() {
-  const lang = 'ko';
-  const posts = getSortedPostsData(lang).slice(0, 5);
+export default async function EnPostsArchivePage() {
+  const posts = getSortedPostsData('en');
 
   return (
     <div className="font-sans">
       <div className="flex flex-col">
         {posts.map((post) => (
           <article key={post.slug} className="mm-post-item group">
-            <h2 className="text-lg md:text-xl font-bold mb-2">
-              <Link href={`/posts/${post.slug}`} className="text-neutral-900 group-hover:text-blue-600 transition-colors">
+            <h2 className="text-xl md:text-2xl font-bold mb-2">
+              <Link href={`/en/posts/${post.slug}`} className="text-neutral-900 group-hover:text-blue-600 transition-colors">
                 {post.title}
               </Link>
             </h2>
@@ -33,14 +37,6 @@ export default async function Home() {
           </article>
         ))}
       </div>
-
-      {posts.length === 5 && (
-        <div className="mt-10 pt-4">
-          <Link href="/posts" className="px-6 py-3 bg-neutral-900 text-white rounded font-medium hover:bg-neutral-800 transition-colors inline-block text-sm shadow-sm ring-1 ring-neutral-900">
-            View All Posts
-          </Link>
-        </div>
-      )}
     </div>
   );
 }

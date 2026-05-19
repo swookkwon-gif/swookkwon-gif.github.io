@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Outfit } from "next/font/google";
-import "../globals.css";
+import "./globals.css";
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
 import { getSortedPostsData } from "@/lib/posts";
@@ -20,27 +20,19 @@ export const metadata: Metadata = {
   },
 };
 
-export async function generateStaticParams() {
-  return [{ lang: "ko" }, { lang: "en" }];
-}
-
 export default async function RootLayout({
   children,
-  params,
 }: Readonly<{
   children: React.ReactNode;
-  params: Promise<{ lang: string }>;
 }>) {
-  const { lang } = await params;
-
-  // Header에 전달할 카테고리별 포스트 수 계산
+  const lang = 'ko';
   const posts = getSortedPostsData(lang);
   const categoriesMap = posts.reduce((acc, post) => {
     const cat = post.category || "Insight";
     acc[cat] = (acc[cat] || 0) + 1;
     return acc;
   }, {} as Record<string, number>);
-  
+
   const excludedCategories = new Set(['backups']);
   const categoryCounts = Object.entries(categoriesMap)
     .filter(([name]) => !excludedCategories.has(name.toLowerCase()))
@@ -54,17 +46,14 @@ export default async function RootLayout({
     <html lang={lang} className={`${inter.variable} ${outfit.variable}`}>
       <body className="antialiased overflow-x-hidden min-h-screen bg-white">
         <Header lang={lang} categoryCounts={categoryCounts} />
-        
-        {/* Minimal Mistakes 2-column Layout */}
+
         <div className="max-w-[1180px] mx-auto px-6 pt-2 md:pt-3 pb-8 md:flex md:gap-10 lg:gap-14">
           <Sidebar lang={lang} />
-          
           <main className="flex-1 w-full max-w-3xl min-w-0">
             {children}
           </main>
         </div>
 
-        {/* Global Footer */}
         <footer className="w-full text-center py-3 border-t border-gray-100 mt-auto bg-gray-50/50">
           <p className="text-xs text-neutral-500 max-w-2xl mx-auto px-6 leading-relaxed">
             <span className="font-bold text-neutral-800">Wook Kwon</span> — Digital Marketing and Ecommerce expert, Ph.D candidate, Data science and AI.

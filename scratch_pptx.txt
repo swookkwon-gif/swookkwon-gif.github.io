@@ -1,0 +1,118 @@
+--- Slide 1 ---
+Korea Growth Plan 2030
+RTB House, Wook 2026
+--- Slide 2 ---
+Summary: RTB House Korea 2030
+
+Key Assumptions
+•  2025 baseline: Estimated at 40% of Criteo Korea's DART-disclosed revenue ($88.7M × 40% = $35.5M)
+•  2030 target: Grow to match Criteo Korea's 2025 revenue level ($88.7M) — reclaiming market #1
+•  CAGR 2025→2030: ~20%  |  Churn rate: 12% annual (B2B SaaS benchmark)  |  Team: 6 → 12 elite salespeople
+--- Slide 3 ---
+1. High-Level Strategy
+Focus Industries & Rationale
+
+--- Slide 4 ---
+2. Top Prospective Clients
+Tier 1 Targets (Annual Budget $3.5M+) & Deal Strategy
+
+3-Step Deal Framework
+① PROVE IT
+30-day free A/B test50:50 split vs incumbent DSPMeasure Incremental Conversions
+② SCALE IT
+On success, migrate budget30% → 50% → 70% to RTB House
+③ LOCK IT
+Quarterly iROAS reportingvia Ghost Ads methodologyRaise Switching Costs
+--- Slide 5 ---
+3. Campaign Projections
+Quarterly Launch Targets (2026–2030)
+
+Key Assumptions
+•  Blended Revenue per Campaign:  $179K/yr  (90% standard $105K + 10% mega $844K)
+•  Annual Churn Rate:  12% (B2B SaaS benchmark)
+•  2030 Target:  495 active campaigns
+--- Slide 6 ---
+4. Revenue Metrics
+Per-Salesperson Projections — Lean Organization Model
+
+2026 Per-Salesperson Quarterly Detail (6 AEs)
+--- Slide 7 ---
+5. Operational Activities
+Building a Successful Foundation Beyond Sales
+
+🏢  Lean Team & Employer Branding
+Position RTB House as 'Europe's #1 Deep Learning AI Tech Company'(not an ad agency). 45% of Warsaw HQ = engineers.
+2026: Hire 1 Senior AE (mega-account closer, $70K+/mo deals).2027–28: +2 AEs + 2 CMs for 25+ launches/quarter pace.
+Quarterly 'Deep Learning in AdTech' Tech Talk.Internship pipeline via Seoul National Univ. / KAIST AI labs.
+💡  Innovative Solution Selling
+ContextAI (Cookieless): Real-time webpage context analysis viaDL+NLP. RTB House's OBTD framework adopted by Google Privacy Sandbox.
+Video Retargeting: Auto-generated 15s dynamic video ads.+30-50% CTR uplift. Key for K-Beauty global D2C campaigns.
+Predictive LTV Modeling (Gaming): 14-day LTV prediction via deeplearning. Concentrate bids on high-value user segments for UA.
+📊  Market Education & Client Success
+Publish Incrementality Whitepapers: Shift Korean market fromlast-click ROAS fixation to Ghost Ads-based iROAS measurement.
+Institutionalize Quarterly QBRs with iROAS reporting.Goal: Lower annual churn from 12% → below 10%.
+Bi-annual 'Incrementality Summit Korea' — strategic sales eventshowcasing Tier 1 A/B test results to secure H2 pipeline.
+--- Slide 8 ---
+6. First 6 Months & Onboarding
+Challenge Identification & Risk Mitigation
+
+Top 3 Risks During Leadership Transition
+Risk Mitigation — Phased Action Plan
+--- Slide 9 ---
+7. Integration & Leadership Initiatives
+First 6 Months — Building Trust, Transferring Knowledge, Enabling Growth
+
+Talent Retention & Leverage (Risk #1)
+•  Map every team member's core competencies and flight risk level by Day 60
+•  Immediate 1:1 career conversations for high-risk seniors — present clear growth paths
+•  Convert tacit knowledge (client histories, deal playbooks) into shared team assets
+•  Grant clear ownership and decision-making authority → "my role is growing here"
+Global Knowledge Transfer (Risk #2)
+•  Audit Top 3 winning plays from DACH, UK, France, Japan markets
+•  Apply Korea Localization Filter — what works, what doesn't in agency-driven market
+•  Launch monthly "Global → Local" sessions (bidirectional: Korea exports wins too)
+•  Immediately apply Criteo win-back playbooks from Europe to Commerce Squad
+Right Person, Right Build (Risk #3)
+•  Use 60-day weekly cadence to observe org strengths and gaps before any hiring
+•  Define Right Person criteria: ① DL/programmatic fluency ② A/B test sales ③ culture fit
+•  First hire: 1 Senior AE with mega-account closing experience ($70K+/mo deals)
+•  Principle: "Fill the seat correctly, not quickly" — 1 wrong hire delays growth 6 months
+Weekly Operating Cadence (3 Rituals Only)
+Core Principle:  "Don't manage — coach. Don't dictate — bridge. Don't assume — listen."
+--- Slide 10 ---
+8. Structural Evolution
+Short-Term Team Structure (6–12 Months) — Vertical Squads by Industry
+
+Vertical Squad Organization (Day 91–180)
+Reorganize existing 20-person team by redefining roles to maximize core talent strengths — not a large-scale overhaul.
+Lean Hiring Roadmap
+--- Slide 11 ---
+9. Team Collaboration
+Sales & AM Alignment, Motivation, and Driving Results
+
+2 Collaboration Rituals (Simple = Executable)
+① Pre-flight Handoff
+•  Sales prepares a 1-page Campaign Brief before every AM handoff
+•  Includes: client KPIs, budget/terms, competitive landscape, decision-maker map
+•  Korea-specific: must specify whether final decision-maker is advertiser or agency
+•  This single line dramatically improves AM communication efficiency
+② Monthly Win/Loss Review
+•  30 min/month. Sales + AM jointly analyze 1 won deal and 1 lost deal
+•  Rule: No blame. Only discuss "how can we win next time?"
+•  CM shares own failure first → builds psychological safety
+•  Korean culture: 'sharing failures' conflicts with face-saving → CM leads by example
+Motivation System
+💰  Monetary
+•  Team-wide bonus on quarterly target achievement (separate from individual commission)
+•  Team-level rewards prevent silos and reinforce collaboration culture
+🌟  Non-Monetary
+•  Quarterly Top Performer: Warsaw HQ R&D Center visit + global workshop participation
+•  Aligned with RTB House values: Kindness, Curiosity, Excellence, Ownership
+•  Non-monetary growth opportunities are the strongest retention lever for Korean talent
+--- Slide 12 ---
+10. Performance Measurement
+KPIs, OKRs & Revenue Targets — 70% Quantitative + 30% Qualitative
+
+A. Sales
+B. Account Management
+C. Country Manager

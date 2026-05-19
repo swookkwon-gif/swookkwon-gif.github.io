@@ -6,14 +6,16 @@ import { Globe } from "lucide-react";
 
 export default function LanguageSwitcher({ currentLang }: { currentLang: string }) {
   const pathname = usePathname();
-  
-  // Replace current language segment in the pathname
-  const toggleLang = currentLang === "ko" ? "en" : "ko";
-  const newPathname = pathname ? pathname.replace(`/${currentLang}`, `/${toggleLang}`) : `/${toggleLang}`;
+
+  // 한국어(루트) → 영어(/en): /posts/X → /en/posts/X
+  // 영어(/en) → 한국어(루트): /en/posts/X → /posts/X
+  const newPathname = currentLang === 'ko'
+    ? `/en${pathname}`
+    : (pathname.replace(/^\/en/, '') || '/');
 
   return (
-    <Link 
-      href={newPathname} 
+    <Link
+      href={newPathname}
       className="flex items-center gap-1 ml-2 md:ml-4 px-3 py-1.5 rounded-full bg-neutral-100 hover:bg-neutral-200 text-neutral-700 transition-colors text-[12px] font-bold tracking-wider"
     >
       <Globe size={14} />

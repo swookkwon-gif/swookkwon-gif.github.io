@@ -4,39 +4,27 @@ import { getSortedPostsData } from "@/lib/posts";
 import { notFound } from "next/navigation";
 
 interface CategoryPageProps {
-  params: Promise<{
-    slug: string;
-    lang: string;
-  }>;
+  params: Promise<{ slug: string }>;
 }
 
-// Generate static params for all categories
 export async function generateStaticParams() {
-  const postsKo = getSortedPostsData('ko');
-  const postsEn = getSortedPostsData('en');
-  
-  const categoriesKo = Array.from(new Set(postsKo.map(post => post.category || 'Insight')));
-  const categoriesEn = Array.from(new Set(postsEn.map(post => post.category || 'Insight')));
-  
-  return [
-    ...categoriesKo.map(category => ({ lang: 'ko', slug: category.toLowerCase().replace(/\s+/g, '-') })),
-    ...categoriesEn.map(category => ({ lang: 'en', slug: category.toLowerCase().replace(/\s+/g, '-') }))
-  ];
+  const posts = getSortedPostsData('ko');
+  const categories = Array.from(new Set(posts.map(post => post.category || 'Insight')));
+  return categories.map(category => ({
+    slug: category.toLowerCase().replace(/\s+/g, '-')
+  }));
 }
 
 export async function generateMetadata({ params }: CategoryPageProps): Promise<Metadata> {
-  const { slug, lang } = await params;
-  const posts = getSortedPostsData(lang);
-  
+  const { slug } = await params;
+  const posts = getSortedPostsData('ko');
   const filteredPosts = posts.filter(post => {
     const postCategorySlug = (post.category || 'Insight').toLowerCase().replace(/\s+/g, '-');
     return postCategorySlug === slug;
   });
 
   if (filteredPosts.length === 0) {
-    return {
-      title: 'Category Not Found',
-    };
+    return { title: 'Category Not Found' };
   }
 
   const displayCategory = filteredPosts[0].category;
@@ -45,22 +33,19 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
   return {
     title,
     description: `Articles in the ${displayCategory} category`,
-    alternates: {
-      canonical: `/${lang}/category/${slug}`,
-    },
+    alternates: { canonical: `/category/${slug}` },
     openGraph: {
       title,
       description: `Articles in the ${displayCategory} category`,
-      url: `/${lang}/category/${slug}`,
+      url: `/category/${slug}`,
     }
   };
 }
 
 export default async function CategoryPage({ params }: CategoryPageProps) {
-  const { slug, lang } = await params;
-  const posts = getSortedPostsData(lang);
-  
-  // URL 슬러그와 포스트의 카테고리 매칭
+  const { slug } = await params;
+  const posts = getSortedPostsData('ko');
+
   const filteredPosts = posts.filter(post => {
     const postCategorySlug = (post.category || 'Insight').toLowerCase().replace(/\s+/g, '-');
     return postCategorySlug === slug;
@@ -70,17 +55,15 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
     notFound();
   }
 
-  // 표시용 원본 카테고리명 가져오기
   const displayCategory = filteredPosts[0].category;
 
   return (
     <div className="font-sans">
-      {/* Post List */}
       <div className="flex flex-col">
         {filteredPosts.map((post) => (
           <article key={post.slug} className="mm-post-item group">
             <h2 className="text-lg md:text-xl font-bold mb-2">
-              <Link href={`/${lang}/posts/${post.slug}`} className="text-neutral-900 group-hover:text-blue-600 transition-colors">
+              <Link href={`/posts/${post.slug}`} className="text-neutral-900 group-hover:text-blue-600 transition-colors">
                 {post.title}
               </Link>
             </h2>

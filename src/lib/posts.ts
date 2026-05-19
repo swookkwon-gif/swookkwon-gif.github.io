@@ -67,7 +67,7 @@ export function getSortedPostsData(lang: string = 'ko'): PostData[] {
   fileMap.forEach(langs => {
     if (lang === 'en') {
       if (langs.en) filteredFiles.push(langs.en);
-      else if (langs.ko) filteredFiles.push(langs.ko);
+      // No fallback to Korean — only real .en.md files
     } else {
       if (langs.ko) filteredFiles.push(langs.ko);
     }

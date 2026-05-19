@@ -6,45 +6,51 @@ export const dynamic = 'force-static';
 const BASE_URL = 'https://swookkwon-gif.github.io';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const postsKo = getSortedPostsData('ko');
-  const postsEn = getSortedPostsData('en');
+  const postsKo = getSortedPostsData('ko'); // 182개
+  const postsEn = getSortedPostsData('en'); // 6개 (fallback 제거 후)
 
-  const createPostUrls = (posts: any[], lang: string) => 
-    posts.map((post) => ({
-      url: `${BASE_URL}/${lang}/posts/${post.slug}`,
-      lastModified: new Date(post.date).toISOString().split('T')[0],
-    }));
+  // 한국어 포스트: /posts/[slug]
+  const koPostUrls = postsKo.map((post) => ({
+    url: `${BASE_URL}/posts/${post.slug}`,
+    lastModified: new Date(post.date).toISOString().split('T')[0],
+    priority: 0.6,
+  }));
 
-  const createCategoryUrls = (posts: any[], lang: string) => {
-    const categories = Array.from(new Set(posts.map(p => p.category)));
-    return categories.map((category) => ({
-      url: `${BASE_URL}/${lang}/category/${encodeURIComponent(category)}`,
-      lastModified: new Date().toISOString().split('T')[0],
-    }));
-  };
+  // 영어 포스트: /en/posts/[slug] — 실제 .en.md 존재하는 6개만
+  const enPostUrls = postsEn.map((post) => ({
+    url: `${BASE_URL}/en/posts/${post.slug}`,
+    lastModified: new Date(post.date).toISOString().split('T')[0],
+    priority: 0.5,
+  }));
 
-  const postUrls = [
-    ...createPostUrls(postsKo, 'ko'),
-    ...createPostUrls(postsEn, 'en')
-  ];
+  // 한국어 카테고리: /category/[slug]
+  const koCategoryUrls = Array.from(new Set(postsKo.map(p => p.category))).map((category) => ({
+    url: `${BASE_URL}/category/${encodeURIComponent(category)}`,
+    lastModified: new Date().toISOString().split('T')[0],
+    priority: 0.8,
+  }));
 
-  const categoryUrls = [
-    ...createCategoryUrls(postsKo, 'ko'),
-    ...createCategoryUrls(postsEn, 'en')
-  ];
+  // 영어 카테고리: /en/category/[slug] — 실제 영어 포스트가 있는 카테고리만
+  const enCategoryUrls = Array.from(new Set(postsEn.map(p => p.category))).map((category) => ({
+    url: `${BASE_URL}/en/category/${encodeURIComponent(category)}`,
+    lastModified: new Date().toISOString().split('T')[0],
+    priority: 0.7,
+  }));
 
   return [
     {
-      url: `${BASE_URL}/ko`,
+      url: `${BASE_URL}/`,
       lastModified: new Date().toISOString().split('T')[0],
       priority: 1,
     },
     {
       url: `${BASE_URL}/en`,
       lastModified: new Date().toISOString().split('T')[0],
-      priority: 1,
+      priority: 0.8,
     },
-    ...categoryUrls.map(url => ({ ...url, priority: 0.8 })),
-    ...postUrls.map(url => ({ ...url, priority: 0.6 })),
+    ...koCategoryUrls,
+    ...enCategoryUrls,
+    ...koPostUrls,
+    ...enPostUrls,
   ];
 }

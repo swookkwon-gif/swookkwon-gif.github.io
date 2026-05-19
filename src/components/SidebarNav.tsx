@@ -128,7 +128,7 @@ export default function SidebarNav({ categories, lang }: SidebarNavProps) {
                     return (
                       <li key={post.slug}>
                         <Link
-                          href={`/${lang}/posts/${post.slug}`}
+                          href={`${lang === 'en' ? '/en' : ''}/posts/${post.slug}`}
                           className={`sidebar-post-link ${isCurrentPost ? "current" : ""}`}
                           title={post.title}
                         >

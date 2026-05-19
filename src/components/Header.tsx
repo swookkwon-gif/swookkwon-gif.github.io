@@ -11,6 +11,8 @@ interface CategoryCount {
   count: number;
 }
 
+const getBase = (lang: string) => lang === 'en' ? '/en' : '';
+
 export default function Header({ lang, categoryCounts }: { lang: string; categoryCounts?: CategoryCount[] }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -28,14 +30,14 @@ export default function Header({ lang, categoryCounts }: { lang: string; categor
     <header className="border-b border-gray-100 bg-white relative z-50">
       <div className="max-w-[1280px] mx-auto px-6 h-16 flex items-center justify-between">
         {/* Site Title */}
-        <Link href={`/${lang}`} className="font-bold text-lg tracking-tight text-neutral-900 group">
+        <Link href={lang === 'en' ? '/en' : '/'} className="font-bold text-lg tracking-tight text-neutral-900 group">
           Wook&apos;s <span className="text-neutral-500 group-hover:text-blue-600 transition-colors">AI and Marketing</span>
         </Link>
         
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8 text-[13px] font-bold text-neutral-500 uppercase tracking-wider">
           {displayCategories.map(cat => (
-            <Link key={cat.slug} href={`/${lang}/category/${cat.slug}`} className="hover:text-blue-600 transition-colors">
+            <Link key={cat.slug} href={`${getBase(lang)}/category/${cat.slug}`} className="hover:text-blue-600 transition-colors">
               {cat.name}
             </Link>
           ))}
@@ -59,7 +61,7 @@ export default function Header({ lang, categoryCounts }: { lang: string; categor
       {isMobileMenuOpen && (
         <div className="md:hidden absolute top-16 left-0 w-full bg-white border-b border-gray-100 shadow-lg px-6 py-4 flex flex-col gap-4 text-sm font-bold text-neutral-600 uppercase tracking-wider">
           {displayCategories.map(cat => (
-            <Link key={cat.slug} href={`/${lang}/category/${cat.slug}`} onClick={() => setIsMobileMenuOpen(false)} className="hover:text-blue-600 py-2 border-b border-gray-50 flex items-center justify-between">
+            <Link key={cat.slug} href={`${getBase(lang)}/category/${cat.slug}`} onClick={() => setIsMobileMenuOpen(false)} className="hover:text-blue-600 py-2 border-b border-gray-50 flex items-center justify-between">
               <span>{cat.name}</span>
               <span className="text-xs text-neutral-400 bg-neutral-100 px-2.5 py-0.5 rounded-full">{cat.count}</span>
             </Link>

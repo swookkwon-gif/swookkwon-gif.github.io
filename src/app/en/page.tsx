@@ -2,31 +2,20 @@ import Link from "next/link";
 import { getSortedPostsData } from "@/lib/posts";
 import { Metadata } from "next";
 
-export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
-  const { lang } = await params;
-  return {
-    alternates: {
-      canonical: `/${lang}`,
-    },
-  };
-}
+export const metadata: Metadata = {
+  alternates: { canonical: '/en' },
+};
 
-export default async function Home({
-  params,
-}: {
-  params: Promise<{ lang: string }>;
-}) {
-  const { lang } = await params;
-  const posts = getSortedPostsData(lang).slice(0, 5); // Take only latest 5 for home page
+export default async function EnHome() {
+  const posts = getSortedPostsData('en').slice(0, 5);
 
   return (
     <div className="font-sans">
-      {/* Post List */}
       <div className="flex flex-col">
         {posts.map((post) => (
           <article key={post.slug} className="mm-post-item group">
             <h2 className="text-lg md:text-xl font-bold mb-2">
-              <Link href={`/${lang}/posts/${post.slug}`} className="text-neutral-900 group-hover:text-blue-600 transition-colors">
+              <Link href={`/en/posts/${post.slug}`} className="text-neutral-900 group-hover:text-blue-600 transition-colors">
                 {post.title}
               </Link>
             </h2>
@@ -44,7 +33,7 @@ export default async function Home({
 
       {posts.length === 5 && (
         <div className="mt-10 pt-4">
-          <Link href={`/${lang}/posts`} className="px-6 py-3 bg-neutral-900 text-white rounded font-medium hover:bg-neutral-800 transition-colors inline-block text-sm shadow-sm ring-1 ring-neutral-900">
+          <Link href="/en/posts" className="px-6 py-3 bg-neutral-900 text-white rounded font-medium hover:bg-neutral-800 transition-colors inline-block text-sm shadow-sm ring-1 ring-neutral-900">
             View All Posts
           </Link>
         </div>

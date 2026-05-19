@@ -1,0 +1,762 @@
+3 years
+of PMax
+The State of PMax 
+2025 report
+S M A R T E R - E C O M M E R C E . C O M
+
+THE STATE OF PMAX 2025 REPORT
+Table of contents
+.
+.
+1. Introduction: Three years of black box campaigns
+.
+2. Performance Max adoption rates
+.
+3. The case for Performance Max
+.
+4. PMax v. Shopping v. Demand Gen v. Search
+.
+5. How to make Performance Max work
+.
+6. Performance Max bidding strategies
+03
+04
+06
+10
+15
+18
+.
+7. Final thoughts
+.
+8. Do you (still) fear PMax?
+25
+26
+ INTRODUCTION: THREE YEARS OF BLACK BOX CAMPAIGNS
+Is it really
+three long years already?
+Believe it or not, it has been three years since Google started 
+the wide-scale rollout of Performance Max (PMax) campaigns. 
+Time ﬂies when you're having fun maxing performance.
+Mike Ryan
+Head of ecommerce
+insights
+When PMax ﬁrst premiered, it was 
+described as a black box – par for 
+the course with new Google tech – 
+but also, more concerningly, as “an 
+experiment funded by advertisers.” 
+Stinging criticism, and actually quite 
+fair. 
+However, three years on, PMax has 
+become a mature campaign type. 
+Google has added a wide array of 
+reporting and control options, 
+including some that feel like genuine 
+concessions toward advertisers.
+To better understand how things 
+have evolved, I’ve analyzed over 
+4,000 PMax retail campaigns across 
+over 500 advertiser accounts. Not 
+only will I present you my ﬁndings, 
+but also share the opinions of 
+several top advertising and 
+ecommerce experts.
+This report aims to be neither a 
+hitpiece nor a whitewash. My simple 
+goal is to share analyses that will 
+help you understand PMax better 
+today than you did yesterday. 
+. 1.
+. 2. PERFORMANCE MAX ADOPTION RATES
+Adoption:
+has PMax peaked?
+Performance Max reached an impressive market share over 
+the past three years. Question is: Has it plateaued? 
+Almost overnight, PMax 
+had a large – arguably 
+unearned – market share.
+PMax cost share 
+peaked in May 2024 
+at just shy of 82%!
+It has lost an average of 
+.65% cost share per month, 
+in total
+nearly
+Key ﬁndings:
+Cost Share per Campaign Type
+ -6%
+since
+its peak.
+Are PMax’s best days over?
+I asked my longtime Google Shopping friend Kirk Williams for 
+his take on Performance Max’s dip in adoption rates.
+“Has PMax jumped the 
+shark? IMO, it has. 
+We've never seen PMax 
+perform consistently 
+worse than it has 
+moving into 2025, with 
+little to no strategy 
+shifts on our end. 
+We have begun 
+transitioning to Search 
+/ Standard Shopping 
+more purposefully with 
+obvious revenue and 
+efficiency increase. We 
+went from PMax being 
+the major strategy for 
+our Ecom clients, to a 
+decreasingly important 
+one. 
+This was not due
+to a philosophy shift
+but simply following
+the numbers.”
+I think Kirk’s dissatisfaction is felt by 
+many – and nothing shows this 
+better than the movement of costs 
+shown on the previous page.
+However, while it’s rare for me to 
+disagree with Kirk, I for one am 
+cautiously optimistic about the 
+future of PMax, largely thanks to 
+Google’s recent and upcoming 
+feature releases.
+. 2. PERFORMANCE MAX ADOPTION RATES
+. 3. THE CASE FOR PERFORMANCE MAX
+The case for Performance Max
+Google has been working hard to meet advertisers in the 
+middle on PMax features. Concessions that were unimaginable 
+in 2022 are becoming a reality now.
+ Standard
+Shopping
+Smart
+Shopping
+Performance
+Max
+Location 
+modifiers
+ 
+Device 
+modifiers
+ 
+Campaign 
+priorities
+ 
+Remarketing 
+lists
+ 
+Negative 
+Keyword 
+Lists
+ 
+Ad
+schedule
+ 
+SETTINGS
+ Standard
+Shopping
+Smart
+Shopping
+Performance
+Max
+Placement 
+Audience 
+Search 
+terms
+ 
+Channel 
+performance
+ 
+REPORTING
+To demonstrate that, I’d 
+like to compare the 
+features between 
+Standard Shopping, 
+Smart Shopping, and 
+Performance Max. 
+I hope this table reminds 
+you just how poor the 
+features were for Smart 
+Shopping, and how far 
+we’ve come with 
+Performance Max.
+I’m not saying it’s a 
+perfect technology. 
+Given the chance, I’d 
+build it differently.
+However, Google is 
+listening and seems 
+determined to ship 
+features that will drive 
+adoption.
+Feature
+available
+Partially available /
+available soon
+Not
+available
+Does PMax actually work?
+Advertisers have been increasingly demanding of 
+PMax, and, broadly speaking, PMax has delivered. 
+Advertisers have 
+been increasingly 
+demanding of 
+PMax, and, broadly 
+speaking, PMax has 
+delivered.
+The median 
+campaign ROAS 
+target has 
+increased from 
+about 4.7
+to about 6.0.
+PMax typically 
+achieves 95% to 
+116% of the target, 
+although with 
+plenty of 
+exceptions.
+By the numbers, 
+PMax works, but 
+in-platform data 
+always needs to
+be veriﬁed against 
+back-end 
+outcomes.
+Median ROAS vs. Median ROAS target
+. 3. THE CASE FOR PERFORMANCE MAX
+The median 
+campaign ROAS 
+target has 
+increased from 
+about 4.7
+to about:
+PMax typically 
+achieves 95% to 
+116% of the target, 
+although with 
+plenty of 
+exceptions.
+By the numbers, 
+PMax works, but 
+in-platform data 
+always needs to
+be veriﬁed against 
+back-end outcomes.
+Median ROAS vs. Median ROAS target
+6.0
+
+Like it or not, Google gets 
+a lot of things right.
+I asked Greg Finn,
+Head of Performance &
+Innovation at Cypress North
+and co-host of the
+Marketing O’Clock podcast
+where he stands on PMax.
+"Google gets a lot of credit 
+here with PMax. The 
+product had many, many 
+ﬂaws on launch, but the 
+team has addressed many 
+of the major issues and 
+turned Performance Max 
+into a tool that most 
+marketers can use. 
+Conversion quality should be a focus if using it 
+for Lead Gen, and the Brand Exclusions and the 
+addition of negative keywords can now help 
+you cut off PMax's reliance on brand spend to 
+ﬁnd success."
+. 3. THE CASE FOR PERFORMANCE MAX
+Yet these features are increasingly 
+on advertisers’ terms.
+I just have one... well... conspiracy 
+theory: What if Google is 
+increasing PMax's feature parity 
+with Standard Shopping in order 
+to justify deprecating Standard 
+Shopping?
+. 3. THE CASE FOR PERFORMANCE MAX
+Back in 2022
+I wrote:
+“More insights and options will come, 
+but these will be on Google’s terms.”
+. 4. PMAX V. SHOPPING V. DEMAND GEN V. SEARCH
+Is PMax just Standard Shopping
+in disguise?
+Is Performance Max a Shopping Campaign glow-up... or a wolf 
+in sheep's clothing? 
+Typically between 74% 
+and 97% of PMax costs 
+come from feed-based 
+ads.
+The median value of
+90% has been stable, 
+suggesting Google isn’t 
+tweaking this mix.
+Contrary to popular 
+belief, even asset-based 
+ads in PMax are 
+bottom-funnel.
+Median feed-based cost share
+of Performance Max
+90%
+The interplay of PMax and 
+Standard Shopping
+When and why are PMax and Shopping campaigns clashing? 
+And what can you do about it?
+PMax
+Do they target the 
+same products?Yes No
+Do they target the 
+same queries?Yes No
+NO CONFLICT
+LIMITED CONFLICTCONFLICT
+Whether served by PMax or 
+Standard Shopping, Shopping Ads 
+are built with identical assets (the 
+Product Feed). So Ad relevance is 
+handled by Google matching 
+products with search terms.
+The main ways to mitigate this are to:
+You could target 
+different products in 
+PMax than in Shopping.
+Target different queries 
+(e.g. via negative 
+keywords).
+Set strongly 
+differentiated bids or 
+ROAS targets.
+In other words: 
+PMax and Shopping do 
+self-compete when advertising 
+the same products. Potentially 
+resulting in bid escalation.
+. 4. PMAX V. SHOPPING V. DEMAND GEN V. SEARCH
+The interplay of
+PMax and Demand Gen
+PMax and Demand Gen serve very similar keywordless 
+inventory. The interplay here is murkier than with Shopping.
+ Search Shopping YouTube Display Discover Gmail Maps
+Performance 
+Max 
+Demand
+gen 
+PMax is always 
+bottom- funnel and 
+conversion- oriented. 
+While Demand Gen can 
+be mid-funnel OR 
+bottom-funnel.
+OPTIMIZED FOR CONVERSION
+Does Demand Gen target 
+products?
+No Yes
+HAS PRODUCT FEED
+OPTIMIZED FOR CONVERSION
+NO PRODUCT FEED
+Optimized for 
+consideration?
+CONFLICT NO CONFLICT
+No Yes
+Optimized for 
+consideration
+?
+No Yes
+NO CONFLICT
+LIMITED CONFLICT Do they target the 
+same products?Yes No
+Demand Gen
+. 4. PMAX V. SHOPPING V. DEMAND GEN V. SEARCH
+The conﬂict mainly 
+revolves around the less 
+standardized 
+asset-based portion of 
+PMax, where it typically 
+spends a lot less money.
+So when Demand Gen is 
+optimized for conversions, 
+PMax is more than likely 
+stiﬂing Demand Gen 
+campaigns, but probably at 
+no runaway costs.
+“Strategically, PMax and 
+Demand Gen don’t overlap”
+Thomas Eccel, Head of Google Ads at Jung von Matt IMPACT, 
+leaves us with room for optimism that Demand Gen and PMax 
+will become more differentiated over time:
+. 4. PMAX V. SHOPPING V. DEMAND GEN V. SEARCH
+“While PMax is built to capture & 
+convert existing demand next 
+to Search campaigns, Demand 
+Gen is designed to create new 
+demand through emotional 
+creatives and audience intent. 
+I think that they share inventory 
+and might overlap (especially 
+DG campaigns that have been 
+set up on warm audiences with 
+tCPA or tROAS leaning towards 
+the lower funnel), however, their 
+purpose is different and they 
+don't overlap in strategy or 
+function. 
+With the latest Display Network addition for DG, I think 
+Google is drawing a clearer line between mid-high funnel 
+territory of DG and mid-lower funnel territory for PMax to 
+slowly eliminate potential overlaps.”
+
+PMax’s impact on
+Dynamic Search Ads
+PMax’s roll out has sent Dynamic Search Ads (DSA) into a clear 
+state of decline.
+Dynamic Search spend as a percentage 
+of total Search spend Dynamic 
+Search Ads 
+spend 
+peaked at
+in Q2 2022, 
+coinciding 
+with the 
+scaled rollout 
+of PMax.
+DSA’s growth trajectory 
+was broken and 
+subsequently lost 5% 
+cost share.
+In August 2023 Google 
+introduced a "voluntary 
+upgrade” of DSA to PMax.
+The technology is likely 
+to be deprecated in 
+favor of PMax and 
+Search Max.
+21%
+. 4. PMAX V. SHOPPING V. DEMAND GEN V. SEARCH
+. 5. HOW TO MAKE PERFORMANCE MAX WORK
+How many conversions does 
+PMax need to work?
+Here is a highly aggregated view of
++4,000 PMax campaigns.
+PMax:
+Conversion Volume vs. ROAS Achievement
+PMax campaigns need at 
+least 30 monthly conversions, 
+and ideally 60 or more, for 
+optimal performance
+This is reﬂected
+in lower volatility and 
+stronger ROAS target 
+adherence
+There is no evidence 
+that PMax beneﬁts from 
+cross-campaign
+learning effects
+60+
+CONVERSIONS
+
+Addendum:
+Avoid excessive segmentation!
+Let’s look at a real-world problem that arose when a single 
+account was excessively segmented.
+% Difference, Actual ROAS vs Target
+An advertiser 
+attempted to precisely 
+control ROAS by 
+segmenting a single 
+account according to 
+many margin buckets. 
+This led to an uneven 
+distribution of products 
+and conversion volume
+Some campaigns had 
+only 1 or 2 monthly 
+conversions, while 
+others had over 50. The 
+difference between 
+actual ROAS and target 
+ROAS ranged from 
+nearly -100%
+to nearly 400%.
+Lesson learned: 
+The advertiser's desire to 
+achieve extremely 
+precise targets ironically 
+created a lack of 
+precision in the account.
+. 5. HOW TO MAKE PERFORMANCE MAX WORK
+Lesson learned: 
+The advertiser's desire to 
+achieve extremely precise 
+targets ironically created 
+a lack of precision in the 
+account.
+
+How many PMax campaigns 
+should you run?
+Account structure is a key way of reﬂecting your strategy 
+toward Google. So let’s see how the number of PMax campaigns 
+per account has developed over time.
+Average Count
+of Active PMax Campaigns per Account
+There is no “right” number of campaigns: it depends on 
+your conversion volume, the size and variety of your 
+product catalog, and your reasons for segmenting.
+. 5. HOW TO MAKE PERFORMANCE MAX WORK
+3 to 7
+campaigns
+ is a typical range, but 
+just 1 PMax campaign 
+per account remains 
+unfortunately
+common.
+. 6. PERFORMANCE MAX BIDDING STRATEGIES
+How are ecommerce advertisers 
+bidding in PMax?
+An interesting trend has become visible: Advertisers strongly 
+prefer to maximize revenue instead of order value.
+Share of PMax campaigns using Max Conversions
+Campaign bid strategy type Median CPC Median Conv. Rate Median AOV
+Maximize Conversion Value €0.37 2.22% €106.55
+Maximize Conversions €0.25 1.98% €22.84
++50%
+Personally, I do not recommend Max Conversions bidding unless you need 
+more conversion volume to bootstrap your account, or unless your product 
+category has little variety in price points.
+more than Max 
+Conversions
+Max Conv. Val costs 50% 
+more than Max Conv. 
+Which is ﬁne, considering 
+the bigger AOVs.
+The Max Conversion bid 
+strategy is suited for new 
+campaigns where the algorithm 
+is signal-thirsty.
+Max Conv. Val costs 
+. 6. PERFORMANCE MAX BIDDING STRATEGIES
+“Ultimately, I am ﬁrmly on team 
+Max Conversion Value”
+I asked Navah Hopkins, Brand Evangelist at Optmyzr, on the 
+reasons why she’d choose Max Conversion Value for both 
+ecommerce and lead gen.
+“Seeing advertisers turning to the 
+volume of Max Conversions over the 
+value of Max Conversion Value seems 
+a sign of the times vs a true 
+preference for the bidding strategy.
+Based on the numbers, Max 
+Conversion Value drove 19,537 Euros 
+compared to Max Conversions' 5,116 
+Euro (medians). Additionally, the 
+conversion rate was much better for 
+Max Conversion Value, which I found 
+surprising.
+All said and done, it seems a no brainer to go with Max 
+Conversion Value - especially because Google has 
+outright conﬁrmed conversion value and proﬁt metrics 
+are crucial to help it bid effectively.
+Yet brands are facing uncertain times and volume they 
+can nurture with email marketing and subscriptions 
+might meet board room KPIs better than raw revenue. 
+There's also the valid concern around providing too much 
+info to Google (even if it would help them in the long 
+run)”.
+
+. 6. PERFORMANCE MAX BIDDING STRATEGIES
+Follow-up:
+Are higher CPCs a scam?
+Like it or not, CPCs are owned by Google. And Google’s betting 
+on known shoppers. Your move? Maximize value and question 
+what’s truly incremental.
+Relation of Cost-per-click and value-per-click
+According to the middle 
+50% of the data above, 
+cost per click and value 
+per click are highly 
+correlated.
+However: High-value 
+clicks might look great— 
+but unless they drive 
+net-new growth, they’re 
+not moving the needle.
+Since most shoppers 
+are just one-time 
+buyers—stay visible, 
+stay relevant, and earn 
+the next click.
+“Incremental revenue growth 
+should be your goal.”
+For Caterina Mariani, eCommerce
+Growth Specialist at PPC Freelance,
+obsessing over ROAS and 
+conversion value means missing
+the bigger picture.
+"PMax is a unique campaign type 
+that often shows the highest ROAS 
+and conversion value, but there's 
+an important catch. 
+While these metrics look impressive, PMax typically targets 
+your warmest customers - people already familiar with your 
+brand. Your main goal is increasing incremental revenue 
+(AKA sales that would not have happened otherwise), so 
+don't be misled by pMax's strong performance numbers.
+To get the true picture, always cross-check pMax data 
+against your overall business metrics: total revenue, proﬁt, 
+customer acquisition cost (CAC), and average order value 
+(AOV), and if you can, consider third-party MMM
+and attribution tools.
+This will help you understand if PMax is actually growing 
+your business or just claiming credit for sales that would 
+have happened anyway.”
+. 6. PERFORMANCE MAX BIDDING STRATEGIES
+. 6. PERFORMANCE MAX BIDDING STRATEGIES
+Is turning off Target ROAS 
+a recipe for disaster?
+Many advertisers are concerned that costs will skyrocket and 
+efficiency will plummet catastrophically. Fortunately,
+that isn’t the case.
+Max Conversion Value campaigns with and 
+without a ROAS target
+After a Target ROAS, 
+your actual ROAS is 
+constrained by 
+budget.
+After your budget, 
+your actual ROAS is 
+constrained by 
+demand.
+After demand, your actual 
+ROAS is constrained by a 
+hidden failsafe target set 
+by Google.
+
+. 6. PERFORMANCE MAX BIDDING STRATEGIES
+What actually happens when you 
+turn off Target ROAS?
+What will happen are two things: First, you will likely see more 
+volatility in your daily ROAS. Second, abandoning Target ROAS 
+means losing one of your last, best levers.
+Performance comparison
+with and without ROAS target values
+At the monthly 
+level, campaigns 
+without ROAS 
+targets do 
+perform worse in 
+terms of 
+efficiency,
+However: 
+Campaigns without 
+a ROAS target can 
+still deliver a 
+reasonable 
+baseline of 
+performance.
+But: campaigns 
+with a ROAS 
+target behave 
+more 
+predictably, 
+with lower 
+volatility.
+Most 
+importantly:
+ROAS is one of our
+best options for 
+communicating with 
+Google’s algorithm.
+. 6. PERFORMANCE MAX BIDDING STRATEGIES
+“Google has been listening
+to its users”
+Bob Meijer, Google Ads trainer and coach at PPC mastery 
+shares my cautious enthusiasm for how PMax has changed 
+over the past three years and continues to improve.
+“I love that Google has been listening to its users and 
+rolled out all sorts of impactful updates lately - 
+negatives, brand exclusions, improved reporting, and 
+more - which gives us more control and insights.
+The current beta features are looking very promising 
+as well.
+Even though Google has 
+vastly improved 
+Performance Max throughout 
+the years, it's still not my 
+go-to campaign type for 
+most of my accounts. 
+I mainly use it in combination 
+with network-speciﬁc 
+campaign types (that give me 
+more control, insights, and 
+better results overall), where I 
+use Performance Max as a 
+"catch-all" layer.”
+
+S M A R T E R - E C O M M E R C E . C O M
+I... like... PMax. I like PMax. 
+There! I said it! It wasn’t easy.
+And it didn’t start that way.
+I’m fascinated by exactly how much PMax 
+has changed in positive ways – settings, 
+controls, modiﬁers, and reports – and how 
+little it has changed in negative ways – no 
+indication that spammy inventory is rising.
+Many people will tell you I’m wrong, the 
+next big thing is MMM, incrementality, etc. 
+I’ve felt this way in the past and I still do to 
+a certain extent. However, I’m 
+increasingly of the mind that the market is 
+too competitive to get where we might 
+dream.
+The ﬁnal thing I want to mention is what I 
+call “PMaxiﬁcation,” and it’s the reason 
+why, even if you disagree with me, even if 
+you hate PMax and ﬁnd it rotten to its 
+core – you can’t afford to ignore it.
+Final
+thoughts
+Every digital platform is 
+watching, taking notes, 
+copying.
+Google pioneered the idea of end-to-end, 
+platform-managed campaigns. In doing so 
+they rolled up channels while slashing 
+reporting and controls. They created a 
+black box money machine.
+Firstly, it’s clear this category of 
+technology is the future of digital 
+marketing. Like it or not. I would argue we 
+need to surf the wave, not ﬁght the tide. 
+Google Performance Max. Microsoft 
+Performance Max. TikTok Smart 
+Performance. Meta Advantage+. Amazon 
+Performance+. Pinterest Performance+. 
+And so on.
+Secondly, and more importantly, Google 
+has changed its trajectory. They’ve 
+started cracking open the black box. This 
+should give us hope! Because remember:
+Every digital platform is watching,
+taking notes, copying.
+ 
+S M A R T E R - E C O M M E R C E . C O M
+smec turns Performance 
+Max pains into the most 
+proﬁtable gains!
+With 17+ years of experience running 
+Google Ads for leading online retailers, 
+our Performance Max optimization tool 
+and the insights of 40 PPC experts help 
+you run PMax campaigns that actually 
+move the needle.
+What are you waiting for? 
+You are good to grow!
+Do you still
+fear PMax?
+Let’s get in touch
+We don’t.
+You won’t!
