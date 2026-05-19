@@ -31,7 +31,7 @@ export default function NotFound() {
     <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100vh', fontFamily: 'sans-serif' }}>
       <h1>404 - Page Not Found</h1>
       <p>{isEn ? 'The page you are looking for could not be found or has been moved.' : '요청하신 페이지를 찾을 수 없거나 이동되었습니다.'}</p>
-      <a href={isEn ? "/en" : "/ko"} style={{ marginTop: '20px', color: '#0070f3', textDecoration: 'none' }}>{isEn ? 'Go to Homepage' : '메인 홈으로 돌아가기'}</a>
+      <a href={isEn ? "/en" : "/"} style={{ marginTop: '20px', color: '#0070f3', textDecoration: 'none' }}>{isEn ? 'Go to Homepage' : '메인 홈으로 돌아가기'}</a>
     </div>
   );
 }
