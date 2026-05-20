@@ -18,11 +18,11 @@
     *   *관련 소스:* `uber-100m-attribution-fraud-case`, `ad-fraud-click-farm`, `adtech-ad-fraud-brand-safety`, `2026-05-20-latest-global-ad-fraud-scandals-2024-2026.ko.md`
 
 ### 📍 PART 2. 플랫폼의 함정 (진단)
-*   **3장. 구글의 블랙박스와 감춰진 예산 구멍** (원고 작성 대기)
+*   **3장. 구글의 블랙박스와 감춰진 예산 구멍** (원고 완료 ➡️ [chapter-03.md](file:///Users/wook/WookAi/Booklog/docs/books/digital-marketing-lies/chapter-03.md))
     *   *관련 소스:* `never-bid-brand-keywords`, `tadelis-paid-search`, `google-performance-max-analysis`, `pmax-blackbox-exodus`, `uac-app-fraud-defense`, `uac-fraud-placement-audit`, `2026-05-20-ad-tech-machine-learning-invalid-learning-loop.ko.md`
 *   **4장. 메타의 숫자 게임과 리타겟팅의 착각** (원고 작성 대기)
     *   *관련 소스:* `meta-facebook-advertising-fraud-blackbox.ko.md`, `retargeting-marketing-deep-dive`, `targeting-trap-bias`, `2026-05-20-ad-tech-machine-learning-invalid-learning-loop.ko.md`
-*   **5장. 애드테크 공급망과 국내 플랫폼의 한계** (원고 작성 대기)
+*   **5장. 애드테크 공급망과 국내 플랫폼의 한계** (원고 완료 ➡️ [chapter-05.md](file:///Users/wook/WookAi/Booklog/docs/books/digital-marketing-lies/chapter-05.md))
     *   *관련 소스:* `adtech-supply-chain-tech-tax`, `measurement-paradox-observer-effect.ko.md`, `brand-keyword-defense-part2`, `2026-05-20-google-adtech-antitrust-ruling-unveiled-secrets.ko.md`
 
 ### 📍 PART 3. 진짜 숫자를 보는 눈 (해독)
