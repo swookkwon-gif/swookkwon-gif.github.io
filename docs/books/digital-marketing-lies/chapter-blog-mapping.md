@@ -33,7 +33,7 @@
 | **2-3. JP모건 체이스** | (외부 리서치) | ✅ | 40만 ➡️ 5,000개 사이트 축소 |
 | **2-4. 에어비앤비** | `Marketing/2026-05-12-does-advertising-increase-sales.md` | ✅ | 트래픽 95% 유지 및 흑자 전환 |
 | **2-5. 메스봇/3ve** | `Marketing/2026-05-12-book-review-avoiding-ad-fraud.md` | ✅ | Methbot 3억건/일, 3ve 170만대 봇넷 |
-| **2-7. 광고사기 6대 유형**| `Marketing/2026-05-09-ad-fraud-click-farm.md` | ✅ | 클릭팜, 봇, 클릭 인젝션, SDK 스푸핑 등 원리 |
+| **2-7. 광고사기 6대 유형**| `Marketing/2026-05-09-ad-fraud-click-farm.md`<br>`2026-05-20-latest-global-ad-fraud-scandals-2024-2026.ko.md` | ✅ | 클릭팜, 봇, 클릭 인젝션, SDK 스푸핑 등 원리 및 **2024-2026 최신 글로벌 광고 사기 스캔들** |
 | **2-8. 구조적 딜레마 & 오염**| `Marketing/2026-05-12-adtech-ad-fraud-brand-safety.md` | ✅ | 데이터 오염(Invalid Learning) 및 벤더사 인센티브 |
 
 ---
@@ -44,20 +44,20 @@
 | 주제 | 블로그 포스트 | 상태 | 비고 |
 |------|-------------|------|------|
 | 브랜드 키워드 입찰 함정 | `Marketing/2026-04-23-never-bid-brand-keywords.md`<br>`Marketing/2026-04-25-tadelis-paid-search.md` | 🔲 | 이베이 Blake-Tadelis 논문 상세 분석 |
-| Performance Max 분석 | `Marketing/2026-05-09-google-performance-max-analysis.md`<br>`Marketing/2026-05-10-pmax-blackbox-exodus.md` | 🔲 | AI 최적화 오가닉 잠식 및 예산 역류 현상 |
+| Performance Max 분석 | `Marketing/2026-05-09-google-performance-max-analysis.md`<br>`Marketing/2026-05-10-pmax-blackbox-exodus.md`<br>`2026-05-20-ad-tech-machine-learning-invalid-learning-loop.ko.md` | ✅ | AI 최적화 오가닉 잠식, 예산 역류 및 알고리즘 무효 학습(Invalid Learning Loop) 실태 |
 | UAC 및 게재 위치 감사 | `Marketing/2026-05-10-uac-app-fraud-defense.md`<br>`Marketing/2026-05-10-uac-fraud-placement-audit.md` | 🔲 | UAC 봇넷 필터링 및 Placement Audit 실무 가이드 |
 
 ### 4장. 메타의 숫자 게임과 리타겟팅의 착각
 | 주제 | 블로그 포스트 | 상태 | 비고 |
 |------|-------------|------|------|
-| 메타 ROAS & ATT 효과 | `Marketing/2026-05-19-meta-facebook-advertising-fraud-blackbox.ko.md` | 🔲 | 애플 ATT 전환 장벽 및 메타 지표의 착시 |
+| 메타 ROAS & ATT 효과 | `Marketing/2026-05-19-meta-facebook-advertising-fraud-blackbox.ko.md`<br>`2026-05-20-ad-tech-machine-learning-invalid-learning-loop.ko.md` | ✅ | 애플 ATT 전환 장벽, 메타 지표 착시 및 알고리즘 무효 학습(Invalid Learning Loop) 실태 |
 | 리타겟팅 카니발라이제이션| `Marketing/2026-05-09-retargeting-marketing-deep-dive.md` | 🔲 | 장바구니 리타겟팅의 진실 및 순수 증분 성과 |
 | 광고 측정 편향 & Ghost Ads| `Marketing/2026-05-10-targeting-trap-bias.md` | 🔲 | 선택 편향 교정 및 Ghost Ads 방법론 |
 
 ### 5장. 애드테크 공급망과 국내 플랫폼의 한계
 | 주제 | 블로그 포스트 | 상태 | 비고 |
 |------|-------------|------|------|
-| Tech Tax 및 수수료 중간상| `Marketing/2026-05-12-adtech-supply-chain-tech-tax.md`<br>`Marketing/2026-05-12-book-review-avoiding-ad-fraud.md` | 🔲 | DSP/SSP 50% 유실 구조 및 Jounce Media 분석 |
+| Tech Tax 및 수수료 중간상| `Marketing/2026-05-12-adtech-supply-chain-tech-tax.md`<br>`Marketing/2026-05-12-book-review-avoiding-ad-fraud.md`<br>`2026-05-20-google-adtech-antitrust-ruling-unveiled-secrets.ko.md` | ✅ | DSP/SSP 50% 유실(Tech Tax), 구글 반독점 최종 판결 및 비밀 프로젝트 폭로 분석 |
 | 카카오톡 인앱 브라우저 | `2026-05-19-measurement-paradox-observer-effect.ko.md` | 🔲 | GA4 다크 소셜(Direct) 분류의 한계와 추적 기법 |
 | 네이버 검색광고 실체 | `Marketing/2026-04-29-brand-keyword-defense-part2.md` | 🔲 | 국내 플랫폼 전용 브랜드 보호 논리 교정 |
 

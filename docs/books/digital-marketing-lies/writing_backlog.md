@@ -15,15 +15,15 @@
 *   **1장. 디지털 마케팅의 영토와 마케터의 착각** (원고 완료 ➡️ [chapter-01.md](file:///Users/wook/WookAi/Booklog/docs/books/digital-marketing-lies/chapter-01.md))
     *   *관련 소스:* `global-ad-market-size-estimates-gap`, `korea-digital-ad-market-size-analysis`
 *   **2장. 내 광고비를 훔쳐가는 유령들** (원고 완료 ➡️ [chapter-02-part1.md](file:///Users/wook/WookAi/Booklog/docs/books/digital-marketing-lies/chapter-02-part1.md) & [chapter-02-part2.md](file:///Users/wook/WookAi/Booklog/docs/books/digital-marketing-lies/chapter-02-part2.md))
-    *   *관련 소스:* `uber-100m-attribution-fraud-case`, `ad-fraud-click-farm`, `adtech-ad-fraud-brand-safety`
+    *   *관련 소스:* `uber-100m-attribution-fraud-case`, `ad-fraud-click-farm`, `adtech-ad-fraud-brand-safety`, `2026-05-20-latest-global-ad-fraud-scandals-2024-2026.ko.md`
 
 ### 📍 PART 2. 플랫폼의 함정 (진단)
 *   **3장. 구글의 블랙박스와 감춰진 예산 구멍** (원고 작성 대기)
-    *   *관련 소스:* `never-bid-brand-keywords`, `tadelis-paid-search`, `google-performance-max-analysis`, `pmax-blackbox-exodus`, `uac-app-fraud-defense`, `uac-fraud-placement-audit`
+    *   *관련 소스:* `never-bid-brand-keywords`, `tadelis-paid-search`, `google-performance-max-analysis`, `pmax-blackbox-exodus`, `uac-app-fraud-defense`, `uac-fraud-placement-audit`, `2026-05-20-ad-tech-machine-learning-invalid-learning-loop.ko.md`
 *   **4장. 메타의 숫자 게임과 리타겟팅의 착각** (원고 작성 대기)
-    *   *관련 소스:* `meta-facebook-advertising-fraud-blackbox.ko.md`, `retargeting-marketing-deep-dive`, `targeting-trap-bias`
+    *   *관련 소스:* `meta-facebook-advertising-fraud-blackbox.ko.md`, `retargeting-marketing-deep-dive`, `targeting-trap-bias`, `2026-05-20-ad-tech-machine-learning-invalid-learning-loop.ko.md`
 *   **5장. 애드테크 공급망과 국내 플랫폼의 한계** (원고 작성 대기)
-    *   *관련 소스:* `adtech-supply-chain-tech-tax`, `measurement-paradox-observer-effect.ko.md`, `brand-keyword-defense-part2`
+    *   *관련 소스:* `adtech-supply-chain-tech-tax`, `measurement-paradox-observer-effect.ko.md`, `brand-keyword-defense-part2`, `2026-05-20-google-adtech-antitrust-ruling-unveiled-secrets.ko.md`
 
 ### 📍 PART 3. 진짜 숫자를 보는 눈 (해독)
 *   **6장. 툴이 숨기는 잃어버린 데이터** (원고 작성 대기)
@@ -64,6 +64,9 @@
 | P10 | Phase 4 | 포스트 쿠키 시대: CAPI와 MMM의 부활 | **완료** | Data | CAPI, MMM |
 | P11 | Phase 4 | AI에 끌려가지 않는 '신호 설계자' 전략 | **완료** | Data | Data Signal |
 | P12 | Phase 4 | Vibe Coding 기반 낭비 감시 자동화 (n8n) | **완료** | Dev | n8n, Antigravity |
+| P13 | Phase 2 | 유령이 보는 광고: 2024-2026 최신 글로벌 광고 사기 스캔들 분석 | **완료** | Marketing | Adalytics (Forbes), HUMAN (SlopAds), DV |
+| P14 | Phase 2 | 독점의 알고리즘: 구글 반독점 소송 최종 판결과 비밀 프로젝트의 전말 | **완료** | Marketing | DOJ v. Google (2025), AdTech Trial |
+| P15 | Phase 2 | 알고리즘의 좀비 유도: AI 광고 엔진의 '무효 학습(Invalid Learning)' 피드백 루프 | **완료** | Marketing | Dr. Augustine Fou, Jounce Media |
 
 ---
 *마지막 업데이트: 2026-05-20*
