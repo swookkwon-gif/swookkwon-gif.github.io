@@ -29,12 +29,12 @@ export default function SidebarNav({ categories, lang }: SidebarNavProps) {
 
   // 현재 URL에서 활성 카테고리 감지
   const detectActiveCategory = (): string | null => {
-    // 카테고리 페이지: /ko/category/ai-news
+    // 카테고리 페이지: /category/ai-news
     const catMatch = pathname.match(/\/category\/([^/]+)/);
     if (catMatch) {
       return catMatch[1];
     }
-    // 포스트 페이지: /ko/posts/slug → 해당 포스트의 카테고리 찾기
+    // 포스트 페이지: /posts/slug → 해당 포스트의 카테고리 찾기
     const postMatch = pathname.match(/\/posts\/([^/]+)/);
     if (postMatch) {
       const postSlug = postMatch[1];

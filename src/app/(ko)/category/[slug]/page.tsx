@@ -30,14 +30,33 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
   const displayCategory = filteredPosts[0].category;
   const title = `${displayCategory} | Category`;
 
+  // Check if English category actually exists to avoid broken hreflang URLs
+  const postsEn = getSortedPostsData('en');
+  const hasEnCategory = postsEn.some(post => {
+    const postCategorySlug = (post.category || 'Insight').toLowerCase().replace(/\s+/g, '-');
+    return postCategorySlug === slug;
+  });
+
+  const alternates: { canonical: string; languages?: Record<string, string> } = {
+    canonical: `/category/${slug}/`,
+  };
+
+  if (hasEnCategory) {
+    alternates.languages = {
+      'ko': `/category/${slug}/`,
+      'en': `/en/category/${slug}/`,
+      'x-default': `/category/${slug}/`,
+    };
+  }
+
   return {
     title,
     description: `Articles in the ${displayCategory} category`,
-    alternates: { canonical: `/category/${slug}` },
+    alternates,
     openGraph: {
       title,
       description: `Articles in the ${displayCategory} category`,
-      url: `/category/${slug}`,
+      url: `/category/${slug}/`,
     }
   };
 }

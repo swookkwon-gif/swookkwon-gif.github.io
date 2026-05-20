@@ -32,13 +32,20 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const post = getPostData(slug, lang);
-  const url = `/en/posts/${slug}`;
+  const url = `/en/posts/${slug}/`;
 
   return {
     title: post.title,
     description: post.excerpt || post.title,
     keywords: post.tags,
-    alternates: { canonical: url },
+    alternates: {
+      canonical: url,
+      languages: {
+        'ko': `/posts/${slug}/`,
+        'en': `/en/posts/${slug}/`,
+        'x-default': `/posts/${slug}/`,
+      }
+    },
     openGraph: {
       title: post.title,
       description: post.excerpt || post.title,
@@ -78,7 +85,7 @@ export default async function EnPostPage({
     author: { "@type": "Person", name: "Wook Kwon", url: "https://www.linkedin.com/in/wook-kwon/" },
     datePublished: post.date,
     dateModified: post.date,
-    url: `https://swookkwon-gif.github.io/en/posts/${slug}`,
+    url: `https://swookkwon-gif.github.io/en/posts/${slug}/`,
     keywords: post.tags?.join(", ") || "",
   };
 

@@ -5,48 +5,84 @@ export const dynamic = 'force-static';
 
 const BASE_URL = 'https://swookkwon-gif.github.io';
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const postsKo = getSortedPostsData('ko'); // 182개
-  const postsEn = getSortedPostsData('en'); // 6개 (fallback 제거 후)
+// Helper to format date safely to YYYY-MM-DD without timezone shifts
+function safeFormatDate(dateStr?: string): string {
+  if (!dateStr) return new Date().toISOString().split('T')[0];
+  // If dateStr is already in YYYY-MM-DD format, use it directly to prevent timezone shift
+  const match = dateStr.match(/^\d{4}-\d{2}-\d{2}/);
+  if (match) return match[0];
+  
+  try {
+    const d = new Date(dateStr);
+    if (isNaN(d.getTime())) {
+      return new Date().toISOString().split('T')[0];
+    }
+    return d.toISOString().split('T')[0];
+  } catch {
+    return new Date().toISOString().split('T')[0];
+  }
+}
 
-  // 한국어 포스트: /posts/[slug]
+export default function sitemap(): MetadataRoute.Sitemap {
+  const postsKo = getSortedPostsData('ko'); // 182 posts
+  const postsEn = getSortedPostsData('en'); // 6 posts
+
+  // Korean posts: /posts/[slug]/
   const koPostUrls = postsKo.map((post) => ({
     url: `${BASE_URL}/posts/${post.slug}/`,
-    lastModified: new Date(post.date).toISOString().split('T')[0],
+    lastModified: safeFormatDate(post.date),
+    changeFrequency: 'weekly' as const,
     priority: 0.6,
   }));
 
-  // 영어 포스트: /en/posts/[slug] — 실제 .en.md 존재하는 6개만
+  // English posts: /en/posts/[slug]/
   const enPostUrls = postsEn.map((post) => ({
     url: `${BASE_URL}/en/posts/${post.slug}/`,
-    lastModified: new Date(post.date).toISOString().split('T')[0],
+    lastModified: safeFormatDate(post.date),
+    changeFrequency: 'weekly' as const,
     priority: 0.5,
   }));
 
-  // 한국어 카테고리: /category/[slug]
+  // Korean categories: /category/[slug]/
   const koCategoryUrls = Array.from(new Set(postsKo.map(p => p.category))).map((category) => ({
     url: `${BASE_URL}/category/${(category || "Insight").toLowerCase().replace(/\s+/g, '-')}/`,
-    lastModified: new Date().toISOString().split('T')[0],
+    lastModified: safeFormatDate(),
+    changeFrequency: 'weekly' as const,
     priority: 0.8,
   }));
 
-  // 영어 카테고리: /en/category/[slug] — 실제 영어 포스트가 있는 카테고리만
+  // English categories: /en/category/[slug]/
   const enCategoryUrls = Array.from(new Set(postsEn.map(p => p.category))).map((category) => ({
     url: `${BASE_URL}/en/category/${(category || "Insight").toLowerCase().replace(/\s+/g, '-')}/`,
-    lastModified: new Date().toISOString().split('T')[0],
+    lastModified: safeFormatDate(),
+    changeFrequency: 'weekly' as const,
     priority: 0.7,
   }));
 
   return [
     {
       url: `${BASE_URL}/`,
-      lastModified: new Date().toISOString().split('T')[0],
-      priority: 1,
+      lastModified: safeFormatDate(),
+      changeFrequency: 'daily' as const,
+      priority: 1.0,
     },
     {
       url: `${BASE_URL}/en/`,
-      lastModified: new Date().toISOString().split('T')[0],
+      lastModified: safeFormatDate(),
+      changeFrequency: 'daily' as const,
       priority: 0.8,
+    },
+    {
+      url: `${BASE_URL}/posts/`,
+      lastModified: safeFormatDate(),
+      changeFrequency: 'daily' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${BASE_URL}/en/posts/`,
+      lastModified: safeFormatDate(),
+      changeFrequency: 'daily' as const,
+      priority: 0.7,
     },
     ...koCategoryUrls,
     ...enCategoryUrls,

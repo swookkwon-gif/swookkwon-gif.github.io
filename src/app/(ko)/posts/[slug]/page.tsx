@@ -36,13 +36,29 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const post = getPostData(slug, lang);
-  const url = `/posts/${slug}`;
+  const url = `/posts/${slug}/`;
+
+  // Check if English version actually exists to avoid broken hreflang URLs
+  const postsEn = getSortedPostsData('en');
+  const hasEnVersion = postsEn.some(p => p.slug === slug);
+
+  const alternates: { canonical: string; languages?: Record<string, string> } = {
+    canonical: url,
+  };
+
+  if (hasEnVersion) {
+    alternates.languages = {
+      'ko': `/posts/${slug}/`,
+      'en': `/en/posts/${slug}/`,
+      'x-default': `/posts/${slug}/`,
+    };
+  }
 
   return {
     title: post.title,
     description: post.excerpt || post.title,
     keywords: post.tags,
-    alternates: { canonical: url },
+    alternates,
     openGraph: {
       title: post.title,
       description: post.excerpt || post.title,
@@ -85,7 +101,7 @@ export default async function PostPage({
     },
     datePublished: post.date,
     dateModified: post.date,
-    url: `https://swookkwon-gif.github.io/posts/${slug}`,
+    url: `https://swookkwon-gif.github.io/posts/${slug}/`,
     keywords: post.tags?.join(", ") || "",
   };
 

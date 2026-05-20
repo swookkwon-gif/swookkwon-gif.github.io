@@ -3,7 +3,14 @@ import { getSortedPostsData } from "@/lib/posts";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  alternates: { canonical: '/en' },
+  alternates: {
+    canonical: '/en/',
+    languages: {
+      'ko': '/',
+      'en': '/en/',
+      'x-default': '/',
+    }
+  },
 };
 
 export default async function EnHome() {

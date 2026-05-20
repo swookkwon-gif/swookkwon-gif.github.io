@@ -5,11 +5,18 @@ import { getSortedPostsData } from "@/lib/posts";
 export const metadata: Metadata = {
   title: "All Posts",
   description: "Browse all English posts",
-  alternates: { canonical: '/en/posts' },
+  alternates: {
+    canonical: '/en/posts/',
+    languages: {
+      'ko': '/posts/',
+      'en': '/en/posts/',
+      'x-default': '/posts/',
+    }
+  },
   openGraph: {
     title: "All Posts",
     description: "Browse all English posts",
-    url: '/en/posts',
+    url: '/en/posts/',
   }
 };
 

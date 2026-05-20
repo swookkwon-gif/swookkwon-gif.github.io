@@ -31,8 +31,19 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
   return {
     title,
     description: `Articles in the ${displayCategory} category`,
-    alternates: { canonical: `/en/category/${slug}` },
-    openGraph: { title, description: `Articles in the ${displayCategory} category`, url: `/en/category/${slug}` }
+    alternates: {
+      canonical: `/en/category/${slug}/`,
+      languages: {
+        'ko': `/category/${slug}/`,
+        'en': `/en/category/${slug}/`,
+        'x-default': `/category/${slug}/`,
+      }
+    },
+    openGraph: {
+      title,
+      description: `Articles in the ${displayCategory} category`,
+      url: `/en/category/${slug}/`,
+    }
   };
 }
 

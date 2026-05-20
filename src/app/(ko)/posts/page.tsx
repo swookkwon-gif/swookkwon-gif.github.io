@@ -6,12 +6,17 @@ export const metadata: Metadata = {
   title: "All Posts",
   description: "Browse all posts",
   alternates: {
-    canonical: '/posts',
+    canonical: '/posts/',
+    languages: {
+      'ko': '/posts/',
+      'en': '/en/posts/',
+      'x-default': '/posts/',
+    }
   },
   openGraph: {
     title: "All Posts",
     description: "Browse all posts",
-    url: '/posts',
+    url: '/posts/',
   }
 };
 

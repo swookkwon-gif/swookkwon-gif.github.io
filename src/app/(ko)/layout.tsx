@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Outfit } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
 import { getSortedPostsData } from "@/lib/posts";
