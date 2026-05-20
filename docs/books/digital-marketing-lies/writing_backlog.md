@@ -1,7 +1,7 @@
 # 📖 디지털 마케팅의 거짓말: 집필 백로그 (3막 구조 개정본)
 
 ## 📊 진행 상태 요약
-- **책의 전체 구성:** 3개 PART (총 9개 장)
+- **책의 전체 구성:** 총 9개 장 (단선적 챕터 흐름)
 - **원고 초안 완료 (Draft Complete):** 프롤로그, 1장, 2장 (총 3개 파일)
 - **연동 가능한 블로그 소스:** 총 24개 포스트 집필 및 연동 완료 (상태: **완료**)
 
@@ -9,23 +9,18 @@
 
 ## 🗺️ 9개 장과 블로그 포스트(백로그) 매핑 현황
 
-### 📍 PART 1. 숫자의 배신 (폭로)
 *   **프롤로그: 당신 회사의 마케팅은 괜찮은가요?** (원고 완료 ➡️ [prologue.md](file:///Users/wook/WookAi/Booklog/docs/books/digital-marketing-lies/prologue.md))
     *   *관련 소스:* `who-is-the-patsy-in-digital-marketing.ko.md`
 *   **1장. 디지털 마케팅의 영토와 마케터의 착각** (원고 완료 - 애드테크 기초 과외 포함 ➡️ [chapter-01.md](file:///Users/wook/WookAi/Booklog/docs/books/digital-marketing-lies/chapter-01.md))
     *   *관련 소스:* `global-ad-market-size-estimates-gap`, `korea-digital-ad-market-size-analysis`
 *   **2장. 내 광고비를 훔쳐가는 유령들** (원고 완료 ➡️ [chapter-02-part1.md](file:///Users/wook/WookAi/Booklog/docs/books/digital-marketing-lies/chapter-02-part1.md) & [chapter-02-part2.md](file:///Users/wook/WookAi/Booklog/docs/books/digital-marketing-lies/chapter-02-part2.md))
     *   *관련 소스:* `uber-100m-attribution-fraud-case`, `ad-fraud-click-farm`, `adtech-ad-fraud-brand-safety`, `2026-05-20-latest-global-ad-fraud-scandals-2024-2026.ko.md`
-
-### 📍 PART 2. 플랫폼의 함정 (진단)
 *   **3장. 구글의 블랙박스와 감춰진 예산 구멍** (원고 완료 ➡️ [chapter-03.md](file:///Users/wook/WookAi/Booklog/docs/books/digital-marketing-lies/chapter-03.md))
     *   *관련 소스:* `never-bid-brand-keywords`, `tadelis-paid-search`, `google-performance-max-analysis`, `pmax-blackbox-exodus`, `uac-app-fraud-defense`, `uac-fraud-placement-audit`, `2026-05-20-ad-tech-machine-learning-invalid-learning-loop.ko.md`
 *   **4장. 메타의 숫자 게임과 리타겟팅의 착각** (원고 작성 대기)
     *   *관련 소스:* `meta-facebook-advertising-fraud-blackbox.ko.md`, `retargeting-marketing-deep-dive`, `targeting-trap-bias`, `2026-05-20-ad-tech-machine-learning-invalid-learning-loop.ko.md`
 *   **5장. 애드테크 공급망과 국내 플랫폼의 한계** (원고 완료 ➡️ [chapter-05.md](file:///Users/wook/WookAi/Booklog/docs/books/digital-marketing-lies/chapter-05.md))
     *   *관련 소스:* `adtech-supply-chain-tech-tax`, `measurement-paradox-observer-effect.ko.md`, `brand-keyword-defense-part2`, `2026-05-20-google-adtech-antitrust-ruling-unveiled-secrets.ko.md`
-
-### 📍 PART 3. 진짜 숫자를 보는 눈 (해독)
 *   **6장. 툴이 숨기는 잃어버린 데이터** (원고 작성 대기)
     *   *관련 소스:* `analytics-measurement-discrepancy.ko.md`, `first-party-data-server-side-capi`, `capi-mmm-cookieless-infrastructure`
 *   **7장. 지표의 착각과 성과 해석의 함정** (원고 작성 대기)
