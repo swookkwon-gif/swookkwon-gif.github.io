@@ -11,18 +11,18 @@
 
 *   **프롤로그: 당신 회사의 마케팅은 괜찮은가요?** (원고 완료 ➡️ [prologue.md](file:///Users/wook/WookAi/Booklog/docs/books/digital-marketing-lies/prologue.md))
     *   *관련 소스:* `who-is-the-patsy-in-digital-marketing.ko.md`
-*   **1장. 디지털 마케팅의 영토와 마케터의 착각** (원고 완료 - 애드테크 기초 과외 포함 ➡️ [chapter-01.md](file:///Users/wook/WookAi/Booklog/docs/books/digital-marketing-lies/chapter-01.md))
+*   **1장. 우리가 '클릭'에 1,000조 원을 바치는 이유** (원고 완료 ➡️ [chapter-01.md](file:///Users/wook/WookAi/Booklog/docs/books/digital-marketing-lies/chapter-01.md))
     *   *관련 소스:* `global-ad-market-size-estimates-gap`, `korea-digital-ad-market-size-analysis`
-*   **2장. 내 광고비를 훔쳐가는 유령들** (원고 완료 ➡️ [chapter-02-part1.md](file:///Users/wook/WookAi/Booklog/docs/books/digital-marketing-lies/chapter-02-part1.md) & [chapter-02-part2.md](file:///Users/wook/WookAi/Booklog/docs/books/digital-marketing-lies/chapter-02-part2.md))
-    *   *관련 소스:* `uber-100m-attribution-fraud-case`, `ad-fraud-click-farm`, `adtech-ad-fraud-brand-safety`, `2026-05-20-latest-global-ad-fraud-scandals-2024-2026.ko.md`
-*   **3장. 구글의 블랙박스와 감춰진 예산 구멍** (원고 완료 ➡️ [chapter-03.md](file:///Users/wook/WookAi/Booklog/docs/books/digital-marketing-lies/chapter-03.md))
-    *   *관련 소스:* `never-bid-brand-keywords`, `tadelis-paid-search`, `google-performance-max-analysis`, `pmax-blackbox-exodus`, `uac-app-fraud-defense`, `uac-fraud-placement-audit`, `2026-05-20-ad-tech-machine-learning-invalid-learning-loop.ko.md`
-*   **4장. 메타의 숫자 게임과 리타겟팅의 착각** (원고 작성 대기)
+*   **2장. [경영자 속성 과외] 10분 만에 마스터하는 애드테크 톱니바퀴** (원고 완료 ➡️ [chapter-02.md](file:///Users/wook/WookAi/Booklog/docs/books/digital-marketing-lies/chapter-02.md))
+    *   *관련 소스:* `chapter-01.md` 내 애드테크 기초 가이드 분할 적용 예정
+*   **3장. 내 광고비를 훔쳐가는 유령들** (원고 완료 ➡️ [chapter-03-part1.md](file:///Users/wook/WookAi/Booklog/docs/books/digital-marketing-lies/chapter-03-part1.md) & [chapter-03-part2.md](file:///Users/wook/WookAi/Booklog/docs/books/digital-marketing-lies/chapter-03-part2.md))
+    *   *관련 소스:* `uber-100m-attribution-fraud-case`, `ad-fraud-click-farm`, `adtech-ad-fraud-brand-safety`, `2026-05-20-latest-global-ad-fraud-scandals-2024-2026.ko.md`, `adtech-supply-chain-tech-tax`, `brand-safety-paradox`
+*   **4장. 구글의 블랙박스: 내 지갑을 털어가는 AI와 비밀 프로젝트** (원고 완료 ➡️ [chapter-04.md](file:///Users/wook/WookAi/Booklog/docs/books/digital-marketing-lies/chapter-04.md))
+    *   *관련 소스:* `never-bid-brand-keywords`, `tadelis-paid-search`, `google-performance-max-analysis`, `pmax-blackbox-exodus`, `uac-app-fraud-defense`, `uac-fraud-placement-audit`, `2026-05-20-ad-tech-machine-learning-invalid-learning-loop.ko.md`, `brand-keyword-defense-part2`
+*   **5장. 메타의 숫자 게임: ROAS의 마법과 타겟팅의 덫** (원고 작성 대기)
     *   *관련 소스:* `meta-facebook-advertising-fraud-blackbox.ko.md`, `retargeting-marketing-deep-dive`, `targeting-trap-bias`, `2026-05-20-ad-tech-machine-learning-invalid-learning-loop.ko.md`
-*   **5장. 애드테크 공급망과 국내 플랫폼의 한계** (원고 완료 ➡️ [chapter-05.md](file:///Users/wook/WookAi/Booklog/docs/books/digital-marketing-lies/chapter-05.md))
-    *   *관련 소스:* `adtech-supply-chain-tech-tax`, `measurement-paradox-observer-effect.ko.md`, `brand-keyword-defense-part2`, `2026-05-20-google-adtech-antitrust-ruling-unveiled-secrets.ko.md`
-*   **6장. 툴이 숨기는 잃어버린 데이터** (원고 작성 대기)
-    *   *관련 소스:* `analytics-measurement-discrepancy.ko.md`, `first-party-data-server-side-capi`, `capi-mmm-cookieless-infrastructure`
+*   **6장. 보이지 않는 유실: 대시보드가 감춘 데이터의 뒷면** (원고 작성 대기)
+    *   *관련 소스:* `analytics-measurement-discrepancy.ko.md`, `first-party-data-server-side-capi`, `capi-mmm-cookieless-infrastructure`, `measurement-paradox-observer-effect.ko.md`
 *   **7장. 지표의 착각과 성과 해석의 함정** (원고 작성 대기)
     *   *관련 소스:* `boeing-sears-financial-metrics-failure`, `marketing-quiz-3-statistics`, `marketing-quiz-4-vanity-metrics`, `social-desirability-bias-survey-flaws`
 *   **8장. 인과관계와 증분(Incrementality)의 패러다임** (원고 작성 대기)
