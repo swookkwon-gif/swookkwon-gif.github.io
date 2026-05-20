@@ -1,6 +1,6 @@
 ---
 title: "포지셔닝과 타겟팅은 틀렸다? 바이런 샤프의 《How Brands Grow》가 밝힌 마케팅의 과학적 진실"
-date: 2026-05-23T09:00:00+09:00
+date: 2026-05-21T11:00:00+09:00
 categories: ["Marketing"]
 tags: ["Byron Sharp", "How Brands Grow", "Double Jeopardy", "Mental Availability", "Physical Availability", "Brand Growth"]
 description: "필립 코틀러가 정립한 전통 마케팅의 고정관념을 뒤흔드는 실증 마케팅의 고전 《How Brands Grow》. 브랜드 충성도의 허상과 성장의 열쇠인 '라이트 유저' 및 '가용성'의 과학을 완전히 파헤칩니다."

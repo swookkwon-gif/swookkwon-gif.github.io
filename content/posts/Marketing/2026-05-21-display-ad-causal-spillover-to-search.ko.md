@@ -1,6 +1,6 @@
 ---
 title: "클릭률 0.1%의 배너 광고는 정말 쓸모없을까? 배너 광고가 검색을 유도하는 '스필오버(Spillover)' 효과의 과학"
-date: 2026-05-22T09:00:00+09:00
+date: 2026-05-21T10:00:00+09:00
 categories: ["Marketing"]
 tags: ["Display Advertising", "Search Advertising", "Spillover Effect", "RCT", "Randall Lewis", "Data Science", "How Brands Grow"]
 description: "배너 광고를 클릭하지 않은 사람도 훗날 검색창에 브랜드를 검색합니다. 야후(Yahoo!)의 5억 회 방문 데이터를 분석하여 배너 광고가 검색 광고와 자연 유입으로 어떻게 전이되는지 인과적으로 입증한 기념비적 논문을 고등학생도 이해하기 쉽게 해설합니다."
