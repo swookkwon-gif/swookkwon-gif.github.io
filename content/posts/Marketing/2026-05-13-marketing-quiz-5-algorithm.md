@@ -26,7 +26,7 @@ related_posts:
 
 구글의 추천을 따르기 전에, 그 추천이 **누구의 이익**을 위한 것인지 한 번 더 생각해 보세요.
 
-> 🔗 **더 알아보기:** [마케팅 전문가들도 빠지는 권위 편향의 함정](/ko/posts/2026-05-08-authority-bias-in-marketing)
+> 🔗 **더 알아보기:** [마케팅 전문가들도 빠지는 권위 편향의 함정](/posts/2026-05-08-authority-bias-in-marketing)
 
 ---
 
@@ -42,7 +42,7 @@ related_posts:
 1. 이미 자주 사는 사람에게 추가 구매를 유도하는 효과가 미미하고
 2. 새로운 고객이 유입되지 않아 고객 베이스가 축소됩니다
 
-> 🔗 **더 알아보기:** [타겟팅의 비효율성과 심리적 함정](/ko/posts/2026-05-10-targeting-trap-bias)
+> 🔗 **더 알아보기:** [타겟팅의 비효율성과 심리적 함정](/posts/2026-05-10-targeting-trap-bias)
 
 ---
 
@@ -60,7 +60,7 @@ related_posts:
 
 이 보험료가 타당한지는 **방어하지 않았을 때 잃을 매출 vs 방어 비용**을 냉정하게 계산해야 합니다.
 
-> 🔗 **더 알아보기:** [브랜드 검색광고 딜레마 2편: 최선의 방어](/ko/posts/2026-04-29-brand-keyword-defense-part2)
+> 🔗 **더 알아보기:** [브랜드 검색광고 딜레마 2편: 최선의 방어](/posts/2026-04-29-brand-keyword-defense-part2)
 
 ---
 
@@ -77,7 +77,7 @@ PMax는 검색, 디스플레이, 유튜브, 지메일 등 모든 채널을 하�
 
 하는 경우가 빈번히 발견됩니다. AI에게 모든 것을 맡기면 편하지만, **마케터의 통제력과 인사이트를 동시에 잃는 대가**를 치르게 됩니다.
 
-> 🔗 **더 알아보기:** [PMax의 블랙박스 해체와 실무진의 이탈 현상](/ko/posts/2026-05-10-pmax-blackbox-exodus)
+> 🔗 **더 알아보기:** [PMax의 블랙박스 해체와 실무진의 이탈 현상](/posts/2026-05-10-pmax-blackbox-exodus)
 
 ---
 
@@ -91,16 +91,16 @@ PMax는 검색, 디스플레이, 유튜브, 지메일 등 모든 채널을 하�
 
 검증 벤더의 보고서를 참고하되, **독립적인 트래픽 분석 도구**(FouAnalytics, SpiderAF 등)를 병행해서 교차 검증하는 것이 안전합니다.
 
-> 🔗 **더 알아보기:** [Ad Fraud 완전 가이드: 봇, MFA, 브랜드 세이프티](/ko/posts/2026-05-12-adtech-ad-fraud-brand-safety)
+> 🔗 **더 알아보기:** [Ad Fraud 완전 가이드: 봇, MFA, 브랜드 세이프티](/posts/2026-05-12-adtech-ad-fraud-brand-safety)
 
 ---
 
 ## 이 시리즈의 다른 글
 
-- 📊 **1편**: [인과관계 vs 상관관계](/ko/posts/2026-05-13-marketing-quiz-1-causality)
-- 📊 **2편**: [ROAS의 거짓말](/ko/posts/2026-05-13-marketing-quiz-2-roas)
-- 📉 **3편**: [평균의 함정](/ko/posts/2026-05-13-marketing-quiz-3-statistics)
-- 👻 **4편**: [노출·클릭·트래픽의 허영](/ko/posts/2026-05-13-marketing-quiz-4-vanity-metrics)
+- 📊 **1편**: [인과관계 vs 상관관계](/posts/2026-05-13-marketing-quiz-1-causality)
+- 📊 **2편**: [ROAS의 거짓말](/posts/2026-05-13-marketing-quiz-2-roas)
+- 📉 **3편**: [평균의 함정](/posts/2026-05-13-marketing-quiz-3-statistics)
+- 👻 **4편**: [노출·클릭·트래픽의 허영](/posts/2026-05-13-marketing-quiz-4-vanity-metrics)
 - 🗣️ **6편**: 설문·리서치 데이터의 왜곡 *(예정)*
 - 💰 **7편**: 예산 배분과 장기/단기 전략 *(예정)*
 

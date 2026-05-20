@@ -29,7 +29,7 @@ Binet & Field의 IPA(영국 광고주 협회) 연구에 따르면, 최적의 예
 
 Adidas는 이 함정에 빠진 대표적 사례입니다. 퍼포먼스에 77%를 몰아넣었다가, 브랜드 선호도와 시장점유율이 동시에 하락하는 "77/23의 비극"을 겪었습니다.
 
-> 🔗 **더 알아보기:** [마케팅을 하면 사업 성과가 정말 좋아지는가?](/ko/posts/2026-05-12-does-marketing-improve-business-performance)
+> 🔗 **더 알아보기:** [마케팅을 하면 사업 성과가 정말 좋아지는가?](/posts/2026-05-12-does-marketing-improve-business-performance)
 
 ---
 
@@ -50,7 +50,7 @@ Adidas는 이 함정에 빠진 대표적 사례입니다. 퍼포먼스에 77%를
 
 **이것을 복구하는 데는 중단한 기간의 2-3배의 시간과 비용이 듭니다.** "1분기 안 떨어졌으니 괜찮다"는 근시안적 결론이 2-3년 후의 브랜드 가치를 갉아먹는 것입니다.
 
-> 🔗 **더 알아보기:** [광고를 하면 매출이 정말 늘어나는가?](/ko/posts/2026-05-12-does-advertising-increase-sales)
+> 🔗 **더 알아보기:** [광고를 하면 매출이 정말 늘어나는가?](/posts/2026-05-12-does-advertising-increase-sales)
 
 ---
 
@@ -87,7 +87,7 @@ Uber의 사례는 Q39의 P&G와 유사한 맥락입니다. Uber는:
 
 결국 **"우리 브랜드의 체급이 어디에 있는가?"**를 정확히 파악하는 것이 모든 예산 결정의 출발점입니다.
 
-> 🔗 **더 알아보기:** [브랜드 검색광고 딜레마 3편: 체급의 차이](/ko/posts/2026-04-29-brand-keyword-size-part3)
+> 🔗 **더 알아보기:** [브랜드 검색광고 딜레마 3편: 체급의 차이](/posts/2026-04-29-brand-keyword-size-part3)
 
 ---
 
@@ -107,12 +107,12 @@ Uber의 사례는 Q39의 P&G와 유사한 맥락입니다. Uber는:
 
 ## 전체 시리즈
 
-- 📊 **1편**: [인과관계 vs 상관관계](/ko/posts/2026-05-13-marketing-quiz-1-causality)
-- 📊 **2편**: [ROAS의 거짓말](/ko/posts/2026-05-13-marketing-quiz-2-roas)
-- 📉 **3편**: [평균의 함정](/ko/posts/2026-05-13-marketing-quiz-3-statistics)
-- 👻 **4편**: [노출·클릭·트래픽의 허영](/ko/posts/2026-05-13-marketing-quiz-4-vanity-metrics)
-- 🤖 **5편**: [타겟팅과 알고리즘의 함정](/ko/posts/2026-05-13-marketing-quiz-5-algorithm)
-- 🗣️ **6편**: [설문·리서치 데이터의 왜곡](/ko/posts/2026-05-13-marketing-quiz-6-survey)
+- 📊 **1편**: [인과관계 vs 상관관계](/posts/2026-05-13-marketing-quiz-1-causality)
+- 📊 **2편**: [ROAS의 거짓말](/posts/2026-05-13-marketing-quiz-2-roas)
+- 📉 **3편**: [평균의 함정](/posts/2026-05-13-marketing-quiz-3-statistics)
+- 👻 **4편**: [노출·클릭·트래픽의 허영](/posts/2026-05-13-marketing-quiz-4-vanity-metrics)
+- 🤖 **5편**: [타겟팅과 알고리즘의 함정](/posts/2026-05-13-marketing-quiz-5-algorithm)
+- 🗣️ **6편**: [설문·리서치 데이터의 왜곡](/posts/2026-05-13-marketing-quiz-6-survey)
 - 💰 **7편**: 예산 배분과 장기/단기 전략 *(본 글)*
 
 ---

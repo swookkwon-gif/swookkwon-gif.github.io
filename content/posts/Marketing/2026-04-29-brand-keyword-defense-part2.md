@@ -14,7 +14,7 @@ related_posts:
 
 ---
 
-[지난 1편](/ko/posts/2026-04-29-brand-keyword-cannibalization-part1)에서는 막대한 예산을 들여 자사 브랜드 키워드에 검색 광고(SA)를 집행하는 것이, 사실은 무료로 얻을 수 있는 자연 검색(Organic Search) 트래픽을 스스로 돈을 내고 사 오는 **'자기 잠식(Cannibalization)'**에 불과하다는 뼈아픈 진실을 알아보았습니다.
+[지난 1편](/posts/2026-04-29-brand-keyword-cannibalization-part1)에서는 막대한 예산을 들여 자사 브랜드 키워드에 검색 광고(SA)를 집행하는 것이, 사실은 무료로 얻을 수 있는 자연 검색(Organic Search) 트래픽을 스스로 돈을 내고 사 오는 **'자기 잠식(Cannibalization)'**에 불과하다는 뼈아픈 진실을 알아보았습니다.
 
 그렇다면 마케터들은 왜 바보같이 계속해서 브랜드 키워드에 막대한 예산을 쏟아붓고 있는 것일까요? 
 

@@ -10,7 +10,7 @@ related_posts:
   - 2026-05-10-ceo-cmo-data-disconnect-incrementality
 ---
 
-*마케팅 데이터 함정 퀴즈 시리즈 3편입니다. [1편](/ko/posts/2026-05-13-marketing-quiz-1-causality), [2편](/ko/posts/2026-05-13-marketing-quiz-2-roas)에 이어, 이번에는 평균과 통계가 만들어내는 속임수를 다룹니다.*
+*마케팅 데이터 함정 퀴즈 시리즈 3편입니다. [1편](/posts/2026-05-13-marketing-quiz-1-causality), [2편](/posts/2026-05-13-marketing-quiz-2-roas)에 이어, 이번에는 평균과 통계가 만들어내는 속임수를 다룹니다.*
 
 ---
 
@@ -38,7 +38,7 @@ related_posts:
 **기만 2: 기준점의 왜곡**
 "3개월 내 단기 합격"은 수험 준비 전체 기간이 아니라, **에듀윌 강의 수강 이후 합격까지 걸린 기간**만 측정한 것이었습니다. 다른 학원에서 1년 넘게 공부하다가 마지막에 에듀윌을 3개월 들은 사람도 "3개월 단기 합격자"로 분류되었습니다.
 
-> 🔗 **더 알아보기:** ["10명 중 9명 합격"의 함정: 에듀윌 사태로 본 데이터 마사지](/ko/posts/2026-05-12-eduwill-data-massage-false-advertising)
+> 🔗 **더 알아보기:** ["10명 중 9명 합격"의 함정: 에듀윌 사태로 본 데이터 마사지](/posts/2026-05-12-eduwill-data-massage-false-advertising)
 
 ---
 
@@ -55,7 +55,7 @@ related_posts:
 
 또한, LTV 계산 자체에도 함정이 있습니다. 할인율(Discount Rate)을 적용하지 않거나, 이탈률을 지나치게 낙관적으로 가정하면 LTV가 실제보다 크게 부풀려집니다.
 
-> 🔗 **더 알아보기:** [CEO와 CMO의 데이터 동상이몽](/ko/posts/2026-05-10-ceo-cmo-data-disconnect-incrementality)
+> 🔗 **더 알아보기:** [CEO와 CMO의 데이터 동상이몽](/posts/2026-05-10-ceo-cmo-data-disconnect-incrementality)
 
 ---
 
@@ -81,7 +81,7 @@ p-value 0.04는 "우연히 이런 차이가 발생할 확률이 4%"라는 뜻입
 
 반대 방향도 마찬가지입니다. "이탈률이 100% 증가했습니다!"는 0.5%에서 1%로 오른 것일 수 있어, 실제로는 큰 문제가 아닐 수 있습니다. 항상 **절대적 수치를 함께 확인**하는 습관이 필요합니다.
 
-> 🔗 **더 알아보기:** [경영진을 속이는 리포트와 대시보드 시각화 원칙](/ko/posts/2026-05-10-agency-report-dashboard-audit)
+> 🔗 **더 알아보기:** [경영진을 속이는 리포트와 대시보드 시각화 원칙](/posts/2026-05-10-agency-report-dashboard-audit)
 
 ---
 
@@ -95,14 +95,14 @@ p-value 0.04는 "우연히 이런 차이가 발생할 확률이 4%"라는 뜻입
 
 이것은 대행사 리포트에서 가장 흔하게 발견되는 시각적 기만입니다. 대시보드를 볼 때는 반드시 **Y축의 시작점과 스케일**을 먼저 확인하세요.
 
-> 🔗 **더 알아보기:** [경영진을 속이는 리포트와 대시보드 시각화 원칙](/ko/posts/2026-05-10-agency-report-dashboard-audit)
+> 🔗 **더 알아보기:** [경영진을 속이는 리포트와 대시보드 시각화 원칙](/posts/2026-05-10-agency-report-dashboard-audit)
 
 ---
 
 ## 이 시리즈의 다른 글
 
-- 📊 **1편**: [인과관계 vs 상관관계](/ko/posts/2026-05-13-marketing-quiz-1-causality)
-- 📊 **2편**: [ROAS의 거짓말](/ko/posts/2026-05-13-marketing-quiz-2-roas)
+- 📊 **1편**: [인과관계 vs 상관관계](/posts/2026-05-13-marketing-quiz-1-causality)
+- 📊 **2편**: [ROAS의 거짓말](/posts/2026-05-13-marketing-quiz-2-roas)
 - 👻 **4편**: 노출·클릭·트래픽의 허영 *(예정)*
 - 🤖 **5편**: 타겟팅과 알고리즘의 함정 *(예정)*
 - 🗣️ **6편**: 설문·리서치 데이터의 왜곡 *(예정)*

@@ -39,7 +39,7 @@ related_posts:
 
 진정한 인과관계를 증명하려면 지역별 A/B 테스트(Geo-Experiment)처럼 **통제군이 있는 실험**이 반드시 필요합니다.
 
-> 🔗 **더 알아보기:** [광고를 하면 매출이 정말 늘어나는가?](/ko/posts/2026-05-12-does-advertising-increase-sales)
+> 🔗 **더 알아보기:** [광고를 하면 매출이 정말 늘어나는가?](/posts/2026-05-12-does-advertising-increase-sales)
 
 ---
 
@@ -53,7 +53,7 @@ VIP 멤버십에 돈을 내고 가입하는 사람은 **애초에 쇼핑몰을 �
 
 이것이 바로 **"정태적 집단 비교(Static-group Comparison)"**의 치명적 오류입니다. 두 집단을 비교할 때 무작위 배정(Randomization)을 하지 않으면, 출발선 자체가 다르기 때문에 어떤 비교도 의미가 없습니다.
 
-> 🔗 **더 알아보기:** [인과관계를 망치는 3가지 엉터리 실험 설계](/ko/posts/2026-05-12-pre-experimental-designs-causality-traps)
+> 🔗 **더 알아보기:** [인과관계를 망치는 3가지 엉터리 실험 설계](/posts/2026-05-12-pre-experimental-designs-causality-traps)
 
 ---
 
@@ -80,7 +80,7 @@ VIP 멤버십에 돈을 내고 가입하는 사람은 **애초에 쇼핑몰을 �
 
 정확한 측정을 하려면, 랜딩페이지를 바꾼 그룹(실험군)과 바꾸지 않은 그룹(통제군)에 트래픽을 50:50으로 무작위 분배하는 **A/B 테스트**가 필요합니다.
 
-> 🔗 **더 알아보기:** [인과관계를 망치는 3가지 엉터리 실험 설계](/ko/posts/2026-05-12-pre-experimental-designs-causality-traps)
+> 🔗 **더 알아보기:** [인과관계를 망치는 3가지 엉터리 실험 설계](/posts/2026-05-12-pre-experimental-designs-causality-traps)
 
 ---
 
@@ -94,7 +94,7 @@ VIP 멤버십에 돈을 내고 가입하는 사람은 **애초에 쇼핑몰을 �
 
 RTB House의 사례에서 보듯, 이 진짜 효과를 측정하려면 **고스트 애드(Ghost Ads)** 같은 정교한 실험 설계가 필요합니다. 광고를 보여줄 타이밍에 '빈 광고(PSA)'를 보여주는 통제군을 만들어, 진짜 증분(Incremental) 구매만 골라내는 것입니다.
 
-> 🔗 **더 알아보기:** [RTB House는 어떻게 딥러닝으로 증분을 증명하는가?](/ko/posts/2026-05-12-rtb-house-deep-learning-incrementality)
+> 🔗 **더 알아보기:** [RTB House는 어떻게 딥러닝으로 증분을 증명하는가?](/posts/2026-05-12-rtb-house-deep-learning-incrementality)
 
 ---
 
@@ -108,7 +108,7 @@ RTB House의 사례에서 보듯, 이 진짜 효과를 측정하려면 **고스�
 
 이것은 광고 플랫폼이 ROAS를 뻥튀기하는 메커니즘과 정확히 동일합니다. 어차피 구매할 사람에게 광고를 보여주고, 그 구매를 광고의 공로로 돌리는 것입니다.
 
-> 🔗 **더 알아보기:** [ROAS는 가짜다: Attribution과 Incrementality의 결정적 차이](/ko/posts/2026-05-10-roas-illusion-attribution-vs-incrementality)
+> 🔗 **더 알아보기:** [ROAS는 가짜다: Attribution과 Incrementality의 결정적 차이](/posts/2026-05-10-roas-illusion-attribution-vs-incrementality)
 
 ---
 
@@ -130,7 +130,7 @@ RTB House의 사례에서 보듯, 이 진짜 효과를 측정하려면 **고스�
 
 ## 이 시리즈의 다른 글
 
-- 📊 **2편**: [ROAS와 성과 측정의 착시](/ko/posts/2026-05-13-marketing-quiz-2-roas) *(예정)*
+- 📊 **2편**: [ROAS와 성과 측정의 착시](/posts/2026-05-13-marketing-quiz-2-roas) *(예정)*
 - 📉 **3편**: 평균의 함정과 통계적 속임수 *(예정)*
 - 👻 **4편**: 노출·클릭·트래픽의 허영 *(예정)*
 - 🤖 **5편**: 타겟팅과 알고리즘의 함정 *(예정)*

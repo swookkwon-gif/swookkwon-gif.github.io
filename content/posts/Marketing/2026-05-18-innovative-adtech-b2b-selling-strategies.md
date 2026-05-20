@@ -48,7 +48,7 @@ tags: ["B2B세일즈", "AdTech", "RTBHouse", "TheTradeDesk", "Criteo", "OutcomeB
 
 AI를 단순히 '블랙박스' 알고리즘으로 포장하는 것을 넘어, 인간의 한계를 초월하는 '스케일 멀티플라이어(Scale Multiplier)'로 세일즈합니다.
 
-- **초개인화와 인텐트(Intent) 인식:** 딥러닝(Deep Learning)은 기존 머신러닝(Machine Learning)과 달리, 수조 개의 시그널을 실시간으로 분석하여 40~120밀리초 내에 노출의 정확한 가치를 판단합니다.
+- **초개인화와 인텐트(Intent) 인식:** 딥러닝(Deep Learning)은 기존 머신러닝(Machine Learning)과 달리, 수조 개의 시그널을 실시간으로 분석하여 40-120밀리초 내에 노출의 정확한 가치를 판단합니다.
 - **AI as a Value Multiplier:** 플랫폼 수수료를 광고주가 지불해야 하는 '테크 택스'가 아니라, 오히려 낭비되는 클릭(Accidental/low-value clicks)을 50% 이상 줄여주는 확실한 '비용 절감 수단'이자 '성과 배당금'으로 재정의합니다. 
 
 ---

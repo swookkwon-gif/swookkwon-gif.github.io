@@ -12,7 +12,7 @@ related_posts:
   - 2026-05-10-attribution-models-dilemma-dda
 ---
 
-*마케팅 데이터 함정 퀴즈 시리즈 2편입니다. [1편(인과관계 vs 상관관계)](/ko/posts/2026-05-13-marketing-quiz-1-causality)에 이어, 이번에는 ROAS와 성과 측정 지표가 만들어내는 착시를 다룹니다.*
+*마케팅 데이터 함정 퀴즈 시리즈 2편입니다. [1편(인과관계 vs 상관관계)](/posts/2026-05-13-marketing-quiz-1-causality)에 이어, 이번에는 ROAS와 성과 측정 지표가 만들어내는 착시를 다룹니다.*
 
 ---
 
@@ -26,7 +26,7 @@ ROAS 1,500%라는 숫자 뒤에는 불편한 진실이 숨어 있습니다. "나
 
 즉, ROAS 1,500%는 광고가 고객을 '만들어낸' 것이 아니라, 어차피 올 고객의 마지막 동선에 서서 **통행세**를 걷은 것입니다. 이 예산을 논브랜드 키워드나 신규 고객 획득 채널로 옮기면 진짜 성장을 만들어낼 수 있습니다.
 
-> 🔗 **더 알아보기:** [브랜드 검색광고 딜레마 1편: 자기 잠식의 덫](/ko/posts/2026-04-29-brand-keyword-cannibalization-part1)
+> 🔗 **더 알아보기:** [브랜드 검색광고 딜레마 1편: 자기 잠식의 덫](/posts/2026-04-29-brand-keyword-cannibalization-part1)
 
 ---
 
@@ -40,7 +40,7 @@ ROAS는 **기여도(Attribution)**를 측정한 것이지, **증분성(Increment
 
 Uber는 이 사실을 뼈아프게 깨달았습니다. 연간 $1.5억의 디지털 광고비 중 2/3가 사실상 **어차피 앱을 설치할 사람들에게 노출되는 허수 광고**였습니다. ROAS 리포트만 보면 아무 문제가 없었지만, 광고를 끄자 앱 설치에 전혀 변화가 없었던 것입니다.
 
-> 🔗 **더 알아보기:** [ROAS는 가짜다: Attribution과 Incrementality의 결정적 차이](/ko/posts/2026-05-10-roas-illusion-attribution-vs-incrementality)
+> 🔗 **더 알아보기:** [ROAS는 가짜다: Attribution과 Incrementality의 결정적 차이](/posts/2026-05-10-roas-illusion-attribution-vs-incrementality)
 
 ---
 
@@ -54,7 +54,7 @@ Uber는 이 사실을 뼈아프게 깨달았습니다. 연간 $1.5억의 디지�
 
 이것이 바로 라스트 클릭의 구조적 한계이며, 데이터 기반 기여(DDA)나 마르코프 체인(Markov Chain) 같은 멀티 터치 모델이 필요한 이유입니다.
 
-> 🔗 **더 알아보기:** [어트리뷰션 모델의 딜레마: 라스트 클릭의 종말과 DDA의 부상](/ko/posts/2026-05-10-attribution-models-dilemma-dda)
+> 🔗 **더 알아보기:** [어트리뷰션 모델의 딜레마: 라스트 클릭의 종말과 DDA의 부상](/posts/2026-05-10-attribution-models-dilemma-dda)
 
 ---
 
@@ -68,7 +68,7 @@ Performance Max(PMax)는 구글의 AI가 검색, 디스플레이, 유튜브, 지
 
 실제로 PMax의 게재 위치(Placement)를 감사해 보면, 상당 부분이 유튜브 키즈 채널의 오클릭이나 MFA(Made For Advertising) 사이트에 노출되는 경우가 발견됩니다.
 
-> 🔗 **더 알아보기:** [PMax의 블랙박스 해체와 실무진의 이탈 현상](/ko/posts/2026-05-10-pmax-blackbox-exodus)
+> 🔗 **더 알아보기:** [PMax의 블랙박스 해체와 실무진의 이탈 현상](/posts/2026-05-10-pmax-blackbox-exodus)
 
 ---
 
@@ -84,7 +84,7 @@ Performance Max(PMax)는 구글의 AI가 검색, 디스플레이, 유튜브, 지
 
 대행사에게 반드시 **브랜드와 논브랜드를 분리한 리포트**를 요구하세요. 분리를 거부하는 대행사는 의심해야 합니다.
 
-> 🔗 **더 알아보기:** [경영진을 속이는 리포트와 대시보드 시각화 원칙](/ko/posts/2026-05-10-agency-report-dashboard-audit)
+> 🔗 **더 알아보기:** [경영진을 속이는 리포트와 대시보드 시각화 원칙](/posts/2026-05-10-agency-report-dashboard-audit)
 
 ---
 
@@ -101,7 +101,7 @@ GA4(구글 애널리틱스 4)의 전환 데이터와 실제 비즈니스 매출�
 
 CEO는 재무제표의 매출을 보고, CMO는 GA4의 전환을 봅니다. 이 두 숫자가 다르면 마케팅 팀의 신뢰가 무너집니다. 이것이 바로 **CEO와 CMO의 데이터 동상이몽**입니다.
 
-> 🔗 **더 알아보기:** [CEO와 CMO의 데이터 동상이몽: 마케팅 대시보드가 재무제표를 속이는 법](/ko/posts/2026-05-10-ceo-cmo-data-disconnect-incrementality)
+> 🔗 **더 알아보기:** [CEO와 CMO의 데이터 동상이몽: 마케팅 대시보드가 재무제표를 속이는 법](/posts/2026-05-10-ceo-cmo-data-disconnect-incrementality)
 
 ---
 
@@ -113,13 +113,13 @@ CEO는 재무제표의 매출을 보고, CMO는 GA4의 전환을 봅니다. 이 
 
 플랫폼의 비즈니스 모델은 광고주가 더 많은 돈을 쓰게 만드는 것입니다. 그래서 리포트는 항상 "당신의 광고가 이 매출을 만들었습니다!"라는 방향으로 설계됩니다. 플랫폼이 보여주는 성과와 진짜 증분(Incremental) 성과의 차이를 측정하려면, **독립적인 증분 테스트(Incrementality Test)**가 필요합니다.
 
-> 🔗 **더 알아보기:** [ROAS는 가짜다: Attribution과 Incrementality의 결정적 차이](/ko/posts/2026-05-10-roas-illusion-attribution-vs-incrementality)
+> 🔗 **더 알아보기:** [ROAS는 가짜다: Attribution과 Incrementality의 결정적 차이](/posts/2026-05-10-roas-illusion-attribution-vs-incrementality)
 
 ---
 
 ## 이 시리즈의 다른 글
 
-- 📊 **1편**: [인과관계 vs 상관관계](/ko/posts/2026-05-13-marketing-quiz-1-causality)
+- 📊 **1편**: [인과관계 vs 상관관계](/posts/2026-05-13-marketing-quiz-1-causality)
 - 📉 **3편**: 평균의 함정과 통계적 속임수 *(예정)*
 - 👻 **4편**: 노출·클릭·트래픽의 허영 *(예정)*
 - 🤖 **5편**: 타겟팅과 알고리즘의 함정 *(예정)*

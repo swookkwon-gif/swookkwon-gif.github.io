@@ -233,7 +233,7 @@ NotebookLM에서 좋은 답변을 얻으려면 **구체적으로 질문**하는 
 
 ## NotebookLM 100% 활용하기 (2편) — Deep Research와 AI 질의응답
 
-[1편](/ko/posts/2026-05-03-notebooklm-guide-part1-intro)에서는 NotebookLM의 기본 개념과 노트북 생성, 소스 추가 방법을 알아봤습니다. 이번 2편에서는 NotebookLM의 가장 강력한 기능들을 깊이 다룹니다.
+[1편](/posts/2026-05-03-notebooklm-guide-part1-intro)에서는 NotebookLM의 기본 개념과 노트북 생성, 소스 추가 방법을 알아봤습니다. 이번 2편에서는 NotebookLM의 가장 강력한 기능들을 깊이 다룹니다.
 
 - **Deep Research**: AI가 자동으로 웹을 검색하여 관련 소스를 수집
 - **AI 채팅**: 소스 기반 질의응답과 출처 인용
@@ -471,7 +471,7 @@ NotebookLM은 채팅의 동작 방식을 커스터마이징할 수 있습니다:
 
 ## NotebookLM 100% 활용하기 (3편) — Studio 아티팩트 9종 완전정복
 
-[1편](/ko/posts/2026-05-03-notebooklm-guide-part1-intro)에서 기본 세팅을, [2편](/ko/posts/2026-05-03-notebooklm-guide-part2-research)에서 리서치와 채팅을 다뤘습니다. 이번 3편에서는 NotebookLM의 가장 인상적인 기능 — **Studio 아티팩트**를 완전히 정복합니다.
+[1편](/posts/2026-05-03-notebooklm-guide-part1-intro)에서 기본 세팅을, [2편](/posts/2026-05-03-notebooklm-guide-part2-research)에서 리서치와 채팅을 다뤘습니다. 이번 3편에서는 NotebookLM의 가장 인상적인 기능 — **Studio 아티팩트**를 완전히 정복합니다.
 
 ---
 
@@ -778,7 +778,7 @@ NotebookLM은 채팅의 동작 방식을 커스터마이징할 수 있습니다:
 
 ## NotebookLM 100% 활용하기 (4편) — 블로그 자동화 파이프라인
 
-[1편](/ko/posts/2026-05-03-notebooklm-guide-part1-intro)~[3편](/ko/posts/2026-05-03-notebooklm-guide-part3-studio)까지 NotebookLM의 UI 기반 사용법을 다뤘습니다. 이번 4편에서는 **프로그래밍으로 NotebookLM을 자동화**하는 방법을 다룹니다.
+[1편](/posts/2026-05-03-notebooklm-guide-part1-intro)~[3편](/posts/2026-05-03-notebooklm-guide-part3-studio)까지 NotebookLM의 UI 기반 사용법을 다뤘습니다. 이번 4편에서는 **프로그래밍으로 NotebookLM을 자동화**하는 방법을 다룹니다.
 
 > 이 글은 개발자 또는 자동화에 관심 있는 파워유저를 대상으로 합니다.
 
@@ -1227,7 +1227,7 @@ jobs:
 
 ## NotebookLM 100% 활용하기 (5편) — 블로그 시리즈에서 책 출간까지
 
-[1편](/ko/posts/2026-05-03-notebooklm-guide-part1-intro)부터 [4편](/ko/posts/2026-05-03-notebooklm-guide-part4-automation)까지 NotebookLM의 기본 사용법, 리서치, Studio 아티팩트, 그리고 자동화를 다뤘습니다. 이 마지막 편에서는 **블로그 시리즈를 책으로 발전시키는 워크플로우**를 완성합니다.
+[1편](/posts/2026-05-03-notebooklm-guide-part1-intro)부터 [4편](/posts/2026-05-03-notebooklm-guide-part4-automation)까지 NotebookLM의 기본 사용법, 리서치, Studio 아티팩트, 그리고 자동화를 다뤘습니다. 이 마지막 편에서는 **블로그 시리즈를 책으로 발전시키는 워크플로우**를 완성합니다.
 
 ---
 

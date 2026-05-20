@@ -22,7 +22,7 @@ related_posts:
 
 진짜 지불 의향을 측정하려면 **실제 구매 데이터**, **컨조인트 분석(Conjoint Analysis)**, 또는 **A/B 가격 테스트**를 활용해야 합니다.
 
-> 🔗 **더 알아보기:** [고객의 설문조사는 진실일까? 사회적 바람직성 편향](/ko/posts/2026-05-12-social-desirability-bias-survey-flaws)
+> 🔗 **더 알아보기:** [고객의 설문조사는 진실일까? 사회적 바람직성 편향](/posts/2026-05-12-social-desirability-bias-survey-flaws)
 
 ---
 
@@ -62,17 +62,17 @@ NPS를 참고 지표로 활용하되, 이것 하나로 고객 만족도를 단�
 
 마케팅 교훈: 민감한 주제(예: 가격 민감도, 경쟁사 사용 여부, 불만 사항)에 대한 설문 결과는 반드시 **행동 데이터(Behavioral Data)**로 교차 검증해야 합니다.
 
-> 🔗 **더 알아보기:** [고객의 설문조사는 진실일까? 사회적 바람직성 편향](/ko/posts/2026-05-12-social-desirability-bias-survey-flaws)
+> 🔗 **더 알아보기:** [고객의 설문조사는 진실일까? 사회적 바람직성 편향](/posts/2026-05-12-social-desirability-bias-survey-flaws)
 
 ---
 
 ## 이 시리즈의 다른 글
 
-- 📊 **1편**: [인과관계 vs 상관관계](/ko/posts/2026-05-13-marketing-quiz-1-causality)
-- 📊 **2편**: [ROAS의 거짓말](/ko/posts/2026-05-13-marketing-quiz-2-roas)
-- 📉 **3편**: [평균의 함정](/ko/posts/2026-05-13-marketing-quiz-3-statistics)
-- 👻 **4편**: [노출·클릭·트래픽의 허영](/ko/posts/2026-05-13-marketing-quiz-4-vanity-metrics)
-- 🤖 **5편**: [타겟팅과 알고리즘의 함정](/ko/posts/2026-05-13-marketing-quiz-5-algorithm)
+- 📊 **1편**: [인과관계 vs 상관관계](/posts/2026-05-13-marketing-quiz-1-causality)
+- 📊 **2편**: [ROAS의 거짓말](/posts/2026-05-13-marketing-quiz-2-roas)
+- 📉 **3편**: [평균의 함정](/posts/2026-05-13-marketing-quiz-3-statistics)
+- 👻 **4편**: [노출·클릭·트래픽의 허영](/posts/2026-05-13-marketing-quiz-4-vanity-metrics)
+- 🤖 **5편**: [타겟팅과 알고리즘의 함정](/posts/2026-05-13-marketing-quiz-5-algorithm)
 - 💰 **7편**: 예산 배분과 장기/단기 전략 *(예정)*
 
 ---

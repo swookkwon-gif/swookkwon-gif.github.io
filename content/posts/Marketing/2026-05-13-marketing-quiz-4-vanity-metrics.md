@@ -11,7 +11,7 @@ related_posts:
   - 2026-05-12-does-advertising-increase-sales
 ---
 
-*마케팅 데이터 함정 퀴즈 시리즈 4편입니다. [1편](/ko/posts/2026-05-13-marketing-quiz-1-causality), [2편](/ko/posts/2026-05-13-marketing-quiz-2-roas), [3편](/ko/posts/2026-05-13-marketing-quiz-3-statistics)에 이어, 이번에는 노출·클릭·트래픽이 만들어내는 '허영 지표(Vanity Metrics)'의 함정을 다룹니다.*
+*마케팅 데이터 함정 퀴즈 시리즈 4편입니다. [1편](/posts/2026-05-13-marketing-quiz-1-causality), [2편](/posts/2026-05-13-marketing-quiz-2-roas), [3편](/posts/2026-05-13-marketing-quiz-3-statistics)에 이어, 이번에는 노출·클릭·트래픽이 만들어내는 '허영 지표(Vanity Metrics)'의 함정을 다룹니다.*
 
 ---
 
@@ -25,7 +25,7 @@ Karen Nelson-Field 교수의 연구에 따르면, 디지털 광고의 **평균 �
 
 최근에는 노출 당 비용(CPM)이 아닌 **주목 당 비용(aCPM, attentive CPM)**을 사용해야 한다는 주장이 힘을 얻고 있습니다.
 
-> 🔗 **더 알아보기:** [디지털 시대에 마케팅을 더 효과적으로 하려면?](/ko/posts/2026-05-12-how-to-do-marketing-effectively-digital-era)
+> 🔗 **더 알아보기:** [디지털 시대에 마케팅을 더 효과적으로 하려면?](/posts/2026-05-12-how-to-do-marketing-effectively-digital-era)
 
 ---
 
@@ -39,7 +39,7 @@ Karen Nelson-Field 교수의 연구에 따르면, 디지털 광고의 **평균 �
 
 Dr. Augustine Fou의 독립 분석에 따르면, 캠페인에 따라 **20%에서 60% 이상**의 광고비가 허수 트래픽으로 증발하고 있습니다.
 
-> 🔗 **더 알아보기:** [Ad Fraud 완전 가이드: 봇, MFA, 브랜드 세이프티](/ko/posts/2026-05-12-adtech-ad-fraud-brand-safety)
+> 🔗 **더 알아보기:** [Ad Fraud 완전 가이드: 봇, MFA, 브랜드 세이프티](/posts/2026-05-12-adtech-ad-fraud-brand-safety)
 
 ---
 
@@ -82,7 +82,7 @@ CPI(Cost Per Install) 모델에서 사기꾼들이 돈을 버는 구조는 단�
 
 10,000건의 설치 중 실제 진성 유저가 설치한 것은 절반 이하일 수 있습니다. 이를 확인하려면 설치 후 **D1/D7 리텐션(잔존율)**을 반드시 체크해야 합니다. 사기 설치는 앱을 열지도 않으므로, D1 리텐션이 비정상적으로 낮다면(예: 5% 미만) 봇이나 클릭팜일 가능성이 매우 높습니다.
 
-> 🔗 **더 알아보기:** [Click Farm과 Ad Fraud의 실태와 해결책](/ko/posts/2026-05-09-ad-fraud-click-farm)
+> 🔗 **더 알아보기:** [Click Farm과 Ad Fraud의 실태와 해결책](/posts/2026-05-09-ad-fraud-click-farm)
 
 ---
 
@@ -96,15 +96,15 @@ CPI(Cost Per Install) 모델에서 사기꾼들이 돈을 버는 구조는 단�
 
 더 위험한 것은 100만 트래픽 중 상당 부분이 **MFA 사이트를 통한 저품질 리퍼럴 트래픽**이거나, **봇 트래픽**일 수 있다는 점입니다. 바운스율(Bounce Rate)이 85% 이상이고 평균 세션 시간이 10초 미만이라면, 100만이라는 숫자는 완전한 허영 지표(Vanity Metric)입니다.
 
-> 🔗 **더 알아보기:** [광고를 하면 매출이 정말 늘어나는가?](/ko/posts/2026-05-12-does-advertising-increase-sales)
+> 🔗 **더 알아보기:** [광고를 하면 매출이 정말 늘어나는가?](/posts/2026-05-12-does-advertising-increase-sales)
 
 ---
 
 ## 이 시리즈의 다른 글
 
-- 📊 **1편**: [인과관계 vs 상관관계](/ko/posts/2026-05-13-marketing-quiz-1-causality)
-- 📊 **2편**: [ROAS의 거짓말](/ko/posts/2026-05-13-marketing-quiz-2-roas)
-- 📉 **3편**: [평균의 함정과 통계적 속임수](/ko/posts/2026-05-13-marketing-quiz-3-statistics)
+- 📊 **1편**: [인과관계 vs 상관관계](/posts/2026-05-13-marketing-quiz-1-causality)
+- 📊 **2편**: [ROAS의 거짓말](/posts/2026-05-13-marketing-quiz-2-roas)
+- 📉 **3편**: [평균의 함정과 통계적 속임수](/posts/2026-05-13-marketing-quiz-3-statistics)
 - 🤖 **5편**: 타겟팅과 알고리즘의 함정 *(예정)*
 - 🗣️ **6편**: 설문·리서치 데이터의 왜곡 *(예정)*
 - 💰 **7편**: 예산 배분과 장기/단기 전략 *(예정)*

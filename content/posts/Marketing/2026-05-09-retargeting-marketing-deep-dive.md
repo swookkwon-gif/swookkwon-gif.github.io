@@ -143,5 +143,5 @@ Ghost Ads는 통제군에게 비싼 공익광고(PSA)를 보여주는 대신, �
 - **Lewis, R. A., & Rao, J. M. (2015).** *On the Near-Impossibility of Measuring the Returns to Advertising.* Quarterly Journal of Economics.
 - **Johnson, G. A., Lewis, R. A., & Nubbemeyer, E. I. (2017).** *Ghost Ads: Improving the Economics of Measuring Online Ad Effectiveness.* Journal of Marketing Research.
 - **Gopalakrishnan, A., & Park, Y. H. (2021).** *The Effect of Retargeting on Consumer Purchase Timing.* Marketing Science.
-- [ROAS는 가짜다: Attribution과 Incrementality의 결정적 차이](/ko/posts/2026-05-10-roas-illusion-attribution-vs-incrementality) *(관련 포스트)*
-- [리타게팅 광고, 무조건 구체적일수록 좋을까?](/ko/posts/2026-05-13-when-does-retargeting-work-preference-formation) *(관련 포스트)*
+- [ROAS는 가짜다: Attribution과 Incrementality의 결정적 차이](/posts/2026-05-10-roas-illusion-attribution-vs-incrementality) *(관련 포스트)*
+- [리타게팅 광고, 무조건 구체적일수록 좋을까?](/posts/2026-05-13-when-does-retargeting-work-preference-formation) *(관련 포스트)*

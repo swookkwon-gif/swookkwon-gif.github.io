@@ -28,7 +28,7 @@ related_posts:
 ### ② 클릭 팜 (Click Farm)
 기계(봇)가 자꾸 적발되자, 아예 인건비가 싼 국가에 창고를 빌려 수천 대의 스마트폰을 벽에 꽂아두고 **'사람이 직접'** 하루 종일 클릭만 반복하는 공장을 만들었습니다. 사람이 누르는 것이기 때문에 기계를 잡아내는 알고리즘을 무력화시킵니다. 앱 설치당 단가를 받는 CPI(Cost Per Install) 광고 예산을 갉아먹는 주범입니다.
 
-> 🔗 **더 깊이 알고 싶다면:** [Click Farm과 Ad Fraud의 실태와 해결책](/ko/posts/2026-05-09-ad-fraud-click-farm) — IP 인텔리전스, 지역별 사기율 데이터 등 심층 분석
+> 🔗 **더 깊이 알고 싶다면:** [Click Farm과 Ad Fraud의 실태와 해결책](/posts/2026-05-09-ad-fraud-click-farm) — IP 인텔리전스, 지역별 사기율 데이터 등 심층 분석
 
 ### ③ 쓰레기 사이트: MFA (Made For Advertising)
 최근 애드테크 업계의 가장 큰 골칫거리입니다. 오직 '광고 수익'만을 타내기 위해 존재 가치가 없는 쓰레기 사이트를 붕어빵 찍어내듯 만듭니다.
@@ -38,7 +38,7 @@ related_posts:
 
 결국 마케터는 아무도 진지하게 글을 읽지 않는 조잡한 사이트에 수백만 원의 광고비를 낭비하게 됩니다.
 
-> 🔗 **더 깊이 알고 싶다면:** [MFA 웹사이트 완전 해부](/ko/posts/2026-05-09-ad-fraud-mfa) — Forbes 스캔들, Adalytics 보고서, ANA 데이터 등 상세 분석
+> 🔗 **더 깊이 알고 싶다면:** [MFA 웹사이트 완전 해부](/posts/2026-05-09-ad-fraud-mfa) — Forbes 스캔들, Adalytics 보고서, ANA 데이터 등 상세 분석
 
 ---
 
@@ -106,10 +106,10 @@ MFA와 봇 트래픽이 무서운 진짜 이유는 단순한 예산 낭비를 �
 
 ## 💡 이 시리즈의 다른 글
 
-*   📖 [『Avoiding Ad Fraud』 도서 심층 분석](/ko/posts/2026-05-12-book-review-avoiding-ad-fraud) — Methbot·3ve 사건과 ML 기반 탐지 기술
-*   🌐 [서브프라임 어텐션 크라이시스](/ko/posts/2026-05-10-subprime-attention-crisis-adscam) — 프로그래매틱 광고 시장의 거시적 붕괴 위험
-*   🖱️ [Click Farm 실태와 해결책](/ko/posts/2026-05-09-ad-fraud-click-farm) — IP 인텔리전스와 지역별 사기율 데이터
-*   🕸️ [MFA 웹사이트 완전 해부](/ko/posts/2026-05-09-ad-fraud-mfa) — Forbes 스캔들과 Adalytics 보고서
+*   📖 [『Avoiding Ad Fraud』 도서 심층 분석](/posts/2026-05-12-book-review-avoiding-ad-fraud) — Methbot·3ve 사건과 ML 기반 탐지 기술
+*   🌐 [서브프라임 어텐션 크라이시스](/posts/2026-05-10-subprime-attention-crisis-adscam) — 프로그래매틱 광고 시장의 거시적 붕괴 위험
+*   🖱️ [Click Farm 실태와 해결책](/posts/2026-05-09-ad-fraud-click-farm) — IP 인텔리전스와 지역별 사기율 데이터
+*   🕸️ [MFA 웹사이트 완전 해부](/posts/2026-05-09-ad-fraud-mfa) — Forbes 스캔들과 Adalytics 보고서
 
 ---
 
