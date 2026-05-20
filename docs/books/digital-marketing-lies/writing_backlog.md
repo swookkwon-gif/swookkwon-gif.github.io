@@ -12,7 +12,7 @@
 ### 📍 PART 1. 숫자의 배신 (폭로)
 *   **프롤로그: 당신 회사의 마케팅은 괜찮은가요?** (원고 완료 ➡️ [prologue.md](file:///Users/wook/WookAi/Booklog/docs/books/digital-marketing-lies/prologue.md))
     *   *관련 소스:* `who-is-the-patsy-in-digital-marketing.ko.md`
-*   **1장. 디지털 마케팅의 영토와 마케터의 착각** (원고 완료 ➡️ [chapter-01.md](file:///Users/wook/WookAi/Booklog/docs/books/digital-marketing-lies/chapter-01.md))
+*   **1장. 디지털 마케팅의 영토와 마케터의 착각** (원고 완료 - 애드테크 기초 과외 포함 ➡️ [chapter-01.md](file:///Users/wook/WookAi/Booklog/docs/books/digital-marketing-lies/chapter-01.md))
     *   *관련 소스:* `global-ad-market-size-estimates-gap`, `korea-digital-ad-market-size-analysis`
 *   **2장. 내 광고비를 훔쳐가는 유령들** (원고 완료 ➡️ [chapter-02-part1.md](file:///Users/wook/WookAi/Booklog/docs/books/digital-marketing-lies/chapter-02-part1.md) & [chapter-02-part2.md](file:///Users/wook/WookAi/Booklog/docs/books/digital-marketing-lies/chapter-02-part2.md))
     *   *관련 소스:* `uber-100m-attribution-fraud-case`, `ad-fraud-click-farm`, `adtech-ad-fraud-brand-safety`, `2026-05-20-latest-global-ad-fraud-scandals-2024-2026.ko.md`
