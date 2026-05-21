@@ -7,10 +7,6 @@ export default function robots(): MetadataRoute.Robots {
     rules: [
       {
         userAgent: '*',
-        disallow: '/',
-      },
-      {
-        userAgent: ['Googlebot', 'Yeti', 'Daumoa'],
         allow: '/',
         disallow: '/private/',
       },
