@@ -11,7 +11,6 @@ export interface PostData {
   excerpt: string;
   category: string;
   content: string;
-  author?: string;
   tags?: string[];
   related?: string[];
   relatedPosts?: { slug: string; title: string; date: string; category: string; excerpt: string }[];
@@ -114,7 +113,6 @@ export function getSortedPostsData(lang: string = 'ko'): PostData[] {
       content,
       title: data.title,
       date: postDateStr,
-      author: data.author || 'Antigravity',
       _sortTimestamp: sortTimestamp, // 내부 정렬용 필드
       excerpt: data.excerpt || generateExcerpt(content),
       category: derivedCategory,
@@ -199,7 +197,6 @@ export function getPostData(slug: string, lang: string = 'ko'): PostData {
     content,
     title: data.title,
     date: postDateStr,
-    author: data.author || 'Antigravity',
     excerpt: data.excerpt || generateExcerpt(content),
     category: derivedCategory,
     relatedPosts,
