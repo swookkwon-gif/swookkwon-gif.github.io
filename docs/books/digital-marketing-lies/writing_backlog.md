@@ -1,9 +1,9 @@
-# 📖 디지털 마케팅의 거짓말: 집필 백로그 (3막 구조 개정본)
+# 📖 디지털 마케팅의 거짓말: 집필 백로그 (전체 초안 동기화 버전)
 
 ## 📊 진행 상태 요약
-- **책의 전체 구성:** 총 9개 장 (단선적 챕터 흐름)
-- **원고 초안 완료 (Draft Complete):** 프롤로그, 1장, 2장 (총 3개 파일)
-- **연동 가능한 블로그 소스:** 총 24개 포스트 집필 및 연동 완료 (상태: **완료**)
+- **책의 전체 구성:** 총 9개 장 + 프롤로그 + 에필로그
+- **원고 초안 완료 (Draft Complete):** 프롤로그, 1장~9장, 에필로그 (전권 초안 확보 및 개정 고도화 진행 중)
+- **연동 가능한 블로그 소스:** 총 31개 포스트 집필 및 연동 완료 (상태: **완료**)
 
 ---
 
@@ -12,27 +12,27 @@
 *   **프롤로그: 당신 회사의 마케팅은 괜찮은가요?** (원고 완료 ➡️ [prologue.md](file:///Users/wook/WookAi/Booklog/docs/books/digital-marketing-lies/prologue.md))
     *   *관련 소스:* `who-is-the-patsy-in-digital-marketing.ko.md`
 *   **1장. 우리가 '클릭'에 1,000조 원을 바치는 이유** (원고 완료 ➡️ [chapter-01.md](file:///Users/wook/WookAi/Booklog/docs/books/digital-marketing-lies/chapter-01.md))
-    *   *관련 소스:* `global-ad-market-size-estimates-gap`, `korea-digital-ad-market-size-analysis`
+    *   *관련 소스:* `global-ad-market-size-estimates-gap`, `korea-digital-ad-market-size-analysis`, `2026-05-21-ultimate-data-literacy-marketing-quiz.ko.md`
 *   **2장. [경영자 속성 과외] 10분 만에 마스터하는 애드테크 톱니바퀴** (원고 완료 ➡️ [chapter-02.md](file:///Users/wook/WookAi/Booklog/docs/books/digital-marketing-lies/chapter-02.md))
-    *   *관련 소스:* `chapter-01.md` 내 애드테크 기초 가이드 분할 적용 예정
-*   **3장. 내 광고비를 훔쳐가는 유령들** (원고 완료 ➡️ [chapter-03-part1.md](file:///Users/wook/WookAi/Booklog/docs/books/digital-marketing-lies/chapter-03-part1.md) & [chapter-03-part2.md](file:///Users/wook/WookAi/Booklog/docs/books/digital-marketing-lies/chapter-03-part2.md))
-    *   *관련 소스:* `uber-100m-attribution-fraud-case`, `ad-fraud-click-farm`, `adtech-ad-fraud-brand-safety`, `2026-05-20-latest-global-ad-fraud-scandals-2024-2026.ko.md`, `adtech-supply-chain-tech-tax`, `brand-safety-paradox`
+    *   *관련 소스:* 애드테크 기본 과금 체계(CPM/CPC/CPA), 브라우저 뒤의 수집 엔진.
+*   **3장. 내 광고비를 훔쳐가는 유령들** (원고 완료 ➡️ [chapter-03.md](file:///Users/wook/WookAi/Booklog/docs/books/digital-marketing-lies/chapter-03.md))
+    *   *관련 소스:* `uber-100m-attribution-fraud-case`, `ad-fraud-click-farm`, `adtech-ad-fraud-brand-safety`, `2026-05-20-latest-global-ad-fraud-scandals-2024-2026.ko.md`, `adtech-supply-chain-tech-tax`, `brand-safety-paradox`, `2026-05-21-apr-kbeauty-digital-marketing-d2c-strategy.ko.md`
 *   **4장. 구글의 블랙박스: 내 지갑을 털어가는 AI와 비밀 프로젝트** (원고 완료 ➡️ [chapter-04.md](file:///Users/wook/WookAi/Booklog/docs/books/digital-marketing-lies/chapter-04.md))
-    *   *관련 소스:* `never-bid-brand-keywords`, `tadelis-paid-search`, `google-performance-max-analysis`, `pmax-blackbox-exodus`, `uac-app-fraud-defense`, `uac-fraud-placement-audit`, `2026-05-20-ad-tech-machine-learning-invalid-learning-loop.ko.md`, `brand-keyword-defense-part2`
-*   **5장. 메타의 숫자 게임: ROAS의 마법과 타겟팅의 덫** (원고 작성 대기)
+    *   *관련 소스:* `never-bid-brand-keywords`, `tadelis-paid-search`, `google-performance-max-analysis`, `pmax-blackbox-exodus`, `uac-app-fraud-defense`, `uac-fraud-placement-audit`, `2026-05-20-ad-tech-machine-learning-invalid-learning-loop.ko.md`, `brand-keyword-defense-part2`, `2026-05-21-brand-keyword-ads-incrementality-and-global-cpc.ko.md`, `2026-05-20-google-adtech-antitrust-ruling-unveiled-secrets.ko.md`
+*   **5장. 메타의 숫자 게임: ROAS의 마법과 타겟팅의 덫** (원고 완료 ➡️ [chapter-05.md](file:///Users/wook/WookAi/Booklog/docs/books/digital-marketing-lies/chapter-05.md))
     *   *관련 소스:* `meta-facebook-advertising-fraud-blackbox.ko.md`, `retargeting-marketing-deep-dive`, `targeting-trap-bias`, `2026-05-20-ad-tech-machine-learning-invalid-learning-loop.ko.md`
-*   **6장. 보이지 않는 유실: 대시보드가 감춘 데이터의 뒷면** (원고 작성 대기)
+*   **6장. 보이지 않는 유실: 대시보드가 감춘 데이터의 뒷면** (원고 완료 ➡️ [chapter-06.md](file:///Users/wook/WookAi/Booklog/docs/books/digital-marketing-lies/chapter-06.md))
     *   *관련 소스:* `analytics-measurement-discrepancy.ko.md`, `first-party-data-server-side-capi`, `capi-mmm-cookieless-infrastructure`, `measurement-paradox-observer-effect.ko.md`
-*   **7장. 지표의 착각과 성과 해석의 함정** (원고 작성 대기)
-    *   *관련 소스:* `boeing-sears-financial-metrics-failure`, `marketing-quiz-3-statistics`, `marketing-quiz-4-vanity-metrics`, `social-desirability-bias-survey-flaws`
-*   **8장. 인과관계와 증분(Incrementality)의 패러다임** (원고 작성 대기)
-    *   *관련 소스:* `marketing-quiz-1-causality`, `mmm-resurgence-limitations`
-*   **9장. 의사결정의 가드레일과 감시 자동화** (원고 작성 대기)
+*   **7장. 지표의 착각과 성과 해석의 함정** (원고 완료 ➡️ [chapter-07.md](file:///Users/wook/WookAi/Booklog/docs/books/digital-marketing-lies/chapter-07.md))
+    *   *관련 소스:* `boeing-sears-financial-metrics-failure`, `marketing-quiz-3-statistics`, `marketing-quiz-4-vanity-metrics`, `social-desirability-bias-survey-flaws`, `2026-05-12-eduwill-data-massage-false-advertising.md`, `2026-05-21-selection-bias-in-marketing-and-data.ko.md`
+*   **8장. 인과관계와 증분(Incrementality)의 패러다임** (원고 완료 ➡️ [chapter-08.md](file:///Users/wook/WookAi/Booklog/docs/books/digital-marketing-lies/chapter-08.md))
+    *   *관련 소스:* `marketing-quiz-1-causality`, `mmm-resurgence-limitations`, `2026-05-21-ad-incrementality-measurement-ultimate-guide.ko.md`, `2026-05-21-alex-schultz-marketing-science-blueprint.ko.md`
+*   **9장. 의사결정의 가드레일과 감시 자동화** (원고 완료 ➡️ [chapter-09.md](file:///Users/wook/WookAi/Booklog/docs/books/digital-marketing-lies/chapter-09.md))
     *   *관련 소스:* `agency-report-dashboard-audit`, `who-is-the-patsy-in-digital-marketing.ko.md`, `global-digital-ad-spend-waste-estimates.ko.md`
 
 ---
 
-## 🗂️ 세부 소스 포스트 DB (ID 추적)
+## 🗂️ 세부 소스 포스트 DB (최신 리서치 추가)
 
 | ID | 구분 | 포스트명 (가제) | 상태 | 연관 영역 | 핵심 레퍼런스 |
 |:---|:---|:---|:---:|:---|:---|
@@ -62,6 +62,11 @@
 | P13 | Phase 2 | 유령이 보는 광고: 2024-2026 최신 글로벌 광고 사기 스캔들 분석 | **완료** | Marketing | Adalytics (Forbes), HUMAN (SlopAds), DV |
 | P14 | Phase 2 | 독점의 알고리즘: 구글 반독점 소송 최종 판결과 비밀 프로젝트의 전말 | **완료** | Marketing | DOJ v. Google (2025), AdTech Trial |
 | P15 | Phase 2 | 알고리즘의 좀비 유도: AI 광고 엔진의 '무효 학습(Invalid Learning)' 피드백 루프 | **완료** | Marketing | Dr. Augustine Fou, Jounce Media |
+| P16 | Phase 3 | 데이터 리터러시 진단 퀴즈 포스트 | **완료** | Data | Ultimate Data Literacy Quiz |
+| P17 | Phase 3 | 에이피알(APR) 23.9% 영업이익률 D2C 분석 | **완료** | Marketing | APR S-1 Report |
+| P18 | Phase 1 | 글로벌 20개국 브랜드 키워드 CPC 매트릭스 | **완료** | Data | Global Keyword CPC |
+| P19 | Phase 1 | 광고비 증분 측정 마케팅 가이드 | **완료** | Data | Causal Lift Framework |
+| P20 | Phase 4 | Alex Schultz 마케팅 사이언스 분석 | **완료** | Data | Meta Marketing Science Blueprint |
+| P21 | Phase 3 | 마케팅과 데이터의 선택 편향(Selection Bias) | **완료** | Data | Selection Bias & Confounding |
 
----
-*마지막 업데이트: 2026-05-20*
+*마지막 업데이트: 2026-05-21*
