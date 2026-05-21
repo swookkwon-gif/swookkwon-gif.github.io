@@ -18,7 +18,7 @@ function remarkDemoteHeadings() {
 }
 
 import Link from "next/link";
-import { ArrowLeft, Calendar, Tag } from "lucide-react";
+import { ArrowLeft, Calendar, Tag, User } from "lucide-react";
 import React from "react";
 import ChartRenderer from "@/components/ChartRenderer";
 import MermaidRenderer from "@/components/MermaidRenderer";
@@ -96,12 +96,15 @@ export default async function EnPostPage({
         <h1 className="text-xl md:text-3xl font-bold mb-3 md:mb-5 text-neutral-900 tracking-tight leading-[1.3]">
           {post.title}
         </h1>
-        <div className="flex items-center gap-4 text-xs font-semibold text-neutral-500 uppercase tracking-widest mb-6 pb-6 border-b border-neutral-100">
+        <div className="flex items-center gap-4 text-xs font-semibold text-neutral-500 uppercase tracking-widest mb-6 pb-6 border-b border-neutral-100 flex-wrap">
           <Link href={`/en/category/${(post.category || "Insight").toLowerCase().replace(/\s+/g, '-')}`} className="flex items-center gap-1.5 hover:text-blue-600 transition-colors">
             <Tag size={14} /> {post.category || "Insight"}
           </Link>
           <span className="flex items-center gap-1.5">
             <Calendar size={14} /> {post.date}
+          </span>
+          <span className="flex items-center gap-1.5 text-neutral-700 text-sm font-bold normal-case">
+            <User size={14} className="text-neutral-400" /> {post.author}
           </span>
         </div>
       </header>
