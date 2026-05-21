@@ -13,6 +13,10 @@ async function convertToPdf() {
     }
 
     const markdownText = fs.readFileSync(mdPath, 'utf-8');
+    
+    // 이미지 경로 매핑: 마크다운에 적힌 /images/ 경로를 Puppeteer가 읽을 수 있도록 로컬 file:// 절대 경로로 치환
+    const publicImagesPath = path.resolve(bookDir, "../../../public/images").replace(/\\/g, '/');
+    const resolvedMarkdownText = markdownText.replace(/\/images\//g, `file://${publicImagesPath}/`);
 
     // Puppeteer 브라우저에서 실행할 HTML 뼈대 작성
     // marked.js CDN과 Google Fonts 및 예쁜 책 스타일 CSS 추가
@@ -30,15 +34,15 @@ async function convertToPdf() {
         <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
         <style>
             @page {
-                size: A4;
-                margin: 20mm 20mm 20mm 20mm;
+                size: A5;
+                margin: 15mm 15mm 15mm 15mm;
             }
             body {
                 font-family: 'Noto Sans KR', sans-serif;
-                font-size: 14px;
+                font-size: 16px;
                 line-height: 1.8;
                 color: #2c3e50;
-                padding: 10px;
+                padding: 5px;
             }
             /* 책 본문 스타일링 */
             h1, h2, h3, h4, h5, h6 {
@@ -134,7 +138,7 @@ async function convertToPdf() {
                 breaks: true
             });
             
-            const rawMarkdown = \`${markdownText.replace(/`/g, '\\`').replace(/\${/g, '\\${')}\`;
+            const rawMarkdown = \`${resolvedMarkdownText.replace(/`/g, '\\`').replace(/\${/g, '\\${')}\`;
             let html = marked.parse(rawMarkdown);
             
             const parser = new DOMParser();
@@ -166,12 +170,12 @@ async function convertToPdf() {
     console.log("PDF 파일 생성 중...");
     await page.pdf({
         path: pdfPath,
-        format: 'A4',
+        format: 'A5',
         margin: {
-            top: '25mm',
-            bottom: '25mm',
-            left: '25mm',
-            right: '25mm'
+            top: '15mm',
+            bottom: '15mm',
+            left: '15mm',
+            right: '15mm'
         },
         displayHeaderFooter: true,
         headerTemplate: '<div style="font-size: 8px; width: 100%; text-align: center; color: #bbb; font-family: sans-serif;">마케팅 데이터의 거짓말 - quick-summary-v0.1</div>',

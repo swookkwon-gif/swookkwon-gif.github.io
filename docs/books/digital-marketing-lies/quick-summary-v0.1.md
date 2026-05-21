@@ -412,6 +412,13 @@ gantt
 ---
 
 
+
+## 🖼️ 시각 자료 (참고 블로그)
+
+![Attribution Models Comparison](/images/attribution_models_comparison.png)
+![Web Analytics vs App Analytics](/images/digital_analytics_web_vs_app.png)
+
+
 <!-- PAGE_BREAK -->
 
 ---
@@ -682,6 +689,12 @@ ANA(미국광고주협회)의 프로그래매틱 추적 연구에 따르면, 평
 ---
 
 
+
+## 🖼️ 시각 자료 (참고 블로그)
+
+![Click Farm Concept](/images/click-farm.png)
+
+
 <!-- PAGE_BREAK -->
 
 ---
@@ -868,6 +881,15 @@ $$\text{카니발라이제이션 비율} = 100\% - \text{증분 클릭 기여율
     전체 검색 광고 예산을 2주간 일시적으로 20-30% 낮추거나 특정 지역에서 광고를 완전히 꺼보는 대조군 실험을 설계해야 한다. 광고를 차단한 대조군 지역에서 자연 유입이 광고 감소분을 얼마나 대체하는지 측정하여, 검색 광고가 가진 진짜 순수 증분 성과(Incrementality)의 실효 요율을 계산해 예산 한도를 재설정해야 한다.
 
 ---
+
+
+
+## 🖼️ 시각 자료 (참고 블로그)
+
+![Brand Keyword Expansion Strategy](/images/brand_bidding_hero.png)
+![eBay Brand Search Experiment Results](/images/tadelis_fig_7_1.jpeg)
+![App Marketing Fraud Defense](/images/app-fraud-defense.png)
+![MFA Concept Diagram](/images/mfa-diagram.png)
 
 
 <!-- PAGE_BREAK -->
@@ -1158,6 +1180,12 @@ RadumOne의 글로벌 연구에 따르면, 온라인 상에서 발생하는 전�
 ---
 
 
+
+## 🖼️ 시각 자료 (참고 블로그)
+
+![Server-Side Tracking vs Client-Side Pixel](/images/server_side_tracking_capi.png)
+
+
 <!-- PAGE_BREAK -->
 
 ---
@@ -1299,6 +1327,18 @@ SRM이 떴다는 것은 트래픽 유입 분배 엔진의 어딘가에 편향이
 ---
 
 
+
+## 🖼️ 시각 자료 (참고 블로그)
+
+![대공포를 맞고 간신히 귀환한 실제 B-17 폭격기](/images/b17_flak_damage.jpg)
+![생존자 편향의 함정: 돌아온 폭격기의 총탄 자국](/images/survivorship_bias.png)
+![뮤추얼 펀드의 무덤: 생존자 편향](/images/spiva_survivorship_bias.png)
+![UC 버클리 캠퍼스 전경](/images/uc_berkeley_campus.jpg)
+![심슨의 역설 인포그래픽](/images/simpsons_paradox.png)
+![A/B 테스트 심슨의 역설](/images/simpsons_paradox_ab_test.png)
+![A/B Testing Statistics](/images/ab_testing_statistics.png)
+
+
 <!-- PAGE_BREAK -->
 
 ---
@@ -1407,6 +1447,14 @@ MMM은 개인정보나 디바이스 ID를 전혀 추적하지 않는다. 대신 
 ---
 
 
+
+## 🖼️ 시각 자료 (참고 블로그)
+
+![허위 상관관계 인포그래픽](/images/spurious_correlation_cage_real.png)
+![아이스크림과 상어물림 허위 상관관계](/images/spurious_correlation_ice_cream.png)
+![미국 광고비와 소매 판매액의 허위 상관관계](/images/spurious_correlation_macro.png)
+
+
 <!-- PAGE_BREAK -->
 
 ---
@@ -1503,6 +1551,12 @@ AI 알고리즘은 맹목적이고 탐욕적이다. 광고주가 "전환 수를 
 이제 마케터는 데이터 대시보드 지표에 매몰된 수동적 오퍼레이터에서 해방되어, AI 시스템의 가드레일을 짓고 방어벽을 통제하는 진정한 **설계자**로 거듭나게 된다.
 
 ---
+
+
+
+## 🖼️ 시각 자료 (참고 블로그)
+
+![Data Signal Design](/images/data_signal_design.png)
 
 
 <!-- PAGE_BREAK -->

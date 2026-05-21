@@ -124,6 +124,12 @@ RadumOne의 글로벌 연구에 따르면, 온라인 상에서 발생하는 전�
 
 ---
 
+
+
+## 🖼️ 시각 자료 (참고 블로그)
+
+![Server-Side Tracking vs Client-Side Pixel](/images/server_side_tracking_capi.png)
+
 ## 📚 참고자료
 
 ### 기술 규격 및 툴 매뉴얼

@@ -2,6 +2,7 @@ import os
 
 def merge_quick_summary():
     book_dir = os.path.dirname(os.path.abspath(__file__))
+    manuscript_dir = os.path.abspath(os.path.join(book_dir, "../../../.manuscript/digital-marketing-lies"))
     output_path = os.path.join(book_dir, "quick-summary-v0.1.md")
     
     chapters = [
@@ -21,7 +22,7 @@ def merge_quick_summary():
     with open(output_path, "w", encoding="utf-8") as outfile:
         # 맨 앞 커버 안내 페이지 없이, 프롤로그부터 바로 시작
         for i, chapter_file in enumerate(chapters):
-            file_path = os.path.join(book_dir, chapter_file)
+            file_path = os.path.join(manuscript_dir, chapter_file)
             if not os.path.exists(file_path):
                 print(f"경고: {chapter_file} 파일을 찾을 수 없습니다. 건너뜁니다.")
                 continue

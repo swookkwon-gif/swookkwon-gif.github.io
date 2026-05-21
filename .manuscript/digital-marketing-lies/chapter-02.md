@@ -102,6 +102,13 @@
 
 ---
 
+
+
+## 🖼️ 시각 자료 (참고 블로그)
+
+![Attribution Models Comparison](/images/attribution_models_comparison.png)
+![Web Analytics vs App Analytics](/images/digital_analytics_web_vs_app.png)
+
 ## 📚 참고자료
 
 ### 1. 실무 리포트 및 매뉴얼

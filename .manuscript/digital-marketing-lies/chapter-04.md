@@ -181,6 +181,15 @@ $$\text{카니발라이제이션 비율} = 100\% - \text{증분 클릭 기여율
 
 ---
 
+
+
+## 🖼️ 시각 자료 (참고 블로그)
+
+![Brand Keyword Expansion Strategy](/images/brand_bidding_hero.png)
+![eBay Brand Search Experiment Results](/images/tadelis_fig_7_1.jpeg)
+![App Marketing Fraud Defense](/images/app-fraud-defense.png)
+![MFA Concept Diagram](/images/mfa-diagram.png)
+
 ## 📚 참고자료
 
 ### 법원 판결문 및 사법 문서

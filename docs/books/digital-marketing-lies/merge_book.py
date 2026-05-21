@@ -2,6 +2,7 @@ import os
 
 def merge_drafts():
     book_dir = os.path.dirname(os.path.abspath(__file__))
+    manuscript_dir = os.path.abspath(os.path.join(book_dir, "../../../.manuscript/digital-marketing-lies"))
     output_path = os.path.join(book_dir, "digital_marketing_lies_integrated.md")
     
     # 챕터 순서 정의
@@ -26,7 +27,7 @@ def merge_drafts():
         outfile.write("---\n\n")
         
         for i, chapter_file in enumerate(chapters):
-            file_path = os.path.join(book_dir, chapter_file)
+            file_path = os.path.join(manuscript_dir, chapter_file)
             if not os.path.exists(file_path):
                 print(f"경고: {chapter_file} 파일을 찾을 수 없습니다. 건너뜁니다.")
                 continue

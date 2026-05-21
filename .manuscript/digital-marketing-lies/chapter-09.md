@@ -91,6 +91,12 @@ AI 알고리즘은 맹목적이고 탐욕적이다. 광고주가 "전환 수를 
 
 ---
 
+
+
+## 🖼️ 시각 자료 (참고 블로그)
+
+![Data Signal Design](/images/data_signal_design.png)
+
 ## 📚 참고자료
 
 ### 자동화 및 마케팅 AI 공식 가이드

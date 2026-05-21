@@ -134,6 +134,18 @@ SRM이 떴다는 것은 트래픽 유입 분배 엔진의 어딘가에 편향이
 
 ---
 
+
+
+## 🖼️ 시각 자료 (참고 블로그)
+
+![대공포를 맞고 간신히 귀환한 실제 B-17 폭격기](/images/b17_flak_damage.jpg)
+![생존자 편향의 함정: 돌아온 폭격기의 총탄 자국](/images/survivorship_bias.png)
+![뮤추얼 펀드의 무덤: 생존자 편향](/images/spiva_survivorship_bias.png)
+![UC 버클리 캠퍼스 전경](/images/uc_berkeley_campus.jpg)
+![심슨의 역설 인포그래픽](/images/simpsons_paradox.png)
+![A/B 테스트 심슨의 역설](/images/simpsons_paradox_ab_test.png)
+![A/B Testing Statistics](/images/ab_testing_statistics.png)
+
 ## 📚 참고자료
 
 ### 학술 논문 및 실증 연구

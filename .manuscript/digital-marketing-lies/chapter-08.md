@@ -101,6 +101,14 @@ MMM은 개인정보나 디바이스 ID를 전혀 추적하지 않는다. 대신 
 
 ---
 
+
+
+## 🖼️ 시각 자료 (참고 블로그)
+
+![허위 상관관계 인포그래픽](/images/spurious_correlation_cage_real.png)
+![아이스크림과 상어물림 허위 상관관계](/images/spurious_correlation_ice_cream.png)
+![미국 광고비와 소매 판매액의 허위 상관관계](/images/spurious_correlation_macro.png)
+
 ## 📚 참고자료
 
 ### 오픈소스 프레임워크 공식 기술 문서
