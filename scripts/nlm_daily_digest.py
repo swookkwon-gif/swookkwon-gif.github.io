@@ -187,7 +187,7 @@ def parse_and_save_post(raw_response: str, date_str: str, now_kst: datetime):
     os.makedirs(POSTS_DIR, exist_ok=True)
 
     # 메타데이터 추출 시도
-    display_title = f"{now_kst.month}월 {now_kst.day}일 - 주요 AI 뉴스"
+    display_title = "5월 19일~26일 종합 - 주요 AI 뉴스"
     slug_parts = ["daily-ai-digest"]
     content = raw_response
 
@@ -202,7 +202,7 @@ def parse_and_save_post(raw_response: str, date_str: str, now_kst: datetime):
 
         if title_match:
             raw_title = title_match.group(1).replace("[", "").replace("]", "").strip()
-            display_title = f"{now_kst.month}월 {now_kst.day}일 - {raw_title}"
+            display_title = f"5월 19일~26일 - {raw_title}"
             content_start = max(content_start, i + 1)
         elif topics_match:
             raw_topics = topics_match.group(1).replace("[", "").replace("]", "").strip()
@@ -217,12 +217,12 @@ def parse_and_save_post(raw_response: str, date_str: str, now_kst: datetime):
 
     # 메타데이터 추출 실패 시 본문 첫 소제목에서 제목 추출
     remaining_lines = lines[content_start:]
-    if display_title == f"{now_kst.month}월 {now_kst.day}일 - 주요 AI 뉴스":
+    if display_title == "5월 19일~26일 종합 - 주요 AI 뉴스":
         for line in remaining_lines:
             heading_match = re.match(r'^##\s+(.+)', line.strip())
             if heading_match:
                 raw_title = heading_match.group(1).strip()
-                display_title = f"{now_kst.month}월 {now_kst.day}일 - {raw_title}"
+                display_title = f"5월 19일~26일 - {raw_title}"
                 if len(display_title) > 50:
                     display_title = display_title[:47] + "..."
                 break
@@ -236,6 +236,7 @@ def parse_and_save_post(raw_response: str, date_str: str, now_kst: datetime):
 
     # 본문 추출 (메타데이터 라인 제거)
     content = "\n".join(lines[content_start:]).strip()
+    content = f"* 📅 분석 및 수집 기간: 2026년 5월 19일 ~ 2026년 5월 26일\n\n" + content
 
     # AI가 생성하는 중복 제목 제거
     content = re.sub(r'^#\s+[^\n]+\n*', '', content.lstrip())
