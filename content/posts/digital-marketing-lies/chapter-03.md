@@ -65,7 +65,7 @@ P&G는 수사적인 경고에 그치지 않고 즉각적인 행동을 단행했�
 
 ## 3-4. 광고를 끊었더니 오히려 성장했다 — 에어비앤비(Airbnb)
 
-2020년, 전 세계를 덮친 코로나19 팬데믹으로 여행 수요가 전멸에 가까운 타격을 입자 에어비앤비(Airbnb)는 부도 직전의 비상 체제에 돌입했습니다. 생존을 위한 자구책으로 에어비앤비는 2020년 전체 마케팅 예산을 전년 대비 **58% 삭감**했으며, 검색 광고 및 리타겟팅 등 퍼포먼스 마케팅 예산은 **90% 이상(약 8억 달러)** 삭감하여 사실상 중단했습니다(출처: [미국 SEC Form 10-K 공식 공시](https://www.sec.gov/ix?doc=/Archives/edgar/data/1559720/000155972021000011/abnb-20201231.htm)).
+2020년, 전 세계를 덮친 코로나19 팬데믹으로 여행 수요가 전멸에 가까운 타격을 입자 에어비앤비(Airbnb)는 부도 직전의 비상 체제에 돌입했습니다. 생존을 위한 자구책으로 에어비앤비는 2020년 전체 마케팅 예산을 전년 대비 **58% 삭감**했으며, 검색 광고 및 리타겟팅 등 퍼포먼스 마케팅 예산은 **90% 이상(약 8억 달러)** 삭감하여 사실상 중단했습니다(출처: [미국 SEC Form 10-K 공식 공시](https://www.sec.gov/ix?doc=/Archives/edgar/data/1559720/000155972021000010/abnb-20201231.htm)).
 
 대다수 마케팅 대시보드는 퍼포먼스 마케팅이 에어비앤비의 트래픽을 지탱하는 기둥이라고 보고하고 있었기에, 업계 전체가 에어비앤비의 트래픽 급락을 예상했습니다. 그러나 놀라운 결과가 나타났습니다.
 
@@ -288,7 +288,8 @@ ANA(미국광고주협회)의 프로그래매틱 추적 연구에 따르면, 평
 *   ISBA & PwC. (2020). *Programmatic Media Supply Chain Transparency Study.* (15% 미지의 델타 발견 실증 보고서)
 *   Blake, T., Nosko, C., & Tadelis, S. (2015). Consumer Heterogeneity and Paid Search Effectiveness: A Large Scale Field Experiment. *Econometrica*, 83(1), 155-174.
 *   Dr. Augustine Fou, FouAnalytics Research Documents. (2022-2024). *The Concept of Normalized Fraud in Digital Advertising.*
-*   Airbnb, Inc. SEC Filing Form 10-K (2021.02.26). *Airbnb, Inc. 2020 Annual Report (Form 10-K).* [Link](https://www.sec.gov/ix?doc=/Archives/edgar/data/1559720/000155972021000011/abnb-20201231.htm)
+*   Airbnb, Inc. SEC Filing Form 10-K (2021.02.26). *Airbnb, Inc. 2020 Annual Report (Form 10-K).* [Link](https://www.sec.gov/ix?doc=/Archives/edgar/data/1559720/000155972021000010/abnb-20201231.htm)
+
 
 
 ### 업계 및 정부 보도
