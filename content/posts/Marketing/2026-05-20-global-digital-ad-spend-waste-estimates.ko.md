@@ -19,7 +19,7 @@ categories: ["Marketing", "Data Literacy"]
 
 여기서 한 가지 짚고 넘어가야 할 사실이 있습니다. 흔히 '디지털 마케팅 시장 $1T'와 '전체 광고 시장 $1T'를 혼용하곤 하지만, 엄밀히 말해 **전체 매체 광고비**가 1조 달러를 돌파한 것이며, 그중 디지털 광고 시장의 비중은 **약 70-75% (약 7,400억-7,800억 달러)** 수준입니다. (단, 기업들이 지출하는 웹사이트 구축, CRM 마케팅 툴 솔루션 구독료, 컨설팅 비용 등 광의의 디지털 마케팅 에코시스템 전체를 합산할 경우 디지털 마케팅 시장 자체만으로도 이미 1조 달러를 훨씬 초과합니다.)
 
-보다 자세한 연도별/기관별 추정치의 편차에 대해서는 [[글로벌 광고 시장 규모 추정치와 기관별 분석 격차]](file:///Users/wook/WookAi/Booklog/content/posts/Marketing/2026-04-29-global-ad-market-size-estimates-gap.md) 포스트에서 다룬 바 있습니다. 
+보다 자세한 연도별/기관별 추정치의 편차에 대해서는 [[글로벌 광고 시장 규모 추정치와 기관별 분석 격차]](/posts/2026-04-29-global-ad-market-size-estimates-gap) 포스트에서 다룬 바 있습니다. 
 
 그렇다면 이 천문학적인 디지털 광고 예산 중, 실제로 작동하는 돈은 얼마나 될까요?
 
@@ -39,7 +39,7 @@ categories: ["Marketing", "Data Literacy"]
 *   **애드 서빙 수수료 (Ad Serving Fee):** 최종적으로 사용자의 브라우저에 광고 크리에이티브(이미지/비디오)를 호스팅하고 전송하는 애드서버 비용이며, **2% - 5%** 수준입니다.
 *   **추적 불가능한 미지의 델타 (Unknown Delta):** 영국 광고주협회(ISBA)와 PwC가 공동 진행한 [ISBA/PwC Programmatic Supply Chain Transparency Study (2020)](https://www.isba.org.uk/system/files?file=media/documents/2020-12/executive-summary-programmatic-supply-chain-transparency-study.pdf) 연구에 따르면, 광고주가 지출한 100달러 중 실제 지면을 제공한 매체(Publisher)에 도달한 금액은 **단 51달러(51%)**에 불과했습니다. 나머지 49% 중 **15%는 복잡한 중개 구조 및 거래 기록 미매칭으로 인해 어디로 사라졌는지 추적조차 불가능한 '미지의 델타(Unknown Delta)'**로 확인되었습니다.
     *   **세부 매칭 데이터의 한계:** 이 연구는 15개 글로벌 브랜드의 2억 6,700만 회 광고 노출 데이터를 추적했으나, 애드테크 간 경로가 너무 복잡해 처음부터 끝까지 완전 추적에 성공한 노출 데이터는 단 **12%**에 불과했습니다.
-    이 수수료의 정체에 대해서는 [[DSP와 SSP 사이, 내 예산 절반은 어디로 사라졌나? (Tech Tax의 실체)]](file:///Users/wook/WookAi/Booklog/content/posts/Marketing/2026-05-12-adtech-supply-chain-tech-tax.md)에서 더 상세히 확인하실 수 있습니다.
+    이 수수료의 정체에 대해서는 [[DSP와 SSP 사이, 내 예산 절반은 어디로 사라졌나? (Tech Tax의 실체)]](/posts/2026-05-12-adtech-supply-chain-tech-tax)에서 더 상세히 확인하실 수 있습니다.
 
 *   **최신 ANA 벤치마크 데이터 (2024년 12월 보고서):** 미국 광고주협회(ANA)가 발표한 [ANA Programmatic Transparency Benchmark](https://www.ana.net) 최신 업데이트에 따르면, 공급망 최적화(SPO)와 투명성 강화 운동 덕분에 진짜 광고비(True Ad Spend) 비율이 기존 36%에서 **43.9%**로 소폭 개선되었습니다. 하지만 여전히 절반 이상의 마케팅 예산이 테크 택스 및 무효 노출로 사라지고 있으며, ANA 기업들이 오픈 마켓에서 낭비하는 금액만 글로벌 기준으로 연간 **268억 달러(한화 약 35조 원)**에 달합니다.
 
@@ -61,7 +61,7 @@ categories: ["Marketing", "Data Literacy"]
     *   **SDK 스푸핑 (SDK Spoofing):** 기기가 존재하지 않고 설치가 일어나지 않았음에도, 측정 서버 간의 통신 프로토콜을 해킹하여 조작된 패킷 형태로 설치 시그널을 위조해 쏘아 보냅니다.
     *   **클릭 스패밍 / 플러딩 (Click Spamming / Click Flooding):** 보이지 않는 백그라운드에서 수백만 개의 가짜 클릭을 무차별적으로 난사해 두었다가, 사용자가 자연적으로(Organic) 앱을 설치할 때 마지막 클릭 기여 규칙을 악용해 성과를 가로챕니다.
     *   **디바이스 팜 (Device Farms):** 자동화 스크립트나 저임금 노동자를 동원해 기계식 랙에 거치된 수많은 단말기에서 앱 설치 및 실행 액션을 물리적으로 조작·반복합니다.
-    *   **우버(Uber)의 어트리뷰션 사기 사태:** 자연 유입(Organic Install) 순간에 백그라운드 가짜 클릭을 주입받아 광고 대행사가 성과를 가로챈 대표적인 사건입니다. 우버가 광고비 1억 2,000만 달러를 삭감했음에도 신규 설치 수에 아무런 변화가 없었던 메커니즘은 [[우버(Uber)의 1억 달러 어트리뷰션 사기 사태 심층 분석]](file:///Users/wook/WookAi/Booklog/content/posts/2026-05-19-uber-100m-attribution-fraud-case.ko.md) 포스트를 참고하십시오.
+    *   우버가 광고비 1억 2,000만 달러를 삭감했음에도 신규 설치 수에 아무런 변화가 없었던 메커니즘은 [[우버(Uber)의 1억 달러 어트리뷰션 사기 사태 심층 분석]](/posts/2026-05-19-uber-100m-attribution-fraud-case) 포스트를 참고하십시오.
     *   **2차 데이터 오염 피해:** 이 가짜 사기 데이터가 머신러닝 최적화 엔진에 주입되면, AI 알고리즘이 사기 지면이나 가짜 봇을 고가치 타겟으로 잘못 학습하여 광고비를 역으로 낭비하는 악순환이 발생합니다.
 
 ---
@@ -140,6 +140,6 @@ flowchart TD
 5. Gordon, B. R., Zettelmeyer, F., Bhargava, N., & Chapsky, D. (2019). *A Comparison of Approaches to Advertising Measurement*. Marketing Science. (페이스북 대규모 RCT 실험을 통한 일반 성과 기여 모델의 증분 효과 과대평가 실증 논문)
 6. Tadelis, S., et al. (2015). *Consumer Heterogeneity and Paid Search Effectiveness: A Large-Scale Field Experiment*. Econometrica. (브랜드 키워드 광고의 오가닉 잠식 효과 및 증분성 입증 학술 논문)
 7. Integral Ad Science (IAS). (2024). *Media Quality Report (MQR)*. (글로벌 디스플레이 및 비디오 광고의 뷰어빌리티(Viewability) 평균 달성율 및 벤치마크 자료)
-8. [[글로벌 광고 시장 규모 추정치와 기관별 분석 격차]](file:///Users/wook/WookAi/Booklog/content/posts/Marketing/2026-04-29-global-ad-market-size-estimates-gap.md)
-9. [[DSP와 SSP 사이, 내 예산 절반은 어디로 사라졌나? (Tech Tax의 실체)]](file:///Users/wook/WookAi/Booklog/content/posts/Marketing/2026-05-12-adtech-supply-chain-tech-tax.md)
-10. [[우버(Uber)의 1억 달러 어트리뷰션 사기 사태 심층 분석]](file:///Users/wook/WookAi/Booklog/content/posts/2026-05-19-uber-100m-attribution-fraud-case.ko.md)
+8. [[글로벌 광고 시장 규모 추정치와 기관별 분석 격차]](/posts/2026-04-29-global-ad-market-size-estimates-gap)
+9. [[DSP와 SSP 사이, 내 예산 절반은 어디로 사라졌나? (Tech Tax의 실체)]](/posts/2026-05-12-adtech-supply-chain-tech-tax)
+10. [[우버(Uber)의 1억 달러 어트리뷰션 사기 사태 심층 분석]](/posts/2026-05-19-uber-100m-attribution-fraud-case)

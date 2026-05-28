@@ -5,7 +5,7 @@ category: Marketing
 tags: ["디지털마케팅", "마케팅효과", "측정삼각측량", "크리에이티브", "어텐션이코노미", "HowBrandsGrow", "마케팅비평"]
 ---
 
-> 이전 포스트 ["광고를 하면 매출이 정말 늘어나는가?"](/posts/Marketing/2026-05-12-does-advertising-increase-sales)와 ["마케팅을 하면 사업 성과가 좋아지는가?"](/posts/Marketing/2026-05-12-does-marketing-improve-business-performance)에서 광고와 마케팅의 '효과'를 해부했습니다. 이번 포스트에서는 한 단계 더 나아가, **변화한 환경 속에서 마케팅을 '어떻게' 더 효과적으로 할 수 있는지** 그 메커니즘과 실행 프레임워크를 다룹니다.
+> 이전 포스트 ["광고를 하면 매출이 정말 늘어나는가?"](/posts/2026-05-12-does-advertising-increase-sales)와 ["마케팅을 하면 사업 성과가 좋아지는가?"](/posts/2026-05-12-does-marketing-improve-business-performance)에서 광고와 마케팅의 '효과'를 해부했습니다. 이번 포스트에서는 한 단계 더 나아가, **변화한 환경 속에서 마케팅을 '어떻게' 더 효과적으로 할 수 있는지** 그 메커니즘과 실행 프레임워크를 다룹니다.
 
 ---
 
@@ -243,5 +243,5 @@ TV 시대에서 디지털 시대로의 전환은 마케팅의 **전술(How)**을
 5. Dyson, P. (Accelero). "The 12x Profitability Multiplier of Creative Quality."
 6. Analytic Partners. "Creative Quality vs. Targeting: ROI Contribution Analysis." (크리에이티브가 타겟팅보다 3x 영향)
 7. Lumen Research. "aCPM: Attention-Based Cost Per Mille" — 주의 기반 미디어 측정 프레임워크.
-8. 이전 포스트: [광고를 하면 매출이 정말 늘어나는가?](/posts/Marketing/2026-05-12-does-advertising-increase-sales)
-9. 이전 포스트: [마케팅을 하면 사업 성과가 좋아지는가?](/posts/Marketing/2026-05-12-does-marketing-improve-business-performance)
+8. 이전 포스트: [광고를 하면 매출이 정말 늘어나는가?](/posts/2026-05-12-does-advertising-increase-sales)
+9. 이전 포스트: [마케팅을 하면 사업 성과가 좋아지는가?](/posts/2026-05-12-does-marketing-improve-business-performance)
