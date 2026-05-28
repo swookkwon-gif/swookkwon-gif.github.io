@@ -8,7 +8,7 @@ categories: ["Marketing", "Data Literacy"]
 
 **"우리는 매년 수억 달러의 마케팅 예산을 지출했고, 대시보드의 숫자는 완벽했습니다. 하지만 그중 1억 달러는 완전히 허공으로 사라진 사기(Fraud)였습니다."**
 
-디지털 마케팅 업계 역사상 가장 충격적인 사건 중 하나로 꼽히는 **'우버(Uber)의 1억 달러 광고 사기 사태(2017)'**는 데이터와 대시보드를 맹신하는 현대 마케팅이 얼마나 위험한지 보여주는 완벽한 교보재입니다. 본 포스트에서는 당시 우버의 퍼포먼스 마케팅 총괄이었던 케빈 마이어스(Kevin Meyers)가 밝혀낸 사기 수법(Click Injection)과 전후 스토리, 대행사와의 소송전, 그리고 이 사건이 남긴 거대한 시사점을 심층적으로 해부합니다.
+디지털 마케팅 업계 역사상 가장 충격적인 사건 중 하나로 꼽히는 **'우버(Uber)의 1억 달러 광고 사기 사태(2017)'**는 데이터와 대시보드를 맹신하는 현대 마케팅이 얼마나 위험한지 보여주는 완벽한 교보재입니다. 본 포스트에서는 당시 우버의 퍼포먼스 마케팅 총괄이었던 케빈 프리쉬(Kevin Frisch)가 밝혀낸 사기 수법(Click Injection)과 전후 스토리, 대행사와의 소송전, 그리고 이 사건이 남긴 거대한 시사점을 심층적으로 해부합니다.
 
 ---
 
@@ -25,10 +25,10 @@ categories: ["Marketing", "Data Literacy"]
 **그런데 놀라운 일이 발생합니다.**
 광고를 차단했음에도 불구하고, 우버의 전체 **신규 앱 설치 수는 단 한 건도 줄어들지 않았습니다.** 
 
-## 3. 실험: 케빈 마이어스의 1억 달러짜리 A/B 테스트
-이 기이한 현상에 충격을 받은 우버의 마케팅 총괄(당시 Head of Performance Marketing) 케빈 마이어스(Kevin Meyers)는 대규모 통제 실험을 결단합니다. 그는 퍼포먼스 대행사들이 보고하던 성과가 진짜 '증분(Incrementality)'인지, 아니면 가짜 성과인지 확인하기 위해 과감한 테스트를 진행합니다.
+## 3. 실험: 케빈 프리쉬의 1억 달러짜리 A/B 테스트
+이 기이한 현상에 충격을 받은 우버의 퍼포먼스 마케팅 총괄(Head of Performance Marketing) **케빈 프리쉬(Kevin Frisch)**는 대규모 통제 실험을 결단합니다. 그는 퍼포먼스 대행사들이 보고하던 성과가 진짜 '증분(Incrementality)'인지, 아니면 가짜 성과인지 확인하기 위해 과감한 테스트를 진행합니다.
 
-우버는 무려 **1억 달러(약 1,300억 원)**에 달하는 모바일 앱 설치 퍼포먼스 광고 예산을 일시에 중단해 버렸습니다. 이는 당시 우버 전체 광고 예산의 3분의 2에 달하는 어마어마한 금액이었습니다.
+우버는 연간 약 1억 5천만 달러에 달하는 모바일 앱 설치 퍼포먼스 광고 예산 중 무려 **1억 달러(약 1,300억 원)**에 달하는 예산을 일시에 중단해 버렸습니다. 이는 전체 광고 예산의 3분의 2에 달하는 어마어마한 비중이었습니다.
 
 결과는 경악스러웠습니다. 
 **1억 달러의 광고가 사라졌음에도, 우버 앱의 총 설치 수(Total Installs)는 전혀 변하지 않았습니다.** 
@@ -45,11 +45,19 @@ categories: ["Marketing", "Data Literacy"]
 
 결과적으로, 마케터가 칭송하던 높은 ROAS와 낮은 CPI는 유저의 오가닉 성과를 훔쳐먹는 **카니발라이제이션(Cannibalization)**의 결과물이었을 뿐입니다.
 
-## 5. 법적 공방: 대행사들과의 소송전
-진실을 파악한 우버는 대대적인 법적 조치에 나섰습니다. 
-2017년, 덴츠(Dentsu)의 모바일 대행사 자회사인 **Fetch Media**를 상대로 사기 및 계약 위반으로 소송을 제기했습니다 (이후 양측은 비공개 합의로 소송을 취하했습니다). 
+## 5. 법적 공방: 대행사 및 네트워크들과의 치열한 소송전
+사기 수법의 전모를 파악한 우버는 2017년부터 대대적인 법적 조치에 착수했습니다. 이 소송전은 글로벌 대행사 그룹 및 모바일 광고 네트워크들과의 진흙탕 싸움으로 이어졌습니다.
 
-이어 2019년에는 모바일 광고 네트워크 회사인 **Phunware** 등 100여 개의 광고 네트워크를 상대로 4천만 달러 규모의 사기 청구 소송을 제기했습니다. 우버의 고소장에 따르면, Phunware를 통해 송출된 수많은 광고 클릭이 포르노 사이트나 불법 스트리밍 사이트 등 브랜드 가치를 훼손하는 매체에서 무작위로 발생했거나 완전히 허위로 조작된 것(Click Fraud)이었습니다.
+### ① 덴츠 산하 Fetch Media와의 소송 (2017~2018)
+우버는 **2017년 9월 20일**, 자사 모바일 광고 대행 업무를 담당하던 덴츠(Dentsu) 산하의 **Fetch Media**를 상대로 4,000만 달러 규모의 사기 및 계약 위반 소송을 캘리포니아 연방법원에 제기했습니다. 우버는 Fetch가 고의로 성과를 과장하고 모바일 광고 사기를 방지할 의무를 다하지 않았다고 주장했습니다. 
+우버가 연방법원 소송을 자진 취하하고 주법원으로 이송하려 하자, Fetch Media는 **2018년 1월** 우버를 상대로 미지급 송장 대금 1,970만 달러를 청구하는 맞소송을 제기하며 강력히 반발했습니다. Fetch 측은 우버가 대금 지불을 회피하기 위해 광고 사기 혐의를 핑계 삼았다고 주장했습니다. 이 분쟁은 양사 간 비공개 합의를 거쳐 종결되었습니다.
+
+### ② Phunware와의 소송 및 600만 달러 합의 (2017~2020)
+Fetch Media의 하청 모바일 광고 네트워크 중 하나였던 **Phunware**는 2017년 말 우버를 상대로 310만 달러의 미지급금 청구 소송을 제기했습니다. 이에 우버는 Phunware를 상대로 가짜 클릭을 무더기로 날리는 '클릭 플러딩(Click Flooding)', '자동 리다이렉트', '브랜드 훼손 사이트 광고 송출' 및 '가짜 클릭을 통한 사기 청구' 혐의로 맞소송을 제기했습니다.
+이 소송은 **2020년 10월** 극적인 국면을 맞이했습니다. 캘리포니아 주 샌프란시스코 지방법원(San Francisco Superior Court, 사건 번호 CGC-17-561546)에서 진행되던 재판 과정 중, Phunware 측이 자신들에게 불리하게 작용할 핵심 증거인 내부 고발자 파일과 광고 원천 로그 데이터를 의도적으로 파기·훼손(Spoliation of evidence)한 정황이 폭로되었습니다. 법원이 이에 대해 소송 종결성 제재(Terminating Sanctions) 처분을 내리려고 하자, 결국 Phunware는 무조건적인 패소를 피하기 위해 우버에 **총 600만 달러(약 70억~80억 원)**를 지급하는 비공개 합의(Settlement Agreement)를 맺고 소송을 최종 마무리했습니다.
+
+### ③ 5대 모바일 광고 네트워크 및 100여 개 업체 고소 (2019)
+이에 그치지 않고 우버는 **2019년 6월**, 샌프란시스코 주법원에 **Hydrane SAS, BidMotion, Taptica, YouAppi, AdAction Interactive** 등 5개의 모바일 광고 네트워크와 이들과 연계된 하위 퍼블리셔(Sub-publishers) 약 100여 곳을 상대로 추가 소송을 제기했습니다. 우버는 이들이 허위 기기 ID를 생성하고, 모바일에 최적화되지 않은 비정상 매체에 광고를 올리거나, 속임수 이름(Deceptive Naming)을 활용하는 등 조직적인 방법으로 대규모 광고 사기를 공모하여 수천만 달러의 마케팅 예산을 낭비하게 했다고 주장했습니다.
 
 ## 6. 시사점: 대시보드의 환상에서 벗어나 '증분(Incrementality)'을 측정하라
 우버의 1억 달러 사기 사태는 단순히 '사기꾼들에게 당한 글로벌 기업'의 에피소드가 아닙니다. 이는 마케팅과 데이터를 다루는 모든 경영진에게 뼈아픈 시사점을 던집니다.
@@ -64,8 +72,11 @@ categories: ["Marketing", "Data Literacy"]
 
 ## 📚 참고자료
 1. Tadelis, S., et al. (2015). *Consumer Heterogeneity and Paid Search Effectiveness: A Large-Scale Field Experiment*. Econometrica. (eBay의 증분 실험 사례와 맥락을 같이 하는 선행 연구)
-2. [Uber Cut $100M in Ad Spend and nothing happened? - Adriaan Dekker](https://adriaan-dekker.nl/uber-cut-100m-in-ad-spend-and-nothing-happened/)
-3. [Uber Chief Claims Most Performance Marketing is Pure Fraud - ADOTAT](https://www.adotat.com/2021/01/uber-chief-claims-most-performance-marketing-is-pure-fraud/)
-4. [Uber's Ad Fraud Suit Highlights a Billion-Dollar Brand Problem - Tech.co](https://tech.co/news/uber-ad-fraud-brand-problem)
-5. [Last Click Attribution & Cannibalization - INCRMNTAL](https://www.incrmntal.com/resources/last-click-attribution-and-cannibalization)
-6. Kevin Meyers의 팟캐스트 및 강연 인터뷰 발췌 기록.
+2. TechCrunch (2017.09.20). [Uber sues mobile agency Fetch for $40M, alleging ad fraud](https://techcrunch.com/2017/09/20/uber-sues-mobile-agency-fetch-for-40m-alleging-ad-fraud/).
+3. Adweek (2020.10.23). [Uber Settles Mobile Ad Fraud Lawsuit With Phunware for $6 Million](https://www.adweek.com/performance-marketing/uber-settles-mobile-ad-fraud-lawsuit-with-phunware-for-6-million/).
+4. Wall Street Journal (2019.06.25). [Uber Sues Ad Agencies, Alleging Widespread Click Fraud](https://www.wsj.com/articles/uber-sues-ad-agencies-alleging-widespread-click-fraud-11561494874).
+5. Phunware SEC Filing Form 8-K (2020.10.09). [Settlement Agreement and Mutual General Release - Phunware Inc. and Uber Technologies](https://www.sec.gov/Archives/edgar/data/1655303/000162828020014529/phun-8kxex991x100920.htm).
+6. [Uber Cut $100M in Ad Spend and nothing happened? - Adriaan Dekker](https://adriaan-dekker.nl/uber-cut-100m-in-ad-spend-and-nothing-happened/)
+7. [Uber Chief Claims Most Performance Marketing is Pure Fraud - ADOTAT](https://www.adotat.com/2021/01/uber-chief-claims-most-performance-marketing-is-pure-fraud/)
+8. [Last Click Attribution & Cannibalization - INCRMNTAL](https://www.incrmntal.com/resources/last-click-attribution-and-cannibalization)
+9. Kevin Frisch의 팟캐스트 인터뷰 기록 (Edward Nevraumont's *Marketing BS* Podcast).
