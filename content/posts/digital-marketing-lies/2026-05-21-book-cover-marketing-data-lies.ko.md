@@ -26,6 +26,7 @@ categories: ["Marketing", "Data Literacy"]
 *   **실측 결과 (트래픽 탄력성):** 유료 퍼포먼스 마케팅을 전격 중단했음에도 전체 웹 사이트 트래픽은 **전년(2019년) 대비 95% 수준을 완벽하게 유지**했습니다. 특히 2020년 4분기 기준 에어비앤비 전체 트래픽 중 **90% 이상(90%+)이 직접(Direct) 혹은 자연(Unpaid) 검색 유입**으로 기록되었습니다.
 *   **원인 (자기 잠식):** 퍼포먼스 광고가 신규 고객을 창출한 것이 아니라, 이미 브랜드(Airbnb)를 인지하고 들어오려던 오가닉 고객들의 검색 길목을 유료 배너로 선점하여 기여도(Attribution) 성과만 가로채고 있었던(Cannibalization) 것입니다. (에어비앤비가 사용한 브랜드 검색 광고 차단 실험의 구체적인 통계적 방법론과 리프트 측정 원리가 궁금하다면 [광고의 순수 증분(Incrementality) 효과 측정 완벽 가이드](/posts/2026-05-21-ad-incrementality-measurement-ultimate-guide) 포스트를 참고하세요.)
 *   **재무 성과:** 예산 낭비를 통제한 결과, 2020년 매출은 우려와 달리 30% 감소(34억 달러)에 선방했고, 비용 효율화 체질 개선을 바탕으로 2021년 전체 매출은 2019년(팬데믹 이전) 대비 **25% 성장(59억 달러)**했으며 2022년에는 창사 이래 최초로 **19억 달러의 연간 순이익(GAAP) 흑자 전환**에 성공했습니다.
+*   **메이저 언론 분석 (CNBC & Marketing Week):** 2021년 2월 실적 발표에서 CEO 브라이언 체스키(Brian Chesky)는 에어비앤비 마케팅 전략의 '영구적인 전환'을 선언했습니다. 그는 *"에어비앤비는 이미 하나의 명사(Noun)이자 동사(Verb)로 자리잡았으며, 마케팅은 단순히 돈으로 고객을 구매(buying customers)하는 행위가 아니라 브랜드의 본질을 알리고 교육(educating and inspiring)하는 수단이어야 한다"*라고 역설했습니다. 당시 **CNBC**와 **Marketing Week** 등 주요 글로벌 비즈니스 미디어는 에어비앤비의 이 같은 결단을 "대시보드의 단기 ROAS 숫자에 매몰된 현대 디지털 광고 시장에 경종을 울린 패러다임의 대전환"이라고 비중 있게 보도했습니다.
 
 ```mermaid
 graph LR
@@ -125,3 +126,6 @@ graph TD
 9. [Uber Chief Claims Most Performance Marketing is Pure Fraud - ADOTAT](https://www.adotat.com/2021/01/uber-chief-claims-most-performance-marketing-is-pure-fraud/)
 10. [Last Click Attribution & Cannibalization - INCRMNTAL](https://www.incrmntal.com/resources/last-click-attribution-and-cannibalization)
 11. Kevin Frisch의 팟캐스트 인터뷰 기록 (Edward Nevraumont's *Marketing BS* Podcast).
+12. CNBC (2021.02.25). [Airbnb CEO says marketing strategy is permanently changing, will focus on PR over ads](https://www.cnbc.com/2021/02/25/airbnb-ceo-says-marketing-strategy-is-permanently-changing-focusing-on-pr.html).
+13. Marketing Week (2021.02.26). [Airbnb: Our marketing shift is a permanent pivot, not a temporary fix](https://www.marketingweek.com/airbnb-marketing-shift-permanent-pivot/).
+

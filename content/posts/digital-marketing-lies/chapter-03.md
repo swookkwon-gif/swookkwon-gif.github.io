@@ -74,6 +74,8 @@ P&G는 수사적인 경고에 그치지 않고 즉각적인 행동을 단행했�
 당시 에어비앤비의 CEO 브라이언 체스키(Brian Chesky)는 4분기 실적 발표에서 이 대담한 실험에 대해 다음과 같이 언급했습니다.
 > *"우리는 퍼포먼스 마케팅이 실질적으로 고객을 돈으로 구매(buying customers)하는 방식이라고 생각합니다. 하지만 우리는 마케팅을 대중에게 우리 브랜드를 교육하고 영감을 주는(educating and inspiring) 도구로 사용하기를 원합니다."*
 
+당시 **CNBC**와 **Marketing Week** 등 주요 글로벌 비즈니스 미디어는 에어비앤비의 이 같은 결단을 "대시보드의 단기 ROAS 숫자에 매몰된 현대 디지털 광고 시장에 경종을 울린 패러다임의 대전환"이라고 대대적으로 보도했습니다. 체스키는 에어비앤비가 이미 하나의 명사이자 동사가 되었다고 강조하며, 퍼포먼스 광고비 삭감이 일시적 방책이 아니라 영구적 피벗(Permanent Pivot)임을 공고히 했습니다.
+
 광고 스위치를 끄자 비로소 대시보드가 감춰온 카니발라이제이션(자기 잠식)의 실체가 폭로되었습니다. 퍼포먼스 마케팅이 신규 가입자를 데려온 것이 아니라, 이미 에어비앤비에 들어오려던 고객의 검색 길목을 유료 배너로 선점하여 수수료만 플랫폼에 지급하고 있었던 것입니다. 
 
 에어비앤비는 이 뼈아픈 교훈을 바탕으로 마케팅 예산의 낭비를 제거했고, 2022년 창사 이래 최초로 GAAP 기준 **19억 달러의 거대한 연간 순이익 흑자 전환**에 성공하며 디지털 업계의 생존 공식을 전면 새로 썼습니다. (에어비앤비의 마케팅 믹스 개선에 따른 브랜드 전략과 장단기 광고 밸런스에 대해 심층적으로 다룬 내용은 [브랜드 마케팅과 퍼포먼스 마케팅의 60:40 법칙](/posts/2026-05-21-les-binet-peter-field-long-and-short) 포스트를 참고하세요.)
@@ -288,6 +290,8 @@ ANA(미국광고주협회)의 프로그래매틱 추적 연구에 따르면, 평
 *   Dr. Augustine Fou, FouAnalytics Research Documents. (2022-2024). *The Concept of Normalized Fraud in Digital Advertising.*
 
 ### 업계 및 정부 보도
+*   "Airbnb CEO says marketing strategy is permanently changing, will focus on PR over ads." *CNBC* (2021.02.25). [Link](https://www.cnbc.com/2021/02/25/airbnb-ceo-says-marketing-strategy-is-permanently-changing-focusing-on-pr.html)
+*   "Airbnb: Our marketing shift is a permanent pivot, not a temporary fix." *Marketing Week* (2021.02.26). [Link](https://www.marketingweek.com/airbnb-marketing-shift-permanent-pivot/)
 *   "United States v. Aleksandr Zhukov (Methbot/3ve Defendant Sentenced)." *U.S. DOJ Eastern District of New York Official Press Release* (2021).
 *   "Forbes programmatic advertising transparency failure." *Adalytics Investigation & Forbes Statement* (2024년 4월).
 *   "SlopAds mobile SDK botnet analysis." * HUMAN Security / DoubleVerify Threat Intel Reports* (2025).
