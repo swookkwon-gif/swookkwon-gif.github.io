@@ -127,7 +127,7 @@ author: "Antigravity"
 * **트래픽 복구:** 유료 광고를 껐음에도 에어비앤비의 전체 웹 트래픽은 **전년(2019년) 대비 95% 수준을 그대로 유지**했습니다.
 * **오가닉 체력 증명:** 2020년 4분기 기준 에어비앤비 전체 트래픽 중 **90% 이상(90%+)이 직접(Direct) 자사몰 접속 또는 자연(Unpaid) 검색 유입**으로 확인되었습니다.
 * **재무적 흑자 달성:** 마케팅 낭비를 차단한 결과, 2020년 전체 매출은 30% 소폭 감소(34억 달러)하는 수준으로 안정성을 방어했고, 2021년 전체 매출은 2019년 대비 **25% 성장(59억 달러)**을 기록했으며, 2022년에는 창사 이래 최초로 GAAP 기준 **19억 달러의 순이익 흑자 전환**에 성공했습니다.
-* **메이저 언론 분석:** 월스트리트 저널(WSJ)과 Skift 등 주요 글로벌 매체들은 에어비앤비의 이 같은 비용 효율화 행보와 "검색 광고 대신 브랜드 빌딩에 집중하는 전략이 실제로 작동하고 있다"는 점을 비중 있게 분석 보도했습니다. CEO 브라이언 체스키는 에어비앤비가 이미 '명사이자 동사'가 되었다며, 광고비로 고객을 구매하기보다 브랜드를 교육(educating and inspiring)하는 스토리텔링 중심으로 예산을 영구 전환하겠다고 밝혔습니다.
+* **메이저 언론 분석:** 월스트리트 저널(WSJ)과 Skift, Marketing Week 등 주요 글로벌 매체들은 에어비앤비의 이 같은 비용 효율화 행보와 "검색 광고 대신 브랜드 빌딩에 집중하는 전략이 실제로 작동하고 있다"는 점을 비중 있게 분석 보도했습니다. CEO 브라이언 체스키는 에어비앤비가 이미 '명사이자 동사'가 되었다며, 광고비로 고객을 구매하기보다 브랜드를 교육(educating and inspiring)하는 스토리텔링 중심으로 예산을 영구 전환하겠다고 밝혔습니다.
 
 (에어비앤비가 퍼포먼스 마케팅 의존도를 영구적으로 줄이고 브랜드 빌딩으로 회귀한 장단기 마케팅 밸런스 전략의 재정비 프레임워크는 [브랜드 마케팅과 퍼포먼스 마케팅의 60:40 법칙](/posts/2026-05-21-les-binet-peter-field-long-and-short) 포스트에서 더욱 세밀히 다룹니다.)
 
@@ -192,4 +192,7 @@ Meta의 CMO Alex Schultz는 브랜드 키워드 광고가 본질적으로 무의
 * **Measured.com & Haus.io Technical Resources (2025).** *Triangulation and Calibration in Modern Marketing Measurement.*
 * **Wall Street Journal (2022.11.03).** *Airbnb Says Its Focus on Brand Marketing Instead of Search Is Working.* [WSJ Link](https://www.wsj.com/articles/airbnb-says-its-focus-on-brand-marketing-instead-of-search-is-working-11667506438)
 * **Skift (2021.02.25).** *Airbnb Outlines 2021 Vision After Weathering $4.6 Billion Pandemic Year Loss.* [Skift Link](https://skift.com/2021/02/25/airbnb-outlines-2021-vision-after-weathering-4-6-billion-pandemic-year-loss/)
+* **Marketing Week (2023.02.15).** *Airbnb: Marketing efficiency drives record profits.* [MW Link](https://www.marketingweek.com/airbnb-marketing-efficiency-record-profits/)
+* **Marketing Week (2022.05.04).** *Airbnb earnings surge as it maintains focus on effective marketing spend.* [MW Link](https://www.marketingweek.com/airbnb-earnings-surge-effective-marketing-spend/)
+* **Marketing Week (2021.02.26).** *Airbnb: We don't view performance marketing as a way to buy customers.* [MW Link](https://www.marketingweek.com/airbnb-performance-marketing/)
 * **Airbnb, Inc. (2021.02.26).** *Airbnb, Inc. Q4 2020 Shareholder Letter / 2020 Annual Report.* [Airbnb IR Link](https://investors.airbnb.com/financials/quarterly-results/default.aspx)
