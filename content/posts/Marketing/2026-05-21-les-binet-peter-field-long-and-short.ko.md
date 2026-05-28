@@ -65,7 +65,7 @@ author: "Antigravity"
 *   **대전환:** 아디다스는 즉각 퍼포먼스 마케팅 중심의 예산 구조를 해체하고, 비네와 필드의 조언을 따라 **브랜드 빌딩 60%, 퍼포먼스 40% 비율로 예산을 전격 재조정**했습니다.
 
 ### 2) 에어비앤비(Airbnb)의 퍼포먼스 다이어트 (2020~2021)
-코로나19 팬데믹이 닥치자 에어비앤비는 생존을 위해 마케팅 비용을 급격히 통제해야 했습니다. 그들은 구글 검색 광고를 포함한 단기 **퍼포먼스 마케팅 예산을 90% 이상(약 8억 달러) 전격 삭감**하고, 연간 전체 마케팅 예산을 전년 대비 **58% 축소**하는 초강수를 두었습니다(출처: [미국 SEC Form 10-K 공식 공시](https://www.sec.gov/ix?doc=/Archives/edgar/data/1559720/000155972021000010/abnb-20201231.htm) 및 [월스트리트 저널(WSJ) 보도](https://www.wsj.com/articles/airbnb-says-its-focus-on-brand-marketing-instead-of-search-is-working-11667506438)).
+코로나19 팬데믹이 닥치자 에어비앤비는 생존을 위해 마케팅 비용을 급격히 통제해야 했습니다. 그들은 구글 검색 광고를 포함한 단기 **퍼포먼스 마케팅 예산을 90% 이상(약 8억 달러) 전격 삭감**하고, 연간 전체 마케팅 예산을 전년 대비 **58% 축소**하는 초강수를 두었습니다(출처: [에어비앤비(Airbnb) 공식 IR 실적 아카이브](https://investors.airbnb.com/financials/quarterly-results/default.aspx) 및 [월스트리트 저널(WSJ) 보도](https://www.wsj.com/articles/airbnb-says-its-focus-on-brand-marketing-instead-of-search-is-working-11667506438)).
 *   **우려와 반전:** 많은 전문가들이 트래픽 폭락과 매출 절벽을 경고했으나, 결과는 경이로웠습니다. **퍼포먼스 예산을 제로에 가깝게 줄였음에도 불구하고 전체 웹 사이트 트래픽은 전년(2019년)의 95% 수준을 완벽하게 유지**했습니다. 
 
 *   **이유:** 2020년 4분기 기준 에어비앤비 전체 트래픽의 **90% 이상(90%+)이 직접(Direct) 혹은 자연(Unpaid) 검색 유입**으로 집계되었습니다. 즉, 에어비앤비가 오랜 기간 강력하게 다져온 브랜드 자산의 힘 덕분에 사용자들이 유료 광고 클릭 대신 자사몰을 직접 찾아 들어온 것입니다.
@@ -146,6 +146,6 @@ author: "Antigravity"
     *   **내용 요약:** 팬데믹 시기의 광고비 대규모 삭감 경험을 토대로, 구글 검색 등의 유료 획득 광고 대신 자사의 강력한 브랜드 자산과 오가닉 유입에 장기적으로 대규모 투자하는 전략이 성공적인 결실을 맺고 있음을 심층 분석한 월스트리트 저널 기사입니다.
 *   **Marketing Week (2021.02.26).** *Airbnb: Our marketing shift is a permanent pivot, not a temporary fix.* [Link](https://www.marketingweek.com/airbnb-marketing-shift-permanent-pivot/)
     *   **내용 요약:** 에어비앤비의 대규모 광고 삭감이 일시적 지출 통제가 아닌, 장단기 마케팅 시너지(브랜드 빌딩 중심)를 극대화하기 위한 구조적인 체질 개선이자 영구적인 마케팅 대전환임을 분석한 기사입니다.
-*   **Airbnb, Inc. SEC Filing Form 10-K (2021.02.26).** *Airbnb, Inc. 2020 Annual Report (Form 10-K).* [Link](https://www.sec.gov/ix?doc=/Archives/edgar/data/1559720/000155972021000010/abnb-20201231.htm)
+*   **Airbnb, Inc. (2021.02.26).** *Airbnb, Inc. Q4 2020 Shareholder Letter / 2020 Annual Report.* [Link](https://investors.airbnb.com/financials/quarterly-results/default.aspx)
     *   **내용 요약:** 에어비앤비의 2020년 연례 보고서 공식 공시 자료로, 팬데믹 시기의 전체 마케팅 예산 58% 삭감 및 8억 달러 규모의 퍼포먼스 마케팅비 절감 실적 데이터가 수록된 공식 문서입니다.
 
