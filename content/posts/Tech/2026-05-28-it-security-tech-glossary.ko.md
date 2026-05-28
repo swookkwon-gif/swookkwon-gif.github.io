@@ -566,6 +566,64 @@ graph TD
 
 ---
 
+## 21. Antigravity 2.0의 자율 에이전트 명령 가속 3대장 (goal, schedule, grill-me)
+### ① 가속 슬래시 명령어의 정의와 역할
+Antigravity 2.0은 복잡한 다중 워크스페이스 작업에서 개발자와 에이전트 간의 정렬(Alignment)과 백그라운드 자동화를 극대화하기 위해, 고유의 세 가지 가속 제어 명령(Slash Commands)을 플랫폼 내장 형태로 지원합니다.
+
+```mermaid
+flowchart TD
+    User["개발자 (User)"] -->|1. /grill-me| Interactive["대화형 정렬 인터뷰 <br> (설계 의사결정 및 기획 확정)"]
+    Interactive -->|2. /goal| Execution["목표 지향 끝장 실행 모드 <br> (자율 자가 교정 무한 루프)"]
+    Execution -->|3. /schedule| Background["스케줄링 백그라운드 작동 <br> (일회성 타이머 / 주기적 크론)"]
+```
+
+1.  **`/goal` (목표 지향 끝장 실행 모드 - Goal-Oriented End-to-End Execution):**
+    *   **개념:** 단발성 턴제 대화를 넘어, 에이전트가 "사용자가 정한 최종 목적지를 완벽하게 달성할 때까지" 중단 없이 자율적으로 루프를 돌며 문제를 파고드는 초고집중 모드입니다.
+    *   **역할 및 활용:** 대규모 패키지 리팩토링이나 빌드 오동작 복구 등 시간이 오래 걸리고 테스트가 반복되어야 하는 경우(Overnight Task 등) 사용합니다. 에이전트는 이 명령을 받으면, 샌드박스 내부의 테스트 하네스에서 코드를 빌드하고, 실패 로그를 포착해 자체적으로 재설계(Self-Correction)하여 다시 컴파일하는 루프를 자율적으로 완수할 때까지 정지하지 않고 계속 수행합니다.
+2.  **`/schedule` (스케줄 기반 백그라운드 자율 작동 - Scheduled Tasks):**
+    *   **개념:** 특정 Command나 작업을 일회성 타이머로 예약을 걸어 구동하거나, 표준 5필드 크론 표현식(`* * * * *`)을 기반으로 주기적으로 실행시키는 크론 스케줄러 엔진입니다.
+    *   **역할 및 활용:** "3시간 후에 빌드 성공 여부를 최종 확인하고 노티를 줘"라거나, "매주 금요일 퇴근 전 패키지 취약성 점검 Command를 백그라운드에서 구동해줘" 같은 정기 배치성 작업을 제어할 때 활용합니다. 시스템 백그라운드 스케줄러가 에이전트를 적정 타이밍에 깨워 Action API를 가동합니다.
+3.  **`/grill-me` (대화형 계획 정렬 및 디자인 인터뷰 - Design & Planning Alignment):**
+    *   **개념:** 에이전트가 복잡한 구현이나 설계를 시작하기 전에, 명세의 모호함을 제거하고 중요한 아키텍처 결정(Design Decision)을 확정하기 위해 사용자에게 질문을 던져 정렬(Alignment)을 구하는 인터랙티브 모드입니다.
+    *   **역할 및 활용:** 라이브러리 채택 여부나 DB 스키마 구조 변경처럼 마음대로 작업했을 때 위험성이 따르는 상황에서 유용합니다. 에이전트는 `/grill-me` 요청을 받으면 사용자가 선택하기 쉬운 다중 선택지(Options)와 날카로운 핵심 질문 리스트를 작성하여 렌더링하며, 사용자의 피드백을 수집해 완벽한 합의를 이룬 뒤 최종 통합 Command 명세를 작성합니다.
+
+### ② 각 명령어별 세부 작동 메커니즘 및 API 연동
+이 가속 명령어들은 단순한 텍스트 프롬프팅이 아니라, IDE 플랫폼 런타임이 제공하는 하부 SDK 및 모달 시스템과 유기적으로 결합하여 동작합니다.
+
+#### 1. `/grill-me`와 `ask_question` 모달 연동
+사용자가 대화 입력창에 `/grill-me`를 선언하거나 에이전트가 설계적 불확실성을 감지하면, 에이전트는 플랫폼 API인 `ask_question` 도구를 트리거합니다.
+*   **UI 렌더링 및 입력 차단:** `ask_question`이 호출되면 호스트 IDE는 대화 흐름을 일시 정지(Blocking)시키고 화면 중앙에 **인터랙티브 모달(Modal) 창**을 띄웁니다.
+*   **다중 선택 및 입력 구조화:**
+    *   `is_multi_select` 속성이 `true`인 경우, 사용자는 체크박스를 통해 여러 개의 아키텍처 옵션을 복수 선택할 수 있습니다.
+    *   사용자의 입력이 단순 주관식 자유 텍스트가 아닌 사전에 조율된 배열 형식(`options`)으로 수집되므로, 에이전트는 사용자의 의도를 왜곡이나 환각 없이 100% 정합성 있게 파악하여 설계 계획(`implementation_plan.md`)에 주입합니다.
+
+#### 2. `/goal`과 `task.md` 기반 자가 교정(Self-Correction) 루프
+`/goal` 명령이 활성화되면 에이전트는 '자율 실행 모드'로 진입하며, 플랫폼은 백그라운드 작업 오케스트레이터를 가동합니다.
+*   **작업 관리와 비동기 제어 (`manage_task` 연동):**
+    *   에이전트는 백그라운드로 장기 실행 작업을 실행하고, 사용자는 작업이 진행되는 동안 터미널을 점유당하지 않고 다른 작업을 계속할 수 있습니다.
+    *   사용자는 **`manage_task`** 도구(동작: `status` 또는 `list`)를 통해 현재 가동 중인 자율 실행 태스크의 가동 상태와 실시간 실시간 로그 URI를 조회할 수 있습니다.
+    *   만약 자율 실행 중인 에이전트가 무한 루프에 빠지거나 엉뚱한 설계를 고집할 경우, 사용자는 `manage_task`의 `kill` 액션을 통해 즉시 에이전트 작업을 강제 중단시킬 수 있습니다.
+*   **자가 교정(Self-Correction) 메커니즘:**
+    *   에이전트는 수정 사항이 발생할 때마다 로컬 테스트 하네스를 통해 테스트 및 빌드 액션(`run_command`)을 자동으로 기동합니다.
+    *   컴파일 에러나 테스트 실패가 검출되면, 에이전트는 이를 실패 피드백으로 취급하여 `task.md` 상의 진척도를 갱신하고 코드를 스스로 보완하여 재시도하는 자율 순환 고리(Self-Correction Loop)를 수행합니다.
+
+#### 3. `/schedule`과 백그라운드 크론/타이머 엔진
+`/schedule`은 대형 시스템 빌드 모니터링 및 주기적 배치 검사 등 시간적 조율이 필요한 비동기 이벤트 제어에 최적화된 엔진입니다.
+*   **일회성 타이머 모드 (One-shot Timer):**
+    *   `DurationSeconds` 파라미터를 설정하여 작동합니다. 예컨대 대규모 빌드가 돌아가는 도중 `DurationSeconds=180`으로 타이머를 지정하면, 에이전트는 무의미하게 CPU를 점유하며 대기(Polling)하지 않고 즉시 대기 상태로 들어갑니다.
+    *   180초가 경과하여 타이머가 만료되면 백그라운드 타이머 엔진이 에이전트를 깨우고(Reactive Wakeup), 에이전트는 빌드 결과물 디렉토리를 스캔하여 검증을 이어나갑니다.
+*   **주기적 크론 모드 (Recurring Cron):**
+    *   `CronExpression` 파라미터에 표준 크론 식(예: `*/30 * * * *` - 30분마다)을 매핑하여 백그라운드 작업을 주기적으로 자동 스케줄링합니다.
+    *   `MaxIterations` 파라미터를 함께 설정하여 크론 트리거 횟수의 상한선(예: 최대 3회 작동 후 자동 파기)을 규정함으로써 무한 실행으로 인한 API 요금 폭증을 예방할 수 있습니다.
+
+### ③ 세 커맨드를 200% 활용하기 위한 모범 사례 (Best Practices)
+*   **지능형 자율 개발 파이프라인 구축 예시:**
+    1.  **의사결정 및 방향 정렬 (`/grill-me`):** 데이터베이스 마이그레이션이나 신규 프레임워크 도입 등 설계 분기점이 존재할 때, `/grill-me`를 실행하여 다중 선택지 모달을 통해 아키텍처 결정을 확정하고 `implementation_plan.md` 승인을 획득합니다.
+    2.  **백그라운드 끝장 실행 (`/goal`):** 승인이 완료되면 에이전트에게 `/goal`을 하달하여, 샌드박스 내부 테스트 하네스에서 모든 유닛 테스트가 100% 통과할 때까지 자율 빌드 및 코드 수정을 수행하도록 방치합니다. 사용자는 퇴근하거나 다른 업무를 봅니다.
+    3.  **지속적 모니터링 및 스케줄링 (`/schedule`):** 기능 구현 및 배포가 끝난 뒤, `/schedule` 명령을 사용해 매일 새벽 3시에 API 헬스체크 및 취약점 검사를 돌리도록 백그라운드 크론을 등록하여 시스템 안정성을 지속적으로 모니터링합니다.
+
+---
+
 ## 📚 참고자료
 1. Mitnick, K. D. (2002). *The Art of Deception: Controlling the Human Element of Security*. John Wiley & Sons. (사회공학적 해킹 시나리오 및 조직 보안 문화 연구)
 2. Kurose, J. F., & Ross, K. W. (2020). *Computer Networking: A Top-Down Approach* (8th ed.). Pearson. (Evil Twin AP 공격 원리, VPN 터널링 및 다중 홉 구조의 물리적 흐름 해설)
@@ -589,5 +647,8 @@ graph TD
 20. OWASP. (2025). *OWASP Top 10 for Large Language Model Applications - Insecure Plugin Design & Excessive Agency*. OWASP Foundation. (LLM 에이전트의 권한 오용 및 차단 가이드라인 문서)
 21. Wooldridge, M. (2020). *An Introduction to MultiAgent Systems* (2nd ed.). John Wiley & Sons. (멀티 에이전트 협업 토폴로지 및 오케스트레이션 설계 기초 이론 서적)
 22. Antigravity Labs. (2026). *Modular Plugins and Extensible Sandboxes in Unified Agent Architectures*. Antigravity Engineering Whitepaper. (단일 지능 구조에서의 플러그인 로드 및 Action API 보안 통제 분석 논문)
+23. Antigravity Labs. (2026). *Interactive Goal Alignment and Scheduler Subsystems in Antigravity 2.0*. Antigravity Technical Blueprint Series. (에이전트 제어용 goal, schedule, grill-me 서브시스템 명세 및 상호 작용 방법론 가이드북)
+24. White, J., et al. (2023). *A Prompt Pattern Catalog to Enhance Prompt Engineering with ChatGPT*. IEEE Access. (대화형 정렬을 위한 grill-me 패턴의 근간인 Prompt Pattern Catalog 연구 논문)
+
 
 
