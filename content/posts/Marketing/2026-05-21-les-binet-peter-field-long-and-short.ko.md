@@ -69,7 +69,7 @@ author: "Antigravity"
 *   **우려와 반전:** 많은 전문가들이 트래픽 폭락과 매출 절벽을 경고했으나, 결과는 경이로웠습니다. **퍼포먼스 예산을 제로에 가깝게 줄였음에도 불구하고 전체 웹 사이트 트래픽은 전년(2019년)의 95% 수준을 완벽하게 유지**했습니다. 
 
 *   **이유:** 2020년 4분기 기준 에어비앤비 전체 트래픽의 **90% 이상(90%+)이 직접(Direct) 혹은 자연(Unpaid) 검색 유입**으로 집계되었습니다. 즉, 에어비앤비가 오랜 기간 강력하게 다져온 브랜드 자산의 힘 덕분에 사용자들이 유료 광고 클릭 대신 자사몰을 직접 찾아 들어온 것입니다.
-*   **결론:** 에어비앤비 CEO 브라이언 체스키(Brian Chesky)는 실적 발표에서 *"퍼포먼스 마케팅은 특정 타겟을 낚아채는(buying customers) 레이저일 뿐, 진짜 마케팅은 대중을 교육하고 영감을 주는(educating and inspiring) 것"*이라 선언하며, 마케팅 예산의 판을 단기적 퍼포먼스가 아닌 장기적인 브랜드 및 PR 중심으로 전면 개편했습니다. 월스트리트 저널(WSJ)과 Marketing Week 등은 이러한 에어비앤비의 행보와 "검색 광고 대신 브랜드 빌딩에 우선순위를 두는 전략이 비즈니스 성과를 지속적으로 증명하고 있다"는 분석을 비중 있게 보도했습니다. 그 결과 2022년 창사 이래 최초로 **GAAP 기준 19억 달러의 거대한 연간 순이익 흑자 전환**에 성공했습니다. (에어비앤비가 대시보드의 유령 성과를 잡아내기 위해 활용한 구체적인 인과관계 측정 기술과 통제 실험 방법론은 [광고의 순수 증분(Incrementality) 효과 측정 완벽 가이드](/posts/2026-05-21-ad-incrementality-measurement-ultimate-guide) 포스트에서 실증 통계 원리와 함께 다룹니다.)
+*   **결론:** 에어비앤비 CEO 브라이언 체스키(Brian Chesky)는 실적 발표에서 *"퍼포먼스 마케팅은 특정 타겟을 낚아채는(buying customers) 레이저일 뿐, 진짜 마케팅은 대중을 교육하고 영감을 주는(educating and inspiring) 것"*이라 선언하며, 마케팅 예산의 판을 단기적 퍼포먼스가 아닌 장기적인 브랜드 및 PR 중심으로 전면 개편했습니다. 월스트리트 저널(WSJ)과 Skift 등은 이러한 에어비앤비의 행보와 "검색 광고 대신 브랜드 빌딩에 우선순위를 두는 전략이 비즈니스 성과를 지속적으로 증명하고 있다"는 분석을 비중 있게 보도했습니다. 그 결과 2022년 창사 이래 최초로 **GAAP 기준 19억 달러의 거대한 연간 순이익 흑자 전환**에 성공했습니다. (에어비앤비가 대시보드의 유령 성과를 잡아내기 위해 활용한 구체적인 인과관계 측정 기술과 통제 실험 방법론은 [광고의 순수 증분(Incrementality) 효과 측정 완벽 가이드](/posts/2026-05-21-ad-incrementality-measurement-ultimate-guide) 포스트에서 실증 통계 원리와 함께 다룹니다.)
 
 ---
 
@@ -144,8 +144,8 @@ author: "Antigravity"
     *   **내용 요약:** 전통적인 브랜드 빌딩 미디어 노출이 모바일 및 디지털 검색 클릭 마찰을 줄이고 장기 리텐션을 어떻게 매개하는지 실증한 최근 서비스 마케팅 연구 논문입니다.
 *   **Wall Street Journal (2022.11.03).** *Airbnb Says Its Focus on Brand Marketing Instead of Search Is Working.* [Link](https://www.wsj.com/articles/airbnb-says-its-focus-on-brand-marketing-instead-of-search-is-working-11667506438)
     *   **내용 요약:** 팬데믹 시기의 광고비 대규모 삭감 경험을 토대로, 구글 검색 등의 유료 획득 광고 대신 자사의 강력한 브랜드 자산과 오가닉 유입에 장기적으로 대규모 투자하는 전략이 성공적인 결실을 맺고 있음을 심층 분석한 월스트리트 저널 기사입니다.
-*   **Marketing Week (2021.02.26).** *Airbnb: Our marketing shift is a permanent pivot, not a temporary fix.* [Link](https://www.marketingweek.com/airbnb-marketing-shift-permanent-pivot/)
-    *   **내용 요약:** 에어비앤비의 대규모 광고 삭감이 일시적 지출 통제가 아닌, 장단기 마케팅 시너지(브랜드 빌딩 중심)를 극대화하기 위한 구조적인 체질 개선이자 영구적인 마케팅 대전환임을 분석한 기사입니다.
+*   **Skift (2021.02.25).** *Airbnb Outlines 2021 Vision After Weathering $4.6 Billion Pandemic Year Loss.* [Link](https://skift.com/2021/02/25/airbnb-outlines-2021-vision-after-weathering-4-6-billion-pandemic-year-loss/)
+    *   **내용 요약:** 에어비앤비가 IPO 이후 최초로 공개한 연간 실적 발표 내용으로, 팬데믹 시기의 위기 대응 및 2021년 브랜드 가치 중심의 비전 수립 성과가 정리된 Skift의 분석 리포트입니다.
 *   **Airbnb, Inc. (2021.02.26).** *Airbnb, Inc. Q4 2020 Shareholder Letter / 2020 Annual Report.* [Link](https://investors.airbnb.com/financials/quarterly-results/default.aspx)
     *   **내용 요약:** 에어비앤비의 2020년 연례 보고서 공식 공시 자료로, 팬데믹 시기의 전체 마케팅 예산 58% 삭감 및 8억 달러 규모의 퍼포먼스 마케팅비 절감 실적 데이터가 수록된 공식 문서입니다.
 
