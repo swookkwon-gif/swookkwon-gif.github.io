@@ -74,9 +74,10 @@ Fetch Media의 하청 모바일 광고 네트워크 중 하나였던 **Phunware*
 1. Tadelis, S., et al. (2015). *Consumer Heterogeneity and Paid Search Effectiveness: A Large-Scale Field Experiment*. Econometrica. (eBay의 증분 실험 사례와 맥락을 같이 하는 선행 연구)
 2. TechCrunch (2017.09.20). [Uber sues mobile agency Fetch for $40M, alleging ad fraud](https://techcrunch.com/2017/09/20/uber-sues-mobile-agency-fetch-for-40m-alleging-ad-fraud/).
 3. Adweek (2020.10.23). [Uber Settles Mobile Ad Fraud Lawsuit With Phunware for $6 Million](https://www.adweek.com/performance-marketing/uber-settles-mobile-ad-fraud-lawsuit-with-phunware-for-6-million/).
-4. Wall Street Journal (2019.06.25). [Uber Sues Ad Agencies, Alleging Widespread Click Fraud](https://www.wsj.com/articles/uber-sues-ad-agencies-alleging-widespread-click-fraud-1561494874).
-5. Phunware SEC Filing Form 8-K (2020.10.09). [Phunware, Inc. SEC EDGAR Filings (CIK 0001665300)](https://www.sec.gov/edgar/browse/?CIK=1665300).
-6. [Uber Cut $100M in Ad Spend and nothing happened? - Adriaan Dekker](https://adriaan-dekker.nl/uber-cut-100m-in-ad-spend-and-nothing-happened/)
-7. [Uber Chief Claims Most Performance Marketing is Pure Fraud - ADOTAT](https://www.adotat.com/2021/01/uber-chief-claims-most-performance-marketing-is-pure-fraud/)
-8. [Last Click Attribution & Cannibalization - INCRMNTAL](https://www.incrmntal.com/resources/last-click-attribution-and-cannibalization)
-9. Kevin Frisch의 팟캐스트 인터뷰 기록 (Edward Nevraumont's *Marketing BS* Podcast).
+4. MediaPost (2019.06.25). [Uber Sues Ad Agencies, Alleging Widespread Ad Fraud](https://www.mediapost.com/publications/article/337424/uber-sues-ad-agencies-alleging-widespread-ad.html).
+5. Tech.co (2019.06.26). [Uber's Ad Fraud Suit Highlights a Billion-Dollar Brand Problem](https://tech.co/news/uber-ad-fraud-brand-problem).
+6. Phunware SEC Filing Form 8-K (2020.10.09). [Phunware, Inc. SEC EDGAR Filings (CIK 0001665300)](https://www.sec.gov/edgar/browse/?CIK=1665300).
+7. [Uber Cut $100M in Ad Spend and nothing happened? - Adriaan Dekker](https://adriaan-dekker.nl/uber-cut-100m-in-ad-spend-and-nothing-happened/)
+8. [Uber Chief Claims Most Performance Marketing is Pure Fraud - ADOTAT](https://www.adotat.com/2021/01/uber-chief-claims-most-performance-marketing-is-pure-fraud/)
+9. [Last Click Attribution & Cannibalization - INCRMNTAL](https://www.incrmntal.com/resources/last-click-attribution-and-cannibalization)
+10. Kevin Frisch의 팟캐스트 인터뷰 기록 (Edward Nevraumont's *Marketing BS* Podcast).
