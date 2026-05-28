@@ -126,7 +126,7 @@ Binet과 Field는 이것을 **"효율성 함정(The Efficiency Trap)"**이라고
 
 가장 극적이고 시사적인 현대 마케팅 사례 중 하나입니다.
 
-*   **배경**: 2020년 3월, 코로나 팬데믹으로 8주 만에 비즈니스가 80% 주저앉자, 에어비앤비(Airbnb)는 2020년 전체 마케팅 예산을 전년 대비 **58% 삭감**하고 퍼포먼스 마케팅 예산을 **90% 이상(약 8억 달러, 한화 약 1.1조 원) 전격 중단**했습니다.
+*   **배경**: 2020년 3월, 코로나 팬데믹으로 8주 만에 비즈니스가 80% 주저앉자, 에어비앤비(Airbnb)는 2020년 전체 마케팅 예산을 전년 대비 **58% 삭감**하고 퍼포먼스 마케팅 예산을 **90% 이상(약 8억 달러, 한화 약 1.1조 원) 전격 중단**했습니다(출처: [미국 SEC Form 10-K 공식 공시](https://www.sec.gov/ix?doc=/Archives/edgar/data/1559720/000155972021000011/abnb-20201231.htm) 및 CNBC 보도).
 *   **발견**: 놀랍게도 퍼포먼스 마케팅을 전면 차단했음에도, 전체 웹 사이트 트래픽은 **전년(2019년) 대비 95% 수준을 완벽하게 유지**했습니다. 2020년 4분기 기준 에어비앤비 전체 트래픽 중 **90% 이상(90%+)이 직접 유입(Direct) 또는 자연(Unpaid) 검색 유입**이었습니다. 이는 수년간 구축해 온 독보적인 브랜드 자산의 힘이었습니다.
 *   **전략 전환**: 이 경험을 계기로 에어비앤비는 퍼포먼스 마케팅 의존도를 영구적으로 축소하고, 브랜드 마케팅(스토리텔링, PR, 호스트 커뮤니티 빌딩) 중심으로 마케팅 믹스를 전면 재정립했습니다. CNBC와 Marketing Week 등의 분석 보도에 따르면, CEO 브라이언 체스키는 에어비앤비가 이미 '명사이자 동사'이기 때문에 단순히 광고로 고객을 사는(buying customers) 행위보다 브랜드 스토리를 '교육(educating and inspiring)'하는 방향으로 마케팅 예산 체질을 완전히 개편하겠다고 선언했습니다. (에어비앤비가 유료 광고를 껐을 때 발생한 구체적인 인과관계 측정 기술과 통제 실험 방법론은 [광고의 순수 증분(Incrementality) 효과 측정 완벽 가이드](/posts/2026-05-21-ad-incrementality-measurement-ultimate-guide) 포스트에 상세히 정리되어 있습니다.)
 *   **결과**: 불황 속 마케팅 삭감을 통제하여 2020년 매출 하락을 30%(34억 달러) 선방으로 방어했고, 2021년 전체 매출은 2019년 대비 **25% 성장(59억 달러)**했으며, 2022년에는 최초로 **19억 달러의 연간 순이익 GAAP 흑자**로 턴어라운드에 성공한 후 2020년 12월 IPO에서 기업 가치 **$1,000억**을 돌파했습니다.
@@ -240,7 +240,7 @@ Binet과 Field는 이것을 **"효율성 함정(The Efficiency Trap)"**이라고
 3. Hanssens, D. M., & Dekimpe, M. G. (1995). "The Persistence of Marketing Effects on Sales." *Marketing Science*, 14(1), 1–21.
 4. Sharp, B. (2010). *How Brands Grow: What Marketers Don't Know.* Oxford University Press. (Ehrenberg-Bass 연구소)
 5. Ocean Tomo, "Intangible Asset Market Value Study" (S&P 500 무형자산 비율 시계열 분석).
-6. Airbnb (2020). 퍼포먼스 마케팅 $8억 삭감 → 트래픽 90%+ 유지 → IPO $1,000억 달성. (참고 기사: CNBC (2021.02.25) [Airbnb CEO says marketing strategy is permanently changing](https://www.cnbc.com/2021/02/25/airbnb-ceo-says-marketing-strategy-is-permanently-changing-focusing-on-pr.html), Marketing Week (2021.02.26) [Airbnb: Our marketing shift is a permanent pivot](https://www.marketingweek.com/airbnb-marketing-shift-permanent-pivot/))
+6. Airbnb (2020). 퍼포먼스 마케팅 $8억 삭감 → 트래픽 90%+ 유지 → IPO $1,000억 달성. (참고 기사: CNBC (2021.02.25) [Airbnb CEO says marketing strategy is permanently changing](https://www.cnbc.com/2021/02/25/airbnb-ceo-says-marketing-strategy-is-permanently-changing-focusing-on-pr.html), Marketing Week (2021.02.26) [Airbnb: Our marketing shift is a permanent pivot](https://www.marketingweek.com/airbnb-marketing-shift-permanent-pivot/), [Airbnb 2020 SEC Form 10-K 공식 공시](https://www.sec.gov/ix?doc=/Archives/edgar/data/1559720/000155972021000011/abnb-20201231.htm))
 7. Peel, S. (2019). Adidas 77/23 퍼포먼스 과잉 투자 고백 — 매출의 65%가 브랜드 빌딩 기여.
 8. McGraw-Hill (1985). 1981-82 불황기 600개 B2B 기업 추적 연구 — 마케팅 유지 기업 매출 성장 256% 우위.
 9. 삼양식품 불닭볶음면. 바이럴 마케팅 → 매출 80%+ 해외, 9억불 수출의 탑 수상.
