@@ -1,10 +1,6 @@
 ---
-title: "누가 당신의 광고비를 훔쳐가는가? 신간 《마케팅 데이터의 거짓말》 표지 및 핵심 질문 공개"
-date: 2026-05-21T07:35:00+09:00
-categories: ["Marketing"]
-tags: ["Book Cover", "Marketing Lies", "Causal Inference", "Correlation vs Causality", "Warren Buffett", "Seth Godin Style"]
+title: "마케팅 데이터의 거짓말 - 광고를 중단해도 매출이 줄지 않는 이유"
 description: "신간 《마케팅 데이터의 거짓말: 누가 당신의 광고비를 훔쳐가는가?》의 스케치 스타일 표지 디자인과 뒷면 퀴즈를 공개합니다. ISBA/PwC의 실제 광고비 누수 데이터 및 2022년 미국 USDA/CDC 기온-익사 실측 통계를 바탕으로 상관관계와 인과관계의 본질을 파헤칩니다."
-author: "Antigravity"
 ---
 
 # 누가 당신의 광고비를 훔쳐가는가? 신간 《마케팅 데이터의 거짓말》 표지 및 핵심 질문 공개
