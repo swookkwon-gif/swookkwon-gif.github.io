@@ -22,11 +22,11 @@ categories: ["Marketing", "Data Literacy"]
 신간 《마케팅 데이터의 거짓말》의 앞면 표지는 광고를 완전히 중단했을 때 비로소 진실이 폭로된 **3대 글로벌 IT 기업(에어비앤비, 우버, 이베이)의 극적인 A/B 테스트 실측 지표**를 담았습니다. 이 기업들은 대시보드상의 화려한 광고 성과 숫자가 인과관계가 아닌 단순한 '카니발라이제이션(자기잠식)'과 '기여도 가로채기'였음을 입증했습니다.
 
 ### ① 에어비앤비 (Airbnb) — 팬데믹 초기 1조 원 마케팅 중단 실험 (2020)
-2020년 코로나19 팬데믹으로 여행 수요가 전멸 위기에 처하자, 에어비앤비는 생존을 위해 2020년 전체 마케팅 예산을 전년 대비 **58% 전격 삭감**했습니다. 그중 검색 및 리타겟팅 등 단기 퍼포먼스 마케팅 예산은 **90% 이상(약 8억 달러, 한화 약 1조 원) 삭감**하여 사실상 제로에 가깝게 만들었습니다(출처: [U.S. SEC Form 10-K 공식 공시](https://www.sec.gov/ix?doc=/Archives/edgar/data/1559720/000155972021000010/abnb-20201231.htm) 및 [CNBC 보도](https://www.cnbc.com/2022/02/17/airbnb-ceo-brian-chesky-on-covid-impact-on-long-term-bookings-.html)). 대시보드 상으로는 트래픽이 동반 폭락해야 정상이었으나, 결과는 경악스러웠습니다.
+2020년 코로나19 팬데믹으로 여행 수요가 전멸 위기에 처하자, 에어비앤비는 생존을 위해 2020년 전체 마케팅 예산을 전년 대비 **58% 전격 삭감**했습니다. 그중 검색 및 리타겟팅 등 단기 퍼포먼스 마케팅 예산은 **90% 이상(약 8억 달러, 한화 약 1조 원) 삭감**하여 사실상 제로에 가깝게 만들었습니다(출처: [U.S. SEC Form 10-K 공식 공시](https://www.sec.gov/ix?doc=/Archives/edgar/data/1559720/000155972021000010/abnb-20201231.htm) 및 [월스트리트 저널(WSJ) 보도](https://www.wsj.com/articles/airbnb-says-its-focus-on-brand-marketing-instead-of-search-is-working-11667506438)). 대시보드 상으로는 트래픽이 동반 폭락해야 정상이었으나, 결과는 경악스러웠습니다.
 *   **실측 결과 (트래픽 탄력성):** 유료 퍼포먼스 마케팅을 전격 중단했음에도 전체 웹 사이트 트래픽은 **전년(2019년) 대비 95% 수준을 완벽하게 유지**했습니다. 특히 2020년 4분기 기준 에어비앤비 전체 트래픽 중 **90% 이상(90%+)이 직접(Direct) 혹은 자연(Unpaid) 검색 유입**으로 기록되었습니다.
 *   **원인 (자기 잠식):** 퍼포먼스 광고가 신규 고객을 창출한 것이 아니라, 이미 브랜드(Airbnb)를 인지하고 들어오려던 오가닉 고객들의 검색 길목을 유료 배너로 선점하여 기여도(Attribution) 성과만 가로채고 있었던(Cannibalization) 것입니다. (에어비앤비가 사용한 브랜드 검색 광고 차단 실험의 구체적인 통계적 방법론과 리프트 측정 원리가 궁금하다면 [광고의 순수 증분(Incrementality) 효과 측정 완벽 가이드](/posts/2026-05-21-ad-incrementality-measurement-ultimate-guide) 포스트를 참고하세요.)
 *   **재무 성과:** 예산 낭비를 통제한 결과, 2020년 매출은 우려와 달리 30% 감소(34억 달러)에 선방했고, 비용 효율화 체질 개선을 바탕으로 2021년 전체 매출은 2019년(팬데믹 이전) 대비 **25% 성장(59억 달러)**했으며 2022년에는 창사 이래 최초로 **19억 달러의 연간 순이익(GAAP) 흑자 전환**에 성공했습니다.
-*   **마케팅 전략 전환:** 2021년 2월 실적 발표에서 CEO 브라이언 체스키(Brian Chesky)는 에어비앤비 마케팅 전략의 '영구적인 전환'을 선언했습니다. 그는 *"에어비앤비는 이미 하나의 명사(Noun)이자 동사(Verb)로 자리잡았으며, 마케팅은 단순히 돈으로 고객을 구매(buying customers)하는 행위가 아니라 브랜드의 본질을 알리고 교육(educating and inspiring)하는 수단이어야 한다"*라고 역설했습니다. 당시 **월스트리트 저널(WSJ)**과 **CNBC**, **Marketing Week** 등 주요 글로벌 비즈니스 미디어는 에어비앤비의 이 같은 대담한 행보와 "검색 광고 대신 브랜드에 투자하는 전략이 실제로 지속적인 성공을 거두고 있다"는 점을 비중 있게 분석 보도했습니다.
+*   **마케팅 전략 전환:** 2021년 2월 실적 발표에서 CEO 브라이언 체스키(Brian Chesky)는 에어비앤비 마케팅 전략의 '영구적인 전환'을 선언했습니다. 그는 *"에어비앤비는 이미 하나의 명사(Noun)이자 동사(Verb)로 자리잡았으며, 마케팅은 단순히 돈으로 고객을 구매(buying customers)하는 행위가 아니라 브랜드의 본질을 알리고 교육(educating and inspiring)하는 수단이어야 한다"*라고 역설했습니다. 당시 **월스트리트 저널(WSJ)**과 **Marketing Week** 등 주요 글로벌 비즈니스 미디어는 에어비앤비의 이 같은 대담한 행보와 "검색 광고 대신 브랜드에 투자하는 전략이 실제로 지속적인 성공을 거두고 있다"는 점을 비중 있게 분석 보도했습니다.
 
 ```mermaid
 graph LR
@@ -127,9 +127,8 @@ graph TD
 10. [Last Click Attribution & Cannibalization - INCRMNTAL](https://www.incrmntal.com/resources/last-click-attribution-and-cannibalization)
 11. Kevin Frisch의 팟캐스트 인터뷰 기록 (Edward Nevraumont's *Marketing BS* Podcast).
 12. Wall Street Journal (2022.11.03). [Airbnb Says Its Focus on Brand Marketing Instead of Search Is Working](https://www.wsj.com/articles/airbnb-says-its-focus-on-brand-marketing-instead-of-search-is-working-11667506438).
-13. CNBC (2022.02.17). [Airbnb CEO Brian Chesky on Covid impact on long-term bookings](https://www.cnbc.com/2022/02/17/airbnb-ceo-brian-chesky-on-covid-impact-on-long-term-bookings-.html).
-14. Marketing Week (2021.02.26). [Airbnb: Our marketing shift is a permanent pivot, not a temporary fix](https://www.marketingweek.com/airbnb-marketing-shift-permanent-pivot/).
-15. Airbnb, Inc. SEC Filing Form 10-K (2021.02.26). [Airbnb, Inc. 2020 Annual Report (Form 10-K)](https://www.sec.gov/ix?doc=/Archives/edgar/data/1559720/000155972021000010/abnb-20201231.htm).
+13. Marketing Week (2021.02.26). [Airbnb: Our marketing shift is a permanent pivot, not a temporary fix](https://www.marketingweek.com/airbnb-marketing-shift-permanent-pivot/).
+14. Airbnb, Inc. SEC Filing Form 10-K (2021.02.26). [Airbnb, Inc. 2020 Annual Report (Form 10-K)](https://www.sec.gov/ix?doc=/Archives/edgar/data/1559720/000155972021000010/abnb-20201231.htm).
 
 
 
