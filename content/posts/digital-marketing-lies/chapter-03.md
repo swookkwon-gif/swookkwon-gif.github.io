@@ -69,7 +69,12 @@ P&G는 수사적인 경고에 그치지 않고 즉각적인 행동을 단행했�
 
 대다수 마케팅 대시보드는 퍼포먼스 마케팅이 에어비앤비의 트래픽을 지탱하는 기둥이라고 보고하고 있었기에, 업계 전체가 에어비앤비의 트래픽 급락을 예상했습니다. 그러나 놀라운 결과가 나타났습니다.
 
-광고 집행을 멈추었음에도 에어비앤비의 전체 트래픽은 **전년(2019년)의 95% 수준을 완벽하게 유지**했습니다. 특히 2020년 4분기 기준 에어비앤비 전체 트래픽의 **90% 이상(90%+)이 직접(Direct) 자사몰 주소를 치고 들어오거나 자연(Unpaid) 검색 유입**으로 집계되었습니다. 
+광고 스위치를 끈 직전과 직후의 단기 유입 추이를 비교한 A/B 테스트(Holdout/Incrementality) 결과, 유료 광고 클릭으로 들어오던 트래픽이 광고 중단 즉시 오가닉 검색 및 직접 유입으로 100% 전환되어, 광고 중단 전후의 트래픽 총량 자체는 변동 없이 완전히 동일 - [Marketing Week 보도 ("not a dial you just turn", 2021)](https://www.marketingweek.com/airbnb-performance-marketing/) 
+
+💡 브라이언 체스키(Brian Chesky) CEO의 실제 Earnings Call 발언 (2021년 2월 25일)
+"When we pulled back our marketing, we found that our traffic levels returned to 95% of the levels seen in 2019 without any marketing spend." (우리가 마케팅을 철수했을 때, 마케팅 지출 없이도 트래픽 수준이 2019년에 보았던 수준의 95%로 돌아왔음을 발견했습니다.)
+
+특히 2020년 4분기 기준 에어비앤비 전체 트래픽의 **90% 이상(90%+)이 직접(Direct) 자사몰 주소를 치고 들어오거나 자연(Unpaid) 검색 유입**으로 집계되었습니다.
 
 당시 에어비앤비의 CEO 브라이언 체스키(Brian Chesky)는 4분기 실적 발표에서 이 대담한 실험에 대해 다음과 같이 언급했습니다.
 > *"우리는 퍼포먼스 마케팅이 실질적으로 고객을 돈으로 구매(buying customers)하는 방식이라고 생각합니다. 하지만 우리는 마케팅을 대중에게 우리 브랜드를 교육하고 영감을 주는(educating and inspiring) 도구로 사용하기를 원합니다."*
