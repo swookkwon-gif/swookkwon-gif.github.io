@@ -38,14 +38,14 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
   });
 
   const alternates: { canonical: string; languages?: Record<string, string> } = {
-    canonical: `/category/${slug}/`,
+    canonical: `https://swookkwon-gif.github.io/category/${slug}/`,
   };
 
   if (hasEnCategory) {
     alternates.languages = {
-      'ko': `/category/${slug}/`,
-      'en': `/en/category/${slug}/`,
-      'x-default': `/category/${slug}/`,
+      'ko': `https://swookkwon-gif.github.io/category/${slug}/`,
+      'en': `https://swookkwon-gif.github.io/en/category/${slug}/`,
+      'x-default': `https://swookkwon-gif.github.io/category/${slug}/`,
     };
   }
 
@@ -56,7 +56,7 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
     openGraph: {
       title,
       description: `Articles in the ${displayCategory} category`,
-      url: `/category/${slug}/`,
+      url: `https://swookkwon-gif.github.io/category/${slug}/`,
     }
   };
 }

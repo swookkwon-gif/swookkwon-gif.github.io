@@ -32,7 +32,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const post = getPostData(slug, lang);
-  const url = `/en/posts/${slug}/`;
+  const url = `https://swookkwon-gif.github.io/en/posts/${slug}/`;
 
   return {
     title: post.title,
@@ -41,9 +41,9 @@ export async function generateMetadata({
     alternates: {
       canonical: url,
       languages: {
-        'ko': `/posts/${slug}/`,
-        'en': `/en/posts/${slug}/`,
-        'x-default': `/posts/${slug}/`,
+        'ko': `https://swookkwon-gif.github.io/posts/${slug}/`,
+        'en': `https://swookkwon-gif.github.io/en/posts/${slug}/`,
+        'x-default': `https://swookkwon-gif.github.io/posts/${slug}/`,
       }
     },
     openGraph: {

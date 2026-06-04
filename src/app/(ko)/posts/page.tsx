@@ -6,17 +6,17 @@ export const metadata: Metadata = {
   title: "All Posts",
   description: "Browse all posts",
   alternates: {
-    canonical: '/posts/',
+    canonical: 'https://swookkwon-gif.github.io/posts/',
     languages: {
-      'ko': '/posts/',
-      'en': '/en/posts/',
-      'x-default': '/posts/',
+      'ko': 'https://swookkwon-gif.github.io/posts/',
+      'en': 'https://swookkwon-gif.github.io/en/posts/',
+      'x-default': 'https://swookkwon-gif.github.io/posts/',
     }
   },
   openGraph: {
     title: "All Posts",
     description: "Browse all posts",
-    url: '/posts/',
+    url: 'https://swookkwon-gif.github.io/posts/',
   }
 };
 

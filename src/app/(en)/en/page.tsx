@@ -4,11 +4,11 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   alternates: {
-    canonical: '/en/',
+    canonical: 'https://swookkwon-gif.github.io/en/',
     languages: {
-      'ko': '/',
-      'en': '/en/',
-      'x-default': '/',
+      'ko': 'https://swookkwon-gif.github.io/',
+      'en': 'https://swookkwon-gif.github.io/en/',
+      'x-default': 'https://swookkwon-gif.github.io/',
     }
   },
 };

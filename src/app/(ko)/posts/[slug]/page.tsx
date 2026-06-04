@@ -36,7 +36,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const post = getPostData(slug, lang);
-  const url = `/posts/${slug}/`;
+  const url = `https://swookkwon-gif.github.io/posts/${slug}/`;
 
   // Check if English version actually exists to avoid broken hreflang URLs
   const postsEn = getSortedPostsData('en');
@@ -48,9 +48,9 @@ export async function generateMetadata({
 
   if (hasEnVersion) {
     alternates.languages = {
-      'ko': `/posts/${slug}/`,
-      'en': `/en/posts/${slug}/`,
-      'x-default': `/posts/${slug}/`,
+      'ko': `https://swookkwon-gif.github.io/posts/${slug}/`,
+      'en': `https://swookkwon-gif.github.io/en/posts/${slug}/`,
+      'x-default': `https://swookkwon-gif.github.io/posts/${slug}/`,
     };
   }
 
