@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Outfit } from "next/font/google";
-import "../globals.css";
+import "./globals.css";
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
 import { getSortedPostsData } from "@/lib/posts";
@@ -14,19 +14,18 @@ export const metadata: Metadata = {
     template: "%s | Wook's AI and Marketing",
     default: "Wook's AI and Marketing",
   },
-  description: "Global Digital Marketing & eCommerce expert. Recording my learnings in Data and AI through an automated blog.",
+  description: "글로벌 Digital Marketing & eCommerce 전문가. Data와 AI를 공부하면서 배운 내용들을 AI로 만든 자동화 블로그로 기록합니다.",
   verification: {
     google: "VEKICMa0sx4OpQaX_Aj0-5pNDI9NrEjyK9D7-W_R0Ug",
   },
 };
 
-export default async function EnLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const lang = 'en';
-  const posts = getSortedPostsData(lang);
+  const posts = getSortedPostsData();
   const categoriesMap = posts.reduce((acc, post) => {
     const cat = post.category || "Insight";
     acc[cat] = (acc[cat] || 0) + 1;
@@ -43,12 +42,12 @@ export default async function EnLayout({
     }));
 
   return (
-    <html lang={lang} className={`${inter.variable} ${outfit.variable}`}>
+    <html lang="ko" className={`${inter.variable} ${outfit.variable}`}>
       <body className="antialiased overflow-x-hidden min-h-screen bg-white">
-        <Header lang={lang} categoryCounts={categoryCounts} />
+        <Header categoryCounts={categoryCounts} />
 
         <div className="max-w-[1180px] mx-auto px-6 pt-2 md:pt-3 pb-8 md:flex md:gap-10 lg:gap-14">
-          <Sidebar lang={lang} />
+          <Sidebar />
           <main className="flex-1 w-full max-w-3xl min-w-0">
             {children}
           </main>

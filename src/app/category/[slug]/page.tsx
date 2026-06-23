@@ -8,7 +8,7 @@ interface CategoryPageProps {
 }
 
 export async function generateStaticParams() {
-  const posts = getSortedPostsData('en');
+  const posts = getSortedPostsData();
   const categories = Array.from(new Set(posts.map(post => post.category || 'Insight')));
   return categories.map(category => ({
     slug: category.toLowerCase().replace(/\s+/g, '-')
@@ -17,46 +17,49 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: CategoryPageProps): Promise<Metadata> {
   const { slug } = await params;
-  const posts = getSortedPostsData('en');
+  const posts = getSortedPostsData();
   const filteredPosts = posts.filter(post => {
     const postCategorySlug = (post.category || 'Insight').toLowerCase().replace(/\s+/g, '-');
     return postCategorySlug === slug;
   });
 
-  if (filteredPosts.length === 0) return { title: 'Category Not Found' };
+  if (filteredPosts.length === 0) {
+    return { title: 'Category Not Found' };
+  }
 
   const displayCategory = filteredPosts[0].category;
   const title = `${displayCategory} | Category`;
 
+  const alternates: { canonical: string } = {
+    canonical: `https://swookkwon-gif.github.io/category/${slug}/`,
+  };
+
   return {
     title,
     description: `Articles in the ${displayCategory} category`,
-    alternates: {
-      canonical: `https://swookkwon-gif.github.io/en/category/${slug}/`,
-      languages: {
-        'ko': `https://swookkwon-gif.github.io/category/${slug}/`,
-        'en': `https://swookkwon-gif.github.io/en/category/${slug}/`,
-        'x-default': `https://swookkwon-gif.github.io/category/${slug}/`,
-      }
-    },
+    alternates,
     openGraph: {
       title,
       description: `Articles in the ${displayCategory} category`,
-      url: `https://swookkwon-gif.github.io/en/category/${slug}/`,
+      url: `https://swookkwon-gif.github.io/category/${slug}/`,
     }
   };
 }
 
-export default async function EnCategoryPage({ params }: CategoryPageProps) {
+export default async function CategoryPage({ params }: CategoryPageProps) {
   const { slug } = await params;
-  const posts = getSortedPostsData('en');
+  const posts = getSortedPostsData();
 
   const filteredPosts = posts.filter(post => {
     const postCategorySlug = (post.category || 'Insight').toLowerCase().replace(/\s+/g, '-');
     return postCategorySlug === slug;
   });
 
-  if (filteredPosts.length === 0) notFound();
+  if (filteredPosts.length === 0) {
+    notFound();
+  }
+
+  const displayCategory = filteredPosts[0].category;
 
   return (
     <div className="font-sans">
@@ -64,7 +67,7 @@ export default async function EnCategoryPage({ params }: CategoryPageProps) {
         {filteredPosts.map((post) => (
           <article key={post.slug} className="mm-post-item group">
             <h2 className="text-lg md:text-xl font-bold mb-2">
-              <Link href={`/en/posts/${post.slug}`} className="text-neutral-900 group-hover:text-blue-600 transition-colors">
+              <Link href={`/posts/${post.slug}`} className="text-neutral-900 group-hover:text-blue-600 transition-colors">
                 {post.title}
               </Link>
             </h2>

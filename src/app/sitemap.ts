@@ -24,39 +24,22 @@ function safeFormatDate(dateStr?: string): string {
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const postsKo = getSortedPostsData('ko'); // 182 posts
-  const postsEn = getSortedPostsData('en'); // 6 posts
+  const posts = getSortedPostsData();
 
-  // Korean posts: /posts/[slug]/
-  const koPostUrls = postsKo.map((post) => ({
+  // Posts: /posts/[slug]/
+  const postUrls = posts.map((post) => ({
     url: `${BASE_URL}/posts/${post.slug}/`,
     lastModified: safeFormatDate(post.date),
     changeFrequency: 'weekly' as const,
     priority: 0.6,
   }));
 
-  // English posts: /en/posts/[slug]/
-  const enPostUrls = postsEn.map((post) => ({
-    url: `${BASE_URL}/en/posts/${post.slug}/`,
-    lastModified: safeFormatDate(post.date),
-    changeFrequency: 'weekly' as const,
-    priority: 0.5,
-  }));
-
-  // Korean categories: /category/[slug]/
-  const koCategoryUrls = Array.from(new Set(postsKo.map(p => p.category))).map((category) => ({
+  // Categories: /category/[slug]/
+  const categoryUrls = Array.from(new Set(posts.map(p => p.category))).map((category) => ({
     url: `${BASE_URL}/category/${(category || "Insight").toLowerCase().replace(/\s+/g, '-')}/`,
     lastModified: safeFormatDate(),
     changeFrequency: 'weekly' as const,
     priority: 0.8,
-  }));
-
-  // English categories: /en/category/[slug]/
-  const enCategoryUrls = Array.from(new Set(postsEn.map(p => p.category))).map((category) => ({
-    url: `${BASE_URL}/en/category/${(category || "Insight").toLowerCase().replace(/\s+/g, '-')}/`,
-    lastModified: safeFormatDate(),
-    changeFrequency: 'weekly' as const,
-    priority: 0.7,
   }));
 
   return [
@@ -67,26 +50,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1.0,
     },
     {
-      url: `${BASE_URL}/en/`,
-      lastModified: safeFormatDate(),
-      changeFrequency: 'daily' as const,
-      priority: 0.8,
-    },
-    {
       url: `${BASE_URL}/posts/`,
       lastModified: safeFormatDate(),
       changeFrequency: 'daily' as const,
       priority: 0.8,
     },
-    {
-      url: `${BASE_URL}/en/posts/`,
-      lastModified: safeFormatDate(),
-      changeFrequency: 'daily' as const,
-      priority: 0.7,
-    },
-    ...koCategoryUrls,
-    ...enCategoryUrls,
-    ...koPostUrls,
-    ...enPostUrls,
+    ...categoryUrls,
+    ...postUrls,
   ];
 }

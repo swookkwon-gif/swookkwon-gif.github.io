@@ -47,35 +47,12 @@ function generateExcerpt(content: string, length: number = 150): string {
   return text.substring(0, length).trim() + '...';
 }
 
-export function getSortedPostsData(lang: string = 'ko'): PostData[] {
+export function getSortedPostsData(): PostData[] {
   const allFiles = getAllMarkdownFiles(postsDirectory);
   
-  const fileMap = new Map<string, { en?: string, ko?: string }>();
-  allFiles.forEach(file => {
-    const fileName = path.basename(file);
-    const slug = fileName.replace(/\.(en|ko)?\.?md$/, '');
-    if (!fileMap.has(slug)) fileMap.set(slug, {});
-    
-    if (fileName.endsWith('.en.md')) {
-      fileMap.get(slug)!.en = file;
-    } else if (fileName.endsWith('.md')) {
-      fileMap.get(slug)!.ko = file;
-    }
-  });
-
-  const filteredFiles: string[] = [];
-  fileMap.forEach(langs => {
-    if (lang === 'en') {
-      if (langs.en) filteredFiles.push(langs.en);
-      // No fallback to Korean — only real .en.md files
-    } else {
-      if (langs.ko) filteredFiles.push(langs.ko);
-    }
-  });
-
-  const allPostsData = filteredFiles.map((fullPath) => {
+  const allPostsData = allFiles.map((fullPath) => {
     const fileName = path.basename(fullPath);
-    const slug = fileName.replace(/\.(en|ko)?\.?md$/, '');
+    const slug = fileName.replace(/\.md$/, '');
     const fileContents = fs.readFileSync(fullPath, 'utf8');
     const { data, content } = matter(fileContents);
     
@@ -122,26 +99,14 @@ export function getSortedPostsData(lang: string = 'ko'): PostData[] {
   return allPostsData.sort((a, b) => (a._sortTimestamp < b._sortTimestamp ? 1 : -1));
 }
 
-export function getPostData(slug: string, lang: string = 'ko'): PostData {
+export function getPostData(slug: string): PostData {
   const allFiles = getAllMarkdownFiles(postsDirectory);
   
-  let targetFile = allFiles.find(file => {
+  const targetFile = allFiles.find(file => {
     const fileName = path.basename(file);
-    const fileSlug = fileName.replace(/\.(en|ko)?\.?md$/, '');
-    if (fileSlug !== slug) return false;
-    
-    if (lang === 'en') return fileName.endsWith('.en.md');
-    return fileName.endsWith('.md') && !fileName.endsWith('.en.md');
+    const fileSlug = fileName.replace(/\.md$/, '');
+    return fileSlug === slug;
   });
-  
-  // Fallback to Korean if English file doesn't exist
-  if (!targetFile && lang === 'en') {
-    targetFile = allFiles.find(file => {
-      const fileName = path.basename(file);
-      const fileSlug = fileName.replace(/\.(en|ko)?\.?md$/, '');
-      return fileSlug === slug && fileName.endsWith('.md') && !fileName.endsWith('.en.md');
-    });
-  }
   
   if (!targetFile) {
     throw new Error(`Post not found for slug: ${slug}`);
@@ -156,7 +121,7 @@ export function getPostData(slug: string, lang: string = 'ko'): PostData {
     : (data.category || 'Insight');
 
   // Related & Navigation Logic
-  const allPosts = getSortedPostsData(lang); // sorted desc by date
+  const allPosts = getSortedPostsData(); // sorted desc by date
   const categoryPosts = allPosts.filter(p => p.category === derivedCategory);
   
   let relatedPosts: { slug: string; title: string; date: string; category: string; excerpt: string }[] = [];

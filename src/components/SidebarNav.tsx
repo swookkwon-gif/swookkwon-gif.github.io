@@ -20,10 +20,9 @@ interface CategoryData {
 
 interface SidebarNavProps {
   categories: CategoryData[];
-  lang: string;
 }
 
-export default function SidebarNav({ categories, lang }: SidebarNavProps) {
+export default function SidebarNav({ categories }: SidebarNavProps) {
   const pathname = usePathname();
   const INITIAL_COUNT = 7;
 
@@ -128,7 +127,7 @@ export default function SidebarNav({ categories, lang }: SidebarNavProps) {
                     return (
                       <li key={post.slug}>
                         <Link
-                          href={`${lang === 'en' ? '/en' : ''}/posts/${post.slug}`}
+                          href={`/posts/${post.slug}`}
                           className={`sidebar-post-link ${isCurrentPost ? "current" : ""}`}
                           title={post.title}
                         >
@@ -146,7 +145,7 @@ export default function SidebarNav({ categories, lang }: SidebarNavProps) {
                         onClick={() => toggleExpand(cat.slug)}
                         className="sidebar-expand-btn"
                       >
-                        + {cat.posts.length - INITIAL_COUNT} {lang === 'en' ? 'more' : '개 더보기'}
+                        + {cat.posts.length - INITIAL_COUNT} 개 더보기
                       </button>
                     </li>
                   )}

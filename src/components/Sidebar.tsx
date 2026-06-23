@@ -1,8 +1,8 @@
 import { getSortedPostsData } from "@/lib/posts";
 import SidebarNav from "./SidebarNav";
 
-export default function Sidebar({ lang }: { lang: string }) {
-  const posts = getSortedPostsData(lang);
+export default function Sidebar() {
+  const posts = getSortedPostsData();
   
   // 포스트들을 카테고리별로 그룹핑
   const categoriesMap = posts.reduce((acc, post) => {
@@ -32,7 +32,7 @@ export default function Sidebar({ lang }: { lang: string }) {
   return (
     <aside className="hidden md:block w-[340px] shrink-0">
       <div className="md:sticky md:top-6 md:max-h-[calc(100vh-3rem)] md:overflow-y-auto no-scrollbar pt-2">
-        <SidebarNav categories={categories} lang={lang} />
+        <SidebarNav categories={categories} />
       </div>
     </aside>
   );

@@ -10,9 +10,13 @@ import { visit } from 'unist-util-visit';
 function remarkDemoteHeadings() {
   return (tree: any) => {
     let hasH1 = false;
-    visit(tree, 'heading', (node: any) => { if (node.depth === 1) hasH1 = true; });
+    visit(tree, 'heading', (node: any) => {
+      if (node.depth === 1) hasH1 = true;
+    });
     if (hasH1) {
-      visit(tree, 'heading', (node: any) => { if (node.depth < 6) node.depth += 1; });
+      visit(tree, 'heading', (node: any) => {
+        if (node.depth < 6) node.depth += 1;
+      });
     }
   };
 }
@@ -23,29 +27,24 @@ import React from "react";
 import ChartRenderer from "@/components/ChartRenderer";
 import MermaidRenderer from "@/components/MermaidRenderer";
 
-const lang = 'en';
-
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const post = getPostData(slug, lang);
-  const url = `https://swookkwon-gif.github.io/en/posts/${slug}/`;
+  const post = getPostData(slug);
+  const url = `https://swookkwon-gif.github.io/posts/${slug}/`;
+
+  const alternates: { canonical: string } = {
+    canonical: url,
+  };
 
   return {
     title: post.title,
     description: post.excerpt || post.title,
     keywords: post.tags,
-    alternates: {
-      canonical: url,
-      languages: {
-        'ko': `https://swookkwon-gif.github.io/posts/${slug}/`,
-        'en': `https://swookkwon-gif.github.io/en/posts/${slug}/`,
-        'x-default': `https://swookkwon-gif.github.io/posts/${slug}/`,
-      }
-    },
+    alternates,
     openGraph: {
       title: post.title,
       description: post.excerpt || post.title,
@@ -64,40 +63,49 @@ export async function generateMetadata({
 }
 
 export async function generateStaticParams() {
-  // Only generate pages for posts that have actual .en.md files
-  const posts = getSortedPostsData('en');
+  const posts = getSortedPostsData();
   return posts.map((post) => ({ slug: post.slug }));
 }
 
-export default async function EnPostPage({
+export default async function PostPage({
   params,
 }: {
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const post = getPostData(slug, lang);
+  const post = getPostData(slug);
 
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline: post.title,
     description: post.excerpt || post.title,
-    author: { "@type": "Person", name: "Wook Kwon", url: "https://www.linkedin.com/in/wook-kwon/" },
+    author: {
+      "@type": "Person",
+      name: "Wook Kwon",
+      url: "https://www.linkedin.com/in/wook-kwon/"
+    },
     datePublished: post.date,
     dateModified: post.date,
-    url: `https://swookkwon-gif.github.io/en/posts/${slug}/`,
+    url: `https://swookkwon-gif.github.io/posts/${slug}/`,
     keywords: post.tags?.join(", ") || "",
   };
 
   return (
     <article className="font-sans w-full max-w-none pt-4 md:pt-0">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <header className="mb-8 md:mb-10">
         <h1 className="text-xl md:text-3xl font-bold mb-3 md:mb-5 text-neutral-900 tracking-tight leading-[1.3]">
           {post.title}
         </h1>
         <div className="flex items-center gap-4 text-xs font-semibold text-neutral-500 uppercase tracking-widest mb-6 pb-6 border-b border-neutral-100">
-          <Link href={`/en/category/${(post.category || "Insight").toLowerCase().replace(/\s+/g, '-')}`} className="flex items-center gap-1.5 hover:text-blue-600 transition-colors">
+          <Link
+            href={`/category/${(post.category || "Insight").toLowerCase().replace(/\s+/g, '-')}`}
+            className="flex items-center gap-1.5 hover:text-blue-600 transition-colors"
+          >
             <Tag size={14} /> {post.category || "Insight"}
           </Link>
           <span className="flex items-center gap-1.5">
@@ -121,7 +129,8 @@ export default async function EnPostPage({
           components={{
             blockquote: ({ children, ...props }: any) => {
               const firstChild = React.Children.toArray(children)[0] as any;
-              const firstText = Array.isArray(firstChild?.props?.children) ? firstChild.props.children[0] : firstChild?.props?.children;
+              const firstChildContent = firstChild?.props?.children;
+              const firstText = Array.isArray(firstChildContent) ? firstChildContent[0] : firstChildContent;
               if (typeof firstText === 'string' && firstText.match(/^\[!(NOTE|TIP|WARNING|IMPORTANT|CAUTION)\]/i)) {
                 return <blockquote className="my-6" {...props}>{children}</blockquote>;
               }
@@ -133,7 +142,9 @@ export default async function EnPostPage({
                 const match = firstChild.match(/^\[!(.*?)\]/i);
                 const type = match ? match[1].toUpperCase() : 'NOTE';
                 const newChildren = React.Children.map(children, (child, index) => {
-                  if (index === 0 && typeof child === 'string') return child.replace(/^\[!.*?\]/i, '').trimStart();
+                  if (index === 0 && typeof child === 'string') {
+                    return child.replace(/^\[!.*?\]/i, '').trimStart();
+                  }
                   return child;
                 });
                 const styles: Record<string, string> = {
@@ -143,7 +154,9 @@ export default async function EnPostPage({
                   'IMPORTANT': 'bg-purple-50/80 border-purple-500 text-purple-900',
                   'CAUTION': 'bg-red-50/80 border-red-500 text-red-900',
                 };
-                const icons: Record<string, string> = { 'NOTE': 'ℹ️', 'TIP': '✨', 'WARNING': '⚠️', 'IMPORTANT': '🔥', 'CAUTION': '🛑' };
+                const icons: Record<string, string> = {
+                  'NOTE': 'ℹ️', 'TIP': '✨', 'WARNING': '⚠️', 'IMPORTANT': '🔥', 'CAUTION': '🛑'
+                };
                 return (
                   <div className={`border-l-4 p-5 rounded-r-lg ${styles[type] || styles['NOTE']} not-prose mb-6 shadow-sm`}>
                     <div className="font-bold flex items-center gap-2 mb-2 text-sm tracking-wide">{icons[type]} {type}</div>
@@ -155,8 +168,12 @@ export default async function EnPostPage({
             },
             code: ({ node, inline, className, children, ...props }: any) => {
               const match = /language-(\w+)/.exec(className || '');
-              if (!inline && match && match[1] === 'chart') return <ChartRenderer dataStr={String(children).replace(/\n$/, '')} />;
-              if (!inline && match && match[1] === 'mermaid') return <MermaidRenderer chart={String(children).replace(/\n$/, '')} />;
+              if (!inline && match && match[1] === 'chart') {
+                return <ChartRenderer dataStr={String(children).replace(/\n$/, '')} />;
+              }
+              if (!inline && match && match[1] === 'mermaid') {
+                return <MermaidRenderer chart={String(children).replace(/\n$/, '')} />;
+              }
               return <code className={className} {...props}>{children}</code>;
             },
             img: ({ src, alt, ...props }: any) => {
@@ -170,8 +187,12 @@ export default async function EnPostPage({
                 );
               }
               const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-              if (finalSrc.startsWith('/wooksai/')) finalSrc = finalSrc.replace('/wooksai/', '/');
-              if (basePath && basePath !== '/' && finalSrc.startsWith('/')) finalSrc = `${basePath}${finalSrc}`;
+              if (finalSrc.startsWith('/wooksai/')) {
+                finalSrc = finalSrc.replace('/wooksai/', '/');
+              }
+              if (basePath && basePath !== '/' && finalSrc.startsWith('/')) {
+                finalSrc = `${basePath}${finalSrc}`;
+              }
               return (
                 <span className="block my-8">
                   <img src={finalSrc} alt={alt || ''} className="rounded-xl shadow-lg border border-gray-100 mx-auto max-h-[600px] object-contain" {...props} />
@@ -189,20 +210,29 @@ export default async function EnPostPage({
         <section className="mt-16 pt-12 border-t border-neutral-200">
           <div className="flex items-center justify-between mb-8">
             <h3 className="text-xl font-bold text-neutral-900 flex items-center gap-2">
-              💡 More from <Link href={`/en/category/${(post.category || "Insight").toLowerCase().replace(/\s+/g, '-')}`} className="hover:text-blue-600 transition-colors underline decoration-2 underline-offset-4 decoration-blue-100 hover:decoration-blue-400">{post.category}</Link>
+              💡 <Link href={`/category/${(post.category || "Insight").toLowerCase().replace(/\s+/g, '-')}`} className="hover:text-blue-600 transition-colors underline decoration-2 underline-offset-4 decoration-blue-100 hover:decoration-blue-400">{post.category}</Link>의 다른 글
             </h3>
             {post.categoryTotalCount && post.categoryTotalCount > 7 && (
-              <Link href={`/en/category/${post.category.toLowerCase().replace(/\s+/g, '-')}`} className="text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors">
-                View all &rarr;
+              <Link
+                href={`/category/${post.category.toLowerCase().replace(/\s+/g, '-')}`}
+                className="text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors"
+              >
+                전체보기 &rarr;
               </Link>
             )}
           </div>
           <div className="flex flex-col gap-4">
             {post.relatedPosts.map(rel => (
-              <Link key={rel.slug} href={`/en/posts/${rel.slug}`} className="group flex flex-col sm:flex-row sm:items-center justify-between p-4 bg-white border border-gray-100 rounded-xl hover:border-blue-200 hover:shadow-sm transition-all gap-4">
+              <Link key={rel.slug} href={`/posts/${rel.slug}`} className="group flex flex-col sm:flex-row sm:items-center justify-between p-4 bg-white border border-gray-100 rounded-xl hover:border-blue-200 hover:shadow-sm transition-all gap-4">
                 <div className="flex-1">
-                  <h4 className="text-[16px] font-bold text-neutral-800 group-hover:text-blue-700 transition-colors line-clamp-1 mb-1">{rel.title}</h4>
-                  {rel.excerpt && <p className="text-sm text-neutral-500 line-clamp-1">{rel.excerpt}</p>}
+                  <h4 className="text-[16px] font-bold text-neutral-800 group-hover:text-blue-700 transition-colors line-clamp-1 mb-1">
+                    {rel.title}
+                  </h4>
+                  {rel.excerpt && (
+                    <p className="text-sm text-neutral-500 line-clamp-1">
+                      {rel.excerpt}
+                    </p>
+                  )}
                 </div>
                 <span className="text-xs font-medium text-neutral-400 shrink-0 sm:text-right">{rel.date}</span>
               </Link>
@@ -212,9 +242,12 @@ export default async function EnPostPage({
       )}
 
       <div className="mt-12 pt-8 border-t border-neutral-100 flex justify-center">
-        <Link href="/en/posts" className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-neutral-100 text-neutral-600 hover:bg-blue-50 hover:text-blue-600 transition-colors group text-sm font-bold">
+        <Link
+          href="/posts"
+          className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-neutral-100 text-neutral-600 hover:bg-blue-50 hover:text-blue-600 transition-colors group text-sm font-bold"
+        >
           <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform" />
-          Back to list
+          목록으로 돌아가기
         </Link>
       </div>
     </article>
