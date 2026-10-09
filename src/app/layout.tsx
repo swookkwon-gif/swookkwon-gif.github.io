@@ -9,17 +9,17 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://swookkwon-gif.github.io"),
   title: {
     template: "%s | GEO Research",
-    default: "GEO Research | 생성형 검색 최적화 연구소",
+    default: "GEO Research | 생성형 AI 검색 최적화 리서치",
   },
   description:
-    "SearchGPT, Perplexity, Claude 등 생성형 AI 검색 엔진(GEO) 아키텍처와 LLM 인용 최적화 방법론을 연구하는 테크니컬 리서치 블로그입니다.",
+    "ChatGPT, Claude, Gemini, Perplexity 등 생성형 AI 검색 엔진의 인용 메커니즘 규명과 엔터프라이즈 가시성 확보를 위한 GEO(Generative Engine Optimization) 리서치 플랫폼입니다.",
   authors: [{ name: "Wook Kwon", url: "https://www.linkedin.com/in/wook-kwon/" }],
   creator: "Wook Kwon",
-  publisher: "GEO Research Lab",
+  publisher: "GEO Research",
   openGraph: {
-    title: "GEO Research | 생성형 검색 최적화 연구소",
+    title: "GEO Research | 생성형 AI 검색 최적화 리서치",
     description:
-      "SearchGPT, Perplexity, Claude 등 생성형 AI 검색 엔진(GEO) 아키텍처와 LLM 인용 최적화 방법론을 연구하는 테크니컬 리서치 블로그입니다.",
+      "ChatGPT, Claude, Gemini, Perplexity 등 생성형 AI 검색 엔진의 인용 메커니즘 규명과 엔터프라이즈 가시성 확보를 위한 GEO(Generative Engine Optimization) 리서치 플랫폼입니다.",
     url: "https://swookkwon-gif.github.io",
     siteName: "GEO Research",
     locale: "ko_KR",
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "GEO Research | 생성형 검색 최적화 연구소",
+    title: "GEO Research | 생성형 AI 검색 최적화 리서치",
     description:
-      "SearchGPT, Perplexity, Claude 등 생성형 AI 검색 엔진(GEO) 아키텍처와 LLM 인용 최적화 방법론 연구",
+      "ChatGPT, Claude, Gemini, Perplexity 등 생성형 AI 검색 엔진의 인용 메커니즘 규명과 엔터프라이즈 가시성 확보를 위한 GEO 리서치",
   },
   verification: {
     google: "VEKICMa0sx4OpQaX_Aj0-5pNDI9NrEjyK9D7-W_R0Ug",
@@ -65,7 +65,7 @@ export default function RootLayout({
                 rel="noopener noreferrer"
                 className="text-neutral-600 hover:text-blue-600 transition-colors"
               >
-                Wook Kwon (Lead Researcher)
+                Wook Kwon
               </a>
               <span className="text-neutral-300">|</span>
               <a

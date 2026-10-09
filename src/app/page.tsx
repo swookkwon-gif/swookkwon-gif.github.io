@@ -9,15 +9,11 @@ export default function Home() {
     <main className="space-y-12">
       {/* Hero Section */}
       <section className="space-y-4 pb-8 border-b border-neutral-200">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-semibold tracking-wide">
-          <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse" />
-          Technical Research Lab
-        </div>
         <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight text-neutral-950 leading-[1.2]">
           Generative Engine Optimization (GEO)
         </h1>
         <p className="text-base md:text-lg text-neutral-600 max-w-2xl leading-relaxed">
-          SearchGPT, Perplexity, Claude 등 차세대 생성형 AI 검색 엔진의 인용 메커니즘을 규명하고, 기업과 데이터의 가시성을 극대화하기 위한 아키텍처 방법론을 탐구합니다.
+          ChatGPT, Claude, Gemini, Perplexity 등 생성형 AI 검색 엔진의 인용 메커니즘을 규명하고, 엔터프라이즈 가시성을 극대화하기 위한 GEO 아키텍처 방법론을 탐구합니다.
         </p>
       </section>
 

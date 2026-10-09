@@ -1,9 +1,9 @@
-# GEO Research (Generative Engine Optimization Lab)
+# GEO Research (Generative Engine Optimization Research)
 
-생성형 AI 검색 엔진(Perplexity, SearchGPT, Claude, Gemini)의 인용 메커니즘을 규명하고, 디지털 가시성을 극대화하기 위한 아키텍처 방법론을 탐구하는 테크니컬 리서치 플랫폼입니다.
+ChatGPT, Claude, Gemini, Perplexity 등 생성형 AI 검색 엔진의 인용 메커니즘을 규명하고, 엔터프라이즈 가시성을 극대화하기 위한 GEO(Generative Engine Optimization) 아키텍처 방법론을 탐구하는 테크니컬 리서치 플랫폼입니다.
 
 - **사이트 URL**: [https://swookkwon-gif.github.io](https://swookkwon-gif.github.io)
-- **연구 책임자**: 권순욱 (Wook Kwon) — [LinkedIn](https://www.linkedin.com/in/wook-kwon/)
+- **작성자**: 권욱 (Wook Kwon) — [LinkedIn](https://www.linkedin.com/in/wook-kwon/)
 
 ---
 

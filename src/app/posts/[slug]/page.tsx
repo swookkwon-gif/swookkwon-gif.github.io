@@ -68,11 +68,10 @@ export default async function PostPage({
       "@type": "Person",
       name: "Wook Kwon",
       url: "https://www.linkedin.com/in/wook-kwon/",
-      jobTitle: "Lead AI & Marketing Researcher",
     },
     publisher: {
       "@type": "Organization",
-      name: "GEO Research Lab",
+      name: "GEO Research",
       url: "https://swookkwon-gif.github.io",
     },
     datePublished: post.date,
@@ -185,10 +184,10 @@ export default async function PostPage({
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div>
             <span className="text-xs font-semibold text-neutral-500 uppercase tracking-wider block">
-              Researcher
+              Author
             </span>
             <span className="text-base font-bold text-neutral-900">
-              Wook Kwon (권순욱)
+              Wook Kwon (권욱)
             </span>
             <p className="text-xs text-neutral-600 mt-1">
               Digital Marketing & eCommerce Director · Data Science & AI · Generative Engine Optimization

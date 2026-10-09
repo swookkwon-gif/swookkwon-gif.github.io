@@ -12,14 +12,9 @@ export default function Header() {
           <div className="w-8 h-8 rounded-lg bg-neutral-900 text-white flex items-center justify-center font-bold text-sm tracking-wider shadow-sm group-hover:bg-blue-600 transition-colors">
             G
           </div>
-          <div className="flex flex-col">
-            <span className="font-bold text-base tracking-tight text-neutral-900 group-hover:text-blue-600 transition-colors">
-              GEO Research
-            </span>
-            <span className="text-[11px] font-medium text-neutral-500 tracking-normal -mt-0.5">
-              Generative Engine Optimization Lab
-            </span>
-          </div>
+          <span className="font-bold text-base tracking-tight text-neutral-900 group-hover:text-blue-600 transition-colors">
+            GEO Research
+          </span>
         </Link>
 
         {/* Navigation & Author Links */}
